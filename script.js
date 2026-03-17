@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // --- 1. العداد التنازلي ---
     const timerEl = document.getElementById('timer');
     if (timerEl) {
-        const launchDate = new Date('2026-06-01T00:00:00');
+        const launchDate = new Date('2026-07-01T00:00:00');
         const daysEl = document.getElementById('days'),
               hoursEl = document.getElementById('hours'),
               minutesEl = document.getElementById('minutes'),
