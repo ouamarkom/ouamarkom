@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /admin/
-Disallow: /private/
+Allow: /
 
 Sitemap: https://ouamarkom.com/sitemap.xml

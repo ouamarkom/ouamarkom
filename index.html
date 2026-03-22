@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>أوامركم | Ouamarkom</title>
-    
+
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="preload" as="image" href="logo.webp">
+    <link rel="preload" as="image" href="logo.webp" imagesrcset="logo.webp">
 
     <!-- Google Tag (Analytics) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RKD1QF8FSD"></script>
@@ -46,8 +46,6 @@
         ]
     }
     </script>
-
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
     
     <meta property="og:site_name" content="أوامركم | Ouamarkom" />
     <meta property="og:url" content="https://ouamarkom.com" />
@@ -64,9 +62,9 @@
 <canvas id="network-canvas"></canvas>
 <button id="backToTop" title="العودة للأعلى">↑</button>
 
-<div class="container">
+<main class="container">
     <section class="hero">
-        <img src="logo.webp" alt="أوامركم - أول منصة لهندسة الأوامر" class="logo-img" loading="eager">
+        <img src="logo.webp" alt="أوامركم - أول منصة لهندسة الأوامر" class="logo-img" loading="eager" fetchpriority="high">
         <h1 class="reveal"> أول سوق عربي لـ <span>هندسة الأوامر</span> واقتصاد البرومبت كن من الرياديين. </h1>
         <p class="subtitle reveal">انضم إلى منصة تجمع مهندسي الأوامر والمبدعين والشركات في شبكة رقمية متكاملة؛ لتصميم ومشاركة وبيع برومبتات وأدوات الذكاء الاصطناعي المخصصة للسوق العربي. كن من أوائل رواد هندسة الأوامر بالعربية.</p>
         
@@ -110,18 +108,18 @@
                 <p style="text-align:center; color: var(--text-dim); margin-bottom: 30px;">واحجز مكانك في القائمة الذهبية</p>
                 <form id="ouamarkom-form" action="https://formspree.io/f/mbdzgbnb" method="POST">
                     <div class="form-group">
-                        <label>الاسم الكامل</label>
-                        <input type="text" name="Full_Name" placeholder="ادخل اسمك هنا..." required>
+                        <label for="full-name">الاسم الكامل</label>
+                        <input type="text" id="full-name" name="Full_Name" placeholder="ادخل اسمك هنا..." required>
                         <small class="error-msg" id="name-error"></small>
                     </div>
                     <div class="form-group">
-                        <label>البريد الإلكتروني</label>
-                        <input type="email" name="Email_Address" placeholder="example@mail.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        <label for="user-email">البريد الإلكتروني</label>
+                        <input type="email" id="user-email" name="Email_Address" placeholder="example@mail.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                         <small class="error-msg" id="email-error"></small>
                     </div>
                     <div class="form-group">
-                        <label>أنا مهتم بـ:</label>
-                        <select name="Interest_Type" required>
+                        <label for="interest">أنا مهتم بـ:</label>
+                        <select id="interest" name="Interest_Type" required aria-label="اختر نوع اهتمامك في المنصة" >
                             <option value="prompt-engineer">مهندس أوامر (بيع برومبتات)</option>
                             <option value="business">شركة (شراء حلول ذكية)</option>
                             <option value="developer">مطور أدوات ذكاء اصطناعي</option>
@@ -140,7 +138,7 @@
             </div>
         </div>
     </section>
-</div>
+</main>
 
 <footer>
     <div class="container">
