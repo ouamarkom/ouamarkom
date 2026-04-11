@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>مدونة أوامركم | بوابتك لاحتراف هندسة الأوامر واقتصاد المستقبل</title>
+    <meta name="description" content="استكشف مقالات حصرية حول هندسة الأوامر (Prompt Engineering)، اقتصاد الأوامر 2026، ومستقبل الذكاء الاصطناعي بالعربي. تعلم كيف تقود الثورة التقنية القادمة.">
+    <meta name="keywords" content="هندسة الأوامر, برومبت, ذكاء اصطناعي, اقتصاد الأوامر, أوامركم, تعلم الذكاء الاصطناعي, Prompt Engineering Arabic">
+    <link rel="canonical" href="https://ouamarkom.com/blog" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ouamarkom.com/blog">
+    <meta property="og:title" content="مدونة أوامركم | استكشف أسرار الذكاء الاصطناعي">
+    <meta property="og:description" content="دليلك المعرفي لاحتراف لغة العصر. مقالات تعليمية ورؤى مستقبلية حول اقتصاد الأوامر.">
+    <meta property="og:image" content="https://ouamarkom.com/blog/images/og-main-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="مدونة أوامركم | بوابتك لاحتراف هندسة الأوامر">
+
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        :root {
+            --card-bg: rgba(10, 25, 47, 0.7);
+            --card-border: rgba(230, 153, 45, 0.2);
+        }
+
+        .blog-header {
+            padding: 100px 20px 60px;
+            text-align: center;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .article-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            overflow: hidden;
+            backdrop-filter: blur(15px);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-card:hover {
+            transform: translateY(-12px);
+            border-color: var(--accent);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .article-image-wrapper {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .article-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .article-card:hover .article-image-wrapper img {
+            transform: scale(1.1);
+        }
+
+        /* تعديل مكان البيانات الوصفية لتصبح عصرية */
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .article-badge {
+            background: var(--accent);
+            color: #0a192f;
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
+        .read-time {
+            color: var(--text-dim);
+            font-size: 0.75rem;
+            opacity: 0.8;
+        }
+
+        .article-content {
+            padding: 30px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-title {
+            font-size: 1.5rem;
+            color: #fff;
+            margin-bottom: 15px;
+            line-height: 1.4;
+            font-weight: 700;
+        }
+
+        .article-excerpt {
+            color: var(--text-dim);
+            font-size: 1rem;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .btn-read-more {
+            margin-top: auto;
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.3s;
+        }
+
+        .btn-read-more:hover {
+            gap: 15px;
+            color: var(--accent);
+        }
+
+        .btn-secondary-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(230, 153, 45, 0.5);
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .blog-grid { grid-template-columns: 1fr; gap: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="network-canvas"></canvas>
+
+<nav class="container" style="padding: 30px 10px; display: flex; justify-content: space-between; align-items: center;">
+    <a href="/" aria-label="العودة للصفحة الرئيسية لشركة أوامركم"><img src="../logo.webp" alt="شعار أوامركم - منصة هندسة الأوامر" style="height: 60px;"></a>
+    <a href="/" class="btn-secondary-outline" style="font-size: 0.9rem;" aria-label="العودة إلى الصفحة الرئيسية">العودة للرئيسية</a>
+</nav>
+
+<main class="container">
+    <header class="blog-header">
+        <h1 class="reveal active">مدونة <span>أوامركم</span></h1>
+        <p class="subtitle reveal active">دليلك المعرفي لاحتراف هندسة الأوامر واقتصاد المستقبل</p>
+    </header>
+
+    <div class="blog-grid">
+        
+        <article class="article-card reveal active featured-article">
+            <div class="article-image-wrapper">
+                <img src="../blog/images/sovereignty-of-intent.webp" alt="سِيادة النوايا واقتصاد الأوامر بقلم مراد الصهيبي">
+            </div>
+            <div class="article-content">
+                <div class="article-meta">
+                    <span class="article-badge" style="background: var(--gold);">رؤية 2026</span>
+                    <span class="read-time">قراءة في 6 دقائق</span>
+                </div>
+                <h2 class="article-title">سِيادة النوايا: "اقتصاد الأوامر" وبزوغ الرأسمالية اللغوية الجديدة</h2>
+                <p class="article-excerpt">بقلم مراد الصهيبي: لماذا ننتقل اليوم من "البرمجة بالرموز" إلى "البرمجة بالنوايا"؟ وكيف تتحول الكلمة إلى الأصل الرأسمالي الأكثر ندرة في ميزانيات الشركات...</p>
+                <a href="/blog/sovereignty-of-intent.html" class="btn-read-more" style="border-color: var(--gold); color: var(--gold);" aria-label="اقرأ مقال سيادة النوايا">اقرأ الرؤية القيادية ←</a>
+            </div>
+        </article>
+        
+        <article class="article-card reveal active">
+            <div class="article-image-wrapper">
+                <img src="../blog/images/future-economy.webp" alt="تمثيل بصري لمستقبل الوظائف واقتصاد الأوامر في عام 2026">
+            </div>
+            <div class="article-content">
+                <div class="article-meta">
+                    <span class="article-badge">اقتصاد</span>
+                    <span class="read-time">قراءة في 4 دقائق</span>
+                </div>
+                <h2 class="article-title">ما هو اقتصاد الأوامر وكيف سيغير سوق العمل في 2026؟</h2>
+                <p class="article-excerpt">استكشف كيف ستصبح "البرومبتات" هي العملة الجديدة في سوق العمل، ولماذا تتسابق الشركات لتوظيف خبراء الذكاء الاصطناعي...</p>
+                <a href="/blog/future-economy.html" class="btn-read-more" aria-label="اقرأ المقال الكامل عن اقتصاد الأوامر 2026">اقرأ المقال الكامل ←</a>
+            </div>
+        </article>
+
+        <article class="article-card reveal active">
+            <div class="article-image-wrapper">
+                <img src="../blog/images/arabic-prompt-engineering.webp" alt="هندسة الأوامر باللغة العربية والتحديات التقنية">
+            </div>
+            <div class="article-content">
+                <div class="article-meta">
+                    <span class="article-badge">تقني</span>
+                    <span class="read-time">قراءة في 7 دقائق</span>
+                </div>
+                <h2 class="article-title">هندسة الأوامر باللغة العربية: التحديات والفرص في 2026</h2>
+                <p class="article-excerpt">لماذا يصعب هندسة الأوامر بالعربية؟ اكتشف كيف نتجاوز في "أوامركم" فجوة البيانات لنصنع ذكاءً اصطناعياً يفهم روح لغتنا وثقافتنا بعمق...</p>
+                <a href="/blog/arabic-prompt-engineering.html" class="btn-read-more" aria-label="اقرأ المقال عن هندسة الأوامر بالعربية">اقرأ التحليل التقني ←</a>
+            </div>
+        </article>
+
+        <article class="article-card reveal active">
+            <div class="article-image-wrapper">
+                <img src="../blog/images/prompt-secrets.webp" alt="رسم توضيحي لتقنيات كتابة الأوامر الاحترافية للذكاء الاصطناعي">
+            </div>
+            <div class="article-content">
+                <div class="article-meta">
+                    <span class="article-badge">تعليمي</span>
+                    <span class="read-time">قراءة في 5 دقائق</span>
+                </div>
+                <h2 class="article-title">5 أسرار لكتابة برومبت يحاكي ذكاء البشر</h2>
+                <p class="article-excerpt">هل تحصل على نتائج عادية؟ تعلم التقنيات النفسية والبرمجية لتحويل ChatGPT إلى خبير متخصص ينفذ مهامك بدقة احترافية...</p>
+                <a href="/blog/prompt-secrets.html" class="btn-read-more" aria-label="اقرأ المقال الكامل عن أسرار كتابة البرومبت">اقرأ الأسرار الخمسة ←</a>
+            </div>
+        </article>
+
+        <article class="article-card reveal active">
+            <div class="article-image-wrapper">
+                <img src="../blog/images/why-arabic-ai.webp" alt="تداخل الخط العربي التقليدي مع الدوائر الإلكترونية والذكاء الاصطناعي">
+            </div>
+            <div class="article-content">
+                <div class="article-meta">
+                    <span class="article-badge">رؤية</span>
+                    <span class="read-time">قراءة في 3 دقائق</span>
+                </div>
+                <h2 class="article-title">لماذا يحتاج العرب لمنصة متخصصة في هندسة الأوامر؟</h2>
+                <p class="article-excerpt">التحديات اللغوية والثقافية في الذكاء الاصطناعي تتطلب حلولاً عربية المنشأ. اكتشف كيف تسد "أوامركم" هذه الفجوة...</p>
+                <a href="/blog/why-arabic-ai.html" class="btn-read-more" aria-label="اقرأ المقال الكامل عن أهمية المنصات العربية للذكاء الاصطناعي">اقرأ الرؤية العربية ←</a>
+            </div>
+        </article>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container copyright">
+        © 2026 أوامركم | Ouamarkom. جميع الحقوق محفوظة.
+    </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

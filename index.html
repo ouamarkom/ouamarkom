@@ -13,7 +13,22 @@
     <link rel="preload" as="image" href="logo.webp" imagesrcset="logo.webp">
 
     <!-- Google Tag (Analytics) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RKD1QF8FSD"></script>
+    <script>
+    window.addEventListener("load", () => {
+        setTimeout(() => {
+            const script = document.createElement("script");
+            script.src = "https://www.googletagmanager.com/gtag/js?id=G-RKD1QF8FSD";
+            script.async = true;
+            document.head.appendChild(script);
+            script.onload = () => {
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-RKD1QF8FSD');
+            };
+        }, 2000);
+    });
+    </script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -56,6 +71,8 @@
     <meta property="og:description" content="انضم إلى منصة تجمع مهندسي الأوامر والمبدعين والشركات في شبكة رقمية متكاملة؛ لتصميم ومشاركة وبيع برومبتات وأدوات الذكاء اصطناعي المخصصة للسوق العربي." />
     <meta property="og:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg" />
     <meta property="og:locale" content="ar_AR" />
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -79,7 +96,7 @@
 
         <div class="btn-group reveal">
             <a href="#register" class="btn btn-primary">انضم للنخبة</a>
-            <a href="#about" class="btn btn-secondary">اكتشف الرؤية</a>
+            <a href="/blog" class="btn btn-secondary-outline">اكتشف اقتصاد الأوامر</a>
         </div>
     </section>
 

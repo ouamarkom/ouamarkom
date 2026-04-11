@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (timerEl) {
         const launchDate = new Date('2026-07-01T00:00:00');
         const daysEl = document.getElementById('days'),
-              hoursEl = document.getElementById('hours'),
-              minutesEl = document.getElementById('minutes'),
-              secondsEl = document.getElementById('seconds');
+            hoursEl = document.getElementById('hours'),
+            minutesEl = document.getElementById('minutes'),
+            secondsEl = document.getElementById('seconds');
 
         const updateCountdown = () => {
             const diff = launchDate - new Date().getTime();
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const handleResize = () => {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
-            const particleCount = window.innerWidth < 768 ? 40 : 100;
+            const particleCount = window.innerWidth < 768 ? 30 : 50;
             particles = Array.from({ length: particleCount }, () => new Particle());
         };
 
@@ -186,5 +186,34 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             }
         });
+    }
+    // --- 6. ضمان ظهور العناصر في بداية الصفحة ---
+    // هذا الكود يتأكد أن أي عنصر يظهر فور تحميل الصفحة (قبل التمرير) يتم تفعيله
+    const checkFirstView = () => {
+        document.querySelectorAll('.reveal').forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                el.classList.add('active');
+            }
+        });
+    };
+    // تشغيل الفحص بعد 100 ملي ثانية لضمان استقرار التحميل
+    setTimeout(checkFirstView, 100); 
+
+    // --- 7. شريط تقدم القراءة (للمقالات المنفردة) ---
+    // يظهر فقط في صفحات المقالات ليعطي طابعاً احترافياً
+    if (window.location.pathname.includes('future-economy')) {
+        const progressBar = document.createElement('div');
+        // تنسيق الشريط: ثابت في الأعلى، لون ذهبي (accent)، طبقة علوية جداً
+        progressBar.style = "position:fixed; top:0; right:0; height:4px; background:var(--accent); z-index:9999; transition: width 0.1s;";
+        progressBar.id = "read-progress";
+        document.body.appendChild(progressBar);
+
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            progressBar.style.width = scrolled + "%";
+        }, { passive: true });
     }
 });
