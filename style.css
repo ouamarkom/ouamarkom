@@ -26,6 +26,8 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; scroll-behavior: smooth; }
 body { font-family: 'Cairo', sans-serif; font-weight: 400; background-color: var(--primary); color: var(--text-main); line-height: 1.7; overflow-x: hidden; }
+::selection { background-color: var(--accent); color: var(--primary); }
+
 strong, b { font-weight: 600; }
 h1, h2 { font-weight: 700; }
 
