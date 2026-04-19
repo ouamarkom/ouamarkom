@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>تحميل كتاب اقتصاد الأوامر ٢٠٢٦ | أوامركم</title>
+    
+    <style>
+        /* المتغيرات الأساسية للفخامة */
+        :root {
+            --navy: #040916;
+            --navy-bright: #0a1226;
+            --gold: #d4af37;
+            --gold-light: #f1c40f;
+            --text-white: #ffffff;
+            --text-dim: #b0b0b0;
+            --glass: rgba(255, 255, 255, 0.03);
+            --gold-glow: rgba(212, 175, 55, 0.2);
+        }
+
+        body {
+            background-color: var(--navy);
+            color: var(--text-white);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* توهج خلفية سينمائي */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(212, 175, 55, 0.03) 0%, transparent 50%);
+            z-index: -1;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .book-hero {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 40px 0;
+            gap: 40px;
+        }
+
+        .reveal { visibility: hidden; }
+
+        /* --- تأثير الكتاب الثلاثي الأبعاد --- */
+        .book-visual {
+            width: 85%;
+            max-width: 380px;
+            perspective: 2000px;
+            position: relative;
+        }
+
+        .book-visual img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.7), 0 0 30px var(--gold-glow);
+            transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+            transform-style: preserve-3d;
+        }
+
+        .book-visual:hover img, .book-visual:active img {
+            transform: rotateY(-15deg) rotateX(5deg) scale(1.05);
+            box-shadow: 0 40px 70px rgba(0,0,0,0.8), 0 0 50px rgba(212, 175, 55, 0.3);
+        }
+
+        .book-content {
+            width: 100%;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), transparent);
+            color: var(--gold);
+            padding: 8px 24px;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: clamp(2.2rem, 8vw, 3.8rem);
+            margin-bottom: 20px;
+            line-height: 1.1;
+            font-weight: 900;
+        }
+
+        h1 span {
+            background: linear-gradient(90deg, #d4af37, #f1c40f, #d4af37);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 3s linear infinite;
+        }
+
+        @keyframes shine { to { background-position: 200% center; } }
+
+        .book-description {
+            font-size: 1.15rem;
+            color: var(--text-dim);
+            margin-bottom: 35px;
+            border-right: 4px solid var(--gold); 
+            padding-right: 20px;
+            text-align: right; 
+            max-width: 580px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* --- قائمة المميزات بالنجوم ✦ --- */
+        .features-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto 40px;
+            display: inline-block;
+            text-align: right;
+        }
+
+        .features-list li {
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 1.1rem;
+            color: var(--text-white);
+        }
+
+        .features-list li::before {
+            content: '✦';
+            color: var(--gold);
+            font-size: 1.3rem;
+            filter: drop-shadow(0 0 5px var(--gold));
+        }
+
+        /* --- صندوق التحميل المطور --- */
+        .download-box {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 40px 25px;
+            border-radius: 30px;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            max-width: 450px;
+            margin: 0 auto;
+        }
+
+        .download-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn-download {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #d4af37 0%, #996515 100%);
+            color: var(--navy);
+            padding: 18px;
+            border-radius: 12px;
+            font-weight: 800;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .btn-secondary {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            color: var(--gold);
+            border: 1px solid var(--gold);
+            padding: 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: 0.3s;
+            font-size: 1rem;
+        }
+
+        .btn-download:hover { transform: translateY(-3px); box-shadow: 0 15px 30px rgba(212, 175, 55, 0.2); }
+        .btn-secondary:hover { background: rgba(212, 175, 55, 0.1); transform: translateY(-3px); }
+
+        .file-info {
+            margin-top: 20px;
+            font-size: 0.85rem;
+            color: var(--text-dim);
+        }
+
+        footer {
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px dotted rgba(212, 175, 55, 0.2);
+        }
+
+        @media (min-width: 992px) {
+            .book-hero { flex-direction: row; text-align: right; gap: 100px; padding: 100px 0; }
+            .book-content { text-align: right; }
+            .book-description { margin-right: 0; border-right: 3px solid var(--gold); padding-right: 25px; }
+            .features-list { display: block; }
+            .download-box { margin-right: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <main class="book-hero">
+        <div class="book-visual reveal">
+            <img src="book-cover.png" alt="غلاف كتاب اقتصاد الأوامر ٢٠٢٦">
+        </div>
+
+        <div class="book-content reveal">
+            <span class="badge">إصدار حصري مجاني - ٢٠٢٦</span>
+            <h1>دستور <span>اقتصاد الأوامر</span></h1>
+            <p class="book-description">
+                حين تصبح الكلمة رأس مال، والأمر أصلاً مالياً، والعقل البشري منظومة سيادية. 
+                هذا الكتاب هو دليلك الشامل لامتلاك القوة في عصر الذكاء الاصطناعي، وتحويل "الأمر" إلى قيمة اقتصادية حقيقية.
+            </p>
+
+            <ul class="features-list">
+                <li>فهم قواعد اللعبة في النظام الاقتصادي الجديد.</li>
+                <li>إتقان هندسة الأوامر (Prompt Engineering) كمهارة سيادية.</li>
+                <li>استراتيجيات تحويل الأفكار إلى إمبراطوريات رقمية.</li>
+                <li>أكثر من ٢٤ فصلاً من الخبرة العملية.</li>
+            </ul>
+
+            <div class="download-box">
+                <p style="margin-bottom: 25px; font-weight: 600;">اختر نسخة القراءة المفضلة:</p>
+                
+                <div class="download-buttons">
+                    <a href="كتاب-اقتصاد-الأوامر-٢٠٢٦-منصة-أوامركم.pdf" class="btn-download" download>
+                        تحميل الكتاب (PDF)
+                    </a>
+                    <a href="اقتصاد-الأوامر-نسخة-الويب.html" class="btn-secondary" target="_blank">
+                        فتح نسخة الويب (عرض سريع مرتب)
+                    </a>
+                </div>
+
+                <div class="file-info">
+                    5.1MB • نسخة السيادة المعرفية
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<footer>
+    <p>© ٢٠٢٦ | تأليف: مراد نجيب الصهيبي</p>
+    <a href="index.html" style="color: var(--gold); text-decoration: none; font-size: 0.85rem; opacity: 0.6;">العودة للمنصة الرئيسية</a>
+</footer>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    ScrollReveal().reveal('.reveal', {
+        delay: 300,
+        distance: '40px',
+        duration: 1200,
+        easing: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)',
+        origin: 'bottom',
+        interval: 250,
+        mobile: true
+    });
+</script>
+
+</body>
+</html>
