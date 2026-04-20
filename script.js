@@ -125,8 +125,12 @@ document.addEventListener("DOMContentLoaded", () => {
         btt.addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
     }
 
-    // --- 5. معالجة نموذج التسجيل ---
+    // --- 5. معالجة نموذج التسجيل (نسخة Google Sheets المحدثة) ---
     const form = document.getElementById('ouamarkom-form');
+
+    // الرابط الجديد الخاص بك
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwGAiOfMhlfJJcwiTgEm15aI73dXCSjErxr_tFF3rEh9i8VbHXWeb-7vzorHrWRxmSS/exec";
+
     if(form) {
         const nameInput = form.elements['Full_Name'];
         const emailInput = form.elements['Email_Address'];
@@ -135,57 +139,64 @@ document.addEventListener("DOMContentLoaded", () => {
         const formError = document.getElementById('form-error');
         const btn = document.getElementById('submit-btn');
 
-        form.addEventListener('submit', async (e) => {  
-            e.preventDefault();
+        form.addEventListener('submit', async (e) => {    
+            e.preventDefault();  
             
-            [nameError, emailError, formError].forEach(el => el.style.opacity = '0');
-            [nameInput, emailInput].forEach(el => el.classList.remove('invalid'));
+            [nameError, emailError, formError].forEach(el => el.style.opacity = '0');  
+            [nameInput, emailInput].forEach(el => el.classList.remove('invalid'));  
 
-            let isValid = true;
-            if (nameInput.value.trim().length < 3) {
-                nameError.innerText = "يرجى إدخال اسمك الكريم";
-                nameError.style.opacity = '1';
-                nameInput.classList.add('invalid');
-                isValid = false;
-            }
-            if (!emailInput.validity.valid) {
-                emailError.innerText = "البريد الإلكتروني غير صحيح";
-                emailError.style.opacity = '1';
-                emailInput.classList.add('invalid');
-                isValid = false;
-            }
-            if (!isValid) return; 
+            let isValid = true;  
+            if (nameInput.value.trim().length < 3) {  
+                nameError.innerText = "يرجى إدخال اسمك الكريم";  
+                nameError.style.opacity = '1';  
+                nameInput.classList.add('invalid');  
+                isValid = false;  
+            }  
+            if (!emailInput.validity.valid) {  
+                emailError.innerText = "البريد الإلكتروني غير صحيح";  
+                emailError.style.opacity = '1';  
+                emailInput.classList.add('invalid');  
+                isValid = false;  
+            }  
+            if (!isValid) return;   
 
-            const originalBtnText = btn.innerText;
-            btn.innerText = "جاري تأمين مكانك...";  
-            btn.disabled = true;  
+            const originalBtnText = btn.innerText;  
+            btn.innerText = "جاري تأمين مكانك...";    
+            btn.disabled = true;    
 
-            try {
-                const response = await fetch(form.action, {  
-                    method: 'POST',  
-                    body: new FormData(form),  
-                    headers: {'Accept': 'application/json'}  
-                });  
+            try {  
+                // استبدال Formspree بطلب Fetch إلى Google Script
+                await fetch(GOOGLE_SCRIPT_URL, {    
+                    method: 'POST',    
+                    mode: 'no-cors', // ضروري للتعامل مع جوجل سكريبت
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        name: nameInput.value,
+                        email: emailInput.value,
+                        interest: form.elements['Interest_Type'].value
+                    })
+                });    
 
-                if (response.ok) {  
-                    document.querySelector('.form-content-wrapper').classList.add('hidden');
-                    document.getElementById('success-message').classList.add('visible');
-                    if (timerEl) timerEl.style.display = 'none';
-                    document.getElementById('full-form-box').scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    form.reset();
-                } else {  
-                    throw new Error('Server error');
-                }
-            } catch (err) {
-                formError.innerText = "عذراً، حدث خطأ. يرجى المحاولة مجدداً بعد قليل.";
-                formError.style.opacity = '1';
-            } finally {
-                if (!document.getElementById('success-message').classList.contains('visible')) {
-                    btn.disabled = false;  
-                    btn.innerText = originalBtnText;
-                }
-            }
-        });
+                // بما أننا نستخدم no-cors، سنعتبر العملية نجحت فوراً إذا لم يحدث catch للخطأ
+                document.querySelector('.form-content-wrapper').classList.add('hidden');  
+                document.getElementById('success-message').classList.add('visible');  
+                
+                // التحقق من وجود مؤقت timerEl قبل إخفائه (كما في كودك الأصلي)
+                if (typeof timerEl !== 'undefined' && timerEl) timerEl.style.display = 'none';  
+                
+                document.getElementById('full-form-box').scrollIntoView({ behavior: 'smooth', block: 'center' });  
+                form.reset();  
+
+            } catch (err) {  
+                formError.innerText = "عذراً، حدث خطأ. يرجى المحاولة مجدداً بعد قليل.";  
+                formError.style.opacity = '1';  
+            } finally {  
+                if (!document.getElementById('success-message').classList.contains('visible')) {  
+                    btn.disabled = false;    
+                    btn.innerText = originalBtnText;  
+                }  
+            }  
+        });  
     }
     // --- 6. ضمان ظهور العناصر في بداية الصفحة ---
     // هذا الكود يتأكد أن أي عنصر يظهر فور تحميل الصفحة (قبل التمرير) يتم تفعيله
