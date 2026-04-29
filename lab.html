@@ -1,0 +1,278 @@
+﻿<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>أوامركم | سيادة اقتصاد الأوامر وتحويل الذكاء إلى أصول رقمية</title>
+
+    <meta name="keywords" content="أوامركم, اقتصاد الأوامر, هندسة الأوامر, ذكاء اصطناعي, أصول رقمية, سيادة رقمية, Prompt Engineering, Order Economy, Ouamarkom, AI Economy" />
+
+    <meta 
+      name="description" 
+      content="أوامركم (Ouamarkom): الطبقة الذكية لسد فجوة القيمة بين التكنولوجيا والإيرادات. هندسة أوامر (Prompt Engineering) تنهي عصر الأجر بالساعة وتبدأ عصر الأجر بالنتيجة السيادية. حول أفكارك إلى أصول ذهنية الآن." 
+    />
+
+    <meta name="author" content="مراد نجيب الصهيبي" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:title" content="أوامركم | التاريخ لا يتسع للجميع.. احجز مقعدك في اقتصاد الأوامر" />
+    <meta property="og:description" content="الثروة تبدأ بكلمة وتنتهي بأمر. انضم للمبادرين في صياغة اقتصاد المستقبل، حيث الأوامر ليست نصوصاً بل أصولاً تولّد المال. هل أنت مستعد لإغلاق فجوة القيمة؟" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ouamarkom.com/lab.html" />
+    <meta property="og:image" content="https://ouamarkom.com/images/ouamarkom-sovereignty.png" />
+    <meta property="og:site_name" content="أوامركم | Ouamarkom" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="أوامركم: المايسترو الذي يحول ذكاء الآلة إلى قيمة اقتصادية" />
+    <meta name="twitter:description" content="انتهى عصر 'الأجر بالساعة'.. بدأ عصر 'الأجر بالنتيجة'. نهندس تذاكر دخول للتاريخ عبر اقتصاد الأوامر. لا تكتفِ بالمشاهدة، كُن المايسترو." />
+    <meta name="twitter:image" content="https://ouamarkom.com/images/ouamarkom-sovereignty.png" />
+
+    <meta name="theme-color" content="#800000" /> 
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&family=Inter:wght@400;500;600&family=Tajawal:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="lab/lab-style.css" />
+  </head>
+  <body>
+    <div id="user-stats">
+      <div class="status-dot"></div>
+      <span class="user-stats-label">رصيدك الرقمي:</span>
+      <span id="credit-count" class="user-stats-value">5</span>
+    </div>
+
+    <canvas id="network-canvas"></canvas>
+
+    <div id="toast">تم الاستحواذ على الأمر بنجاح! 🚀</div>
+
+    <div class="container">
+      <section class="hero">
+        <h1 class="font-bold">أوامركم | صياغة اقتصاد المستقبل</h1>
+        <h1>لا تكتفِ بالعمل.. قُد الذكاء الاصطناعي بأوامرك.</h1>
+        <span class="beta-version">النسخة التجريبية 1.0</span>
+        <p>
+          أول سوق عربي لتحويل "الأوامر" إلى أصول رقمية وقيمة اقتصادية. نحن لا ننتج محتوى، نحن نصنع أنظمة إنتاج متكاملة.
+        </p>
+        <a href="#lab" class="cta-main"
+          ><i data-lucide="zap"></i> اقتحم اقتصاد الأوامر الآن</a
+        >
+      </section>
+
+      <section class="ai-engine-box">
+        <h3 class="section-title accent">
+          <i data-lucide="cpu"></i> المايسترو: مُهندس الأوامر الذكي
+        </h3>
+        <p class="section-description">
+          حول "أمرك الضعيف" إلى "أمر ذهبي". نظامنا يعيد هيكلة أفكارك الخام لتنتج نتائج احترافية في ثوانٍ.
+        </p>
+        <div class="ai-input-group">
+          <input
+            type="text"
+            id="user-idea"
+            class="ai-input"
+            placeholder="أدخل جوهر طلبك هنا.. (مثلاً: أريد خطة تسويقية لمتجر ذهب)"
+            onkeypress="
+              if (event.key === 'Enter') generateProfessionalPrompt();
+            "
+          />
+          <button
+            onclick="generateProfessionalPrompt()"
+            id="generate-btn"
+            class="ai-btn-gen"
+          >
+            <i data-lucide="sparkles"></i> صياغة الأمر الاحترافي
+          </button>
+        </div>
+      </section>
+
+      <main class="lab-wrapper" id="lab">
+        <aside class="lab-sidebar">
+          <button
+            class="cat-item active"
+            onclick="changeCategory('creators', this)"
+          >
+            <i data-lucide="video"></i> صناع المحتوى
+          </button>
+          <button class="cat-item" onclick="changeCategory('education', this)">
+            <i data-lucide="graduation-cap"></i> التعليم والطلاب
+          </button>
+          <button class="cat-item" onclick="changeCategory('business', this)">
+            <i data-lucide="briefcase"></i> الإدارة والأعمال
+          </button>
+          <button class="cat-item" onclick="changeCategory('marketing', this)">
+            <i data-lucide="trending-up"></i> التسويق والمبيعات
+          </button>
+          <button class="cat-item" onclick="changeCategory('lifestyle', this)">
+            <i data-lucide="leaf"></i> الحياة والتطوير
+          </button>
+          <button class="cat-item" onclick="changeCategory('tech', this)">
+            <i data-lucide="code"></i> التقنية والبرمجة
+          </button>
+        </aside>
+
+        <section class="lab-content">
+          <div
+            id="inputs-container"
+            class="mb-6 p-4 bg-gray-900/80 border border-gold/30 rounded-2xl hidden"
+          >
+            <p class="text-gold text-xs mb-4 font-bold opacity-80">
+              <i data-lucide="settings"></i> ضوابط الصياغة الاحترافية:
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="space-y-1">
+                <label class="text-[10px] text-gray-400 mr-2"
+                  >النطاق الجوهري</label
+                >
+                <input
+                  type="text"
+                  id="topic-input"
+                  placeholder="مثلاً: هندسة الأوامر"
+                  class="w-full bg-black/50 border border-gray-700 p-2.5 rounded-xl text-white text-sm focus:border-gold transition-all outline-none"
+                />
+              </div>
+              <div class="space-y-1">
+                <label class="text-[10px] text-gray-400 mr-2"
+                  >الشريحة المستهدفة</label
+                >
+                <input
+                  type="text"
+                  id="audience-input"
+                  placeholder="مثلاً: المبتدئين"
+                  class="w-full bg-black/50 border border-gray-700 p-2.5 rounded-xl text-white text-sm focus:border-gold transition-all outline-none"
+                />
+              </div>
+              <div class="space-y-1">
+                <label class="text-[10px] text-gray-400 mr-2"
+                  >البصمة الصوتية</label
+                >
+                <input
+                  type="text"
+                  id="tone-input"
+                  placeholder="مثلاً: احترافي"
+                  class="w-full bg-black/50 border border-gray-700 p-2.5 rounded-xl text-white text-sm focus:border-gold transition-all outline-none"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="prompt-card">
+            <div class="card-header">
+              <span id="category-label">صناع المحتوى</span>
+              <span id="prompt-counter">1 / 20</span>
+            </div>
+
+            <div class="prompt-body">
+              <p class="text-[10px] text-gold/60 mb-2">الأمر المهندس (Ready to Execute)</p>
+              <textarea id="prompt-output" readonly></textarea>
+            </div>
+
+            <div class="nav-arrows">
+              <button class="arrow-btn" onclick="prevPrompt()" title="السابق">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="arrow-btn arrow-btn--reverse"
+                onclick="nextPrompt()"
+                title="التالي"
+              >
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="card-footer">
+              <div class="viral-actions">
+                <button class="btn-copy" onclick="copyPrompt()" id="copy-btn">
+                  <i data-lucide="award"></i> الاستحواذ على الأمر
+                </button>
+                <button class="btn-share" onclick="shareResult()">
+                  <i data-lucide="share-2"></i> شارك النتيجة
+                </button>
+              </div>
+            </div>
+
+            <details class="ai-test-drive-accordion">
+              <summary>
+                <i data-lucide="rocket"></i>
+                <span>جرب الأمر الآن</span>
+                <i data-lucide="chevron-down"></i>
+              </summary>
+              <div class="ai-test-drive-content">
+                <span
+                  >سيتم فتح الأمر في بوابات الذكاء الاصطناعي العالمية للتنفيذ المباشر.</span
+                >
+                <div class="ai-buttons-group">
+                  <a href="https://chat.openai.com/" target="_blank" class="ai-btn chatgpt">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/chatgpt.png" alt="ChatGPT" width="20" height="20">
+                    ChatGPT
+                  </a>
+                  
+                  <a href="https://gemini.google.com/" target="_blank" class="ai-btn gemini">
+                    <img src="https://cdn.simpleicons.org/googlegemini/white" alt="Gemini" width="20" height="20">
+                    Gemini
+                  </a>
+
+                  <a href="https://claude.ai/" target="_blank" class="ai-btn claude">
+                    <img src="https://cdn.simpleicons.org/anthropic/white" alt="Claude" width="20" height="20">
+                    Claude
+                  </a>
+                </div>
+              </div>
+            </details>
+          </div>
+
+          <div class="impact-box">
+            <h4 id="impact-title">
+              <i data-lucide="trending-up"></i> التأثير الاقتصادي للأمر:
+            </h4>
+            <p id="impact-text"></p>
+          </div>
+        </section>
+      </main>
+
+      <section class="viral-loop-section">
+        <h2>انضم لرواد اقتصاد الأوامر</h2>
+        <div class="viral-grid">
+          <div class="viral-card">
+            <h3><i data-lucide="users"></i> شارك واربح</h3>
+            <p class="viral-card-text">
+              كل صديق تدعوه يمنحك "اعتمادات رقمية" لفتح أوامر أكثر ذكاءً وقوة.
+            </p>
+          </div>
+          <div class="viral-card accent-border">
+            <h3><i data-lucide="bar-chart-3"></i> تأثيرنا</h3>
+            <p class="viral-card-text">
+              أكثر من 50,000 فكرة تحولت إلى أوامر احترافية منتجة هذا الشهر عبر نظامنا.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        © 2026 أوامركم | الطريقة الجديدة للعمل في العالم العربي.
+      </footer>
+    </div>
+
+    <script src="lab/lab-script.js"></script>
+    <script>
+      // تفعيل الأيقونات بعد تحميل الصفحة
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
