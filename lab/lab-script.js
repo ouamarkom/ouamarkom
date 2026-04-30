@@ -216,7 +216,7 @@ async function generateProfessionalPrompt() {
   if (!processTransaction()) return;
 
   // 3. بدء بروتوكول الصياغة (تغيير حالة الزر)
-  btn.innerHTML = '<span class="loader"></span> جاري معالجة الفكرة الخام وتحويلها لأصل رقمي...';
+  btn.innerHTML = '<span class="loader"></span> جاري معالجة الفكرة الخام وتحويلها لأصل رقمي..';
   btn.disabled = true;
 
   try {

@@ -166,10 +166,6 @@
         display: inline-block;
         margin-bottom: 20px;
       }
-      .hero {
-        position: relative;
-        overflow: hidden;
-      }
       .hero::before {
         content: "";
         position: absolute;
@@ -225,7 +221,7 @@
         background: #7d6ee9;
       }
       .ai-engine-box h3 {
-        font-size: clamp(1.2rem, 3.5vw, 1.95rem);
+        font-size: clamp(1rem, 3.5vw, 1.95rem);
         display: inline-flex;
         align-items: center;
         gap: 0.8rem;
@@ -905,7 +901,7 @@
           font-size: 1rem;
         }
         .ai-btn-gen {
-          width: 90%;
+          width: 100%;
           max-width: 320px;
           margin: 10px auto;
           padding: 16px 20px;
@@ -1031,7 +1027,7 @@
           margin-bottom: -5px;
         }
         .cat-item {
-          padding: 9px 14px;
+          padding: 10px 15px;
           font-size: 0.82rem;
           min-width: 140px;
         }
