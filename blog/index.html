@@ -56,9 +56,10 @@
 
         .article-image-wrapper {
             width: 100%;
-            height: 220px;
+            aspect-ratio: 16 / 9;
             overflow: hidden;
             position: relative;
+            background: var(--card-bg);
         }
 
         .article-image-wrapper img {
@@ -69,7 +70,7 @@
         }
 
         .article-card:hover .article-image-wrapper img {
-            transform: scale(1.1);
+            transform: scale(1);
         }
 
         /* تعديل مكان البيانات الوصفية لتصبح عصرية */
@@ -171,12 +172,12 @@
             </div>
             <div class="article-content">
                 <div class="article-meta">
-                    <span class="article-badge" style="background: var(--gold);">رؤية 2026</span>
+                    <span class="article-badge">رؤية 2026</span>
                     <span class="read-time">قراءة في 6 دقائق</span>
                 </div>
                 <h2 class="article-title">سِيادة النوايا: "اقتصاد الأوامر" وبزوغ الرأسمالية اللغوية الجديدة</h2>
                 <p class="article-excerpt">بقلم مراد الصهيبي: لماذا ننتقل اليوم من "البرمجة بالرموز" إلى "البرمجة بالنوايا"؟ وكيف تتحول الكلمة إلى الأصل الرأسمالي الأكثر ندرة في ميزانيات الشركات...</p>
-                <a href="/blog/sovereignty-of-intent.html" class="btn-read-more" style="border-color: var(--gold); color: var(--gold);" aria-label="اقرأ مقال سيادة النوايا">اقرأ الرؤية القيادية ←</a>
+                <a href="/blog/sovereignty-of-intent.html" class="btn-read-more" aria-label="اقرأ مقال سيادة النوايا">اقرأ الرؤية القيادية ←</a>
             </div>
         </article>
         
@@ -201,7 +202,7 @@
             </div>
             <div class="article-content">
                 <div class="article-meta">
-                    <span class="article-badge" style="background: var(--gold);">سيادة رقمية</span>
+                    <span class="article-badge">سيادة رقمية</span>
                     <span class="read-time">قراءة في 8 دقائق</span>
                 </div>
                 <h2 class="article-title">الكلمة هي الكود: هندسة الأوامر كجسر للسيادة التقنية العربية</h2>
@@ -254,7 +255,7 @@
                 <a href="/blog/who-writes-prompts-owns-the-world.html" class="btn-read-more" aria-label="اقرأ المقال">امتلك زمام القوة ←</a>
             </div>
         </article>
-
+        
         <article class="article-card reveal active">
             <div class="article-image-wrapper">
                 <img src="../blog/images/future-job-prompt.webp" alt="مستقبل الوظائف في اقتصاد الأوامر">
