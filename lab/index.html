@@ -42,6 +42,14 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script>
+      window.addEventListener('load', () => {
+        const hash = window.location.hash;
+        if (hash && hash.includes('access_token')) {
+          window.location.href = "https://ouamarkom.com/lab" + hash;
+        }
+      });
+    </script>
     <link rel="stylesheet" href="/lab/lab-style.css" />
   </head>
   <body>
