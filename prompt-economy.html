@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>اقتصاد الأوامر (Prompt Economy) | طبقة التشغيل الأساسية للاقتصاد الذكي - أوامركم</title>
+    <meta name="description" content="الرؤية البنيوية الصادرة عن منصة أوامركم حول اقتصاد الأوامر: النموذج الاقتصادي الجديد الذي يتحول فيه الذكاء إلى بنية تشغيلية واللغة إلى واجهات اقتصادية لإدارة الحضارة الذكية.">
+    <meta name="keywords" content="اقتصاد الأوامر, Prompt Economy, الذكاء الاصطناعي, بنية تشغيلية, وكلاء ذكيين, أنظمة التشغيل, أوامركم">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ouamarkom.com/prompt-economy">
+    
+    <meta property="og:title" content="اقتصاد الأوامر (Prompt Economy) | طبقة التشغيل الأساسية للاقتصاد الذكي">
+    <meta property="og:description" content="العالم يتحرك لما بعد اقتصاد البرمجيات نحو نموذج جديد تصبح فيه القدرات الذكية نفسها جزءًا من البنية التشغيلية للاقتصاد.">
+    <meta property="og:image" content="https://ouamarkom.com/og-image.webp">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="أوامركم">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #040916;
+            --secondary: #0a192f;
+            --accent: #e6992d;
+            --gold: #fcd34d;
+            --text-main: #e6f1ff;
+            --text-dim: #8892b0;
+            --accent-glow: rgba(230, 153, 45, 0.2);
+            --card-radius: 20px;
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        * { 
+            box-sizing: border-box; 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'Cairo', 'Tajawal', sans-serif;
+            -webkit-tap-highlight-color: transparent; 
+        }
+        
+        body { 
+            background-color: var(--primary); 
+            color: var(--text-main); 
+            line-height: 1.7; 
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container { 
+            width: 100%; 
+            max-width: 1100px; 
+            margin: 0 auto; 
+            padding: 0 16px; 
+            position: relative;
+            z-index: 1;
+        }
+
+        h1, h2, h3 { font-weight: 700; color: var(--text-main); line-height: 1.4; }
+        p { font-weight: 400; color: var(--text-main); margin-bottom: 15px; font-size: 1rem; text-align: right; }
+
+        /* Navigation Optimization */
+        nav.container {
+            padding: 20px 4px;
+            text-align: right;
+        }
+        nav img {
+            height: 40px;
+            max-width: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 0 8px rgba(230,153,45,0.15));
+        }
+
+        /* Hero Section */
+        .pillar-hero {
+            padding: 40px 0 25px;
+            text-align: center;
+        }
+
+        .pillar-hero .icon-header {
+            width: 50px;
+            height: 50px;
+            color: var(--accent);
+            margin-bottom: 15px;
+            filter: drop-shadow(0 0 12px var(--accent-glow));
+        }
+
+        .pillar-hero h1 { 
+            font-size: clamp(1.8rem, 6vw, 3rem); 
+            line-height: 1.3; 
+            margin-bottom: 15px; 
+            font-weight: 900; 
+        }
+
+        .pillar-hero h1 span { 
+            background: linear-gradient(90deg, var(--accent), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .subtitle { 
+            font-size: clamp(1rem, 4vw, 1.25rem); 
+            color: var(--text-dim); 
+            max-width: 850px; 
+            margin: 0 auto; 
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        /* Base Section & Cards */
+        section { padding: 15px 0; }
+
+        .glass-card {
+            background: rgba(10, 25, 47, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            padding: 20px 16px;
+            border-radius: var(--card-radius);
+            transition: var(--transition);
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            color: var(--accent);
+            margin-bottom: 20px;
+            font-size: clamp(1.3rem, 5vw, 1.8rem);
+            text-align: right;
+            position: relative;
+            padding-right: 12px;
+            border-right: 4px solid var(--accent);
+            display: flex;
+            align-items: center;
+        }
+
+        .section-icon {
+            width: 22px;
+            height: 22px;
+            color: var(--accent);
+            margin-left: 8px;
+            flex-shrink: 0;
+            filter: drop-shadow(0 0 4px var(--accent-glow));
+        }
+
+        /* Lists Styling */
+        ul {
+            margin-right: 15px;
+            margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            list-style-position: outside;
+        }
+
+        ul li strong {
+            color: var(--gold);
+        }
+
+        /* Highlights & Blocks */
+        .info-highlight {
+            background: linear-gradient(135deg, rgba(230, 153, 45, 0.08), transparent);
+            border-right: 4px solid var(--gold);
+            padding: 15px;
+            border-radius: 12px;
+            margin-top: 15px;
+        }
+
+        .focus-text-block {
+            text-align: center;
+            padding: 20px 15px;
+            margin: 25px 0;
+            border-top: 1px dashed rgba(230, 153, 45, 0.2);
+            border-bottom: 1px dashed rgba(230, 153, 45, 0.2);
+            border-radius: 4px;
+        }
+
+        .focus-text-block h3 {
+            font-size: clamp(1.1rem, 4vw, 1.3rem);
+            font-weight: 800;
+            color: var(--text-main);
+        }
+
+        .focus-icon {
+            width: 36px;
+            height: 36px;
+            color: var(--gold);
+            margin: 0 auto 12px;
+            display: block;
+            filter: drop-shadow(0 0 8px rgba(252, 211, 77, 0.3));
+        }
+
+        /* Flexible Grid */
+        .custom-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .card-icon {
+            width: 32px;
+            height: 32px;
+            color: var(--accent);
+            margin-bottom: 12px;
+            display: block;
+            filter: drop-shadow(0 0 8px var(--accent-glow));
+        }
+
+        /* Comparison Table/Card Phone Fix */
+        .comp-card {
+            border: 1px solid rgba(230, 153, 45, 0.15);
+        }
+
+        .comp-header {
+            color: var(--gold);
+            font-weight: 800;
+            font-size: 1.05rem;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            padding-bottom: 12px;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .comp-row {
+            display: flex;
+            flex-direction: column; /* Stacked on mobile */
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.03);
+            font-size: 0.95rem;
+            gap: 4px;
+        }
+
+        .comp-label { color: var(--text-dim); font-size: 0.85rem; }
+        .comp-value { font-weight: 600; text-align: right; color: var(--text-main); }
+
+        /* Conversion Bar & CTA */
+        .conversion-bar {
+            background: linear-gradient(135deg, var(--secondary), rgba(4, 9, 22, 0.9));
+            border: 1px solid rgba(230, 153, 45, 0.3);
+            padding: 35px 16px;
+            border-radius: var(--card-radius);
+            text-align: center;
+            color: var(--text-main);
+            margin: 40px 0;
+            box-shadow: 0 0 30px rgba(230, 153, 45, 0.08); 
+        }
+
+        .conversion-bar p {
+            text-align: center;
+        }
+
+        .btn-main {
+            background: linear-gradient(135deg, var(--accent), #b8731b);
+            color: #fff;
+            padding: 14px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 800;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 1rem;
+            width: 100%; /* Full width on mobile for better accessibility */
+            max-width: 340px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        footer p {
+            text-align: center;
+        }
+
+        /* --- Tablet & Desktop View Enhancements --- */
+        @media (min-width: 768px) {
+            .container { padding: 0 24px; }
+            .pillar-hero { padding: 70px 0 35px; }
+            .glass-card { padding: 30px 25px; }
+            section { padding: 25px 0; }
+            p { font-size: 1.05rem; }
+            .custom-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+            .comp-row { flex-direction: row; justify-content: space-between; gap: 10px; }
+            .comp-value { text-align: left; }
+            .comp-label { font-size: 0.95rem; }
+            .conversion-bar { padding: 60px 40px; margin: 60px 0; }
+            .btn-main { width: auto; padding: 16px 40px; font-size: 1.1rem; }
+            .glass-card:hover {
+                transform: translateY(-5px);
+                border-color: rgba(230, 153, 45, 0.4);
+                box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+            }
+            .btn-main:hover { 
+                transform: scale(1.05); 
+                background: var(--gold); 
+                color: var(--primary); 
+                box-shadow: 0 15px 30px rgba(230, 153, 45, 0.2); 
+            }
+        }
+        
+        canvas#network-canvas { position: fixed; top: 0; left: 0; z-index: 0; pointer-events: none; opacity: 0.3; }
+    </style>
+</head>
+<body>
+    <canvas id="network-canvas"></canvas>
+
+    <nav class="container">
+        <a href="index.html">
+            <img src="logo.webp" alt="أوامركم">
+        </a>
+    </nav>
+
+    <main class="container">
+        <header class="pillar-hero">
+            <svg class="icon-header" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            <h1><span>اقتصاد الأوامر</span></h1>
+            <p class="subtitle">طبقة التشغيل الأساسية للاقتصاد المعتمد على الذكاء الاصطناعي</p>
+        </header>
+
+        <section class="glass-card">
+            <h2 class="section-title">
+                <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                الرؤية الأساسية
+            </h2>
+            <p>نحن ندخل مرحلة انتقال اقتصادي تاريخية. العالم يتحرك لما بعد اقتصاد البرمجيات نحو نموذج جديد تصبح فيه “القدرات الذكية” نفسها جزءًا من البنية التشغيلية للاقتصاد.</p>
+            
+            <div class="custom-grid">
+                <div class="info-highlight">
+                    <h3 style="color: var(--accent); margin-bottom: 12px; font-size: 1.05rem; font-weight: 700;">في هذا العصر الجديد، لن تُخلق القيمة الاقتصادية أساسًا عبر:</h3>
+                    <ul>
+                        <li>التنفيذ اليدوي البشري.</li>
+                        <li>كثافة العمالة والجهد الروتيني.</li>
+                        <li>واجهات البرمجيات التقليدية الثابتة.</li>
+                    </ul>
+                </div>
+
+                <div class="info-highlight" style="border-right-color: var(--accent); background: linear-gradient(135deg, rgba(230, 153, 45, 0.04), transparent);">
+                    <h3 style="color: var(--gold); margin-bottom: 12px; font-size: 1.05rem; font-weight: 700;">بل ستنشأ القيمة تدريجيًا من القدرة على:</h3>
+                    <ul>
+                        <li>تنسيق الذكاء وإدارة الأنظمة الذاتية.</li>
+                        <li>تصميم تدفقات العمل وتشغيل الوكلاء الذكيين.</li>
+                        <li>بناء طبقات القرار وإنشاء ذاكرة مؤسسية مستمرة.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="focus-text-block">
+                <svg class="focus-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l-7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22" x2="12" y2="12"></line></svg>
+                <h3>ومن هنا يظهر ما نُعرّفه باسم: اقتصاد الأوامر</h3>
+            </div>
+        </section>
+
+        <section class="glass-card">
+            <h2 class="section-title">
+                <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                ما هو اقتصاد الأوامر؟
+            </h2>
+            <p>اقتصاد الأوامر هو الإطار الاقتصادي الذي تتحول فيه الأوامر <strong>(Prompts)</strong> من مجرد تعليمات نصية عابرة إلى واجهات تشغيل وهياكل بنيوية متكاملة للأنظمة الذكية.</p>
+            <p>الأوامر لم تعد مجرد مدخلات اعتيادية لروبوتات المحادثة، بل أصبحت بمثابة بروتوكولات تنسيق معقدة، منطق تشغيل صلب، طبقات تنفيذ، أنظمة تواصل متطورة بين الوكلاء الآليين، وآليات حاسمة لتوجيه القرار وصناعة القيمة.</p>
+            
+            <div class="focus-text-block" style="border-color: rgba(230, 153, 45, 0.35);">
+                <svg class="focus-icon" style="color: var(--accent);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                <h3 style="color: var(--accent);">الأمر يصبح وحدة التنسيق الرأسمالية الجديدة</h3>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">
+                <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+                التحول: من العمل إلى التنسيق
+            </h2>
+            <p>كل حقبة اقتصادية مرت بها البشرية كانت تُعرَّف وتتحدد قيمتها التنافسية عبر محرك الإنتاج الأساسي الحاكم للسوق:</p>
+            
+            <div class="custom-grid">
+                <div class="glass-card comp-card">
+                    <div class="comp-header">تطور محركات الإنتاج والسيادة عبر التاريخ</div>
+                    <div class="comp-row"><span class="comp-label">الاقتصاد الزراعي القديم</span><span class="comp-value">الأرض والعمل الجسدي</span></div>
+                    <div class="comp-row"><span class="comp-label">الاقتصاد الصناعي الكلاسيكي</span><span class="comp-value">الآلات والمصانع الضخمة</span></div>
+                    <div class="comp-row"><span class="comp-label">اقتصاد البرمجيات الرقمي</span><span class="comp-value">الكود والبنية البرمجية الثابتة</span></div>
+                    <div class="comp-row"><span class="comp-label">اقتصاد الأوامر الحديث</span><span class="comp-value" style="color:var(--accent)">تنسيق وإدارة شبكات الذكاء</span></div>
+                </div>
+
+                <div class="glass-card" style="display: flex; flex-direction: column; justify-content: center;">
+                    <h3 style="color: var(--gold); margin-bottom: 15px; font-size: 1.1rem;">يمثل اقتصاد الأوامر انتقالًا استراتيجيًا من:</h3>
+                    <div style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px;">
+                        <svg style="width: 18px; height: 18px; color: var(--accent); flex-shrink:0; margin-top:4px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                        <p style="margin: 0; font-size: 0.95rem;">من <strong>التنفيذ البشري المباشر والمجهد</strong> إلى <strong>تنسيق المنظومات الذكية الفائقة</strong>.</p>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 10px;">
+                        <svg style="width: 18px; height: 18px; color: var(--accent); flex-shrink:0; margin-top:4px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                        <p style="margin: 0; font-size: 0.95rem;">من <strong>الإدارة التقليدية للموظفين</strong> إلى <strong>قيادة وهندسة شبكات الذكاء المتكاملة</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="custom-grid">
+            <div class="glass-card">
+                <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                <h3 style="color: var(--accent); margin-bottom: 12px; font-size: 1.15rem;">ظهور المؤسسات المولودة بالذكاء الاصطناعي</h3>
+                <p>الجيل القادم من الشركات الرائدة لن يكتفي بمجرد استخدام تقليدي عابر لأدوات AI. بل سيتم تصميمه وهندسته بالكامل حول: الوكلاء الذكيين، أنظمة الذاكرة التراكمية، تنسيق تدفقات العمل المتقدمة، البنية التحتية للقرار، وطبقات التنسيق البنيوية.</p>
+                <div class="focus-text-block" style="margin: 15px 0 0; padding: 12px; border-color: rgba(255,255,255,0.05);">
+                    <h3 style="font-size: 1rem; color: var(--gold);">وفي هذا العالم، تصبح الشركة نفسها: نظام تشغيل ذكي</h3>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                <h3 style="color: var(--accent); margin-bottom: 12px; font-size: 1.15rem;">الأصول الاستراتيجية الجديدة</h3>
+                <p>في اقتصاد الأوامر، لم تعد الأصول الأكثر قيمة للشركات والمستثمرين تقتصر على الكود البرمجي الثابت أو البيانات الخام المعزولة. بل تصبح الأصول التشغيلية الحقيقية هي: هياكل تدفقات العمل، أنظمة الوكلاء الذاتية، خرائط الذاكرة، بروتوكولات التنسيق المشترك، وطبقات الذكاء التشغيلي.</p>
+                <p style="color: var(--gold); font-weight: 600; font-size: 0.95rem; margin-top: 10px;">وهذا التموضع يخلق فئة غير مسبوقة من الروافع الاقتصادية والمالية عالية الكفاءة.</p>
+            </div>
+        </section>
+
+        <section class="glass-card">
+            <h2 class="section-title">
+                <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                لماذا هذا التحول مهم؟
+            </h2>
+            <p>القيمة الاقتصادية الكبرى وموازين القوى الاستثمارية تنتقل بسرعة فائقة نحو: التنسيق الفكري، الاعتمادية التشغيلية، إدارة الأنظمة الشاملة، الذاكرة المؤسسية المترابطة، والبنية التحتية للذكاء المؤسسي المستدام.</p>
+            <p>الفائزون الحقيقيون في العقد القادم لن يكونوا فقط من يقتصر عملهم على بناء واجهات وتطبيقات AI السطحية العابرة، بل من يمتلكون الريادة لبناء: <strong>أنظمة التشغيل المتكاملة للاقتصاد القائم والمدفوع بالذكاء</strong>.</p>
+            
+            <div class="info-highlight" style="margin-top: 25px; background: linear-gradient(135deg, rgba(252, 211, 77, 0.05), transparent);">
+                <h3 style="color: var(--gold); margin-bottom: 12px; font-size: 1.1rem; font-weight: 700;">الدور البشري الإستراتيجي الجديد</h3>
+                <p>في معادلة اقتصاد الأوامر، لا يختفي المكون الإنساني، بل يتسامى ويتطور دوره بشكل محوري وقيادي ليتركز في: <strong>تصميم البنيات الكلية، توجيه وتدريب الذكاء الاصطناعي، صياغة المنطق التشغيلي، تحديد الغايات والأهداف الإستراتيجية، والإشراف السيادي على دقة المخرجات.</strong></p>
+                
+                <div class="focus-text-block" style="border: none; margin: 15px 0 0; padding: 10px 0 0;">
+                    <h3 style="font-size: 1.05rem; color: var(--text-main);">وتصبح المهارة الفائقة والمطلوبة مستقبلاً هي:</h3>
+                    <h3 style="font-size: 1.15rem; color: var(--accent); margin-top: 5px;">القدرة الفكرية على تحويل الذكاء إلى أنظمة اقتصادية تشغيلية قابلة للتوسع اللانهائي</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="glass-card" style="text-align: center;">
+            <p style="text-align: center; font-size: 1.05rem; max-width: 950px; margin: 0 auto 15px;">
+                إن اقتصاد الأوامر ليس مجرد صيحة تقنية أو اتجاه عابر في قطاع الأعمال؛ بل هو بزوغ طبقة بنية تحتية اقتصادية سيادية جديدة كلياً ستشكل وتدير عصب الاقتصاد العالمي المعتمد على الذكاء الاصطناعي.
+            </p>
+            <p style="text-align: center; font-size: 1.05rem; max-width: 950px; margin: 0 auto; color: var(--gold); font-weight: 600;">
+                في هذا الأفق القريب، لن تعامل الأوامر البرومبت كمدخلات نصية مبسطة، بل ستصبح هي الواجهات الاقتصادية الأساسية، بروتوكولات التشغيل السيادية، وآليات التنسيق المباشرة لبناء صرح الحضارة الذكية.
+            </p>
+        </section>
+
+        <section class="conversion-bar">
+            <svg style="width: 40px; height: 40px; color: var(--gold); margin: 0 auto 15px; display: block; filter: drop-shadow(0 0 8px rgba(252,211,77,0.3));" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="M12 6v6l4 2"></path></svg>
+            <h2 style="font-size: clamp(1.4rem, 5vw, 2.2rem); font-weight: 900; line-height: 1.3; color: var(--text-main);">الخلاصة النهائية من منصة أوامركم</h2>
+            
+            <p style="opacity: 0.95; margin-top: 15px; font-size: 1.05rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+                إن ثورة الذكاء الاصطناعي الحقيقية ليست مجرد أدوات لتوليد النصوص أو الصور، بل هي <strong>إعادة هندسة وصياغة جذرية لكيفية عمل المنظومة الاقتصادية بأكملها.</strong> ويمثل اقتصاد الأوامر القادم الانتقال التاريخي الأكبر من عقلية البرمجيات كأداة تنفيذية مساعدة، إلى عقلية الذكاء الاصطناعي كبنية تحتية تشغيلية سيادية.
+            </p>
+            
+            <p style="color: var(--gold); font-weight: 700; margin-top: 15px; font-size: 1.05rem; max-width: 850px; margin-left: auto; margin-right: auto;">
+                ومن يستوعب أبعاد هذا التحول البنيوي مبكراً ويمتلك زمام المبادرة... لن يكتفي ببناء منتجات وواجهات ذكاء اصطناعي اعتيادية، بل سيساهم بشكل مباشر في تصميم وبناء أنظمة التشغيل الأساسية للاقتصاد العالمي القادم.
+            </p>
+            
+            <a href="https://ouamarkom.com/#register" class="btn-main">احجز مكانك في القائمة الذهبية</a>
+        </section>
+    </main>
+
+    <footer style="padding: 40px 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); margin-top: 25px; position: relative; z-index: 1;">
+        <img src="logo.webp" alt="أوامركم" style="height: 35px; margin-bottom: 12px; opacity: 0.8; object-fit: contain;">
+        <p style="font-weight: 600; opacity: 0.5; font-size: 0.8rem;">© 2026 أوامركم | المرجع العربي الأول والمؤسس للبنية التشغيلية لاقتصاد الأوامر (Prompt Economy)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

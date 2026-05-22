@@ -228,3 +228,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }, { passive: true });
     }
 });
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('section, .glass-card').forEach((el) => {
+    el.classList.add('reveal');
+    observer.observe(el);
+});
