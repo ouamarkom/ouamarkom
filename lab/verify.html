@@ -2,50 +2,47 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>تفعيل الحساب...</title>
+    <title>جارٍ تفعيل حسابك...</title>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
     <div style="text-align: center; margin-top: 50px; font-family: sans-serif;">
-        <p id="status">جاري الاتصال بـ سوبابيز...</p>
+        <p id="status">جاري تفعيل حسابك، يرجى الانتظار...</p>
     </div>
 
-    <script type="module">
-        import { SB_URL, SB_KEY } from './config.js';
+    <script>
+        // إعداداتك مباشرة هنا لتجنب مشاكل الـ Import
+        const SB_URL = "https://zadvakjxcnafarpsfbed.supabase.co";
+        const SB_KEY = "sb_publishable_2WtEI98eClB2duklIMEMbg_uGM29Mem";
         
         const statusEl = document.getElementById('status');
         
         async function verify() {
             try {
-                const supabase = supabase.createClient(SB_URL, SB_KEY);
+                const supabaseClient = supabase.createClient(SB_URL, SB_KEY);
                 const urlParams = new URLSearchParams(window.location.search);
                 const token = urlParams.get('token');
                 
                 if (!token) {
-                    statusEl.innerText = "خطأ: لا يوجد رمز تفعيل (Token) في الرابط.";
+                    statusEl.innerText = "خطأ: لا يوجد رمز تفعيل.";
                     return;
                 }
 
-                statusEl.innerText = "جاري التحقق من الرمز...";
-
-                const { data, error } = await supabase.auth.verifyOtp({
+                const { data, error } = await supabaseClient.auth.verifyOtp({
                     token_hash: token,
                     type: 'signup'
                 });
 
                 if (error) {
-                    statusEl.innerText = "خطأ في التفعيل: " + error.message;
-                    console.error("Supabase Error:", error);
+                    statusEl.innerText = "خطأ: " + error.message;
                 } else {
-                    statusEl.innerText = "تم التفعيل بنجاح! جاري تحويلك...";
+                    statusEl.innerText = "تم التفعيل! سيتم تحويلك الآن...";
                     window.location.href = 'https://ouamarkom.com/lab/';
                 }
             } catch (err) {
-                statusEl.innerText = "حدث خطأ غير متوقع: " + err.message;
-                console.error("General Error:", err);
+                statusEl.innerText = "خطأ غير متوقع.";
             }
         }
-        
         verify();
     </script>
 </body>
