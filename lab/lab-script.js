@@ -8,14 +8,6 @@ const supabaseAI = supabase.createClient(OLD_SB_URL, OLD_SB_KEY, {
     auth: { persistSession: false, autoRefreshToken: false },
 });
 
-window.addEventListener('DOMContentLoaded', async () => {
-    const hash = window.location.hash;
-    if (hash && hash.includes('access_token')) {
-        console.log("تم الوصول للمختبر، جارٍ معالجة التوكن...");
-    }
-    await checkUserSession();
-});
-
 let currentRawPrompt = "";
 let currentUser = null; 
 let userCredits = 0; 
