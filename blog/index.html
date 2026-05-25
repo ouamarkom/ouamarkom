@@ -9,7 +9,6 @@
     <title>مدونة أوامركم | بوابتك لاحتراف هندسة الأوامر واقتصاد المستقبل</title>
     <meta name="description" content="استكشف مقالات حصرية حول هندسة الأوامر (Prompt Engineering)، اقتصاد الأوامر 2026، ومستقبل الذكاء الاصطناعي بالعربي. تعلم كيف تقود الثورة التقنية القادمة.">
     <meta name="keywords" content="هندسة الأوامر, برومبت, ذكاء اصطناعي, اقتصاد الأوامر, أوامركم, تعلم الذكاء الاصطناعي, Prompt Engineering Arabic">
-    <link rel="canonical" href="https://ouamarkom.com/blog" />
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ouamarkom.com/blog">
@@ -29,6 +28,35 @@
         .blog-header {
             padding: 100px 20px 60px;
             text-align: center;
+        }
+
+        /* تنسيقات قسم فلترة المقالات */
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            padding: 0 20px;
+        }
+
+        .filter-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(230, 153, 45, 0.3);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--accent);
+            color: #0a192f;
+            border-color: var(--accent);
+            box-shadow: 0 4px 15px rgba(230, 153, 45, 0.3);
         }
 
         .blog-grid {
@@ -70,10 +98,9 @@
         }
 
         .article-card:hover .article-image-wrapper img {
-            transform: scale(1);
+            transform: scale(1.05);
         }
 
-        /* تعديل مكان البيانات الوصفية لتصبح عصرية */
         .article-meta {
             display: flex;
             justify-content: space-between;
@@ -144,8 +171,14 @@
             transition: 0.3s;
         }
 
+        /* لضمان التجاوب الفائق على الهواتف */
         @media (max-width: 768px) {
             .blog-grid { grid-template-columns: 1fr; gap: 30px; }
+        }
+
+        @media (max-width: 600px) {
+            .filter-container { gap: 10px; margin-bottom: 30px; }
+            .filter-btn { padding: 8px 16px; font-size: 0.85rem; }
         }
     </style>
 </head>
@@ -164,202 +197,284 @@
         <p class="subtitle reveal active">دليلك المعرفي لاحتراف هندسة الأوامر واقتصاد المستقبل</p>
     </header>
 
+    <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">الكل</button>
+        <button class="filter-btn" data-filter="رؤية">رؤى مستقبلية</button>
+        <button class="filter-btn" data-filter="عملي">دليل عملي</button>
+        <button class="filter-btn" data-filter="اقتصاد">اقتصاد الأوامر</button>
+    </div>
+
     <div class="blog-grid">
         
-        <article class="article-card reveal active featured-article">
-            <div class="article-image-wrapper">
-                <img src="../blog/images/sovereignty-of-intent.webp" alt="سِيادة النوايا واقتصاد الأوامر بقلم مراد الصهيبي">
+    <article class="article-card reveal active featured-article" data-category="اقتصاد">
+        <div class="article-image-wrapper">
+            <img src="../blog/images/future-economy.webp" alt="تمثيل بصري لمستقبل الوظائف واقتصاد الأوامر في عام 2026">
+        </div>
+        <div class="article-content">
+            <div class="article-meta">
+                <span class="article-badge">اقتصاد</span>
+                <span class="read-time">قراءة في 4 دقائق</span>
             </div>
-            <div class="article-content">
-                <div class="article-meta">
-                    <span class="article-badge">رؤية 2026</span>
-                    <span class="read-time">قراءة في 6 دقائق</span>
-                </div>
-                <h2 class="article-title">سِيادة النوايا: "اقتصاد الأوامر" وبزوغ الرأسمالية اللغوية الجديدة</h2>
-                <p class="article-excerpt">بقلم مراد الصهيبي: لماذا ننتقل اليوم من "البرمجة بالرموز" إلى "البرمجة بالنوايا"؟ وكيف تتحول الكلمة إلى الأصل الرأسمالي الأكثر ندرة في ميزانيات الشركات...</p>
-                <a href="/blog/sovereignty-of-intent.html" class="btn-read-more" aria-label="اقرأ مقال سيادة النوايا">اقرأ الرؤية القيادية ←</a>
-            </div>
-        </article>
-        
-        <article class="article-card reveal active">
-            <div class="article-image-wrapper">
-                <img src="../blog/images/future-economy.webp" alt="تمثيل بصري لمستقبل الوظائف واقتصاد الأوامر في عام 2026">
-            </div>
-            <div class="article-content">
-                <div class="article-meta">
-                    <span class="article-badge">اقتصاد</span>
-                    <span class="read-time">قراءة في 4 دقائق</span>
-                </div>
-                <h2 class="article-title">ما هو اقتصاد الأوامر وكيف سيغير سوق العمل في 2026؟</h2>
-                <p class="article-excerpt">استكشف كيف ستصبح "البرومبتات" هي العملة الجديدة في سوق العمل، ولماذا تتسابق الشركات لتوظيف خبراء الذكاء الاصطناعي...</p>
-                <a href="/blog/future-economy.html" class="btn-read-more" aria-label="اقرأ المقال الكامل عن اقتصاد الأوامر 2026">اقرأ المقال الكامل ←</a>
-            </div>
-        </article>
+            <h2 class="article-title">ما هو اقتصاد الأوامر وكيف سيغير سوق العمل في 2026؟</h2>
+            <p class="article-excerpt">استكشف كيف ستصبح "البرومبتات" هي العملة الجديدة في سوق العمل، ولماذا تتسابق الشركات لتوظيف خبراء الذكاء الاصطناعي...</p>
+            <a href="/blog/future-economy.html" class="btn-read-more" aria-label="اقرأ المقال">افهم قواعد اللعبة الجديدة ←</a>
+        </div>
+    </article>
 
-        <article class="article-card reveal active">
-            <div class="article-image-wrapper">
-                <img src="../blog/images/word-is-the-code.webp" alt="هندسة الأوامر كجسر للسيادة التقنية العربية">
+    <article class="article-card reveal active" data-category="رؤية">
+        <div class="article-image-wrapper">
+            <img src="../blog/images/why-arabic-ai.webp" alt="تداخل الخط العربي التقليدي مع الدوائر الإلكترونية والذكاء الاصطناعي">
+        </div>
+        <div class="article-content">
+            <div class="article-meta">
+                <span class="article-badge">رؤية</span>
+                <span class="read-time">قراءة في 3 دقائق</span>
             </div>
-            <div class="article-content">
-                <div class="article-meta">
-                    <span class="article-badge">سيادة رقمية</span>
-                    <span class="read-time">قراءة في 8 دقائق</span>
-                </div>
-                <h2 class="article-title">الكلمة هي الكود: هندسة الأوامر كجسر للسيادة التقنية العربية</h2>
-                <p class="article-excerpt">بقلم مراد الصهيبي: اكتشف كيف تتحول اللغة العربية من وعاء للأدب إلى أداة برمجية سيادية، وكيف نمتلك ميزة تنافسية في اقتصاد المعرفة العالمي...</p>
-                <a href="/blog/word-is-the-code.html" class="btn-read-more" aria-label="اقرأ مقال الكلمة هي الكود">اقرأ المقال الاستراتيجي ←</a>
-            </div>
-        </article>
+            <h2 class="article-title">لماذا يحتاج العرب لمنصة متخصصة في هندسة الأوامر؟</h2>
+            <p class="article-excerpt">التحديات اللغوية والثقافية في الذكاء الاصطناعي تتطلب حلولاً عربية المنشأ. اكتشف كيف تسد "أوامركم" هذه الفجوة...</p>
+            <a href="/blog/why-arabic-ai.html" class="btn-read-more" aria-label="اقرأ المقال">اكتشف الضرورة الاستراتيجية ←</a>
+        </div>
+    </article>
 
-        <article class="article-card reveal active">
-            <div class="article-image-wrapper">
-                <img src="../blog/images/command-economy-revolution.webp" alt="اقتصاد الأوامر وإعادة توزيع القوة العالمية">
+    <article class="article-card reveal active" data-category="اقتصاد">
+        <div class="article-image-wrapper">
+            <img src="../blog/images/work-evolution-prompt.webp" alt="بداية عصر الأوامر">
+        </div>
+        <div class="article-content">
+            <div class="article-meta">
+                <span class="article-badge">تحول جذري</span>
+                <span class="read-time">قراءة في 10 دقائق</span>
             </div>
-            <div class="article-content">
-                <div class="article-meta">
-                    <span class="article-badge">الثورة الخفية</span>
-                    <span class="read-time">قراءة في 8 دقائق</span>
-                </div>
-                <h2 class="article-title">اقتصاد الأوامر: الثورة الخفية التي ستعيد توزيع القوة في العالم</h2>
-                <p class="article-excerpt">هل يمكن لفرد واحد أن ينافس مؤسسات كبرى؟ اكتشف كيف يعيد اقتصاد الأوامر تعريف "وسائل الإنتاج" ويحول اللغة إلى قوة اقتصادية لا تُقهر.</p>
-                <a href="/blog/hidden-revolution-command-economy.html" class="btn-read-more" aria-label="اقرأ المقال">اكشف الثورة الخفية ←</a>
-            </div>
-        </article>
+            <h2 class="article-title">لم يعد العمل كما تعرفه: عصر الأوامر بدأ الآن</h2>
+            <p class="article-excerpt">لماذا لم يعد الجهد البدني والوقت مقياساً للإنتاج؟ اكتشف كيف تتحول الوظيفة إلى "لغة تشغيل" وكيف تصمم أنظمة تعمل بالنيابة عنك في 2026.</p>
+            <a href="/blog/work-evolution-prompt-era.html" class="btn-read-more" aria-label="اقرأ المقال">ادخل عصر الأوامر ←</a>
+        </div>
+    </article>
 
-        <article class="article-card reveal active">
-            <div class="article-image-wrapper">
-                <img src="../blog/images/ai-direction-skill.webp" alt="توجيه الذكاء الاصطناعي">
+    <article class="article-card reveal active" data-category="رؤية">
+        <div class="article-image-wrapper">
+            <img src="../blog/images/sovereignty-of-intent.webp" alt="سِيادة النوايا واقتصاد الأوامر بقلم مراد الصهيبي">
+        </div>
+        <div class="article-content">
+            <div class="article-meta">
+                <span class="article-badge">رؤية 2026</span>
+                <span class="read-time">قراءة في 6 دقائق</span>
             </div>
-            <div class="article-content">
-                <div class="article-meta">
-                    <span class="article-badge">المهارة الأهم</span>
-                    <span class="read-time">قراءة في 7 دقائق</span>
-                </div>
-                <h2 class="article-title">لماذا توجيه الذكاء الاصطناعي هو أهم مهارة في القرن 21؟</h2>
-                <p class="article-excerpt">اكتشف الفرق الجوهري بين "استخدام الأدوات" و"توجيه الأنظمة"، وكيف تصبح القوة في يد من يعرف كيف يقود الذكاء الاصطناعي وليس من يعمل أكثر.</p>
-                <a href="/blog/ai-direction-the-essential-skill.html" class="btn-read-more" aria-label="اقرأ المقال">أتقن المهارة الآن ←</a>
-            </div>
-        </article>
+            <h2 class="article-title">سِيادة النوايا: "اقتصاد الأوامر" وبزوغ الرأسمالية اللغوية الجديدة</h2>
+            <p class="article-excerpt">بقلم مراد الصهيبي: لماذا ننتقل اليوم من "البرمجة بالرموز" إلى "البرمجة بالنوايا"？ وكيف تتحول الكلمة إلى الأصل الرأسمالي الأكثر ندرة...</p>
+            <a href="/blog/sovereignty-of-intent.html" class="btn-read-more" aria-label="اقرأ المقال">استوعب فلسفة السيادة ←</a>
+        </div>
+    </article>
 
-        <article class="article-card reveal active">
-            <div class="article-image-wrapper">
-                <img src="../blog/images/who-writes-prompts.webp" alt="من يكتب الأوامر يملك العالم">
+    <article class="article-card reveal active" data-category="رؤية">
+        <div class="article-image-wrapper">
+            <img src="../blog/images/word-is-the-code.webp" alt="هندسة الأوامر كجسر للسيادة التقنية العربية">
+        </div>
+        <div class="article-content">
+            <div class="article-meta">
+                <span class="article-badge">سيادة رقمية</span>
+                <span class="read-time">قراءة في 8 دقائق</span>
             </div>
-            <div class="article-content">
-                <div class="article-meta">
-                    <span class="article-badge">سيادة اقتصادية</span>
-                    <span class="read-time">قراءة في 9 دقائق</span>
-                </div>
-                <h2 class="article-title">من يكتب الأوامر يملك العالم: داخل الثورة الاقتصادية الجديدة</h2>
-                <p class="article-excerpt">لم يعد المال أو المصانع هم محرك العالم الوحيد. اكتشف كيف أصبحت "الكلمة" هي الوحدة الأساسية الجديدة للقوة الاقتصادية والنفوذ العالمي.</p>
-                <a href="/blog/who-writes-prompts-owns-the-world.html" class="btn-read-more" aria-label="اقرأ المقال">امتلك زمام القوة ←</a>
-            </div>
-        </article>
-        
-        <article class="article-card reveal active">
-            <div class="article-image-wrapper">
-                <img src="../blog/images/future-job-prompt.webp" alt="مستقبل الوظائف في اقتصاد الأوامر">
-            </div>
-            <div class="article-content">
-                <div class="article-meta">
-                    <span class="article-badge">مستقبل العمل</span>
-                    <span class="read-time">قراءة في 7 دقائق</span>
-                </div>
-                <h2 class="article-title">وظيفتك القادمة قد تُختصر في أمر واحد: داخل اقتصاد الأوامر</h2>
-                <p class="article-excerpt">لماذا يتحول الموظف من منفذ مهام إلى مشغل أنظمة؟ اكتشف كيف يمكن لأمر واحد متقن أن يعوض عمل فريق كامل ويعيد تعريف مسارك المهني.</p>
-                <a href="/blog/future-job-single-prompt.html" class="btn-read-more" aria-label="اقرأ المقال">صمم وظيفتك القادمة ←</a>
-            </div>
-        </article>
+            <h2 class="article-title">الكلمة هي الكود: هندسة الأوامر كجسر للسيادة التقنية العربية</h2>
+            <p class="article-excerpt">بقلم مراد الصهيبي: اكتشف كيف تتحول اللغة العربية من وعاء للأدب إلى أداة برمجية سيادية، وكيف نمتلك ميزة تنافسية في اقتصاد المعرفة العالمي...</p>
+            <a href="/blog/word-is-the-code.html" class="btn-read-more" aria-label="اقرأ المقال">عزز السيادة التقنية ←</a>
+        </div>
+    </article>
 
-        <article class="article-card reveal active">
-            <div class="article-image-wrapper">
-                <img src="../blog/images/reshape-markets.webp" alt="إعادة تشكيل الأسواق والشركات">
+    <article class="article-card reveal active" data-category="اقتصاد">
+        <div class="article-image-wrapper">
+            <img src="../blog/images/ai-operating-layer.webp" alt="العالم يمتلك ذكاءً اصطناعيًا قويًا.. لكنه لا يمتلك نظام تشغيل لهذا الذكاء">
+        </div>
+        <div class="article-content">
+            <div class="article-meta">
+                <span class="article-badge">بنية تحتية</span>
+                <span class="read-time">قراءة في 11 دقيقة</span>
             </div>
-            <div class="article-content">
-                <div class="article-meta">
-                    <span class="article-badge">تحول الأسواق</span>
-                    <span class="read-time">قراءة في 8 دقائق</span>
-                </div>
-                <h2 class="article-title">الاقتصاد الجديد بدأ بالفعل: كيف تعيد الأوامر تشكيل الشركات والأسواق</h2>
-                <p class="article-excerpt">اكتشف كيف يتحول التفكير الإداري إلى "تصميم أوامر"، وكيف تمكن الأنظمة الذكية الشركات الصغيرة من سحق المنافسين الكبار عبر هندسة الإنتاج.</p>
-                <a href="/blog/how-prompts-reshape-markets.html" class="btn-read-more" aria-label="اقرأ المقال">غير قواعد اللعبة ←</a>
-            </div>
-        </article>
+            <h2 class="article-title">العالم يمتلك ذكاءً اصطناعيًا قويًا.. لكنه لا يمتلك نظام تشغيل لهذا الذكاء</h2>
+            <p class="article-excerpt">لماذا يواجه قطاع الأعمال أزمة تشغيل رغم قوة النماذج الحالية؟ اكتشف كيف يتدخل اقتصاد الأوامر لبناء طبقة البنية التحتية المفقودة.</p>
+            <a href="/blog/ai-operating-layer-command-economy.html" class="btn-read-more" aria-label="اقرأ المقال">تعرّف على البنية التحتية ←</a>
+        </div>
+    </article>
 
-        <article class="article-card reveal active">
-            <div class="article-image-wrapper">
-                <img src="../blog/images/work-evolution-prompt.webp" alt="بداية عصر الأوامر">
+    <article class="article-card reveal active" data-category="رؤية">
+        <div class="article-image-wrapper">
+            <img src="../blog/images/language-as-an-economy-operating-system.webp" alt="اقتصاد الأوامر: عندما تصبح اللغة نظام تشغيل للاقتصاد">
+        </div>
+        <div class="article-content">
+            <div class="article-meta">
+                <span class="article-badge">فلسفة اقتصادية</span>
+                <span class="read-time">قراءة في 12 دقيقة</span>
             </div>
-            <div class="article-content">
-                <div class="article-meta">
-                    <span class="article-badge">تحول جذري</span>
-                    <span class="read-time">قراءة في 10 دقائق</span>
-                </div>
-                <h2 class="article-title">لم يعد العمل كما تعرفه: عصر الأوامر بدأ الآن</h2>
-                <p class="article-excerpt">لماذا لم يعد الجهد البدني والوقت مقياساً للإنتاج؟ اكتشف كيف تتحول الوظيفة إلى "لغة تشغيل" وكيف تصمم أنظمة تعمل بالنيابة عنك في 2026.</p>
-                <a href="/blog/work-evolution-prompt-era.html" class="btn-read-more" aria-label="اقرأ المقال">ادخل عصر الأوامر ←</a>
-            </div>
-        </article>
+            <h2 class="article-title">اقتصاد الأوامر: عندما تصبح اللغة نظام تشغيل للاقتصاد</h2>
+            <p class="article-excerpt">كيف تتحول الكلمات من وسيلة تواصل إلى لغة برمجة وبنية تشغيلية للاقتصاد العالمي؟ اكتشف كيف يعيد اقتصاد الأوامر تعريف المنظومة المؤسسية.</p>
+            <a href="/blog/language-as-an-economy-operating-system.html" class="btn-read-more" aria-label="اقرأ المقال">حلل النظام الاقتصادي ←</a>
+        </div>
+    </article>
 
-        <article class="article-card reveal active">
-            <div class="article-image-wrapper">
-                <img src="../blog/images/arabic-prompt-engineering.webp" alt="هندسة الأوامر باللغة العربية والتحديات التقنية">
+    <article class="article-card reveal active" data-category="اقتصاد">
+        <div class="article-image-wrapper">
+            <img src="../blog/images/command-economy-revolution.webp" alt="اقتصاد الأوامر وإعادة توزيع القوة العالمية">
+        </div>
+        <div class="article-content">
+            <div class="article-meta">
+                <span class="article-badge">الثورة الخفية</span>
+                <span class="read-time">قراءة في 8 دقائق</span>
             </div>
-            <div class="article-content">
-                <div class="article-meta">
-                    <span class="article-badge">تقني</span>
-                    <span class="read-time">قراءة في 7 دقائق</span>
-                </div>
-                <h2 class="article-title">هندسة الأوامر باللغة العربية: التحديات والفرص في 2026</h2>
-                <p class="article-excerpt">لماذا يصعب هندسة الأوامر بالعربية؟ اكتشف كيف نتجاوز في "أوامركم" فجوة البيانات لنصنع ذكاءً اصطناعياً يفهم روح لغتنا وثقافتنا بعمق...</p>
-                <a href="/blog/arabic-prompt-engineering.html" class="btn-read-more" aria-label="اقرأ المقال عن هندسة الأوامر بالعربية">اقرأ التحليل التقني ←</a>
-            </div>
-        </article>
+            <h2 class="article-title">اقتصاد الأوامر: الثورة الخفية التي ستعيد توزيع القوة في العالم</h2>
+            <p class="article-excerpt">هل يمكن لفرد واحد أن ينافس مؤسسات كبرى؟ اكتشف كيف يعيد اقتصاد الأوامر تعريف "وسائل الإنتاج" ويحول اللغة إلى قوة اقتصادية لا تُقهر.</p>
+            <a href="/blog/hidden-revolution-command-economy.html" class="btn-read-more" aria-label="اقرأ المقال">اكشف الثورة الخفية ←</a>
+        </div>
+    </article>
 
-        <article class="article-card reveal active">
-            <div class="article-image-wrapper">
-                <img src="../blog/images/prompt-secrets.webp" alt="رسم توضيحي لتقنيات كتابة الأوامر الاحترافية للذكاء الاصطناعي">
+    <article class="article-card reveal active" data-category="عملي">
+        <div class="article-image-wrapper">
+            <img src="../blog/images/prompt-secrets.webp" alt="رسم توضيحي لتقنيات كتابة الأوامر الاحترافية للذكاء الاصطناعي">
+        </div>
+        <div class="article-content">
+            <div class="article-meta">
+                <span class="article-badge">تعليمي</span>
+                <span class="read-time">قراءة في 5 دقائق</span>
             </div>
-            <div class="article-content">
-                <div class="article-meta">
-                    <span class="article-badge">تعليمي</span>
-                    <span class="read-time">قراءة في 5 دقائق</span>
-                </div>
-                <h2 class="article-title">5 أسرار لكتابة برومبت يحاكي ذكاء البشر</h2>
-                <p class="article-excerpt">هل تحصل على نتائج عادية؟ تعلم التقنيات النفسية والبرمجية لتحويل ChatGPT إلى خبير متخصص ينفذ مهامك بدقة احترافية...</p>
-                <a href="/blog/prompt-secrets.html" class="btn-read-more" aria-label="اقرأ المقال الكامل عن أسرار كتابة البرومبت">اقرأ الأسرار الخمسة ←</a>
-            </div>
-        </article>
+            <h2 class="article-title">5 أسرار لكتابة برومبت يحاكي ذكاء البشر</h2>
+            <p class="article-excerpt">هل تحصل على نتائج عادية؟ تعلم التقنيات النفسية والبرمجية لتحويل ChatGPT إلى خبير متخصص ينفذ مهامك بدقة احترافية...</p>
+            <a href="/blog/prompt-secrets.html" class="btn-read-more" aria-label="اقرأ المقال">أتقن الأسرار الخمسة ←</a>
+        </div>
+    </article>
 
-        <article class="article-card reveal active">
-            <div class="article-image-wrapper">
-                <img src="../blog/images/arabic-digital-sovereignty.webp" alt="اقتصاد الأوامر والسيادة الرقمية للشباب العربي">
+    <article class="article-card reveal active" data-category="عملي">
+        <div class="article-image-wrapper">
+            <img src="../blog/images/ai-direction-skill.webp" alt="توجيه الذكاء الاصطناعي">
+        </div>
+        <div class="article-content">
+            <div class="article-meta">
+                <span class="article-badge">المهارة الأهم</span>
+                <span class="read-time">قراءة في 7 دقائق</span>
             </div>
-            <div class="article-content">
-                <div class="article-meta">
-                    <span class="article-badge">النفط الجديد</span>
-                    <span class="read-time">قراءة في 6 دقائق</span>
-                </div>
-                <h2 class="article-title">اقتصاد الأوامر: لماذا هو "النفط الجديد" للشباب العربي؟</h2>
-                <p class="article-excerpt">هل تدرك أن الثروة القادمة لا تخرج من باطن الأرض، بل من أطراف أصابعك؟ اكتشف كيف يغير اقتصاد الأوامر مفهوم العمل والرزق في 2026.</p>
-                <a href="/blog/command-economy-the-new-oil.html" class="btn-read-more" aria-label="اقرأ المقال">اقرأ المزيد ←</a>
+            <h2 class="article-title">لماذا توجيه الذكاء الاصطناعي هو أهم مهارة في القرن 21؟</h2>
+            <p class="article-excerpt">اكتشف الفرق الجوهري بين "استخدام الأدوات" و"توجيه الأنظمة"، وكيف تصبح القوة في يد من يعرف كيف يقود الذكاء الاصطناعي.</p>
+            <a href="/blog/ai-direction-the-essential-skill.html" class="btn-read-more" aria-label="اقرأ المقال">أتقن مهارة القيادة ←</a>
+        </div>
+    </article>
+
+    <article class="article-card reveal active" data-category="رؤية">
+        <div class="article-image-wrapper">
+            <img src="../blog/images/who-writes-prompts.webp" alt="من يكتب الأوامر يملك العالم">
+        </div>
+        <div class="article-content">
+            <div class="article-meta">
+                <span class="article-badge">سيادة اقتصادية</span>
+                <span class="read-time">قراءة في 9 دقائق</span>
             </div>
-        </article>
-        
-        <article class="article-card reveal active">
-            <div class="article-image-wrapper">
-                <img src="../blog/images/why-arabic-ai.webp" alt="تداخل الخط العربي التقليدي مع الدوائر الإلكترونية والذكاء الاصطناعي">
+            <h2 class="article-title">من يكتب الأوامر يملك العالم: داخل الثورة الاقتصادية الجديدة</h2>
+            <p class="article-excerpt">لم يعد المال أو المصانع هم محرك العالم الوحيد. اكتشف كيف أصبحت "الكلمة" هي الوحدة الأساسية الجديدة للقوة الاقتصادية والنفوذ العالمي.</p>
+            <a href="/blog/who-writes-prompts-owns-the-world.html" class="btn-read-more" aria-label="اقرأ المقال">امتلك زمام القوة ←</a>
+        </div>
+    </article>
+
+    <article class="article-card reveal active" data-category="اقتصاد">
+        <div class="article-image-wrapper">
+            <img src="../blog/images/future-job-prompt.webp" alt="مستقبل الوظائف في اقتصاد الأوامر">
+        </div>
+        <div class="article-content">
+            <div class="article-meta">
+                <span class="article-badge">مستقبل العمل</span>
+                <span class="read-time">قراءة في 7 دقائق</span>
             </div>
-            <div class="article-content">
-                <div class="article-meta">
-                    <span class="article-badge">رؤية</span>
-                    <span class="read-time">قراءة في 3 دقائق</span>
-                </div>
-                <h2 class="article-title">لماذا يحتاج العرب لمنصة متخصصة في هندسة الأوامر؟</h2>
-                <p class="article-excerpt">التحديات اللغوية والثقافية في الذكاء الاصطناعي تتطلب حلولاً عربية المنشأ. اكتشف كيف تسد "أوامركم" هذه الفجوة...</p>
-                <a href="/blog/why-arabic-ai.html" class="btn-read-more" aria-label="اقرأ المقال الكامل عن أهمية المنصات العربية للذكاء الاصطناعي">اقرأ الرؤية العربية ←</a>
+            <h2 class="article-title">وظيفتك القادمة قد تُختصر في أمر واحد: داخل اقتصاد الأوامر</h2>
+            <p class="article-excerpt">لماذا يتحول الموظف من منفذ مهام إلى مشغل أنظمة؟ اكتشف كيف يمكن لأمر واحد متقن أن يعوض عمل فريق كامل ويعيد تعريف مسارك المهني.</p>
+            <a href="/blog/future-job-single-prompt.html" class="btn-read-more" aria-label="اقرأ المقال">صمم وظيفتك القادمة ←</a>
+        </div>
+    </article>
+
+    <article class="article-card reveal active" data-category="اقتصاد">
+        <div class="article-image-wrapper">
+            <img src="../blog/images/reshape-markets.webp" alt="إعادة تشكيل الأسواق والشركات">
+        </div>
+        <div class="article-content">
+            <div class="article-meta">
+                <span class="article-badge">تحول الأسواق</span>
+                <span class="read-time">قراءة في 8 دقائق</span>
             </div>
-        </article>
+            <h2 class="article-title">الاقتصاد الجديد بدأ بالفعل: كيف تعيد الأوامر تشكيل الشركات والأسواق</h2>
+            <p class="article-excerpt">اكتشف كيف يتحول التفكير الإداري إلى "تصميم أوامر"، وكيف تمكن الأنظمة الذكية الشركات الصغيرة من سحق المنافسين الكبار.</p>
+            <a href="/blog/how-prompts-reshape-markets.html" class="btn-read-more" aria-label="اقرأ المقال">غير قواعد اللعبة ←</a>
+        </div>
+    </article>
+
+    <article class="article-card reveal active" data-category="عملي">
+        <div class="article-image-wrapper">
+            <img src="../blog/images/arabic-prompt-engineering.webp" alt="هندسة الأوامر باللغة العربية والتحديات التقنية">
+        </div>
+        <div class="article-content">
+            <div class="article-meta">
+                <span class="article-badge">تقني</span>
+                <span class="read-time">قراءة في 7 دقائق</span>
+            </div>
+            <h2 class="article-title">هندسة الأوامر باللغة العربية: التحديات والفرص في 2026</h2>
+            <p class="article-excerpt">لماذا يصعب هندسة الأوامر بالعربية؟ اكتشف كيف نتجاوز في "أوامركم" فجوة البيانات لنصنع ذكاءً اصطناعياً يفهم روح لغتنا بعمق...</p>
+            <a href="/blog/arabic-prompt-engineering.html" class="btn-read-more" aria-label="اقرأ المقال">افتح التحليل التقني ←</a>
+        </div>
+    </article>
+
+    <article class="article-card reveal active" data-category="اقتصاد">
+        <div class="article-image-wrapper">
+            <img src="../blog/images/arabic-digital-sovereignty.webp" alt="اقتصاد الأوامر والسيادة الرقمية للشباب العربي">
+        </div>
+        <div class="article-content">
+            <div class="article-meta">
+                <span class="article-badge">النفط الجديد</span>
+                <span class="read-time">قراءة في 6 دقائق</span>
+            </div>
+            <h2 class="article-title">اقتصاد الأوامر: لماذا هو "النفط الجديد" للشباب العربي؟</h2>
+            <p class="article-excerpt">هل تدرك أن الثروة القادمة لا تخرج من باطن الأرض، بل من أطراف أصابعك؟ اكتشف كيف يغير اقتصاد الأوامر مفهوم العمل والرزق في 2026.</p>
+            <a href="/blog/command-economy-the-new-oil.html" class="btn-read-more" aria-label="اقرأ المقال">ابدأ الاستثمار في مهاراتك ←</a>
+        </div>
+    </article>
+
+    <article class="article-card reveal active" data-category="رؤية">
+        <div class="article-image-wrapper">
+            <img src="../blog/images/search-to-command-economy.webp" alt="تحول الإنترنت من اقتصاد البحث إلى اقتصاد الأوامر">
+        </div>
+        <div class="article-content">
+            <div class="article-meta">
+                <span class="article-badge">رؤية حاسمة</span>
+                <span class="read-time">قراءة في 6 دقائق</span>
+            </div>
+            <h2 class="article-title">تحول الإنترنت من اقتصاد البحث إلى اقتصاد الأوامر 📉 ➔ 📈</h2>
+            <p class="article-excerpt">على مدى 25 عاماً بُني الإنترنت على البحث والمقارنة اليدوية. اكتشف كيف يعيد عصر الأوامر صياغة الشبكة لتصبح "طبقة تنفيذ عالمية للنوايا البشرية".</p>
+            <a href="/blog/search-to-command-economy.html" class="btn-read-more" aria-label="اقرأ المقال">استكشف التحول الرقمي ←</a>
+        </div>
+    </article>
+
+    <article class="article-card reveal active" data-category="اقتصاد">
+        <div class="article-image-wrapper">
+            <img src="../blog/images/from-work-to-direction-economy.webp" alt="اقتصاد الأوامر والتحول نحو اقتصاد التوجيه">
+        </div>
+        <div class="article-content">
+            <div class="article-meta">
+                <span class="article-badge">استراتيجية</span>
+                <span class="read-time">قراءة في 10 دقائق</span>
+            </div>
+            <h2 class="article-title">اقتصاد الأوامر: من اقتصاد العمل إلى اقتصاد التوجيه</h2>
+            <p class="article-excerpt">كيف نتحول من قياس القيمة بساعات الجهد وحجم الموظفين إلى جودة التوجيه وبناء الأنظمة الذكية؟ اكتشف ركائز البنية التشغيلية الجديدة لعام 2026.</p>
+            <a href="/blog/from-work-to-direction-economy.html" class="btn-read-more" aria-label="اقرأ المقال">أعد تصميم بنية عملك ←</a>
+        </div>
+    </article>
+
+    <article class="article-card reveal active" data-category="عملي">
+        <div class="article-image-wrapper">
+            <img src="../blog/images/art-of-prompt-engineering.webp" alt="فن صناعة الأوامر في عصر اقتصاد الأوامر">
+        </div>
+        <div class="article-content">
+            <div class="article-meta">
+                <span class="article-badge">فلسفة وتدريب</span>
+                <span class="read-time">قراءة في 9 دقائق</span>
+            </div>
+            <h2 class="article-title">فن صناعة الأوامر في عصر اقتصاد الأوامر</h2>
+            <p class="article-excerpt">كيف تحولت اللغة من وسيلة تواصل إلى مهارة إنتاجية كبرى تقود الشركات؟ اكتشف كيف يغير الذكاء الاصطناعي مفهوم الأكواد ويحول الكلمات إلى أصول اقتصادية.</p>
+            <a href="/blog/art-of-prompt-engineering.html" class="btn-read-more" aria-label="اقرأ المقال">ابدأ فن الصناعة ←</a>
+        </div>
+    </article>
 
     </div>
 </main>
@@ -371,5 +486,27 @@
 </footer>
 
 <script src="../script.js"></script>
+
+<script>
+    // سكربت الفلترة الذكي المتجاوب والسريع لتجربة مستخدم ممتازة
+    document.querySelectorAll('.filter-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            // إدارة الكلاس النشط للأزرار
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const filter = button.getAttribute('data-filter');
+            
+            // إظهار وإخفاء الكروت بناءً على الفئة المحددة
+            document.querySelectorAll('.article-card').forEach(card => {
+                if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>
