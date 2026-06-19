@@ -1,0 +1,149 @@
+{
+  "redirects": [
+    {
+      "source": "/blog/word-is-the-code.html",
+      "destination": "/blog/concepts/word-is-the-code.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/sovereignty-of-intent.html",
+      "destination": "/blog/intent-economy/sovereignty-of-intent.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/future-economy.html",
+      "destination": "/blog/research/future-economy.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/arabic-prompt-engineering.html",
+      "destination": "/blog/learn/arabic-prompt-engineering.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/prompt-secrets.html",
+      "destination": "/blog/learn/prompt-secrets.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-arabic-ai.html",
+      "destination": "/blog/learn/why-arabic-ai.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/command-economy-the-new-oil.html",
+      "destination": "/blog/command-economy/command-economy-the-new-oil.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hidden-revolution-command-economy.html",
+      "destination": "/blog/command-economy/hidden-revolution-command-economy.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/from-work-to-direction-economy.html",
+      "destination": "/blog/command-economy/from-work-to-direction-economy.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/command-economy-ai-intent.html",
+      "destination": "/blog/intent-economy/command-economy-ai-intent.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/who-writes-prompts-owns-the-world.html",
+      "destination": "/blog/concepts/who-writes-prompts-owns-the-world.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/future-job-single-prompt.html",
+      "destination": "/blog/learn/future-job-single-prompt.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-prompts-reshape-markets.html",
+      "destination": "/blog/learn/how-prompts-reshape-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/work-evolution-prompt-era.html",
+      "destination": "/blog/learn/work-evolution-prompt-era.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/art-of-prompt-engineering.html",
+      "destination": "/blog/learn/art-of-prompt-engineering.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/search-to-command-economy.html",
+      "destination": "/blog/capital-internet/search-to-command-economy.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/language-as-an-economy-operating-system.html",
+      "destination": "/blog/interpretation-layer/language-as-an-economy-operating-system.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/prompt-economy-ar.html",
+      "destination": "/blog/interpretation-layer/prompt-economy-ar.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/prompt-economy-en.html",
+      "destination": "/blog/interpretation-layer/prompt-economy-en.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/commands-as-units-of-production.html",
+      "destination": "/blog/concepts/commands-as-units-of-production.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/commands-coordinate-intelligence.html",
+      "destination": "/blog/concepts/commands-coordinate-intelligence.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/prompts-new-economy.html",
+      "destination": "/blog/concepts/prompts-new-economy.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/commands-new-economy.html",
+      "destination": "/blog/concepts/commands-new-economy.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/commands-production-units.html",
+      "destination": "/blog/concepts/commands-production-units.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/language-as-production-unit.html",
+      "destination": "/blog/concepts/language-as-production-unit.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/state-of-command-economy-2026.html",
+      "destination": "/blog/research/state-of-command-economy-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/command-economy-infrastructure.html",
+      "destination": "/blog/command-economy/command-economy-infrastructure.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/command-network-infrastructure.html",
+      "destination": "/blog/capital-internet/command-network-infrastructure.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/massive-network-of-commands.html",
+      "destination": "/blog/capital-internet/massive-network-of-commands.html",
+      "permanent": true
+    }
+  ]
+}
