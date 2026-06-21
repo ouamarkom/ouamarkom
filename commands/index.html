@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="canonical" href="https://ouamarkom.com/commands" />
+<title>أوامر السوشيال | أوامركم</title>
+
+<meta name="description" content="تحويل فيديوهات السوشيال إلى أوامر داخل اقتصاد الأوامر.">
+
+<link rel="stylesheet" href="/style.css">
+
+<!-- ✅ ICON LIBRARY (FIXED) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<style>
+
+/* =========================
+   DESIGN SYSTEM (NO CHANGES)
+========================= */
+:root {
+    --card-bg: rgba(10, 25, 47, 0.7);
+    --card-border: rgba(230, 153, 45, 0.2);
+    --accent: #e6992d;
+    --text-dim: #a8b2d1;
+}
+
+/* HEADER */
+.commands-header {
+    padding: 110px 20px 40px;
+    text-align: center;
+}
+
+.commands-header h1 { font-size: 2.6rem; }
+.commands-header span { color: var(--accent); }
+
+/* FILTER */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 45px;
+}
+
+.filter-btn {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(230,153,45,0.3);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.25s ease;
+    font-weight: 600;
+}
+
+/* عند الهوفر أو التفعيل */
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--accent);
+    color: #0a192f;
+}
+
+/* مهم: جعل الأيقونة تتبع لون النص */
+.filter-btn i:hover {
+    transition: 0.25s ease;
+    color: inherit;
+}
+
+.filter-btn i {
+  color: var(--accent);
+}
+
+/* تأثير إضافي احترافي */
+.filter-btn:hover i,
+.filter-btn.active i {
+    color: #0a192f;
+    transform: scale(1.1);
+}
+
+/* GRID */
+.commands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 40px;
+}
+
+/* CARD */
+.command-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 24px;
+    overflow: hidden;
+    backdrop-filter: blur(16px);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.command-card:hover {
+    transform: scale(1.02) translateY(-8px);
+    border-color: var(--accent);
+    box-shadow: 0 25px 60px rgba(230,153,45,0.25);
+}
+
+/* VIDEO */
+.video-wrapper {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: #000;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* CONTENT */
+.command-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* BADGE */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    width: fit-content;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: rgba(230,153,45,0.12);
+    color: var(--accent);
+    border: 1px solid rgba(230,153,45,0.3);
+}
+
+/* TITLE */
+.command-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* DESC */
+.command-desc {
+    color: var(--text-dim);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* META */
+.meta {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    color: var(--text-dim);
+}
+
+/* ICON */
+.icon {
+    font-size: 16px;
+    margin-left: 5px;
+    color: var(--accent);
+}
+
+.back-btn {
+    padding: 10px 18px;
+    border-radius: 50px;
+    border: 1px solid rgba(230,153,45,0.3);
+    text-decoration: none;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.25s ease;
+}
+
+/* Hover animation */
+.back-btn:hover {
+    background: var(--accent);
+    color: #0a192f;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(230,153,45,0.25);
+}
+
+/* icon movement */
+.back-btn i {
+    transition: 0.25s ease;
+}
+
+.back-btn:hover i {
+    transform: translateX(-3px);
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 20px 0px;
+    text-align: center;
+}
+
+.social-flex {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.social-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+.copyright {
+    padding: 25px 0px;
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0.7;
+    text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="container" style="padding:30px 10px;display:flex;justify-content:space-between;align-items:center;">
+    <a href="/"><img src="/logo.webp" style="height:60px;"></a>
+
+    <a href="/" class="back-btn">
+        <i class="bi bi-arrow-left"></i> العودة للرئيسية 
+    </a>
+</nav>
+
+<main class="container">
+
+<header class="commands-header">
+    <h1> أوامر <span>السوشيال</span></h1>
+    <p class="subtitle">تحويل الفيديوهات إلى أوامر داخل اقتصاد الأوامر</p>
+</header>
+
+<div class="filter-container">
+
+    <button class="filter-btn active" data-filter="all">
+        <i class="bi bi-grid-fill"></i> الكل
+    </button>
+
+    <button class="filter-btn" data-filter="ai">
+        <i class="bi bi-cpu-fill"></i> الذكاء الاصطناعي
+    </button>
+
+    <button class="filter-btn" data-filter="economy">
+        <i class="bi bi-diagram-3-fill"></i> اقتصاد الأوامر
+    </button>
+
+    <button class="filter-btn" data-filter="future">
+        <i class="bi bi-globe2"></i> المستقبل
+    </button>
+
+</div>
+
+<div class="commands-grid">
+
+<!-- 1. ميلاد اقتصاد الأوامر -->
+<div class="command-card" data-category="economy">        
+    <div class="video-wrapper">        
+        <iframe src="https://www.youtube.com/embed/dOTB56TwwmA" allowfullscreen loading="lazy"></iframe>        
+    </div>        
+    <div class="command-content">        
+        <div class="badge">        
+            <i class="bi bi-diagram-3-fill"></i> اقتصاد الأوامر        
+        </div>        
+        <div class="command-title">        
+            ميلاد اقتصاد الأوامر
+        </div>        
+        <div class="command-desc">        
+            Anالانطلاقة الأولى والتعريفية التي تؤسس لمفهوم تحويل الكلمات إلى أدوات تشغيلية تقود مستقبل الأعمال والإنتاج.
+        </div>        
+        <div class="meta">        
+            <span><i class="bi bi-eye-fill icon"></i> 237</span>        
+            <span><i class="bi bi-clock-fill icon"></i> 9 ثوانٍ</span>        
+            <span><i class="bi bi-lightning-fill icon"></i> Short</span>        
+        </div>        
+    </div>
+</div>
+
+<!-- 2. إعادة تعريف السوق العالمي -->
+<div class="command-card" data-category="economy">        
+    <div class="video-wrapper">        
+        <iframe src="https://www.youtube.com/embed/a6-ZD_DNGrE" allowfullscreen loading="lazy"></iframe>        
+    </div>        
+    <div class="command-content">        
+        <div class="badge">        
+            <i class="bi bi-diagram-3-fill"></i> اقتصاد الأوامر
+        </div>        
+        <div class="command-title">        
+            إعادة تعريف السوق العالمي: ما هو اقتصاد الأوامر؟
+        </div>        
+        <div class="command-desc">        
+            تعرّف ببساطة على المفهوم الجديد لإعادة تشكيل السوق العالمي، وكيف تتحول الكلمات والأوامر المباشرة إلى إنتاج اقتصادي حقيقي متكامل ومستدام.
+        </div>        
+        <div class="meta">        
+            <span><i class="bi bi-eye-fill icon"></i> 237</span>        
+            <span><i class="bi bi-clock-fill icon"></i> 16 ثانية</span>        
+            <span><i class="bi bi-lightning-fill icon"></i> Short</span>        
+        </div>        
+    </div>
+</div>
+
+<!-- 3. من التنظير إلى التنفيذ -->
+<div class="command-card" data-category="economy">        
+    <div class="video-wrapper">        
+        <iframe src="https://www.youtube.com/embed/W3-gUpXPriE" allowfullscreen loading="lazy"></iframe>        
+    </div>        
+    <div class="command-content">        
+        <div class="badge">        
+            <i class="bi bi-diagram-3-fill"></i> اقتصاد الأوامر
+        </div>        
+        <div class="command-title">        
+            من التنظير إلى التنفيذ: واقع اقتصاد الأوامر
+        </div>        
+        <div class="command-desc">        
+            اقتصاد الأوامر ليس مجرد فكرة للمستقبل بل هو واقع نعيشه الآن؛ حيث تتحول الكلمات والأوامر اليومية مباشرة إلى عوائد وإنتاجية اقتصادية ملموسة.
+        </div>        
+        <div class="meta">        
+            <span><i class="bi bi-eye-fill icon"></i> 602</span>        
+            <span><i class="bi bi-clock-fill icon"></i> 24 ثانية</span>        
+            <span><i class="bi bi-lightning-fill icon"></i> Short</span>        
+        </div>        
+    </div>
+</div>
+
+<!-- 4. ارتقِ بذكائك: الـ AI ليس محرك بحث -->
+<div class="command-card" data-category="ai">        
+    <div class="video-wrapper">        
+        <iframe src="https://www.youtube.com/embed/wM67qQ0xjJU" allowfullscreen loading="lazy"></iframe>        
+    </div>        
+    <div class="command-content">        
+        <div class="badge">        
+            <i class="bi bi-cpu-fill"></i> الذكاء الاصطناعي
+        </div>        
+        <div class="command-title">        
+            ارتقِ بذكائك: الـ AI ليس محرك بحث
+        </div>        
+        <div class="command-desc">        
+            التوقف عن معاملة الذكاء الاصطناعي كأداة بحث عادية؛ إنه عقل جبار يتطلب إتقان لغة الأوامر لتتصدر به مجريات الاقتصاد الجديد.
+        </div>        
+        <div class="meta">        
+            <span><i class="bi bi-eye-fill icon"></i> 902</span>        
+            <span><i class="bi bi-clock-fill icon"></i> 20 ثانية</span>        
+            <span><i class="bi bi-lightning-fill icon"></i> Short</span>        
+        </div>        
+    </div>
+</div>
+
+<!-- 5. قوة الأمر: كيف يقود ذكاؤك نتائج الـ AI؟ -->
+<div class="command-card" data-category="ai">        
+    <div class="video-wrapper">        
+        <iframe src="https://www.youtube.com/embed/GgRgSR8Ir5k" allowfullscreen loading="lazy"></iframe>        
+    </div>        
+    <div class="command-content">        
+        <div class="badge">        
+            <i class="bi bi-cpu-fill"></i> الذكاء الاصطناعي        
+        </div>        
+        <div class="command-title">        
+            قوة الأمر: كيف يقود ذكاؤك نتائج الـ AI؟
+        </div>        
+        <div class="command-desc">        
+            الذكاء الاصطناعي مِرآة لأوامرك؛ إذا كان طلبك باهتاً ستكون النتيجة ضعيفة، وإذا طلبت بذكاء ستنفجر النتائج أمامك.
+        </div>        
+        <div class="meta">        
+            <span><i class="bi bi-eye-fill icon"></i> 2.4K</span>        
+            <span><i class="bi bi-clock-fill icon"></i> 24 ثانية</span>        
+            <span><i class="bi bi-lightning-fill icon"></i> Short</span>        
+        </div>        
+    </div>
+</div>
+
+<!-- 6. ما وراء استخدام الـ AI: صناعة الأصول الرقمية -->
+<div class="command-card" data-category="economy">        
+    <div class="video-wrapper">        
+        <iframe src="https://www.youtube.com/embed/r0GMWBwf11k" allowfullscreen loading="lazy"></iframe>        
+    </div>        
+    <div class="command-content">        
+        <div class="badge">        
+            <i class="bi bi-diagram-3-fill"></i> اقتصاد الأوامر
+        </div>        
+        <div class="command-title">        
+            ما وراء استخدام الـ AI: صناعة الأصول الرقمية
+        </div>        
+        <div class="command-desc">        
+            الذكاء الاصطناعي لن يغير العالم بمجرد استخدامه؛ القوة الحقيقية تكمن في تحويل التقنية إلى أصول رقمية مستقلة تبني أنظمة واقتصاداً كاملاً.
+        </div>        
+        <div class="meta">        
+            <span><i class="bi bi-eye-fill icon"></i> 976</span>        
+            <span><i class="bi bi-clock-fill icon"></i> 33 ثانية</span>        
+            <span><i class="bi bi-lightning-fill icon"></i> Short</span>        
+        </div>        
+    </div>
+</div>
+
+<!-- 7. حقبة اللغة -->
+<div class="command-card" data-category="economy">        
+    <div class="video-wrapper">        
+        <iframe src="https://www.youtube.com/embed/StONr-Ii0VQ" allowfullscreen loading="lazy"></iframe>        
+    </div>        
+    <div class="command-content">        
+        <div class="badge">        
+            <i class="bi bi-diagram-3-fill"></i> اقتصاد الأوامر
+        </div>        
+        <div class="command-title">        
+            حقبة اللغة: عندما تتحول الكلمات إلى قوة اقتصادية
+        </div>        
+        <div class="command-desc">        
+            بعد عصور الزراعة والصناعة والبرمجيات، ندخل اليوم حقبة جديدة يصبح فيها التعبير نية، والأمر فعلاً اقتصادياً يُنفذ آلياً.
+        </div>        
+        <div class="meta">        
+            <span><i class="bi bi-eye-fill icon"></i> 286</span>        
+            <span><i class="bi bi-clock-fill icon"></i> 26 ثانية</span>        
+            <span><i class="bi bi-lightning-fill icon"></i> Short</span>        
+        </div>        
+    </div>
+</div>
+
+<!-- 8. لغة العالم الجديدة -->
+<div class="command-card" data-category="economy">        
+    <div class="video-wrapper">        
+        <iframe src="https://www.youtube.com/embed/WOM_AZTagbo" allowfullscreen loading="lazy"></iframe>        
+    </div>        
+    <div class="command-content">        
+        <div class="badge">        
+            <i class="bi bi-diagram-3-fill"></i> اقتصاد الأوامر
+        </div>        
+        <div class="command-title">        
+            لغة العالم الجديدة: الأمر كمهارة قيادية
+        </div>        
+        <div class="command-desc">        
+            عندما تتحول الكلمات والأوامر الموجهة للآلة من مجرد مهارة فردية اليوم، إلى نظام تشغيل متكامل غداً، لتصبح قريباً لغة العالم الحاكمة للاقتصاد.
+        </div>        
+        <div class="meta">        
+            <span><i class="bi bi-eye-fill icon"></i> 220</span>        
+            <span><i class="bi bi-clock-fill icon"></i> 15 ثانية</span>        
+            <span><i class="bi bi-lightning-fill icon"></i> Short</span>        
+        </div>        
+    </div>
+</div>
+
+<!-- 9. ما بعد التقنية: بناء الإطار الاقتصادي للـ AI -->
+<div class="command-card" data-category="economy">        
+    <div class="video-wrapper">        
+        <iframe src="https://www.youtube.com/embed/le5u7Ddvukk" allowfullscreen loading="lazy"></iframe>        
+    </div>        
+    <div class="command-content">        
+        <div class="badge">        
+            <i class="bi bi-diagram-3-fill"></i> اقتصاد الأوامر
+        </div>        
+        <div class="command-title">        
+            ما بعد التقنية: بناء الإطار الاقتصادي للـ AI
+        </div>        
+        <div class="command-desc">        
+            الذكاء الاصطناعي وحده لا يكفي؛ فوصفه تقنياً يشتت الرؤية، بينما يكمن الحل في الانتقال به نحو "اقتصاد الأوامر" حيث النية تصنع أمراً، والأمر يصنع حركة وإنتاجاً.
+        </div>        
+        <div class="meta">        
+            <span><i class="bi bi-eye-fill icon"></i> 161</span>        
+            <span><i class="bi bi-clock-fill icon"></i> 21 ثانية</span>        
+            <span><i class="bi bi-lightning-fill icon"></i> Short</span>        
+        </div>        
+    </div>
+</div>
+
+<!-- 10. المعادلة الجديدة للـ AI -->
+<div class="command-card" data-category="economy">        
+    <div class="video-wrapper">        
+        <iframe src="https://www.youtube.com/embed/wi8C105clm8" allowfullscreen loading="lazy"></iframe>        
+    </div>        
+    <div class="command-content">        
+        <div class="badge">        
+            <i class="bi bi-diagram-3-fill"></i> اقتصاد الأوامر
+        </div>        
+        <div class="command-title">        
+            المعادلة الجديدة للـ AI: الفهم الاقتصادي هو الأساس
+        </div>        
+        <div class="command-desc">        
+            استخدام الذكاء الاصطناعي دون استيعاب مفهوم اقتصاد الأوامر يعد هدراً حقيقياً؛ فالتقنية بمفردها لا تكفي ما لم تتحول إلى منظومة إنتاجية متكاملة.
+        </div>        
+        <div class="meta">        
+            <span><i class="bi bi-eye-fill icon"></i> 214</span>        
+            <span><i class="bi bi-clock-fill icon"></i> 18 ثانية</span>        
+            <span><i class="bi bi-lightning-fill icon"></i> Short</span>        
+        </div>        
+    </div>
+</div>
+
+<!-- 11. مغادرة عالم الأدوات -->
+<div class="command-card" data-category="future">        
+    <div class="video-wrapper">        
+        <iframe src="https://www.youtube.com/embed/7gVn_JYC0nQ" allowfullscreen loading="lazy"></iframe>        
+    </div>        
+    <div class="command-content">        
+        <div class="badge">        
+            <i class="bi bi-globe2"></i> المستقبل
+        </div>        
+        <div class="command-title">        
+            مغادرة عالم الأدوات: عندما يفكر الاقتصاد بنفسه
+        </div>        
+        <div class="command-desc">        
+            المستقبل لا يتعلق بتراكم الأدوات التقنية، بل ببدء حقبة يتشكل فيها اقتصاد ذكي يتعلم من نتائجه، وتتحول فيه الكلمات المباشرة لقرارات حاسمة.
+        </div>        
+        <div class="meta">        
+            <span><i class="bi bi-eye-fill icon"></i> 105</span>        
+            <span><i class="bi bi-clock-fill icon"></i> 41 ثانية</span>        
+            <span><i class="bi bi-lightning-fill icon"></i> Short</span>        
+        </div>        
+    </div>
+</div>
+
+<!-- 12. قوة لغة الأوامر في تصدر الأسواق -->
+<div class="command-card" data-category="economy">        
+    <div class="video-wrapper">        
+        <iframe src="https://www.youtube.com/embed/0VWsvzREvUU" allowfullscreen loading="lazy"></iframe>        
+    </div>        
+    <div class="command-content">        
+        <div class="badge">        
+            <i class="bi bi-diagram-3-fill"></i> اقتصاد الأوامر
+        </div>        
+        <div class="command-title">        
+            قوة لغة الأوامر في تصدر الأسواق
+        </div>        
+        <div class="command-desc">        
+            التميز في الحقبة القادمة لا يعتمد على ما تملكه من تكنولوجيا، بل على مدى إتقانك للغة الأوامر التي تدير هذه التكنولوجيا بذكاء وكفاءة.
+        </div>        
+        <div class="meta">        
+            <span><i class="bi bi-eye-fill icon"></i> 184</span>        
+            <span><i class="bi bi-clock-fill icon"></i> 22 ثانية</span>        
+            <span><i class="bi bi-lightning-fill icon"></i> Short</span>        
+        </div>        
+    </div>
+</div>
+
+</div>
+<div class="footer-info">
+    <div class="social-flex">
+        <a href="https://linkedin.com/company/ouamarkom" class="social-circle" title="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+
+        <a href="https://x.com/ouamarkom" class="social-circle" title="X">
+            <svg viewBox="0 0 24 24"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg>
+        </a>
+
+        <a href="https://facebook.com/ouamarkom" class="social-circle" title="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+        </a>
+
+        <a href="https://instagram.com/ouamarkom" class="social-circle" title="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+    </div>
+</div>
+
+<div class="copyright">
+    © 2026 أوامركم | Ouamarkom. جميع الحقوق محفوظة.
+</div>
+</main>
+
+</body>
+<script>
+
+const buttons = document.querySelectorAll(".filter-btn");
+const cards = document.querySelectorAll(".command-card");
+
+buttons.forEach(btn => {
+
+    btn.addEventListener("click", () => {
+
+        // active state
+        buttons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        const filter = btn.dataset.filter;
+
+        cards.forEach(card => {
+
+            const category = card.dataset.category;
+
+            if (filter === "all" || filter === category) {
+                card.style.display = "flex";
+            } else {
+                card.style.display = "none";
+            }
+
+        });
+
+    });
+
+});
+
+</script>
+</html>

@@ -241,3 +241,19 @@ document.querySelectorAll('section, .glass-card').forEach((el) => {
     el.classList.add('reveal');
     observer.observe(el);
 });
+
+
+const hamburgerBtn = document.getElementById("hamburgerBtn");
+const menuOverlay = document.getElementById("menuOverlay");
+
+hamburgerBtn.addEventListener("click", () => {
+    hamburgerBtn.classList.toggle("active");
+    menuOverlay.classList.toggle("active");
+});
+
+menuOverlay.addEventListener("click", (e) => {
+    if (e.target === menuOverlay) {
+        hamburgerBtn.classList.remove("active");
+        menuOverlay.classList.remove("active");
+    }
+});
