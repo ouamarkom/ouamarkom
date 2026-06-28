@@ -1,33 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-    // --- 1. العداد التنازلي ---
-    const timerEl = document.getElementById('timer');
-    if (timerEl) {
-        const launchDate = new Date('2026-07-01T00:00:00');
-        const daysEl = document.getElementById('days'),
-            hoursEl = document.getElementById('hours'),
-            minutesEl = document.getElementById('minutes'),
-            secondsEl = document.getElementById('seconds');
-
-        const updateCountdown = () => {
-            const diff = launchDate - new Date().getTime();
-
-            if (diff <= 0) {
-                clearInterval(timerInterval);
-                timerEl.innerHTML = "<h4>تم الإطلاق! أهلاً بك في المستقبل.</h4>";
-                return;
-            }
-            if (!daysEl || !hoursEl || !minutesEl || !secondsEl) return;
-
-            daysEl.innerText = String(Math.floor(diff / (1000 * 60 * 60 * 24))).padStart(2, '0');
-            hoursEl.innerText = String(Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
-            minutesEl.innerText = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
-            secondsEl.innerText = String(Math.floor((diff % (1000 * 60)) / 1000)).padStart(2, '0');
-        };
-
-        const timerInterval = setInterval(updateCountdown, 1000);
-        updateCountdown();
-    }
 
     // --- 2. نظام الشبكة (Canvas) ---
     const canvas = document.getElementById('network-canvas');
