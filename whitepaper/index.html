@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الورقة التأسيسية | اقتصاد الأوامر القائم على الذكاء الاصطناعي (CE-AI) - أوامركم</title>
+    <meta name="description" content="النص الكامل للورقة التأسيسية الأكاديمية والاستراتيجية لمنصة أوامركم: من النية البشرية إلى رأس المال القراري، بناء وتأصيل إطار اقتصاد الأوامر (CE-AI).">
+    <meta name="keywords" content="اقتصاد الأوامر, الذكاء الاصطناعي التوليدي, هندسة النوايا, معمارية الوكلاء الذكية, رأس المال القراري, أوامركم, بنية تحتية رقمية, طبقة التنفيذ, النية البشرية, كتاب أوامركم الأبيض">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ouamarkom.com/whitepaper" />
+    
+    <meta property="og:site_name" content="أوامركم | Ouamarkom" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="الورقة التأسيسية | اقتصاد الأوامر القائم على الذكاء الاصطناعي (CE-AI) - أوامركم" />
+    <meta property="og:description" content="تأصيل نظري ومعماري شامل لكيفية تحول النية البشرية واللغة الطبيعية إلى وحدة الإنتاج الأساسية داخل الاقتصاد الرقمي الجديد." />
+    <meta property="og:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg" />
+    <meta property="og:url" content="https://ouamarkom.com/whitepaper" />
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#040916">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ouamarkom.com/whitepaper#webpage",
+          "url": "https://ouamarkom.com/whitepaper",
+          "name": "الورقة التأسيسية: اقتصاد الأوامر القائم على الذكاء الاصطناعي",
+          "description": "دراسة أكاديمية واستراتيجية شاملة حول البنية التحتية والتحولات الهيكلية لاقتصاد الأوامر والقرارات الذكية."
+        },
+        {
+          "@type": "TechArticle",
+          "headline": "من النية إلى الاقتصاد: الأسس النظرية والمعمارية لنظام CE-AI",
+          "description": "إطار تحليلي متكامل يبحث في انتقال القوة الاقتصادية وخلق القيمة من امتلاك الأدوات الرقمية إلى هندسة وتنسيق النية البشرية عبر الوكلاء الأذكياء.",
+          "inLanguage": "ar",
+          "url": "https://ouamarkom.com/whitepaper",
+          "author": {
+            "@type": "Person",
+            "name": "مراد الصهيبي",
+            "url": "https://ouamarkom.com/founder"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "أوامركم | Ouamarkom",
+            "logo": "https://ouamarkom.com/logo.webp"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* إدارة اللغات والتبديل السلس */
+        html[lang="ar"] .lang-en { display: none !important; }
+        html[lang="en"] .lang-ar { display: none !important; }
+        
+        /* زر تبديل اللغة الفاخر ذو الطابع البسيط */
+        .lang-switcher-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background: rgba(10, 25, 47, 0.85);
+            border: 1px solid rgba(230, 153, 45, 0.3);
+            color: var(--gold, #e6992d);
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            cursor: pointer;
+            backdrop-filter: blur(12px);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            letter-spacing: 0.5px;
+        }
+        
+        html[lang="en"] .lang-switcher-btn {
+            left: auto;
+            right: 20px;
+        }
+        
+        .lang-switcher-btn:hover {
+            background: var(--gold, #e6992d);
+            color: #040916;
+            border-color: var(--gold, #e6992d);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(230, 153, 45, 0.25);
+        }
+
+        .manifesto-container {
+            max-width: 1040px;
+            margin: 0 auto;
+            padding: clamp(20px, 17vw, 70px) clamp(15px, 3vw, 20px);
+            position: relative;
+            z-index: 1;
+            box-sizing: border-box;
+        }
+
+        .hero-manifesto {
+            text-align: center;
+            padding: clamp(20px, 4vw, 40px) 0 clamp(30px, 5vw, 50px);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUpHero 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        @keyframes fadeInUpHero {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-manifesto h1 {
+            font-size: clamp(1.5rem, 5vw, 3rem);
+            line-height: 1.3;
+            margin-bottom: 20px;
+            font-weight: 900;
+            letter-spacing: -0.5px;
+        }
+
+        .hero-manifesto h1 span {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent, #e6992d) 0%, var(--gold, #e6992d) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-manifesto .subtitle {
+            font-size: clamp(0.95rem, 2.5vw, 1.25rem);
+            color: var(--text-dim, #8892b0);
+            line-height: 1.7;
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        .tagline-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            background: linear-gradient(90deg, rgba(230, 153, 45, 0.1) 0%, rgba(230, 153, 45, 0.02) 100%);
+            border: 1px solid rgba(230, 153, 45, 0.25);
+            color: var(--gold, #e6992d);
+            border-radius: 50px;
+            font-size: clamp(0.75rem, 1.8vw, 0.9rem);
+            font-weight: 700;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 20px rgba(230, 153, 45, 0.05);
+        }
+
+        .tagline-badge::before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background-color: var(--accent, #e6992d);
+            border-radius: 50%;
+            animation: pulse-dot 2s infinite;
+        }
+
+        @keyframes pulse-dot {
+            0% { transform: scale(0.9); opacity: 0.6; }
+            50% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(0.9); opacity: 0.6; }
+        }
+
+        /* التصميم الإمبراطوري المتطور للملخص التنفيذي */
+        .executive-summary-master {
+            background: linear-gradient(180deg, rgba(10, 25, 47, 0.85) 0%, rgba(4, 9, 22, 0.95) 100%);
+            border: 1px solid rgba(230, 153, 45, 0.2);
+            border-top: 4px solid var(--accent, #e6992d);
+            padding: clamp(20px, 5vw, 50px);
+            border-radius: 24px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(20px);
+        }
+
+        .executive-summary-master::after {
+            content: "EXECUTIVE BRIEF";
+            position: absolute;
+            top: 20px;
+            left: -40px;
+            background: rgba(230, 153, 45, 0.06);
+            color: rgba(230, 153, 45, 0.35);
+            font-size: 0.65rem;
+            font-weight: 900;
+            padding: 4px 40px;
+            transform: rotate(-45deg);
+            letter-spacing: 1.5px;
+            font-family: monospace;
+        }
+        
+        html[lang="en"] .executive-summary-master::after {
+            left: auto;
+            right: -40px;
+            transform: rotate(45deg);
+        }
+
+        .summary-main-thesis {
+            font-size: clamp(1.1rem, 3vw, 1.5rem);
+            color: var(--text-main, #ccd6f6);
+            line-height: 1.6;
+            font-weight: 800;
+            border-right: 4px solid var(--accent, #e6992d);
+            padding-right: 15px;
+            margin-bottom: 30px;
+        }
+        
+        html[lang="en"] .summary-main-thesis {
+            border-right: none;
+            border-left: 4px solid var(--accent, #e6992d);
+            padding-right: 0;
+            padding-left: 15px;
+        }
+
+        .summary-grid-insights {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin: 30px 0;
+        }
+
+        @media (min-width: 768px) {
+            .summary-grid-insights {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .insight-mini-card {
+            background: rgba(255, 255, 255, 0.01);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            padding: 20px;
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .insight-mini-card:hover {
+            background: rgba(230, 153, 45, 0.02);
+            border-color: rgba(230, 153, 45, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .insight-mini-card .icon-num {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: rgba(230, 153, 45, 0.2);
+            margin-bottom: 8px;
+            font-family: serif;
+        }
+
+        .insight-mini-card h4 {
+            color: var(--gold, #e6992d);
+            font-size: 1rem;
+            font-weight: 700;
+            margin: 0 0 8px 0;
+        }
+
+        .insight-mini-card p {
+            font-size: 0.88rem;
+            color: var(--text-dim, #8892b0);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .summary-split-narrative {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 30px;
+            margin-top: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .summary-split-narrative {
+                grid-template-columns: 1.2fr 1fr;
+            }
+        }
+
+        .narrative-col p {
+            font-size: 0.98rem;
+            color: var(--text-main, #ccd6f6);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .narrative-col p:last-child { margin-bottom: 0; }
+
+        .highlights-callout-box {
+            background: linear-gradient(135deg, rgba(230, 153, 45, 0.04) 0%, rgba(4, 9, 22, 0) 100%);
+            border-right: 3px solid var(--gold, #e6992d);
+            padding: 20px;
+            border-radius: 4px 16px 16px 4px;
+            height: fit-content;
+        }
+        
+        html[lang="en"] .highlights-callout-box {
+            border-right: none;
+            border-left: 3px solid var(--gold, #e6992d);
+            border-radius: 16px 4px 4px 16px;
+        }
+
+        .highlights-callout-box h5 {
+            color: var(--gold, #e6992d);
+            font-size: 1rem;
+            font-weight: 800;
+            margin: 0 0 12px 0;
+        }
+
+        .highlights-callout-box ul {
+            padding-right: 15px;
+            padding-left: 0;
+            margin: 0;
+        }
+        
+        html[lang="en"] .highlights-callout-box ul {
+            padding-left: 15px;
+            padding-right: 0;
+        }
+
+        .highlights-callout-box li {
+            font-size: 0.88rem;
+            color: var(--text-dim, #8892b0);
+            line-height: 1.65;
+            margin-bottom: 10px;
+        }
+        
+        .highlights-callout-box li:last-child { margin-bottom: 0; }
+
+        /* ستايل الفصول اللاحقة */
+        .manifesto-card {
+            background: rgba(10, 25, 47, 0.25);
+            padding: clamp(20px, 4vw, 40px);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(12px);
+            margin-bottom: 30px;
+            text-align: right;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+        }
+        
+        html[lang="en"] .manifesto-card {
+            text-align: left;
+        }
+
+        .manifesto-card h2 {
+            color: var(--text-main, #ccd6f6);
+            font-size: clamp(1.25rem, 3.5vw, 1.65rem);
+            margin-bottom: 20px;
+            font-weight: 900;
+            border-right: 4px solid var(--accent, #e6992d);
+            padding-right: 12px;
+            padding-left: 0;
+            letter-spacing: -0.3px;
+        }
+        
+        html[lang="en"] .manifesto-card h2 {
+            border-right: none;
+            border-left: 4px solid var(--accent, #e6992d);
+            padding-left: 12px;
+            padding-right: 0;
+        }
+
+        .manifesto-card h3 {
+            color: var(--gold, #e6992d);
+            font-size: 1.1rem;
+            margin-top: 30px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .manifesto-card p {
+            color: var(--text-main, #ccd6f6);
+            font-size: 0.98rem;
+            line-height: 1.8;
+            margin-bottom: 16px;
+            opacity: 0.95;
+        }
+
+        .manifesto-card p strong {
+            color: var(--gold, #e6992d);
+        }
+
+        /* المكون البديل للجداول 1: الخط الزمني العمودي الانسيابي (الفصل الأول) */
+        .evolution-timeline {
+            position: relative;
+            margin: 30px 0;
+            padding-right: 20px;
+            padding-left: 0;
+            border-right: 1px solid rgba(230, 153, 45, 0.25);
+            border-left: none;
+        }
+        
+        html[lang="en"] .evolution-timeline {
+            padding-left: 20px;
+            padding-right: 0;
+            border-left: 1px solid rgba(230, 153, 45, 0.25);
+            border-right: none;
+        }
+
+        .timeline-step-block {
+            position: relative;
+            margin-bottom: 24px;
+        }
+
+        .timeline-step-block:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-step-block::before {
+            content: "";
+            position: absolute;
+            right: -25px;
+            left: auto;
+            top: 6px;
+            width: 9px;
+            height: 9px;
+            background: var(--text-dim, #8892b0);
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+        
+        html[lang="en"] .timeline-step-block::before {
+            left: -25px;
+            right: auto;
+        }
+
+        .timeline-step-block.current-era::before {
+            background: var(--accent, #e6992d);
+            box-shadow: 0 0 10px var(--accent, #e6992d);
+            width: 11px;
+            height: 11px;
+            right: -26px;
+            left: auto;
+        }
+        
+        html[lang="en"] .timeline-step-block.current-era::before {
+            left: -26px;
+            right: auto;
+        }
+
+        .timeline-content-card {
+            background: rgba(4, 9, 22, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            padding: 16px 20px;
+            border-radius: 16px;
+        }
+
+        .timeline-step-block.current-era .timeline-content-card {
+            background: linear-gradient(135deg, rgba(230, 153, 45, 0.03) 0%, rgba(4, 9, 22, 0.5) 100%);
+            border-color: rgba(230, 153, 45, 0.2);
+        }
+
+        .timeline-header-meta {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin-bottom: 8px;
+        }
+
+        @media (min-width: 540px) {
+            .timeline-header-meta {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+        .timeline-era-title {
+            font-weight: 800;
+            font-size: 0.98rem;
+            color: var(--gold, #e6992d);
+        }
+
+        .timeline-query-box {
+            font-size: 0.8rem;
+            color: var(--text-dim, #8892b0);
+            background: rgba(255, 255, 255, 0.03);
+            padding: 3px 10px;
+            border-radius: 30px;
+            font-family: monospace;
+            width: fit-content;
+        }
+
+        .timeline-desc-text {
+            font-size: 0.9rem;
+            color: var(--text-main, #ccd6f6);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* المكون البديل للجداول 2: مصفوفة التدفق التراكمي للقيم (الفصل الرابع) */
+        .value-accretion-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin: 30px 0;
+        }
+
+        .accretion-layer-item {
+            background: rgba(4, 9, 22, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            border-right: 4px solid var(--text-dim, #8892b0);
+            border-left: none;
+            padding: 18px;
+            border-radius: 4px 16px 16px 4px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+        
+        html[lang="en"] .accretion-layer-item {
+            border-left: 4px solid var(--text-dim, #8892b0);
+            border-right: none;
+            border-radius: 16px 4px 4px 16px;
+        }
+
+        @media (min-width: 640px) {
+            .accretion-layer-item {
+                grid-template-columns: 160px 1fr;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+
+        .accretion-layer-item.prime-gold {
+            border-right-color: var(--accent, #e6992d);
+            background: linear-gradient(90deg, rgba(230, 153, 45, 0.02) 0%, rgba(4, 9, 22, 0.5) 100%);
+        }
+        
+        html[lang="en"] .accretion-layer-item.prime-gold {
+            border-left-color: var(--accent, #e6992d);
+            border-right-color: transparent;
+            background: linear-gradient(270deg, rgba(230, 153, 45, 0.02) 0%, rgba(4, 9, 22, 0.5) 100%);
+        }
+
+        .accretion-meta-title {
+            font-weight: 800;
+            font-size: 0.94rem;
+            color: var(--gold, #e6992d);
+        }
+
+        .accretion-meta-title span {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--text-dim, #8892b0);
+            font-weight: 400;
+            margin-top: 2px;
+        }
+
+        .accretion-body-desc {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: var(--text-main, #ccd6f6);
+        }
+
+        /* المكون البديل للجداول 3: بطاقات المواجهة والمقارنة الثنائية (الفصل الخامس) */
+        .comparison-matrix-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .matrix-dimension-card {
+            background: rgba(4, 9, 22, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        .matrix-dim-title {
+            color: var(--gold, #e6992d);
+            font-weight: 800;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            padding-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .matrix-dim-title::before {
+            content: "⚡";
+            font-size: 0.85rem;
+        }
+
+        .matrix-split-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        @media (min-width: 640px) {
+            .matrix-split-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+            }
+        }
+
+        .matrix-side {
+            padding: 14px;
+            border-radius: 12px;
+            font-size: 0.88rem;
+            line-height: 1.6;
+        }
+
+        .matrix-side.old-paradigm {
+            background: rgba(239, 68, 68, 0.02);
+            border: 1px solid rgba(239, 68, 68, 0.08);
+            color: var(--text-dim, #8892b0);
+        }
+
+        .matrix-side.ceai-paradigm {
+            background: rgba(230, 153, 45, 0.02);
+            border: 1px solid rgba(230, 153, 45, 0.12);
+            color: var(--text-main, #ccd6f6);
+        }
+
+        .matrix-label {
+            display: block;
+            font-weight: 700;
+            font-size: 0.78rem;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+        }
+
+        .matrix-side.old-paradigm .matrix-label { color: #ef4444; }
+        .matrix-side.ceai-paradigm .matrix-label { color: var(--accent, #e6992d); }
+
+        /* طبقات المعمارية السبعة */
+        .layers-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin: 30px 0;
+        }
+
+        @media (min-width: 640px) {
+            .layers-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .layer-card {
+            background: rgba(4, 9, 22, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            padding: 20px;
+            border-radius: 16px;
+            position: relative;
+            transition: border-color 0.3s ease;
+        }
+
+        .layer-card:hover {
+            border-color: rgba(230, 153, 45, 0.2);
+        }
+
+        .layer-num {
+            position: absolute;
+            left: 20px;
+            right: auto;
+            top: 16px;
+            font-size: 1.3rem;
+            font-weight: 900;
+            color: rgba(230, 153, 45, 0.12);
+            font-family: monospace;
+        }
+        
+        html[lang="en"] .layer-num {
+            left: auto;
+            right: 20px;
+        }
+
+        .layer-card h3 {
+            color: var(--gold, #e6992d);
+            font-size: 1.05rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+            margin-top: 0;
+            padding-left: 25px;
+            padding-right: 0;
+        }
+        
+        html[lang="en"] .layer-card h3 {
+            padding-right: 25px;
+            padding-left: 0;
+        }
+
+        .layer-card p {
+            font-size: 0.88rem;
+            color: var(--text-dim, #8892b0);
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        .highlight-quote {
+            background: linear-gradient(90deg, rgba(230, 153, 45, 0.03) 0%, rgba(4, 9, 22, 0) 100%);
+            border-right: 4px solid var(--accent, #e6992d);
+            border-left: none;
+            padding: 20px;
+            border-radius: 4px 16px 16px 4px;
+            margin: 30px 0;
+        }
+        
+        html[lang="en"] .highlight-quote {
+            border-left: 4px solid var(--accent, #e6992d);
+            border-right: none;
+            border-radius: 16px 4px 4px 16px;
+            background: linear-gradient(270deg, rgba(230, 153, 45, 0.03) 0%, rgba(4, 9, 22, 0) 100%);
+        }
+
+        .highlight-quote p {
+            font-weight: 700;
+            color: var(--text-main, #ccd6f6);
+            font-size: 1.05rem;
+            line-height: 1.65;
+            margin-bottom: 0;
+        }
+
+        .diagram-wrapper {
+            background: #020613;
+            border: 1px solid rgba(230, 153, 45, 0.15);
+            border-radius: 16px;
+            padding: 20px 15px;
+            margin: 30px 0;
+            overflow-x: auto;
+            text-align: center;
+        }
+
+        .diagram-content {
+            font-family: monospace;
+            color: var(--gold, #e6992d);
+            font-size: 0.8rem;
+            line-height: 1.5;
+            display: inline-block;
+            white-space: pre;
+            direction: ltr !important;
+        }
+
+        @media (max-width: 768px) {
+            .diagram-content.desktop-diagram { display: none; }
+            .diagram-content.mobile-diagram { display: inline-block; text-align: center; }
+        }
+        @media (min-width: 769px) {
+            .diagram-content.mobile-diagram { display: none; }
+        }
+
+        .example-block {
+            margin-top: 24px;
+            background: rgba(255, 255, 255, 0.01);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            padding: 20px;
+        }
+
+        .example-title {
+            color: var(--gold, #e6992d);
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            padding-bottom: 8px;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin: 25px 0;
+        }
+
+        @media (min-width: 768px) {
+            .comparison-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .method-box {
+            padding: 20px;
+            border-radius: 14px;
+            background: rgba(4, 9, 22, 0.4);
+            border: 1px solid rgba(255,255,255,0.02);
+        }
+
+        .method-box.traditional { 
+            border-right: 4px solid #ef4444; 
+            border-left: none;
+        }
+        html[lang="en"] .method-box.traditional {
+            border-left: 4px solid #ef4444;
+            border-right: none;
+        }
+        
+        .method-box.ouamarkom {
+            border-right: 4px solid var(--accent, #e6992d);
+            border-left: none;
+            background: rgba(230, 153, 45, 0.01);
+            border-color: rgba(230, 153, 45, 0.08);
+        }
+        html[lang="en"] .method-box.ouamarkom {
+            border-left: 4px solid var(--accent, #e6992d);
+            border-right: none;
+        }
+
+        .method-heading {
+            font-weight: 800;
+            font-size: 0.98rem;
+            margin-bottom: 10px;
+        }
+
+        .engine-box {
+            background: rgba(4, 9, 22, 0.5);
+            border: 1px solid rgba(230, 153, 45, 0.15);
+            border-radius: 20px;
+            padding: 24px 16px;
+            margin: 30px 0;
+        }
+
+        .engine-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        @media (min-width: 960px) {
+            .engine-list {
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+        }
+
+        .engine-step {
+            background: #0a192f;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            padding: 10px 18px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-main, #ccd6f6);
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        @media (min-width: 960px) { .engine-step { width: auto; } }
+
+        .engine-arrow {
+            color: var(--gold, #e6992d);
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        @media (min-width: 960px) { 
+            html[lang="ar"] .engine-arrow { transform: rotate(90deg); } 
+            html[lang="en"] .engine-arrow { transform: rotate(270deg); } 
+        }
+
+        .custom-bullet-list {
+            list-style: none;
+            padding-right: 15px;
+            padding-left: 0;
+            margin: 15px 0;
+        }
+        
+        html[lang="en"] .custom-bullet-list {
+            padding-left: 15px;
+            padding-right: 0;
+        }
+
+        .custom-bullet-list li {
+            position: relative;
+            margin-bottom: 10px;
+            line-height: 1.7;
+            color: var(--text-main, #ccd6f6);
+            font-size: 0.94rem;
+        }
+
+        .custom-bullet-list li::before {
+            content: "✦";
+            position: absolute;
+            right: -18px;
+            left: auto;
+            color: var(--accent, #e6992d);
+            font-size: 0.75rem;
+            top: 2px;
+        }
+        
+        html[lang="en"] .custom-bullet-list li::before {
+            left: -18px;
+            right: auto;
+        }
+
+        .footer-cta {
+            text-align: center;
+            padding: 40px 15px;
+            margin-top: 30px;
+        }
+
+        .footer-cta h2 {
+            font-size: clamp(1.4rem, 4vw, 2.2rem);
+            font-weight: 900;
+            margin-bottom: 25px;
+        }
+
+        .footer-cta h2 span {
+            background: linear-gradient(90deg, var(--accent, #e6992d), var(--gold, #e6992d));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 600px) {
+            .btn-group {
+                flex-direction: row;
+                max-width: 100%;
+                justify-content: center;
+            }
+        }
+
+        .reveal-card {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
+                        transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal-card.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .ouamarkom-brand-fixed {
+            position: fixed;
+            top: 22px;
+            right: 20px;
+            z-index: 1000;
+            height: 36px;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .brand-logo-img {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
+        }
+
+        .ouamarkom-brand-fixed:hover {
+            transform: scale(1.05);
+            opacity: 0.95;
+        }
+
+        html[lang="en"] .ouamarkom-brand-fixed {
+            right: auto;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<button class="lang-switcher-btn" id="lang-toggle">English</button>
+<a href="https://ouamarkom.com" class="ouamarkom-brand-fixed" aria-label="Ouamarkom Home">
+    <img src="https://ouamarkom.com/logo.webp" alt="Ouamarkom Logo" class="brand-logo-img">
+</a>
+
+<canvas id="network-canvas"></canvas>
+
+<main class="manifesto-container">
+    
+    <header class="hero-manifesto">
+        <span class="tagline-badge lang-ar">الوثيقة الاستراتيجية التأسيسية | ميثاق الفكر البنيوي</span>
+        <span class="tagline-badge lang-en">Strategic Foundational Document | Charter of Structural Thought</span>
+        
+        <h1 class="lang-ar">من النية إلى الاقتصاد:<br><span>أسس اقتصاد الأوامر القائم على الذكاء الاصطناعي (CE-AI)</span></h1>
+        <h1 class="lang-en">From Intent to Economy:<br><span>Foundations of the AI-Driven Command Economy (CE-AI)</span></h1>
+        
+        <p class="subtitle lang-ar">دراسة تحليلية وبحثية شاملة تستشرف إعادة هندسة قوى الإنتاج وسلاسل خلق القيمة التراكمية داخل النظام البيئي الرقمي العالمي القادم.</p>
+        <p class="subtitle lang-en">A comprehensive analytical and research study exploring the re-engineering of productive forces and cumulative value creation chains within the upcoming global digital ecosystem.</p>
+    </header>
+
+    <article class="executive-summary-master reveal-card">
+        <div class="summary-header-block">
+            <h2 class="lang-ar" style="color: var(--gold); font-size: 1.25rem; font-weight: 900; margin-bottom: 12px; letter-spacing: -0.5px;">الملخص التنفيذي (Executive Summary)</h2>
+            <h2 class="lang-en" style="color: var(--gold); font-size: 1.25rem; font-weight: 900; margin-bottom: 12px; letter-spacing: -0.5px;">Executive Summary</h2>
+            
+            <div class="summary-main-thesis lang-ar">
+                يشهد الاقتصاد العالمي تحولاً هيكلياً جذرياً بفعل رسوخ الذكاء الاصطناعي التوليدي، حيث تنتقل القيمة النفعية والرأسمالية من حيازة البرمجيات التقليدية إلى قدرة هندسة النية البشرية وتحويلها المباشر إلى تشغيل فوري.
+            </div>
+            <div class="summary-main-thesis lang-en">
+                The global economy is undergoing a radical structural transformation fueled by the establishment of generative AI, shifting utility and capital value from traditional software ownership to the capacity to engineer human intent and convert it into immediate execution.
+            </div>
+        </div>
+
+        <div class="summary-grid-insights">
+            <div class="insight-mini-card">
+                <div class="icon-num">01</div>
+                <h4 class="lang-ar">وحدة التشغيل الجديدة</h4>
+                <h4 class="lang-en">The New Operational Unit</h4>
+                <p class="lang-ar">لم يعد "الأمر" (Prompt) مجرد مدخل نصي عابر، بل تحوّل إلى وحدة اقتصادية بنيوية تقود حركة سلاسل الإنتاج الرقمية المستقلة.</p>
+                <p class="lang-en">The "Prompt" is no longer a fleeting textual input; it has transformed into a structural economic unit driving autonomous digital production chains.</p>
+            </div>
+            <div class="insight-mini-card">
+                <div class="icon-num">02</div>
+                <h4 class="lang-ar">هجرة القيمة الرأسمالية</h4>
+                <h4 class="lang-en">Migration of Capital Value</h4>
+                <p class="lang-ar">تتحرك هوامش الأرباح والمزايا التنافسية الكبرى من شركات بناء الأدوات والبرامج إلى منصات إدارة وتنسيق النوايا الحوكمية الفوقية.</p>
+                <p class="lang-en">Profit margins and major competitive advantages are shifting from tool-building companies to overarching governance and intent-coordination platforms.</p>
+            </div>
+            <div class="insight-mini-card">
+                <div class="icon-num">03</div>
+                <h4 class="lang-ar">تخفيض التكلفة الحديّة</h4>
+                <h4 class="lang-en">Marginal Cost Reduction</h4>
+                <p class="lang-ar">يستهدف نموذج CE-AI تقليص التكلفة الزمنية والمالية الفاصلة بين ظهور الرغبة الاستراتيجية في عقل الإنسان وتحققها الفعلي في السوق إلى الصفر.</p>
+                <p class="lang-en">The CE-AI framework aims to reduce the time and financial friction separating the emergence of strategic desire in the human mind and its actual market fulfillment to absolute zero.</p>
+            </div>
+        </div>
+
+        <div class="summary-split-narrative">
+            <div class="narrative-col">
+                <p class="lang-ar">تنطلق هذه الدراسة من فرضية أساسية مفادها أن النية البشرية (Human Intent) واللغة الطبيعية غدتا تمثلان نقطة الانطلاق الفورية للعمليات الاستثمارية والإنتاجية. يأتي إطار <strong>اقتصاد الأوامر القائم على الذكاء الاصطناعي (CE-AI)</strong> كنموذج تحليلي وبنية تحتية مبتكرة لفهم وحوكمة هذا المسار، بدلاً من استخدام الأطر القديمة للأتمتة التكرارية.</p>
+                <p class="lang-ar">يقوم هذا الإطار البنيوي على معمارية سباعية متماسكة تبدأ من حيز الرغبة الاستراتيجية وتنتهي بإنتاج القيمة الرأسمالية عبر شبكات معقدة من الوكلاء الأذكياء (Agent Networks) الذين يتولون إدارة التخطيط، والتسعير، والتنفيذ بالكامل بموجب توجيه فوقي صارم ومحمي سيبرانياً ومعرفياً.</p>
+                
+                <p class="lang-en">This study stems from a core hypothesis that human intent and natural language have become the immediate starting point for investment and production operations. The <strong>AI-Driven Command Economy (CE-AI)</strong> framework arrives as an analytical model and innovative infrastructure to understand and govern this trajectory, rather than using outdated legacy frameworks of iterative automation.</p>
+                <p class="lang-en">This structural framework is built upon a cohesive seven-layer architecture starting from the realm of strategic desire and concluding with capital value production via complex networks of Intelligent Agents. These agents manage planning, pricing, and execution entirely under strict overarching direction, protected cybernetically and cognitively.</p>
+            </div>
+            <div class="narrative-col">
+                <div class="highlights-callout-box">
+                    <h5 class="lang-ar">المستهدفات الاستراتيجية للنموذج:</h5>
+                    <h5 class="lang-en">Strategic Objectives of the Model:</h5>
+                    <ul class="lang-ar">
+                        <li>بناء طبقة التنسيق الشاملة لتصفية وحوكمة النوايا البشرية.</li>
+                        <li>تحويل المنصات والتطبيقات التقليدية الصاخبة إلى طبقات صامتة تعمل في الخلفية (Invisible Software).</li>
+                        <li>تمكين نموذج "الفرد المؤسسة" لامتلاك أذرع تشغيلية تعادل شركات كبرى عبر الروافع القرارية الذكية.</li>
+                        <li>إثراء وتشييد ما يُعرف بـ "رأس المال القراري التراكمي" للمنشآت الرأسمالية الحديثة.</li>
+                    </ul>
+                    <ul class="lang-en">
+                        <li>Building the comprehensive coordination layer to filter and govern human intents.</li>
+                        <li>Transforming noisy legacy platforms and applications into silent background layers (Invisible Software).</li>
+                        <li>Enabling the "Solopreneur / One-Person Corporation" to possess operational arms equivalent to major enterprises via intelligent decision levers.</li>
+                        <li>Enriching and constructing what is known as "Cumulative Decision Capital" for modern capital enterprises.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <section class="manifesto-card reveal-card">
+        <h2 class="lang-ar">الفصل الأول | تطور الاقتصاد الرقمي: من الحوسبة إلى الذكاء الاصطناعي</h2>
+        <h2 class="lang-en">Chapter I | Evolution of the Digital Economy: From Computing to AI</h2>
+        
+        <p class="lang-ar">لا تظهر النماذج الاقتصادية العملاقة بصورة مفاجئة، بل تنبثق عندما تصل التقنيات العامة (General-Purpose Technologies) إلى ذروة نضجها الهيكلي لتعيد تنظيم موازين القوى الرأسمالية والإنتاجية الكلية في الأسواق.</p>
+        <p class="lang-ar">إن تتبع المسار التطوري للاقتصاد الرقمي عبر العقود الماضية يكشف لنا بوضوح أن الذكاء الاصطناعي ليس مجرد أداة إضافية لرفع الكفاءة، بل هو نظام تشغيل اقتصادي مستقل تماماً يقلب المفاهيم المستقرة ويغير وجهة هجرة العوائد:</p>
+        
+        <p class="lang-en">Giant economic models do not appear abruptly; they emerge when general-purpose technologies reach structural maturity, reorganizing macroeconomic balances and productive forces in the markets. Tracking the evolutionary trajectory of the digital economy over past decades reveals that AI is not just another efficiency-enhancing tool, but an independent economic operating system that flips established concepts and redirects the flow of returns:</p>
+
+        <div class="evolution-timeline">
+            <div class="timeline-step-block">
+                <div class="timeline-content-card">
+                    <div class="timeline-header-meta">
+                        <div class="timeline-era-title lang-ar">1. اقتصاد الحوسبة (Computing)</div>
+                        <div class="timeline-era-title lang-en">1. Computing Economy</div>
+                        <div class="timeline-query-box lang-ar">«كيف يزيد الحاسوب كفاءة العمل؟»</div>
+                        <div class="timeline-query-box lang-en">"How does the computer increase work efficiency?"</div>
+                    </div>
+                    <p class="timeline-desc-text lang-ar">امتلاك القدرة الحاسوبية، أتمتة العمليات الحسابية والرياضية، وتخزين البيانات محلياً كأصول مستقلة داخل المنشأة.</p>
+                    <p class="timeline-desc-text lang-en">Possessing computing power, automating arithmetic and mathematical operations, and storing data locally as independent enterprise assets.</p>
+                </div>
+            </div>
+            <div class="timeline-step-block">
+                <div class="timeline-content-card">
+                    <div class="timeline-header-meta">
+                        <div class="timeline-era-title lang-ar">2. اقتصاد الإنترنت (Internet)</div>
+                        <div class="timeline-era-title lang-en">2. Internet Economy</div>
+                        <div class="timeline-query-box lang-ar">«كيف نربط الأسواق والأفراد شبكياً؟»</div>
+                        <div class="timeline-query-box lang-en">"How do we connect markets and individuals via networks?"</div>
+                    </div>
+                    <p class="timeline-desc-text lang-ar">الاتصال الشبكي العالمي المفتوح، ظهور مبادئ التجارة الإلكترونية، محركات البحث العملاقة، والمواقع المترابطة.</p>
+                    <p class="timeline-desc-text lang-en">Global open network connectivity, the emergence of e-commerce principles, giant search engines, and interconnected websites.</p>
+                </div>
+            </div>
+            <div class="timeline-step-block">
+                <div class="timeline-content-card">
+                    <div class="timeline-header-meta">
+                        <div class="timeline-era-title lang-ar">3. اقتصاد المنصات (Platform)</div>
+                        <div class="timeline-era-title lang-en">3. Platform Economy</div>
+                        <div class="timeline-query-box lang-ar">«كيف نبني نظاماً يضم الجميع؟»</div>
+                        <div class="timeline-query-box lang-en">"How do we build a system that includes everyone?"</div>
+                    </div>
+                    <p class="timeline-desc-text lang-ar">استغلال تأثيرات الشبكة المتسارعة (Network Effects)، واجهات البرمجة المفتوحة (APIs)، وتشييد بيئات برمجية تجمع ملايين الفاعلين.</p>
+                    <p class="timeline-desc-text lang-en">Exploiting accelerating network effects, open APIs, and constructing software environments gathering millions of actors.</p>
+                </div>
+            </div>
+            <div class="timeline-step-block">
+                <div class="timeline-content-card">
+                    <div class="timeline-header-meta">
+                        <div class="timeline-era-title lang-ar">4. اقتصاد البيانات (Data Economy)</div>
+                        <div class="timeline-era-title lang-en">4. Data Economy</div>
+                        <div class="timeline-query-box lang-ar">«كيف نوظف البيانات للميزة التنافسية؟»</div>
+                        <div class="timeline-query-box lang-en">"How do we deploy data for competitive advantage?"</div>
+                    </div>
+                    <p class="timeline-desc-text lang-ar">حلقات التراكم التوليدية الفائقة: (المستخدم ← يحقن البيانات ← يطور النموذج ← يحسن الخدمة ← يجذب المزيد من المستخدمين).</p>
+                    <p class="timeline-desc-text lang-en">Hyper-accelerated generative accumulation loops: (User → Injects Data → Develops Model → Improves Service → Attracts More Users).</p>
+                </div>
+            </div>
+            <div class="timeline-step-block">
+                <div class="timeline-content-card">
+                    <div class="timeline-header-meta">
+                        <div class="timeline-era-title lang-ar">5. اقتصاد الذكاء الاصطناعي (AI)</div>
+                        <div class="timeline-era-title lang-en">5. AI Economy</div>
+                        <div class="timeline-query-box lang-ar">«من يملك النموذج الأساسي الأقوى؟»</div>
+                        <div class="timeline-query-box lang-en">"Who owns the strongest foundation model?"</div>
+                    </div>
+                    <p class="timeline-desc-text lang-ar">إنتاج المعرفة الأولية، التنبؤ المستقبلي، الاستدلال المنطقي والقدرة التوليدية للأكواد والرموز لدعم القرارات الاستراتيجية.</p>
+                    <p class="timeline-desc-text lang-en">Generating primary knowledge, future prediction, logical reasoning, and generative capability for codes and symbols to support strategic decisions.</p>
+                </div>
+            </div>
+            <div class="timeline-step-block current-era">
+                <div class="timeline-content-card">
+                    <div class="timeline-header-meta">
+                        <div class="timeline-era-title lang-ar" style="color: var(--accent);">6. إطار أوامركم (CE-AI)</div>
+                        <div class="timeline-era-title lang-en" style="color: var(--accent);">6. Ouamarkom Framework (CE-AI)</div>
+                        <div class="timeline-query-box lang-ar" style="color: var(--accent); background: rgba(230,153,45,0.08);">«من يملك بنية تحويل النية إلى قيمة؟»</div>
+                        <div class="timeline-query-box lang-en" style="color: var(--accent); background: rgba(230,153,45,0.08);">"Who owns the infrastructure for converting intent into value?"</div>
+                    </div>
+                    <p class="timeline-desc-text lang-ar"><strong>تنسيق النية البشرية (Intent Coordination) وتحويلها اللحظي والمباشر إلى تنفيذ اقتصادي رأسمالي مستقل بالكامل عبر شبكات وكلاء ذكية ومترابطة.</strong></p>
+                    <p class="timeline-desc-text lang-en"><strong>Coordinating human intent and converting it instantly and directly into independent capital economic execution via interconnected networks of intelligent agents.</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="lang-ar">1.7 التحول الجاري: من الذكاء إلى التنفيذ</h3>
+        <h3 class="lang-en">1.7 The On-Going Shift: From Intelligence to Execution</h3>
+        <p class="lang-ar">إن حصر الذكاء الاصطناعي في مربع "التنبؤ" أو "توليد المحتوى" هو قصر نظر استراتيجي. القيمة الحقيقية تكمن في قدرة الأنظمة على <strong>التنفيذ الذاتي والربط البيني المستقل</strong>. في الماضي، كان العنصر البشري يستعين بالبرمجيات لإنجاز مهمته، أما اليوم فالعنصر البشري يكتفي برسم الغايات الكبرى وتحديد محددات المسار والقيود، بينما تتولى الشبكات الوكيلة هندسة وتنفيذ الخطوات الإجرائية المعقدة صعوداً وهبوطاً.</p>
+        <p class="lang-en">Limiting AI to "prediction" or "content generation" is a strategic short-sightedness. Real value lies in the system's capacity for <strong>autonomous execution and independent interconnectivity</strong>. In the past, humans used software to accomplish tasks; today, humans draw the grand objectives and set path constraints, while agentic networks engineer and execute complex procedural steps up and down the stack.</p>
+    </section>
+
+    <section class="manifesto-card reveal-card">
+        <h2 class="lang-ar">الفصل الثاني | الإطار النظري لاقتصاد الأوامر القائم على الذكاء الاصطناعي (CE-AI)</h2>
+        <h2 class="lang-en">Chapter II | Theoretical Framework of the AI-Driven Command Economy (CE-AI)</h2>
+        
+        <p class="lang-ar">ينتقل هذا الفصل من الطرح الوصفي البسيط إلى العمق التفسيري والأكاديمي البنيوي لنموذج الرأسمالية المعرفية الجديدة. يفترض this الإطار أن العلاقة الجدلية والتفاعلية الكلاسيكية بين المدخلات والمخرجات الاقتصادية قد تحورت بصورة نهائية كالتالي:</p>
+        <p class="lang-en">This chapter moves from simple descriptive discourse to the explanatory and structural depth of the new cognitive capitalism. This framework presumes that the classical dialectical and interactive relationship between economic inputs and outputs has definitively mutated as follows:</p>
+        
+        <div class="highlight-quote">
+            <p class="lang-ar">الفرضية المركزية للاقتصاد الجديد: «كلما تطورت قدرات الذكاء الاصطناعي في الفهم، والتخطيط، والتنفيذ، انخفضت تكلفة تحويل "النية البشرية" إلى "نتيجة اقتصادية قابلة للقياس".» وبالتالي، فإن الاقتصاد الرقمي قد يشهد انتقالًا تدريجيًا من اقتصاد يعتمد على الأدوات (Tools) إلى اقتصاد يعتمد على تنفيذ النية (Intent Execution).</p>
+            <p class="lang-en">Central Hypothesis of the New Economy: "The more AI capabilities evolve in comprehension, planning, and execution, the lower the cost of converting 'human intent' into a 'measurable economic outcome' becomes." Consequently, the digital economy is witnessing a gradual transition from an economy based on tools to an economy based on intent execution.</p>
+        </div>
+
+        <h3 class="lang-ar">2.6 تحول مكان القيمة داخل السلسلة الاقتصادية</h3>
+        <h3 class="lang-en">2.6 Shifting Locus of Value in the Economic Chain</h3>
+        <p class="lang-ar">في اقتصاد المعرفة السابق، كانت الأولوية الكبرى والخنادق الدفاعية للشركات تتمحور حول كفاءة التطبيق وسرعة الموظفين في النقر والكتابة والتنسيق. أما في فضاء CE-AI، فقد أصبحت القيمة والسيادة التنافسية الحقيقية تحتجز في حيز ما قبل التنفيذ (Pre-Execution Domain)، حيث يصبح ضبط المدخل المعرفي الفوقي (النية والسياق وحوكمة الأمر) هو المحدد المطلق لجودة وربحية المخرج المالي البنيوي.</p>
+        <p class="lang-en">In the legacy knowledge economy, high priorities and defensive moats for companies centered around application efficiency and employee speed in clicking, typing, and formatting. In the CE-AI space, true value and competitive sovereignty are captured in the Pre-Execution Domain, where refining the overarching cognitive input (intent, context, and command governance) becomes the absolute determinant of the quality and profitability of the financial output.</p>
+
+        <div class="comparison-grid">
+            <div class="method-box traditional">
+                <div class="method-heading lang-ar" style="color: #ef4444;">سلسلة الإنتاج الرقمي التقليدي</div>
+                <div class="method-heading lang-en" style="color: #ef4444;">Traditional Digital Production Chain</div>
+                <p class="lang-ar" style="font-size: 0.88rem; margin: 0; color: var(--text-dim); line-height: 1.6;">Problem ──> Tools ──> Human Execution ──> Output<br><br>الاعتماد الكلي يقع على كاهل الأداء البشري المباشر لربط الأدوات والتطبيقات المشتتة لإنتاج قيمة محددة بمهارات الأفراد المحدودة زمنياً وعقلياً.</p>
+                <p class="lang-en" style="font-size: 0.88rem; margin: 0; color: var(--text-dim); line-height: 1.6;">Problem ──> Tools ──> Human Execution ──> Output<br><br>Total reliance falls on direct human performance to link fragmented tools and applications to produce specific value, bounded by limited human time and cognitive skills.</p>
+            </div>
+            <div class="method-box ouamarkom">
+                <div class="method-heading lang-ar" style="color: var(--accent);">سلسلة إنتاج اقتصاد الأوامر CE-AI</div>
+                <div class="method-heading lang-en" style="color: var(--accent);">Command Economy Production Chain (CE-AI)</div>
+                <p class="lang-ar" style="font-size: 0.88rem; margin: 0; color: var(--text-dim); line-height: 1.6;">Intent ──> AI Interpretation ──> Agent Coordination ──> Execution ──> Output<br><br>يتم تقليل الاعتماد على التنفيذ البشري المباشر للإجراءات الرتيبة، والاعتماد الرأسمالي الكلي ينتقل إلى جودة هندسة النوايا وحوكمة المخرجات.</p>
+                <p class="lang-en" style="font-size: 0.88rem; margin: 0; color: var(--text-dim); line-height: 1.6;">Intent ──> AI Interpretation ──> Agent Coordination ──> Execution ──> Output<br><br>Reliance on direct human execution of repetitive procedures is minimized; absolute capital reliance shifts to the quality of intent engineering and outcome governance.</p>
+            </div>
+        </div>
+
+        <h3 class="lang-ar">2.9 فرضية “تحول الاختناق الاقتصادي”</h3>
+        <h3 class="lang-en">2.9 The "Economic Bottleneck Shift" Hypothesis</h3>
+        <p class="lang-ar">تاريخياً، ارتبط مفهوم "نقطة الاختناق الاستراتيجية" (Economic Bottleneck) بقدر وسائل الإنتاج أو قنوات التوزيع الاحتكارية. أما اليوم، ومع وفرة الحوسبة والبيانات والذكاء التوليدي، انتقل الاختناق بصورة كاملة إلى <strong>القدرة على تعريف وصياغة المشاكل المعقدة وتصميم النوايا الفوقية المحوكمة</strong>؛ الفاعلون القادرون على إدارة وتوجيه هذا الحيز المعرفي هم أسياد الاقتصاد الجديد.</p>
+        <p class="lang-en">Historically, the concept of a strategic bottleneck was linked to the scarcity of production means or monopolistic distribution channels. Today, with the abundance of computing, data, and generative intelligence, the bottleneck has completely migrated to the <strong>capacity to define and formulate complex problems and design governed overarching intents</strong>; actors capable of managing this cognitive space are the masters of the new economy.</p>
+    </section>
+
+    <section class="manifesto-card reveal-card">
+        <h2 class="lang-ar">الفصل الثالث | التعريفات والمعمارية النظامية لاقتصاد الأوامر (CE-AI Architecture)</h2>
+        <h2 class="lang-en">Chapter III | Systemic Definitions and Architecture of the Command Economy (CE-AI)</h2>
+        
+        <p class="lang-ar">يُعرَّف نظام CE-AI في هذه الورقة رسمياً على أنه: <strong>«إطار اقتصادي-حوسبي متكامل يقوم على هندسة النية البشرية وتحويلها ديناميكياً عبر وسائط استدلالية وسياقية إلى نتائج تشغيلية مدرة للعوائد بأقل قدر من التدخل البشري الإجرائي.»</strong> وتتجسد هذه المعمارية النخبوية في سبع طبقات مترابطة نظامياً:</p>
+        <p class="lang-en">The CE-AI framework is formally defined in this paper as: <strong>"An integrated economic-computational framework based on engineering human intent and converting it dynamically through reasoning and contextual vehicles into revenue-generating operational results with minimal procedural human intervention."</strong> This elite architecture manifests across seven systemically interconnected layers:</p>
+
+        <div class="layers-grid">
+            <div class="layer-card">
+                <span class="layer-num">01</span>
+                <h3 class="lang-ar">طبقة النية (Intent Layer)</h3>
+                <h3 class="lang-en">Intent Layer</h3>
+                <p class="lang-ar">الواجهة الإنسانية السيادية لالتقاط الغايات والأهداف الاستراتيجية العليا وصياغتها بلغة طبيعية مرنة وفائقة التدفق.</p>
+                <p class="lang-en">The sovereign human interface to capture supreme strategic goals and formulate them in fluid, high-velocity natural language.</p>
+            </div>
+            <div class="layer-card">
+                <span class="layer-num">02</span>
+                <h3 class="lang-ar">طبقة السياق (Context Layer)</h3>
+                <h3 class="lang-en">Context Layer</h3>
+                <p class="lang-ar">الحاضنة المعرفية التي تحقن النظام بكافة المحددات، القيود المالية، الأسرار التجارية، ومعطيات السوق الحية لمنع التشتت والهلوسة.</p>
+                <p class="lang-en">The cognitive incubator that injects the system with all constraints, financial limits, trade secrets, and live market data to prevent distraction and hallucination.</p>
+            </div>
+            <div class="layer-card">
+                <span class="layer-num">03</span>
+                <h3 class="lang-ar">طبقة الدلالة / الأوامر (Semantic Layer)</h3>
+                <h3 class="lang-en">Semantic / Command Layer</h3>
+                <p class="lang-ar">مرحلة الترجمة الهندسية الصارمة للمدخلات، وتحويلها إلى قوالب أوامر مقننة ومحكمة تفهمها النماذج اللغوية دون أدنى لبس دلالي.</p>
+                <p class="lang-en">The rigorous engineering translation phase of inputs, converting them into standardized and tightly controlled command templates understood by language models without semantic ambiguity.</p>
+            </div>
+            <div class="layer-card">
+                <span class="layer-num">04</span>
+                <h3 class="lang-ar">طبقة الاستدلال (Reasoning Layer)</h3>
+                <h3 class="lang-en">Reasoning Layer</h3>
+                <p class="lang-ar">العقول الحوسبية والمعالجات الذكية الكبرى التي تتولى التفكيك المنطقي وبناء الخطط التشغيلية والهياكل الفرضية الفورية.</p>
+                <p class="lang-en">The computational minds and major intelligent processors tasked with logical deconstruction and building instantaneous operational plans and hypothetical structures.</p>
+            </div>
+            <div class="layer-card">
+                <span class="layer-num">05</span>
+                <h3 class="lang-ar">طبقة الوكلاء (Agent Layer)</h3>
+                <h3 class="lang-en">Agent Layer</h3>
+                <p class="lang-ar">القوة التشغيلية الموزعة؛ شبكات مترابطة من وكلاء الذكاء الاصطناعي المتخصصين (تسويق، مبيعات، تحليل مالي) يعملون بتكامل لحظي.</p>
+                <p class="lang-en">Distributed operational power; interconnected networks of specialized AI agents (marketing, sales, financial analysis) working in real-time integration.</p>
+            </div>
+            <div class="layer-card">
+                <span class="layer-num">06</span>
+                <h3 class="lang-ar">طبقة التنفيذ (Execution Layer)</h3>
+                <h3 class="lang-en">Execution Layer</h3>
+                <p class="lang-ar">الجهاز الحركي للنظام؛ حيث تتحول القرارات البرمجية عبر واجهات الـ APIs والبيئات السحابية إلى حركة رأسمالية فعلية في السوق.</p>
+                <p class="lang-en">The motor system of the framework; where software decisions are transformed via APIs and cloud environments into actual capital movement in the market.</p>
+            </div>
+            <div class="layer-card">
+                <span class="layer-num">07</span>
+                <h3 class="lang-ar">طبقة القيمة الاقتصادية (Economic Layer)</h3>
+                <h3 class="lang-en">Economic Layer</h3>
+                <p class="lang-ar">نظام القياس المحاسبي الختامي لحساب مستويات الإنتاجية المتحققة، ضبط الكفاءة الحديّة، وإيداع الأرباح والعوائد المحققة.</p>
+                <p class="lang-en">The final accounting measurement system to compute achieved productivity levels, calibrate marginal efficiency, and deposit generated profits and returns.</p>
+            </div>
+        </div>
+
+        <div class="diagram-wrapper">
+            <div class="diagram-content desktop-diagram">Human Intent ──> Context Enrichment ──> Prompt Formation ──> AI Reasoning ──> Agent Orchestration ──> System Execution ──> Economic Output</div>
+            <div class="diagram-content mobile-diagram">Human Intent<br>│<br>▼<br>Context Enrichment<br>│<br>▼<br>Prompt Formation<br>│<br>▼<br>AI Reasoning<br>│<br>▼<br>Agent Orchestration<br>│<br>▼<br>System Execution<br>│<br>▼<br>Economic Output</div>
+        </div>
+    </section>
+
+    <section class="manifesto-card reveal-card">
+        <h2 class="lang-ar">الفصل الرابع | النموذج الاقتصادي وتدفق القيمة في نظام CE-AI</h2>
+        <h2 class="lang-en">Chapter IV | Economic Model and Value Flow in the CE-AI System</h2>
+        
+        <p class="lang-ar">في رأسمالية الأوامر، لا يتم النظر إلى خلق القيمة بوصفه حدثاً خطياً مصمتًا، بل هو تدفق حركي مستمر عبر طبقات النظام الحوسبي المعرفي، حيث تكتسب كل طبقة قيمة مضافة نوعية تعزز العائد الإجمالي للمنشأة:</p>
+        <p class="lang-en">In command capitalism, value creation is not viewed as a static linear event, but as a dynamic kinetic flow through the layers of the cognitive computational system, where each layer acquires a qualitative added value that enhances the overall enterprise return:</p>
+
+        <div class="value-accretion-stack">
+            <div class="accretion-layer-item">
+                <div class="accretion-meta-title lang-ar">طبقة النية<span>Strategic Value</span></div>
+                <div class="accretion-meta-title lang-en">Intent Layer<span>Strategic Value</span></div>
+                <div class="accretion-body-desc lang-ar"><strong>قيمة استراتيجية سيادية:</strong> تتولى تحديد المسار الرأسمالي الكلي للمنشأة، صياغة الرؤى العليا، وتوجيه الدفة الاقتصادية من أعلى مستويات القيادة العليا دون الدخول في النفق الإجرائي.</div>
+                <div class="accretion-body-desc lang-en"><strong>Sovereign Strategic Value:</strong> Determines the overall capital trajectory of the enterprise, formulating high-level visions, and steering the economic helm from the highest levels of leadership without entering the procedural tunnel.</div>
+            </div>
+            <div class="accretion-layer-item">
+                <div class="accretion-meta-title lang-ar">طبقة السياق<span>Cognitive Value</span></div>
+                <div class="accretion-meta-title lang-en">Context Layer<span>Cognitive Value</span></div>
+                <div class="accretion-body-desc lang-ar"><strong>قيمة معرفية احتكارية:</strong> تأصيل وتأكيد الفارق التنافسي الحرج للمنشأة في الأسواق عبر حقن وحشو النظام بكافة الخبرات التاريخية والبيانات والمحددات الاستثنائية الحصرية.</div>
+                <div class="accretion-body-desc lang-en"><strong>Proprietary Cognitive Value:</strong> Securing the critical competitive distinction of the enterprise in the markets by padding and feeding the system with all historical experiences, data, and exceptional exclusive benchmarks.</div>
+            </div>
+            <div class="accretion-layer-item">
+                <div class="accretion-meta-title lang-ar">طبقة الأوامر<span>Transformative Value</span></div>
+                <div class="accretion-meta-title lang-en">Command Layer<span>Transformative Value</span></div>
+                <div class="accretion-body-desc lang-ar"><strong>قيمة تحويلية هندسية:</strong> صياغة وبناء قوالب الاتصال والتشغيل عالية الهندسة والتقنين غير القابلة للاختراق الدلالي أو التقليد الأعمى من المنافسين في السوق.</div>
+                <div class="accretion-body-desc lang-en"><strong>Engineered Transformative Value:</strong> Constructing highly sophisticated, standardized communication and operational templates immune to semantic breaches or blind imitation by market competitors.</div>
+            </div>
+            <div class="accretion-layer-item">
+                <div class="accretion-meta-title lang-ar">طبقة الاستدلال والوكلاء<span>Operational Value</span></div>
+                <div class="accretion-meta-title lang-en">Reasoning & Agents Layer<span>Operational Value</span></div>
+                <div class="accretion-body-desc lang-ar"><strong>قيمة تشغيلية حوسبية:</strong> توليد وهندسة خطط العمل وسلاسل التشغيل المعقدة ديناميكياً وبكفاءة رياضية مطلقة على مدار الساعة دون كلل أو تراجع في الأداء الإنساني.</div>
+                <div class="accretion-body-desc lang-en"><strong>Computational Operational Value:</strong> Generating workflows and complex execution chains dynamically with absolute mathematical efficiency around the clock without fatigue or human performance decline.</div>
+            </div>
+            <div class="accretion-layer-item prime-gold">
+                <div class="accretion-meta-title lang-ar" style="color: var(--accent);">طبقة التنفيذ<span>Productive Value</span></div>
+                <div class="accretion-meta-title lang-en" style="color: var(--accent);">Execution Layer<span>Productive Value</span></div>
+                <div class="accretion-body-desc lang-ar"><strong>قيمة إنتاجية ملموسة:</strong> تحويل الإشارات البرمجية والنوايا الفكرية الصامتة إلى أصول رأسمالية حية وأرقام فعلية ومنتجات حقيقية تتدفق في الشرايين المالية للأسواق.</div>
+                <div class="accretion-body-desc lang-en"><strong>Tangible Productive Value:</strong> Converting silent code signals and intellectual intents into live capital assets, actual figures, and real products flowing through the financial arteries of the markets.</div>
+            </div>
+        </div>
+
+        <h3 class="lang-ar">4.7 مفهوم “تكلفة تحويل النية” (Intent Conversion Cost)</h3>
+        <h3 class="lang-en">4.7 The Concept of "Intent Conversion Cost"</h3>
+        <p class="lang-ar">يقدم إطار CE-AI هذا المعيار الحسابي الكمي المبتكر: وهو قياس إجمالي الموارد الحوسبية والزمنية والمالية المستهلكة لتحويل "الفكرة أو النية المجردة" إلى منتج أو قرار اقتصادي مدر للعائد. إن غاية منصة <strong>أوامركم</strong> الكبرى هي دفع هذه التكلفة نحو الصفر المطلق لتمكين السيولة الإنتاجية القصوى للمؤسسات.</p>
+        <p class="lang-en">The CE-AI framework introduces this innovative quantitative accounting standard: measuring the total computational, temporal, and financial resources consumed to convert an "abstract idea or intent" into a revenue-generating economic product or decision. Ouamarkom's ultimate goal is to push this cost to absolute zero to unlock maximum productive liquidity for enterprises.</p>
+    </section>
+
+    <section class="manifesto-card reveal-card">
+        <h2 class="lang-ar">الفصل الخامس | المقارنة النظرية: CE-AI مقابل الأطر الاقتصادية والتقنية المعاصرة</h2>
+        <h2 class="lang-en">Chapter V | Theoretical Comparison: CE-AI vs. Contemporary Frameworks</h2>
+        
+        <p class="lang-ar">لتأكيد التميز الهيكلي والفلسفي لإطار اقتصاد الأوامر، وضمان عدم خلطه بالأدبيات السائدة، نضع هذه المقارنة العلمية المباشرة والأكاديمية:</p>
+        <p class="lang-en">To affirm the structural and philosophical distinction of the Command Economy framework, and ensure it is not conflated with prevailing literature, we establish this direct scientific and academic comparison:</p>
+
+        <div class="comparison-matrix-cards">
+            
+            <div class="matrix-dimension-card">
+                <div class="matrix-dim-title lang-ar">بُعد الأتمتة (Automation)</div>
+                <div class="matrix-dim-title lang-en">Automation Dimension</div>  
+                <div class="matrix-split-grid">
+                    <div class="matrix-side old-paradigm">
+                        <span class="matrix-label lang-ar">المدارس السائدة التقليدية</span>
+                        <span class="matrix-label lang-en">Prevailing Legacy Paradigms</span>
+                        <span class="lang-ar">استبدال العمل البشري الروتيني بالآلات والمكائن (الآلة تقوم بذات السلوك البشري لكن بسرعة ودقة ميكانيكية أعلى فقط).</span>
+                        <span class="lang-en">Replacing routine human labor with machines (the machine performs the same human behavior but with higher mechanical speed and accuracy only).</span>
+                    </div>
+                    <div class="matrix-side ceai-paradigm">
+                        <span class="matrix-label lang-ar">إطار أوامركم CE-AI</span>
+                        <span class="matrix-label lang-en">Ouamarkom CE-AI Framework</span>
+                        <span class="lang-ar"><strong>إعادة تعريف جذري لماهية العمل نفسه، ونقل الكائن البشري كلياً من حيز الأداء الإجرائي إلى حيز السيادة والتوجيه الفوقي.</strong></span>
+                        <span class="lang-en"><strong>A radical redefinition of the nature of work itself, completely moving the human being from procedural performance to overarching sovereignty and direction.</strong></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="matrix-dimension-card">
+                <div class="matrix-dim-title lang-ar">بُعد قياس الإنتاجية (Productivity)</div>
+                <div class="matrix-dim-title lang-en">Productivity Dimension</div>
+                <div class="matrix-split-grid">
+                    <div class="matrix-side old-paradigm">
+                        <span class="matrix-label lang-ar">المدارس السائدة التقليدية</span>
+                        <span class="matrix-label lang-en">Prevailing Legacy Paradigms</span>
+                        <span class="lang-ar">التركيز الصارم على حساب وقياس مخرجات الناتج الكمي المادي والبرمجي مقابل كل ساعة عمل بشرية منقضية.</span>
+                        <span class="lang-en">Rigid focus on calculating and measuring quantitative physical and software outputs against every elapsed human working hour.</span>
+                    </div>
+                    <div class="matrix-side ceai-paradigm">
+                        <span class="matrix-label lang-ar">إطار أوامركم CE-AI</span>
+                        <span class="matrix-label lang-en">Ouamarkom CE-AI Framework</span>
+                        <span class="lang-ar"><strong>المتغير الحاسم ليس الوقت المنقضي، بل مستويات خفض تكلفة تحويل النوايا وجودة صياغة وحوكمة المشكلة الاقتصادية الفوقية.</strong></span>
+                        <span class="lang-en"><strong>The critical variable is not elapsed time, but the reduction levels of intent conversion costs and the quality of overarching problem formulation and governance.</strong></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="matrix-dimension-card">
+                <div class="matrix-dim-title lang-ar">بُعد بنية المنصات (Platform)</div>
+                <div class="matrix-dim-title lang-en">Platform Dimension</div>
+                <div class="matrix-split-grid">
+                    <div class="matrix-side old-paradigm">
+                        <span class="matrix-label lang-ar">المدارس السائدة التقليدية</span>
+                        <span class="matrix-label lang-en">Prevailing Legacy Paradigms</span>
+                        <span class="lang-ar">المنصة الرقمية الواضحة والتطبيقات الصاخبة هي مركز القوة والسيادة عبر تجميع وتدوير تأثيرات شبكات المستخدمين.</span>
+                        <span class="lang-en">The visible digital platform and loud applications are the center of power and sovereignty by aggregating and rotating user network effects.</span>
+                    </div>
+                    <div class="matrix-side ceai-paradigm">
+                        <span class="matrix-label lang-ar">إطار أوامركم CE-AI</span>
+                        <span class="matrix-label lang-en">Ouamarkom CE-AI Framework</span>
+                        <span class="lang-ar"><strong>تتحول المنصات البرمجية الكبرى إلى طبقات تشغيلية خلفية صامتة (Invisible Software)، بينما واجهة التفاعل الاقتصادية هي لغة الأوامر.</strong></span>
+                        <span class="lang-en"><strong>Major software platforms transform into silent background operational layers (Invisible Software), while the economic interaction interface is the command language.</strong></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="matrix-dimension-card">
+                <div class="matrix-dim-title lang-ar">بُعد حيازة البيانات (Data Economy)</div>
+                <div class="matrix-dim-title lang-en">Data Economy Dimension</div>
+                <div class="matrix-split-grid">
+                    <div class="matrix-side old-paradigm">
+                        <span class="matrix-label lang-ar">المدارس السائدة التقليدية</span>
+                        <span class="matrix-label lang-en">Prevailing Legacy Paradigms</span>
+                        <span class="lang-ar">حيازة وامتلاك البيانات الخام الضخمة (Big Data) وتخزينها هو منبع النفط الجديد ومصدر المزايا التنافسية الاحتكارية الوحيد.</span>
+                        <span class="lang-en">Acquiring and owning massive raw Big Data and storing it is the source of the new oil and the sole source of monopolistic competitive advantages.</span>
+                    </div>
+                    <div class="matrix-side ceai-paradigm">
+                        <span class="matrix-label lang-ar">إطار أوامركم CE-AI</span>
+                        <span class="matrix-label lang-en">Ouamarkom CE-AI Framework</span>
+                        <span class="lang-ar"><strong>النية المصاغة بدقة متناهية وهندسة السياق المعرفي هي المفتاح الحاسم والوحيد لتفعيل تلك البيانات الصامتة وتوليد العوائد منها.</strong></span>
+                        <span class="lang-en"><strong>Finely formulated intent and cognitive context engineering are the absolute and only keys to activating that silent data and generating returns from it.</strong></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="matrix-dimension-card">
+                <div class="matrix-dim-title lang-ar">بُعد فلسفة اقتصاد الذكاء (AI Economy)</div>
+                <div class="matrix-dim-title lang-en">AI Economy Dimension</div>
+                <div class="matrix-split-grid">
+                    <div class="matrix-side old-paradigm">
+                        <span class="matrix-label lang-ar">المدارس السائدة التقليدية</span>
+                        <span class="matrix-label lang-en">Prevailing Legacy Paradigms</span>
+                        <span class="lang-ar">التركيز على تطوير وبيع الخوارزميات الفردية والنماذج اللغوية كمنتجات وخدمات مستقلة ومنعزلة في السوق (Prediction Engines).</span>
+                        <span class="lang-en">Focusing on developing and selling individual algorithms and language models as independent, isolated products and services in the market (Prediction Engines).</span>
+                    </div>
+                    <div class="matrix-side ceai-paradigm">
+                        <span class="matrix-label lang-ar">إطار أوامركم CE-AI</span>
+                        <span class="matrix-label lang-en">Ouamarkom CE-AI Framework</span>
+                        <span class="lang-ar"><strong>التعامل مع الذكاء كبنية تحتية ونظام تشغيل اقتصادي كلي ومغلق، يبدأ بالتقاط النية الإنسانية وينتهي بتشييد رأس المال القراري.</strong></span>
+                        <span class="lang-en"><strong>Treating intelligence as a macroeconomic, closed infrastructure and operating system, starting with capturing human intent and ending with building decision capital.</strong></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="manifesto-card reveal-card">
+        <h2 class="lang-ar">الفصل السادس | المخاطر، الحوكمة، والقيود في نظام CE-AI</h2>
+        <h2 class="lang-en">Chapter VI | Risks, Governance, and Constraints in the CE-AI System</h2>
+        
+        <p class="lang-ar">إن صياغة إطار استشرافي عالمي يتطلب بالضرورة تشريحاً نقدياً شفافاً ومسؤولاً لكافة التحديات والمهددات البنيوية والمخاطر المصاحبة لولادة هذا النمط الرأسمالي:</p>
+        <p class="lang-en">Formulating a global forward-looking framework necessitates a transparent, responsible critical dissection of all structural challenges, threats, and risks accompanying the birth of this capitalist paradigm:</p>
+
+        <h3 class="lang-ar">1. مخاطر تركّز السلطة والسيطرة الاحتكارية الطبقية</h3>
+        <h3 class="lang-en">1. Risks of Power Concentration and Stratified Monopolistic Control</h3>
+        <p class="lang-ar">قد يؤدي هذا النموذج النمطي - في حال غياب البنى التحتية المفتوحة والمحايدة - إلى ظهور "احتكار طبقي عميق" (Layered Monopoly)، حيث تتركز القوة المطلقة والسيادة وحق احتجاز الأرباح في يد قلة من الشركات العالمية العابرة للقارات والتي تملك النماذج التأسيسية الضخمة (Foundation Models)، مما يهدد بتحويل باقي الشركات والمؤسسات المحلية إلى مجرد أطراف تابعة عديمة الحيلة والخنادق الدفاعية.</p>
+        <p class="lang-en">This paradigm could lead—in the absence of open and neutral infrastructure—to a deep "Layered Monopoly", where absolute power, sovereignty, and profit retention rights are concentrated in the hands of a few global transcontinental corporations owning massive Foundation Models, threatening to turn remaining local companies and institutions into mere helpless dependencies stripped of defensive moats.</p>
+
+        <h3 class="lang-ar">2. مخاطر صياغة وتفسير النوايا (Intent Framing & Poisoning)</h3>
+        <h3 class="lang-en">2. Risks of Intent Framing and Poisoning</h3>
+        <p class="lang-ar">بما أن النية الإنسانية هي مدخل الإنتاج الأساسي، فإن الجهة التي تملك خوارزميات تفسير وتفكيك وترجمة هذه النوايا داخل الأنظمة الذكية تمتلك توجيه النتيجة الاقتصادية بالكامل. إن انحياز هذه الخوارزميات أو تعرضها لعمليات تلاعب بالأوامر (Prompt Manipulation) أو تسميم السياق المعرفي قد يسفر عن قرارات استراتيجية كارثية ومضللة للمنشآت دون وعي منها.</p>
+        <p class="lang-en">Since human intent is the core production input, the entity that owns the algorithms interpreting, deconstructing, and translating these intents within smart systems completely directs the economic outcome. Bias in these algorithms or exposure to prompt manipulation or context poisoning could yield disastrous, misleading strategic decisions for enterprises without their conscious awareness.</p>
+    </section>
+
+    <section class="manifesto-card reveal-card">
+        <h2 class="lang-ar">الفصل السابع | السيناريوهات التطبيقية لاقتصاد الأوامر (CE-AI Applied Scenarios)</h2>
+        <h2 class="lang-en">Chapter VII | Applied Scenarios of the Command Economy (CE-AI)</h2>
+        
+        <p class="lang-ar">لنقل هذه الفلسفة النظرية المعمقة إلى حيز التطبيق الواقعي الملموس، نستشرف سبعة سيناريوهات حيوية ستعيد رسم ملامح الأسواق والمنشآت الرقمية:</p>
+        <p class="lang-en">To bridge this profound theoretical philosophy into tangible reality, we foresee seven vital scenarios that will redraw the contours of digital markets and enterprises:</p>
+
+        <div class="example-block">
+            <div class="example-title lang-ar">السيناريو الأول: الشركة ذاتية التشغيل بالكامل (AI-Native Enterprise)</div>
+            <div class="example-title lang-en">Scenario I: The Fully Autonomous Enterprise (AI-Native Enterprise)</div>
+            
+            <p class="lang-ar" style="font-size: 0.92rem; color: var(--text-main); line-height: 1.7;">في هذا النموذج الفاخر، تختفي الهياكل الإدارية والوظائف البيروقراطية المنعزلة. يكتفي المدير التنفيذي بإصدار أمر سيادي واحد لبنية أوامركم: <em>"حسن ربحية المنتجات الراكدة في المنطقة الوسطى خلال 30 يوماً مع الالتزام بمحددات الهوية البصرية والميزانية المرصودة"</em>. يتولى الـ Command Graph تلقائياً إطلاق وتوجيه وكيل مسح المخازن، ووكيل تسعير المنافسين الفوري، ووكيل هندسة وإطلاق الحملات الإعلانية المرنة ومراقبة عوائدها لحظة بلحظة ودون أي احتكاك أو تدخل بشري روتيني مكرر.</p>
+            <p class="lang-en" style="font-size: 0.92rem; color: var(--text-main); line-height: 1.7;">In this luxurious model, bureaucratic administrative structures and isolated jobs vanish. The CEO simply issues a single sovereign command to the Ouamarkom infrastructure: <em>"Optimize the profitability of stagnant products in the Central Region within 30 days while adhering to visual identity constraints and the allocated budget."</em> The Command Graph automatically launches and directs the inventory scanning agent, the real-time competitor pricing agent, and the flexible ad campaign engineering and launching agent, monitoring returns moment by moment without any friction or repeated routine human intervention.</p>
+        </div>
+
+        <div class="example-block">
+            <div class="example-title lang-ar">السيناريو الثاني: الحكومة فائقة السيولة والتدفق الفوري (Instant Governance)</div>
+            <div class="example-title lang-en">Scenario II: Ultra-Liquid Government and Instant Regulation (Instant Governance)</div>
+            
+            <p class="lang-ar" style="font-size: 0.92rem; color: var(--text-main); line-height: 1.7;">تتحول المعاملات الإجرائية المعقدة وطوابير الموافقات إلى تدفق لحظي فوري ومستدام. يتقدم المستثمر بنواياه: <em>"أريد تأسيس منشأة لوجستية متطورة لخدمة القطاع الزراعي في الضواحي"</em>, فيقوم النظام الحكومي الموحد القائم على CE-AI بفحص الملاءمة، التحقق من المخططات القانونية، إصدار التراخيص الفورية، وربطه آلياً بالصناديق التنموية ومزودي الطاقة في ثوانٍ معدودة.</p>
+            <p class="lang-en" style="font-size: 0.92rem; color: var(--text-main); line-height: 1.7;">Complex procedural transactions and approval queues transform into an instantaneous, sustainable flow. An investor submits their intent: <em>"I want to establish an advanced logistics facility to serve the agricultural sector in the suburbs,"</em> and the unified governmental system built on CE-AI immediately verifies compliance, reviews legal charts, issues instant licenses, and links them automatically to development funds and energy providers within seconds.</p>
+        </div>
+
+        <div class="example-block">
+            <div class="example-title lang-ar">السيناريوهات الخمسة الإضافية المحورية لإعادة صياغة الرأسمالية</div>
+            <div class="example-title lang-en">The Five Additional Crucial Scenarios for Re-shaping Capitalism</div>
+            
+            <ul class="custom-bullet-list lang-ar">
+                <li><strong>اقتصاد الفرد المؤسسة (One-Person Corporation):</strong> تمكين الفرد الواحد بفضل رافعة الأوامر والوكلاء والذكاء الاصطناعي من إدارة عمليات إنتاجية وتدوير حملات تسويقية عالمية معقدة بمفرده كانت تتطلب سابقاً مئات الموظفين.</li>
+                <li><strong>أسواق وبورصات الأوامر (Prompt & Command Markets):</strong> تداول وبيع خطط وسلاسل التنفيذ المعرفي المسبك والمحوكم كأصول رأسمالية مستقلة ومدرة للعوائد بدلاً من بيع السلع الجامدة.</li>
+                <li><strong>الاقتصاد التعليمي التوجيهي (Cognitive Education):</strong> تحول التعليم من التلقين وحفظ الإجراءات إلى بناء ملكة هندسة النوايا والتفكير الاستراتيجي والتحليل النقدي الفوقي.</li>
+                <li><strong>الاقتصاد الإبداعي المؤتمت حوكمياً:</strong> تزاوج الذوق الفني البشري والقدرة التوليدية المستقلة للوكلاء لإنتاج هويات بصرية وحملات اتصالية فورية تتوائم مع مشاعر وتوجهات الجماهير لحظياً.</li>
+                <li><strong>التنسيق الصناعي واللوجستي الذكي:</strong> إدارة سلاسل الإمداد العالمية الكبرى وضبط مستويات الهدر والإنتاج عبر استقراء ديناميكي مباشر لنوايا الأسواق الاستهلاكية وحركتها.</li>
+            </ul>
+            <ul class="custom-bullet-list lang-en">
+                <li><strong>Solopreneur / One-Person Corporation:</strong> Empowering a single individual, thanks to the leverage of commands and intelligent AI agents, to manage complex global production operations and marketing campaigns that previously required hundreds of employees.</li>
+                <li><strong>Prompt & Command Markets:</strong> Trading and selling precisely engineered, governed cognitive execution plans and chains as independent capital assets generating returns rather than selling static commodities.</li>
+                <li><strong>Cognitive Education:</strong> Shifting education from rote learning and memorizing procedures to building the faculty of intent engineering, strategic thinking, and high-level critical analysis.</li>
+                <li><strong>Governance-Automated Creative Economy:</strong> Marrying human artistic taste with the independent generative capacity of agents to produce real-time visual identities and communication campaigns tailored instantly to audience emotions and trends.</li>
+                <li><strong>Intelligent Industrial & Logistical Coordination:</strong> Managing massive global supply chains and controlling waste and production levels via real-time dynamic inference of consumer market intents and movements.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="manifesto-card reveal-card" style="border: 1px solid var(--gold); background: linear-gradient(135deg, rgba(10, 25, 47, 0.6) 0%, rgba(4, 9, 22, 0.9) 100%);">
+        <h2 class="lang-ar">الفصل الثامن | الخاتمة والاتجاهات المستقبلية لإطار CE-AI</h2>
+        <h2 class="lang-en">Chapter VIII | Conclusion and Future Directions of the CE-AI Framework</h2>
+        
+        <p class="lang-ar">لا تقدم هذه الوثيقة التأسيسية حتمية يقينية، بل تطرح عدسة تحليلية وبنية تحتية سيادية لقراءة وصياغة التحول القادم في بنية المنظومة الرقمية العالمية. إن الاستنتاج المركزي الكلي لهذه الدراسة يوضح أن الاقتصاد العالمي يتأهب للانتقال من معيار القيمة المرتكزة على الإجراءات والتطبيقات البرمجية المشتتة، إلى معيار القيمة القائم على النية المصاغة كأمر محوكم وقابل للتنفيذ المباشر المستقل.</p>
+        <p class="lang-en">This foundational document does not present a deterministic certainty, but proposes an analytical lens and a sovereign infrastructure to read and sculpt the upcoming transformation in the global digital stack. The central macroeconomic conclusion demonstrates that the global economy is preparing to shift from a standard of value centered around fragmented software applications and procedures to a standard of value based on intent formulated as a governed, directly executable command.</p>
+        
+        <div class="engine-box">
+            <div class="engine-list">
+                <div class="engine-step lang-ar">1. استقبال النية واستخلاص المحددات البنيوية</div>
+                <div class="engine-step lang-en">1. Intent Reception & Constraint Extraction</div>
+                
+                <div class="engine-arrow">▼</div>
+                
+                <div class="engine-step lang-ar">2. صياغة الـ Command Graph وهندسة الأوامر</div>
+                <div class="engine-step lang-en">2. Command Graph Formation & Prompt Engineering</div>
+                
+                <div class="engine-arrow">▼</div>
+                
+                <div class="engine-step lang-ar">3. أوركسترا وتوزيع التشغيل على الوكلاء الأذكياء</div>
+                <div class="engine-step lang-en">3. Orchestration & Distribution to Smart Agents</div>
+                
+                <div class="engine-arrow">▼</div>
+                
+                <div class="engine-step lang-ar">4. التنفيذ البرمجي ومراقبة النتائج في السوق الواقعي</div>
+                <div class="engine-step lang-en">4. Software Execution & Market Outcome Monitoring</div>
+                
+                <div class="engine-arrow">▼</div>
+                
+                <div class="engine-step lang-ar">5. تراكم المعرفة وتشييد رأس المال القراري (Decision Capital)</div>
+                <div class="engine-step lang-en">5. Knowledge Accumulation & Construction of Decision Capital</div>
+            </div>
+        </div>
+
+        <p class="lang-ar">يفتح هذا الإطار آفاقاً بحثية واسعة النطاق حول صياغة نماذج كمية لقياس "قيمة النية" اقتصادياً، وبناء أطر تشريعية وقانونية قادرة على محاسبة وحوكمة سلوك الوكلاء المستقلين (Autonomous Agents)، وهندسة معايير دولية لتنظيم بورصات وأسواق الأوامر القادمة. وتؤكد منصة <strong>أوامركم</strong> عبر هذا البيان العلمي التزامها التاريخي بامتلاك وبناء وتأصيل هذه الطبقة التشغيلية القيادية في العالم العربي، لتكون حجر الزاوية في صياغة رأسمالية المستقبل الذكي.</p>
+        <p class="lang-en">This framework opens wide research horizons regarding the formulation of quantitative models to measure the "value of intent" economically, building legislative and legal frameworks capable of auditing and governing autonomous agents' behavior, and engineering international standards to organize future prompt and command exchanges. Ouamarkom platform, through this scientific statement, confirms its historic commitment to possessing, building, and anchoring this leadership operational layer in the Arab world, to be the cornerstone in shaping the capitalism of the smart future.</p>
+        
+        <p class="lang-ar" style="font-weight: 700; color: var(--gold); text-align: center; font-size: 1.05rem; margin-top: 25px; border-top: 1px solid rgba(252, 211, 77, 0.15); padding-top: 20px;">
+            «في عصر الحوسبة المعرفية الشاملة: من يملك طبقة القرار والتنسيق... يملك الاقتصاد نفسه.»
+        </p>
+        <p class="lang-en" style="font-weight: 700; color: var(--gold); text-align: center; font-size: 1.05rem; margin-top: 25px; border-top: 1px solid rgba(252, 211, 77, 0.15); padding-top: 20px;">
+            "In the era of ubiquitous cognitive computing: Whoever owns the decision and coordination layer... owns the economy itself."
+        </p>
+    </section>
+
+    <div class="footer-cta reveal-card">
+        <h2 class="lang-ar">شارك في صياغة <span>النظرية الرأسمالية الجديدة</span></h2>
+        <h2 class="lang-en">Participate in Shaping <span>the New Capitalist Theory</span></h2>
+        
+        <div class="btn-group">
+            <a href="/#register" class="btn btn-primary lang-ar">انضم إلى مجتمع مستثمري وشركاء أوامركم</a>
+            <a href="/#register" class="btn btn-primary lang-en">Join Ouamarkom's Investors & Partners</a>
+            
+            <a href="/docs/whitepaper.pdf" class="btn btn-secondary-outline lang-ar">تحميل النسخة الأكاديمية PDF</a>
+            <a href="/docs/whitepaper.pdf" class="btn btn-secondary-outline lang-en">Download Academic PDF Version</a>
+        </div>
+    </div>
+
+</main>
+
+<footer style="background-color: transparent; padding: 40px 0 30px; border-top: 1px solid rgba(255,255,255,0.03); text-align: center; position: relative; z-index: 1;">
+    <p class="lang-ar" style="font-size: 0.8rem; color: var(--text-dim); text-align: center; margin: 0 15px; line-height: 1.6;">
+        © 2026 أوامركم | أول بنية تحتية تشغيلية لاقتصاد الأوامر والقرارات الذكية في العالم. جميع الحقوق الفكرية والأكاديمية محفوظة لـ Ouamarkom.
+    </p>
+    <p class="lang-en" style="font-size: 0.8rem; color: var(--text-dim); text-align: center; margin: 0 15px; line-height: 1.6;">
+        © 2026 Ouamarkom | The world's first operational infrastructure for the command economy and smart decisions. All intellectual and academic rights reserved to Ouamarkom.
+    </p>
+</footer>
+
+<script src="/script.js" defer></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // حركية ظهور البطاقات اللطيفة أثناء التمرير
+        const revealCards = document.querySelectorAll('.reveal-card');
+        
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.01,
+            rootMargin: "0px 0px -10px 0px"
+        });
+
+        revealCards.forEach(card => revealObserver.observe(card));
+
+        // آلية تبديل اللغة الفورية السيادية
+        const langBtn = document.getElementById('lang-toggle');
+        langBtn.addEventListener('click', () => {
+            const currentLang = document.documentElement.getAttribute('lang');
+            if (currentLang === 'ar') {
+                document.documentElement.setAttribute('lang', 'en');
+                document.documentElement.setAttribute('dir', 'ltr');
+                langBtn.textContent = 'العربية';
+                document.title = "Foundational Whitepaper | AI-Driven Command Economy (CE-AI) - Ouamarkom";
+            } else {
+                document.documentElement.setAttribute('lang', 'ar');
+                document.documentElement.setAttribute('dir', 'rtl');
+                langBtn.textContent = 'English';
+                document.title = "الورقة التأسيسية | اقتصاد الأوامر القائم على الذكاء الاصطناعي (CE-AI) - أوامركم";
+            }
+        });
+    });
+</script>
+</body>
+</html>
