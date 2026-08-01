@@ -144,6 +144,11 @@
       "source": "/blog/massive-network-of-commands.html",
       "destination": "/blog/capital-internet/massive-network-of-commands.html",
       "permanent": true
+    },
+    {
+      "source": "/book.html",
+      "destination": "/book",
+      "permanent": true
     }
   ]
 }
