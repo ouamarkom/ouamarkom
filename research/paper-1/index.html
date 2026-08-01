@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>الورقة البحثية رقم (1) | اقتصاد الأوامر للذكاء الاصطناعي (CE-AI) - أوامركم</title>
-    <meta name="description" content="الورقة البحثية رقم 1: اقتصاد الأوامر للذكاء الاصطناعي - من استرجاع المعلومات إلى التنفيذ الذكي. بقلم مراد الصهيبي - شركة أوامركم للتقنيات الذكية.">
-    <meta name="keywords" content="اقتصاد الأوامر, الذكاء الاصطناعي, التنفيذ الذكي, اليد الذكية, أوامركم, مراد الصهيبي, Ouamarkom, CE-AI, Command Economy of AI">
+    <meta name="description" content="الورقة البحثية رقم 1: اقتصاد الأوامر للذكاء الاصطناعي - من استرجاع المعلومات إلى التنفيذ الذكي. بقلم مراد نجيب الصهيبي - شركة أوامركم للتقنيات الذكية.">
+    <meta name="keywords" content="اقتصاد الأوامر, الذكاء الاصطناعي, التنفيذ الذكي, اليد الذكية, أوامركم, مراد نجيب الصهيبي, Ouamarkom, CE-AI, Command Economy of AI">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://ouamarkom.com/research/paper-1" />
     
@@ -88,51 +88,77 @@
         html[lang="ar"] .lang-en { display: none !important; }
         html[lang="en"] .lang-ar { display: none !important; }
 
-        /* Fixed Navigation Elements */
-        .lang-switcher-btn {
+
+        .top-navbar {
             position: fixed;
-            top: 20px;
-            left: 20px;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 70px;
             z-index: 1000;
-            background: rgba(10, 25, 47, 0.85);
-            border: 1px solid rgba(230, 153, 45, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 clamp(20px, 5vw, 50px);
+            background: rgba(4, 9, 22, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(230, 153, 45, 0.2);
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .brand-logo-link {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .brand-logo-link:hover {
+            transform: scale(1.04);
+        }
+
+        .brand-logo-img {
+            height: 36px;
+            width: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+        }
+
+        .lang-switcher-btn {
+            position: relative;
+            top: auto;
+            right: auto;
+            left: auto;
+            background: rgba(10, 25, 47, 0.9);
+            border: 1px solid rgba(230, 153, 45, 0.35);
             color: var(--gold);
-            padding: 8px 18px;
+            padding: 8px 20px;
             border-radius: 50px;
             font-size: 0.85rem;
             font-weight: 700;
             cursor: pointer;
-            backdrop-filter: blur(12px);
+            backdrop-filter: blur(8px);
             transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-        }
-
-        html[lang="en"] .lang-switcher-btn {
-            left: auto;
-            right: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
         .lang-switcher-btn:hover {
             background: var(--gold);
             color: #040916;
             transform: translateY(-2px);
-            box-shadow: 0 6px 25px rgba(230, 153, 45, 0.25);
+            box-shadow: 0 6px 20px rgba(230, 153, 45, 0.3);
         }
 
-        .ouamarkom-brand-fixed {
-            position: fixed;
-            top: 22px;
-            right: 20px;
-            z-index: 1000;
-            height: 36px;
-            display: inline-flex;
-            align-items: center;
-            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        .manifesto-container {
+            padding-top: clamp(100px, 12vw, 130px) !important;
         }
 
-        html[lang="en"] .ouamarkom-brand-fixed {
-            right: auto;
-            left: 20px;
+        html[lang="ar"] .diagram-arrow {
+            transform: rotate(180deg);
+            display: inline-block;
         }
 
         .brand-logo-img {
@@ -385,7 +411,7 @@
         .sub-block {
             margin-bottom: 24px;
             padding-bottom: 16px;
-            border-bottom: 1px dashed rgba(255, 255, 255, 0.06);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         }
 
         .sub-block:last-child {
@@ -404,15 +430,18 @@
             font-size: 0.88rem;
             position: relative;
             z-index: 1;
+            margin-top: 0;
         }
     </style>
 </head>
 <body>
 
-<button class="lang-switcher-btn" id="lang-toggle">English</button>
-<a href="https://ouamarkom.com" class="ouamarkom-brand-fixed" aria-label="Ouamarkom Home">
-    <img src="https://ouamarkom.com/logo.webp" alt="Ouamarkom Logo" class="brand-logo-img">
-</a>
+<header class="top-navbar">
+    <a href="https://ouamarkom.com" class="brand-logo-link">
+        <img src="https://ouamarkom.com/logo.webp" alt="Ouamarkom Logo" class="brand-logo-img">
+    </a>
+    <button class="lang-switcher-btn" id="lang-toggle">العربية</button>
+</header>
 
 <main class="manifesto-container">
     
@@ -895,7 +924,7 @@
     </section>
 
     <!-- ACADEMIC NOTE -->
-    <section class="manifesto-card reveal-card" style="background: rgba(4, 9, 22, 0.8); border: 1px dashed rgba(230, 153, 45, 0.3);">
+    <section class="manifesto-card reveal-card" style="background: rgba(4, 9, 22, 0.8); border: 1px solid rgba(230, 153, 45, 0.3);">
         <h3 class="lang-ar">ملاحظة أكاديمية (Academic Note)</h3>
         <h3 class="lang-en">Academic Note</h3>
         <p class="lang-ar">هذه النسخة تشكل أساسًا مفهوميًا (Conceptual Framework) لأطروحة اقتصاد الأوامر للذكاء الاصطناعي. تتضمن الإصدارات والبحوث اللاحقة مراجعات الأدبيات المنهجية (Literature Reviews)، والتعريفات التشغيلية للمتغيرات، بالإضافة إلى النماذج المنهجية الموجهة للتطبيق والنشر في المجلات الأكاديمية المحكّمة.</p>
@@ -905,7 +934,7 @@
 </main>
 
 <footer>
-    <p class="lang-ar">© 2026 شركة أوامركم للتقنيات الذكية | جميع الحقوق محفوظة للمؤلف مراد الصهيبي</p>
+    <p class="lang-ar">© 2026 شركة أوامركم للتقنيات الذكية | جميع الحقوق محفوظة للمؤلف مراد نجيب الصهيبي</p>
     <p class="lang-en">© 2026 Ouamarkom AI Technologies | All Rights Reserved to Morad Alsahybi</p>
 </footer>
 
