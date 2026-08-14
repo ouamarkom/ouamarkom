@@ -97,79 +97,121 @@ document.addEventListener("DOMContentLoaded", () => {
         btt.addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
     }
 
-    // --- 5. معالجة نموذج التسجيل (نسخة Google Sheets المحدثة) ---
+// --- معالجة نموذج التسجيل (نسخة مصلحة تمنع HTTP 405) ---
     const form = document.getElementById('ouamarkom-form');
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwazfFau-avk-PAN8GFi7vmxKFlZcm9lbrUNjzCb2MGBqloFxxZH0vKlJWeh1RBjNBw/exec";
 
-    // الرابط الجديد الخاص بك
-    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwGAiOfMhlfJJcwiTgEm15aI73dXCSjErxr_tFF3rEh9i8VbHXWeb-7vzorHrWRxmSS/exec";
+    if (form) {
+        const isArabic = document.documentElement.lang === 'ar' || document.dir === 'rtl';
 
-    if(form) {
+        const i18n = {
+            nameRequired: isArabic ? "يرجى إدخال اسمك الكامل" : "Please enter your full name",
+            nameMinLength: isArabic ? "يجب أن يتكون الاسم من 3 أحرف على الأقل" : "Name must be at least 3 characters long",
+            emailRequired: isArabic ? "يرجى إدخال البريد الإلكتروني" : "Please enter your email address",
+            emailInvalid: isArabic ? "صيغة البريد الإلكتروني غير صحيحة" : "Please enter a valid email address",
+            interestRequired: isArabic ? "يرجى اختيار مسار الاهتمام" : "Please select a partnership track",
+            submitting: isArabic ? "جاري تأمين مكانك..." : "Securing your spot...",
+            serverError: isArabic ? "عذراً، حدث خطأ أثناء إرسال البيانات. يرجى المحاولة لاحقاً." : "Sorry, an error occurred. Please try again later."
+        };
+
         const nameInput = form.elements['Full_Name'];
         const emailInput = form.elements['Email_Address'];
+        const orgInput = form.elements['Organization'];
+        const interestSelect = form.elements['Interest_Type'];
+        const notesInput = form.elements['Notes'];
+
         const nameError = document.getElementById('name-error');
         const emailError = document.getElementById('email-error');
         const formError = document.getElementById('form-error');
         const btn = document.getElementById('submit-btn');
+        const btnTextSpan = btn ? btn.querySelector('span') : null;
 
-        form.addEventListener('submit', async (e) => {    
-            e.preventDefault();  
-            
-            [nameError, emailError, formError].forEach(el => el.style.opacity = '0');  
-            [nameInput, emailInput].forEach(el => el.classList.remove('invalid'));  
+        const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-            let isValid = true;  
-            if (nameInput.value.trim().length < 3) {  
-                nameError.innerText = "يرجى إدخال اسمك الكريم";  
-                nameError.style.opacity = '1';  
-                nameInput.classList.add('invalid');  
-                isValid = false;  
-            }  
-            if (!emailInput.validity.valid) {  
-                emailError.innerText = "البريد الإلكتروني غير صحيح";  
-                emailError.style.opacity = '1';  
-                emailInput.classList.add('invalid');  
-                isValid = false;  
-            }  
-            if (!isValid) return;   
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault(); // إلغاء إرسال HTML الافتراضي لسيرفر Live Server
 
-            const originalBtnText = btn.innerText;  
-            btn.innerText = "جاري تأمين مكانك...";    
-            btn.disabled = true;    
+            [nameError, emailError, formError].forEach(el => {
+                if (el) { el.innerText = ''; el.style.opacity = '0'; }
+            });
+            [nameInput, emailInput, interestSelect].forEach(el => el && el.classList.remove('invalid'));
 
-            try {  
-                // استبدال Formspree بطلب Fetch إلى Google Script
-                await fetch(GOOGLE_SCRIPT_URL, {    
-                    method: 'POST',    
-                    mode: 'no-cors', // ضروري للتعامل مع جوجل سكريبت
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        name: nameInput.value,
-                        email: emailInput.value,
-                        interest: form.elements['Interest_Type'].value
-                    })
-                });    
+            let isValid = true;
 
-                // بما أننا نستخدم no-cors، سنعتبر العملية نجحت فوراً إذا لم يحدث catch للخطأ
-                document.querySelector('.form-content-wrapper').classList.add('hidden');  
-                document.getElementById('success-message').classList.add('visible');  
-                
-                // التحقق من وجود مؤقت timerEl قبل إخفائه (كما في كودك الأصلي)
-                if (typeof timerEl !== 'undefined' && timerEl) timerEl.style.display = 'none';  
-                
-                document.getElementById('full-form-box').scrollIntoView({ behavior: 'smooth', block: 'center' });  
-                form.reset();  
+            if (!nameInput.value.trim()) {
+                if (nameError) { nameError.innerText = i18n.nameRequired; nameError.style.opacity = '1'; }
+                nameInput.classList.add('invalid');
+                isValid = false;
+            } else if (nameInput.value.trim().length < 3) {
+                if (nameError) { nameError.innerText = i18n.nameMinLength; nameError.style.opacity = '1'; }
+                nameInput.classList.add('invalid');
+                isValid = false;
+            }
 
-            } catch (err) {  
-                formError.innerText = "عذراً، حدث خطأ. يرجى المحاولة مجدداً بعد قليل.";  
-                formError.style.opacity = '1';  
-            } finally {  
-                if (!document.getElementById('success-message').classList.contains('visible')) {  
-                    btn.disabled = false;    
-                    btn.innerText = originalBtnText;  
-                }  
-            }  
-        });  
+            if (!emailInput.value.trim()) {
+                if (emailError) { emailError.innerText = i18n.emailRequired; emailError.style.opacity = '1'; }
+                emailInput.classList.add('invalid');
+                isValid = false;
+            } else if (!isValidEmail(emailInput.value.trim())) {
+                if (emailError) { emailError.innerText = i18n.emailInvalid; emailError.style.opacity = '1'; }
+                emailInput.classList.add('invalid');
+                isValid = false;
+            }
+
+            if (!interestSelect.value) {
+                interestSelect.classList.add('invalid');
+                isValid = false;
+            }
+
+            if (!isValid) return;
+
+            const originalBtnText = btnTextSpan ? btnTextSpan.innerText : btn.innerText;
+            if (btnTextSpan) btnTextSpan.innerText = i18n.submitting;
+            else btn.innerText = i18n.submitting;
+            btn.disabled = true;
+
+            const payload = {
+                name: nameInput.value.trim(),
+                email: emailInput.value.trim(),
+                organization: orgInput ? orgInput.value.trim() : '',
+                interest: interestSelect.value,
+                notes: notesInput ? notesInput.value.trim() : '',
+                language: isArabic ? 'ar' : 'en',
+                timestamp: new Date().toISOString()
+            };
+
+            try {
+                await fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'text/plain' }, // يمنع إرسال طلب OPTIONS المسبب لـ 405
+                    body: JSON.stringify(payload)
+                });
+
+                const wrapper = document.querySelector('.form-content-wrapper');
+                const successMsg = document.getElementById('success-message');
+
+                if (wrapper) wrapper.style.display = 'none';
+                if (successMsg) {
+                    successMsg.style.display = 'block';
+                    successMsg.classList.add('visible');
+                }
+
+                document.getElementById('full-form-box').scrollIntoView({ behavior: 'smooth', block: 'center' });
+                form.reset();
+
+            } catch (err) {
+                if (formError) {
+                    formError.innerText = i18n.serverError;
+                    formError.style.opacity = '1';
+                }
+                btn.disabled = false;
+                if (btnTextSpan) btnTextSpan.innerText = originalBtnText;
+                else btn.innerText = originalBtnText;
+            }
+        });
     }
+
     // --- 6. ضمان ظهور العناصر في بداية الصفحة ---
     // هذا الكود يتأكد أن أي عنصر يظهر فور تحميل الصفحة (قبل التمرير) يتم تفعيله
     const checkFirstView = () => {

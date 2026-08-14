@@ -3,895 +3,1057 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link id="canonical-url" rel="canonical" href="https://ouamarkom.com/glossary/index.html" />
-
-    <title id="page-title">قاموس المصطلحات الرسمي | اقتصاد الأوامر للذكاء الاصطناعي</title>
-    <meta id="meta-description" name="description" content="قاعدة المعرفة الرسمية التي تُعرِّف المفاهيم الأساسية، المصطلحات، والعلاقات الهيكلية التي تشكل البنية المفاهيمية لإطار Command Economy of AI.">
+    <title>قاموس المصطلحات الرسمي | اقتصاد الأوامر للذكاء الاصطناعي - أوامركم</title>
+    <meta name="description" content="القاموس الرسمي لمفاهيم ومصطلحات اقتصاد الأوامر للذكاء الاصطناعي (CE-AI)، بما يشمل النية، الأوامر، فهم النية، التخطيط، الوكلاء، التنفيذ، التحقق، والنتائج الاقتصادية.">
+    <meta name="keywords" content="اقتصاد الأوامر للذكاء الاصطناعي, CE-AI, قاموس الذكاء الاصطناعي, النية, الأمر, فهم النية, التخطيط, وكيل الذكاء الاصطناعي, تنسيق الوكلاء, التنفيذ, البنية التحتية لتنفيذ الذكاء الاصطناعي, Smart Hand Infrastructure, التحقق, النتيجة الاقتصادية, أوامركم">
+    <meta name="robots" content="index, follow">
     
+    <!-- Hreflang & Canonical -->
+    <link rel="canonical" href="https://ouamarkom.com/glossary/" />
+    <link rel="alternate" hreflang="ar" href="https://ouamarkom.com/glossary/" />
+    <link rel="alternate" hreflang="en" href="https://ouamarkom.com/en/glossary/" />
+    <link rel="alternate" hreflang="x-default" href="https://ouamarkom.com/glossary/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:site_name" content="أوامركم | Ouamarkom" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="قاموس المصطلحات الرسمي | اقتصاد الأوامر للذكاء الاصطناعي" />
+    <meta property="og:description" content="القاموس الرسمي لمفاهيم ومصطلحات اقتصاد الأوامر للذكاء الاصطناعي (CE-AI) والبنية التحتية لتنفيذ الذكاء الاصطناعي." />
+    <meta property="og:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg" />
+    <meta property="og:url" content="https://ouamarkom.com/glossary/" />
+    <meta property="og:locale" content="ar_SA" />
+    <meta property="og:locale:alternate" content="en_US" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="قاموس المصطلحات الرسمي | اقتصاد الأوامر للذكاء الاصطناعي">
+    <meta name="twitter:description" content="القاموس الرسمي لمفاهيم ومصطلحات اقتصاد الأوامر للذكاء الاصطناعي والبنية التحتية لليد الذكية.">
+    <meta name="twitter:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg">
+    <meta name="theme-color" content="#040916">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- SEO Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ouamarkom.com/glossary/#webpage",
+          "url": "https://ouamarkom.com/glossary/",
+          "name": "قاموس المصطلحات الرسمي | اقتصاد الأوامر للذكاء الاصطناعي",
+          "description": "القاموس الرسمي لمفاهيم ومصطلحات اقتصاد الأوامر للذكاء الاصطناعي (CE-AI).",
+          "inLanguage": "ar"
+        },
+        {
+          "@type": "DefinedTermSet",
+          "@id": "https://ouamarkom.com/glossary/#termset",
+          "name": "قاموس اقتصاد الأوامر للذكاء الاصطناعي",
+          "description": "الرسم البياني المعرفي والقاموس الرسمي الموحد لإطار اقتصاد الأوامر للذكاء الاصطناعي (CE-AI).",
+          "url": "https://ouamarkom.com/glossary/",
+          "inLanguage": "ar",
+          "publisher": {
+            "@type": "Organization",
+            "name": "أوامركم",
+            "url": "https://ouamarkom.com/"
+          },
+          "hasDefinedTerm": [
+            {
+              "@type": "DefinedTerm",
+              "name": "النية البشرية",
+              "termCode": "intent",
+              "description": "الهدف أو المقصد النهائي الذي يعبر عنه الإنسان ويبدأ منه سير العمل الذكي.",
+              "url": "https://ouamarkom.com/glossary/#intent"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "الأمر",
+              "termCode": "command",
+              "description": "التعبير التنفيذي الصريح عن النية الذي يوجه النظام الذكي لبدء عملية العمل.",
+              "url": "https://ouamarkom.com/glossary/#command"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "فهم النية",
+              "termCode": "intent-understanding",
+              "description": "تحليل الأمر اللغوي وتفكيك مقاصده وسياقه وتحويله إلى تمثيل برمجي.",
+              "url": "https://ouamarkom.com/glossary/#intent-understanding"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "التخطيط",
+              "termCode": "planning",
+              "description": "تحديد تسلسل الإجراءات والمهام الفرعية والأدوات اللازمة لتحقيق الهدف.",
+              "url": "https://ouamarkom.com/glossary/#planning"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "واجهة اللغة",
+              "termCode": "language-interface",
+              "description": "طبقة التفاعل التي تمكن الإنسان من التواصل مع الأنظمة الرقمية عبر اللغة الطبيعية.",
+              "url": "https://ouamarkom.com/glossary/#language-interface"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "وكيل الذكاء الاصطناعي",
+              "termCode": "ai-agent",
+              "description": "كيان برمجي ذكي يتولى التخطيط واستخدام الأدوات وتنفيذ المهام بمرونة وتكيف.",
+              "url": "https://ouamarkom.com/glossary/#ai-agent"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "تنسيق الوكلاء",
+              "termCode": "agent-orchestration",
+              "description": "إدارة وإشراف العلاقات المتبادلة والاعتماديات بين عدة وكلاء وأدوات متفرقة.",
+              "url": "https://ouamarkom.com/glossary/#agent-orchestration"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "سير العمل",
+              "termCode": "workflow",
+              "description": "المسار الهيكلي المترابط الذي يحدد خطوات وشروط إتمام المهام داخل محرك التنفيذ.",
+              "url": "https://ouamarkom.com/glossary/#workflow"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "التنفيذ",
+              "termCode": "execution",
+              "description": "الإجراء العملي أو السلسلة التشغيلية التي تطبق خطة العمل وتحدث تغييراً فعلياً.",
+              "url": "https://ouamarkom.com/glossary/#execution"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "البنية التحتية لتنفيذ الذكاء الاصطناعي",
+              "termCode": "ai-execution-infrastructure",
+              "description": "المنظومة التقنية التشغيلية التي تمكن الأنظمة الذكية من تحويل الأوامر إلى عمليات ملموسة.",
+              "url": "https://ouamarkom.com/glossary/#ai-execution-infrastructure"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "البنية التحتية لليد الذكية",
+              "termCode": "smart-hand-infrastructure",
+              "description": "المعمارية التنفيذية المقترحة داخل CE-AI التي تربط التخطيط والوكلاء بالأنظمة المؤسسية.",
+              "url": "https://ouamarkom.com/glossary/#smart-hand"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "التحقق",
+              "termCode": "verification",
+              "description": "عملية تقييم مطابقة النتائج المنفذة للهدف والشروط والمحددات المطلوبة.",
+              "url": "https://ouamarkom.com/glossary/#verification"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "النتيجة",
+              "termCode": "outcome",
+              "description": "المخرج القابل للتحقق الممثل لما تحقق فعلياً مقارنة بالهدف المحدد.",
+              "url": "https://ouamarkom.com/glossary/#outcome"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "النتيجة الاقتصادية",
+              "termCode": "economic-outcome",
+              "description": "الأثر المادي والقيمة التشغيلية المقاسة والمتحققة في بيئة الأعمال الفعلية.",
+              "url": "https://ouamarkom.com/glossary/#economic-outcome"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "ذاكرة القرار",
+              "termCode": "decision-memory",
+              "description": "السجل المعرفي الهيكلي للقرارات والسياقات والنتائج المكتسبة لتحسين التنفيذ المستقبلي.",
+              "url": "https://ouamarkom.com/glossary/#decision-memory"
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "أوامركم",
+          "url": "https://ouamarkom.com/",
+          "logo": "https://ouamarkom.com/logo.webp",
+          "sameAs": [
+            "https://linkedin.com/company/ouamarkom"
+          ]
+        }
+      ]
+    }
+    </script>
+
     <style>
-        /* ==========================================================================
-          1. المتغيرات العامة وتصميم الهوية الفاخرة (مطابقة تماماً للمدونة)
-           ========================================================================== */
         :root {
-            --gold: #ffd700;
+            --primary: #040916;
+            --secondary: #0a192f;
             --accent: #e6992d;
-            --bg-dark: #030712;
-            --card-bg: rgba(10, 25, 47, 0.12);
-            --card-border: rgba(255, 255, 255, 0.06);
-            --text-main: #f3f4f6;
-            --text-dim: #9ca3af;
-            --font-main: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            
-            /* توحيد الأبعاد والضباب مع قالب المدونة */
-            --container-max: 1200px;
-            --nav-blur: blur(20px);
-            --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            --gold: #fcd34d;
+            --text-main: #e6f1ff;
+            --text-dim: #8892b0;
+            --card-bg: rgba(10, 25, 47, 0.45);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --brand-orange-glow: rgba(230, 153, 45, 0.35);
+            --brand-orange-subtle: rgba(230, 153, 45, 0.08);
         }
-        
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { 
-            font-family: var(--font-main); 
-            background-color: var(--bg-dark); 
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--primary);
             color: var(--text-main);
-            line-height: 1.85;
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            text-align: right;
+            line-height: 1.8;
         }
-        .container { max-width: var(--container-max); margin: 0 auto; padding: 0 clamp(16px, 5vw, 40px); }
-        
-        /* ==========================================================================
-           2. شريط الملاحة الاحترافي الذكي والأزرار (تطابق 100% مع المدونة)
-           ========================================================================== */
-        nav.nav-container { 
-            padding: clamp(14px, 2vw, 24px) 10px; 
-            display: flex; 
-            justify-content: space-between; 
+
+        /* Navigation Bar */
+        .top-nav-bar {
+            display: flex;
+            justify-content: space-between;
             align-items: center;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-            backdrop-filter: var(--nav-blur);
-            -webkit-backdrop-filter: var(--nav-blur);
-            position: sticky; top: 0; z-index: 1000;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 24px 20px 10px;
+            position: relative;
+            z-index: 10;
         }
-        .logo-wrapper img { height: clamp(38px, 5vw, 48px); width: auto; object-fit: contain; }
-        .nav-actions { display: flex; gap: clamp(8px, 2vw, 16px); align-items: center; }
-        
-        
-        /* زر تبديل اللغة مع تأثير التوهج الموحد */
-        .btn-lang-toggle { 
-            background: linear-gradient(135deg, var(--accent), var(--gold)); 
-            color: #030712; 
-            font-weight: 600; 
-            border: none; 
-            padding: clamp(9px, 1.5vw, 12px) clamp(16px, 2.5vw, 24px); 
-            border-radius: 30px; 
-            cursor: pointer; 
-            transition: var(--transition-smooth); 
-            font-size: clamp(0.78rem, 1.5vw, 0.88rem);
-            box-shadow: 0 4px 15px rgba(230, 153, 45, 0.15);
+
+        .brand-logo-wrap {
             display: inline-flex;
             align-items: center;
-            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.3s ease;
         }
-        .btn-lang-toggle:hover, .btn-lang-toggle:active { 
-            transform: translateY(-1px);
-            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.25);
-            filter: brightness(1.08);
+
+        .brand-logo-wrap:hover { transform: scale(1.03); }
+
+        .brand-logo-img {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+            display: block;
         }
-        
-        /* ==========================================================================
-          3. معمارية محتوى القاموس وهيكلية الكتل التوضيحية
-           ========================================================================== */
-        .glossary-header { padding: clamp(50px, 8vw, 90px) 0 40px; text-align: center; max-width: 900px; margin: 0 auto; }
-        .badge-luxury { 
-            color: var(--gold); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px;
-            border: 1px solid rgba(255, 215, 0, 0.25); padding: 4px 16px; border-radius: 20px; display: inline-block; margin-bottom: 24px;
+
+        .lang-switch-btn {
+            background: var(--brand-orange-subtle);
+            border: 1px solid rgba(230, 153, 45, 0.35);
+            color: var(--accent);
+            padding: 8px 18px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 0.88rem;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
         }
-        .glossary-header h1 { font-size: clamp(1.8rem, 4.5vw, 2.8rem); font-weight: 800; color: #fff; line-height: 1.3; }
-        .glossary-header h1 span { color: var(--gold); }
-        
-        .content-card-wrapper {
-            background: var(--card-bg); padding: clamp(24px, 5vw, 50px); border-radius: 28px; 
-            border: 1px solid var(--card-border); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); margin-bottom: 60px;
+
+        .lang-switch-btn svg {
+            width: 16px;
+            height: 16px;
+            stroke: currentColor;
+            transition: transform 0.4s ease;
         }
-        .intro-block { margin-bottom: 40px; border-bottom: 1px solid rgba(255, 255, 255, 0.05); padding-bottom: 30px; }
-        .term-node-block { margin-bottom: 50px; border-top: 1px solid rgba(255, 255, 255, 0.04); padding-top: 40px; }
-        .term-node-block:first-of-type { border-top: none; padding-top: 0; }
-        
-        h2.block-main-title { 
-            color: #fff; font-size: clamp(1.3rem, 3vw, 1.7rem); font-weight: 700; margin-bottom: 24px; 
-            border-inline-start: 4px solid var(--gold); padding-inline-start: 14px;
+
+        .lang-switch-btn:hover {
+            background: rgba(230, 153, 45, 0.22);
+            color: #fff;
+            border-color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(230, 153, 45, 0.2);
         }
-        
-        .concept-segment { margin-bottom: 40px; }
+
+        /* Container */
+        .manifesto-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 10px 20px 60px;
+            position: relative;
+            z-index: 1;
+            box-sizing: border-box;
+        }
+
+        .hero-manifesto {
+            text-align: center;
+            padding: 30px 0 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUpHero 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        @keyframes fadeInUpHero {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-manifesto h1 {
+            font-size: clamp(1.6rem, 5vw, 2.8rem);
+            line-height: 1.35;
+            margin-bottom: 18px;
+            font-weight: 900;
+            color: #ffffff;
+        }
+
+        .hero-manifesto h1 span {
+            display: block;
+            margin-top: 6px;
+            background: linear-gradient(90deg, var(--accent), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-manifesto .subtitle {
+            font-size: clamp(0.98rem, 2.5vw, 1.2rem);
+            color: var(--text-dim);
+            line-height: 1.7;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .tagline-badge {
+            display: inline-block;
+            padding: 6px 18px;
+            background: var(--brand-orange-subtle);
+            border: 1px solid rgba(230, 153, 45, 0.3);
+            color: var(--accent);
+            border-radius: 50px;
+            font-size: clamp(0.8rem, 2vw, 0.9rem);
+            font-weight: 800;
+            margin-bottom: 22px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Cards Styling */
+        .manifesto-card {
+            background: var(--card-bg);
+            padding: clamp(22px, 5vw, 42px);
+            border-radius: 24px;
+            border: 1px solid var(--border-color);
+            backdrop-filter: blur(12px);
+            margin-bottom: 30px;
+            text-align: right;
+        }
+
+        .manifesto-card h2 {
+            color: var(--accent);
+            font-size: clamp(1.3rem, 4vw, 1.8rem);
+            margin-bottom: 20px;
+            font-weight: 800;
+            line-height: 1.3;
+            border-right: 4px solid var(--accent);
+            padding-right: 14px;
+        }
+
+        .category-group-title {
+            color: var(--gold);
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin: 24px 0 12px;
+        }
+
+        .manifesto-card p {
+            color: var(--text-main);
+            font-size: clamp(0.98rem, 2.5vw, 1.08rem);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        /* Clean Link Styling Inside Paragraphs & Concepts */
+        .concept-segment a, .manifesto-card p a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            padding-bottom: 2px;
+            transition: all 0.25 ease;
+        }
+
+        .concept-segment a:hover, .manifesto-card p a:hover {
+            color: var(--gold);
+            border-bottom-color: var(--gold);
+            text-shadow: 0 0 8px rgba(252, 211, 77, 0.3);
+        }
+
+        .concept-segment {
+            margin-bottom: 45px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 35px;
+        }
+
+        .concept-segment:first-of-type {
+            border-top: none;
+            padding-top: 0;
+        }
+
         h3.concept-term-title {
-            color: #fff; font-size: clamp(1.4rem, 3vw, 1.9rem); margin: 30px 0 20px; font-weight: 700;
-            display: flex; align-items: center; gap: 12px;
+            color: #fff;
+            font-size: clamp(1.4rem, 3.5vw, 1.9rem);
+            margin-bottom: 20px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
-        [dir="rtl"] h3.concept-term-title::before { content: "◆"; color: var(--gold); font-size: 1rem; }
-        [dir="ltr"] h3.concept-term-title::after { content: "◆"; color: var(--gold); font-size: 1rem; order: -1; }
-        
-        h4.property-label { color: var(--gold); font-size: 1.1rem; margin: 20px 0 10px; font-weight: 600; }
-        
-        p { color: var(--text-main); margin-bottom: 18px; font-size: 1.05rem; }
-        blockquote { 
-            border-inline-start: 3px solid var(--accent); padding: 16px 24px; 
-            background: rgba(230, 153, 45, 0.03); margin: 24px 0; font-style: italic; border-radius: 8px;
+
+        h3.concept-term-title::before {
+            content: "◆";
+            color: var(--accent);
+            font-size: 1rem;
+        }
+
+        h4.property-label {
+            color: var(--gold);
+            font-size: 1.08rem;
+            margin: 22px 0 10px;
+            font-weight: 700;
+        }
+
+        blockquote {
+            border-right: 3px solid var(--accent);
+            padding: 16px 20px;
+            background: var(--brand-orange-subtle);
+            margin: 20px 0;
+            border-radius: 8px;
+            color: var(--text-main);
+            font-style: italic;
+        }
+
+        ul.styled-list {
+            padding-right: 20px;
+            margin-bottom: 20px;
+            list-style-type: none;
+        }
+
+        ul.styled-list li {
+            position: relative;
+            margin-bottom: 10px;
+            color: var(--text-main);
+            padding-right: 20px;
+        }
+
+        ul.styled-list li::before {
+            content: "-";
+            position: absolute;
+            right: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        /* Tables & Visuals */
+        .table-responsive-container {
+            overflow-x: auto;
+            margin: 24px 0;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            background: rgba(4, 9, 22, 0.6);
+        }
+
+        table.luxury-data-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: right;
+            font-size: 0.95rem;
+            min-width: 500px;
+        }
+
+        table.luxury-data-table th {
+            background: rgba(230, 153, 45, 0.12);
+            color: var(--gold);
+            padding: 16px;
+            border-bottom: 1px solid var(--border-color);
+            font-weight: 700;
+        }
+
+        table.luxury-data-table td {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border-color);
             color: var(--text-main);
         }
-        
-        ul.styled-list { padding-inline-start: 24px; margin-bottom: 24px; list-style-type: none; }
-        ul.styled-list li { position: relative; margin-bottom: 10px; color: var(--text-main); padding-inline-start: 15px; }
-        ul.styled-list li::before { content: "—"; position: absolute; inset-inline-start: 0; color: var(--accent); }
-        
-        .table-responsive-container { overflow-x: auto; margin: 24px 0; border-radius: 12px; border: 1px solid var(--card-border); }
-        table.luxury-data-table { width: 100%; border-collapse: collapse; text-align: start; font-size: 0.95rem; min-width: 500px; }
-        table.luxury-data-table th { background: rgba(255, 215, 0, 0.03); color: var(--gold); padding: 14px; border-bottom: 2px solid var(--card-border); font-weight: 600; }
-        table.luxury-data-table td { padding: 14px; border-bottom: 1px solid var(--card-border); color: var(--text-main); }
-        
-        .visual-diagram-box { margin: 24px 0; background: rgba(255, 255, 255, 0.01); border: 1px solid var(--card-border); border-radius: 16px; padding: 24px; text-align: center; }
-        .diagram-flow { display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 12px; flex-wrap: wrap; }
-        .diagram-node { background: #030712; border: 1px solid rgba(255, 255, 255, 0.08); padding: 8px 18px; border-radius: 20px; font-size: 0.9rem; font-weight: 600; color: #fff; }
-        .diagram-arrow { color: var(--accent); font-weight: bold; font-size: 1.1rem; display: flex; align-items: center; }
-        
-        .grid-tags-layout { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin: 24px 0; }
-        .tag-node-item { background: rgba(255, 255, 255, 0.02); border: 1px solid var(--card-border); padding: 12px 16px; border-radius: 10px; font-size: 0.9rem; color: var(--text-dim); text-align: center; transition: var(--transition-smooth); }
-        .tag-node-item:hover { border-color: var(--gold); color: #fff; }
 
-        .lang-wrapper-panel { display: none; }
-        .lang-wrapper-panel.active-panel { display: block; }
+        .visual-diagram-box {
+            margin: 24px 0;
+            background: rgba(4, 9, 22, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 18px;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .diagram-flow {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .diagram-node {
+            background: var(--secondary);
+            border: 1px solid rgba(230, 153, 45, 0.3);
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .diagram-arrow {
+            color: var(--accent);
+            font-weight: bold;
+            font-size: 1.2rem;
+            rotate: 180deg;
+        }
+
+        .grid-tags-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 12px;
+            margin: 16px 0 28px;
+        }
+
+        a.tag-node-item {
+            display: block;
+            text-decoration: none;
+            background: rgba(4, 9, 22, 0.6);
+            border: 1px solid var(--border-color);
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            color: var(--text-dim);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        a.tag-node-item:hover {
+            border-color: var(--accent);
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(230, 153, 45, 0.12);
+        }
+
+        span.tag-node-item {
+            display: block;
+            background: rgba(4, 9, 22, 0.3);
+            border: 1px dashed var(--border-color);
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-size: 0.88rem;
+            color: rgba(136, 146, 176, 0.6);
+            text-align: center;
+            cursor: default;
+        }
+
+        .reveal-card {
+            opacity: 0;
+            transform: translateY(25px);
+            transition: opacity 0.6s cubic-bezier(0.215, 0.610, 0.355, 1), 
+                        transform 0.6s cubic-bezier(0.215, 0.610, 0.355, 1);
+        }
+
+        .reveal-card.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
         @media (max-width: 768px) {
-            .diagram-flow { flex-direction: column; gap: 6px; }
-            .diagram-arrow { transform: rotate(90deg); padding: 2px 0; }
-            .content-card-wrapper { padding: 20px; border-radius: 20px; }
+            .diagram-flow { flex-direction: column; gap: 8px; }
+            .diagram-arrow { transform: rotate(270deg); }
         }
     </style>
 </head>
 <body>
 
-<!-- شريط الملاحة المستقر والمطابق للمدونة (بدون وسم header الزائد) -->
-<nav class="container nav-container">
-    <a href="/" id="logo-link" class="logo-wrapper">
-        <img src="/logo.webp" alt="أوامركم" style="height: 60px;">
+<canvas id="network-canvas"></canvas>
+
+<!-- Header Navigation -->
+<nav class="top-nav-bar">
+    <a href="/" class="brand-logo-wrap" aria-label="أوامركم الرئيسية">
+        <img src="/logo.webp" alt="أوامركم" class="brand-logo-img">
     </a>
-    <div class="nav-actions">
-        <button class="btn-lang-toggle" onclick="switchGlossaryLang()" id="lang-btn">English</button>
-    </div>
+    
+    <a href="/en/glossary/" class="lang-switch-btn" aria-label="الانتقال إلى النسخة الإنجليزية">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+        </svg>
+        <span>English</span>
+    </a>
 </nav>
 
-<main class="container">
+<main class="manifesto-container">
     
-    <!-- ==========================================
-       النسخة العربية الكاملة
-       ========================================== -->
-    <div id="panel-ar" class="lang-wrapper-panel active-panel">
-        <article>
-            <header class="glossary-header">
-                <span class="badge-luxury">قاموس المصطلحات الرسمي</span>
-                <h1>اقتصاد الأوامر للذكاء الاصطناعي<br><span>القاموس الرسمي الموحد للبنية المفاهيمية</span></h1>
-            </header>
+    <!-- Hero Header -->
+    <header class="hero-manifesto">
+        <span class="tagline-badge">قاموس المصطلحات الرسمي</span>
+        <h1>اقتصاد الأوامر للذكاء الاصطناعي<span>القاموس الرسمي الموحد للبنية المفاهيمية</span></h1>
+        <p class="subtitle">
+            القاموس الرسمي لمفاهيم ومصطلحات إطار اقتصاد الأوامر للذكاء الاصطناعي (CE-AI) وعلاقاته المفاهيمية والمعرفية.
+        </p>
+    </header>
 
-            <div class="content-card-wrapper">
-                
-                <div class="intro-block">
-                    <blockquote>قاموس اقتصاد الأوامر للذكاء الاصطناعي هو قاعدة المعرفة الرسمية التي تُعرِّف المفاهيم الأساسية والمصطلحات والعلاقات التي تشكل البنية المفاهيمية لإطار Command Economy of AI.</blockquote>
-                    <p>وعلى خلاف القواميس التقليدية، لا يكتفي هذا القاموس بشرح ما يعنيه كل مفهوم، بل يوضح أيضًا لماذا هو مهم، وكيف يرتبط ببقية عناصر الإطار، وكيف ينعكس على التطورات التقنية والاقتصادية في العالم الحقيقي.</p>
-                </div>
+    <!-- Intro Card -->
+    <section class="manifesto-card reveal-card">
+        <blockquote>قاموس اقتصاد الأوامر للذكاء الاصطناعي هو قاعدة المعرفة الرسمية التي تُعرِّف المفاهيم الأساسية والمصطلحات والعلاقات التي تشكل البنية المفاهيمية لإطار Command Economy of AI (CE-AI).</blockquote>
+        <p>وعلى خلاف القواميس التقليدية، لا يكتفي هذا القاموس بشرح ما يعنيه كل مفهوم، بل يوضح أيضًا لماذا هو مهم، وكيف يرتبط ببقية عناصر الإطار، وكيف ينعكس على التطورات التقنية والاقتصادية في العالم الحقيقي.</p>
+    </section>
 
-                <div class="term-node-block">
-                    <h2 class="block-main-title">كيفية استخدام هذا القاموس</h2>
-                    <p>تحتوي كل صفحة خاصة بأي مصطلح على العناصر التالية:</p>
-                    <ul class="styled-list">
-                        <li>التعريف الرسمي.</li>
-                        <li>لماذا يعد هذا المفهوم مهمًا؟</li>
-                        <li>علاقته بإطار اقتصاد الأوامر.</li>
-                        <li>مثال عملي.</li>
-                        <li>رسم توضيحي.</li>
-                        <li>مقالات مرتبطة.</li>
-                        <li>مصطلحات مرتبطة.</li>
-                    </ul>
-                    <p>ومن خلال الربط بين جميع هذه صفحات، يتكون <strong>رسم بياني معرفي (Knowledge Graph)</strong> متكامل، وليس مجرد قائمة أبجدية للمصطلحات.</p>
-                </div>
+    <!-- Guide Card -->
+    <section class="manifesto-card reveal-card">
+        <h2>كيفية استخدام هذا القاموس</h2>
+        <p>تحتوي كل صفحة خاصة بأي مصطلح على العناصر التالية:</p>
+        <ul class="styled-list">
+            <li>التعريف الرسمي.</li>
+            <li>لماذا يعد هذا المفهوم مهمًا؟</li>
+            <li>علاقته بإطار اقتصاد الأوامر.</li>
+            <li>مثال عملي.</li>
+            <li>رسم توضيحي.</li>
+            <li>مقالات مرتبطة.</li>
+            <li>مصطلحات مرتبطة.</li>
+        </ul>
+        <p>ومن خلال الربط بين جميع هذه الصفحات، يتكون <strong>رسم بياني معرفي (Knowledge Graph)</strong> متكامل، وليس مجرد قائمة أبجدية للمصطلحات.</p>
+    </section>
 
-                <div class="term-node-block">
-                    <h2 class="block-main-title">أبرز المفاهيم</h2>
-
-                    <section class="concept-segment">
-                        <h3 class="concept-term-title">النية (Intent)</h3>
-                        
-                        <h4 class="property-label">التعريف الرسمي</h4>
-                        <p>النية هي الهدف الذي يحدده الإنسان ويبدأ منه سير العمل الذكي. وهي تمثل النتيجة المرغوبة التي تسبق التخطيط والتنفيذ والتحقق. وفي إطار اقتصاد الأوامر للذكاء الاصطناعي، تُعد النية نقطة الانطلاق للإنتاج الرقمي.</p>
-                        
-                        <h4 class="property-label">لماذا تعد النية مهمة?</h4>
-                        <p>في البرمجيات التقليدية، كان على الإنسان تحويل أهدافه إلى سلسلة طويلة من الخطوات والإجراءات. أما في الأنظمة الذكية الحديثة، فتستطيع الأنظمة استنتاج طريقة التنفيذ انطلاقًا من نية الإنسان عندما تكون معبَّرًا عنها بوضوح. ومع تطور قدرات الذكاء الاصطناعي، قد تصبح القدرة على التعبير الدقيق عن النية واحدة من أهم الأصول الاقتصادية.</p>
-                        
-                        <h4 class="property-label">علاقتها بالأوامر</h4>
-                        <p>الأمر هو التعبير التنفيذي عن النية. فالنية تجيب عن السؤال:</p>
-                        <blockquote>"ما الذي أريد تحقيقه؟"</blockquote>
-                        <p>أما الأمر فيبدأ عملية التنفيذ لتحقيق ذلك الهدف.</p>
-                        
-                        <h4 class="property-label">علاقتها بالتنفيذ</h4>
-                        <p>النية تحدد الوجهة. أما التنفيذ فيحدد الطريق للوصول إليها.</p>
-                        
-                        <h4 class="property-label">مثال عملي</h4>
-                        <p>بدلاً من تنفيذ جميع خطوات إنشاء حملة تسويقية يدويًا، يمكن للمستخدم أن يقول:</p>
-                        <blockquote>"أطلق حملة تسويقية تستهدف الشركات الصغيرة."</blockquote>
-                        <p>ليقوم النظام بفهم الهدف، ثم تنسيق التخطيط، وكتابة المحتوى، وتصميم المواد، وتحليل النتائج.</p>
-                        
-                        <h4 class="property-label">الرسم المفاهيمي</h4>
-                        <div class="visual-diagram-box">
-                            <div class="diagram-flow">
-                                <div class="diagram-node">الإنسان</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">النية</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">الأمر</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">التنفيذ</div>
-                            </div>
-                        </div>
-                        
-                        <h4 class="property-label">مقالات مرتبطة</h4>
-                        <ul class="styled-list">
-                            <li>اقتصاد النية.</li>
-                            <li>النية البشرية كأصل اقتصادي.</li>
-                            <li>من الأهداف إلى النتائج.</li>
-                        </ul>
-                        
-                        <h4 class="property-label">مصطلحات مرتبطة</h4>
-                        <p>الأمر. | التنفيذ. | النتيجة. | وكيل الذكاء الاصطناعي.</p>
-                    </section>
-
-                    <section class="concept-segment">
-                        <h3 class="concept-term-title">وكيل الذكاء الاصطناعي (AI Agent)</h3>
-                        
-                        <h4 class="property-label">التعريف الرسمي</h4>
-                        <p>وكيل الذكاء الاصطناعي هو نظام برمجي ذكي قادر على التخطيط، والاستدلال، واختيار الأدوات، وتنفيذ مهام متعددة الخطوات، والتكيف مع الظروف لتحقيق أهداف محددة. وعلى عكس البرمجيات التقليدية، يستطيع الوكيل العمل بدرجات متفاوتة من الاستقلالية.</p>
-                        
-                        <h4 class="property-label">لماذا يعد مهمًا؟</h4>
-                        <p>ينقل الوكلاء الذكاء الاصطناعي من مجرد نظام يجيب عن الأسئلة إلى نظام ينفذ الأعمال. كما يقللون الحاجة إلى أن يدير الإنسان كل خطوة تشغيلية بنفسه.</p>
-                        
-                        <h4 class="property-label">كيف يعمل؟</h4>
-                        <p>يقوم الوكيل عادةً بما يلي:</p>
-                        <ul class="styled-list">
-                            <li>فهم الهدف.</li>
-                            <li>وضع خطة.</li>
-                            <li>اختيار الأدوات المناسبة.</li>
-                            <li>تنفيذ المهام.</li>
-                            <li>متابعة التقدم.</li>
-                            <li>تعديل الخطة عند الحاجة.</li>
-                            <li>إنتاج نتيجة قابلة للتحقق.</li>
-                        </ul>
-                        
-                        <h4 class="property-label">الفرق بين وكيل الذكاء الاصطناعي وروبوت المحادثة</h4>
-                        <div class="table-responsive-container">
-                            <table class="luxury-data-table">
-                                <thead>
-                                    <tr>
-                                        <th>روبوت المحادثة</th>
-                                        <th>وكيل الذكاء الاصطناعي</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td>يجيب عن الأسئلة</td><td>ينفذ الأهداف</td></tr>
-                                    <tr><td>تفاعلي</td><td>موجه نحو تحقيق هدف</td></tr>
-                                    <tr><td>يعتمد على الحوار</td><td>يدير سير عمل كامل</td></tr>
-                                    <tr><td>تفاعل واحد</td><td>تنفيذ متعدد الخطوات</td></tr>
-                                    <tr><td>استقلالية محدودة</td><td>استقلالية تشغيلية أكبر</td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        
-                        <h4 class="property-label">علاقتها بالإطار</h4>
-                        <p>الوكلاء هم المحرك التنفيذي في اقتصاد الأوامر. فهم الحلقة التي تربط اللغة بالتنفيذ.</p>
-                        
-                        <h4 class="property-label">مثال عملي</h4>
-                        <p>بدلاً من أن تسأل: "كيف أبني موقعًا إلكترونيًا؟" يمكنك أن تقول:</p>
-                        <blockquote>"أنشئ موقعًا شخصيًا، وانشره، واربطه بأدوات التحليلات."</blockquote>
-                        <p>ليقوم الوكيل بتنسيق الأدوات المختلفة وإتمام العملية كاملة.</p>
-                        
-                        <h4 class="property-label">الرسم المفاهيمي</h4>
-                        <div class="visual-diagram-box">
-                            <div class="diagram-flow">
-                                <div class="diagram-node">النية</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">وكيل الذكاء الاصطناعي</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">التخطيط</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">اختيار الأدوات</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">التنفيذ</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">النتيجة</div>
-                            </div>
-                        </div>
-                        
-                        <h4 class="property-label">مقالات مرتبطة</h4>
-                        <ul class="styled-list">
-                            <li>صعود وكلاء الذكاء الاصطناعي.</li>
-                            <li>التنفيذ الذاتي.</li>
-                            <li>سير العمل المعتمد على الوكلاء.</li>
-                        </ul>
-                        
-                        <h4 class="property-label">مصطلحات مرتبطة</h4>
-                        <p>النية. | واجهة اللغة. | التنفيذ. | النتيجة.</p>
-                    </section>
-
-                    <section class="concept-segment">
-                        <h3 class="concept-term-title">واجهة اللغة (Language Interface)</h3>
-                        
-                        <h4 class="property-label">التعريف الرسمي</h4>
-                        <p>واجهة اللغة هي طبقة تفاعل تسمح للإنسان بالتواصل مع الأنظمة الرقمية باستخدام اللغة الطبيعية بدلًا من الأزرار والقوائم والبرمجة.</p>
-                        
-                        <h4 class="property-label">لماذا تعد مهمة؟</h4>
-                        <p>تخفض اللغة الطبيعية الحاجز بين الإنسان والآلة. فبدلًا من أن يتعلم الإنسان كيفية استخدام البرمجيات، تبدأ البرمجيات في فهم لغة الإنسان.</p>
-                        
-                        <h4 class="property-label">لماذا أصبحت اللغة واجهة؟</h4>
-                        <p>يرجع ذلك إلى مجموعة من التطورات التقنية، منها:</p>
-                        <ul class="styled-list">
-                            <li>النماذج اللغوية الكبيرة.</li>
-                            <li>تطور قدرات الاستدلال.</li>
-                            <li>استخدام الأدوات.</li>
-                            <li>تنسيق الوكلاء.</li>
-                            <li>فهم السياق.</li>
-                        </ul>
-                        
-                        <h4 class="property-label">واجهة اللغة مقابل الواجهة الرسومية (GUI)</h4>
-                        <div class="table-responsive-container">
-                            <table class="luxury-data-table">
-                                <thead>
-                                    <tr>
-                                        <th>الواجهة الرسومية</th>
-                                        <th>واجهة اللغة</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td>قوائم</td><td>محادثة</td></tr>
-                                    <tr><td>أزرار</td><td>نية</td></tr>
-                                    <tr><td>نماذج</td><td>أهداف</td></tr>
-                                    <tr><td>تنقل بين الشاشات</td><td>لغة طبيعية</td></tr>
-                                    <tr><td>سير عمل ثابت</td><td>سير عمل متكيف</td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        
-                        <h4 class="property-label">علاقتها بالإطار</h4>
-                        <p>تصبح اللغة طبقة التنسيق التي تربط الإنسان بالأنظمة الذكية القادرة على التنفيذ.</p>
-                        
-                        <h4 class="property-label">مثال عملي</h4>
-                        <p>في البرمجيات التقليدية: افتح البرنامج ← أنشئ ملفًا ← اضبط الإعدادات ← نفّذ المهمة.</p>
-                        <p>أما في واجهة اللغة:</p>
-                        <blockquote>"أنشئ هذا التقرير وأرسله إلى الإدارة."</blockquote>
-                        
-                        <h4 class="property-label">الرسم المفاهيمي</h4>
-                        <div class="visual-diagram-box">
-                            <div class="diagram-flow">
-                                <div class="diagram-node">الإنسان</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">اللغة الطبيعية</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">النظام الذكي</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">التنفيذ</div>
-                            </div>
-                        </div>
-                        
-                        <h4 class="property-label">مقالات مرتبطة</h4>
-                        <ul class="styled-list">
-                            <li>اللغة كبنية تحتية.</li>
-                            <li>صعود الحوسبة المعتمدة على اللغة الطبيعية.</li>
-                        </ul>
-                        
-                        <h4 class="property-label">مصطلحات مرتبطة</h4>
-                        <p>النية. | وكيل الذكاء الاصطناعي. | التنفيذ.</p>
-                    </section>
-
-                    <section class="concept-segment">
-                        <h3 class="concept-term-title">النتيجة (Outcome)</h3>
-                        
-                        <h4 class="property-label">التعريف الرسمي</h4>
-                        <p>النتيجة هي المخرج النهائي القابل للتحقق الذي يتم إنتاجه بعد اكتمال عملية التنفيذ الذكي. وهي تمثل اكتمال الهدف، وليس مجرد تقديم معلومة.</p>
-                        
-                        <h4 class="property-label">لماذا تعد مهمة؟</h4>
-                        <p>كانت البرمجيات التقليدية تقدم أدوات. أما الأنظمة الذكية الحديثة، فتتجه بصورة متزايدة إلى تقديم نتائج مكتملة.</p>
-                        
-                        <h4 class="property-label">كيف تُقاس القيمة؟</h4>
-                        <p>في العديد من خدمات الذكاء الاصطناعي، يمكن أن تُقاس القيمة من خلال: الدقة، اكتمال المهمة، الموثوقية، الوقت الذي تم توفيره، والأثر على الأعمال. وتختلف أهمية كل معيار باختلاف نوع التطبيق.</p>
-                        
-                        <h4 class="property-label">مثال عملي</h4>
-                        <p>البرمجيات التقليدية: تنشئ مستندًا.</p>
-                        <p>أما النظام الذكي: ينشئ المستند، يراجعه، يترجمه، ينسقه، يرسله، ويؤرشفه.</p>
-                        
-                        <h4 class="property-label">علاقتها بالإطار</h4>
-                        <p>النتيجة تمثل المرحلة الأخيرة في دورة التنفيذ.</p>
-                        
-                        <h4 class="property-label">الرسم المفاهيمي</h4>
-                        <div class="visual-diagram-box">
-                            <div class="diagram-flow">
-                                <div class="diagram-node">النية</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">التنفيذ</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">التحقق</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">النتيجة</div>
-                            </div>
-                        </div>
-                        
-                        <h4 class="property-label">مقالات مرتبطة</h4>
-                        <ul class="styled-list">
-                            <li>اقتصاد النتائج.</li>
-                            <li>قياس إنتاجية الذكاء الاصطناعي.</li>
-                        </ul>
-                        
-                        <h4 class="property-label">مصطلحات مرتبطة</h4>
-                        <p>النية. | التنفيذ. | وكيل الذكاء الاصطناعي.</p>
-                    </section>
-                    <section class="concept-segment">
-                        <h3 class="concept-term-title">البنية التحتية لليد الذكية (Smart Hand Infrastructure)</h3>
-                        
-                        <h4 class="property-label">التعريف الرسمي</h4>
-                        <p>البنية التحتية لليد الذكية هي طبقة التنفيذ المباشر في اقتصاد الأوامر للذكاء الاصطناعي، والتي تحول النوايا البشرية إلى نتائج اقتصادية منسقة وملموسة عبر ربط وكلاء الذكاء الاصطناعي بسلاسل العمليات، الأنظمة المؤسسية الرقمية، وبيئات التعلم المستمر.</p>
-                        
-                        <h4 class="property-label">لماذا تعد مهمة؟</h4>
-                        <p>تمثل اليد الذكية الشرايين التشغيلية التي تخرج الذكاء الاصطناعي من نطاق الشاشات والمحادثات النصية ليصل إلى التأثير الفعلي في عالم الأعمال. وبدون هذه البنية، تظل النوايا البشرية مجرد أفكار، ويبقى الوكلاء مجرد محركات للدردشة غير القادرة على إحداث تغيير مادي في الأنظمة المؤسسية.</p>
-                        
-                        <h4 class="property-label">كيف تعمل في الإطار؟</h4>
-                        <p>تتولى هذه البنية المهام التنفيذية التالية:</p>
-                        <ul class="styled-list">
-                            <li>ترجمة أوامر الوكلاء إلى إجراءات برمجية (API Calls).</li>
-                            <li>الربط السلس مع أنظمة إدارة الموارد (ERP) وقواعد البيانات.</li>
-                            <li>إدارة الموارد وتنسيق العمل بين الأنظمة المتعددة.</li>
-                            <li>ضمان الاستجابة اللحظية وتحسين العمليات بشكل مستمر.</li>
-                        </ul>
-                        
-                        <h4 class="property-label">مثال عملي</h4>
-                        <p>عندما يصدر مستخدم أمراً بـ:</p>
-                        <blockquote>"توسيع الطاقة الإنتاجية للفرع الجديد وإعادة ترتيب الموردين"</blockquote>
-                        <p>لا تكتفي "اليد الذكية" باقتراح خطة، بل تتصل فوراً ببرامج المشتريات، وتخاطب أنظمة الموردين، وتصدر أوامر الشراء الفعلية وتحدث جدول التشغيل تلقائياً.</p>
-                        
-                        <h4 class="property-label">الرسم المفاهيمي</h4>
-                        <div class="visual-diagram-box">
-                            <div class="diagram-flow">
-                                <div class="diagram-node">النية البشرية</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">وكيل الذكاء الاصطناعي</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">البنية التحتية لليد الذكية</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">الأنظمة المؤسسية</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">النتيجة الاقتصادية</div>
-                            </div>
-                        </div>
-                        
-                        <h4 class="property-label">مقالات مرتبطة</h4>
-                        <ul class="styled-list">
-                            <li>طبقة التنفيذ الذاتي ومستقبل الأعمال.</li>
-                            <li>كيف تربط الذكاء الاصطناعي بالأنظمة المؤسسية.</li>
-                            <li>التنسيق التشغيلي اللحظي.</li>
-                        </ul>
-                        
-                        <h4 class="property-label">مصطلحات مرتبطة</h4>
-                        <p>طبقة التنفيذ. | وكيل الذكاء الاصطناعي. | التنسيق الذاتي. | النتيجة.</p>
-                    </section>
-                </div>
-
-                <div class="term-node-block">
-                    <h2 class="block-main-title">استكشف المزيد من المفاهيم</h2>
-                    <div class="grid-tags-layout">
-                        <div class="tag-node-item">الأمر (Command)</div>
-                        <div class="tag-node-item">واجهة الأوامر (Command Interface)</div>
-                        <div class="tag-node-item">طبقة النية (Intent Layer)</div>
-                        <div class="tag-node-item">طبقة اللغة (Language Layer)</div>
-                        <div class="tag-node-item">طبقة الوكلاء (Agent Layer)</div>
-                        <div class="tag-node-item">طبقة التنفيذ (Execution Layer)</div>
-                        <div class="tag-node-item">طبقة التحقق (Verification Layer)</div>
-                        <div class="tag-node-item">اقتصاد النتائج (Outcome Economy)</div>
-                        <div class="tag-node-item">البنية التحتية لليد الذكية</div>
-                        <div class="tag-node-item">الإشراف البشري (Human Oversight)</div>
-                        <div class="tag-node-item">سير العمل المعتمد على الوكلاء</div>
-                        <div class="tag-node-item">تكاليف التنسيق (Coordination Costs)</div>
-                        <div class="tag-node-item">الحوسبة المعتمدة على اللغة الطبيعية</div>
-                        <div class="tag-node-item">التنفيذ القابل للتحقق</div>
-                        <div class="tag-node-item">البنية التحتية للذكاء الاصطناعي</div>
-                        <div class="tag-node-item">الإنسان داخل الحلقة</div>
-                        <div class="tag-node-item">الإنتاج الرقمي (Digital Production)</div>
-                        <div class="tag-node-item">الواجهة الاقتصادية</div>
-                        <div class="tag-node-item">التنسيق الذاتي</div>
-                        <div class="tag-node-item">التنظيم الحاسوبي</div>
-                        <div class="tag-node-item">الأنظمة المعتمدة على النية</div>
-                        <div class="tag-node-item">الحوسبة المتمحورة حول اللغة</div>
-                    </div>
-                </div>
-
-                <div class="term-node-block">
-                    <h2 class="block-main-title">الرسم البياني المعرفي (Knowledge Graph)</h2>
-                    <p>كل مفهوم في هذا القاموس مرتبط بالمفاهيم الأخرى عبر علاقات معرفية واضحة. فالمصطلحات هنا لا تُعرض باعتبارها تعريفات منفصلة، بل تُبنى كشبكة مترابطة تُمكّن القارئ من فهم كيفية تفاعل جميع المكونات داخل إطار اقتصاد الأوامر للذكاء الاصطناعي.</p>
-                </div>
-
+    <!-- Comprehensive Conceptual Chain Diagram -->
+    <section class="manifesto-card reveal-card">
+        <h2>المسار المفاهيمي للقاموس</h2>
+        <p>تستند العمارة المفاهيمية لإطار اقتصاد الأوامر للذكاء الاصطناعي (CE-AI) على التسلسل التشغيلي المترابط التالي:</p>
+        <div class="visual-diagram-box">
+            <div class="diagram-flow">
+                <div class="diagram-node">الإنسان</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">النية</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">الأمر</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">فهم النية</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">التخطيط</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">تنسيق الوكلاء</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">سير العمل</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">التنفيذ</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">البنية التحتية للتنفيذ</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">التحقق</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">النتيجة</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">النتيجة الاقتصادية</div>
             </div>
-        </article>
-    </div>
+        </div>
+    </section>
 
-    <!-- ==========================================
-       النسخة الإنجليزية الكاملة
-       ========================================== -->
-    <div id="panel-en" class="lang-wrapper-panel">
-        <article dir="ltr" style="text-align: left;">
-            <header class="glossary-header">
-                <span class="badge-luxury">Official Glossary</span>
-                <h1>Command Economy of AI<br><span>The Official Glossary of the Command Economy of AI Conceptual Framework</span></h1>
-            </header>
+    <!-- Core Terms -->
+    <section class="manifesto-card reveal-card">
+        <h2>أبرز المفاهيم</h2>
 
-            <div class="content-card-wrapper">
-                
-                <div class="intro-block">
-                    <blockquote style="border-left: 3px solid var(--accent); border-right: none; padding-left: 24px; padding-right: 0;">The Command Economy of AI Glossary is the official knowledge base that defines the core concepts, terminology, and relationships that form the conceptual framework of the Command Economy of AI.</blockquote>
-                    <p>Unlike traditional dictionaries, this glossary does not only explain what each concept means; it also clarifies why each concept matters, how it connects to the other elements of the framework, and how it relates to real-world technological and economic developments.</p>
+        <!-- Concept 1: Intent -->
+        <div class="concept-segment" id="intent">
+            <h3 class="concept-term-title">1. النية البشرية (Human Intent)</h3>
+            
+            <h4 class="property-label">التعريف الرسمي</h4>
+            <p>النية هي الهدف أو المقصد النهائي الذي يحدده الإنسان ويبدأ منه سير العمل الذكي. وهي تمثل النتيجة المرغوبة التي تسبق التخطيط والتنفيذ والتحقق. وفي إطار اقتصاد الأوامر للذكاء الاصطناعي (CE-AI)، تُعد النية نقطة الانطلاق للإنتاج الرقمي.</p>
+            
+            <h4 class="property-label">لماذا تعد النية مهمة؟</h4>
+            <p>في البرمجيات التقليدية، كان على الإنسان تحويل أهدافه إلى سلسلة طويلة من الخطوات والإجراءات. أما في الأنظمة الذكية الحديثة، فتستطيع الأنظمة استنتاج طريقة التنفيذ انطلاقًا من نية الإنسان عندما تكون معبَّرًا عنها بوضوح. ومع تطور قدرات الذكاء الاصطناعي، قد تصبح القدرة على التعبير الدقيق عن النية واحدة من أهم الأصول الاقتصادية.</p>
+
+            <h4 class="property-label">علاقتها بالأوامر</h4>
+            <p>الأمر هو التعبير التنفيذي الصريح عن النية. فالنية تجيب عن السؤال: <em>"ما الذي أريد تحقيقه؟"</em> أما الأمر فيشغل عملية التنفيذ لتحقيق ذلك الهدف.</p>
+            
+            <h4 class="property-label">مثال عملي</h4>
+            <p>بدلاً من تنفيذ جميع خطوات إنشاء حملة تسويقية يدويًا، يمكن للمستخدم أن يقول:</p>
+            <blockquote>"أطلق حملة تسويقية تستهدف الشركات الصغيرة."</blockquote>
+            <p>ليقوم النظام بفهم الهدف، ثم تنسيق التخطيط، وكتابة المحتوى، وتصميم المواد، وتحليل النتائج.</p>
+            
+            <h4 class="property-label">الرسم المفاهيمي</h4>
+            <div class="visual-diagram-box">
+                <div class="diagram-flow">
+                    <div class="diagram-node">الإنسان</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">النية البشرية</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">الأمر</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">فهم النية</div>
                 </div>
-
-                <div class="term-node-block">
-                    <h2 class="block-main-title" style="border-left: 4px solid var(--gold); border-right: none; padding-left: 14px;">How to Use This Glossary</h2>
-                    <p>Each dedicated page for a term contains the following elements:</p>
-                    <ul class="styled-list">
-                        <li>Official Definition.</li>
-                        <li>Why This Concept Matters.</li>
-                        <li>Relationship to the Command Economy of AI Framework.</li>
-                        <li>Practical Example.</li>
-                        <li>Conceptual Diagram.</li>
-                        <li>Related Articles.</li>
-                        <li>Related Terms.</li>
-                    </ul>
-                    <p>Through the connections between all glossary entries, this framework forms an integrated Knowledge Graph rather than a simple alphabetical list of definitions.</p>
-                </div>
-
-                <div class="term-node-block">
-                    <h2 class="block-main-title" style="border-left: 4px solid var(--gold); border-right: none; padding-left: 14px;">Core Concepts</h2>
-
-                    <section class="concept-segment">
-                        <h3 class="concept-term-title">1. Intent</h3>
-                        
-                        <h4 class="property-label">Official Definition</h4>
-                        <p>Intent is the goal defined by a human that initiates the intelligent workflow. It represents the desired outcome that precedes planning, execution, and verification. Within the Command Economy of AI framework, intent is the starting point of digital production.</p>
-                        
-                        <h4 class="property-label">Why Is Intent Important?</h4>
-                        <p>In traditional software systems, humans had to translate their goals into long sequences of steps and instructions. In modern intelligent systems, software can increasingly determine the appropriate execution path based on clearly expressed human intent. As artificial intelligence capabilities continue to evolve, the ability to express precise and meaningful intent may become one of the most valuable economic assets.</p>
-                        
-                        <h4 class="property-label">Relationship to Commands</h4>
-                        <p>A command is the executable expression of intent. Intent answers the question:</p>
-                        <blockquote>"What do I want to achieve?"</blockquote>
-                        <p>The command initiates the execution process required to achieve that goal.</p>
-                        
-                        <h4 class="property-label">Relationship to Execution</h4>
-                        <p>Intent defines the destination. Execution defines the path to reach it.</p>
-                        
-                        <h4 class="property-label">Practical Example</h4>
-                        <p>Instead of manually performing all steps required to create a marketing campaign, a user can state:</p>
-                        <blockquote>"Launch a marketing campaign targeting small businesses."</blockquote>
-                        <p>The system understands the objective, coordinates planning, creates content, designs materials, and analyzes results.</p>
-                        
-                        <h4 class="property-label">Conceptual Diagram</h4>
-                        <div class="visual-diagram-box">
-                            <div class="diagram-flow">
-                                <div class="diagram-node">Human</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">Intent</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">Command</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">Execution</div>
-                            </div>
-                        </div>
-                        
-                        <h4 class="property-label">Related Articles</h4>
-                        <ul class="styled-list">
-                            <li>The Intent Economy.</li>
-                            <li>Human Intent as an Economic Asset.</li>
-                            <li>From Objectives to Outcomes.</li>
-                        </ul>
-                        
-                        <h4 class="property-label">Related Terms</h4>
-                        <p>Command. | Execution. | Outcome. | AI Agent.</p>
-                    </section>
-
-                    <section class="concept-segment">
-                        <h3 class="concept-term-title">2. AI Agent</h3>
-                        
-                        <h4 class="property-label">Official Definition</h4>
-                        <p>An AI Agent is an intelligent software system capable of planning, reasoning, selecting tools, executing multi-step tasks, and adapting to changing conditions in order to achieve defined objectives. Unlike traditional software, an AI Agent can operate with varying degrees of autonomy.</p>
-                        
-                        <h4 class="property-label">Why Is It Important?</h4>
-                        <p>AI Agents transform artificial intelligence from systems that only provide answers into systems capable of executing tasks and completing workflows. They reduce the need for humans to manage every operational step manually.</p>
-                        
-                        <h4 class="property-label">How Does It Work?</h4>
-                        <p>An AI Agent typically performs the following:</p>
-                        <ul class="styled-list">
-                            <li>Understands the objective.</li>
-                            <li>Creates a plan.</li>
-                            <li>Selects appropriate tools.</li>
-                            <li>Executes tasks.</li>
-                            <li>Monitors progress.</li>
-                            <li>Adjusts the plan when necessary.</li>
-                            <li>Produces a verifiable outcome.</li>
-                        </ul>
-                        
-                        <h4 class="property-label">AI Agent vs. Chatbot</h4>
-                        <div class="table-responsive-container">
-                            <table class="luxury-data-table">
-                                <thead>
-                                    <tr>
-                                        <th>Chatbot</th>
-                                        <th>AI Agent</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td>Answers questions</td><td>Achieves objectives</td></tr>
-                                    <tr><td>Interactive</td><td>Goal-oriented</td></tr>
-                                    <tr><td>Depends on conversation</td><td>Manages complete workflows</td></tr>
-                                    <tr><td>Single interaction</td><td>Multi-step execution</td></tr>
-                                    <tr><td>Limited autonomy</td><td>Greater operational autonomy</td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        
-                        <h4 class="property-label">Relationship to the Framework</h4>
-                        <p>AI Agents are the execution engine of the Command Economy of AI. They represent the link between human language and digital execution.</p>
-                        
-                        <h4 class="property-label">Practical Example</h4>
-                        <p>Instead of asking: "How do I build a website?" A user can say:</p>
-                        <blockquote>"Create a personal website, publish it, and connect it to analytics tools."</blockquote>
-                        <p>The AI Agent coordinates different tools and completes the entire process.</p>
-                        
-                        <h4 class="property-label">Conceptual Diagram</h4>
-                        <div class="visual-diagram-box">
-                            <div class="diagram-flow">
-                                <div class="diagram-node">Intent</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">AI Agent</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">Planning</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">Tool Selection</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">Execution</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">Outcome</div>
-                            </div>
-                        </div>
-                        
-                        <h4 class="property-label">Related Articles</h4>
-                        <ul class="styled-list">
-                            <li>The Rise of AI Agents.</li>
-                            <li>Autonomous Execution.</li>
-                            <li>Agent-Based Workflows.</li>
-                        </ul>
-                        
-                        <h4 class="property-label">Related Terms</h4>
-                        <p>Intent. | Language Interface. | Execution. | Outcome.</p>
-                    </section>
-
-                    <section class="concept-segment">
-                        <h3 class="concept-term-title">3. Language Interface</h3>
-                        
-                        <h4 class="property-label">Official Definition</h4>
-                        <p>A Language Interface is an interaction layer that enables humans to communicate with digital systems using natural language instead of relying primarily on buttons, menus, and programming interfaces.</p>
-                        
-                        <h4 class="property-label">Why Is It Important?</h4>
-                        <p>Natural language reduces the barrier between humans and machines. Instead of humans having to learn how to operate software, software increasingly becomes capable of understanding human language.</p>
-                        
-                        <h4 class="property-label">Why Has Language Become an Interface?</h4>
-                        <p>This shift has been enabled by several technological developments, including:</p>
-                        <ul class="styled-list">
-                            <li>Large Language Models.</li>
-                            <li>Advances in reasoning capabilities.</li>
-                            <li>Tool usage.</li>
-                            <li>Agent coordination.</li>
-                            <li>Context understanding.</li>
-                        </ul>
-                        
-                        <h4 class="property-label">Language Interface vs. Graphical User Interface (GUI)</h4>
-                        <div class="table-responsive-container">
-                            <table class="luxury-data-table">
-                                <thead>
-                                    <tr>
-                                        <th>Graphical Interface</th>
-                                        <th>Language Interface</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td>Menus</td><td>Conversation</td></tr>
-                                    <tr><td>Buttons</td><td>Intent</td></tr>
-                                    <tr><td>Forms</td><td>Objectives</td></tr>
-                                    <tr><td>Screen navigation</td><td>Natural language</td></tr>
-                                    <tr><td>Fixed workflows</td><td>Adaptive workflows</td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        
-                        <h4 class="property-label">Relationship to the Framework</h4>
-                        <p>Language becomes the coordination layer connecting humans with intelligent systems capable of execution.</p>
-                        
-                        <h4 class="property-label">Practical Example</h4>
-                        <p>Traditional software workflow: Open the application → Create a file → Configure settings → Execute the task.</p>
-                        <p>Language interface workflow:</p>
-                        <blockquote>"Create this report and send it to management."</blockquote>
-                        
-                        <h4 class="property-label">Conceptual Diagram</h4>
-                        <div class="visual-diagram-box">
-                            <div class="diagram-flow">
-                                <div class="diagram-node">Human</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">Natural Language</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">Intelligent System</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">Execution</div>
-                            </div>
-                        </div>
-                        
-                        <h4 class="property-label">Related Articles</h4>
-                        <ul class="styled-list">
-                            <li>Language as Infrastructure.</li>
-                            <li>The Rise of Natural Language Computing.</li>
-                        </ul>
-                        
-                        <h4 class="property-label">Related Terms</h4>
-                        <p>Intent. | AI Agent. | Execution.</p>
-                    </section>
-
-                    <section class="concept-segment">
-                        <h3 class="concept-term-title">4. Outcome</h3>
-                        
-                        <h4 class="property-label">Official Definition</h4>
-                        <p>An Outcome is the final verifiable output produced after the completion of an intelligent execution process. It represents the achievement of a goal rather than merely providing information.</p>
-                        
-                        <h4 class="property-label">Why Is It Important?</h4>
-                        <p>Traditional software primarily provided tools. Modern intelligent systems increasingly move toward delivering complete outcomes.</p>
-                        
-                        <h4 class="property-label">How Is Value Measured?</h4>
-                        <p>In many AI services, value can be measured through:</p>
-                        <ul class="styled-list">
-                            <li>Accuracy.</li>
-                            <li>Task completion.</li>
-                            <li>Reliability.</li>
-                            <li>Time saved.</li>
-                            <li>Business impact.</li>
-                        </ul>
-                        <p>The importance of each measurement depends on the type of application.</p>
-                        
-                        <h4 class="property-label">Practical Example</h4>
-                        <p>Traditional software: Creates a document.</p>
-                        <p>Intelligent system: Creates the document, reviews it, translates it, formats it, sends it, and archives it.</p>
-                        
-                        <h4 class="property-label">Relationship to the Framework</h4>
-                        <p>Outcome represents the final stage in the execution cycle.</p>
-                        
-                        <h4 class="property-label">Conceptual Diagram</h4>
-                        <div class="visual-diagram-box">
-                            <div class="diagram-flow">
-                                <div class="diagram-node">Intent</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">Execution</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">Verification</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">Outcome</div>
-                            </div>
-                        </div>
-                        
-                        <h4 class="property-label">Related Articles</h4>
-                        <ul class="styled-list">
-                            <li>Outcome Economy.</li>
-                            <li>Measuring AI Productivity.</li>
-                        </ul>
-                        
-                        <h4 class="property-label">Related Terms</h4>
-                        <p>Intent. | Execution. | AI Agent.</p>
-                    </section>
-                    <section class="concept-segment">
-                        <h3 class="concept-term-title">5. Smart Hand Infrastructure</h3>
-                        
-                        <h4 class="property-label">Official Definition</h4>
-                        <p>Smart Hand Infrastructure is the execution layer of the AI Command Economy that transforms human intent into coordinated, tangible economic outcomes through seamless integration with AI agents, automated workflows, enterprise systems, and continuous optimization pipelines.</p>
-                        
-                        <h4 class="property-label">Why Is It Important?</h4>
-                        <p>Smart Hand Infrastructure serves as the operational circulatory system that takes AI out of conversational text boxes and embeds it directly into real-world business execution. Without this layer, human intents remain abstract concepts and AI agents remain restricted to generating responses rather than executing actual enterprise operations.</p>
-                        
-                        <h4 class="property-label">How Does It Work?</h4>
-                        <p>This infrastructure handles key operational capabilities including:</p>
-                        <ul class="styled-list">
-                            <li>Translating agent decisions into live API integrations.</li>
-                            <li>Interfacing with Enterprise Resource Planning (ERP) and legacy databases.</li>
-                            <li>Managing system resources and cross-platform workflow orchestration.</li>
-                            <li>Monitoring real-time operational state and continuous performance tuning.</li>
-                        </ul>
-                        
-                        <h4 class="property-label">Practical Example</h4>
-                        <p>Instead of merely recommending a plan when a user issues the command:</p>
-                        <blockquote>"Expand supply capacity for the new branch and re-route vendor orders."</blockquote>
-                        <p>The Smart Hand Infrastructure directly interfaces with procurement APIs, contacts vendor systems, issues binding purchase orders, and updates logistics schedules in real time.</p>
-                        
-                        <h4 class="property-label">Conceptual Diagram</h4>
-                        <div class="visual-diagram-box">
-                            <div class="diagram-flow">
-                                <div class="diagram-node">Human Intent</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">AI Agent</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">Smart Hand Infrastructure</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">Enterprise Systems</div><div class="diagram-arrow">➔</div>
-                                <div class="diagram-node">Economic Outcome</div>
-                            </div>
-                        </div>
-                        
-                        <h4 class="property-label">Related Articles</h4>
-                        <ul class="styled-list">
-                            <li>The Autonomous Execution Layer.</li>
-                            <li>Connecting AI Agents to Enterprise Architecture.</li>
-                            <li>Real-Time Operational Orchestration.</li>
-                        </ul>
-                        
-                        <h4 class="property-label">Related Terms</h4>
-                        <p>Execution Layer. | AI Agent. | Autonomous Coordination. | Outcome.</p>
-                    </section>
-                </div>
-
-                <div class="term-node-block">
-                    <h2 class="block-main-title">Explore More Concepts</h2>
-                    <div class="grid-tags-layout">
-                        <div class="tag-node-item">Command</div>
-                        <div class="tag-node-item">Command Interface</div>
-                        <div class="tag-node-item">Intent Layer</div>
-                        <div class="tag-node-item">Language Layer</div>
-                        <div class="tag-node-item">Agent Layer</div>
-                        <div class="tag-node-item">Execution Layer</div>
-                        <div class="tag-node-item">Verification Layer</div>
-                        <div class="tag-node-item">Outcome Economy</div>
-                        <div class="tag-node-item">Smart Hand Infrastructure</div>
-                        <div class="tag-node-item">Human Oversight</div>
-                        <div class="tag-node-item">Agentic Workflow</div>
-                        <div class="tag-node-item">Coordination Costs</div>
-                        <div class="tag-node-item">Natural Language Computing</div>
-                        <div class="tag-node-item">Verified Execution</div>
-                        <div class="tag-node-item">AI Infrastructure</div>
-                        <div class="tag-node-item">Human-in-the-Loop</div>
-                        <div class="tag-node-item">Digital Production</div>
-                        <div class="tag-node-item">Economic Interface</div>
-                        <div class="tag-node-item">Autonomous Coordination</div>
-                        <div class="tag-node-item">Computational Organization</div>
-                        <div class="tag-node-item">Intent-Driven Systems</div>
-                        <div class="tag-node-item">Language-Centric Computing</div>
-                    </div>
-                </div>
-
-                <div class="term-node-block">
-                    <h2 class="block-main-title">Knowledge Graph</h2>
-                    <p>Every concept in this glossary is connected to other concepts through clear knowledge relationships. The terms are not presented as isolated definitions; instead, they form an interconnected network that enables researchers, practitioners, investors, and policymakers to understand how all components interact within the Command Economy of AI framework.</p>
-                </div>
-
             </div>
-        </article>
-    </div>
+            
+            <h4 class="property-label">مقالات مرتبطة</h4>
+            <ul class="styled-list">
+                <li>سيتم ربط المقالات والأبحاث الذاتية فور نشرها.</li>
+            </ul>
+            
+            <h4 class="property-label">مصطلحات مرتبطة</h4>
+            <p><a href="#command">الأمر</a> | <a href="#intent-understanding">فهم النية</a> | <a href="#outcome">النتيجة</a> | <a href="#ai-agent">وكيل الذكاء الاصطناعي</a></p>
+        </div>
+
+        <!-- Concept 2: Command -->
+        <div class="concept-segment" id="command">
+            <h3 class="concept-term-title">2. الأمر (Command)</h3>
+            
+            <h4 class="property-label">التعريف الرسمي</h4>
+            <p>الأمر هو التعبير التنفيذي الصريح عن النية البشرية والذي يطلب من النظام الذكي بدء العمل وتوجيهه نحو هدف محدد.</p>
+
+            <h4 class="property-label">الفرق بين النية والأمر</h4>
+            <p>تُعبر <strong>النية</strong> عن المقصد أو الهدف الذي يرغب الإنسان في تحقيقه، بينما يمثل <strong>الأمر</strong> التعبير التشغيلي الصريح الموجه للنظام للبدء في العملية التنفيذية.</p>
+
+            <h4 class="property-label">الرسم المفاهيمي</h4>
+            <div class="visual-diagram-box">
+                <div class="diagram-flow">
+                    <div class="diagram-node">النية البشرية</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">الأمر</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">فهم النية</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">التنفيذ</div>
+                </div>
+            </div>
+
+            <h4 class="property-label">مصطلحات مرتبطة</h4>
+            <p><a href="#intent">النية البشرية</a> | <a href="#intent-understanding">فهم النية</a> | <a href="#planning">التخطيط</a></p>
+        </div>
+
+        <!-- Concept 3: Intent Understanding -->
+        <div class="concept-segment" id="intent-understanding">
+            <h3 class="concept-term-title">3. فهم النية (Intent Understanding)</h3>
+            
+            <h4 class="property-label">التعريف الرسمي</h4>
+            <p>فهم النية هو العملية التي يحلل من خلالها النظام الذكي الأمر اللغوي ليفسر الهدف الحقيقي، والمحددات، والسياق، والنتيجة المطلوبة خلف الأمر الموجه.</p>
+
+            <h4 class="property-label">علاقته بالتنفيذ</h4>
+            <p>يحول فهم النية الأمر البشري من مجرد تعبير لغوي سطحي إلى تمثيل تشغيلي يمكن تخطيطه وتنسيقه وتنفيذه برمجياً.</p>
+
+            <h4 class="property-label">الرسم المفاهيمي</h4>
+            <div class="visual-diagram-box">
+                <div class="diagram-flow">
+                    <div class="diagram-node">الأمر</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">فهم النية</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">التخطيط</div>
+                </div>
+            </div>
+
+            <h4 class="property-label">مصطلحات مرتبطة</h4>
+            <p><a href="#command">الأمر</a> | <a href="#planning">التخطيط</a> | <a href="#language-interface">واجهة اللغة</a></p>
+        </div>
+
+        <!-- Concept 4: Planning -->
+        <div class="concept-segment" id="planning">
+            <h3 class="concept-term-title">4. التخطيط (Planning)</h3>
+            
+            <h4 class="property-label">التعريف الرسمي</h4>
+            <p>التخطيط هو عملية تحديد تسلسل الإجراءات، الموارد، الأدوات، والاعتماديات اللازمة لتحويل النية المفهومة إلى سير عمل قابل للتنفيذ.</p>
+
+            <h4 class="property-label">مسار التخطيط التشغيلي</h4>
+            <p>ضمن عمارة Smart Hand MVP وإطار CE-AI، يعمل التخطيط عبر المسار التشغيلي المباشر:</p>
+            <blockquote>النية ➔ الخطة ➔ التنفيذ ➔ النتائج</blockquote>
+
+            <h4 class="property-label">الرسم المفاهيمي</h4>
+            <div class="visual-diagram-box">
+                <div class="diagram-flow">
+                    <div class="diagram-node">فهم النية</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">التخطيط</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">تنسيق الوكلاء</div>
+                </div>
+            </div>
+
+            <h4 class="property-label">مصطلحات مرتبطة</h4>
+            <p><a href="#intent-understanding">فهم النية</a> | <a href="#agent-orchestration">تنسيق الوكلاء</a> | <a href="#workflow">سير العمل</a></p>
+        </div>
+
+        <!-- Concept 5: Language Interface -->
+        <div class="concept-segment" id="language-interface">
+            <h3 class="concept-term-title">5. واجهة اللغة (Language Interface)</h3>
+            
+            <h4 class="property-label">التعريف الرسمي</h4>
+            <p>واجهة اللغة هي طبقة تفاعل تسمح للإنسان بالتواصل مع الأنظمة الرقمية باستخدام اللغة الطبيعية بدلًا من الأزرار والقوائم والبرمجة التقليدية.</p>
+            
+            <h4 class="property-label">واجهة اللغة مقابل الواجهة الرسومية (GUI)</h4>
+            <div class="table-responsive-container">
+                <table class="luxury-data-table">
+                    <thead>
+                        <tr>
+                            <th>الواجهة الرسومية (GUI)</th>
+                            <th>واجهة اللغة (Language Interface)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>قوائم وأزرار مقيدة</td><td>لغة محادثة طبيعية</td></tr>
+                        <tr><td>نماذج ومدخلات ثابتة</td><td>نية وأهداف متكيفة</td></tr>
+                        <tr><td>تنقل بين الشاشات</td><td>تعبير عن النتائج مباشرة</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4 class="property-label">مصطلحات مرتبطة</h4>
+            <p><a href="#intent">النية البشرية</a> | <a href="#ai-agent">وكيل الذكاء الاصطناعي</a> | <a href="#intent-understanding">فهم النية</a></p>
+        </div>
+
+        <!-- Concept 6: AI Agent -->
+        <div class="concept-segment" id="ai-agent">
+            <h3 class="concept-term-title">6. وكيل الذكاء الاصطناعي (AI Agent)</h3>
+            
+            <h4 class="property-label">التعريف الرسمي</h4>
+            <p>وكلاء الذكاء الاصطناعي هم مشاركون تنفيذيون ذوي أهداف محددة داخل اقتصاد الأوامر للذكاء الاصطناعي (CE-AI)؛ يمكنهم تفسير الأهداف، تخطيط الإجراءات، استخدام الأدوات، والتنسيق مع الوكلاء الآخرين لإتمام المهام.</p>
+
+            <h4 class="property-label">الفرق بين وكيل الذكاء الاصطناعي وروبوت المحادثة</h4>
+            <div class="table-responsive-container">
+                <table class="luxury-data-table">
+                    <thead>
+                        <tr>
+                            <th>روبوت المحادثة (Chatbot)</th>
+                            <th>وكيل الذكاء الاصطناعي (AI Agent)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>يجيب عن الأسئلة</td><td>ينفذ الأهداف والمهام</td></tr>
+                        <tr><td>تفاعلي حواري</td><td>موجه نحو تحقيق نتائج ملموسة</td></tr>
+                        <tr><td>تفاعل فردي محدود</td><td>إدارة سير عمل متعدد الخطوات</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4 class="property-label">مصطلحات مرتبطة</h4>
+            <p><a href="#agent-orchestration">تنسيق الوكلاء</a> | <a href="#planning">التخطيط</a> | <a href="#smart-hand">البنية التحتية لليد الذكية</a></p>
+        </div>
+
+        <!-- Concept 7: Agent Orchestration -->
+        <div class="concept-segment" id="agent-orchestration">
+            <h3 class="concept-term-title">7. تنسيق الوكلاء (Agent Orchestration)</h3>
+            
+            <h4 class="property-label">التعريف الرسمي</h4>
+            <p>تنسيق الوكلاء هو عملية إدارة وتنظيم عمل عدة وكلاء ذكاء اصطناعي وأدوات وسلاسل تنفيذية متفرقة لتحقيق هدف مشترك عبر عملية تنفيذ منظمة.</p>
+
+            <h4 class="property-label">الفرق بين الوكيل والتنسيق</h4>
+            <p>بينما ينفذ <strong>الوكيل</strong> مهام محددة، يتولى <strong>التنسيق (Orchestration)</strong> إدارة الاعتماديات، وتبادل البيانات، والتتابع العملياتي بين كافة الوكلاء والأدوات.</p>
+
+            <h4 class="property-label">الرسم المفاهيمي</h4>
+            <div class="visual-diagram-box">
+                <div class="diagram-flow">
+                    <div class="diagram-node">التخطيط</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">تنسيق الوكلاء</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">سير العمل</div>
+                </div>
+            </div>
+
+            <h4 class="property-label">مصطلحات مرتبطة</h4>
+            <p><a href="#ai-agent">وكيل الذكاء الاصطناعي</a> | <a href="#workflow">سير العمل</a> | <a href="#smart-hand">البنية التحتية لليد الذكية</a></p>
+        </div>
+
+        <!-- Concept 8: Workflow -->
+        <div class="concept-segment" id="workflow">
+            <h3 class="concept-term-title">8. سير العمل (Workflow)</h3>
+            
+            <h4 class="property-label">التعريف الرسمي</h4>
+            <p>سير العمل هو التسلسل الهيكلي للخطوات المترابطة، القواعد التشغيلية، ومسارات التنفيذ المطلوبة لتحقيق نتيجة محددة داخل محرك التشغيل.</p>
+
+            <h4 class="property-label">مصطلحات مرتبطة</h4>
+            <p><a href="#agent-orchestration">تنسيق الوكلاء</a> | <a href="#execution">التنفيذ</a> | <a href="#ai-execution-infrastructure">البنية التحتية لتنفيذ الذكاء الاصطناعي</a></p>
+        </div>
+
+        <!-- Concept 9: Execution -->
+        <div class="concept-segment" id="execution">
+            <h3 class="concept-term-title">9. التنفيذ (Execution)</h3>
+            
+            <h4 class="property-label">التعريف الرسمي</h4>
+            <p>التنفيذ هو الإجراء العملي أو السلسلة التشغيلية التي تقوم بها الأنظمة الذكية والوكلاء لتطبيق خطة العمل وتحويل الأوامر والمقاصد إلى أفعال حقيقية في البيئة الرقمية أو الاقتصادية.</p>
+
+            <h4 class="property-label">الفرق بين التنفيذ والتحقق</h4>
+            <p>يعني <strong>التنفيذ</strong> إتمام الإجراء البرمجي أو العملياتي بالفعل، بينما يضمن <strong>التحقق</strong> تقييم صحة المخرج ومطابقته للهدف والشروط المحددة.</p>
+
+            <h4 class="property-label">الرسم المفاهيمي</h4>
+            <div class="visual-diagram-box">
+                <div class="diagram-flow">
+                    <div class="diagram-node">سير العمل</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">التنفيذ</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">التحقق</div>
+                </div>
+            </div>
+
+            <h4 class="property-label">مصطلحات مرتبطة</h4>
+            <p><a href="#workflow">سير العمل</a> | <a href="#verification">التحقق</a> | <a href="#ai-execution-infrastructure">البنية التحتية لتنفيذ الذكاء الاصطناعي</a></p>
+        </div>
+
+        <!-- Concept 10: AI Execution Infrastructure -->
+        <div class="concept-segment" id="ai-execution-infrastructure">
+            <h3 class="concept-term-title">10. البنية التحتية لتنفيذ الذكاء الاصطناعي (AI Execution Infrastructure)</h3>
+            
+            <h4 class="property-label">التعريف الرسمي</h4>
+            <p>البنية التحتية لتنفيذ الذكاء الاصطناعي هي المنظومة التقنية والتشغيلية التي تمكّن الأنظمة الذكية من تحويل النوايا والأوامر البشرية إلى عمليات منسقة، قابلة للتنفيذ، والتحقق، وموجهة نحو النتائج عبر البيئات الرقمية والاقتصادية.</p>
+
+            <h4 class="property-label">لماذا تعد مهمة؟</h4>
+            <p>تتزايد قدرة الذكاء الاصطناعي على توليد الأفكار والتخطيط؛ وتوفر هذه البنية التحتية الآليات والربط التشغيلي والقدرات التنفيذية اللازمة لتحويل ذلك الذكاء إلى نتائج عمل ملموسة.</p>
+
+            <h4 class="property-label">الرسم المفاهيمي</h4>
+            <div class="visual-diagram-box">
+                <div class="diagram-flow">
+                    <div class="diagram-node">النية البشرية</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">الأنظمة الذكية</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">البنية التحتية للتنفيذ</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">التنفيذ</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">النتيجة</div>
+                </div>
+            </div>
+
+            <h4 class="property-label">مصطلحات مرتبطة</h4>
+            <p><a href="#smart-hand">البنية التحتية لليد الذكية</a> | <a href="#verification">التحقق</a> | <a href="#economic-outcome">النتيجة الاقتصادية</a></p>
+        </div>
+
+        <!-- Concept 11: Smart Hand Infrastructure -->
+        <div class="concept-segment" id="smart-hand">
+            <h3 class="concept-term-title">11. البنية التحتية لليد الذكية (Smart Hand Infrastructure)</h3>
+            
+            <h4 class="property-label">التعريف الرسمي</h4>
+            <p>البنية التحتية لليد الذكية هي المعمارية التنفيذية المقترحة داخل اقتصاد الأوامر للذكاء الاصطناعي (CE-AI)، المصممة لتحويل النية البشرية إلى تنفيذ منسق، قابل للتحقق، وذي قيمة اقتصادية ملموسة عبر الوكلاء والأنظمة البرمجية والبيئات المؤسسية.</p>
+
+            <h4 class="property-label">كيف تعمل في الإطار؟</h4>
+            <ul class="styled-list">
+                <li>ترجمة قرارات الوكلاء إلى إجراءات برمجية مباشرة (API Calls).</li>
+                <li>الربط مع أنظمة إدارة الموارد (ERP) وقواعد البيانات المؤسسية.</li>
+                <li>إدارة الموارد وتنسيق سير العمليات التشغيلية.</li>
+                <li>توفير بيئة تنفيذ قابلة للتحقق ومراقبة الأداء المستمر.</li>
+            </ul>
+
+            <h4 class="property-label">مثال عملي</h4>
+            <p>فعندما يصدر المستخدم أمراً بتوسيع الطاقة التوريدية، تتولى البنية التحتية لليد الذكية التنسيق المباشر بين أنظمة المشتريات، والموردين، وسلاسل اللوجستيات، وآليات التحقق وفقاً للصلاحيات والإشراف البشري المحدد.</p>
+
+            <h4 class="property-label">الرسم المفاهيمي</h4>
+            <div class="visual-diagram-box">
+                <div class="diagram-flow">
+                    <div class="diagram-node">النية البشرية</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">الأمر</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">تنسيق الوكلاء</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">البنية التحتية لليد الذكية</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">التنفيذ</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">التحقق</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">النتيجة الاقتصادية</div>
+                </div>
+            </div>
+
+            <h4 class="property-label">مصطلحات مرتبطة</h4>
+            <p><a href="#ai-execution-infrastructure">البنية التحتية لتنفيذ الذكاء الاصطناعي</a> | <a href="#verification">التحقق</a> | <a href="#decision-memory">ذاكرة القرار</a></p>
+        </div>
+
+        <!-- Concept 12: Verification -->
+        <div class="concept-segment" id="verification">
+            <h3 class="concept-term-title">12. التحقق (Verification)</h3>
+            
+            <h4 class="property-label">التعريف الرسمي</h4>
+            <p>التحقق هو عملية تقييم ومراجعة ما إذا كان الإجراء المنفذ أو المخرج الناتج يلبي الهدف المطلوب، والشروط المحددة، والمحددات الموضوعة بفاعلية.</p>
+
+            <h4 class="property-label">التنفيذ مقابل التحقق</h4>
+            <p>يوثق <strong>التنفيذ</strong> حدوث الإجراء التشغيلي، بينما يجيب <strong>التحقق</strong> عن سؤال: <em>هل حدث التنفيذ كما هو متوقع تماماً وهل تطابق النتيجة المعايير الدقيقة المطلوبة؟</em></p>
+
+            <h4 class="property-label">مصطلحات مرتبطة</h4>
+            <p><a href="#execution">التنفيذ</a> | <a href="#outcome">النتيجة</a> | <a href="#smart-hand">البنية التحتية لليد الذكية</a></p>
+        </div>
+
+        <!-- Concept 13: Outcome -->
+        <div class="concept-segment" id="outcome">
+            <h3 class="concept-term-title">13. النتيجة (Outcome)</h3>
+            
+            <h4 class="property-label">التعريف الرسمي</h4>
+            <p>النتيجة هي المخرج القابل للتحقق الناتج عن عملية التنفيذ الذكي، وتمثل ما تحقق فعليًا مقارنة بالهدف المحدد وليست مجرد إجابة أو معلومة لغوية.</p>
+
+            <h4 class="property-label">الرسم المفاهيمي</h4>
+            <div class="visual-diagram-box">
+                <div class="diagram-flow">
+                    <div class="diagram-node">التنفيذ</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">التحقق</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">النتيجة</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">القيمة الاقتصادية</div>
+                </div>
+            </div>
+
+            <h4 class="property-label">مصطلحات مرتبطة</h4>
+            <p><a href="#verification">التحقق</a> | <a href="#economic-outcome">النتيجة الاقتصادية</a> | <a href="#intent">النية البشرية</a></p>
+        </div>
+
+        <!-- Concept 14: Economic Outcome -->
+        <div class="concept-segment" id="economic-outcome">
+            <h3 class="concept-term-title">14. النتيجة الاقتصادية (Economic Outcome)</h3>
+            
+            <h4 class="property-label">التعريف الرسمي</h4>
+            <p>النتيجة الاقتصادية هي الأثر المادي والقيمة التشغيلية المقاسة التي تتحقق في بيئة الأعمال بعد اكتمال مرحلتي التنفيذ والتحقق داخل البيئة الاقتصادية.</p>
+
+            <h4 class="property-label">مصطلحات مرتبطة</h4>
+            <p><a href="#outcome">النتيجة</a> | <a href="#verification">التحقق</a> | <a href="#decision-memory">ذاكرة القرار</a></p>
+        </div>
+
+        <!-- Concept 15: Decision Memory -->
+        <div class="concept-segment" id="decision-memory">
+            <h3 class="concept-term-title">15. ذاكرة القرار (Decision Memory)</h3>
+            
+            <h4 class="property-label">التعريف الرسمي</h4>
+            <p>ذاكرة القرار هي الاحتفاظ الهيكلي بالقرارات السابقة، سياق التنفيذ، والنتائج والدروس المستفادة لتوجيه عملية التخطيط والتنسيق والتنفيذ المستقبلي بفاعلية أعلى.</p>
+
+            <h4 class="property-label">مصطلحات مرتبطة</h4>
+            <p><a href="#economic-outcome">النتيجة الاقتصادية</a> | <a href="#verification">التحقق</a> | <a href="#smart-hand">البنية التحتية لليد الذكية</a></p>
+        </div>
+
+    </section>
+
+    <!-- Structured Categories for Concept Exploration -->
+    <section class="manifesto-card reveal-card">
+        <h2>استكشف المزيد من المفاهيم</h2>
+        
+        <div class="category-group-title">المفاهيم الأساسية (Core Concepts)</div>
+        <div class="grid-tags-layout">
+            <a href="#intent" class="tag-node-item">النية البشرية (Human Intent)</a>
+            <a href="#command" class="tag-node-item">الأمر (Command)</a>
+            <a href="#intent-understanding" class="tag-node-item">فهم النية</a>
+            <a href="#language-interface" class="tag-node-item">واجهة اللغة</a>
+        </div>
+
+        <div class="category-group-title">المفاهيم المعمارية (Architecture Concepts)</div>
+        <div class="grid-tags-layout">
+            <a href="#planning" class="tag-node-item">التخطيط (Planning)</a>
+            <a href="#ai-agent" class="tag-node-item">وكيل الذكاء الاصطناعي</a>
+            <a href="#agent-orchestration" class="tag-node-item">تنسيق الوكلاء</a>
+            <a href="#workflow" class="tag-node-item">سير العمل (Workflow)</a>
+            <a href="#execution" class="tag-node-item">التنفيذ (Execution)</a>
+            <a href="#ai-execution-infrastructure" class="tag-node-item">البنية التحتية للتنفيذ</a>
+            <a href="#smart-hand" class="tag-node-item">البنية التحتية لليد الذكية</a>
+        </div>
+
+        <div class="category-group-title">المفاهيم الاقتصادية (Economic Concepts)</div>
+        <div class="grid-tags-layout">
+            <a href="#outcome" class="tag-node-item">النتيجة (Outcome)</a>
+            <a href="#economic-outcome" class="tag-node-item">النتيجة الاقتصادية</a>
+            <a href="#decision-memory" class="tag-node-item">ذاكرة القرار</a>
+        </div>
+
+        <div class="category-group-title">الحوكمة والتحكم (Governance & Control)</div>
+        <div class="grid-tags-layout">
+            <a href="#verification" class="tag-node-item">التحقق (Verification)</a>
+            <span class="tag-node-item">الإشراف البشري (Human Oversight)</span>
+            <span class="tag-node-item">الإنسان داخل الحلقة (HITL)</span>
+            <span class="tag-node-item">التنفيذ القابل للتحقق</span>
+        </div>
+
+        <div class="category-group-title">المفاهيم المرتبطة (Related Concepts)</div>
+        <div class="grid-tags-layout">
+            <span class="tag-node-item">التنسيق الذاتي</span>
+            <span class="tag-node-item">الأنظمة المعتمدة على النية</span>
+            <span class="tag-node-item">الحوسبة المعتمدة على اللغة</span>
+            <span class="tag-node-item">الإنتاج الرقمي</span>
+        </div>
+    </section>
+
+    <!-- Knowledge Graph Explanation -->
+    <section class="manifesto-card reveal-card">
+        <h2>الرسم البياني المعرفي (Knowledge Graph Architecture)</h2>
+        <p>المفاهيم في هذا القاموس منظمة كإطار مفاهيمي مترابط بدلاً من كونها تعريفات معزولة. تصف علاقاتها كيفية تفاعل النية البشرية، الأوامر، الأنظمة الذكية، بنية التنفيذ التحتية، التحقق، والنتائج داخل إطار اقتصاد الأوامر للذكاء الاصطناعي (CE-AI).</p>
+    </section>
+
 </main>
 
-<!-- تذييل الصفحة الموحد والمطابق للمدونة بتنسيق مباشر شفاف -->
-<footer style="padding: 40px 0; text-align: center; background: transparent; color: var(--text-dim); border-top: 1px solid rgba(255, 255, 255, 0.04); margin-top: 50px; font-size: 0.9rem;">
-    <p>© 2026 أوامركم | Ouamarkom • جميع الحقوق محفوظة</p>
+<footer style="background-color: transparent; padding: 40px 0 35px; border-top: 1px solid var(--border-color); text-align: center; position: relative; z-index: 1;">
+    <p style="font-size: 0.85rem; color: var(--text-dim); margin: 0 20px;">
+        © 2026 أوامركم | Ouamarkom • جميع الحقوق محفوظة
+    </p>
 </footer>
 
+<script src="/script.js" defer></script>
 <script>
-    const glossaryConfigs = {
-        ar: {
-            title: "قاموس المصطلحات الرسمي | اقتصاد الأوامر للذكاء الاصطناعي",
-            desc: "قاعدة المعرفة الرسمية التي تُعرِّف المفاهيم الأساسية، المصطلحات، والعلاقات الهيكلية التي تشكل البنية المفاهيمية لإطار Command Economy of AI.",
-            btnText: "English",
-        },
-        en: {
-            title: "Official Glossary | Command Economy of AI",
-            desc: "The foundational knowledge base mapping the terminology, intent layers, and agentic workflows of the Command Economy of AI.",
-            btnText: "العربية",
-        }
-    };
-
-    function renderGlossaryLang(lang) {
-        const rootHtml = document.documentElement;
-        const layoutDir = lang === 'ar' ? 'rtl' : 'ltr';
-        
-        rootHtml.setAttribute('lang', lang);
-        rootHtml.setAttribute('dir', layoutDir);
-        
-        document.querySelectorAll('.lang-wrapper-panel').forEach(panel => {
-            panel.classList.remove('active-panel');
-        });
-        document.getElementById(`panel-${lang}`).classList.add('active-panel');
-        
-        document.title = glossaryConfigs[lang].title;
-        document.getElementById('meta-description').setAttribute('content', glossaryConfigs[lang].desc);
-        
-        document.getElementById('lang-btn').innerText = glossaryConfigs[lang].btnText;
-    }
-
-    function switchGlossaryLang() {
-        const activeLang = document.documentElement.getAttribute('lang');
-        const nextLang = activeLang === 'ar' ? 'en' : 'ar';
-        window.location.hash = nextLang === 'en' ? 'en' : '';
-        renderGlossaryLang(nextLang);
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
     document.addEventListener("DOMContentLoaded", () => {
-        const initialLang = window.location.hash === '#en' ? 'en' : 'ar';
-        renderGlossaryLang(initialLang);
+        const revealCards = document.querySelectorAll('.reveal-card');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.05, rootMargin: "0px 0px -20px 0px" });
+
+        revealCards.forEach(card => revealObserver.observe(card));
     });
 </script>
-<script src="../script.js"></script>
 </body>
 </html>

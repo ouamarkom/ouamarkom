@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Command Economy of AI (CEAI) | Strategic Encyclopedia & Knowledge Base | Ouamarkom</title>
+    <meta name="description" content="The official strategic knowledge base for the Command Economy of AI (CEAI), exploring AI execution infrastructure, human intent, command engineering, multi-agent systems, and intelligent economic execution.">
+    <meta name="keywords" content="Command Economy of AI, CEAI, AI Execution Infrastructure, Smart Hand, Intent Engineering, Command Engineering, AI Agents, Agentic AI, Multi-Agent Systems, Intelligent Economic Execution, Execution Capital, Decision Capital, Command Compiler, Intent Interface, Ouamarkom">
+    <meta name="author" content="Ouamarkom">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    
+    <!-- Canonical & Hreflang Tags -->
+    <link rel="canonical" href="https://ouamarkom.com/en/research" />
+    <link rel="alternate" hreflang="ar" href="https://ouamarkom.com/research" />
+    <link rel="alternate" hreflang="en" href="https://ouamarkom.com/en/research" />
+    <link rel="alternate" hreflang="x-default" href="https://ouamarkom.com/en/research" />
+  
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="/style.css">
+  
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TechArticle",
+          "@id": "https://ouamarkom.com/en/research#article",
+          "headline": "Command Economy of AI (CEAI) | Strategic Encyclopedia & Knowledge Base",
+          "description": "An integrated research and conceptual framework comprising foundational literature and 100 pivotal Q&As detailing the conversion of human strategic intent into automated multi-agent execution.",
+          "inLanguage": "en",
+          "mainEntityOfPage": "https://ouamarkom.com/en/research",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Ouamarkom",
+            "url": "https://ouamarkom.com/en",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://ouamarkom.com/logo.webp"
+            }
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://ouamarkom.com/en/research#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the Command Economy of AI (CEAI)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "CEAI is a conceptual and research framework studying how economic coordination evolves when human intent, expressed through natural language and structured commands, becomes a primary interface for directing intelligent computational systems toward measurable execution and economic outcomes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why does CEAI differ fundamentally from historical command economies?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In classic macroeconomics, a command economy implies centralized governmental planning and coercion. In CEAI, 'Command' represents high-level operationalized human intent converted into automated state-machine execution."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+      
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:site_name" content="Ouamarkom" />
+    <meta property="og:url" content="https://ouamarkom.com/en/research" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Command Economy of AI (CEAI) | Strategic Encyclopedia" />
+    <meta property="og:description" content="Explore the foundational concepts, strategic principles, technical architecture, terminology, and 100 core questions shaping the Command Economy of AI." />
+    <meta property="og:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Command Economy of AI (CEAI) | Strategic Knowledge Base">
+    <meta name="twitter:description" content="The official strategic knowledge base exploring how human intent becomes intelligent economic execution through AI execution infrastructure.">
+    <meta name="twitter:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg">
+
+    <style>
+        :root {
+            --primary: #040916;
+            --secondary: #0a192f;
+            --accent: #e6992d;
+            --gold: #fcd34d;
+            --text-main: #e6f1ff;
+            --text-dim: #8892b0;
+            --card-bg: rgba(10, 25, 47, 0.4);
+            --card-border: rgba(255, 255, 255, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--primary);
+            color: var(--text-main);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+            text-align: start;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        #network-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+            opacity: 0.4;
+        }
+
+        header {
+            border-bottom: 1px solid var(--card-border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10px;
+        }
+
+        .logo-group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .lang-controller {
+            display: flex;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--card-border);
+            border-radius: 30px;
+            padding: 4px;
+            gap: 4px;
+        }
+
+        .lang-btn {
+            display: inline-block;
+            text-decoration: none;
+            background: transparent;
+            border: none;
+            color: var(--text-dim);
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 13px;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn.active {
+            background: var(--accent);
+            color: #040916;
+            box-shadow: 0 2px 10px rgba(230, 153, 45, 0.25);
+        }
+
+        .faq-header-section {
+            text-align: center;
+            padding: 40px 0 20px 0;
+            min-height: auto;
+        }
+
+        .logo-img {
+            max-width: 100px;
+            height: auto;
+            margin-bottom: 0;
+            transition: transform 0.5s ease;
+        }
+
+        .logo-img:hover {
+            transform: rotate(5deg) scale(1.05);
+        }
+
+        .faq-header-section h1 {
+            font-size: 36px;
+            color: var(--text-main);
+            margin-bottom: 15px;
+            font-weight: 800;
+            line-height: 1.4;
+        }
+
+        .faq-header-section h1 span {
+            color: var(--accent);
+        }
+
+        .faq-header-section .subtitle {
+            font-size: 17px;
+            color: var(--text-dim);
+            max-width: 850px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .search-wrapper {
+            max-width: 650px;
+            margin: 30px auto;
+            position: relative;
+            padding: 0 15px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 16px 25px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--card-border);
+            border-radius: 50px;
+            color: #fff;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            text-align: inherit;
+        }
+
+        .search-input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 15px rgba(230, 153, 45, 0.25);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .master-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin: 20px 0 40px 0;
+            flex-wrap: wrap;
+            padding: 0 15px;
+        }
+
+        .master-tab-btn {
+            padding: 10px 22px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--card-border);
+            border-radius: 30px;
+            color: var(--text-dim);
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .master-tab-btn:hover, .master-tab-btn.active {
+            background: var(--accent);
+            color: #040916;
+            border-color: var(--accent);
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(230, 153, 45, 0.2);
+            transform: translateY(-1px);
+        }
+
+        .sub-filters {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            padding: 0 15px;
+        }
+
+        .sub-filter-btn {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--card-border);
+            color: var(--text-dim);
+            padding: 8px 18px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 13.5px;
+            transition: all 0.3s;
+        }
+
+        .sub-filter-btn:hover, .sub-filter-btn.active {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: rgba(230, 153, 45, 0.05);
+        }
+
+        .view-content-section {
+            display: none;
+        }
+
+        .view-content-section.active {
+            display: block;
+            animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .kb-layout {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto 60px auto;
+            padding: 0 15px;
+        }
+
+        .kb-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 24px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .kb-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+            background: rgba(10, 25, 47, 0.7);
+        }
+
+        .kb-card h2 {
+            font-size: 22px;
+            color: var(--gold);
+            margin-bottom: 18px;
+            font-weight: 700;
+            line-height: 1.5;
+        }
+
+        .lang-condensed-block {
+            text-align: justify;
+        }
+
+        p.text-p {
+            margin-bottom: 15px;
+            font-size: 15.5px;
+            line-height: 1.75;
+            color: var(--text-main);
+        }
+
+        blockquote.quote-box {
+            background: rgba(255,255,255,0.01);
+            border-inline-start: 4px solid var(--accent);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            text-align: center;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .faq-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto 60px auto;
+            padding: 0 15px;
+        }
+
+        .faq-card-item {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 24px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .faq-card-item:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+            background: rgba(10, 25, 47, 0.7);
+        }
+
+        .faq-question-box {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            margin-bottom: 14px;
+        }
+
+        .faq-badge {
+            background: rgba(230, 153, 45, 0.1);
+            color: var(--accent);
+            min-width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 13px;
+            border: 1px solid rgba(230, 153, 45, 0.2);
+        }
+
+        .faq-q-text-group {
+            flex: 1;
+        }
+
+        .faq-q-text-group h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #ffffff;
+            line-height: 1.5;
+            font-weight: 600;
+        }
+
+        .faq-answer-box {
+            padding-left: 48px;
+            border-left: 2px solid rgba(255, 255, 255, 0.03);
+            margin-left: 15px;
+        }
+
+        .ans-text {
+            color: var(--text-main);
+            font-size: 15.5px;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .glossary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto 60px auto;
+            padding: 0 15px;
+        }
+
+        .glossary-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 24px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glossary-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+            background: rgba(10, 25, 47, 0.7);
+        }
+
+        .glossary-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+        }
+
+        .glossary-title h3 {
+            color: var(--accent);
+            font-size: 17px;
+            font-weight: 700;
+        }
+
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            max-width: 900px;
+            margin: 0 auto 60px auto;
+        }
+
+        table.compare-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table.compare-table th, table.compare-table td {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--card-border);
+            text-align: start;
+        }
+
+        table.compare-table th {
+            background: rgba(230, 153, 45, 0.08);
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        table.compare-table tr:hover td {
+            background: rgba(255,255,255,0.02);
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-dim);
+            font-size: 16px;
+            display: none;
+            background: var(--card-bg);
+            border: 1px dashed var(--card-border);
+            border-radius: 16px;
+            max-width: 900px;
+            margin: 20px auto;
+        }
+
+        #backToTop {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--accent);
+            color: #040916;
+            border: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 999;
+            transition: all 0.3s ease;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #backToTop:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(230, 153, 45, 0.4);
+        }
+
+        .research-papers-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 24px;
+        }
+
+        .paper-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 18px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--card-border);
+            border-radius: 30px;
+            color: var(--text-dim);
+            text-decoration: none;
+            font-size: 15.5px;
+            font-weight: 500;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(10px);
+        }
+
+        .paper-link:hover {
+            background: rgba(230, 153, 45, 0.08);
+            border-color: var(--accent);
+            color: #ffffff;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(230, 153, 45, 0.12);
+        }
+
+        .paper-tag {
+            color: var(--accent);
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .paper-dot {
+            color: rgba(255, 255, 255, 0.2);
+            font-size: 10px;
+        }
+
+        .paper-title {
+            color: var(--text-main);
+            transition: color 0.25s ease;
+        }
+
+        .paper-link:hover .paper-title {
+            color: #ffffff;
+        }
+
+        .paper-arrow {
+            font-size: 12px;
+            opacity: 0.5;
+            transition: transform 0.25s ease, opacity 0.25s ease;
+        }
+
+        .paper-link:hover .paper-arrow {
+            opacity: 1;
+            color: var(--accent);
+        }
+
+        [dir="rtl"] .paper-link:hover .paper-arrow {
+            transform: translateX(-3px);
+        }
+
+        [dir="ltr"] .paper-link:hover .paper-arrow {
+            transform: translateX(3px);
+        }
+
+        footer {
+            background: transparent;
+            border-top: 1px solid var(--card-border);
+            padding: 40px 0;
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 14px;
+            position: relative;
+            z-index: 2;
+        }
+
+        @media (max-width: 768px) {
+            .glossary-grid { grid-template-columns: 1fr; }
+            .faq-header-section h1 { font-size: 28px; }
+            .faq-answer-box { padding-left: 20px; }
+            .kb-card { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="network-canvas"></canvas>
+<button id="backToTop" title="Back to Top">↑</button>
+
+<header>
+    <div class="container nav-container">
+        <a href="/en" class="logo-group">
+            <img src="/logo.webp" alt="Ouamarkom - Command Economy" class="logo-img" loading="eager">
+        </a>
+        <nav class="lang-controller" aria-label="Language Selector">
+            <a href="/research" class="lang-btn">العربية</a>
+            <span class="lang-btn active">English</span>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    
+    <section class="hero faq-header-section">
+        <h1>The Strategic Encyclopedia of the <span>Command Economy of AI</span></h1>
+        <p style="font-size: 18px; color: var(--gold); font-weight: 600; margin-bottom: 12px;">Command Economy of AI - CEAI</p>
+        <p class="subtitle">The official strategic knowledge base of Ouamarkom exploring the Command Economy of AI (CEAI) - a framework for understanding how human intent can become intelligent economic execution through AI agents, execution infrastructure, and measurable outcomes.</p>
+        <div class="research-papers-nav">
+            <a href="/en/research/paper-1" class="paper-link" target="_blank" rel="noopener">
+                <span class="paper-tag">Research Paper (1)</span>
+                <span class="paper-dot">•</span>
+                <span class="paper-title">Command Economy of AI</span>
+                <span class="paper-arrow">→</span>
+            </a>
+            <a href="/en/research/paper-2" class="paper-link" target="_blank" rel="noopener">
+                <span class="paper-tag">Research Paper (2)</span>
+                <span class="paper-dot">•</span>
+                <span class="paper-title">Smart Hand Infrastructure</span>
+                <span class="paper-arrow">→</span>
+            </a>
+        </div>
+    </section>
+
+    <div class="search-wrapper">
+        <input type="text" id="faqSearchInput" class="search-input" oninput="liveSearchFAQ()" placeholder="Search the encyclopedia for concepts, frameworks, technologies, or strategic principles...">
+    </div>
+
+    <div class="master-tabs" id="ui-tabs-container">
+        <button class="master-tab-btn active" onclick="switchMasterTab(this, 'faq-view')">Official FAQs (100 Core Questions)</button>
+        <button class="master-tab-btn" onclick="switchMasterTab(this, 'kb-view')">Foundational Knowledge</button>
+        <button class="master-tab-btn" onclick="switchMasterTab(this, 'glossary-view')">Glossary</button>
+        <button class="master-tab-btn" onclick="switchMasterTab(this, 'compare-view')">Conceptual Comparison</button>
+    </div>
+
+    <div class="no-results" id="faqNoResults">No results matched your search query. Try using different keywords.</div>
+
+    <!-- First Tab: Official FAQs -->
+    <section id="faq-view" class="view-content-section active">
+        <div class="sub-filters" id="ui-sub-filters">
+            <button class="sub-filter-btn active" onclick="filterFaqCategory(this, 'all')">All Questions (100)</button>
+            <button class="sub-filter-btn" onclick="filterFaqCategory(this, 'cat1')">Foundations & Definitions (1–20)</button>
+            <button class="sub-filter-btn" onclick="filterFaqCategory(this, 'cat2')">Philosophy & Economic Shift (21–40)</button>
+            <button class="sub-filter-btn" onclick="filterFaqCategory(this, 'cat3')">Architecture & Technology (41–60)</button>
+            <button class="sub-filter-btn" onclick="filterFaqCategory(this, 'cat4')">Business, Markets & Value (61–80)</button>
+            <button class="sub-filter-btn" onclick="filterFaqCategory(this, 'cat5')">Future, Governance & Criticism (81–100)</button>
+        </div>
+
+        <div class="faq-grid" id="masterFaqGrid">
+            <!-- Dynamically populated via JS -->
+        </div>
+    </section>
+
+    <!-- Second Tab: Foundational Knowledge Base -->
+    <section id="kb-view" class="view-content-section">
+        <div class="kb-layout" id="kb-dynamic-content">
+            <!-- Dynamically populated via JS -->
+        </div>
+    </section>
+
+    <!-- Third Tab: Glossary -->
+    <section id="glossary-view" class="view-content-section">
+        <div class="glossary-grid" id="glossary-dynamic-content">
+            <!-- Dynamically populated via JS -->
+        </div>
+    </section>
+
+    <!-- Fourth Tab: Structural Concept Matrix -->
+    <section id="compare-view" class="view-content-section">
+        <div class="table-wrapper" id="compare-dynamic-content">
+            <!-- Dynamically populated via JS -->
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Ouamarkom. All Rights Reserved.</p>
+        <p style="font-size: 13px; color: var(--text-dim); margin-top: 6px;">Command Economy of AI (CEAI) is an evolving research and strategic framework developed by Ouamarkom to explore AI execution infrastructure, intent engineering, intelligent economic coordination, and the transition from AI intelligence generation to intelligent economic execution.</p>
+    </div>
+</footer>
+
+<script src="/script.js" defer></script>
+
+<script>
+    let currentTab = 'faq-view';
+
+    const kbDataset = [
+        {
+            title: "1. What Is the Command Economy of AI?",
+            content: `<p class="text-p">The Command Economy of AI (CEAI) is a conceptual and research framework for studying how economic coordination evolves when human intent, expressed through natural language and structured commands, becomes a primary interface for directing intelligent computational systems toward measurable execution and economic outcomes.</p>
+                      <p class="text-p">CEAI does not describe a political system or a replacement for capitalism or free markets. It describes an emerging technological and economic coordination layer operating within existing markets.</p>
+                      <blockquote class="quote-box">Its central question is: How can human intent become executable economic action with minimal operational friction?</blockquote>`
+        },
+        {
+            title: "2. The Meaning of \"Command\"",
+            content: `<p class="text-p">The word "command" in CEAI must be distinguished from its historical use in political economy.</p>
+                      <p class="text-p">A historical command economy refers to centralized state control over production, allocation, and distribution.</p>
+                      <p class="text-p">In CEAI, a command represents a high-level expression of human intent that can be interpreted, structured, decomposed, executed, monitored, and optimized by intelligent systems.</p>
+                      <p class="text-p">A command may express a business objective such as: <em>«Launch a new product in three markets, within a defined budget, while achieving specific performance targets.»</em></p>
+                      <p class="text-p">The command is not a political decree. It is an executable strategic objective.</p>`
+        },
+        {
+            title: "3. CEAI Is Not a Political or Ideological System",
+            content: `<p class="text-p">CEAI is not an argument for centralized economic planning. It does not advocate government ownership, political coercion, elimination of markets, or centralized control of economic resources.</p>
+                      <p class="text-p">Instead, CEAI examines how computational infrastructure can reduce the friction between:</p>
+                      <p class="text-p" style="text-align: center; font-weight: bold; color: var(--gold);">Human Intent → Decision → Coordination → Execution → Outcome</p>
+                      <p class="text-p">The framework can therefore operate within capitalist, mixed-market, decentralized, or other economic environments. Its focus is technological coordination and economic execution.</p>`
+        },
+        {
+            title: "4. From Artificial Intelligence to Intelligent Execution",
+            content: `<p class="text-p">Much of the first generation of AI focused on intelligence generation: generating text, generating images, retrieving information, analyzing data, writing code, and answering questions.</p>
+                      <p class="text-p">The next stage moves beyond generation toward execution. The critical question becomes: <strong>How does intelligence translate into action?</strong></p>
+                      <p class="text-p">This creates the need for an execution layer capable of connecting models, agents, APIs, workflows, enterprise systems, data, and real-world operations. CEAI provides a conceptual framework for understanding that transition.</p>`
+        },
+        {
+            title: "5. The Execution Gap",
+            content: `<p class="text-p">The modern economy already contains powerful software. The problem is increasingly not the absence of tools; the problem is the friction required to operate them.</p>
+                      <p class="text-p">A single strategic objective may require: research, analysis, software, spreadsheets, communication, marketing systems, CRM platforms, payment systems, APIs, databases, human approvals, and operational monitoring.</p>
+                      <p class="text-p">The execution gap is the distance between what a human wants to achieve and the amount of operational work required to make it happen. CEAI focuses on compressing that gap.</p>`
+        },
+        {
+            title: "6. The Intent Interface",
+            content: `<p class="text-p">The Intent Interface represents a shift in human-computer interaction.</p>
+                      <p class="text-p">Instead of asking users to understand every application, workflow, dashboard, or technical procedure, systems increasingly allow users to express the desired outcome directly.</p>
+                      <p class="text-p">The interface therefore moves from: <strong>Tool → User → Task</strong> toward: <strong style="color: var(--accent);">Intent → Intelligence → Execution</strong>.</p>
+                      <p class="text-p">This does not necessarily eliminate graphical interfaces. Instead, it changes their role from primary control surfaces into dynamic execution environments.</p>`
+        },
+        {
+            title: "7. The Command Compiler",
+            content: `<p class="text-p">A Command Compiler is the conceptual layer that transforms human intent into an executable computational structure.</p>
+                      <p class="text-p">It may perform functions such as: 1. Intent interpretation | 2. Context retrieval | 3. Constraint extraction | 4. Goal decomposition | 5. Task planning | 6. Agent assignment | 7. Tool selection | 8. Execution routing | 9. Verification | 10. Feedback and optimization.</p>
+                      <p class="text-p">The result is a structured transition from natural-language intent to programmatic execution.</p>`
+        },
+        {
+            title: "8. Multi-Agent Execution",
+            content: `<p class="text-p">CEAI assumes that complex objectives cannot always be fulfilled by a single model or agent.</p>
+                      <p class="text-p">Instead, specialized agents may perform different functions (Research, Strategy, Development, Finance, Marketing, Operations, Compliance, Analytics).</p>
+                      <p class="text-p">An orchestration layer coordinates these agents around a shared objective. The value is therefore not simply intelligence at the individual-agent level, but coordinated intelligence at the system level.</p>`
+        },
+        {
+            title: "9. Smart Hand Infrastructure",
+            content: `<p class="text-p">The Smart Hand represents the execution infrastructure envisioned within the CEAI thesis. If AI has traditionally functioned as an intelligence layer, the Smart Hand represents the infrastructure that connects intelligence to execution.</p>
+                      <p class="text-p" style="text-align: center; font-weight: bold; color: var(--gold);">Human Intent → Intent Understanding → Planning → Agent Orchestration → Execution → Verification → Outcome</p>
+                      <p class="text-p">The objective is not to replace human strategic authority, but to make human intent operationally executable at unprecedented speed and scale.</p>`
+        },
+        {
+            title: "10. Execution Capital",
+            content: `<p class="text-p">Execution Capital describes the accumulated organizational capability required to turn commands into reliable outcomes.</p>
+                      <p class="text-p">It may include: institutional context, proprietary data, system integrations, APIs, workflows, agent configurations, historical execution patterns, decision records, operational knowledge, and governance policies.</p>
+                      <p class="text-p">The more mature an organization's execution infrastructure becomes, the less friction exists between strategic intent and operational outcome.</p>`
+        },
+        {
+            title: "From Intelligence to Execution (Closing Statement)",
+            content: `<p class="text-p">The history of computing has repeatedly moved toward abstraction: from machine code to programming languages, from programming languages to software, from software to platforms, and now from platforms toward intelligent systems.</p>
+                      <p class="text-p">The next abstraction may be the ability to express an objective directly and allow intelligent infrastructure to coordinate the execution beneath it. That is the problem space explored by the Command Economy of AI.</p>
+                      <blockquote class="quote-box">At the center of that transition is the Smart Hand: Intent → Intelligence → Orchestration → Execution → Outcome</blockquote>
+                      <p class="text-p">The strategic question is no longer only: <em>How intelligent can AI become?</em> It is increasingly: <em>How effectively can intelligence become execution?</em></p>`
+        }
+    ];
+
+    const glossaryDataset = [
+        { term: "Command Economy of AI (CEAI)", code: "CEAI Core Concept", desc: "A conceptual and research framework examining how economic coordination changes when human intent becomes a primary interface for directing intelligent computational systems toward measurable execution and economic outcomes." },
+        { term: "AI Execution Infrastructure", code: "Execution Infrastructure", desc: "The technological layer connecting AI intelligence to real-world digital or physical execution through agents, APIs, workflows, orchestration, verification, and outcome management." },
+        { term: "Smart Hand", code: "Execution Primitive", desc: "A conceptual execution infrastructure designed to translate human intent into coordinated intelligent action and measurable outcomes." },
+        { term: "Human Intent", code: "Intent Layer", desc: "The strategic objective, desired outcome, constraints, and priorities expressed by a human decision-maker." },
+        { term: "Intent Interface", code: "UI Paradigm", desc: "An interaction layer through which users communicate desired objectives directly to intelligent systems rather than manually operating individual software tools." },
+        { term: "Intent Engineering", code: "Methodology", desc: "The discipline of structuring human objectives, constraints, context, priorities, and success criteria so that intelligent systems can reliably interpret and execute them." },
+        { term: "Command Engineering", code: "System Engineering", desc: "The design of high-level executable commands that translate strategic objectives into structured computational workflows." },
+        { term: "Command Compiler", code: "Middleware Layer", desc: "A conceptual middleware layer that converts natural-language commands into structured plans, dependencies, tasks, and executable workflows." },
+        { term: "Agentic AI", code: "Agent Architecture", desc: "AI systems capable of planning, using tools, maintaining state, taking actions, and pursuing objectives across multiple steps." },
+        { term: "Multi-Agent Orchestration", code: "Orchestration Layer", desc: "The coordination of multiple specialized AI agents working together toward a shared objective." },
+        { term: "Execution Capital", code: "Balance Sheet Asset", desc: "The accumulated infrastructure, data, integrations, workflows, context, and institutional knowledge that increase an organization's ability to execute AI-driven commands." },
+        { term: "Decision Capital", code: "Knowledge Asset", desc: "The accumulated value of historical decisions, evaluations, outcomes, and organizational judgment that can inform future intelligent execution." },
+        { term: "Institutional Memory", code: "Context Layer", desc: "Persistent organizational context that enables AI systems to understand previous decisions, workflows, constraints, outcomes, and organizational knowledge." },
+        { term: "Outcome Intelligence", code: "System Intelligence", desc: "The ability of an intelligent system to evaluate execution against predefined objectives and adapt its actions accordingly." },
+        { term: "Execution Advantage", code: "Strategic Metric", desc: "A measurable competitive advantage created by reducing the time, cost, complexity, and friction between strategic intent and operational execution." },
+        { term: "Command Network", code: "System Network", desc: "A connected computational environment in which commands, agents, services, data, and execution outcomes interact to fulfill strategic objectives." },
+        { term: "Intelligent Economic OS", code: "Operating System", desc: "A conceptual operating layer capable of coordinating intelligent agents, enterprise resources, workflows, and economic operations around human-defined objectives." },
+        { term: "Outcome-Based Execution", code: "Execution Model", desc: "An execution model in which systems are evaluated primarily by measurable results rather than activity, tool usage, or human hours." }
+    ];
+
+    const compareDataset = {
+        headers: ["Dimension", "Traditional Software Economy", "Command Economy of AI"],
+        rows: [
+            ["Primary Interface", "Applications and dashboards", "Human intent and commands"],
+            ["Unit of Interaction", "Tool / feature", "Objective / command"],
+            ["Human Role", "Operator", "Strategic director and governor"],
+            ["AI Role", "Assistant / generator", "Reasoning and execution system"],
+            ["Workflow", "Manually assembled", "Dynamically orchestrated"],
+            ["Coordination", "Human-driven", "Multi-agent and system-driven"],
+            ["Execution", "Tool-by-tool", "End-to-end"],
+            ["Data", "Stored information", "Context for intelligent execution"],
+            ["Memory", "Application-specific", "Institutional and cross-system"],
+            ["Pricing", "Seats, licenses, usage", "Increasingly outcome-oriented"],
+            ["Competitive Advantage", "Software and headcount", "Execution speed and system intelligence"],
+            ["Core Bottleneck", "Tool operation", "Intent quality and governance"],
+            ["Organizational Model", "Teams operating software", "Humans directing intelligent systems"],
+            ["Measurement", "Activity and productivity", "Verified outcomes"],
+            ["Strategic Layer", "Software management", "Intent engineering and execution infrastructure"]
+        ]
+    };
+
+    const faqDataset = [
+        // Section 1: Foundations & Definitions (1-20)
+        { id: 1, cat: "cat1", q: "What is the Command Economy of AI (CEAI)?", a: "CEAI is a conceptual and research framework studying how economic coordination evolves when human intent becomes a primary interface for directing intelligent computational systems toward measurable execution and economic outcomes." },
+        { id: 2, cat: "cat1", q: "Why is it called the Command Economy of AI?", a: "Because the framework treats the command as a fundamental unit of coordination between human strategic intent and intelligent computational execution." },
+        { id: 3, cat: "cat1", q: "Is CEAI the same as a traditional command economy?", a: "No. Traditional command economies are associated with centralized political authority and state-directed resource allocation. CEAI refers to decentralized human and organizational intent being translated into computational execution." },
+        { id: 4, cat: "cat1", q: "Is CEAI a new economic system?", a: "Not in the political or macroeconomic sense. It is better understood as an emerging technological and economic coordination layer operating within existing markets." },
+        { id: 5, cat: "cat1", q: "What is the central idea behind CEAI?", a: "The central idea is that economic coordination can increasingly move from operating software tools manually to expressing desired outcomes directly and allowing intelligent systems to coordinate execution." },
+        { id: 6, cat: "cat1", q: "What problem does CEAI address?", a: "It addresses the execution gap between strategic human intent and the fragmented operational work required to transform that intent into measurable results." },
+        { id: 7, cat: "cat1", q: "How does CEAI differ from the Prompt Economy?", a: "The Prompt Economy focuses primarily on prompts used to generate content or obtain responses. CEAI extends the concept toward end-to-end execution of strategic objectives across multiple systems and agents." },
+        { id: 8, cat: "cat1", q: "Is a CEAI command simply a prompt?", a: "No. A command is an operational objective that can contain goals, constraints, context, resources, dependencies, and measurable success criteria." },
+        { id: 9, cat: "cat1", q: "Why is human intent becoming more important?", a: "As AI systems become increasingly capable of execution, the strategic quality of the objective becomes a major determinant of system performance." },
+        { id: 10, cat: "cat1", q: "What does it mean for language to become an economic interface?", a: "It means natural language can increasingly serve as a mechanism for expressing objectives that intelligent systems translate into operational actions." },
+        { id: 11, cat: "cat1", q: "How does CEAI differ from the Information Economy?", a: "The Information Economy primarily emphasizes information creation, storage, access, and distribution. CEAI emphasizes converting information and intent into coordinated action and outcomes." },
+        { id: 12, cat: "cat1", q: "How does CEAI differ from the Platform Economy?", a: "Platforms primarily connect participants. CEAI focuses on connecting strategic human intent directly to intelligent computational execution." },
+        { id: 13, cat: "cat1", q: "What is CEAI's most important conceptual contribution?", a: "Its central contribution is framing the transition from AI intelligence generation toward intelligent economic execution as a distinct infrastructure problem." },
+        { id: 14, cat: "cat1", q: "Why is CEAI an emerging economic layer?", a: "Because AI systems are increasingly capable of planning, using tools, coordinating agents, and executing multi-step workflows rather than merely generating information." },
+        { id: 15, cat: "cat1", q: "Is CEAI limited to technology companies?", a: "No. Its principles can apply to finance, healthcare, manufacturing, education, logistics, professional services, commerce, and other sectors." },
+        { id: 16, cat: "cat1", q: "What is a simple example of CEAI?", a: "A business leader could define a market-entry objective and have an intelligent execution system coordinate research, strategy, product development, marketing, and analytics instead of manually managing each workflow." },
+        { id: 17, cat: "cat1", q: "How does CEAI differ from a conventional AI assistant?", a: "A conventional assistant primarily responds to requests. A CEAI-oriented system is designed around persistent objectives, coordinated execution, system interaction, verification, and measurable outcomes." },
+        { id: 18, cat: "cat1", q: "Does CEAI mean humans become unnecessary?", a: "No. CEAI changes the human role from repetitive operational execution toward strategic intent, governance, judgment, and accountability." },
+        { id: 19, cat: "cat1", q: "Why is CEAI relevant now?", a: "Because AI is rapidly moving from content generation and conversational assistance toward agentic systems capable of performing increasingly complex multi-step actions." },
+        { id: 20, cat: "cat1", q: "What is the core message of CEAI?", a: "The next competitive advantage may increasingly belong to organizations that can transform high-quality human intent into reliable, scalable execution." },
+
+        // Section 2: Philosophy & Economic Shift (21-40)
+        { id: 21, cat: "cat2", q: "What paradigm shift does CEAI describe?", a: "A transition from software-centered interaction toward intent-centered coordination, where humans increasingly define objectives while intelligent systems coordinate execution." },
+        { id: 22, cat: "cat2", q: "Why is structured intent strategically valuable?", a: "Because capable execution systems require clear objectives, constraints, context, and success criteria to produce reliable outcomes." },
+        { id: 23, cat: "cat2", q: "How can commands become workflows?", a: "A structured command can be decomposed into objectives, dependencies, tasks, resources, agents, and verification criteria, creating an executable workflow." },
+        { id: 24, cat: "cat2", q: "What happens when machines adapt to human communication?", a: "The interaction burden shifts away from requiring humans to learn complex technical interfaces and toward systems learning to interpret human objectives." },
+        { id: 25, cat: "cat2", q: "Why are semantic systems important?", a: "Because semantic systems can bridge human language and machine-executable operations across software, data, APIs, and workflows." },
+        { id: 26, cat: "cat2", q: "What is Execution Advantage?", a: "Execution Advantage is the ability to move from strategic intent to measurable operational outcome faster, more efficiently, and more reliably than competing organizations." },
+        { id: 27, cat: "cat2", q: "Does CEAI eliminate traditional information discovery?", a: "No. It changes the role of discovery by integrating research, reasoning, and action into a more continuous execution loop." },
+        { id: 28, cat: "cat2", q: "What happens when the idea-to-execution cycle becomes shorter?", a: "Organizations can experiment, validate, iterate, and launch initiatives more rapidly, potentially changing the economics of innovation." },
+        { id: 29, cat: "cat2", q: "What is a decentralized semantic economy?", a: "It is an environment in which individuals and organizations can express objectives through semantic interfaces while intelligent systems coordinate execution across distributed infrastructure." },
+        { id: 30, cat: "cat2", q: "How can CEAI change capital allocation?", a: "Capital can increasingly be allocated according to measurable objectives and verified execution rather than simply funding labor, software licenses, or fixed operational capacity." },
+        { id: 31, cat: "cat2", q: "What happens to traditional graphical interfaces?", a: "They are unlikely to disappear entirely, but some may become secondary to adaptive interfaces and intelligent orchestration layers." },
+        { id: 32, cat: "cat2", q: "Why is organizational context strategically important?", a: "Generic intelligence is widely accessible. Proprietary context, institutional memory, data, constraints, and decision history can create differentiation." },
+        { id: 33, cat: "cat2", q: "How could pricing evolve under CEAI?", a: "Some services may shift from pricing software access or human hours toward pricing based on usage, execution, performance, or verified outcomes." },
+        { id: 34, cat: "cat2", q: "What is a single-operator enterprise?", a: "A highly automated organization in which a small number of humans direct intelligent systems that perform substantial portions of research, operations, development, marketing, and administration." },
+        { id: 35, cat: "cat2", q: "How does Execution Capital affect organizations?", a: "It can become a source of accumulated operational advantage as systems, data, workflows, integrations, and institutional knowledge become increasingly optimized for execution." },
+        { id: 36, cat: "cat2", q: "What happens to traditional domain expertise?", a: "Expertise increasingly shifts from memorizing information toward judgment, validation, governance, context design, and effective direction of intelligent systems." },
+        { id: 37, cat: "cat2", q: "How might organizational roles change?", a: "New roles may emerge around AI orchestration, intent engineering, system governance, agent supervision, execution architecture, and outcome verification." },
+        { id: 38, cat: "cat2", q: "Why is human oversight still important?", a: "Because intelligent systems can make incorrect assumptions, misunderstand objectives, or produce unsafe or ineffective actions. Human governance remains essential." },
+        { id: 39, cat: "cat2", q: "What is an adaptive Intent Interface?", a: "An interface that dynamically presents tools, information, workflows, and controls according to the user's objective rather than forcing the user into a fixed application structure." },
+        { id: 40, cat: "cat2", q: "How can CEAI reduce transaction costs?", a: "By automating coordination, information exchange, workflow execution, verification, and other repetitive activities that traditionally require multiple human intermediaries." },
+
+        // Section 3: Architecture & Technology (41-60)
+        { id: 41, cat: "cat3", q: "What is the technical foundation of CEAI?", a: "A CEAI architecture can combine intent interfaces, foundation models, context systems, command compilation, agent orchestration, execution engines, APIs, memory, governance, and outcome verification." },
+        { id: 42, cat: "cat3", q: "What is the Intent Layer?", a: "The Intent Layer captures and interprets the user's objective, context, constraints, priorities, and desired outcomes." },
+        { id: 43, cat: "cat3", q: "What is the Command Layer?", a: "The Command Layer converts interpreted intent into structured execution specifications that systems and agents can act upon." },
+        { id: 44, cat: "cat3", q: "What role do foundation models play?", a: "Foundation models provide reasoning, language understanding, planning, synthesis, and other cognitive capabilities within the broader execution architecture." },
+        { id: 45, cat: "cat3", q: "Why are AI agents considered an execution workforce?", a: "Because agents can interact with tools, APIs, data, software environments, and workflows to perform tasks toward defined objectives." },
+        { id: 46, cat: "cat3", q: "What is Intelligent Orchestration?", a: "Intelligent Orchestration coordinates multiple agents, tasks, systems, dependencies, data flows, and execution states around a shared objective." },
+        { id: 47, cat: "cat3", q: "How does CEAI differ from Generative AI?", a: "Generative AI primarily produces content or information. CEAI focuses on using intelligence as part of a broader system capable of coordinated action and measurable execution." },
+        { id: 48, cat: "cat3", q: "What is Command Architecture?", a: "Command Architecture defines how intent, context, constraints, agents, systems, workflows, and governance mechanisms are connected to produce reliable execution." },
+        { id: 49, cat: "cat3", q: "What is a Command Compiler?", a: "A conceptual compiler that translates natural-language objectives into structured plans, dependencies, tasks, and executable workflows." },
+        { id: 50, cat: "cat3", q: "What is AI Institutional Memory?", a: "A persistent organizational memory layer containing relevant historical decisions, context, workflows, outcomes, and knowledge used to improve future execution." },
+        { id: 51, cat: "cat3", q: "What is Decision Capital?", a: "Decision Capital is the accumulated organizational value contained in validated decisions, evaluations, outcomes, and judgment patterns." },
+        { id: 52, cat: "cat3", q: "What is an Intelligent Economic OS?", a: "A conceptual operating layer that coordinates AI agents, data, software systems, resources, and workflows around economic objectives." },
+        { id: 53, cat: "cat3", q: "What are the stages of a Command Lifecycle?", a: "A typical lifecycle includes: Intent → Interpretation → Planning → Compilation → Orchestration → Execution → Verification → Feedback." },
+        { id: 54, cat: "cat3", q: "Why is the feedback loop important?", a: "It allows the system to compare execution with intended outcomes and adjust its behavior when performance deviates from defined objectives." },
+        { id: 55, cat: "cat3", q: "Why are measurable objectives important?", a: "Because intelligent execution requires observable criteria against which performance can be evaluated." },
+        { id: 56, cat: "cat3", q: "What is a Command Network?", a: "A connected system through which commands, agents, services, data, and execution outcomes interact to achieve organizational objectives." },
+        { id: 57, cat: "cat3", q: "What distinguishes an Intent Interface?", a: "It allows the system to adapt the interaction model around the user's objective instead of requiring the user to navigate a fixed collection of tools." },
+        { id: 58, cat: "cat3", q: "How does CEAI differ from traditional RPA?", a: "RPA typically depends on predefined deterministic workflows. CEAI-oriented systems can incorporate reasoning, adaptation, dynamic planning, and alternative execution paths." },
+        { id: 59, cat: "cat3", q: "Why are open standards important?", a: "Interoperable standards can allow different agents, models, tools, and systems to communicate and coordinate safely." },
+        { id: 60, cat: "cat3", q: "What is the CEAI value chain?", a: "Human Intent → Intent Understanding → Command Compilation → Agentic Planning → Multi-Agent Orchestration → Execution → Verification → Economic Outcome." },
+
+        // Section 4: Business, Markets & Value (61-80)
+        { id: 61, cat: "cat4", q: "How could CEAI change business models?", a: "It can shift businesses from selling access to software toward delivering intelligent execution, automation, and measurable outcomes." },
+        { id: 62, cat: "cat4", q: "Why is execution infrastructure strategically important?", a: "Because organizations that execute strategic decisions faster and more reliably can gain meaningful competitive advantages." },
+        { id: 63, cat: "cat4", q: "How could competition change?", a: "Competition may increasingly be measured by execution speed, adaptability, intelligence, capital efficiency, and the ability to convert objectives into outcomes." },
+        { id: 64, cat: "cat4", q: "Where are CEAI investment opportunities?", a: "Potential infrastructure categories include agent orchestration, execution engines, command compilers, context systems, governance, security, observability, verification, and enterprise integration." },
+        { id: 65, cat: "cat4", q: "Why is Command Engineering important?", a: "Because poorly defined objectives can produce inefficient or incorrect execution. High-quality command design improves alignment between human intent and machine action." },
+        { id: 66, cat: "cat4", q: "Can CEAI benefit startups?", a: "Yes. Intelligent execution can allow small teams to coordinate capabilities that previously required significantly larger operational organizations." },
+        { id: 67, cat: "cat4", q: "How does a CEAI platform differ from traditional SaaS?", a: "Traditional SaaS primarily provides tools. A CEAI platform aims to provide intelligent execution toward defined objectives." },
+        { id: 68, cat: "cat4", q: "How could professional services change?", a: "Some professional services may evolve from labor-hour delivery toward AI-enabled continuous execution, advisory systems, and outcome-based models." },
+        { id: 69, cat: "cat4", q: "How could CEAI affect enterprise management?", a: "It could reduce the operational distance between executive objectives and the systems responsible for executing them." },
+        { id: 70, cat: "cat4", q: "Could CEAI create new types of companies?", a: "Potentially. New organizational forms may emerge around highly automated operations, agent-native services, execution marketplaces, and specialized AI infrastructure." },
+        { id: 71, cat: "cat4", q: "How could entrepreneurship change?", a: "Lower execution costs could allow founders to test, build, and operate businesses with smaller teams and greater speed." },
+        { id: 72, cat: "cat4", q: "How might markets evolve?", a: "Some markets may increasingly incorporate autonomous agents capable of searching, negotiating, transacting, monitoring, and optimizing within defined constraints." },
+        { id: 73, cat: "cat4", q: "What is a Command Marketplace?", a: "A potential marketplace for reusable, verified command architectures, workflows, agent configurations, and execution strategies." },
+        { id: 74, cat: "cat4", q: "Why are context and data important?", a: "Because intelligent execution depends not only on general intelligence but also on accurate, relevant, organization-specific context." },
+        { id: 75, cat: "cat4", q: "What creates Execution Advantage?", a: "The combination of high-quality intent, strong context, reliable infrastructure, effective orchestration, fast execution, and measurable feedback." },
+        { id: 76, cat: "cat4", q: "How might investors evaluate AI-native companies?", a: "Evaluation may increasingly consider execution infrastructure, agent deployment, proprietary context, automation depth, outcome metrics, and system reliability in addition to traditional software metrics." },
+        { id: 77, cat: "cat4", q: "Which industries could experience significant transformation?", a: "Industries involving complex knowledge workflows and coordination may be particularly affected, including finance, healthcare, legal services, logistics, manufacturing, marketing, and enterprise operations." },
+        { id: 78, cat: "cat4", q: "How does CEAI differ from the Platform Economy?", a: "Platforms primarily coordinate participants. CEAI seeks to coordinate intelligent execution around explicit objectives." },
+        { id: 79, cat: "cat4", q: "Could new markets emerge?", a: "Potentially, including markets for agent verification, execution infrastructure, AI governance, command architectures, outcome assurance, and specialized enterprise intelligence." },
+        { id: 80, cat: "cat4", q: "What is the commercial destination of CEAI?", a: "A more intent-driven economy in which individuals and organizations can increasingly express desired outcomes directly while intelligent infrastructure coordinates the underlying execution." },
+
+        // Section 5: Future, Governance & Criticism (81-100)
+        { id: 81, cat: "cat5", q: "Why is CEAI a research framework?", a: "Because it examines structural changes in economic coordination, organizations, capital, labor, technology, and production rather than focusing only on individual AI models." },
+        { id: 82, cat: "cat5", q: "Does CEAI replace existing economic systems?", a: "No. It describes an emerging technological coordination layer that can operate within existing economic systems." },
+        { id: 83, cat: "cat5", q: "Why can the term \"Command Economy\" cause confusion?", a: "Because the historical phrase is strongly associated with centralized political planning. CEAI uses \"command\" in the computational sense of a high-level human instruction." },
+        { id: 84, cat: "cat5", q: "How can CEAI be distinguished from political command economies?", a: "The distinction lies in the source of authority. Historical command economies depend on centralized political authority, while CEAI commands originate from decentralized users and organizations directing computational systems." },
+        { id: 85, cat: "cat5", q: "Does CEAI advocate state-planned economics?", a: "No. CEAI is not a political doctrine. It is a technological and economic framework focused on intelligent execution." },
+        { id: 86, cat: "cat5", q: "Does CEAI contain a political ideology?", a: "No. The framework is intended to analyze technological coordination, execution infrastructure, and economic transformation." },
+        { id: 87, cat: "cat5", q: "Why retain the term \"Command Economy of AI\"?", a: "Because the term emphasizes the structural shift from manually operating tools toward expressing high-level objectives that intelligent systems can execute." },
+        { id: 88, cat: "cat5", q: "How does CEAI prevent semantic confusion?", a: "By explicitly distinguishing computational commands from political or governmental commands and defining the framework around decentralized intent and intelligent execution." },
+        { id: 89, cat: "cat5", q: "What are the strongest criticisms of CEAI?", a: "Important criticisms include the reliability of AI reasoning, ambiguity of human intent, agent autonomy, security risks, economic concentration, accountability, and the difficulty of verifying complex outcomes." },
+        { id: 90, cat: "cat5", q: "Can CEAI operate without strong security?", a: "No. Secure identity, authorization, observability, auditability, data protection, policy enforcement, and execution controls are fundamental to trustworthy AI execution." },
+        { id: 91, cat: "cat5", q: "What remains the human role?", a: "Humans remain the source of strategic intent and retain responsibility for governance, values, judgment, accountability, and high-stakes decisions." },
+        { id: 92, cat: "cat5", q: "Could commands become digital economic assets?", a: "Potentially. Reusable and verified command architectures may acquire economic value if they consistently produce valuable outcomes across organizations or environments." },
+        { id: 93, cat: "cat5", q: "How could CEAI affect knowledge work?", a: "Knowledge work may shift from manually performing workflows toward designing objectives, supervising intelligent systems, validating outcomes, and managing strategic exceptions." },
+        { id: 94, cat: "cat5", q: "Could small teams compete with large organizations?", a: "Potentially. AI execution infrastructure can reduce some traditional scale advantages by allowing small teams to coordinate substantial computational and operational capacity." },
+        { id: 95, cat: "cat5", q: "Does CEAI require AGI?", a: "No. CEAI can develop incrementally using current foundation models, agentic systems, automation, and orchestration technologies. More capable models may expand its potential." },
+        { id: 96, cat: "cat5", q: "What are the major research frontiers?", a: "Key research areas include intent alignment, agent reliability, economic measurement, organizational design, execution capital, decision capital, AI governance, autonomous firms, and outcome verification." },
+        { id: 97, cat: "cat5", q: "How could CEAI evolve over the next decade?", a: "It may progress from isolated AI assistants and agents toward integrated execution infrastructure connecting human decision-makers with increasingly autonomous organizational systems." },
+        { id: 98, cat: "cat5", q: "What layers are required for mature CEAI infrastructure?", a: "A mature architecture may require: 1. Intent Capture, 2. Intent Understanding, 3. Command Compilation, 4. Agentic Planning, 5. Multi-Agent Orchestration, 6. Execution Infrastructure, 7. Trust & Governance, 8. Outcome Measurement, 9. Institutional Memory, 10. Continuous Feedback." },
+        { id: 99, cat: "cat5", q: "What is the long-term vision of CEAI?", a: "The long-term vision is an economy in which natural language and structured intent become increasingly powerful interfaces for coordinating intelligent systems and creating economic value." },
+        { id: 100, cat: "cat5", q: "What is the ultimate synthesis of the Command Economy of AI?", a: "CEAI represents a conceptual shift from managing software and computational tools toward directing intelligent execution through human intent. The next layer of the AI economy may not be defined by how intelligently AI can generate information, but by how reliably human intent can become economic execution." }
+    ];
+    function renderKnowledgeBase() {
+        const container = document.getElementById('kb-dynamic-content');
+        container.innerHTML = '';
+        kbDataset.forEach(block => {
+            const card = document.createElement('div');
+            card.className = 'kb-card';
+            card.innerHTML = `
+                <h2>${block.title}</h2>
+                <div class="lang-condensed-block">${block.content}</div>
+            `;
+            container.appendChild(card);
+        });
+    }
+
+    function renderFaqGrid() {
+        const grid = document.getElementById('masterFaqGrid');
+        grid.innerHTML = '';
+        faqDataset.forEach(item => {
+            const faqCard = document.createElement('div');
+            faqCard.className = 'faq-card-item faq-item-block';
+            faqCard.setAttribute('data-category', item.cat);
+            faqCard.innerHTML = `
+                <div class="faq-question-box">
+                    <div class="faq-badge">${item.id}</div>
+                    <div class="faq-q-text-group">
+                        <h3>${item.q}</h3>
+                    </div>
+                </div>
+                <div class="faq-answer-box">
+                    <p class="ans-text">${item.a}</p>
+                </div>
+            `;
+            grid.appendChild(faqCard);
+        });
+    }
+
+    function renderGlossary() {
+        const container = document.getElementById('glossary-dynamic-content');
+        container.innerHTML = '';
+        glossaryDataset.forEach(item => {
+            const card = document.createElement('div');
+            card.className = 'glossary-card';
+            card.innerHTML = `
+                <div class="glossary-title">
+                    <h3>${item.term}</h3>
+                    <span style="color: var(--text-dim); font-size: 13px; font-weight:600;">${item.code}</span>
+                </div>
+                <p class="ans-text" style="font-size:14.5px;">${item.desc}</p>
+            `;
+            container.appendChild(card);
+        });
+    }
+
+    function renderComparisonMatrix() {
+        const container = document.getElementById('compare-dynamic-content');
+        let tableHtml = `<table class="compare-table"><thead><tr>`;
+        compareDataset.headers.forEach(header => {
+            tableHtml += `<th>${header}</th>`;
+        });
+        tableHtml += `</tr></thead><tbody>`;
+
+        compareDataset.rows.forEach(row => {
+            tableHtml += `<tr>`;
+            row.forEach(cell => {
+                tableHtml += `<td>${cell}</td>`;
+            });
+            tableHtml += `</tr>`;
+        });
+        tableHtml += `</tbody></table>`;
+        container.innerHTML = tableHtml;
+    }
+
+    function switchMasterTab(element, tabId) {
+        currentTab = tabId;
+        document.querySelectorAll('.master-tab-btn').forEach(btn => btn.classList.remove('active'));
+        document.querySelectorAll('.view-content-section').forEach(view => view.classList.remove('active'));
+        
+        element.classList.add('active');
+        document.getElementById(tabId).classList.add('active');
+        
+        document.getElementById('faqSearchInput').value = '';
+        liveSearchFAQ();
+    }
+
+    function filterFaqCategory(btnElement, categoryId) {
+        document.querySelectorAll('.sub-filter-btn').forEach(btn => btn.classList.remove('active'));
+        btnElement.classList.add('active');
+        
+        const cards = document.querySelectorAll('.faq-item-block');
+        cards.forEach(card => {
+            if (categoryId === 'all' || card.getAttribute('data-category') === categoryId) {
+                card.setAttribute('data-filtered', 'true');
+            } else {
+                card.setAttribute('data-filtered', 'false');
+            }
+        });
+        liveSearchFAQ();
+    }
+
+    function liveSearchFAQ() {
+        const query = document.getElementById('faqSearchInput').value.toLowerCase().trim();
+        let totalVisible = 0;
+
+        if (currentTab === 'faq-view') {
+            const cards = document.querySelectorAll('.faq-item-block');
+            cards.forEach(card => {
+                const isFiltered = card.getAttribute('data-filtered') !== 'false';
+                const text = card.innerText.toLowerCase();
+                if (isFiltered && text.includes(query)) {
+                    card.style.display = 'block';
+                    totalVisible++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        } else if (currentTab === 'kb-view') {
+            const cards = document.querySelectorAll('.kb-card');
+            cards.forEach(card => {
+                if (card.innerText.toLowerCase().includes(query)) {
+                    card.style.display = 'block';
+                    totalVisible++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        } else if (currentTab === 'glossary-view') {
+            const cards = document.querySelectorAll('.glossary-card');
+            cards.forEach(card => {
+                if (card.innerText.toLowerCase().includes(query)) {
+                    card.style.display = 'block';
+                    totalVisible++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        } else if (currentTab === 'compare-view') {
+            const rows = document.querySelectorAll('.compare-table tbody tr');
+            const wrapper = document.querySelector('.table-wrapper');
+            let hasRows = false;
+            rows.forEach(row => {
+                if (row.innerText.toLowerCase().includes(query)) {
+                    row.style.display = '';
+                    hasRows = true;
+                    totalVisible++;
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+            wrapper.style.display = hasRows ? 'block' : 'none';
+        }
+
+        const noResults = document.getElementById('faqNoResults');
+        if (totalVisible === 0) {
+            noResults.style.display = 'block';
+        } else {
+            noResults.style.display = 'none';
+        }
+    }
+
+    const bttBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) {
+            bttBtn.style.display = 'flex';
+        } else {
+            bttBtn.style.display = 'none';
+        }
+    });
+    bttBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        renderKnowledgeBase();
+        renderFaqGrid();
+        renderGlossary();
+        renderComparisonMatrix();
+    });
+</script>
+
+</body>
+</html>
