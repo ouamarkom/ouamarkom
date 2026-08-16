@@ -55,12 +55,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ouamarkom.com/blog/command-economy/hidden-revolution-command-economy.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://ouamarkom.com/blog/intent-economy/ai-direction-the-essential-skill.html</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -497,12 +491,6 @@
       <loc>https://ouamarkom.com/en/about</loc>
       <lastmod>2026-08-14</lastmod>
       <changefreq>monthly</changefreq>
-      <priority>0.85</priority>
-    </url>
-    <url>
-      <loc>https://ouamarkom.com/en/blog</loc>
-      <lastmod>2026-08-14</lastmod>
-      <changefreq>weekly</changefreq>
       <priority>0.85</priority>
     </url>
     <url>
