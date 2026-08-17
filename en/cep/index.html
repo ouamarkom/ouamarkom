@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEP v0.1: CE-AI Command Protocol Specification | Ouamarkom</title>
+    <meta name="description" content="CEP v0.1 is an open protocol specification for governed AI command execution, establishing identity, authorization, policy, execution, verification, and auditability across heterogeneous AI systems.">
+    <meta name="keywords" content="CEP, CE-AI Command Protocol, Governed AI Execution, AI Command Economy, Smart Hand Infrastructure, AI Governance, AI Protocol Specification, Ouamarkom">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Hreflang & Canonical -->
+    <link rel="canonical" href="https://ouamarkom.com/en/cep/" />
+    <link rel="alternate" hreflang="en" href="https://ouamarkom.com/en/cep/" />
+    <link rel="alternate" hreflang="ar" href="https://ouamarkom.com/cep" />
+    <link rel="alternate" hreflang="x-default" href="https://ouamarkom.com/cep" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:site_name" content="Ouamarkom" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="CEP v0.1: CE-AI Command Protocol Specification | Ouamarkom" />
+    <meta property="og:description" content="Proposed open protocol specification for governed AI command execution. Identity, Authorization, Policy, Execution, Verification, and Audit." />
+    <meta property="og:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg" />
+    <meta property="og:url" content="https://ouamarkom.com/en/cep/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="ar_SA" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CEP v0.1: CE-AI Command Protocol Specification | Ouamarkom">
+    <meta name="twitter:description" content="Proposed open protocol specification for governed AI command execution. Identity, Authorization, Policy, Execution, Verification, and Audit.">
+    <meta name="twitter:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg">
+    <meta name="theme-color" content="#040916">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- SEO Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TechArticle",
+          "@id": "https://ouamarkom.com/en/cep/#techarticle",
+          "url": "https://ouamarkom.com/en/cep/",
+          "name": "CEP v0.1: CE-AI Command Protocol Specification",
+          "headline": "Proposed Open Protocol Specification for Governed AI Command Execution",
+          "description": "CEP defines an open protocol architecture for governed AI command execution, establishing identity, authorization, policy, execution, verification, and audit across AI systems.",
+          "inLanguage": "en",
+          "datePublished": "2026-08-17",
+          "dateModified": "2026-08-17",
+          "author": {
+            "@type": "Organization",
+            "name": "Ouamarkom",
+            "url": "https://ouamarkom.com/en/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Ouamarkom",
+            "logo": "https://ouamarkom.com/logo.webp"
+          }
+        },
+        {
+          "@type": "Organization",
+          "name": "Ouamarkom",
+          "url": "https://ouamarkom.com/en/",
+          "logo": "https://ouamarkom.com/logo.webp",
+          "sameAs": [
+            "https://linkedin.com/company/ouamarkom"
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #040916;
+            --secondary: #0a192f;
+            --accent: #e6992d;
+            --gold: #fcd34d;
+            --text-main: #e6f1ff;
+            --text-dim: #8892b0;
+            --card-bg: rgba(10, 25, 47, 0.45);
+            --border-color: rgba(255, 255, 255, 0.08);
+            
+            --brand-orange-glow: rgba(230, 153, 45, 0.35);
+            --brand-orange-subtle: rgba(230, 153, 45, 0.08);
+            --code-bg: #020612;
+            --code-border: rgba(230, 153, 45, 0.25);
+            --code-text: #7dd3fc;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--primary);
+            color: var(--text-main);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            margin: 0;
+            text-align: left;
+        }
+
+        /* Top Header Navigation Bar */
+        .top-nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 24px 20px 10px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .brand-logo-wrap {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .brand-logo-wrap:hover {
+            transform: scale(1.03);
+        }
+
+        .brand-logo-img {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+            display: block;
+        }
+
+        .lang-switch-btn {
+            background: var(--brand-orange-subtle);
+            border: 1px solid rgba(230, 153, 45, 0.35);
+            color: var(--accent);
+            padding: 8px 18px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 0.88rem;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .lang-switch-btn svg {
+            width: 16px;
+            height: 16px;
+            stroke: currentColor;
+            transition: transform 0.4s ease;
+        }
+
+        .lang-switch-btn:hover {
+            background: rgba(230, 153, 45, 0.22);
+            color: #fff;
+            border-color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(230, 153, 45, 0.2);
+        }
+
+        .lang-switch-btn:hover svg {
+            transform: rotate(180deg);
+        }
+
+        /* Layout Container */
+        .manifesto-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 10px 20px 60px;
+            position: relative;
+            z-index: 1;
+            box-sizing: border-box;
+        }
+
+        .hero-manifesto {
+            text-align: center;
+            padding: 30px 0 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUpHero 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        @keyframes fadeInUpHero {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-manifesto h1 {
+            font-size: clamp(1.6rem, 5vw, 2.8rem);
+            line-height: 1.35;
+            margin-bottom: 18px;
+            font-weight: 900;
+            color: #ffffff;
+        }
+
+        .hero-manifesto h1 span {
+            display: inline-block;
+            background: linear-gradient(90deg, var(--accent), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-manifesto .subtitle {
+            font-size: clamp(0.98rem, 2.5vw, 1.2rem);
+            color: var(--text-dim);
+            line-height: 1.7;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .tagline-badge {
+            display: inline-block;
+            padding: 6px 18px;
+            background: var(--brand-orange-subtle);
+            border: 1px solid rgba(230, 153, 45, 0.3);
+            color: var(--accent);
+            border-radius: 50px;
+            font-size: clamp(0.8rem, 2vw, 0.9rem);
+            font-weight: 800;
+            margin-bottom: 22px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Generic Card Styling */
+        .manifesto-card {
+            background: var(--card-bg);
+            padding: clamp(22px, 5vw, 42px);
+            border-radius: 24px;
+            border: 1px solid var(--border-color);
+            backdrop-filter: blur(12px);
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .manifesto-card h2 {
+            color: var(--accent);
+            font-size: clamp(1.3rem, 4vw, 1.8rem);
+            margin-bottom: 20px;
+            font-weight: 800;
+            line-height: 1.3;
+        }
+
+        .manifesto-card h3 {
+            color: var(--gold);
+            font-size: clamp(1.1rem, 3vw, 1.35rem);
+            margin-top: 24px;
+            margin-bottom: 14px;
+            font-weight: 700;
+        }
+
+        .manifesto-card p {
+            color: var(--text-main);
+            font-size: clamp(0.98rem, 2.5vw, 1.08rem);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .manifesto-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .manifesto-card ul, .manifesto-card ol {
+            color: var(--text-main);
+            font-size: clamp(0.95rem, 2.2vw, 1.05rem);
+            line-height: 1.8;
+            padding-left: 24px;
+            margin-bottom: 20px;
+        }
+
+        .manifesto-card li {
+            margin-bottom: 8px;
+        }
+
+        /* Thesis Card */
+        .thesis-card {
+            background: linear-gradient(135deg, rgba(10, 25, 47, 0.7) 0%, rgba(4, 9, 22, 0.9) 100%);
+            border: 1px solid rgba(230, 153, 45, 0.3);
+            padding: clamp(22px, 5vw, 42px);
+            border-radius: 24px;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .statement-banner {
+            background: linear-gradient(135deg, rgba(4, 9, 22, 0.9) 0%, rgba(230, 153, 45, 0.12) 100%);
+            border: 1px solid rgba(230, 153, 45, 0.35);
+            border-radius: 24px;
+            padding: clamp(30px, 5vw, 45px) 20px;
+            margin: 35px auto;
+            text-align: center;
+        }
+
+        .statement-text {
+            color: var(--accent);
+            font-size: clamp(1.25rem, 4vw, 2.0rem);
+            font-weight: 900;
+            margin: 0;
+            line-height: 1.45;
+        }
+
+        /* Specification Metadata Grid */
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            background: rgba(4, 9, 22, 0.85);
+            border: 1px solid rgba(230, 153, 45, 0.3);
+            border-radius: 18px;
+            padding: 24px;
+            margin-top: 25px;
+        }
+
+        .meta-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .meta-label {
+            font-size: 0.78rem;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            font-weight: 700;
+        }
+
+        .meta-val {
+            font-size: 1rem;
+            color: var(--gold);
+            font-weight: 700;
+            margin-top: 4px;
+        }
+
+        /* Code & Pre Blocks */
+        pre {
+            background: var(--code-bg);
+            border: 1px solid var(--code-border);
+            border-radius: 14px;
+            padding: 20px;
+            overflow-x: auto;
+            font-family: 'Fira Code', 'Courier New', Courier, monospace;
+            font-size: 0.92rem;
+            color: var(--code-text);
+            line-height: 1.6;
+            margin: 20px 0;
+            box-shadow: inset 0 2px 8px rgba(0,0,0,0.5);
+        }
+
+        code {
+            font-family: 'Fira Code', 'Courier New', Courier, monospace;
+            background: rgba(230, 153, 45, 0.12);
+            color: var(--gold);
+            padding: 3px 7px;
+            border-radius: 6px;
+            font-size: 0.88em;
+            border: 1px solid rgba(230, 153, 45, 0.2);
+        }
+
+        pre code {
+            background: none;
+            color: inherit;
+            padding: 0;
+            border: none;
+        }
+
+        .diagram-box {
+            background: rgba(2, 6, 18, 0.9);
+            border: 1px solid rgba(230, 153, 45, 0.25);
+            border-radius: 14px;
+            padding: 22px;
+            color: var(--accent);
+            font-family: 'Fira Code', monospace;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            overflow-x: auto;
+            margin: 20px 0;
+            white-space: pre;
+        }
+
+        /* Grids & Cards */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin: 25px 0 10px;
+        }
+
+        @media (min-width: 768px) {
+            .grid-2 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin: 25px 0 10px;
+        }
+
+        @media (min-width: 768px) {
+            .grid-3 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .engine-card, .pillar-card, .research-card {
+            background: rgba(4, 9, 22, 0.6);
+            border: 1px solid var(--border-color);
+            padding: 24px;
+            border-radius: 18px;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            text-align: left;
+        }
+
+        .engine-card:hover, .pillar-card:hover, .research-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(230, 153, 45, 0.12);
+        }
+
+        .engine-card h3, .pillar-card h3, .research-card h3 {
+            color: var(--accent);
+            font-size: 1.2rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+            margin-top: 0;
+        }
+
+        .engine-card p, .pillar-card p, .research-card p {
+            font-size: 0.95rem;
+            color: var(--text-dim);
+            line-height: 1.68;
+            margin-bottom: 0;
+        }
+
+        /* Tables */
+        .protocol-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95rem;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .protocol-table th, .protocol-table td {
+            padding: 14px 18px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .protocol-table th {
+            background: var(--secondary);
+            color: var(--accent);
+            font-weight: 800;
+        }
+
+        .protocol-table tr:nth-child(even) {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .highlight-quote {
+            background: var(--brand-orange-subtle);
+            border-left: 4px solid var(--accent);
+            padding: 22px;
+            border-radius: 16px 4px 4px 16px;
+            margin: 25px 0;
+        }
+
+        .highlight-quote p {
+            font-weight: 700;
+            color: var(--text-main);
+            font-size: clamp(1rem, 3vw, 1.12rem);
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        /* Footer CTA */
+        .footer-cta {
+            text-align: center;
+            padding: clamp(35px, 6vw, 55px) clamp(20px, 4vw, 40px);
+            margin-top: 50px;
+            margin-bottom: 25px;
+            background: linear-gradient(180deg, rgba(230, 153, 45, 0.06) 0%, rgba(4, 9, 22, 0.8) 100%);
+            border: 1px solid rgba(230, 153, 45, 0.25);
+            border-radius: 28px;
+            backdrop-filter: blur(12px);
+        }
+
+        .footer-cta h2 {
+            color: #ffffff;
+            font-size: clamp(1.3rem, 4vw, 2.1rem);
+            font-weight: 900;
+            margin-bottom: 30px;
+            line-height: 1.35;
+        }
+
+        .footer-cta h2 span {
+            color: var(--accent);
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: 100%;
+            max-width: 540px;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (min-width: 640px) {
+            .btn-group {
+                flex-direction: row;
+                max-width: 100%;
+            }
+        }
+
+        .btn-cta-primary {
+            background: linear-gradient(135deg, var(--accent) 0%, #ffab3d 100%);
+            color: var(--primary);
+            padding: 15px 34px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1rem;
+            box-shadow: 0 8px 25px rgba(230, 153, 45, 0.3);
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        @media (min-width: 640px) {
+            .btn-cta-primary {
+                width: auto;
+            }
+        }
+
+        .btn-cta-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(230, 153, 45, 0.5);
+            background: linear-gradient(135deg, #ffab3d 0%, var(--gold) 100%);
+        }
+
+        .btn-cta-secondary {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(230, 153, 45, 0.35);
+            color: var(--text-main);
+            padding: 15px 34px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        @media (min-width: 640px) {
+            .btn-cta-secondary {
+                width: auto;
+            }
+        }
+
+        .btn-cta-secondary:hover {
+            background: rgba(230, 153, 45, 0.15);
+            border-color: var(--accent);
+            color: #ffffff;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(230, 153, 45, 0.15);
+        }
+
+        .reveal-card {
+            opacity: 0;
+            transform: translateY(25px);
+            transition: opacity 0.6s cubic-bezier(0.215, 0.610, 0.355, 1), 
+                        transform 0.6s cubic-bezier(0.215, 0.610, 0.355, 1);
+        }
+
+        .reveal-card.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="network-canvas"></canvas>
+
+<!-- Top Header Navigation Bar -->
+<nav class="top-nav-bar">
+    <a href="/en/" class="brand-logo-wrap" aria-label="Ouamarkom Home">
+        <img src="/logo.webp" alt="Ouamarkom" class="brand-logo-img">
+    </a>
+    
+    <a href="/cep" class="lang-switch-btn" aria-label="Switch to Arabic">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+        </svg>
+        <span>العربية</span>
+    </a>
+</nav>
+
+<main class="manifesto-container">
+    
+    <!-- Hero Header -->
+    <header class="hero-manifesto">
+        <span class="tagline-badge">CEP v0.1 Specification</span>
+        
+        <h1>CE-AI <span>Command Protocol</span></h1>
+        
+        <p class="subtitle">
+            Proposed Open Protocol Specification for Governed AI Command Execution
+        </p>
+
+        <div class="meta-grid">
+            <div class="meta-item">
+                <span class="meta-label">Version</span>
+                <span class="meta-val">0.1</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Status</span>
+                <span class="meta-val">Proposed Specification</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Category</span>
+                <span class="meta-val">Open Protocol Architecture</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Maintainer</span>
+                <span class="meta-val">Ouamarkom</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Framework</span>
+                <span class="meta-val">Command Economy of AI (CE-AI)</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Release</span>
+                <span class="meta-val">August 2026</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABSTRACT -->
+    <section class="manifesto-card reveal-card">
+        <h2>Abstract</h2>
+        <p>As artificial intelligence systems evolve from generating information to planning, coordinating, and executing actions across digital and economic environments, a new infrastructure challenge emerges: how should executable AI commands be identified, authorized, governed, executed, verified, and audited?</p>
+        <p>The CE-AI Command Protocol (CEP) proposes an open protocol architecture for addressing this challenge.</p>
+        <p>CEP defines a structured lifecycle for governed AI commands:</p>
+        
+        <div class="highlight-quote">
+            <p>Identity → Authorization → Policy → Execution → Verification → Audit</p>
+        </div>
+
+        <p>The protocol is designed to operate above AI models and alongside existing agents, APIs, enterprise systems, databases, automation platforms, and human operators.</p>
+        <p>CEP does not seek to replace these systems. Instead, it proposes a common control and coordination layer through which AI-driven commands can be executed with greater traceability, authorization, policy compliance, interoperability, accountability, and measurable outcomes.</p>
+        <p>CEP v0.1 establishes the initial protocol core through five components:</p>
+        <ol>
+            <li><strong>CEP-01</strong> - Command Identity</li>
+            <li><strong>CEP-02</strong> - Command Authorization</li>
+            <li><strong>CEP-03</strong> - Command Policy</li>
+            <li><strong>CEP-04</strong> - Command Execution</li>
+            <li><strong>CEP-05</strong> - Command Verification & Audit</li>
+        </ol>
+    </section>
+
+    <!-- SECTION 1: INTRODUCTION -->
+    <section class="manifesto-card reveal-card">
+        <h2>1. Introduction</h2>
+        <p>The first generation of AI systems primarily answered questions, generated content, summarized information, and assisted human decision-making.</p>
+        <p>The emerging generation of AI systems is increasingly capable of:</p>
+        <ul>
+            <li>planning;</li>
+            <li>calling tools;</li>
+            <li>interacting with software;</li>
+            <li>operating APIs;</li>
+            <li>coordinating agents;</li>
+            <li>modifying business systems;</li>
+            <li>initiating workflows;</li>
+            <li>executing transactions;</li>
+            <li>and pursuing measurable objectives.</li>
+        </ul>
+        <p>This transition creates what can be described as an <strong>execution governance problem</strong>.</p>
+        <p>A conventional interaction may look like:</p>
+        <pre class="diagram-box">Human → Prompt → AI Model → Response</pre>
+        <p>An executable AI system may instead operate as:</p>
+        <pre class="diagram-box">Human Intent → Command → AI Reasoning → Planning → Agents → Tools / APIs → Actions → Economic Outcome</pre>
+        <p>The second model introduces questions that do not arise to the same degree in purely informational AI:</p>
+        <ul>
+            <li>Who issued the command?</li>
+            <li>What exactly was authorized?</li>
+            <li>Which agent is allowed to act?</li>
+            <li>What data may be accessed?</li>
+            <li>What actions are permitted?</li>
+            <li>What limits apply?</li>
+            <li>Was human approval required?</li>
+            <li>What actually happened?</li>
+            <li>Was the intended objective achieved?</li>
+            <li>Can the entire execution be reconstructed afterward?</li>
+        </ul>
+        <p>CEP proposes a protocol architecture for answering these questions systematically.</p>
+    </section>
+
+    <!-- SECTION 2: VISION -->
+    <section class="manifesto-card reveal-card">
+        <h2>2. Vision</h2>
+        <p>The central proposition of CEP is:</p>
+        <div class="highlight-quote">
+            <p>As AI becomes increasingly capable of acting in the world, executable commands should become structured, governable, traceable, and verifiable objects rather than unstructured natural-language instructions alone.</p>
+        </div>
+        <p>CEP therefore treats an executable command as a <strong>Governed Execution Object</strong>.</p>
+        <p>An executable command contains not only an instruction or intent, but also the information required to govern its execution.</p>
+    </section>
+
+    <!-- SECTION 3: RELATIONSHIP -->
+    <section class="manifesto-card reveal-card">
+        <h2>3. Relationship Between CE-AI, CEP, and Smart Hand</h2>
+        <p>CEP exists within the broader Command Economy of AI (CE-AI) framework.</p>
+        <p>The architecture can be represented as:</p>
+        <pre class="diagram-box">Command Economy of AI
+          │
+          ▼
+     CE-AI Framework
+          │
+          ▼
+      CEP Protocol
+          │
+          ▼
+ Smart Hand Execution Layer
+          │
+     ┌────┼────┐
+     ▼    ▼    ▼
+  Agents APIs Systems
+          │
+          ▼
+    Economic Actions
+          │
+          ▼
+      Verification
+          │
+          ▼
+        Outcomes</pre>
+        <p><strong>CE-AI:</strong> Defines the broader <em>economic and conceptual framework for AI-driven command and execution</em>.</p>
+        <p><strong>CEP:</strong> Defines the <em>protocol architecture governing executable AI commands</em>.</p>
+        <p><strong>Smart Hand:</strong> Provides <em>execution infrastructure capable of implementing and enforcing the protocol</em>.</p>
+        <p>Therefore:</p>
+        <p><strong>CE-AI → CEP → Smart Hand</strong> or <strong>Theory → Protocol → Execution Infrastructure</strong></p>
+    </section>
+
+    <!-- SECTION 4: SCOPE -->
+    <section class="manifesto-card reveal-card">
+        <h2>4. Scope</h2>
+        <p>CEP v0.1 defines five foundational protocol components:</p>
+        <table class="protocol-table">
+            <thead>
+                <tr>
+                    <th>Protocol</th>
+                    <th>Name</th>
+                    <th>Primary Function</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>CEP-01</strong></td>
+                    <td>Command Identity</td>
+                    <td>Identifies and tracks commands</td>
+                </tr>
+                <tr>
+                    <td><strong>CEP-02</strong></td>
+                    <td>Command Authorization</td>
+                    <td>Determines who or what may execute a command</td>
+                </tr>
+                <tr>
+                    <td><strong>CEP-03</strong></td>
+                    <td>Command Policy</td>
+                    <td>Defines constraints and execution boundaries</td>
+                </tr>
+                <tr>
+                    <td><strong>CEP-04</strong></td>
+                    <td>Command Execution</td>
+                    <td>Defines execution state and action coordination</td>
+                </tr>
+                <tr>
+                    <td><strong>CEP-05</strong></td>
+                    <td>Verification & Audit</td>
+                    <td>Verifies execution and records evidence</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Together, these components form <strong>CEP Core</strong>.</p>
+    </section>
+
+    <!-- SECTION 5: COMMAND LIFECYCLE -->
+    <section class="manifesto-card reveal-card">
+        <h2>5. Command Lifecycle</h2>
+        <p>CEP defines a foundational command lifecycle:</p>
+        <pre class="diagram-box">CREATE → IDENTIFY → AUTHORIZE → POLICY CHECK → EXECUTE → OBSERVE → VERIFY → AUDIT → COMPLETE</pre>
+        <p>Alternative terminal states may include:</p>
+        <p><code>REJECTED</code>, <code>DENIED</code>, <code>FAILED</code>, <code>CANCELLED</code>, <code>ESCALATED</code>, <code>PARTIALLY_COMPLETED</code></p>
+        <p>A command MUST NOT be considered successfully completed solely because an execution process terminated.</p>
+        <p>Where an objective is defined, objective verification SHOULD occur before the command is considered outcome-complete.</p>
+    </section>
+
+    <!-- SECTION 6: CEP-01 -->
+    <section class="manifesto-card reveal-card">
+        <h2>6. CEP-01 - Command Identity Protocol</h2>
+        <h3>6.1 Purpose</h3>
+        <p>CEP-01 defines the identity and basic metadata of an executable command.</p>
+        <p>Every CEP command MUST have a unique command identifier.</p>
+        <p>Example:</p>
+<pre><code>{
+  "cep_version": "0.1",
+  "command": {
+    "id": "cmd_01JABC123",
+    "version": "1.0",
+    "issued_at": "2026-08-17T12:00:00Z",
+    "issuer": "user_123",
+    "intent": "increase_sales",
+    "status": "created"
+  }
+}</code></pre>
+        <h3>6.2 Required Identity Fields</h3>
+        <p>A CEP implementation SHOULD support, at minimum: <code>command_id</code>, <code>command_version</code>, <code>issuer</code>, <code>issued_at</code>, <code>intent</code>, and <code>status</code>.</p>
+        <p>Additional metadata MAY include: principal, organization, execution environment, correlation ID, parent command, expiration, priority, objective, and constraints.</p>
+        <h3>6.3 Identity Principles</h3>
+        <ul>
+            <li>A <code>command_id</code> MUST uniquely identify a command instance.</li>
+            <li>The identifier MUST NOT be silently reused for an unrelated command.</li>
+            <li>Command identity SHOULD remain stable throughout the command lifecycle.</li>
+        </ul>
+    </section>
+
+    <!-- SECTION 7: CEP-02 -->
+    <section class="manifesto-card reveal-card">
+        <h2>7. CEP-02 - Command Authorization Protocol</h2>
+        <h3>7.1 Purpose</h3>
+        <p>CEP-02 defines how a system determines whether an actor, agent, or execution environment is authorized to execute a command.</p>
+        <p>The existence of a command does not imply authority to execute it.</p>
+        <p>CEP therefore distinguishes <strong>Command Existence</strong> from <strong>Command Authority</strong>.</p>
+        <h3>7.2 Authorization Model</h3>
+        <p>A CEP implementation SHOULD be capable of determining:</p>
+        <ol>
+            <li>who issued the command;</li>
+            <li>on whose behalf the command was issued;</li>
+            <li>what authority the issuer possesses;</li>
+            <li>what authority the executing agent possesses;</li>
+            <li>what capabilities are required;</li>
+            <li>whether the requested execution falls within the authorized scope.</li>
+        </ol>
+        <p>Example:</p>
+<pre><code>{
+  "authorization": {
+    "issuer": "manager_42",
+    "principal": "organization_01",
+    "agent": "sales_agent",
+    "scope": [
+      "crm.read",
+      "campaign.create"
+    ],
+    "limits": {
+      "budget": 10000,
+      "currency": "SAR"
+    }
+  }
+}</code></pre>
+        <h3>7.3 Delegated Authority</h3>
+        <p>CEP SHOULD support delegated execution.</p>
+        <p>For example:</p>
+        <pre class="diagram-box">Human → Authorized Principal → AI Agent → Execution System → External Action</pre>
+        <p>The authorization chain SHOULD be auditable.</p>
+    </section>
+
+    <!-- SECTION 8: CEP-03 -->
+    <section class="manifesto-card reveal-card">
+        <h2>8. CEP-03 - Command Policy Protocol</h2>
+        <h3>8.1 Purpose</h3>
+        <p>CEP-03 defines policies and constraints governing command execution. Authorization alone is insufficient; an authorized user may still issue a command that violates organizational, financial, operational, legal, or security policies.</p>
+        <p>CEP therefore introduces <strong>Policy-Bounded AI Execution</strong>.</p>
+        <h3>8.2 Policy Examples</h3>
+        <p>Policies MAY define:</p>
+        <ul>
+            <li><strong>Financial limits:</strong> Budget ≤ 100,000 SAR</li>
+            <li><strong>Approval thresholds:</strong> Transactions > 50,000 SAR require human approval.</li>
+            <li><strong>Data restrictions:</strong> Restricted customer data MUST NOT be transferred to external models.</li>
+            <li><strong>Operational restrictions:</strong> Production configuration changes require approval.</li>
+            <li><strong>Time restrictions:</strong> Execution permitted only during defined operating windows.</li>
+        </ul>
+        <h3>8.3 Policy Evaluation</h3>
+        <p>Before execution, a CEP implementation SHOULD evaluate applicable policies.</p>
+        <p>Conceptually:</p>
+        <pre class="diagram-box">Command → Authorization → Applicable Policies → Policy Evaluation → ALLOW / DENY / ESCALATE</pre>
+        <p>A policy violation SHOULD prevent execution, restrict execution, or trigger escalation according to the policy definition.</p>
+    </section>
+
+    <!-- SECTION 9: CEP-04 -->
+    <section class="manifesto-card reveal-card">
+        <h2>9. CEP-04 - Command Execution Protocol</h2>
+        <h3>9.1 Purpose</h3>
+        <p>CEP-04 defines the execution stage through which an authorized and policy-compliant command is transformed into actions.</p>
+        <p>CEP does not mandate a particular AI model, agent framework, programming language, cloud provider, API platform, database, ERP, CRM, or automation framework. Instead, CEP defines the protocol-level information surrounding execution.</p>
+        <h3>9.2 Execution Model</h3>
+        <p>A command MAY be decomposed into:</p>
+        <pre class="diagram-box">Command → Plan → Task Graph → Agents → Tools → Actions → Observations</pre>
+        <p>For example:</p>
+        <pre class="diagram-box">Command: Increase product X revenue by 15%.
+  ↓
+Market Research → Customer Analysis → Campaign Design → Campaign Execution → CRM Operations → Analytics → Optimization</pre>
+        <h3>9.3 Execution States</h3>
+        <p>A CEP implementation SHOULD support states such as: <code>CREATED</code>, <code>AUTHORIZED</code>, <code>POLICY_APPROVED</code>, <code>EXECUTING</code>, <code>PAUSED</code>, <code>WAITING_FOR_APPROVAL</code>, <code>VERIFYING</code>, <code>COMPLETED</code>, <code>FAILED</code>, <code>REJECTED</code>, <code>CANCELLED</code>, <code>ESCALATED</code>, <code>PARTIALLY_COMPLETED</code>.</p>
+    </section>
+
+    <!-- SECTION 10: CEP-05 -->
+    <section class="manifesto-card reveal-card">
+        <h2>10. CEP-05 - Command Verification & Audit Protocol</h2>
+        <h3>10.1 Purpose</h3>
+        <p>CEP-05 defines how execution is verified and how the command lifecycle is recorded for auditability.</p>
+        <p>A critical CEP principle is: <strong>Execution is not equivalent to success.</strong></p>
+        <p>An action may have occurred without achieving the intended objective.</p>
+        <p>For example:</p>
+        <ul>
+            <li><strong>Target:</strong> Increase revenue by 15%</li>
+            <li><strong>Actions:</strong> Campaign launched ✓ | CRM updated ✓ | Emails sent ✓</li>
+            <li><strong>Measured outcome:</strong> Revenue increased by 8%</li>
+        </ul>
+        <p>In this case: <code>Execution = Completed</code> | <code>Objective = Not Achieved</code></p>
+        <h3>10.2 Verification Levels</h3>
+        <p>CEP MAY distinguish three levels:</p>
+        <ul>
+            <li><strong>Level 1 - Execution Verification:</strong> Did the requested action occur?</li>
+            <li><strong>Level 2 - Integrity Verification:</strong> Was the action executed within the authorized and policy-defined boundaries?</li>
+            <li><strong>Level 3 - Outcome Verification:</strong> Did the action achieve the intended objective?</li>
+        </ul>
+        <pre class="diagram-box">Action → Execution Verification → Integrity Verification → Outcome Verification</pre>
+    </section>
+
+    <!-- SECTION 11: AUDITABILITY -->
+    <section class="manifesto-card reveal-card">
+        <h2>11. Auditability</h2>
+        <p>A CEP implementation SHOULD maintain sufficient records to reconstruct a command's execution lifecycle.</p>
+        <p>An audit record MAY contain:</p>
+<pre><code>{
+  "command_id": "cmd_001",
+  "issuer": "user_123",
+  "agent": "sales_agent",
+  "execution_id": "exec_991",
+  "actions": [
+    "campaign.create",
+    "crm.update"
+  ],
+  "started_at": "2026-08-17T12:01:00Z",
+  "completed_at": "2026-08-17T12:12:00Z",
+  "execution_status": "completed",
+  "verification_status": "verified",
+  "outcome": {
+    "target": 15,
+    "actual": 12,
+    "unit": "percent"
+  }
+}</code></pre>
+        <p>Auditability provides: traceability, accountability, operational visibility, incident investigation, compliance support, and performance measurement.</p>
+    </section>
+
+    <!-- SECTION 12: CLOSED-LOOP EXECUTION -->
+    <section class="manifesto-card reveal-card">
+        <h2>12. Closed-Loop Execution</h2>
+        <p>CEP is designed to support a broader CE-AI concept: <strong>Closed-Loop Economic Execution</strong>.</p>
+        <p>The system begins with a desired state and continuously compares observed outcomes against the target.</p>
+        <pre class="diagram-box">DESIRED STATE → COMMAND → PLAN → ACTION → OBSERVATION → GAP → CORRECTION → ACTION ↺</pre>
+        <p>This creates a distinction between <strong>Task-Oriented Execution</strong> and <strong>Goal-Oriented Execution</strong>. The latter evaluates whether actions are actually moving the system toward the desired state.</p>
+    </section>
+
+    <!-- SECTION 13: COMMAND EXAMPLE -->
+    <section class="manifesto-card reveal-card">
+        <h2>13. Command Example</h2>
+        <p>A CEP command could represent: <em>"Increase product X revenue by 15% within 30 days with a maximum budget of SAR 100,000."</em></p>
+        <p>Conceptually:</p>
+        <pre class="diagram-box">Human Intent → Command → Command Identity → Authorization → Policy Evaluation → Execution Plan → Agent Coordination → Actions → Observation → Verification → Outcome → Audit</pre>
+        <p>If the resulting increase is 12%:</p>
+        <ul>
+            <li>Target: +15%</li>
+            <li>Actual: +12%</li>
+            <li>Gap: -3%</li>
+            <li>Execution: <code>COMPLETED</code></li>
+            <li>Objective: <code>NOT FULLY ACHIEVED</code></li>
+        </ul>
+        <p>The system MAY then initiate a corrective execution cycle if permitted by policy.</p>
+    </section>
+
+    <!-- SECTION 14: INTEROPERABILITY -->
+    <section class="manifesto-card reveal-card">
+        <h2>14. Interoperability</h2>
+        <p>One of the long-term objectives of CEP is to enable interoperable command execution across heterogeneous systems.</p>
+        <p>Conceptually:</p>
+        <pre class="diagram-box">Enterprise A → CEP Command → Execution Layer → Agent Platform B → CRM C → ERP D → Analytics Platform E</pre>
+        <p>The systems do not need to be built by the same company or use the same underlying technology. The protocol provides a common structure for the command lifecycle, creating the possibility of an <strong>Interoperable AI Execution Economy</strong> rather than isolated AI execution silos.</p>
+    </section>
+
+    <!-- SECTION 15: SECURITY PRINCIPLES -->
+    <section class="manifesto-card reveal-card">
+        <h2>15. Security Principles</h2>
+        <p>CEP implementations SHOULD consider:</p>
+        <div class="grid-2">
+            <div class="engine-card">
+                <h3>Identity & Policy</h3>
+                <p>Authentication, authorization, least privilege, policy enforcement, and command integrity.</p>
+            </div>
+            <div class="engine-card">
+                <h3>Data Boundaries</h3>
+                <p>Input validation, output validation, secret isolation, and data-access boundaries.</p>
+            </div>
+            <div class="engine-card">
+                <h3>Runtime Safety</h3>
+                <p>Human escalation, audit logging, replay protection, and execution isolation.</p>
+            </div>
+            <div class="engine-card">
+                <h3>Core Rule</h3>
+                <p>A successful AI model response MUST NOT be treated as evidence that an external action is authorized or safe.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 16: LEAST-PRIVILEGE EXECUTION -->
+    <section class="manifesto-card reveal-card">
+        <h2>16. Least-Privilege Execution</h2>
+        <p>Agents SHOULD receive only the capabilities required to execute their assigned commands.</p>
+        <p>For example:</p>
+        <ul>
+            <li><strong>Required:</strong> <code>crm.read</code>, <code>crm.create_lead</code></li>
+            <li><strong>Granted:</strong> <code>crm.read</code>, <code>crm.create_lead</code></li>
+        </ul>
+        <p>The agent SHOULD NOT automatically receive <code>database.delete</code>, <code>financial.transfer</code>, or <code>system.admin</code> unless explicitly authorized.</p>
+        <pre class="diagram-box">Command → Required Capabilities → Granted Capabilities → Policy Intersection → Execution</pre>
+    </section>
+
+    <!-- SECTION 17: HUMAN GOVERNANCE -->
+    <section class="manifesto-card reveal-card">
+        <h2>17. Human Governance</h2>
+        <p>CEP does not require all AI execution to be fully autonomous.</p>
+        <p>A command MAY require human approval based on: financial thresholds, risk classification, data sensitivity, regulatory requirements, operational impact, or organizational policy.</p>
+        <p>Example:</p>
+<pre><code>{
+  "human_approval": {
+    "required": true,
+    "threshold": 50000,
+    "approver_role": "finance_manager"
+  }
+}</code></pre>
+        <p>This enables <strong>Human-Governed AI Autonomy</strong>: AI systems may operate autonomously within explicitly defined boundaries while escalating decisions that exceed those boundaries.</p>
+    </section>
+
+    <!-- SECTION 18: ERROR HANDLING -->
+    <section class="manifesto-card reveal-card">
+        <h2>18. Error Handling</h2>
+        <p>Execution failures SHOULD be represented in a structured and machine-readable form.</p>
+        <p>CEP implementations using HTTP APIs MAY use standardized problem-detail representations rather than inventing incompatible error formats. RFC 9457 defines a standard format for expressing machine-readable details of HTTP API errors.</p>
+        <p>Example:</p>
+<pre><code>{
+  "type": "https://example.com/problems/authorization-denied",
+  "title": "Authorization denied",
+  "status": 403,
+  "detail": "The executing agent is not authorized to perform this action."
+}</code></pre>
+    </section>
+
+    <!-- SECTION 19: OUTCOME MEASUREMENT -->
+    <section class="manifesto-card reveal-card">
+        <h2>19. Outcome Measurement</h2>
+        <p>CEP encourages the separation of:</p>
+        <ul>
+            <li><strong>Command Status:</strong> What happened to the command?</li>
+            <li><strong>Execution Status:</strong> Did the execution process complete?</li>
+            <li><strong>Verification Status:</strong> Was the execution verified?</li>
+            <li><strong>Outcome Status:</strong> Was the intended objective achieved?</li>
+        </ul>
+        <p>This distinction enables measurement of execution success rate, policy violation rate, authorization failure rate, verification success rate, outcome achievement rate, human escalation rate, execution latency, execution cost, recovery rate, and audit completeness.</p>
+        <p>The result is a shift from <strong>Model Performance</strong> toward <strong>Execution Performance</strong> and ultimately <strong>Economic Outcome Performance</strong>.</p>
+    </section>
+
+    <!-- SECTION 20: WHAT CEP DOES NOT DEFINE -->
+    <section class="manifesto-card reveal-card">
+        <h2>20. What CEP Does Not Define</h2>
+        <p>CEP v0.1 does not prescribe:</p>
+        <ul>
+            <li>a specific AI model or AI vendor;</li>
+            <li>a specific agent framework;</li>
+            <li>a specific cloud platform or database;</li>
+            <li>a specific enterprise application or ERP/CRM;</li>
+            <li>a specific planning algorithm or programming language.</li>
+        </ul>
+        <p>CEP defines the protocol-level contract surrounding governed AI commands, not the internal implementation of every participating system.</p>
+    </section>
+
+    <!-- SECTION 21: EXTENSIBILITY -->
+    <section class="manifesto-card reveal-card">
+        <h2>21. Extensibility</h2>
+        <p>CEP v0.1 intentionally limits its core scope. Future extensions MAY include:</p>
+        <div class="grid-3">
+            <div class="pillar-card">
+                <h3>Governance Extensions</h3>
+                <p>CEP-06 Data Sovereignty<br>CEP-08 Human Approval<br>CEP-13 Identity Federation<br>CEP-14 Delegation</p>
+            </div>
+            <div class="pillar-card">
+                <h3>Interoperability</h3>
+                <p>CEP-07 Agent Interoperability<br>CEP-09 Command Reputation<br>CEP-10 Cross-Agent Comm<br>CEP-15 Command Discovery</p>
+            </div>
+            <div class="pillar-card">
+                <h3>Economic Extensions</h3>
+                <p>CEP-11 Economic Settlement<br>CEP-12 Command Marketplace</p>
+            </div>
+        </div>
+        <p>These extensions should not be treated as part of CEP Core v0.1 unless formally incorporated into a later specification.</p>
+    </section>
+
+    <!-- SECTION 22: VERSIONING -->
+    <section class="manifesto-card reveal-card">
+        <h2>22. Versioning</h2>
+        <p>Every CEP implementation SHOULD identify the protocol version it supports.</p>
+        <p>Example:</p>
+<pre><code>{
+  "cep_version": "0.1"
+}</code></pre>
+        <p>Future versions SHOULD define compatibility requirements explicitly to prevent fragmentation and ensure independent implementations remain compatible.</p>
+    </section>
+
+    <!-- SECTION 23: CONFORMANCE -->
+    <section class="manifesto-card reveal-card">
+        <h2>23. Conformance</h2>
+        <p>A system may claim <strong>CEP v0.1 Core Conformant</strong> only if it satisfies the mandatory requirements defined by the CEP Core specification.</p>
+        <p>Future CEP releases SHOULD provide conformance tests, reference schemas, validation tools, test vectors, example commands, security tests, and interoperability tests so that <em>"CEP Compatible"</em> means something technically testable.</p>
+    </section>
+
+    <!-- SECTION 24: REFERENCE IMPLEMENTATION -->
+    <section class="manifesto-card reveal-card">
+        <h2>24. Reference Implementation</h2>
+        <p>CEP is protocol infrastructure. Smart Hand™ is proposed as an initial reference implementation capable of applying CEP concepts to real-world AI execution.</p>
+        <pre class="diagram-box">CEP → Protocol Rules → Smart Hand → Agents / APIs / Tools → Actions → Verification → Outcomes</pre>
+        <p>The distinction is intentional: <strong>Smart Hand implements CEP; it is not CEP itself.</strong> This separation enables other organizations to develop independent CEP implementations.</p>
+    </section>
+
+    <!-- SECTION 25: OPEN PROTOCOL PHILOSOPHY -->
+    <section class="manifesto-card reveal-card">
+        <h2>25. Open Protocol Philosophy</h2>
+        <p>For CEP to have the potential to become an ecosystem-level protocol, the specification should be:</p>
+        <ul>
+            <li>implementation-independent;</li>
+            <li>vendor-neutral and model-neutral;</li>
+            <li>machine-readable and testable;</li>
+            <li>extensible, interoperable, and publicly reviewable.</li>
+        </ul>
+        <p>The long-term objective is not to require organizations to use Smart Hand. The objective is to define a common protocol that Smart Hand and independent implementations can support.</p>
+    </section>
+
+    <!-- SECTION 26: ECONOMIC SIGNIFICANCE -->
+    <section class="manifesto-card reveal-card">
+        <h2>26. Economic Significance</h2>
+        <p>If AI systems increasingly become capable of executing economic actions, the command itself may become a critical coordination object.</p>
+        <pre class="diagram-box">Human Intent → Economic Command → Authorization → Policy → AI Planning → Execution → Verification → Economic Outcome</pre>
+        <p>CEP proposes infrastructure for governing this transition, creating a new architectural layer: <strong>The AI Command Protocol Layer</strong> between human intent and economic action.</p>
+    </section>
+
+    <!-- SECTION 27: CORE PRINCIPLES -->
+    <section class="manifesto-card reveal-card">
+        <h2>27. Core Principles</h2>
+        <p>CEP v0.1 is founded on ten principles:</p>
+        <ol>
+            <li><strong>Identity:</strong> Every executable command should be uniquely identifiable.</li>
+            <li><strong>Authority:</strong> Execution should occur only within an authorized scope.</li>
+            <li><strong>Policy:</strong> Commands should operate within explicit constraints.</li>
+            <li><strong>Least Privilege:</strong> Agents should receive only capabilities required for execution.</li>
+            <li><strong>Traceability:</strong> The command lifecycle should be reconstructable.</li>
+            <li><strong>Verifiability:</strong> Execution should produce evidence that can be evaluated.</li>
+            <li><strong>Accountability:</strong> Actors and delegated authority should be identifiable.</li>
+            <li><strong>Interoperability:</strong> The protocol should not depend on a single vendor or implementation.</li>
+            <li><strong>Outcome Orientation:</strong> Execution should ultimately be evaluated against intended objectives.</li>
+            <li><strong>Human Governance:</strong> High-impact actions should support explicit human oversight.</li>
+        </ol>
+    </section>
+
+    <!-- SECTION 28: FORMAL CORE -->
+    <section class="manifesto-card reveal-card">
+        <h2>28. Formal Core</h2>
+        <p>The conceptual CEP Core can be expressed as:</p>
+        <pre class="diagram-box">CEP CORE
+  ├── CEP-01: Command Identity
+  ├── CEP-02: Command Authorization
+  ├── CEP-03: Command Policy
+  ├── CEP-04: Command Execution
+  └── CEP-05: Verification & Audit</pre>
+        <p>Or mathematically, at a conceptual level:</p>
+        <div class="highlight-quote">
+            <p>Valid Execution = Identity ∧ Authorization ∧ Policy Compliance ∧ Execution ∧ Verification</p>
+        </div>
+        <ul>
+            <li><strong>Identity</strong> establishes what the command is.</li>
+            <li><strong>Authorization</strong> establishes who or what may execute it.</li>
+            <li><strong>Policy Compliance</strong> establishes what execution is permitted.</li>
+            <li><strong>Execution</strong> establishes what action occurred.</li>
+            <li><strong>Verification</strong> establishes whether the action and/or outcome can be validated.</li>
+        </ul>
+    </section>
+
+    <!-- SECTION 29: LONG-TERM VISION -->
+    <section class="manifesto-card reveal-card">
+        <h2>29. Long-Term Vision</h2>
+        <p>CEP v0.1 represents only the initial protocol core.</p>
+        <p>A mature CEP ecosystem could eventually include:</p>
+        <pre class="diagram-box">Identity → Authorization → Policy → Data Governance → Delegation → Execution → Verification → Audit → Reputation → Interoperability → Economic Settlement → Governance</pre>
+        <p>The long-term objective is to enable AI systems to participate in economic activity through a framework that is <strong>authorized, policy-bounded, observable, verifiable, auditable, and interoperable.</strong></p>
+    </section>
+
+    <!-- SECTION 30: OFFICIAL POSITION -->
+    <section class="manifesto-card reveal-card">
+        <h2>30. Official Position</h2>
+        <p>CEP v0.1 is an early-stage proposed specification, not an accredited international standard.</p>
+        <p>Its purpose at this stage is to provide a clear technical hypothesis, an implementable protocol architecture, a basis for experimentation, reference implementations, interoperability testing, external technical review, and a foundation for future protocol evolution.</p>
+        <p>The transition from proposal to broadly recognized standard would require independent implementations, conformance testing, external review, ecosystem adoption, and appropriate standards governance.</p>
+    </section>
+
+    <!-- SECTION 31: OFFICIAL STATEMENT -->
+    <article class="thesis-card reveal-card">
+        <h2 style="color: var(--accent); font-size: clamp(1.3rem, 4vw, 1.8rem); font-weight: 900; margin-bottom: 20px;">31. Official CEP Statement</h2>
+        <div class="highlight-quote">
+            <p><strong>CEP v0.1 - The CE-AI Command Protocol</strong></p>
+            <p style="margin-top: 10px; font-weight: normal;">CEP proposes an open protocol architecture for governed AI command execution. It defines how executable AI commands can be identified, authorized, constrained by policy, executed, verified, and recorded across heterogeneous AI and economic systems.</p>
+            <p style="margin-top: 10px; font-weight: normal;">CEP is designed to operate above AI models and alongside agents, APIs, enterprise systems, automation infrastructure, and human operators. Its purpose is not to replace these systems, but to provide a common protocol layer through which AI-driven commands can move from intent to authorized action and from action to verified outcome.</p>
+            <p style="margin-top: 15px; font-weight: 800; color: var(--gold);">Identity. Authorization. Policy. Execution. Verification. Audit.</p>
+            <p style="margin-top: 10px; font-weight: 800; color: var(--accent);">From AI that answers to AI that executes.</p>
+        </div>
+    </article>
+
+    <!-- SECTION 32: THE CE-AI PROTOCOL STACK -->
+    <section class="manifesto-card reveal-card">
+        <h2>32. The CE-AI Protocol Stack</h2>
+        <p>The complete strategic architecture can be summarized as:</p>
+        <pre class="diagram-box">CE-AI
+       Command Economy of AI
+                  │
+                  ▼
+          CEP Protocol Layer
+                  │
+      ┌───────────┼───────────┐
+      │           │           │
+  Identity   Authorization   Policy
+      │           │           │
+      └───────────┼───────────┘
+                  ▼
+             Execution
+                  │
+                  ▼
+           Smart Hand™
+                  │
+      ┌───────────┼───────────┐
+      │           │           │
+    Agents       APIs       Systems
+      │           │           │
+      └───────────┼───────────┘
+                  ▼
+          Economic Actions
+                  │
+                  ▼
+             Verification
+                  │
+                  ▼
+               Outcome
+                  │
+                  ▼
+                Audit</pre>
+        <div class="statement-banner" style="margin-top: 25px;">
+            <p style="color: var(--gold); font-size: 1.1rem; font-weight: 800; margin: 0;">
+                CE-AI → CEP → Smart Hand → Economic Action → Verified Outcome
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER CTA -->
+    <section class="footer-cta reveal-card">
+        <h2>Explore Implementation & <span>Governance</span></h2>
+        <div class="btn-group">
+            <a href="/en/about/" class="btn-cta-primary">About Ouamarkom</a>
+            <a href="mailto:contact@ouamarkom.com" class="btn-cta-secondary">Submit Protocol Feedback</a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="footer-bottom-container" dir="ltr">
+        <p>© 2026 Ouamarkom. All Rights Reserved.</p>
+        <div class="footer-legal-links">
+            <a href="/en/intellectual-property/">Intellectual Property</a>
+            <span class="footer-legal-separator">·</span>
+            <a href="mailto:contact@ouamarkom.com">Contact</a>
+        </div>
+    </div>
+</footer>
+
+<script src="/script.js" defer></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const revealCards = document.querySelectorAll('.reveal-card');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.05, rootMargin: "0px 0px -20px 0px" });
+
+        revealCards.forEach(card => revealObserver.observe(card));
+    });
+</script>
+</body>
+</html>
