@@ -1,600 +1,297 @@
-# Command Economy of AI (CE-AI)
+# Ouamarkom™ — Command Economy of AI (CE-AI™)
 
 <p align="center">
-  <b>Open Research Framework</b>
+  <strong>Research, Architecture & Execution Infrastructure</strong>
 </p>
 
 <p align="center">
-  <b>Transforming Human Intent Into Coordinated AI Execution</b>
+  <strong>Building the Execution Infrastructure for the Command Economy of AI</strong>
 </p>
 
 <p align="center">
 
-![Version](https://img.shields.io/badge/Version-1.0-orange)
-![Status](https://img.shields.io/badge/Status-Research-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
+![Version](https://img.shields.io/badge/Version-2.0-orange)
+![Status](https://img.shields.io/badge/Status-Research%20%26%20Development-blue)
+![License](https://img.shields.io/badge/License-See%20LICENSE.md-lightgrey)
+![Content](https://img.shields.io/badge/Content-See%20CONTENT--LICENSE.md-blue)
+![Trademarks](https://img.shields.io/badge/Trademarks-See%20TRADEMARKS.md-orange)
 
 </p>
 
 <p align="center">
-  <b>Official Reference Repository</b>
+
+[Official Website](https://ouamarkom.com/) ·
+[Research](https://ouamarkom.com/research) ·
+[Whitepaper](https://ouamarkom.com/whitepaper) ·
+[Framework](https://ouamarkom.com/framework) ·
+[Smart Hand™](https://ouamarkom.com/news/smart-hand-ai-execution-infrastructure.html) ·
+[Evolution](./EVOLUTION.md)
+
 </p>
 
 ---
 
-# Overview
+## Overview
 
-Command Economy of AI (CE-AI) is an open research and technical framework exploring how natural language commands can evolve from simple instructions into structured coordination mechanisms for artificial intelligence systems, autonomous agents, workflows, and digital execution.
+**Command Economy of AI (CE-AI™)** is a research and technical framework developed by **Ouamarkom™** to explore how human intent and natural-language commands can evolve into structured mechanisms for coordinating artificial intelligence systems, autonomous agents, workflows, tools, and real-world execution.
 
-CE-AI investigates a future interaction model where human intent can be transformed into structured commands that coordinate AI capabilities toward measurable outcomes.
+CE-AI explores the transition from AI systems that primarily **generate information** toward systems capable of **coordinating intelligence and enabling execution toward measurable outcomes**.
 
-The framework explores the transition from:
+The central model is:
 
-```
+~~~text
 Human Intent
+      ↓
+   Command
+      ↓
+Intent Understanding
+      ↓
+Planning / Compilation
+      ↓
+AI Agent Coordination
+      ↓
+  Execution
+      ↓
+   Outcome
+~~~
 
-↓
+The broader objective is to investigate the infrastructure required for an emerging Command Economy of AI, where human intent can become a structured input to intelligent economic and operational execution.
 
-Command Representation
+---
 
-↓
+## Ouamarkom™
 
-AI Coordination
+**Ouamarkom™ (أوامركم)** is the organization and research initiative developing the Command Economy of AI framework and its associated execution architecture.
 
-↓
+The project has evolved from early exploration of Prompt Economy, Intent, and command-based interaction into a broader research and infrastructure direction centered on:
 
+- Command Economy of AI (CE-AI™)
+- Smart Hand™
+- Command and intent representation
+- AI agent orchestration
+- Execution workflows
+- Command Execution Platform (CEP)
+- AI Execution Infrastructure™
+
+**Learn more:**
+
+- [Ouamarkom Website](https://ouamarkom.com/)
+- [About Ouamarkom](https://ouamarkom.com/about)
+- [Vision](https://ouamarkom.com/vision)
+- [Founder](https://ouamarkom.com/founder)
+
+---
+
+## Research Thesis
+
+AI has historically progressed through several interaction models:
+
+~~~text
+Software Interfaces
+        ↓
+      Search
+        ↓
+Conversational AI
+        ↓
+Prompt Engineering
+        ↓
+    AI Agents
+        ↓
+Command-Based Coordination
+        ↓
+Intelligent Execution
+~~~
+
+CE-AI investigates what comes after the traditional interaction model.
+
+Instead of asking only:
+
+> *"What can AI tell me?"*
+
+the framework explores:
+
+> *"How can human intent be translated into structured commands that coordinate intelligent systems to achieve measurable outcomes?"*
+
+This leads to the central execution chain:
+
+~~~text
+Intent
+  ↓
+Command
+  ↓
+Coordination
+  ↓
 Execution
-
-↓
-
+  ↓
 Outcome
-```
-
-This repository serves as the official reference foundation for:
-
-- Framework concepts
-- Terminology
-- Architecture models
-- Command specifications
-- Research documentation
-- Practical examples
-- Future implementations
+~~~
 
 ---
 
-# Table of Contents
+## The Command Economy of AI
 
-- [Executive Summary](#executive-summary)
-- [Background & Evolution](#background--evolution)
-- [Foundational Concepts](#foundational-concepts)
-- [Core Principles](#core-principles)
-- [Framework Architecture](#framework-architecture)
-- [How It Works](#how-it-works)
-- [Core Components](#core-components)
-- [Repository Structure](#repository-structure)
-- [Command Specification](#command-specification)
-- [Examples](#examples)
-- [Research Areas](#research-areas)
-- [Whitepaper](#whitepaper)
-- [Design Philosophy](#design-philosophy)
-- [Roadmap](#roadmap)
-- [FAQ](#faq)
-- [Current Status](#current-status)
-- [Contributing](#contributing)
-- [Citation](#citation)
-- [Founder](#founder)
-- [License](#license)
+The **Command Economy of AI (CE-AI™)** is the conceptual and research framework through which Ouamarkom investigates the economic and infrastructural implications of command-driven AI systems.
 
----
+The framework explores commands as potential operational and coordination units connecting:
 
-# Executive Summary
-
-Command Economy of AI (CE-AI) is an open research and technical framework exploring a command-driven approach for interacting with artificial intelligence systems.
-
-As AI systems evolve from conversational assistants into autonomous agents capable of reasoning, planning, and executing tasks, a fundamental challenge emerges:
-
-> How can humans express intent in a structured way that enables reliable coordination between multiple AI capabilities?
-
-CE-AI explores the concept of **commands as reusable operational units** that connect human intent with AI execution.
-
-Unlike traditional prompts that often represent isolated interactions, CE-AI investigates how commands can represent:
-
-- Objectives
-- Context
-- Constraints
-- Required actions
-- Workflows
-- Expected outcomes
-
-The framework explores a transition from:
-
-```
-Human Intent
-
-↓
-
-Command Representation
-
-↓
-
-Agent Coordination
-
-↓
-
-Execution
-
-↓
-
-Outcome
-```
-
-The goal of CE-AI is not to replace existing AI paradigms, but to provide an open conceptual and technical framework for studying command-based interaction models.
-
----
-
-# Background & Evolution
-
-The relationship between humans and computing systems has continuously evolved toward more natural interaction models.
-
-Understanding this evolution provides the foundation for exploring CE-AI.
-
----
-
-## 1. Traditional Software Interfaces
-
-Early computing relied on graphical interfaces.
-
-Users interacted through:
-
-- Buttons
-- Menus
-- Forms
-- Applications
-
-The user needed to understand the software structure before performing actions.
-
-```
-Human
-
-↓
-
-Interface
-
-↓
-
-Software Function
-
-↓
-
-Result
-```
-
----
-
-## 2. Search Interfaces
-
-Search engines introduced a new interaction model based on information retrieval.
-
-Users expressed needs through keywords rather than manually navigating systems.
-
-```
-Human Query
-
-↓
-
-Search Engine
-
-↓
-
-Information Retrieval
-
-↓
-
-Results
-```
-
----
-
-## 3. Conversational AI Interfaces
-
-Large Language Models introduced natural language interaction.
-
-Humans could communicate with AI using conversation instead of predefined interfaces.
-
-```
-Human Message
-
-↓
-
-Language Model
-
-↓
-
-Generated Response
-```
-
-However, conversations alone do not always provide structured execution or repeatable workflows.
-
----
-
-## 4. Prompt Engineering
-
-Prompt Engineering improved AI interaction by designing better instructions.
-
-It introduced:
-
-- Context
-- Constraints
-- Examples
-- Structured instructions
-
-However, prompts often remain individual requests rather than reusable operational units.
-
----
-
-## 5. AI Agents
-
-AI Agents introduced a transition from responding to executing.
-
-Agents can:
-
-- Plan tasks
-- Use tools
-- Coordinate actions
-- Execute workflows
-
-The interaction changed from:
-
-```
-Answer my question
-```
-
-to:
-
-```
-Achieve this objective
-```
-
----
-
-## 6. Command Economy of AI (CE-AI)
-
-CE-AI explores commands as a possible coordination layer between human intent and AI execution.
-
-The framework investigates how commands can coordinate:
-
-- AI Agents
+- Human intent
+- AI systems
+- Agents
 - Workflows
 - Tools
-- Knowledge Systems
-- Digital Processes
+- Knowledge
+- Execution
+- Economic outcomes
 
-Evolution:
+The framework does not claim that the future economic model has already been established. It provides a research direction for studying how AI execution may create new infrastructure and economic structures.
 
-```
-Traditional Interfaces
+**Official references:**
 
-↓
-
-Search Interfaces
-
-↓
-
-Chat Interfaces
-
-↓
-
-Prompt Engineering
-
-↓
-
-AI Agents
-
-↓
-
-Command Economy of AI
-```
+- [CE-AI Whitepaper](https://ouamarkom.com/whitepaper)
+- [Canonical Reference](https://ouamarkom.com/canonical-reference)
+- [Glossary](https://ouamarkom.com/glossary)
+- [CE-AI vs Traditional AI](https://ouamarkom.com/command-economy-ai-vs-traditional)
+- [CE-AI Framework](https://ouamarkom.com/framework)
+- [CE-AI Vision](https://ouamarkom.com/vision)
 
 ---
 
-# Foundational Concepts
+## Smart Hand™
 
-The official definitions are maintained in:
+**Smart Hand™** is Ouamarkom's execution-oriented system concept for translating human intent into coordinated intelligent execution.
 
-[Canonical Reference - Terminology](./canonical-reference/terminology.md)
+It represents the transition from AI as an intelligence-generation layer toward AI as an execution layer.
 
----
+Conceptually:
 
-## Command
-
-A Command is a structured and reusable representation of human intent that contains objectives, context, constraints, required actions, and expected outcomes.
-
-A command transforms a simple request into an operational unit.
-
-Example:
-
-```
-Command:
-
-Create a market expansion strategy.
-
-Objective:
-
-Expand business into a new market.
-
-Expected Outcome:
-
-Complete expansion plan.
-```
-
----
-
-## Intent
-
-Intent represents the underlying objective behind a command.
-
-It answers:
-
-> What does the user actually want to achieve?
-
-```
-Human Thought
-
-↓
-
-Intent
-
-↓
-
-Command
-
-↓
-
-Execution
-
-↓
-
-Outcome
-```
-
----
-
-## Outcome
-
-Outcome represents the measurable result achieved after execution.
-
-CE-AI focuses on producing meaningful outcomes, not only generating responses.
-
----
-
-## Execution
-
-Execution is the process where AI agents, tools, and workflows transform commands into results.
-
----
-
-## Agent
-
-An AI Agent is an autonomous or semi-autonomous component capable of performing specialized tasks.
-
-Examples:
-
-- Research Agent
-- Coding Agent
-- Planning Agent
-- Analysis Agent
-
----
-
-## Command Layer
-
-The Command Layer represents the conceptual bridge between human intent and AI execution.
-
-```
+~~~text
 Human Intent
-
-↓
-
+      ↓
+    CE-AI
+      ↓
 Command Layer
-
-↓
-
-AI Systems
-
-↓
-
-Outcome
-```
-
----
-
-# Core Principles
-
-CE-AI is guided by several foundational principles that define its research direction.
-
----
-
-## Human Intent First
-
-Human objectives are the starting point of every AI workflow.
-
-The framework focuses on understanding what humans want to achieve before determining how AI systems should execute tasks.
-
----
-
-## Commands as Coordination Units
-
-Commands are treated as structured operational units that connect intent with execution.
-
-A command is not only an instruction, but a mechanism for coordinating intelligent systems.
-
----
-
-## Agent Collaboration
-
-Complex objectives may require multiple specialized AI agents working together.
-
-CE-AI explores methods for coordinating agents toward shared goals.
-
----
-
-## Outcome Orientation
-
-The value of AI systems is measured by achieved outcomes rather than generated responses alone.
-
----
-
-## Open Research
-
-CE-AI is designed as an evolving framework that develops through:
-
-- Research
-- Documentation
-- Experimentation
-- Community discussion
-
----
-
-# Framework Architecture
-
-The CE-AI architecture explores how human intent can move through a structured command layer into coordinated AI execution systems.
-
-High-level architecture:
-
-```
-Human Intent
-
-        ↓
-
-Natural Language Command
-
-        ↓
-
-Command Layer
-
-        ↓
-
+      ↓
 Intent Understanding
+      ↓
+   Planning
+      ↓
+Agent Orchestration
+      ↓
+ Smart Hand™
+      ↓
+ Execution
+      ↓
+   Outcome
+~~~
 
-        ↓
+Smart Hand™ is positioned within the broader **AI Execution Infrastructure™** direction.
 
-Command Compilation
+**Official references:**
 
-        ↓
-
-AI Agent Orchestration
-
-        ↓
-
-Tools / APIs / Knowledge Systems
-
-        ↓
-
-Execution
-
-        ↓
-
-Outcome
-```
-
-Detailed architecture documentation:
-
-[Architecture Documentation](./docs/architecture.md)
+- [Smart Hand™](https://ouamarkom.com/blog/command-economy/the-smart-hand.html)
+- [Smart Hand™ — AI Execution Infrastructure](https://ouamarkom.com/news/smart-hand-ai-execution-infrastructure.html)
+- [Smart Hand Research](https://ouamarkom.com/research/paper-1)
+- [Smart Hand Execution Layer](https://ouamarkom.com/blog/command-economy/smart-hand-execution-layer)
+- [From the Invisible Hand to the Smart Hand](https://ouamarkom.com/blog/command-economy/from-invisible-hand-to-smart-hand.html)
 
 ---
 
-# How It Works
+## AI Execution Infrastructure™
 
-A CE-AI workflow follows a structured lifecycle:
+Ouamarkom's current strategic direction is the development of an **AI Execution Infrastructure™** capable of connecting human intent with intelligent coordination and measurable execution.
 
-```
-1. Human expresses an objective
+The conceptual infrastructure is:
 
-↓
+~~~text
+Human Intent
+      ↓
+   Command
+      ↓
+    CE-AI
+      ↓
+Intent Engine
+      ↓
+Command / Workflow Planning
+      ↓
+Agent Orchestrator
+      ↓
+Execution Engine
+      ↓
+Outcome Layer
+      ↓
+Economic Outcome
+~~~
 
-2. Intent is identified
+The infrastructure direction is designed to bridge the gap between:
 
-↓
+~~~text
+AI Intelligence
+      ↓
+AI Coordination
+      ↓
+Real-World Execution
+~~~
 
-3. Intent is represented as a command
+**Official reference:**
 
-↓
-
-4. Command is structured and analyzed
-
-↓
-
-5. Agents and workflows are selected
-
-↓
-
-6. Tools and systems execute tasks
-
-↓
-
-7. Results are validated
-
-↓
-
-8. Outcome is delivered
-```
-
-Detailed framework documentation:
-
-[Framework Documentation](./docs/framework.md)
-
----
-
-# Core Components
-
-The CE-AI framework consists of several conceptual components:
-
-| Component | Purpose |
-|---|---|
-| Command Layer | Converts human intent into structured commands |
-| Intent Engine | Understands objectives and context |
-| Command Compiler | Converts commands into execution workflows |
-| Agent Orchestration | Coordinates specialized AI agents |
-| Execution Layer | Connects AI systems with tools and APIs |
-| Outcome Layer | Measures achieved results |
-
-Future implementations may explore these components through reference systems.
+- [AI Execution Infrastructure — Smart Hand™](https://ouamarkom.com/news/smart-hand-ai-execution-infrastructure.html)
 
 ---
 
-# Repository Structure
+## Command Execution Platform (CEP)
 
-The repository is organized as a knowledge and research system:
+The **Command Execution Platform (CEP)** represents a platform-level concept for transforming commands into coordinated execution.
 
-```
-ouamarkom/
+At a high level:
 
-├── README.md
+~~~text
+Human Intent
+      ↓
+   Command
+      ↓
+    CE-AI
+      ↓
+     CEP
+      ↓
+Agents / Workflows / Tools
+      ↓
+ Execution
+      ↓
+   Outcome
+~~~
 
-├── docs/
-│   ├── framework.md
-│   ├── architecture.md
-│   ├── roadmap.md
-│   └── faq.md
+**References:**
 
-├── canonical-reference/
-│   └── terminology.md
-
-├── commands/
-│   ├── command-specification.md
-│   └── examples.md
-
-├── whitepaper/
-│   └── CE-AI-Whitepaper.md
-```
-
-Each directory represents a different layer of the CE-AI framework.
+- [CEP — Arabic](https://ouamarkom.com/cep)
+- [CEP — English](https://ouamarkom.com/en/cep/)
 
 ---
 
-# Command Specification
+## Core Concepts
 
-A CE-AI Command is a structured operational unit containing:
+### Intent
+
+Intent represents the underlying objective a human seeks to achieve.
+
+~~~text
+Human Thought
+      ↓
+   Intent
+      ↓
+  Command
+      ↓
+ Execution
+      ↓
+   Outcome
+~~~
+
+---
+
+### Command
+
+A **Command** is a structured representation of human intent designed to coordinate intelligent systems toward an objective.
+
+A command may contain:
 
 - Intent
 - Objective
@@ -607,228 +304,579 @@ A CE-AI Command is a structured operational unit containing:
 - Expected Outcome
 - Validation Criteria
 
-Full specification:
+---
 
-[Command Specification](./commands/command-specification.md)
+### Coordination
+
+Coordination is the process through which commands organize AI agents, workflows, tools, knowledge systems, and execution capabilities toward a shared objective.
 
 ---
 
-# Examples
+### Execution
 
-Practical command examples demonstrate how human objectives can be transformed into structured execution models.
-
-Examples include:
-
-- Business Strategy Commands
-- Software Development Commands
-- Research Commands
-- Automation Commands
-
-View examples:
-
-[Command Examples](./commands/examples.md)
+Execution is the process through which intelligent systems transform structured intent and commands into actions and results.
 
 ---
 
-# Research Areas
+### Outcome
 
-CE-AI explores several research directions:
+An outcome represents the measurable or observable result produced by execution.
 
-## Intent Representation
+CE-AI emphasizes:
 
-How can human objectives be represented in a structured way?
+~~~text
+Intent → Execution → Outcome
+~~~
 
----
-
-## Command Semantics
-
-How should commands be defined, interpreted, and reused?
+rather than response generation alone.
 
 ---
 
-## Agent Coordination
+## Framework Architecture
 
-How can multiple AI agents collaborate effectively?
+The evolving CE-AI architecture can be represented as:
+
+~~~text
+Human Intent
+      ↓
+Natural Language Command
+      ↓
+Command Layer
+      ↓
+Intent Understanding
+      ↓
+Command / Workflow Planning
+      ↓
+Agent Orchestration
+      ↓
+Tools / APIs / Knowledge
+      ↓
+Execution Engine
+      ↓
+Outcome Engine
+      ↓
+Decision / Memory Layer
+~~~
+
+The architecture continues to evolve through research and experimentation.
+
+**Official framework references:**
+
+- [Framework — Arabic](https://ouamarkom.com/framework)
+- [Framework — English](https://ouamarkom.com/en/framework/)
+- [Canonical Reference](https://ouamarkom.com/canonical-reference)
+- [Glossary](https://ouamarkom.com/glossary)
 
 ---
 
-## Workflow Intelligence
+## Research
 
-How can AI systems generate and execute complex workflows?
+Ouamarkom maintains a growing research initiative around CE-AI, intelligent execution, command-based coordination, and economic execution infrastructure.
+
+**Research areas include:**
+
+- Command Economy of AI
+- Intent representation
+- Command semantics
+- AI agent coordination
+- Workflow intelligence
+- Intelligent execution
+- Economic execution
+- Human-AI coordination
+- AI Execution Infrastructure™
+- Smart Hand™ architecture
+- Command Execution Platforms
+
+### Research Hub
+
+- [Ouamarkom Research](https://ouamarkom.com/research)
+
+### Research Papers
+
+- [Research Paper 1](https://ouamarkom.com/research/paper-1)
+- [Research Paper 2](https://ouamarkom.com/research/paper-2)
+- [Research Paper 3](https://ouamarkom.com/research/paper-3)
+
+### English Research References
+
+- [Research — English](https://ouamarkom.com/en/research)
+- [Research Paper 1 — English](https://ouamarkom.com/en/research/paper-1)
+- [Research Paper 2 — English](https://ouamarkom.com/en/research/paper-2)
+- [Research Paper 3 — English](https://ouamarkom.com/en/research/paper-3)
 
 ---
 
-## Human-AI Collaboration
+## Whitepaper
 
-How can humans and AI systems coordinate efficiently?
+The **Command Economy of AI (CE-AI™) Whitepaper** provides a theoretical foundation for the framework.
 
----
+It examines:
 
-## Outcome-Based AI
-
-How can AI systems be evaluated by achieved results?
-
----
-
-# Whitepaper
-
-The CE-AI Whitepaper provides the theoretical foundation of the framework.
-
-It explores:
-
-- The evolution of AI interaction models
-- The problem space
+- The evolution of AI interaction
+- Human intent
 - Command-based coordination
-- Architectural concepts
+- AI agents
+- Intelligent execution
+- Economic execution
+- Execution infrastructure
 - Future research directions
 
-Read the complete document:
+**References:**
 
-[CE-AI Whitepaper](./whitepaper/CE-AI-Whitepaper.md)
+- [CE-AI Whitepaper — Arabic](https://ouamarkom.com/whitepaper)
+- [CE-AI Whitepaper — English](https://ouamarkom.com/en/whitepaper/)
 
 ---
 
-# Design Philosophy
+## Canonical Knowledge
 
-CE-AI explores a future where natural language commands become a structured interface between humans and intelligent systems.
+Ouamarkom maintains a canonical terminology and reference layer to reduce ambiguity across the CE-AI research ecosystem.
 
-The framework follows several ideas:
+- [Canonical Reference — Arabic](https://ouamarkom.com/canonical-reference)
+- [Canonical Reference — English](https://ouamarkom.com/en/canonical-reference/)
+- [Glossary — Arabic](https://ouamarkom.com/glossary)
+- [Glossary — English](https://ouamarkom.com/en/glossary/)
 
-```
+---
+
+## Evolution
+
+Ouamarkom's development has progressed through several conceptual and technical stages:
+
+~~~text
+Prompt Economy
+      ↓
+Intent Economy
+      ↓
+Command Economy
+      ↓
+Command Coordination
+      ↓
+Execution Economy
+      ↓
+Command Economy of AI
+      ↓
+CE-AI Research Framework
+      ↓
+Smart Hand™
+      ↓
+Command Execution Platform
+      ↓
+AI Execution Infrastructure™
+~~~
+
+The complete historical record is maintained separately in [`EVOLUTION.md`](./EVOLUTION.md).
+
+The current documented timeline covers the project evolution from **18 March 2026 → 21 August 2026**.
+
+The historical record should be read together with Git history, repository records, published website pages, sitemap records, research documents, and other contemporaneous evidence.
+
+---
+
+## Intellectual Property
+
+Ouamarkom maintains a separate intellectual-property reference layer covering its research, technology, terminology, architecture, and brand ecosystem.
+
+### Public Reference Pages
+
+- [Intellectual Property — Arabic](https://ouamarkom.com/intellectual-property)
+- [Intellectual Property — English](https://ouamarkom.com/en/intellectual-property/)
+
+### Repository Rights and Notices
+
+- [`LICENSE.md`](./LICENSE.md)
+- [`CONTENT-LICENSE.md`](./CONTENT-LICENSE.md)
+- [`TRADEMARKS.md`](./TRADEMARKS.md)
+
+Future provenance and priority analysis may be documented separately from this public README.
+
+---
+
+## Trademarks
+
+The following identifiers are associated with Ouamarkom and may be used as trademarks, service marks, trade names, or brand identifiers, subject to applicable law and registration status:
+
+- Ouamarkom™
+- أوامركم™
+- Command Economy of AI™
+- CE-AI™
+- Smart Hand™
+- AI Execution Infrastructure™
+
+The **™** symbol indicates a claimed trademark and does not by itself indicate registration in a particular jurisdiction.
+
+Trademark rights and usage guidance are maintained in [`TRADEMARKS.md`](./TRADEMARKS.md).
+
+---
+
+## Repository Rights
+
+This repository is an official public research and technical reference repository.
+
+It is **not released as a whole under the MIT License or another blanket open-source license**. Unless a specific file, directory, or component states otherwise, repository materials remain protected and all rights are reserved.
+
+Different categories of material may be governed by different rights:
+
+~~~text
+Software
+   ↓
+Content / Research
+   ↓
+Trademarks
+   ↓
+Other Intellectual Property
+~~~
+
+**See:**
+
+- [`LICENSE.md`](./LICENSE.md)
+- [`CONTENT-LICENSE.md`](./CONTENT-LICENSE.md)
+- [`TRADEMARKS.md`](./TRADEMARKS.md)
+
+---
+
+## Content and Research Use
+
+Research papers, whitepapers, technical documentation, diagrams, specifications, terminology, and other non-software materials are subject to the separate **Ouamarkom Content License** unless a specific document states otherwise.
+
+Permitted uses generally include:
+
+- Reading
+- Private study
+- Research and educational use
+- Referencing
+- Academic citation
+- Linking to official publications
+- Limited quotation where permitted by applicable law
+
+Substantial reproduction, republication, redistribution, or commercial exploitation is not generally permitted without applicable permission or authorization.
+
+**See:** [`CONTENT-LICENSE.md`](./CONTENT-LICENSE.md)
+
+---
+
+## Evidence & Provenance
+
+The historical development of Ouamarkom is documented through multiple evidence layers.
+
+### Preferred Evidence Hierarchy
+
+1. Git Commit History
+2. Original Files and Commit Diffs
+3. Timestamped Research Documents
+4. Published Website Pages
+5. Sitemap Records
+6. Archived Website Versions
+7. Public Announcements
+8. Social / Public Communications
+9. Secondary References
+
+The [`EVOLUTION.md`](./EVOLUTION.md) document provides the historical project timeline.
+
+Future provenance analysis will map specific technology and conceptual areas to their earliest identifiable evidence.
+
+These records are intended as historical and documentary evidence. They do **not**, by themselves, constitute a legal determination of patent priority, trademark ownership, copyright ownership, or other legal rights.
+
+---
+
+## Research & IP Evidence Map
+
+The planned provenance structure includes:
+
+- **IP-01:** Intent / Command Representation
+- **IP-02:** Command Economy / Coordination Model
+- **IP-03:** Smart Hand™ Execution Architecture
+- **IP-04:** CEP / Execution Platform Architecture
+- **IP-05:** AI Execution Infrastructure™
+
+Each evidence record may include:
+
+- First conceptual evidence
+- First repository evidence
+- First public evidence
+- First architectural evidence
+- Related Git commits and SHAs
+- Related website pages and dates
+- Related research documents
+- Evidence strength
+- Supporting documentation
+
+These records are intended for historical and provenance analysis and do not themselves constitute a legal determination of patent priority or ownership.
+
+---
+
+## Repository Structure
+
+The repository is organized as an evolving research, documentation, architecture, and reference system.
+
+The primary top-level reference files include:
+
+~~~text
+ouamarkom/
+│
+├── README.md
+├── EVOLUTION.md
+├── LICENSE.md
+├── CONTENT-LICENSE.md
+├── TRADEMARKS.md
+│
+├── docs/
+├── canonical-reference/
+├── commands/
+├── whitepaper/
+└── research/
+~~~
+
+Additional files and directories may be introduced as the research and technical architecture develop.
+
+The repository structure should be understood as an evolving technical and research system rather than a fixed final architecture.
+
+---
+
+## Development Direction
+
+The current direction of Ouamarkom is centered on:
+
+~~~text
 Human Intent
-
-↓
-
-Structured Command
-
-↓
-
+      ↓
+   Command
+      ↓
+    CE-AI
+      ↓
 AI Coordination
+      ↓
+ Smart Hand™
+      ↓
+     CEP
+      ↓
+AI Execution Infrastructure™
+      ↓
+Economic Execution
+      ↓
+Measurable Outcome
+~~~
 
-↓
+### Current Areas of Development and Research
 
-Execution
-
-↓
-
-Outcome
-```
-
-The goal is not simply improving communication with AI, but exploring new methods for coordinating intelligence.
-
----
-
-# Roadmap
-
-CE-AI development follows an evolving research roadmap.
-
-Current focus:
-
-- Framework definition
-- Documentation
-- Architecture models
-- Command specifications
-
-Future directions:
-
-- Reference implementations
-- Developer tools
-- Command ecosystems
-- Interoperability research
-
-Full roadmap:
-
-[CE-AI Roadmap](./docs/roadmap.md)
+- CE-AI framework development
+- Smart Hand™ architecture
+- Command execution
+- Agent orchestration
+- Workflow execution
+- Execution infrastructure
+- Research and validation
+- Canonical knowledge
+- Intellectual-property documentation
+- Technical reference architecture
+- Evidence and provenance mapping
 
 ---
 
-# FAQ
+## Current Status
 
-Common questions about CE-AI:
+| Area | Current State |
+|---|---|
+| Project | Ouamarkom™ |
+| Framework | Command Economy of AI (CE-AI™) |
+| Core System Concept | Smart Hand™ |
+| Platform Concept | Command Execution Platform (CEP) |
+| Infrastructure Direction | AI Execution Infrastructure™ |
+| Research Stage | Active Research & Development |
+| Documentation | Active |
+| Architecture | Evolving |
+| Provenance | Evidence mapping in progress |
+| Timeline | 18 March 2026 – 21 August 2026 |
 
-- What is CE-AI?
-- Is it an AI model?
-- How is it different from Prompt Engineering?
-- What is the relationship with AI Agents?
-
-Read the full FAQ:
-
-[Frequently Asked Questions](./docs/faq.md)
-
----
-
-# Current Status
-
-## Stage
-
-Research Framework
-
-## Current Focus
-
-- Concept development
-- Documentation
-- Architecture design
-- Command modeling
-- Reference framework
-
-CE-AI is an evolving open research initiative.
+CE-AI remains an evolving research and technical initiative. Concepts, terminology, architecture, and implementation directions may continue to change as research and validation progress.
 
 ---
 
-# Contributing
+## Roadmap
 
-Contributions are welcome.
+The project roadmap evolves alongside the research and architecture.
 
-Potential contributions include:
+### Current Priorities
 
+- Formalizing CE-AI concepts
+- Expanding research documentation
+- Refining execution architecture
+- Developing Smart Hand™
+- Exploring CEP architecture
+- Developing AI Execution Infrastructure™
+- Establishing evidence and provenance records
+- Expanding technical and research references
+- Evaluating future implementations
+- Validating architectural hypotheses
+
+The roadmap is intentionally evolutionary and may change as research and technical validation progress.
+
+---
+
+## Official Website & References
+
+### Main
+
+- [Ouamarkom™](https://ouamarkom.com/)
+- [About](https://ouamarkom.com/about)
+- [Vision](https://ouamarkom.com/vision)
+- [Founder](https://ouamarkom.com/founder)
+
+### CE-AI
+
+- [Command Economy of AI](https://ouamarkom.com/prompt-economy.html)
+- [Whitepaper](https://ouamarkom.com/whitepaper)
+- [Canonical Reference](https://ouamarkom.com/canonical-reference)
+- [Glossary](https://ouamarkom.com/glossary)
+- [Framework](https://ouamarkom.com/framework)
+- [Evolution](https://ouamarkom.com/evolution)
+
+### Research
+
+- [Research Hub](https://ouamarkom.com/research)
+- [Research Paper 1](https://ouamarkom.com/research/paper-1)
+- [Research Paper 2](https://ouamarkom.com/research/paper-2)
+- [Research Paper 3](https://ouamarkom.com/research/paper-3)
+
+### Execution Infrastructure
+
+- [CEP](https://ouamarkom.com/cep)
+- [Smart Hand™ — AI Execution Infrastructure](https://ouamarkom.com/news/smart-hand-ai-execution-infrastructure.html)
+
+### English Reference
+
+- [English Homepage](https://ouamarkom.com/en/)
+- [English Whitepaper](https://ouamarkom.com/en/whitepaper/)
+- [English Canonical Reference](https://ouamarkom.com/en/canonical-reference/)
+- [English Vision](https://ouamarkom.com/en/vision/)
+- [English Founder](https://ouamarkom.com/en/founder/)
+- [English Research](https://ouamarkom.com/en/research)
+- [English Framework](https://ouamarkom.com/en/framework/)
+- [English CEP](https://ouamarkom.com/en/cep/)
+- [English Intellectual Property](https://ouamarkom.com/en/intellectual-property/)
+
+---
+
+## Citation
+
+When referencing the **Command Economy of AI (CE-AI™)** framework, Ouamarkom research, or associated technical documentation, attribution should identify the source accurately.
+
+### Recommended General Reference
+
+> Ouamarkom™. *Command Economy of AI (CE-AI™).* Official Research & Technical Reference Repository. 2026.
+
+For specific research works, where available, include:
+
+- Title
+- Author / Organization
+- Version
+- Publication date
+- Official URL
+- Persistent identifier, if available
+
+---
+
+## Contributing
+
+The repository is maintained primarily as an official research and technical reference repository.
+
+Potential future contribution mechanisms may include:
+
+- Research discussion
 - Documentation improvements
-- Research discussions
-- Technical experiments
-- Examples
+- Technical experimentation
 - Reference implementations
+- Interoperability research
+- Examples and demonstrations
 
-Future contribution guidelines will be published as the project evolves.
+Contribution terms may be established separately as the project evolves.
 
----
+Submitting material does **not** automatically transfer ownership of Ouamarkom intellectual property.
 
-# Citation
-
-If you reference Command Economy of AI in research, publications, or technical discussions, please cite this repository.
-
-Example:
-
-```
-Command Economy of AI (CE-AI)
-Open Research Framework
-Ouamarkom
-```
+See [`LICENSE.md`](./LICENSE.md) and [`CONTENT-LICENSE.md`](./CONTENT-LICENSE.md) for applicable rights and usage terms.
 
 ---
 
-# Founder
+## Disclaimer
 
-**Ouamarkom**
+This repository is provided for research, reference, educational, and technical purposes.
 
-Founder of the Command Economy of AI (CE-AI) research initiative.
+Nothing in this repository should be interpreted as:
+
+- A patent application
+- A patent grant
+- A trademark registration
+- A legal opinion
+- A determination of legal priority
+- A transfer of intellectual-property ownership
+- A guarantee of patentability
+- A guarantee of non-infringement
+- A legal conclusion regarding ownership or priority
+
+Intellectual-property rights may apply separately to different materials, technologies, implementations, trademarks, and publications.
+
+Public disclosure does not itself establish legal ownership or exclusive rights in every jurisdiction.
+
+For legal questions, consult qualified intellectual-property counsel in the relevant jurisdiction.
 
 ---
 
-# License
+## Acknowledgements
 
-This project is released under the MIT License.
-
----
-
-# Acknowledgements
-
-CE-AI is inspired by the continuous evolution of:
+The CE-AI research direction is informed by the broader evolution of:
 
 - Artificial Intelligence
 - Software Engineering
 - Human-Computer Interaction
+- Natural Language Interfaces
 - Autonomous Agent Systems
-- Open Research Communities
+- Workflow Automation
+- Distributed Systems
+- Economic and organizational theory
+- Open research and technical communities
 
 ---
 
-© Command Economy of AI (CE-AI)
+## Final Reference
+
+~~~text
+Ouamarkom™
+│
+├── Command Economy of AI (CE-AI™)
+│
+├── Research
+│
+├── Canonical Knowledge
+│
+├── Framework
+│
+├── Smart Hand™
+│
+├── Command Execution Platform (CEP)
+│
+├── AI Execution Infrastructure™
+│
+└── Intellectual Property & Provenance
+~~~
+
+- The project's historical evolution is documented in [`EVOLUTION.md`](./EVOLUTION.md)
+- Repository rights are documented in [`LICENSE.md`](./LICENSE.md)
+- Content and research rights are documented in [`CONTENT-LICENSE.md`](./CONTENT-LICENSE.md)
+- Trademark guidance is documented in [`TRADEMARKS.md`](./TRADEMARKS.md)
+
+---
+
+<p align="center">
+  <strong>Ouamarkom™</strong><br>
+  <strong>Command Economy of AI (CE-AI™)</strong><br>
+  <strong>Smart Hand™</strong><br>
+  <strong>AI Execution Infrastructure™</strong>
+</p>
+
+<p align="center">
+  Copyright © 2026 Ouamarkom. All rights reserved.
+</p>
+
+<p align="center">
+  <em>Document Version: 2.0 · Updated: 21 August 2026</em>
+</p>
