@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأطروحة | The Thesis - أوامركم™ (Ouamarkom)</title>
+    <meta name="description" content="من الأوامر إلى التنفيذ: بناء البنية التحتية لاقتصاد الذكاء الاصطناعي القادم. قصة أوامركم المؤسسية وأطروحة اقتصاد الأوامر للذكاء الاصطناعي (CEAI).">
+    <meta name="keywords" content="الأطروحة, The Thesis, أوامركم, اقتصاد الأوامر, Command Economy of AI, Smart Hand, CEAI, AI Execution Infrastructure, Ouamarkom">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Hreflang & Canonical -->
+    <link rel="canonical" href="https://ouamarkom.com/thesis" />
+    <link rel="alternate" hreflang="ar" href="https://ouamarkom.com/thesis" />
+    <link rel="alternate" hreflang="en" href="https://ouamarkom.com/en/thesis/" />
+    <link rel="alternate" hreflang="x-default" href="https://ouamarkom.com/thesis" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:site_name" content="أوامركم | Ouamarkom" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="الأطروحة | من الأوامر إلى التنفيذ - أوامركم™" />
+    <meta property="og:description" content="من الأوامر إلى التنفيذ: بناء البنية التحتية لاقتصاد الذكاء الاصطناعي القادم." />
+    <meta property="og:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg" />
+    <meta property="og:url" content="https://ouamarkom.com/thesis" />
+    <meta property="og:locale" content="ar_SA" />
+    <meta property="og:locale:alternate" content="en_US" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="الأطروحة | من الأوامر إلى التنفيذ - أوامركم™">
+    <meta name="twitter:description" content="من الأوامر إلى التنفيذ: بناء البنية التحتية لاقتصاد الذكاء الاصطناعي القادم.">
+    <meta name="twitter:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg">
+    <meta name="theme-color" content="#040916">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- SEO Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TechArticle",
+          "@id": "https://ouamarkom.com/thesis#article",
+          "url": "https://ouamarkom.com/thesis",
+          "name": "الأطروحة | The Thesis - أوامركم™",
+          "headline": "من الأوامر إلى التنفيذ: بناء البنية التحتية لاقتصاد الذكاء الاصطناعي القادم",
+          "description": "أطروحة أوامركم حول التحول من الذكاء الاصطناعي التوليدي إلى البنية التحتية للتنفيذ الاقتصادي واقتصاد الأوامر للذكاء الاصطناعي.",
+          "inLanguage": "ar",
+          "publisher": {
+            "@type": "Organization",
+            "name": "أوامركم | Ouamarkom",
+            "logo": "https://ouamarkom.com/logo.webp"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #040916;
+            --secondary: #0a192f;
+            --accent: #e6992d;
+            --gold: #fcd34d;
+            --text-main: #e6f1ff;
+            --text-dim: #8892b0;
+            --card-bg: rgba(10, 25, 47, 0.45);
+            --border-color: rgba(255, 255, 255, 0.08);
+            
+            --brand-orange-glow: rgba(230, 153, 45, 0.35);
+            --brand-orange-subtle: rgba(230, 153, 45, 0.08);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--primary);
+            color: var(--text-main);
+            font-family: inherit;
+            margin: 0;
+        }
+
+        /* Top Header Navigation Bar */
+        .top-nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 24px 20px 10px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .brand-logo-wrap {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .brand-logo-wrap:hover {
+            transform: scale(1.03);
+        }
+
+        .brand-logo-img {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+            display: block;
+        }
+
+        .lang-switch-btn {
+            background: var(--brand-orange-subtle);
+            border: 1px solid rgba(230, 153, 45, 0.35);
+            color: var(--accent);
+            padding: 8px 18px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 0.88rem;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .lang-switch-btn svg {
+            width: 16px;
+            height: 16px;
+            stroke: currentColor;
+            transition: transform 0.4s ease;
+        }
+
+        .lang-switch-btn:hover {
+            background: rgba(230, 153, 45, 0.22);
+            color: #fff;
+            border-color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(230, 153, 45, 0.2);
+        }
+
+        .lang-switch-btn:hover svg {
+            transform: rotate(180deg);
+        }
+
+        /* Layout Container */
+        .manifesto-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 10px 20px 60px;
+            position: relative;
+            z-index: 1;
+            box-sizing: border-box;
+        }
+
+        .hero-manifesto {
+            text-align: center;
+            padding: 30px 0 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUpHero 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        @keyframes fadeInUpHero {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-manifesto h1 {
+            font-size: clamp(1.6rem, 5vw, 2.8rem);
+            line-height: 1.35;
+            margin-bottom: 18px;
+            font-weight: 900;
+            color: #ffffff;
+        }
+
+        .hero-manifesto h1 span {
+            display: inline-block;
+            background: linear-gradient(90deg, var(--accent), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.6;
+        }
+
+        .hero-manifesto .subtitle {
+            font-size: clamp(0.98rem, 2.5vw, 1.2rem);
+            color: var(--text-dim);
+            line-height: 1.7;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .tagline-badge {
+            display: inline-block;
+            padding: 6px 18px;
+            background: var(--brand-orange-subtle);
+            border: 1px solid rgba(230, 153, 45, 0.3);
+            color: var(--accent);
+            border-radius: 50px;
+            font-size: clamp(0.8rem, 2vw, 0.9rem);
+            font-weight: 800;
+            margin-bottom: 22px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Generic Card Styling */
+        .manifesto-card {
+            background: var(--card-bg);
+            padding: clamp(22px, 5vw, 42px);
+            border-radius: 24px;
+            border: 1px solid var(--border-color);
+            backdrop-filter: blur(12px);
+            margin-bottom: 30px;
+        }
+
+        .manifesto-card h2 {
+            color: var(--accent);
+            font-size: clamp(1.3rem, 4vw, 1.8rem);
+            margin-bottom: 20px;
+            font-weight: 800;
+            line-height: 1.3;
+        }
+
+        .manifesto-card p {
+            color: var(--text-main);
+            font-size: clamp(0.98rem, 2.5vw, 1.08rem);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .manifesto-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Thesis Special Styling */
+        .thesis-card {
+            background: linear-gradient(135deg, rgba(10, 25, 47, 0.7) 0%, rgba(4, 9, 22, 0.9) 100%);
+            border: 1px solid rgba(230, 153, 45, 0.3);
+            padding: clamp(22px, 5vw, 42px);
+            border-radius: 24px;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+            margin-bottom: 30px;
+        }
+
+        .statement-banner {
+            background: linear-gradient(135deg, rgba(4, 9, 22, 0.9) 0%, rgba(230, 153, 45, 0.12) 100%);
+            border: 1px solid rgba(230, 153, 45, 0.35);
+            border-radius: 24px;
+            padding: clamp(30px, 5vw, 45px) 20px;
+            margin: 35px auto;
+            text-align: center;
+        }
+
+        .statement-text {
+            color: var(--accent);
+            font-size: clamp(1.25rem, 4vw, 2.0rem);
+            font-weight: 900;
+            margin: 0;
+            line-height: 1.45;
+        }
+
+        /* Question Comparison Boxes */
+        .questions-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        @media (min-width: 640px) {
+            .questions-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .question-box {
+            background: rgba(4, 9, 22, 0.6);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 16px;
+        }
+
+        .question-box.accent-box {
+            border-color: rgba(230, 153, 45, 0.4);
+            background: var(--brand-orange-subtle);
+        }
+
+        .question-box h4 {
+            color: var(--accent);
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+        }
+
+        .question-box ul {
+            margin: 0;
+            padding-right: 20px;
+            color: var(--text-dim);
+            line-height: 1.7;
+        }
+
+        /* Flow & Sequence Diagrams */
+        .flow-chain {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 25px 0;
+            padding: 20px;
+            background: rgba(4, 9, 22, 0.7);
+            border: 1px solid var(--border-color);
+            border-radius: 18px;
+        }
+
+        .flow-step {
+            background: var(--brand-orange-subtle);
+            border: 1px solid rgba(230, 153, 45, 0.3);
+            color: var(--text-main);
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.92rem;
+            text-align: center;
+        }
+
+        .flow-arrow {
+            color: var(--accent);
+            font-weight: 900;
+            font-size: 1.2rem;
+        }
+
+        .vertical-architecture {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            margin: 25px 0;
+        }
+
+        .arch-node {
+            width: 100%;
+            max-width: 450px;
+            background: rgba(10, 25, 47, 0.6);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 12px 20px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 0.98rem;
+            transition: all 0.3s ease;
+        }
+
+        .arch-node:hover {
+            border-color: var(--accent);
+            background: var(--brand-orange-subtle);
+            transform: scale(1.02);
+        }
+
+        .arch-arrow {
+            color: var(--accent);
+            font-weight: 900;
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+
+        /* Grids & Cards */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin: 25px 0 10px;
+        }
+
+        @media (min-width: 768px) {
+            .grid-2 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin: 25px 0 10px;
+        }
+
+        @media (min-width: 768px) {
+            .grid-3 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .engine-card, .pillar-card, .research-card {
+            background: rgba(4, 9, 22, 0.6);
+            border: 1px solid var(--border-color);
+            padding: 24px;
+            border-radius: 18px;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .engine-card:hover, .pillar-card:hover, .research-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(230, 153, 45, 0.12);
+        }
+
+        .engine-card h3, .pillar-card h3, .research-card h3 {
+            color: var(--accent);
+            font-size: 1.2rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .engine-card p, .pillar-card p, .research-card p {
+            font-size: 0.95rem;
+            color: var(--text-dim);
+            line-height: 1.68;
+            margin-bottom: 0;
+        }
+
+        .example-box {
+            background: var(--brand-orange-subtle);
+            border-right: 3px solid var(--accent);
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin-top: 16px;
+            font-size: 0.95rem;
+            color: var(--text-main);
+        }
+
+        .highlight-quote {
+            background: var(--brand-orange-subtle);
+            border-right: 4px solid var(--accent);
+            padding: 22px;
+            border-radius: 4px 16px 16px 4px;
+            margin: 25px 0;
+        }
+
+        .highlight-quote p {
+            font-weight: 700;
+            color: var(--text-main);
+            font-size: clamp(1rem, 3vw, 1.15rem);
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        .intent-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 18px 0;
+        }
+
+        .intent-pill {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border-color);
+            color: var(--gold);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 700;
+        }
+
+        /* Check list */
+        .check-list {
+            list-style: none;
+            padding: 0;
+            margin: 16px 0;
+        }
+
+        .check-list li {
+            position: relative;
+            padding-right: 28px;
+            margin-bottom: 10px;
+            color: var(--text-main);
+            font-size: 0.98rem;
+            line-height: 1.6;
+        }
+
+        .check-list li::before {
+            content: "✦";
+            position: absolute;
+            right: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        /* Footer CTA */
+        .footer-cta {
+            text-align: center;
+            padding: clamp(35px, 6vw, 55px) clamp(20px, 4vw, 40px);
+            margin-top: 50px;
+            margin-bottom: 25px;
+            background: linear-gradient(180deg, rgba(230, 153, 45, 0.06) 0%, rgba(4, 9, 22, 0.8) 100%);
+            border: 1px solid rgba(230, 153, 45, 0.25);
+            border-radius: 28px;
+            backdrop-filter: blur(12px);
+        }
+
+        .footer-cta h2 {
+            color: #ffffff;
+            font-size: clamp(1.3rem, 4vw, 2.1rem);
+            font-weight: 900;
+            margin-bottom: 30px;
+            line-height: 1.35;
+        }
+
+        .footer-cta h2 span {
+            color: var(--accent);
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: 100%;
+            max-width: 540px;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (min-width: 640px) {
+            .btn-group {
+                flex-direction: row;
+                max-width: 100%;
+            }
+        }
+
+        .btn-cta-primary {
+            background: linear-gradient(135deg, var(--accent) 0%, #ffab3d 100%);
+            color: var(--primary);
+            padding: 15px 34px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1rem;
+            box-shadow: 0 8px 25px rgba(230, 153, 45, 0.3);
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        @media (min-width: 640px) {
+            .btn-cta-primary {
+                width: auto;
+            }
+        }
+
+        .btn-cta-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(230, 153, 45, 0.5);
+            background: linear-gradient(135deg, #ffab3d 0%, var(--gold) 100%);
+        }
+
+        .btn-cta-secondary {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(230, 153, 45, 0.35);
+            color: var(--text-main);
+            padding: 15px 34px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        @media (min-width: 640px) {
+            .btn-cta-secondary {
+                width: auto;
+            }
+        }
+
+        .btn-cta-secondary:hover {
+            background: rgba(230, 153, 45, 0.15);
+            border-color: var(--accent);
+            color: #ffffff;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(230, 153, 45, 0.15);
+        }
+
+        .reveal-card {
+            opacity: 0;
+            transform: translateY(25px);
+            transition: opacity 0.6s cubic-bezier(0.215, 0.610, 0.355, 1), 
+                        transform 0.6s cubic-bezier(0.215, 0.610, 0.355, 1);
+        }
+
+        .reveal-card.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="network-canvas"></canvas>
+
+<!-- Navigation Bar -->
+<nav class="top-nav-bar">
+    <a href="/" class="brand-logo-wrap" aria-label="أوامركم الرئيسية">
+        <img src="/logo.webp" alt="أوامركم | Ouamarkom" class="brand-logo-img">
+    </a>
+    
+    <a href="/en/thesis/" class="lang-switch-btn" aria-label="Switch to English">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+        </svg>
+        <span>English</span>
+    </a>
+</nav>
+
+<main class="manifesto-container">
+    
+    <!-- Hero Header -->
+    <header class="hero-manifesto">
+        <span class="tagline-badge">الأطروحة | The Thesis</span>
+        
+        <h1>من الأوامر إلى التنفيذ: بناء البنية التحتية لـ <span>اقتصاد الذكاء الاصطناعي القادم</span></h1>
+        
+        <p class="subtitle">
+            قصة أوامركم™ المؤسسية
+        </p>
+    </header>
+
+    <!-- SECTION 1: THE CORE PARADIGM SHIFT -->
+    <section class="manifesto-card reveal-card">
+        <h2>تحول جوهري في السؤال الاقتصادي</h2>
+        <p>كان الذكاء الاصطناعي، لعقود، يُقاس أساسًا بقدرته على الفهم والتنبؤ والتوليد.</p>
+        
+        <div class="questions-grid">
+            <div class="question-box">
+                <h4>النموذج التقليدي كان يسأل:</h4>
+                <ul>
+                    <li>ماذا يستطيع الذكاء الاصطناعي أن يعرف؟</li>
+                    <li>ماذا يستطيع أن يفهم؟</li>
+                    <li>ماذا يستطيع أن ينتج؟</li>
+                </ul>
+            </div>
+            
+            <div class="question-box accent-box">
+                <h4>النموذج القادم يسأل:</h4>
+                <p style="font-weight: 800; color: var(--accent); margin: 0; font-size: 1.1rem; line-height: 1.5;">
+                    «ماذا يستطيع الذكاء الاصطناعي أن يجعل يحدث؟»
+                </p>
+            </div>
+        </div>
+
+        <p>لكن مع انتقال الذكاء الاصطناعي من النماذج التي تجيب إلى الأنظمة التي تستطيع التخطيط، استخدام الأدوات، الوصول إلى الأنظمة، واتخاذ الإجراءات، بدأ سؤال أكثر جوهرية في الظهور.</p>
+        <p>نحن نعتقد أن هذا السؤال يمثل بداية تحول اقتصادي أعمق. تحول من اقتصاد يعتمد على إنتاج المعلومات والبرمجيات إلى اقتصاد تصبح فيه النية والأوامر القابلة للتنفيذ جزءًا متزايد الأهمية من الطريقة التي تُنسَّق بها الأعمال والقرارات والعمليات الاقتصادية.</p>
+        
+        <div class="highlight-quote">
+            <p>نطلق على هذا الاتجاه: <strong>Command Economy of AI™ (اقتصاد الأوامر للذكاء الاصطناعي)</strong></p>
+        </div>
+    </section>
+
+    <!-- SECTION 2: THE ORIGIN QUESTION -->
+    <section class="manifesto-card reveal-card">
+        <h2>البداية لم تكن بإجابة. بل بسؤال.</h2>
+        <p>بدأت أوامركم من ملاحظة بسيطة: إذا كان الإنسان يستطيع أن يقول:</p>
+        
+        <div class="intent-pills">
+            <span class="intent-pill">«زد المبيعات»</span>
+            <span class="intent-pill">«خفض تكاليف المشتريات»</span>
+            <span class="intent-pill">«قلل مدة تحصيل المستحقات»</span>
+            <span class="intent-pill">«وسع قاعدة العملاء»</span>
+        </div>
+
+        <p>فإن القيمة الحقيقية للذكاء الاصطناعي لا تكمن فقط في أن يشرح للإنسان كيف يفعل ذلك. القيمة الأكبر قد تأتي عندما يستطيع النظام، ضمن حدود السلطة والسياسات والضوابط المناسبة، أن يساعد في تحويل هذه النية إلى سلسلة من الإجراءات المنسقة والقابلة للقياس.</p>
+        
+        <div class="statement-banner">
+            <h3 class="statement-text">
+                «كيف تتحول النية البشرية إلى تنفيذ اقتصادي موثوق وقابل للقياس والتحقق بواسطة الذكاء الاصطناعي؟»
+            </h3>
+        </div>
+
+        <p>لم نعتبر هذا السؤال مشكلة منتج واحد... اعتبرناه سؤالًا بنيويًا.</p>
+    </section>
+
+    <!-- SECTION 3: FROM INTELLIGENCE TO EXECUTION -->
+    <section class="manifesto-card reveal-card">
+        <h2>من Intelligence إلى Execution</h2>
+        
+        <div class="flow-chain">
+            <span class="flow-step">Information</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">Intelligence</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step" style="border-color: var(--accent); color: var(--gold);">Action</span>
+        </div>
+
+        <p>الجيل الأول من الذكاء الاصطناعي ركز على Information، ثم جاء عصر Intelligence، والآن بدأت الأنظمة تتحرك نحو Action. لكن الانتقال من الذكاء إلى الفعل ليس انتقالًا بسيطًا.</p>
+        <p>فالذكاء الاصطناعي قد يكون قادرًا تقنيًا على تنفيذ إجراء ما، لكن المؤسسة تحتاج إلى معرفة:</p>
+
+        <ul class="check-list">
+            <li>من الذي فوضه؟</li>
+            <li>ماذا يُسمح له أن يفعل؟ وتحت أي شروط؟</li>
+            <li>ما الأنظمة التي يستطيع الوصول إليها؟ ومتى يحتاج إلى موافقة بشرية؟</li>
+            <li>ماذا يحدث إذا واجه استثناءً؟ وكيف يمكن تدقيق قراره؟</li>
+            <li>كيف نعرف أن الإجراء أدى فعلًا إلى النتيجة المقصودة؟</li>
+        </ul>
+
+        <p>لهذا نرى أن مستقبل الذكاء الاصطناعي المؤسسي لن تحدده القدرة على التفكير والفعل فقط، بل القدرة على <strong>الفعل الموثوق والمحكوم والقابل للتحقق.</strong></p>
+    </section>
+
+    <!-- SECTION 4: FROM PROMPT TO OUTCOME -->
+    <section class="manifesto-card reveal-card">
+        <h2>من Prompt إلى Outcome</h2>
+        <p>في النموذج التقليدي: <code>Prompt → Output</code> (تطلب شيئًا من النظام، فينتج لك إجابة).</p>
+        <p>لكن الاقتصاد الحقيقي يعمل بطريقة مختلفة. القيمة الاقتصادية لا تأتي من الإجابة وحدها، بل من سلسلة أطول:</p>
+
+        <div class="flow-chain">
+            <span class="flow-step">Intent</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">Command</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">Authority</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">Policy</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">Execution</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">Evidence</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">Outcome</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">Verification</span>
+        </div>
+
+        <ul class="check-list">
+            <li><strong>النية (Intent):</strong> تحدد الغاية.</li>
+            <li><strong>الأمر (Command):</strong> يحول الغاية إلى تعليمات قابلة للتنفيذ.</li>
+            <li><strong>السلطة (Authority):</strong> تحدد ما يمكن للنظام فعله.</li>
+            <li><strong>السياسات (Policy):</strong> تحدد الحدود والشروط.</li>
+            <li><strong>التنفيذ (Execution):</strong> يحول القرار إلى فعل.</li>
+            <li><strong>الأدلة (Evidence):</strong> تسجل ما حدث.</li>
+            <li><strong>النتيجة (Outcome):</strong> تقيس الأثر.</li>
+            <li><strong>التحقق (Verification):</strong> يحدد ما إذا كانت النتيجة المقصودة قد تحققت بالفعل.</li>
+        </ul>
+
+        <p>وهنا تبدأ ملامح اقتصاد جديد في الظهور.</p>
+    </section>
+
+    <!-- SECTION 5: COMMAND ECONOMY OF AI -->
+    <article class="thesis-card reveal-card">
+        <h2>Command Economy of AI™</h2>
+        <p>نستخدم مفهوم Command Economy of AI™ كإطار لفهم التحول من الذكاء الاصطناعي الذي ينتج المعلومات إلى الذكاء الاصطناعي الذي يشارك في تنسيق وتنفيذ الأهداف والأنشطة الاقتصادية.</p>
+        <p>في هذا التصور، تصبح الأوامر والنيات الاقتصادية أكثر من مجرد تعليمات للنماذج. يمكن أن تصبح مدخلًا إلى عمليات اقتصادية كاملة.</p>
+
+        <div class="example-box">
+            <strong style="color: var(--accent); font-size: 1.05rem;">على سبيل المثال:</strong>
+            <p style="margin: 8px 0; font-weight: 800;">«"خفض تكاليف المشتريات بنسبة 10% خلال ستة أشهر."»</p>
+            <p style="margin-bottom: 0; color: var(--text-dim);">ليست هذه مجرد جملة. يمكن تحويلها إلى: هدف اقتصادي، سياق، قيود، سياسات، صلاحيات، أوامر، وكلاء، إجراءات، مؤشرات أداء، أدلة، نتائج، وآلية تحقق.</p>
+        </div>
+
+        <p style="margin-top: 20px;">وهنا ينتقل الذكاء الاصطناعي من كونه أداة لإنتاج المعرفة إلى كونه جزءًا من نظام تنفيذ اقتصادي.</p>
+    </article>
+
+    <!-- SECTION 6: TESTING ARCHITECTURE & HYPOTHESES -->
+    <section class="manifesto-card reveal-card">
+        <h2>لكننا لا ندّعي أننا نعرف المعمارية النهائية</h2>
+        <p>هذه نقطة جوهرية في فلسفة أوامركم. اكتشاف اتجاه اقتصادي محتمل لا يعني امتلاك خريطة كاملة للمستقبل. نحن لا نزعم أن هناك معمارية واحدة محسومة اليوم.</p>
+        <p>ولا نزعم أن <strong>AI Execution Infrastructure™</strong> ستأخذ بالضرورة الشكل الذي نتصوره الآن. ولا نفترض أن <strong>Smart Hand™</strong> هي الإجابة النهائية. بل نرى هذه العناصر باعتبارها فرضيات قابلة للاختبار.</p>
+
+        <div class="highlight-quote" style="text-align: center;">
+            <p style="font-size: 1.25rem; color: var(--accent);">«Commit to the Outcome. Test the Architecture. Follow the Evidence.»</p>
+            <p style="margin-top: 8px; color: var(--text-main);">التزم بالنتيجة. اختبر المعمارية. واتبع الأدلة.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 7: SMART HAND AS A LEARNING INSTRUMENT -->
+    <section class="manifesto-card reveal-card">
+        <h2>Smart Hand™: من الفكرة إلى التجربة</h2>
+        <p>لهذا طورت أوامركم مفهوم Smart Hand™. ليست Smart Hand بالنسبة لنا مجرد واجهة لوكيل ذكاء اصطناعي، وليست محاولة لإثبات أن معماريتنا الحالية صحيحة. إنها أداة تجريبية لاختبار سؤال أكبر:</p>
+
+        <p style="font-weight: 800; color: var(--accent); text-align: center; font-size: 1.1rem; margin: 20px 0;">
+            «ماذا يحتاج الذكاء الاصطناعي لكي ينتقل من إنتاج القرار إلى تنفيذ الهدف الاقتصادي بصورة موثوقة؟»
+        </p>
+
+        <p>من خلال Smart Hand، نختبر مفاهيم مثل:</p>
+        <div class="intent-pills">
+            <span class="intent-pill">Intent Processing</span>
+            <span class="intent-pill">Command Orchestration</span>
+            <span class="intent-pill">Agent Coordination</span>
+            <span class="intent-pill">Tool Execution</span>
+            <span class="intent-pill">Authority</span>
+            <span class="intent-pill">Governance</span>
+            <span class="intent-pill">Human Escalation</span>
+            <span class="intent-pill">Execution Records</span>
+            <span class="intent-pill">Evidence</span>
+            <span class="intent-pill">Outcome Measurement</span>
+            <span class="intent-pill">Outcome Verification</span>
+        </div>
+
+        <p style="margin-top: 15px;">وكل تجربة لا تهدف فقط إلى إثبات ما يعمل، بل أيضًا إلى اكتشاف ما لا يعمل.</p>
+    </section>
+
+    <!-- SECTION 8: EMBRACING FAILURE AS LEARNING -->
+    <section class="manifesto-card reveal-card">
+        <h2>الفشل بالنسبة لنا ليس نهاية التجربة</h2>
+        <p>إذا حاول نظام تنفيذ هدف اقتصادي وفشل، فهناك احتمالان: إما أننا فشلنا في بناء المنتج، أو أننا اكتشفنا شيئًا مهمًا عن البنية التي يحتاجها الاقتصاد القادم.</p>
+        <p>على سبيل المثال: قد نكتشف أن المشكلة ليست في قدرة الوكيل على تنفيذ المهمة، بل في:</p>
+
+        <div class="grid-2">
+            <div class="engine-card">
+                <h3>Authorization</h3>
+                <p>إدارات التفويض وصلاحيات النظام.</p>
+            </div>
+            <div class="engine-card">
+                <h3>Policy Enforcement</h3>
+                <p>فرض وتطبيق السياسات المؤسسية.</p>
+            </div>
+            <div class="engine-card">
+                <h3>Exception Handling</h3>
+                <p>إدارة التعامل مع الاستثناءات والظروف غير المتوقعة.</p>
+            </div>
+            <div class="engine-card">
+                <h3>Outcome Verification</h3>
+                <p>التحقق من صحة واكتمال النتائج الحقيقية.</p>
+            </div>
+        </div>
+
+        <p style="margin-top: 20px;">عندها لا نتمسك بالمعمارية الأولى. نتعلم، ونعيد بناء الفرضية. ولهذا نرى أن:</p>
+        <div class="highlight-quote">
+            <p>«Smart Hand is not only a product. It is a learning instrument.»</p>
+            <p style="font-size: 0.95rem; color: var(--text-dim); margin-top: 5px; font-weight: normal;">Smart Hand هي وسيلة نتعلم من خلالها ما الذي يحتاجه التنفيذ الاقتصادي المدفوع بالذكاء الاصطناعي فعلًا.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 9: TRUSTED ECONOMIC OUTCOMES -->
+    <section class="manifesto-card reveal-card">
+        <h2>من Execution إلى Trusted Outcomes</h2>
+        <p>نعتقد أن النجاح الحقيقي لا يتوقف عند قدرة النظام على تنفيذ أمر. هناك ثلاث مراحل مختلفة:</p>
+
+        <div class="grid-3">
+            <div class="pillar-card">
+                <h3>1. Execution Success</h3>
+                <p><strong>هل تم تنفيذ الإجراء؟</strong><br>القدرة التقنية على إتمام المهمة.</p>
+            </div>
+            <div class="pillar-card">
+                <h3>2. Economic Success</h3>
+                <p><strong>هل أنتج الإجراء قيمة اقتصادية؟</strong><br>تحقيق المبيعات أو كفاءة التكاليف.</p>
+            </div>
+            <div class="pillar-card">
+                <h3>3. Verified Economic Outcome</h3>
+                <p><strong>هل نستطيع إثبات الأثر؟</strong><br>إثبات درجة الثقة والعلاقة السببية بين الفعل والنتيجة.</p>
+            </div>
+        </div>
+
+        <p style="margin-top: 20px;">وهذا الفرق مهم. إرسال آلاف الرسائل قد يكون تنفيذًا ناجحًا. تحقيق مبيعات إضافية قد يكون نجاحًا اقتصاديًا. لكن إثبات أن هذه المبيعات نتجت عن سلسلة الإجراءات التي نفذها النظام هو مستوى مختلف تمامًا.</p>
+        <p>لذلك نرى أن المستقبل قد لا يكون فقط: <strong>«AI Execution»</strong> بل: <strong>«Trusted AI Economic Execution.»</strong></p>
+    </section>
+
+    <!-- SECTION 10: ARCHITECTURE MAP -->
+    <section class="manifesto-card reveal-card">
+        <h2>البنية التحتية التي نبحث عنها</h2>
+        <p>من خلال أبحاثنا وتجاربنا، ندرس بنية يمكن تصورها مبدئيًا كالتالي:</p>
+
+        <div class="vertical-architecture">
+            <div class="arch-node">Human / Enterprise Intent</div>
+            <div class="arch-arrow">↓</div>
+            <div class="arch-node">Intent & Command Layer</div>
+            <div class="arch-arrow">↓</div>
+            <div class="arch-node">Authority & Governance</div>
+            <div class="arch-arrow">↓</div>
+            <div class="arch-node">AI Agents & Tools</div>
+            <div class="arch-arrow">↓</div>
+            <div class="arch-node">Enterprise Systems</div>
+            <div class="arch-arrow">↓</div>
+            <div class="arch-node">Execution Evidence</div>
+            <div class="arch-arrow">↓</div>
+            <div class="arch-node">Outcome Measurement</div>
+            <div class="arch-arrow">↓</div>
+            <div class="arch-node" style="border-color: var(--accent); background: var(--brand-orange-subtle);">Outcome Verification</div>
+        </div>
+
+        <p style="text-align: center; color: var(--text-dim); font-size: 0.95rem;">هذه ليست ادعاءً بأن هذه هي المعمارية النهائية. إنها خريطة بحثية تساعدنا على تحديد أين توجد الفجوات الحقيقية.</p>
+    </section>
+
+    <!-- SECTION 11: WHY NOW & BEYOND ANOTHER AGENT -->
+    <section class="manifesto-card reveal-card">
+        <h2>لماذا الآن؟ ورؤيتنا ليست بناء وكيل آخر</h2>
+        <p>لأن الذكاء الاصطناعي يدخل مرحلة مختلفة. عندما كانت الأنظمة تنتج النصوص والصور والإجابات، كان الخطأ غالبًا خطأً في المعلومات أو الجودة.</p>
+        <p>لكن عندما يبدأ النظام في: إرسال رسالة، تعديل سجل، إنشاء طلب، تغيير سعر، التعامل مع عميل، تنفيذ عملية مالية، تشغيل سير عمل، أو اتخاذ قرار نيابة عن المؤسسة... <strong>فإن الخطأ يصبح فعلاً اقتصاديًا.</strong></p>
+
+        <p>وهنا تتغير طبيعة المشكلة. لم تعد المؤسسة تحتاج فقط إلى <em>«AI that is intelligent»</em> بل تحتاج إلى:</p>
+        <div class="highlight-quote">
+            <p>«AI that can act within authority, under policy, with accountability, and toward measurable outcomes.»</p>
+        </div>
+
+        <p>لا نريد أن يكون جوهر أوامركم مجرد: «"وكيل ذكاء اصطناعي أفضل."» السوق قادر على إنتاج آلاف الوكلاء. السؤال الأعمق هو: <strong>«ما البنية التي تسمح لآلاف الوكلاء بالعمل داخل الاقتصاد بصورة موثوقة؟»</strong></p>
+        <p>قد تكون الإجابة: طبقة تنفيذ، طبقة حوكمة، طبقة تنسيق، طبقة تحقق، طبقة نتائج، أو مزيجًا من هذه الطبقات. لا نعرف الإجابة النهائية بعد، ولهذا نبحث عنها.</p>
+    </section>
+
+    <!-- SECTION 12: EVERY LAYER MUST EARN ITS EXISTENCE & LEARNING VELOCITY -->
+    <section class="manifesto-card reveal-card">
+        <h2>نحن لا نبني المستقبل كله دفعة واحدة (من شركة إلى نظام تعلم)</h2>
+        <p>لدينا رؤية طويلة الأمد. لكننا لا نحاول بناء كل طبقات اقتصاد الذكاء الاصطناعي في وقت واحد. نتبع قاعدة:</p>
+        
+        <div class="statement-banner" style="padding: 20px;">
+            <h3 class="statement-text" style="font-size: 1.4rem;">«Every Layer Must Earn Its Existence.»</h3>
+            <p style="color: var(--text-main); margin-top: 5px; font-size: 1rem;">كل طبقة يجب أن تكسب حق وجودها.</p>
+        </div>
+
+        <p>إذا أثبتت التجارب أن مشكلة التفويض هي الاختناق الحقيقي، فقد تستحق طبقة الحوكمة الاستثمار. وإذا أثبتت أن التحقق من النتائج هو المشكلة الأكبر، فقد تصصبح طبقة Outcome Verification أكثر أهمية. وإذا أثبت الواقع أن افتراضاتنا الحالية خاطئة، فسوف نغيرها. هذه ليست نقطة ضعف... إنها جزء من المنهج.</p>
+
+        <p style="margin-top: 25px;">نريد بناء قدرة مؤسسية تتجاوز المنتج. قدرتنا المستهدفة هي الانتقال بسرعة عبر دورتنا التشغيلية:</p>
+
+        <div class="flow-chain">
+            <span class="flow-step">Question</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">Hypothesis</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">Experiment</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">Evidence</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">Learning</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">Architecture Decision</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">Next Experiment</span>
+        </div>
+
+        <p>هذه القدرة نسميها: <strong>Strategic Learning Velocity (سرعة التعلم الاستراتيجي)</strong>. فنحن لا نريد أن نكون الشركة التي تدعي أنها تعرف المستقبل مسبقًا؛ نريد أن نكون الشركة التي تستطيع اكتشافه، من خلال الواقع، بأسرع وأعمق طريقة ممكنة.</p>
+    </section>
+
+    <!-- SECTION 13: SAUDI LAUNCH, GLOBAL THESIS -->
+    <section class="manifesto-card reveal-card">
+        <h2>من السعودية إلى العالم</h2>
+        <p>تُبنى أوامركم من السعودية، لكن المشكلة التي ندرسها ليست سعودية فقط. إنها مشكلة عالمية:</p>
+        <p style="font-weight: 800; color: var(--accent); text-align: center;">«كيف يمكن للمؤسسات في عصر الوكلاء أن تحول النية البشرية والأهداف الاقتصادية إلى تنفيذ موثوق وقابل للقياس والتحقق؟»</p>
+        <p>نرى السعودية بيئة انطلاق مهمة لاختبار هذه الأطروحة في سياقات اقتصادية ومؤسسية حقيقية، ثم استخدام ما نتعلمه لبناء حلول قابلة للتوسع عالميًا.</p>
+
+        <div class="highlight-quote" style="text-align: center;">
+            <p>رؤيتنا ليست: «شركة ذكاء اصطناعي سعودية ذات طموحات عالمية.»</p>
+            <p style="color: var(--accent); font-size: 1.2rem; margin-top: 8px;">بل: «أطروحة بنية تحتية عالمية تنطلق من السعودية.»</p>
+            <p style="color: var(--text-dim); font-size: 0.9rem; margin-top: 8px; font-weight: normal;">Global problem. Saudi launch environment. Evidence-driven expansion.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 14: WHAT WE WANT TO BUILD IN THE END -->
+    <section class="manifesto-card reveal-card">
+        <h2>ما الذي نريد بناءه في النهاية؟</h2>
+        <p>لا نعرف بعد الشكل النهائي. لكننا نعرف السؤال الذي يستحق أن نبني حوله. نريد أن نفهم كيف يمكن أن يصبح الذكاء الاصطناعي جزءًا من البنية الاقتصادية دون أن يتحول استقلاله إلى فوضى، ودون أن تتحول قدرته على التنفيذ إلى مخاطرة غير قابلة للسيطرة.</p>
+        
+        <p>نريد أن نساعد في بناء عالم يستطيع فيه الذكاء الاصطناعي:</p>
+        <div class="flow-chain">
+            <span class="flow-step">فهم النية</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">تحويلها إلى أوامر</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">العمل ضمن سلطة واضحة</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">الالتزام بالسياسات</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">تنفيذ الأفعال</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">تسجيل الأدلة</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">قياس النتائج</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">التحقق من الأثر الاقتصادي</span>
+        </div>
+
+        <div class="statement-banner">
+            <h3 class="statement-text">
+                «From AI Intelligence → AI Execution → Economic Execution → Trusted Economic Outcomes.»
+            </h3>
+        </div>
+    </section>
+
+    <!-- SECTION 15: OUR REAL ASSET & DISCOVERY -->
+    <section class="manifesto-card reveal-card">
+        <h2>ما الذي نعتقد أنه قد يكون أصلنا الحقيقي؟</h2>
+        <p>قد تتغير المنتجات، قد تتغير المعماريات، قد تتغير النماذج، وقد تظهر تقنيات جديدة لم نتوقعها. لكننا نريد أن نبني أصلًا أكثر استدامة: <strong>«معرفة متراكمة حول كيفية جعل الذكاء الاصطناعي يعمل داخل الاقتصاد الحقيقي.»</strong></p>
+        
+        <p>كل تجربة تضيف معرفة، كل فشل يحدد حدًا، كل نتيجة تضيف دليلًا، كل تنفيذ يولد بيانات، وكل بيانات تساعد على بناء Execution Intelligence أفضل.</p>
+
+        <div class="flow-chain">
+            <span class="flow-step">Execution</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">Data</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">Learning</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">Intelligence</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">Better Execution</span>
+            <span class="flow-arrow">←</span>
+            <span class="flow-step">Better Outcomes</span>
+        </div>
+
+        <p>إن نجح هذا التراكم، فقد يصبح واحدًا من أهم أصول أوامركم على المدى الطويل.</p>
+    </section>
+
+    <!-- SECTION 16: AMBITION & FINAL CONCLUSION -->
+    <section class="manifesto-card reveal-card">
+        <h2>طموحنا وغايتنا</h2>
+        <p>نحن نعتقد أننا نرى تحولًا اقتصاديًا ناشئًا: انتقال الذكاء الاصطناعي من إنتاج الذكاء والمعلومات إلى المشاركة في تنفيذ الأوامر والغايات الاقتصادية في إطار Command Economy of AI™.</p>
+        <p>لكننا لا ندعي أن المستقبل قد كُتب. بل نعتقد أن المهمة الحقيقية تبدأ الآن. مهمتنا هي اكتشاف الاختناقات، ما يجب أن يكون مستقلًا أو موحدًا، أين توجد الحوكمة والتحقق، وأي طبقة تستحق أن تصبح بنية تحتية.</p>
+
+        <p>لا نريد فقط أن نبني شركة ناجحة في عصر الذكاء الاصطناعي، نريد أن نساهم في فهم وبناء الطبقات التي قد يحتاجها الاقتصاد عندما يصبح الذكاء الاصطناعي قادرًا على العمل، لا مجرد الإجابة.</p>
+        <p>قد تبدأ الرحلة بـSmart Hand، وقد تتغير المعمارية أو المنتج، وقد تقودنا الأدلة إلى مكان لم نتوقعه. لكن الغاية ثابتة:</p>
+
+        <div class="highlight-quote">
+            <p>«بناء البنية التحتية التي تساعد على تحويل الذكاء الاصطناعي من قدرة على التفكير إلى قدرة على التنفيذ الاقتصادي الموثوق وتحقيق النتائج القابلة للتحقق.»</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <h3 style="color: var(--accent); font-size: 1.5rem; margin-bottom: 5px;">Ouamarkom™</h3>
+            <p style="color: var(--gold); font-weight: 800; font-size: 1.1rem; margin-top: 0;">
+                Commit to the Outcome. Test the Architecture. Follow the Evidence.<br>
+                <span style="font-size: 0.95rem; font-weight: normal; color: var(--text-main);">التزم بالنتيجة. اختبر المعمارية. واتبع الأدلة.</span>
+            </p>
+            <p style="color: var(--text-dim); margin-top: 15px;">لأننا لا نحاول أن نكون الشركة التي تعرف الإجابة مسبقًا... <strong>«نريد أن نكون الشركة التي تصل إلى الإجابة الصحيحة أسرع من الجميع.»</strong></p>
+        </div>
+    </section>
+
+    <!-- SECTION 17: THE ULTIMATE QUESTION BANNER -->
+    <section class="statement-banner reveal-card">
+        <p style="color: var(--text-dim); font-size: 0.95rem; margin-bottom: 10px;">قد لا يكون مستقبل الذكاء الاصطناعي هو السؤال: "What can AI know?" ولا حتى: "What can AI do?" بل السؤال الأكبر:</p>
+        <h2 class="statement-text">
+            «What can the economy reliably accomplish when intelligence becomes executable?»
+        </h2>
+        <p style="color: var(--gold); font-size: 1.1rem; font-weight: 800; margin-top: 15px;">وهذا هو السؤال الذي نبني حوله أوامركم.</p>
+        <p style="color: var(--accent); font-size: 0.9rem; margin-bottom: 0;">Ouamarkom™ | Exploring the Infrastructure of the Command Economy of AI™</p>
+    </section>
+
+    <!-- FOOTER CTA -->
+    <section class="footer-cta reveal-card">
+        <h2>كن من رياديي <span>العصر الجديد</span> واحجز مكانك</h2>
+        <div class="btn-group">
+            <a href="/#register" class="btn-cta-primary">انضم إلى القائمة الذهبية للشركاء</a>
+            <a href="/founder" class="btn-cta-secondary">عن المؤسس والعقل التشغيلي</a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="footer-bottom-container" dir="rtl">
+        <p>© 2026 أوامركم. جميع الحقوق محفوظة.</p>
+        <div class="footer-legal-links">
+            <a href="/intellectual-property">الملكية الفكرية</a>
+            <span class="footer-legal-separator">·</span>
+            <a href="mailto:contact@ouamarkom.com">تواصل معنا</a>
+        </div>
+    </div>
+</footer>
+
+<script src="/script.js" defer></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const revealCards = document.querySelectorAll('.reveal-card');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.05, rootMargin: "0px 0px -20px 0px" });
+
+        revealCards.forEach(card => revealObserver.observe(card));
+    });
+</script>
+</body>
+</html>
