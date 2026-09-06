@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Hand™ Framework | Conceptual Framework for AI Execution Infrastructure - Ouamarkom Research Lab</title>
-    <meta name="description" content="The Smart Hand™ Framework is a foundational conceptual framework defining the 7 layers of AI Execution Infrastructure, connecting human intent to intelligent economic execution.">
-    <meta name="keywords" content="Smart Hand Framework, AI Execution Infrastructure, Intent Understanding, Command Engine, Command Graph, Agent Network, Outcome Intelligence, Ouamarkom Research Lab, CEAI">
+    <title>CE-AI Framework v0.1 | The Command Economy of AI™ - Ouamarkom Research Lab</title>
+    <meta name="description" content="The Command Economy of AI™ (CE-AI v0.1) is a reference framework for governed AI-driven economic execution, connecting human intent to verified economic outcomes through Smart Hand™ execution infrastructure.">
+    <meta name="keywords" content="CE-AI Framework, Command Economy of AI, AI Execution Infrastructure, Smart Hand, Institutional Gateway, Intent Understanding, Command Graph, Earned Autonomy, Outcome Verification, Ouamarkom Research Lab">
     <meta name="robots" content="index, follow">
     
     <!-- Hreflang & Canonical -->
@@ -17,8 +17,8 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:site_name" content="Ouamarkom" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Smart Hand™ Framework | AI Execution Infrastructure" />
-    <meta property="og:description" content="The conceptual and architectural framework transforming artificial intelligence from reasoning and content generation into coordinated economic execution." />
+    <meta property="og:title" content="CE-AI Framework v0.1 | The Command Economy of AI™" />
+    <meta property="og:description" content="A Reference Framework for Governed AI-Driven Economic Execution by Ouamarkom Research Lab." />
     <meta property="og:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg" />
     <meta property="og:url" content="https://ouamarkom.com/en/framework/" />
     <meta property="og:locale" content="en_US" />
@@ -26,8 +26,8 @@
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Smart Hand™ Framework | AI Execution Infrastructure">
-    <meta name="twitter:description" content="The conceptual and architectural framework transforming artificial intelligence from reasoning and content generation into coordinated economic execution.">
+    <meta name="twitter:title" content="CE-AI Framework v0.1 | The Command Economy of AI™">
+    <meta name="twitter:description" content="A Reference Framework for Governed AI-Driven Economic Execution by Ouamarkom Research Lab.">
     <meta name="twitter:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg">
     <meta name="theme-color" content="#040916">
 
@@ -42,11 +42,11 @@
           "@type": "TechArticle",
           "@id": "https://ouamarkom.com/en/framework/#article",
           "url": "https://ouamarkom.com/en/framework/",
-          "name": "Smart Hand™ Framework - Conceptual Framework for AI Execution Infrastructure",
-          "headline": "Smart Hand™ Framework: From Human Intent to Intelligent Economic Execution",
-          "description": "A foundational conceptual framework defining the architectural layers required to convert human intent into intelligent economic execution.",
+          "name": "CE-AI Framework v0.1 - The Command Economy of AI™",
+          "headline": "The Command Economy of AI™: A Reference Framework for Governed AI-Driven Economic Execution",
+          "description": "A foundational research and reference architecture defining governed AI execution infrastructure, Institutional Gateway controls, and verified economic outcomes.",
           "inLanguage": "en",
-          "version": "1.0",
+          "version": "0.1",
           "author": {
             "@type": "Organization",
             "name": "Ouamarkom Research Lab",
@@ -85,7 +85,6 @@
         body {
             background-color: var(--primary);
             color: var(--text-main);
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             margin: 0;
             text-align: left;
             line-height: 1.6;
@@ -233,6 +232,14 @@
             line-height: 1.3;
         }
 
+        .manifesto-card h3 {
+            color: var(--gold);
+            font-size: clamp(1.1rem, 3vw, 1.35rem);
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
         .manifesto-card p {
             color: var(--text-main);
             font-size: clamp(0.98rem, 2.5vw, 1.08rem);
@@ -259,14 +266,14 @@
             background: linear-gradient(135deg, rgba(4, 9, 22, 0.9) 0%, rgba(230, 153, 45, 0.12) 100%);
             border: 1px solid rgba(230, 153, 45, 0.35);
             border-radius: 24px;
-            padding: clamp(30px, 5vw, 45px) 20px;
-            margin: 35px auto;
+            padding: clamp(25px, 5vw, 40px) 20px;
+            margin: 30px auto;
             text-align: center;
         }
 
         .statement-text {
             color: var(--accent);
-            font-size: clamp(1.25rem, 4vw, 2.0rem);
+            font-size: clamp(1.2rem, 3.8vw, 1.85rem);
             font-weight: 900;
             margin: 0;
             line-height: 1.45;
@@ -316,9 +323,10 @@
 
         .engine-card h3, .pillar-card h3, .research-card h3 {
             color: var(--accent);
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             font-weight: 800;
             margin-bottom: 12px;
+            margin-top: 0;
         }
 
         .engine-card p, .pillar-card p, .research-card p {
@@ -331,11 +339,26 @@
         .example-box {
             background: var(--brand-orange-subtle);
             border-left: 3px solid var(--accent);
-            padding: 14px 18px;
+            padding: 16px 20px;
             border-radius: 8px;
-            margin-top: 14px;
-            font-size: 0.92rem;
+            margin-top: 16px;
+            margin-bottom: 16px;
+            font-size: 0.94rem;
             color: var(--text-main);
+        }
+
+        .code-block-container {
+            background: rgba(2, 6, 16, 0.85);
+            border: 1px solid rgba(230, 153, 45, 0.25);
+            border-radius: 16px;
+            padding: 20px;
+            font-family: 'IBM Plex Mono', Consolas, Monaco, monospace;
+            font-size: 0.85rem;
+            color: var(--gold);
+            overflow-x: auto;
+            white-space: pre;
+            line-height: 1.5;
+            margin: 20px 0;
         }
 
         /* Flow Diagram Styling */
@@ -343,19 +366,19 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 10px;
-            margin: 35px auto;
-            max-width: 480px;
+            gap: 8px;
+            margin: 30px auto;
+            max-width: 520px;
         }
 
         .flow-node {
             background: linear-gradient(135deg, rgba(10, 25, 47, 0.9) 0%, rgba(4, 9, 22, 0.95) 100%);
             border: 1px solid var(--accent);
             color: var(--gold);
-            padding: 14px 28px;
-            border-radius: 14px;
+            padding: 12px 24px;
+            border-radius: 12px;
             font-weight: 800;
-            font-size: 1.05rem;
+            font-size: 0.98rem;
             text-align: center;
             width: 100%;
             box-sizing: border-box;
@@ -370,7 +393,7 @@
 
         .flow-arrow {
             color: var(--accent);
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: 900;
             line-height: 1;
         }
@@ -414,6 +437,7 @@
             font-size: clamp(1.2rem, 3.5vw, 1.55rem);
             font-weight: 800;
             margin-bottom: 14px;
+            margin-top: 0;
         }
 
         .phase-card p {
@@ -431,7 +455,7 @@
         .custom-list {
             list-style: none;
             padding: 0;
-            margin: 15px 0 0;
+            margin: 15px 0;
         }
 
         .custom-list li {
@@ -507,6 +531,33 @@
 
         .comp-table tr:hover td {
             background: rgba(230, 153, 45, 0.05);
+        }
+
+        /* Metadata Box */
+        .metadata-box {
+            background: rgba(10, 25, 47, 0.6);
+            border: 1px solid rgba(230, 153, 45, 0.25);
+            border-radius: 18px;
+            padding: 20px 24px;
+            margin-bottom: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            font-size: 0.9rem;
+        }
+
+        .metadata-item span {
+            display: block;
+            color: var(--text-dim);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 3px;
+        }
+
+        .metadata-item strong {
+            color: var(--gold);
+            font-weight: 700;
         }
 
         /* Footer CTA */
@@ -648,467 +699,820 @@
     
     <!-- Hero Header -->
     <header class="hero-manifesto">
-        <span class="tagline-badge">Ouamarkom Research Lab | Version 1.0</span>
+        <span class="tagline-badge">CE-AI Framework v0.1 | Reference Framework</span>
         
-        <h1>Smart Hand™ Framework<br><span>The Conceptual Framework for AI Execution Infrastructure</span></h1>
+        <h1>The Command Economy of AI™<br><span>CE-AI Framework v0.1</span></h1>
         
         <p class="subtitle">
-            From Human Intent to Intelligent Economic Execution.
+            A Reference Framework for Governed AI-Driven Economic Execution
         </p>
     </header>
 
-    <!-- SECTION 1: EXECUTIVE SUMMARY & FOUNDATIONAL THESIS -->
-    <section class="manifesto-card reveal-card">
-        <h2>Executive Summary</h2>
-        <p>The rapid advancement of artificial intelligence has fundamentally changed how organizations generate knowledge, analyze information, and support decision-making.</p>
-        <p>However, <strong>intelligence alone does not produce economic value.</strong> Economic value emerges only when intelligence is transformed into coordinated execution.</p>
-        <p>The <strong>Smart Hand™ Framework</strong> introduces a conceptual model for this transformation. It defines the architectural layers required to convert human intent into intelligent economic execution, creating a structured bridge between AI reasoning, enterprise systems, and measurable business outcomes.</p>
-        <p>Rather than viewing AI as a collection of isolated models or assistants, the framework positions AI as an execution infrastructure capable of orchestrating goals, workflows, autonomous agents, and organizational operations.</p>
+    <!-- METADATA HEADER CARD -->
+    <div class="metadata-box reveal-card">
+        <div class="metadata-item">
+            <span>Organization</span>
+            <strong>Ouamarkom™</strong>
+        </div>
+        <div class="metadata-item">
+            <span>Experimental System</span>
+            <strong>Smart Hand™</strong>
+        </div>
+        <div class="metadata-item">
+            <span>Architecture Focus</span>
+            <strong>AI Execution Infrastructure</strong>
+        </div>
+        <div class="metadata-item">
+            <span>Status & Version</span>
+            <strong>Research & Experimental (v0.1)</strong>
+        </div>
+        <div class="metadata-item">
+            <span>Date</span>
+            <strong>September 2026</strong>
+        </div>
+        <div class="metadata-item">
+            <span>Geographic Ambition</span>
+            <strong>Saudi Arabia → Global</strong>
+        </div>
+    </div>
 
-        <div class="highlight-quote" style="margin-top: 25px;">
-            <h3 style="color: var(--accent); margin-top: 0; font-size: 1.2rem; font-weight: 800;">Foundational Thesis</h3>
-            <p>In the AI Economy:</p>
-            <p style="color: var(--gold); font-size: 1.1rem; margin-top: 6px;">• AI Models represent the Brain.</p>
-            <p style="color: var(--gold); font-size: 1.1rem; margin-top: 4px;">• Smart Hand™ represents the Execution Layer.</p>
-            <p style="margin-top: 10px; font-weight: 400; color: var(--text-dim);">Just as the human brain requires hands to transform thought into physical action, AI models require an execution infrastructure capable of translating intelligence into coordinated economic activity. Knowledge alone creates no measurable value. Execution does.</p>
+    <!-- SECTION 1: ABSTRACT & PURPOSE -->
+    <section class="manifesto-card reveal-card">
+        <h2>1. Abstract</h2>
+        <p>The <strong>Command Economy of AI™ (CE-AI)</strong> is a research and architectural framework proposed by <strong>Ouamarkom™</strong> for studying the transition from AI systems that primarily generate intelligence to AI systems capable of participating in governed economic execution.</p>
+        
+        <div class="highlight-quote">
+            <p>«AI capability does not automatically create institutional authority, and AI-generated actions do not automatically constitute verified economic outcomes.»</p>
+        </div>
+
+        <p>As AI systems become increasingly capable of reasoning, planning, using tools, coordinating agents, and taking actions, institutions require mechanisms to determine:</p>
+        
+        <ul class="custom-list">
+            <li>what the AI is being asked to accomplish;</li>
+            <li>who or what authorized the command;</li>
+            <li>what policies and constraints apply;</li>
+            <li>what the AI is permitted to execute;</li>
+            <li>what actions were actually performed;</li>
+            <li>what evidence was produced;</li>
+            <li>what economic event resulted;</li>
+            <li>whether the intended outcome was achieved; and</li>
+            <li>what can be learned from the execution.</li>
+        </ul>
+
+        <p>CE-AI therefore proposes an architectural chain:</p>
+
+        <div class="statement-banner" style="margin: 20px 0; padding: 20px 10px;">
+            <p class="statement-text" style="font-size: clamp(0.95rem, 2.5vw, 1.25rem);">
+                Intent → Command → Intelligence → Authority → Governance → Execution → Evidence → Verification → Outcome → Learning
+            </p>
+        </div>
+
+        <p>The framework does not claim that this is the final architecture of AI-driven economies. Instead:</p>
+        <p style="font-weight: 700; color: var(--gold);">«CE-AI is a hypothesis-driven framework for discovering the infrastructure required for trusted AI-driven economic execution.»</p>
+
+        <h2 style="margin-top: 40px;">2. Purpose</h2>
+        <p>The purpose of CE-AI v0.1 is to provide a common conceptual and architectural language for designing and testing systems in which AI participates in meaningful economic activity.</p>
+        <p>The framework seeks to separate six concepts that are frequently combined:</p>
+
+        <div class="grid-3">
+            <div class="pillar-card">
+                <h3>1. Intelligence</h3>
+                <p>Reasoning, planning, prediction, and agent coordination capabilities.</p>
+            </div>
+            <div class="pillar-card">
+                <h3>2. Authority</h3>
+                <p>Institutional delegation, permissions, policies, and explicit boundaries.</p>
+            </div>
+            <div class="pillar-card">
+                <h3>3. Execution</h3>
+                <p>Translating decisions into actual operational actions across real systems.</p>
+            </div>
+            <div class="pillar-card">
+                <h3>4. Evidence</h3>
+                <p>Audit logs, API responses, records, and verifiable data artifacts.</p>
+            </div>
+            <div class="pillar-card">
+                <h3>5. Economic Outcome</h3>
+                <p>Real-world revenue, savings, efficiency, or financial transaction impact.</p>
+            </div>
+            <div class="pillar-card">
+                <h3>6. Trust</h3>
+                <p>Confidence derived from governance, verification, and repeatable results.</p>
+            </div>
+        </div>
+
+        <p style="margin-top: 15px;">This separation allows researchers and builders to ask more precise questions. For example:</p>
+        <div class="example-box">
+            <p style="margin-bottom: 6px;">• <em>«Can an AI system perform an action?»</em> is different from:</p>
+            <p style="margin-bottom: 6px;">• <em>«Is the AI authorized to perform the action?»</em> which is different from:</p>
+            <p style="margin-bottom: 6px;">• <em>«Can the action be proven?»</em> which is different from:</p>
+            <p style="margin-bottom: 0;">• <em>«Did the action create the intended economic outcome?»</em></p>
         </div>
     </section>
 
-    <!-- SECTION 2: ARCHITECTURAL FLOW -->
+    <!-- SECTION 2: CORE THESIS, SCOPE & WHAT CE-AI IS NOT -->
     <section class="manifesto-card reveal-card">
-        <h2>The Smart Hand™ Architectural Flow</h2>
-        <p>The framework consists of seven interconnected layers. Each layer transforms human objectives into increasingly executable forms until measurable economic outcomes are achieved:</p>
+        <h2>3. Core Thesis</h2>
+        <p>CE-AI is based on the following research thesis:</p>
+        
+        <div class="highlight-quote">
+            <p>«As AI systems become capable of executing increasingly meaningful actions, economic value may increasingly depend on infrastructure that connects AI intelligence to institutional authority, governed execution, evidence, verification, and measurable outcomes.»</p>
+        </div>
 
-        <div class="architecture-flow">
-            <div class="flow-node">Human Intent</div>
+        <p>This produces the following transition:</p>
+        <div class="statement-banner" style="margin: 20px 0; padding: 18px 10px;">
+            <p class="statement-text" style="font-size: clamp(0.95rem, 2.5vw, 1.25rem); color: var(--gold);">
+                AI Intelligence → AI Execution → Economic Execution → Verified Economic Outcomes
+            </p>
+        </div>
+        <p>The framework treats this transition as an empirical question. It must be validated through experiments, enterprise deployments, economic measurements, and independent adoption.</p>
+
+        <h2 style="margin-top: 40px;">4. Scope</h2>
+        <p>CE-AI v0.1 focuses specifically on AI systems capable of interacting with economic or organizational environments. Examples include systems capable of:</p>
+
+        <div class="grid-2">
+            <ul class="custom-list">
+                <li>Managing sales processes;</li>
+                <li>Interacting with customers;</li>
+                <li>Initiating procurement workflows;</li>
+                <li>Managing inventory;</li>
+                <li>Processing invoices;</li>
+                <li>Coordinating logistics;</li>
+            </ul>
+            <ul class="custom-list">
+                <li>Allocating resources;</li>
+                <li>Launching marketing campaigns;</li>
+                <li>Preparing or executing financial operations;</li>
+                <li>Operating enterprise software;</li>
+                <li>Coordinating other AI agents.</li>
+            </ul>
+        </div>
+
+        <p>The framework does not require complete autonomy. A CE-AI system may include: human approval, partial automation, deterministic rules, AI agents, traditional software, external APIs, and enterprise systems.</p>
+
+        <h2 style="margin-top: 40px;">5. What CE-AI Is Not</h2>
+        <p>CE-AI is <strong>not</strong>:</p>
+        <div class="grid-2">
+            <div class="engine-card">
+                <ul class="custom-list">
+                    <li>A foundation model or AI model;</li>
+                    <li>An isolated agent framework;</li>
+                    <li>A simple workflow automation product;</li>
+                    <li>A conversational chatbot;</li>
+                </ul>
+            </div>
+            <div class="engine-card">
+                <ul class="custom-list">
+                    <li>A replacement for enterprise software;</li>
+                    <li>A claim that AI should receive unrestricted authority;</li>
+                    <li>A claim that autonomous economic execution is already mature;</li>
+                    <li>A finalized technical standard.</li>
+                </ul>
+            </div>
+        </div>
+        <p style="margin-top: 15px; font-weight: 700; color: var(--accent);">CE-AI is a framework for understanding and designing the infrastructure surrounding AI-driven economic execution.</p>
+
+        <h2 style="margin-top: 40px;">6. Fundamental Principle</h2>
+        <div class="statement-banner">
+            <p class="statement-text">Capability ≠ Authority ≠ Execution ≠ Outcome</p>
+        </div>
+        <p>An AI system may possess the technical capability to perform an action without having the authority to perform it. Likewise, an authorized action may be executed without producing the intended economic outcome.</p>
+
+        <div class="architecture-flow" style="margin-top: 25px;">
+            <div class="flow-node">Capability</div>
             <div class="flow-arrow">▼</div>
-            <div class="flow-node">Intent Understanding</div>
+            <div class="flow-node">Authority</div>
             <div class="flow-arrow">▼</div>
-            <div class="flow-node">Command Engine</div>
+            <div class="flow-node">Permission</div>
             <div class="flow-arrow">▼</div>
-            <div class="flow-node">Command Graph</div>
+            <div class="flow-node">Execution</div>
             <div class="flow-arrow">▼</div>
-            <div class="flow-node">Agent Network</div>
+            <div class="flow-node">Evidence</div>
             <div class="flow-arrow">▼</div>
-            <div class="flow-node">Execution Layer</div>
+            <div class="flow-node">Economic Event</div>
             <div class="flow-arrow">▼</div>
-            <div class="flow-node">Outcome Intelligence</div>
+            <div class="flow-node">Verification</div>
+            <div class="flow-arrow">▼</div>
+            <div class="flow-node">Outcome</div>
         </div>
     </section>
 
-    <!-- SECTION 3: THE 7 LAYERS IN DETAIL -->
+    <!-- SECTION 3: THE 10-STAGE EXECUTION MODEL -->
     <section class="manifesto-card reveal-card">
-        <h2>The Seven Layers in Detail</h2>
+        <h2>7. The CE-AI Execution Model</h2>
+        <p>The reference model consists of ten conceptual stages converting human intent into verified economic learning:</p>
 
         <div class="phase-grid">
             
-            <!-- Layer 1 -->
+            <!-- Stage 7.1 -->
             <div class="phase-card">
-                <span class="phase-tag">Layer 1</span>
-                <h3 class="phase-title">Human Intent</h3>
-                <p>Human Intent represents the starting point of every execution process. Unlike traditional software systems that begin with tools, menus, or predefined workflows, Smart Hand™ begins with the desired outcome.</p>
+                <span class="phase-tag">Stage 7.1</span>
+                <h3 class="phase-title">Intent</h3>
+                <p>A human or institution defines an objective describing the desired state rather than every implementation step.</p>
                 <div class="example-box">
-                    <strong>Typical Examples:</strong>
-                    <ul class="custom-list">
-                        <li>Launch a new AI product within 90 days.</li>
-                        <li>Increase annual sales by 20%.</li>
-                        <li>Automate customer support operations.</li>
-                        <li>Reduce operational costs.</li>
-                        <li>Build a complete market-entry strategy.</li>
-                    </ul>
+                    <strong>Example:</strong> «Increase monthly revenue by 10%.»
                 </div>
-                <p style="margin-top: 12px; font-weight: 700; color: var(--accent);">Within this framework, intent becomes a strategic economic asset rather than merely a user request.</p>
             </div>
 
-            <!-- Layer 2 -->
+            <!-- Stage 7.2 -->
             <div class="phase-card">
-                <span class="phase-tag">Layer 2</span>
-                <h3 class="phase-title">Intent Understanding</h3>
-                <p>The Intent Understanding layer interprets and structures human objectives into an operational model. Its primary responsibilities include:</p>
-                <ul class="custom-list">
-                    <li>Understanding strategic objectives.</li>
-                    <li>Identifying contextual information.</li>
-                    <li>Detecting operational constraints.</li>
-                    <li>Defining priorities.</li>
-                    <li>Estimating required resources.</li>
-                    <li>Establishing measurable success criteria.</li>
-                </ul>
+                <span class="phase-tag">Stage 7.2</span>
+                <h3 class="phase-title">Command</h3>
+                <p>Intent is represented as an executable or interpretable command structuring context, priorities, and boundaries.</p>
                 <div class="example-box">
-                    <strong>Output:</strong> An Intent Profile, serving as the operational foundation for every subsequent stage.
+                    <strong>Example:</strong> «Develop and execute an approved customer reactivation strategy targeting a 10% increase in monthly revenue.»
+                    <br><br>
+                    <strong>Key Elements:</strong> Objective, Context, Constraints, Priority, Time Horizon, Relevant Resources, Authority Context.
                 </div>
             </div>
 
-            <!-- Layer 3 -->
+            <!-- Stage 7.3 -->
             <div class="phase-card">
-                <span class="phase-tag">Layer 3</span>
-                <h3 class="phase-title">Command Engine</h3>
-                <p>The Command Engine functions as the logical core of the framework. Its responsibility is transforming natural language objectives into executable operational commands. Core capabilities include:</p>
-                <ul class="custom-list">
-                    <li>Goal decomposition.</li>
-                    <li>Command generation.</li>
-                    <li>Priority sequencing.</li>
-                    <li>Resource mapping.</li>
-                    <li>Workflow preparation.</li>
-                </ul>
-                <p style="margin-top: 10px; font-weight: 700; color: var(--gold);">At this stage, human language becomes machine-operational language.</p>
+                <span class="phase-tag">Stage 7.3</span>
+                <h3 class="phase-title">Intelligence</h3>
+                <p>AI systems interpret the command and determine possible strategies (reasoning, planning, prediction, classification, optimization, agent coordination).</p>
+                <p style="color: var(--gold); font-weight: 700;">Answers: <em>«What could be done?»</em> (Does not automatically answer <em>«What may be done?»</em>)</p>
             </div>
 
-            <!-- Layer 4 -->
+            <!-- Stage 7.4 -->
             <div class="phase-card">
-                <span class="phase-tag">Layer 4</span>
-                <h3 class="phase-title">Command Graph</h3>
-                <p>Complex objectives cannot be executed through isolated instructions. The Command Graph converts commands into an interconnected execution network. Each node represents a task, a decision, a dependency, or a business operation.</p>
-                <p>The graph defines relationships, execution order, dependencies, and coordination across the entire operational process.</p>
-                <p style="font-weight: 700; color: var(--accent);">Rather than managing individual tasks, organizations manage dynamic execution networks.</p>
+                <span class="phase-tag">Stage 7.4</span>
+                <h3 class="phase-title">Authority</h3>
+                <p>Authority determines whether an AI system is permitted to act, deriving from human delegation, organizational role, policy, financial limits, or regulatory permissions.</p>
+                <p style="color: var(--accent); font-weight: 700;">Answers: <em>«Who has permitted this action?»</em></p>
             </div>
 
-            <!-- Layer 5 -->
+            <!-- Stage 7.5 -->
             <div class="phase-card">
-                <span class="phase-tag">Layer 5</span>
-                <h3 class="phase-title">Agent Network</h3>
-                <p>The Agent Network distributes execution responsibilities across specialized AI agents. Examples include:</p>
-                <div class="grid-2">
-                    <ul class="custom-list">
-                        <li>Marketing Agent.</li>
-                        <li>Sales Agent.</li>
-                        <li>Finance Agent.</li>
-                        <li>Operations Agent.</li>
-                    </ul>
-                    <ul class="custom-list">
-                        <li>Customer Success Agent.</li>
-                        <li>Research Agent.</li>
-                        <li>Knowledge Agent.</li>
-                    </ul>
+                <span class="phase-tag">Stage 7.5</span>
+                <h3 class="phase-title">Governance</h3>
+                <p>Determines the operational conditions and boundaries under which execution may occur (spending limits, data access rules, customer communication policies, segregation of duties, risk thresholds).</p>
+                <p style="color: var(--gold); font-weight: 700;">Answers: <em>«Under what conditions may the action occur?»</em></p>
+            </div>
+
+            <!-- Stage 7.6 -->
+            <div class="phase-card">
+                <span class="phase-tag">Stage 7.6</span>
+                <h3 class="phase-title">Execution</h3>
+                <p>Converts authorized decisions into real-world actions across enterprise systems, APIs, agents, payment gateways, CRM, ERP, or human workflows.</p>
+                <p style="color: var(--accent); font-weight: 700;">Answers: <em>«What was actually done?»</em></p>
+            </div>
+
+            <!-- Stage 7.7 -->
+            <div class="phase-card">
+                <span class="phase-tag">Stage 7.7</span>
+                <h3 class="phase-title">Evidence</h3>
+                <p>Execution produces verifiable data artifacts (system events, transaction records, API responses, timestamps, approvals, logs, documents, financial receipts).</p>
+                <p style="color: var(--gold); font-weight: 700;">Answers: <em>«What can demonstrate that the action occurred?»</em></p>
+            </div>
+
+            <!-- Stage 7.8 -->
+            <div class="phase-card">
+                <span class="phase-tag">Stage 7.8</span>
+                <h3 class="phase-title">Economic Event</h3>
+                <p>The execution generates a real economic event connecting software execution to economic reality (payment received, purchase completed, sale generated, cost reduced, inventory moved, contract executed).</p>
+            </div>
+
+            <!-- Stage 7.9 -->
+            <div class="phase-card">
+                <span class="phase-tag">Stage 7.9</span>
+                <h3 class="phase-title">Verification</h3>
+                <p>Evaluates whether the claimed event and outcome can be independently supported by evidence across invoice status, accounting records, payment processors, and bank confirmations.</p>
+                <p style="color: var(--accent); font-weight: 700;">Answers: <em>«Can the claimed execution and outcome be independently supported?»</em></p>
+            </div>
+
+            <!-- Stage 7.10 -->
+            <div class="phase-card">
+                <span class="phase-tag">Stage 7.10</span>
+                <h3 class="phase-title">Learning</h3>
+                <p>Verified outcomes feed information back into future decisions, creating a continuous organizational intelligence loop:</p>
+                <div class="architecture-flow" style="margin: 15px auto; max-width: 280px; font-size: 0.85rem;">
+                    <div>Intent → Decision → Authorization → Execution → Outcome → Evidence → Verification → Learning → Next Decision ↺</div>
                 </div>
-                <p style="margin-top: 10px;">These agents operate collaboratively rather than independently, sharing information and coordinating execution toward common organizational objectives.</p>
-            </div>
-
-            <!-- Layer 6 -->
-            <div class="phase-card">
-                <span class="phase-tag">Layer 6</span>
-                <h3 class="phase-title">Execution Layer</h3>
-                <p>The Execution Layer transforms execution plans into operational activity. Its responsibilities include:</p>
-                <ul class="custom-list">
-                    <li>Workflow orchestration.</li>
-                    <li>Enterprise system integration.</li>
-                    <li>Process automation.</li>
-                    <li>Operational monitoring.</li>
-                    <li>Exception handling.</li>
-                    <li>Continuous execution management.</li>
-                </ul>
-                <p style="margin-top: 10px; font-weight: 700; color: var(--gold);">This layer represents the operational interface between AI intelligence and real-world organizational systems.</p>
-            </div>
-
-            <!-- Layer 7 -->
-            <div class="phase-card">
-                <span class="phase-tag">Layer 7</span>
-                <h3 class="phase-title">Outcome Intelligence</h3>
-                <p>Execution without measurement cannot generate continuous improvement. Outcome Intelligence evaluates execution performance using measurable indicators such as:</p>
-                <ul class="custom-list">
-                    <li>Key Performance Indicators (KPIs).</li>
-                    <li>Revenue impact.</li>
-                    <li>Productivity improvements.</li>
-                    <li>Operational efficiency.</li>
-                    <li>Time savings & resource utilization.</li>
-                    <li>Business outcomes.</li>
-                </ul>
-                <p style="margin-top: 12px;">The resulting data continuously improves future execution through organizational learning and decision memory.</p>
             </div>
 
         </div>
     </section>
 
-    <!-- SECTION 4: THE 7 FOUNDATIONAL PRINCIPLES -->
+    <!-- SECTION 4: REFERENCE ARCHITECTURE & CORE MODULES -->
     <section class="manifesto-card reveal-card">
-        <h2>The Seven Principles of Smart Hand™</h2>
-        <p>The framework is built upon seven foundational principles:</p>
+        <h2>8. CE-AI Reference Architecture</h2>
+        <p>The conceptual architecture of CE-AI v0.1 defines the structural stack required for governed execution:</p>
+
+        <div class="code-block-container">
+┌─────────────────────────────────────┐
+│       HUMAN / INSTITUTION           │
+│       Intent / Objective            │
+└──────────────────┬──────────────────┘
+                   ↓
+┌─────────────────────────────────────┐
+│           INTENT LAYER              │
+│ Goals / Context / Constraints       │
+└──────────────────┬──────────────────┘
+                   ↓
+┌─────────────────────────────────────┐
+│          COMMAND LAYER              │
+│ Command / Plan / Command Graph      │
+└──────────────────┬──────────────────┘
+                   ↓
+┌─────────────────────────────────────┐
+│       INTELLIGENCE LAYER            │
+│ Models / Agents / Reasoning         │
+└──────────────────┬──────────────────┘
+                   ↓
+┌─────────────────────────────────────┐
+│      INSTITUTIONAL GATEWAY          │
+│ Identity / Authority / Policy       │
+│ Risk / Approval / Escalation        │
+└──────────────────┬──────────────────┘
+                   ↓
+┌─────────────────────────────────────┐
+│          EXECUTION LAYER            │
+│             Smart Hand™             │
+│ Agents / Tools / APIs / Humans      │
+└──────────────────┬──────────────────┘
+                   ↓
+┌─────────────────────────────────────┐
+│        ENTERPRISE ENVIRONMENT       │
+│ CRM / ERP / Finance / APIs / People │
+└──────────────────┬──────────────────┘
+                   ↓
+┌─────────────────────────────────────┐
+│          EVIDENCE LAYER              │
+│ Logs / Events / Transactions        │
+└──────────────────┬──────────────────┘
+                   ↓
+┌─────────────────────────────────────┐
+│       OUTCOME VERIFICATION           │
+│ Evidence / Attribution / Validation │
+└──────────────────┬──────────────────┘
+                   ↓
+┌─────────────────────────────────────┐
+│     TRUSTED ECONOMIC OUTCOME         │
+└──────────────────┬──────────────────┘
+                   ↓
+             LEARNING LOOP
+                   │
+                   └──────────────→ Next Intent
+        </div>
+
+        <h2 style="margin-top: 40px;">9. Smart Hand™</h2>
+        <p>Within CE-AI, <strong>Smart Hand™</strong> is the principal experimental execution system developed by Ouamarkom. Its purpose is to test whether authorized AI intent can be converted into coordinated actions across real systems.</p>
+        
+        <div class="highlight-quote">
+            <p>«An experimental AI execution infrastructure layer connecting authorized intent to real-world operational action.»</p>
+        </div>
+
+        <p>Smart Hand™ components include: Agent Orchestration, Tool Execution, API Integration, Workflow Coordination, State Management, Execution Monitoring, Human Escalation, Recovery Mechanisms, Execution Records, and Outcome Measurement. Smart Hand™ is model-agnostic and does not depend on a single AI model.</p>
+
+        <h2 style="margin-top: 40px;">10. Institutional Gateway™</h2>
+        <p>The <strong>Institutional Gateway™</strong> represents the governance and authority boundary between AI capability and institutional action.</p>
+        
+        <div class="highlight-quote">
+            <p>Fundamental Principle: «An AI system should not acquire institutional authority merely because it possesses technical capability.»</p>
+        </div>
 
         <div class="grid-2">
-            <div class="pillar-card">
-                <h3>1. Intent Before Tools</h3>
-                <p>Execution begins with objectives rather than software interfaces or available tooling.</p>
+            <div class="engine-card">
+                <h3>Identity & Authority</h3>
+                <p>Verifies who issued or delegated the command and what authority the issuer possesses within the organization.</p>
             </div>
-            <div class="pillar-card">
-                <h3>2. Language as Operating Interface</h3>
-                <p>Natural language becomes the primary interface of economic and operational activity.</p>
+            <div class="engine-card">
+                <h3>Policy & Risk</h3>
+                <p>Evaluates applicable policies, risk thresholds, financial boundaries, and legal/compliance parameters.</p>
             </div>
-            <div class="pillar-card">
-                <h3>3. Commands as Execution Units</h3>
-                <p>Strategic and operational objectives are translated into executable command structures.</p>
+            <div class="engine-card">
+                <h3>Scope & Limits</h3>
+                <p>Restricts accessible systems, resources, operational tools, and active temporal execution windows.</p>
             </div>
-            <div class="pillar-card">
-                <h3>4. Agents as the Workforce</h3>
-                <p>Autonomous AI agents become coordinated, specialized execution participants.</p>
-            </div>
-            <div class="pillar-card">
-                <h3>5. Continuous Execution</h3>
-                <p>Execution is treated as an ongoing operational process rather than isolated tasks.</p>
-            </div>
-            <div class="pillar-card">
-                <h3>6. Outcomes Define Value</h3>
-                <p>Success is measured by measurable business results rather than completed activities.</p>
+            <div class="engine-card">
+                <h3>Approval & Escalation</h3>
+                <p>Determines when human approval is strictly required and triggers kill switches or human intervention.</p>
             </div>
         </div>
-        <div class="pillar-card" style="margin-top: 20px;">
-            <h3>7. Continuous Learning</h3>
-            <p>Every execution cycle improves future execution through accumulated organizational intelligence and Decision Capital.</p>
-        </div>
-    </section>
 
-    <!-- SECTION 5: STRATEGIC SIGNIFICANCE -->
-    <section class="manifesto-card reveal-card">
-        <h2>Strategic Significance</h2>
-        <p>The Smart Hand™ Framework establishes the conceptual foundation for:</p>
-        <ul class="custom-list">
-            <li>AI Execution Infrastructure.</li>
-            <li>Enterprise Execution Platforms.</li>
-            <li>Multi-Agent Coordination Systems.</li>
-            <li>Intelligent Workflow Orchestration.</li>
-            <li>AI Operating Systems.</li>
-            <li>The emerging Command Economy of AI (CE-AI).</li>
-        </ul>
-        <div class="highlight-quote" style="margin-top: 20px;">
-            <p>Rather than describing a single software product, the framework defines an infrastructure architecture capable of supporting an entire category of AI-powered execution systems.</p>
-        </div>
-    </section>
-
-    <!-- SECTION 6: CONCLUSION PART 1 -->
-    <article class="thesis-card reveal-card">
-        <h2 style="color: var(--accent); font-size: clamp(1.3rem, 4vw, 1.8rem); font-weight: 900; margin-bottom: 16px;">Conclusion (Part I)</h2>
-        <p>The Smart Hand™ Framework represents a new conceptual model for understanding how artificial intelligence participates in economic activity. Instead of limiting AI to reasoning, content generation, or information retrieval, the framework positions execution as the next fundamental capability of intelligent systems.</p>
-        <p style="margin-top: 15px;">By transforming human intent into coordinated execution and measurable economic outcomes, Smart Hand™ defines a new infrastructure layer for the AI Economy. Just as operating systems enabled personal computing, the Internet enabled digital communication, and cloud computing enabled the software economy, Smart Hand™ proposes an execution infrastructure designed for the next generation of artificial intelligence.</p>
-    </article>
-
-    <!-- PART TWO: COMPARATIVE ANALYSIS -->
-    <header class="hero-manifesto reveal-card" style="margin-top: 60px; padding-top: 20px;">
-        <span class="tagline-badge">Part Two | Comparative Analysis</span>
-        <h1>Methodological Comparison with Existing AI Frameworks<br><span>Positioning Smart Hand™ Within the AI Landscape</span></h1>
-    </header>
-
-    <!-- SECTION 7: EXECUTIVE OVERVIEW (COMPARISON) -->
-    <section class="manifesto-card reveal-card">
-        <h2>Executive Overview</h2>
-        <p>Artificial intelligence already includes several mature technology categories, including: Workflow Automation Platforms, Robotic Process Automation (RPA), AI Assistants, Multi-Agent Systems, Enterprise Orchestration Platforms, and AI Operating Platforms.</p>
-        <p>Each category addresses a specific part of organizational execution.</p>
-        <p>The Smart Hand™ Framework, as proposed by Ouamarkom, does not seek to replace these technologies. Instead, it provides a higher-level conceptual framework that explains how they can operate together as a unified execution architecture centered on human intent and economic outcomes.</p>
-        <p style="font-weight: 700; color: var(--accent); margin-top: 15px;">Rather than introducing a new algorithm, Smart Hand™ introduces a new way of organizing AI execution.</p>
-    </section>
-
-    <!-- SECTION 8: COMPARATIVE POSITIONING TABLE -->
-    <section class="manifesto-card reveal-card">
-        <h2>Comparative Positioning</h2>
-        <p>The following matrix outlines the conceptual positioning of Smart Hand™ relative to existing technological paradigms:</p>
+        <h2 style="margin-top: 40px;">11. Economic Authority Levels</h2>
+        <p>CE-AI defines Economic Authority as the bounded scope of economic actions an AI system is permitted to perform:</p>
 
         <div class="table-responsive">
             <table class="comp-table">
                 <thead>
                     <tr>
-                        <th>Existing Category</th>
-                        <th>Primary Focus</th>
-                        <th>Typical Output</th>
-                        <th>Smart Hand™ Perspective</th>
+                        <th>Level</th>
+                        <th>Authority Scope</th>
+                        <th>Operational Capability</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Workflow Platforms</strong></td>
-                        <td>Automating predefined workflows</td>
-                        <td>Completed workflows</td>
-                        <td>Workflows become one execution component within a broader intent-driven system</td>
+                        <td><strong>Level 0</strong></td>
+                        <td>Read-only</td>
+                        <td>Accessing data, observing workflows without modification.</td>
                     </tr>
                     <tr>
-                        <td><strong>RPA Platforms</strong></td>
-                        <td>Repetitive task automation</td>
-                        <td>Automated tasks</td>
-                        <td>Automation is treated as one execution capability rather than the entire system</td>
+                        <td><strong>Level 1</strong></td>
+                        <td>Analyze</td>
+                        <td>Generating insights, reporting, and evaluating operational state.</td>
                     </tr>
                     <tr>
-                        <td><strong>AI Assistants</strong></td>
-                        <td>Question answering and content generation</td>
-                        <td>Information and recommendations</td>
-                        <td>Information becomes an input to execution rather than the final output</td>
+                        <td><strong>Level 2</strong></td>
+                        <td>Recommend</td>
+                        <td>Proposing strategic plans or actions for human consideration.</td>
                     </tr>
                     <tr>
-                        <td><strong>Multi-Agent Systems</strong></td>
-                        <td>Coordination among autonomous agents</td>
-                        <td>Collaborative agent behavior</td>
-                        <td>Agent collaboration is integrated into a larger execution architecture governed by intent</td>
+                        <td><strong>Level 3</strong></td>
+                        <td>Prepare action</td>
+                        <td>Drafting transactions, staging API calls, setting up workflows.</td>
                     </tr>
                     <tr>
-                        <td><strong>Enterprise Software</strong></td>
-                        <td>Managing business functions</td>
-                        <td>Operational management</td>
-                        <td>Enterprise systems become execution endpoints connected through Smart Hand™</td>
+                        <td><strong>Level 4</strong></td>
+                        <td>Execute low-risk actions</td>
+                        <td>Automating reversible or low-value operational tasks.</td>
                     </tr>
                     <tr>
-                        <td><strong>AI Infrastructure</strong></td>
-                        <td>Model hosting and inference</td>
-                        <td>AI computation</td>
-                        <td>Intelligence is connected to business execution through an additional operational layer</td>
+                        <td><strong>Level 5</strong></td>
+                        <td>Execute within limits</td>
+                        <td>Autonomous execution bounded by explicit financial and policy limits.</td>
                     </tr>
+                    <tr>
+                        <td><strong>Level 6</strong></td>
+                        <td>Higher-autonomy execution</td>
+                        <td>Dynamic multi-system economic agency under adaptive monitoring.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 style="margin-top: 40px;">12. Earned Autonomy</h2>
+        <p>CE-AI proposes that AI autonomy should not be permanently fixed, but dynamically adjusted according to empirical evidence:</p>
+        
+        <div class="statement-banner" style="margin: 20px 0; padding: 18px 10px;">
+            <p class="statement-text" style="font-size: clamp(0.95rem, 2.5vw, 1.25rem); color: var(--gold);">
+                Performance → Evidence → Trust → Authority → Autonomy → Execution → Outcome ↺
+            </p>
+        </div>
+        <p style="font-weight: 700; text-align: center; color: var(--accent);">«Autonomy can be earned rather than permanently granted.»</p>
+    </section>
+
+    <!-- SECTION 5: RECORDS, VERIFICATION & OBJECTS -->
+    <section class="manifesto-card reveal-card">
+        <h2>13. Execution Record & 14. Decision Record vs Action Log</h2>
+        <p>Every meaningful execution produces a structured Execution Record enabling complete institutional reconstruction.</p>
+
+        <div class="grid-2">
+            <div class="pillar-card">
+                <h3 style="color: #ff6b6b;">Action Log (Traditional)</h3>
+                <p>Records only technical execution:</p>
+                <div class="example-box" style="margin-top: 10px;">
+                    «What happened?»
+                </div>
+            </div>
+
+            <div class="pillar-card" style="border-color: var(--accent);">
+                <h3 style="color: var(--gold);">Decision Record (CE-AI)</h3>
+                <p>Records complete governance context:</p>
+                <div class="example-box" style="margin-top: 10px;">
+                    «What happened, why, under whose authority, according to which policy, and with what evidence?»
+                </div>
+            </div>
+        </div>
+
+        <div class="code-block-container" style="margin-top: 20px;">
+Execution Record Fields:
+[Execution ID | Command ID | Intent | Issuer | Agent | Model | Context | Authority | Policy | Policy Version | Risk Level | Decision | Approval | Action | Tool | System | Timestamp | Result | Evidence | Economic Event | Outcome | Verification Status | Human Intervention]
+        </div>
+
+        <h2 style="margin-top: 40px;">15. Trusted Economic Outcomes™</h2>
+        <p>A <strong>Trusted Economic Outcome™</strong> connects economic results to verifiable execution evidence to justify institutional confidence:</p>
+
+        <div class="example-box">
+            <strong>Concrete Example:</strong>
+            <ul class="custom-list" style="margin-top: 8px;">
+                <li><strong>Target:</strong> Increase revenue from inactive customers by 10%.</li>
+                <li><strong>Execution:</strong> AI-managed reactivation campaign across CRM & Email.</li>
+                <li><strong>Observed Revenue:</strong> $127,000 collected (Baseline: $100,000 | Incremental: $27,000).</li>
+                <li><strong>Execution Cost:</strong> $4,000.</li>
+                <li><strong>Evidence Artifacts:</strong> CRM logs + Bank payment receipts + Accounting ledger entries.</li>
+                <li><strong>Verification Status:</strong> Passed & Independently Validated.</li>
+            </ul>
+        </div>
+
+        <h2 style="margin-top: 40px;">16. Economic Execution Loop & 18. Execution Intelligence</h2>
+        <p>CE-AI distinguishes a traditional static task workflow from a continuous Economic Execution Loop:</p>
+        
+        <div class="grid-2">
+            <div class="engine-card">
+                <h3>Conventional Workflow</h3>
+                <p style="color: var(--gold); font-weight: bold; margin-top: 8px;">Task A → Task B → Task C → Complete</p>
+                <p style="margin-top: 10px;">Oriented strictly around task completion.</p>
+            </div>
+            <div class="engine-card">
+                <h3>Economic Execution Loop</h3>
+                <p style="color: var(--gold); font-weight: bold; margin-top: 8px;">Goal → Decision → Authority → Execution → Outcome → Evidence → Verification → Learning ↺</p>
+                <p style="margin-top: 10px;">Oriented continuously around measurable business outcomes.</p>
+            </div>
+        </div>
+
+        <p style="margin-top: 20px;"><strong>Execution Intelligence:</strong> The organizational capability to learn from accumulated historical execution data (decisions, permissions, failures, human interventions, outcomes) to optimize future economic agency.</p>
+
+        <h2 style="margin-top: 40px;">19. Core CE-AI Objects</h2>
+        <div class="table-responsive">
+            <table class="comp-table">
+                <thead>
+                    <tr>
+                        <th>Object</th>
+                        <th>Purpose & Definition</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Intent</strong></td><td>Desired economic or institutional objective.</td></tr>
+                    <tr><td><strong>Command</strong></td><td>Structured, executable expression of intent.</td></tr>
+                    <tr><td><strong>Agent</strong></td><td>AI entity performing reasoning or task execution.</td></tr>
+                    <tr><td><strong>Authority</strong></td><td>Delegated institutional permission to act.</td></tr>
+                    <tr><td><strong>Policy</strong></td><td>Rules and boundaries governing allowed actions.</td></tr>
+                    <tr><td><strong>Decision</strong></td><td>Selected operational course of action.</td></tr>
+                    <tr><td><strong>Execution</strong></td><td>Real-world action taken across enterprise tools.</td></tr>
+                    <tr><td><strong>Evidence</strong></td><td>Auditable data supporting execution.</td></tr>
+                    <tr><td><strong>Economic Event</strong></td><td>Real-world transaction or economic occurrence.</td></tr>
+                    <tr><td><strong>Outcome</strong></td><td>Measured result relative to the original objective.</td></tr>
+                    <tr><td><strong>Verification</strong></td><td>Assessment of evidence and objective fulfillment.</td></tr>
+                    <tr><td><strong>Learning</strong></td><td>Knowledge derived to refine future execution loops.</td></tr>
                 </tbody>
             </table>
         </div>
     </section>
 
-    <!-- SECTION 9: WHAT MAKES SMART HAND DIFFERENT -->
+    <!-- SECTION 6: FOUNDATIONAL PRINCIPLES -->
     <section class="manifesto-card reveal-card">
-        <h2>What Makes Smart Hand™ Different?</h2>
-        <p>Smart Hand™ is proposed as a conceptual execution framework, not as a single software application or standalone AI model.</p>
-        <p>Its distinctive contribution lies in organizing execution around one continuous transformation:</p>
-        
-        <div class="statement-banner" style="margin: 25px 0; padding: 25px 15px;">
-            <p class="statement-text" style="font-size: clamp(1.1rem, 3vw, 1.5rem);">
-                Human Intent → Intelligent Execution → Economic Outcomes
-            </p>
+        <h2>20. Core Principles of CE-AI v0.1</h2>
+
+        <div class="grid-2">
+            <div class="pillar-card">
+                <h3>Principle 1 - Intent First</h3>
+                <p>Execution begins from defined objectives rather than isolated technical actions.</p>
+            </div>
+            <div class="pillar-card">
+                <h3>Principle 2 - Capability ≠ Authority</h3>
+                <p>Technical access does not automatically constitute institutional permission.</p>
+            </div>
+            <div class="pillar-card">
+                <h3>Principle 3 - Prior Authorization</h3>
+                <p>High-impact actions must pass through strict authority and policy controls.</p>
+            </div>
+            <div class="pillar-card">
+                <h3>Principle 4 - Observability</h3>
+                <p>Important actions must generate complete, reconstructable execution records.</p>
+            </div>
+            <div class="pillar-card">
+                <h3>Principle 5 - Evidence Required</h3>
+                <p>AI claims must be distinguished from independently verified system events.</p>
+            </div>
+            <div class="pillar-card">
+                <h3>Principle 6 - Outcomes Matter</h3>
+                <p>Task completion is not equivalent to economic value creation.</p>
+            </div>
+            <div class="pillar-card">
+                <h3>Principle 7 - Bounded Autonomy</h3>
+                <p>AI autonomy operates within explicit financial, risk, and operational limits.</p>
+            </div>
+            <div class="pillar-card">
+                <h3>Principle 8 - Earned Autonomy</h3>
+                <p>Authority expands or contracts based on empirical performance and compliance.</p>
+            </div>
+            <div class="pillar-card">
+                <h3>Principle 9 - Evidence Loyalty</h3>
+                <p>Architecture must adapt to empirical evidence rather than rigid doctrine.</p>
+            </div>
+            <div class="pillar-card">
+                <h3>Principle 10 - Earned Infrastructure</h3>
+                <p>Technologies become infrastructure through adoption, not naming.</p>
+            </div>
         </div>
 
-        <p>Rather than beginning with software, APIs, or automation rules, the framework begins with the user's objective and structures every subsequent layer around achieving measurable results.</p>
+        <h2 style="margin-top: 40px;">37. Design Principle: Least Economic Privilege</h2>
+        <p>AI systems should receive the minimum economic authority necessary to achieve their assigned objective.</p>
+        
+        <div class="example-box">
+            <strong>Example Scope Configuration (Sales Reactivation Agent):</strong>
+            <ul class="custom-list" style="margin-top: 8px;">
+                <li><strong>Access:</strong> CRM → Read/Write</li>
+                <li><strong>Email:</strong> Outbound Send → Allowed</li>
+                <li><strong>Max Discount Limit:</strong> ≤ 10%</li>
+                <li><strong>Budget Threshold:</strong> ≤ $2,000</li>
+                <li><strong>Direct Payment Execution:</strong> Not Allowed</li>
+                <li><strong>Contract Signing:</strong> Not Allowed</li>
+                <li><strong>Human Approval:</strong> Required for any exception above threshold</li>
+            </ul>
+        </div>
     </section>
 
-    <!-- SECTION 10: TRADITIONAL VS SMART HAND MODEL -->
+    <!-- SECTION 7: RISK MODEL, HUMAN ROLE & HYPOTHESES -->
     <section class="manifesto-card reveal-card">
-        <h2>Execution Model Comparison</h2>
+        <h2>22. Risk Classification & 23. Human Role</h2>
 
         <div class="grid-2">
             <div class="engine-card">
-                <h3 style="color: #ff6b6b;">Traditional Execution Model</h3>
-                <p>Most enterprise systems follow a tool-first approach:</p>
-                <div class="architecture-flow" style="margin: 20px auto; max-width: 200px;">
-                    <div style="color: var(--text-dim); font-weight: bold;">User</div>
-                    <div style="color: #ff6b6b;">↓</div>
-                    <div style="color: var(--text-dim); font-weight: bold;">Software</div>
-                    <div style="color: #ff6b6b;">↓</div>
-                    <div style="color: var(--text-dim); font-weight: bold;">Workflow</div>
-                    <div style="color: #ff6b6b;">↓</div>
-                    <div style="color: var(--text-dim); font-weight: bold;">Task</div>
-                    <div style="color: #ff6b6b;">↓</div>
-                    <div style="color: var(--text-dim); font-weight: bold;">Result</div>
-                </div>
-                <p style="font-size: 0.88rem;">The user must decide which software, workflow, automation, or agent to invoke. Execution depends heavily on technical knowledge.</p>
+                <h3>Risk Classification Model</h3>
+                <ul class="custom-list">
+                    <li><strong style="color: #4cd964;">Low Risk:</strong> Fully Automated Execution.</li>
+                    <li><strong style="color: #fcd34d;">Medium Risk:</strong> Bounded Execution + Monitoring.</li>
+                    <li><strong style="color: #ff9500;">High Risk:</strong> Explicit Human Approval Required.</li>
+                    <li><strong style="color: #ff3b30;">Critical Risk:</strong> Direct Human-Controlled Execution.</li>
+                </ul>
             </div>
 
-            <div class="engine-card" style="border-color: rgba(230, 153, 45, 0.4);">
-                <h3 style="color: var(--gold);">Smart Hand™ Execution Model</h3>
-                <p>Smart Hand™ proposes an intent-first architecture:</p>
-                <div class="architecture-flow" style="margin: 20px auto; max-width: 200px;">
-                    <div style="color: var(--gold); font-weight: bold;">Human Intent</div>
-                    <div style="color: var(--accent);">↓</div>
-                    <div style="color: var(--text-main); font-size: 0.9rem;">Intent Understanding</div>
-                    <div style="color: var(--accent);">↓</div>
-                    <div style="color: var(--text-main); font-size: 0.9rem;">Command Engine</div>
-                    <div style="color: var(--accent);">↓</div>
-                    <div style="color: var(--text-main); font-size: 0.9rem;">Command Graph</div>
-                    <div style="color: var(--accent);">↓</div>
-                    <div style="color: var(--text-main); font-size: 0.9rem;">Agent Network</div>
-                    <div style="color: var(--accent);">↓</div>
-                    <div style="color: var(--text-main); font-size: 0.9rem;">Execution Layer</div>
-                    <div style="color: var(--accent);">↓</div>
-                    <div style="color: var(--gold); font-weight: bold;">Economic Outcomes</div>
-                </div>
-                <p style="font-size: 0.88rem;">The objective-not the software-becomes the organizing principle. Technology becomes an implementation detail.</p>
+            <div class="engine-card">
+                <h3>Human Participation Modalities</h3>
+                <p>Humans do not disappear; they operate as governing orchestrators:</p>
+                <ul class="custom-list">
+                    <li>Intent definition & goal setting;</li>
+                    <li>Authority delegation & policy framing;</li>
+                    <li>Approval of high-risk actions;</li>
+                    <li>Exception handling & escalation;</li>
+                    <li>System auditing & strategic learning.</li>
+                </ul>
             </div>
         </div>
-    </section>
 
-    <!-- SECTION 11: BEYOND EXISTING CATEGORIES -->
-    <section class="manifesto-card reveal-card">
-        <h2>Beyond Existing Categories</h2>
-
+        <h2 style="margin-top: 40px;">27. Research Hypotheses (H1 – H8)</h2>
         <div class="grid-2">
-            <div class="pillar-card">
-                <h3>Beyond Workflow Automation</h3>
-                <p>Workflow platforms automate predefined processes. Smart Hand™ addresses a broader challenge: <em>How should execution be designed before workflows even exist?</em> It incorporates intent interpretation, command generation, agent coordination, and organizational learning.</p>
+            <div class="research-card">
+                <h3>H1 - Execution Gap</h3>
+                <p>AI intelligence alone is insufficient for reliable economic execution.</p>
             </div>
-
-            <div class="pillar-card">
-                <h3>Beyond Multi-Agent Systems</h3>
-                <p>Multi-agent architectures address cooperation between agents. Smart Hand™ asks: <em>How are organizational objectives translated into coordinated agent behavior?</em> It adds Command Engine & Graph layers to bridge high-level intent to agent actions.</p>
+            <div class="research-card">
+                <h3>H2 - Authority Gap</h3>
+                <p>AI capability and institutional authority are distinct architectural requirements.</p>
             </div>
-
-            <div class="pillar-card">
-                <h3>Beyond AI Assistants</h3>
-                <p>AI assistants conclude interactions after producing an answer or content. Smart Hand™ extends the lifecycle beyond knowledge generation: (Understanding → Planning → Execution → Measurement → Continuous Improvement).</p>
+            <div class="research-card">
+                <h3>H3 - Governance Enabler</h3>
+                <p>Stronger governance enables greater safe AI operational autonomy.</p>
             </div>
-
-            <div class="pillar-card">
-                <h3>Beyond Automation Platforms</h3>
-                <p>Automation platforms answer: "How can this task be automated?" Smart Hand™ asks: "What objective should be achieved, and how should execution be orchestrated across people, AI agents, enterprise systems, and processes?"</p>
+            <div class="research-card">
+                <h3>H4 - Verification Requirement</h3>
+                <p>Meaningful AI economic execution requires independent outcome verification.</p>
+            </div>
+            <div class="research-card">
+                <h3>H5 - Loop Advantage</h3>
+                <p>Continuous economic execution loops create greater value than isolated tasks.</p>
+            </div>
+            <div class="research-card">
+                <h3>H6 - Execution Data Advantage</h3>
+                <p>Repeated execution generates valuable Execution Intelligence.</p>
+            </div>
+            <div class="research-card">
+                <h3>H7 - Infrastructure Opportunity</h3>
+                <p>Recurring enterprise requirements will yield a dedicated execution infrastructure layer.</p>
+            </div>
+            <div class="research-card">
+                <h3>H8 - Protocol Opportunity</h3>
+                <p>Interoperability will drive standardized Command Economy Protocols (CEP).</p>
             </div>
         </div>
-    </section>
 
-    <!-- SECTION 12: RELATIONSHIP & CATEGORY POSITIONING -->
-    <section class="manifesto-card reveal-card">
-        <h2>Relationship to Existing Technologies & Positioning</h2>
-        <p>Smart Hand™ is intended to complement-not replace-existing technologies:</p>
+        <h2 style="margin-top: 40px;">28. Falsification Conditions</h2>
+        <p>The CE-AI framework adopts <em>Evidence over Doctrine</em> and is explicitly falsifiable if evidence shows that:</p>
         <ul class="custom-list">
-            <li><strong>Large Language Models:</strong> Provide reasoning and inference.</li>
-            <li><strong>Multi-Agent Systems:</strong> Provide distributed intelligence.</li>
-            <li><strong>Workflow Engines:</strong> Provide orchestration and execution paths.</li>
-            <li><strong>Enterprise Software (ERP/CRM):</strong> Provide operational capabilities and systems of record.</li>
-            <li><strong>Automation Platforms (RPA):</strong> Execute repetitive actions.</li>
+            <li>Existing enterprise platforms adequately solve governed AI execution without new layers;</li>
+            <li>Customers do not value independent execution infrastructure;</li>
+            <li>Economic outcomes cannot be reliably attributed to AI-driven execution;</li>
+            <li>Governance can be solved entirely inside isolated monolithic applications;</li>
+            <li>Human-controlled execution remains economically preferable across all relevant enterprise use cases.</li>
         </ul>
+    </section>
 
-        <h3 style="color: var(--accent); margin-top: 30px; font-size: 1.3rem;">Category Position</h3>
-        <p>Ouamarkom positions Smart Hand™ as: <strong>A proposed conceptual framework for AI Execution Infrastructure.</strong></p>
-        <p>This positioning emphasizes:</p>
+    <!-- SECTION 8: PROOF GATES & MATURITY MODEL -->
+    <section class="manifesto-card reveal-card">
+        <h2>30. Proof Gates & 34. Maturity Model</h2>
+        
+        <h3>Progression Through Proof Gates</h3>
+        <p>CE-AI implementations must progress sequentially through 9 proof gates:</p>
+        <p style="color: var(--gold); font-size: 0.95rem; font-weight: bold;">
+            Gate 1: Technical → Gate 2: Reliability → Gate 3: Authorization → Gate 4: Economic → Gate 5: Verification → Gate 6: Commercial → Gate 7: Repeatability → Gate 8: Platform → Gate 9: Infrastructure
+        </p>
+
+        <h3 style="margin-top: 30px;">CE-AI Maturity Levels</h3>
+        <div class="table-responsive">
+            <table class="comp-table">
+                <thead>
+                    <tr>
+                        <th>Maturity Level</th>
+                        <th>Name</th>
+                        <th>Operational Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Level 0</strong></td><td>Assisted Intelligence</td><td>AI generates text/information only.</td></tr>
+                    <tr><td><strong>Level 1</strong></td><td>Assisted Execution</td><td>Humans execute AI recommendations manually.</td></tr>
+                    <tr><td><strong>Level 2</strong></td><td>Tool-Enabled AI</td><td>AI performs bounded actions through isolated tools.</td></tr>
+                    <tr><td><strong>Level 3</strong></td><td>Governed Execution</td><td>AI executes under explicit authorization and policy controls.</td></tr>
+                    <tr><td><strong>Level 4</strong></td><td>Verified Economic Execution</td><td>Actions and economic outcomes are measured and verified.</td></tr>
+                    <tr><td><strong>Level 5</strong></td><td>Adaptive Economic Agency</td><td>AI dynamically manages economic goals using earned autonomy.</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3 style="margin-top: 30px;">35. Core Metrics</h3>
         <div class="grid-2">
-            <div class="research-card">
-                <h3>1. Intent-Centered Execution</h3>
-                <p>Rooting the entire operational lifecycle in human objective definition.</p>
-            </div>
-            <div class="research-card">
-                <h3>2. Multi-Layer Architecture</h3>
-                <p>Structuring execution into 7 defined, sequential operational layers.</p>
-            </div>
-            <div class="research-card">
-                <h3>3. Outcome-Driven Design</h3>
-                <p>Orienting system design around economic value measurement.</p>
-            </div>
-            <div class="research-card">
-                <h3>4. Holistic Integration</h3>
-                <p>Connecting existing AI models, agents, and enterprise tools into one framework.</p>
-            </div>
+            <ul class="custom-list">
+                <li><strong>Execution Reliability:</strong> % of actions completed correctly.</li>
+                <li><strong>Authorization Accuracy:</strong> % of actions correctly permitted.</li>
+                <li><strong>Policy Compliance:</strong> % of actions adhering to policies.</li>
+                <li><strong>Human Escalation Rate:</strong> % of actions requiring intervention.</li>
+                <li><strong>Execution Cost:</strong> Cost incurred to produce execution.</li>
+            </ul>
+            <ul class="custom-list">
+                <li><strong>Outcome Achievement:</strong> % of economic targets met.</li>
+                <li><strong>Verification Coverage:</strong> % of outcomes proven by evidence.</li>
+                <li><strong>Economic ROI:</strong> Value created relative to execution cost.</li>
+                <li><strong>Recovery Rate:</strong> Ability to recover from failed steps.</li>
+                <li><strong>Time-to-Outcome:</strong> Duration from intent to verified value.</li>
+            </ul>
         </div>
     </section>
 
-    <!-- SECTION 13: STRATEGIC IMPLICATIONS & CONCLUSION -->
+    <!-- SECTION 9: VOCABULARY & STRATEGIC POSITIONING -->
     <section class="manifesto-card reveal-card">
-        <h2>Strategic Implications & Final Conclusion</h2>
-        <p>If AI models represent the intelligence layer of the AI economy, execution infrastructure may emerge as the operational layer through which organizations generate measurable value.</p>
-        <p>Within this perspective, Smart Hand™ serves as a conceptual reference model for designing systems that connect:</p>
+        <h2>46. Core Vocabulary</h2>
+
+        <div class="grid-2">
+            <div class="engine-card">
+                <h3>Command Economy of AI™</h3>
+                <p>A framework for understanding economic activity in which AI systems interpret, coordinate, and execute commands within governed institutional environments.</p>
+            </div>
+            <div class="engine-card">
+                <h3>AI Execution Infrastructure</h3>
+                <p>The foundational software layer connecting AI intelligence to real-world operational actions and enterprise systems.</p>
+            </div>
+            <div class="engine-card">
+                <h3>Institutional Gateway™</h3>
+                <p>The governance and authority boundary controlling how AI systems interact with institutional resources and legal boundaries.</p>
+            </div>
+            <div class="engine-card">
+                <h3>Command Economy Protocols (CEP)</h3>
+                <p>A proposed future family of interoperability protocols for AI-driven commands, authority, execution, evidence, and verification.</p>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 40px;">33. Strategic Position of Ouamarkom™</h2>
+        <p>Ouamarkom's proposed position is not primarily <em>"We have a better AI model"</em> nor <em>"We have another AI agent."</em></p>
+
+        <div class="statement-banner">
+            <p class="statement-text" style="font-size: clamp(1.1rem, 3vw, 1.5rem);">
+                «Ouamarkom explores the infrastructure connecting AI intelligence to governed, verifiable economic execution.»
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION 10: CONCLUSION & NORTH STAR -->
+    <article class="thesis-card reveal-card">
+        <h2 style="color: var(--accent); font-size: clamp(1.3rem, 4vw, 1.8rem); font-weight: 900; margin-bottom: 16px;">48. The CE-AI Formula & Final Statement</h2>
         
-        <div class="statement-banner" style="margin: 20px 0; padding: 20px 10px;">
-            <p class="statement-text" style="font-size: clamp(1rem, 2.8vw, 1.35rem);">
-                Human Intent → Artificial Intelligence → Enterprise Operations → Economic Outcomes
+        <div class="statement-banner" style="background: rgba(4, 9, 22, 0.95); margin: 20px 0;">
+            <p class="statement-text" style="font-size: clamp(1rem, 2.8vw, 1.35rem); color: var(--gold);">
+                Trusted AI Economic Execution = Intelligence × Authority × Governance × Execution × Evidence × Verification
             </p>
         </div>
 
-        <p>The Smart Hand™ Framework should not be interpreted as a replacement for existing AI technologies or architectural approaches. Instead, it is proposed as a higher-level conceptual model that organizes multiple existing capabilities within a unified execution architecture centered on human intent and measurable economic outcomes.</p>
-        <p style="margin-top: 15px;">By articulating execution as an independent architectural concern, the framework aims to contribute a new perspective to the evolving discussion around AI infrastructure and enterprise AI systems.</p>
-    </section>
+        <p>This conceptual formula emphasizes that failure in any single critical component undermines the entire execution chain:</p>
+        <ul class="custom-list">
+            <li>A highly intelligent system with zero authority cannot execute.</li>
+            <li>A highly authorized system with weak governance creates unacceptable institutional risk.</li>
+            <li>A system that executes without evidence cannot prove what occurred.</li>
+            <li>A system producing outcomes without verification cannot establish trust.</li>
+        </ul>
 
-    <!-- FINAL BRANDING BANNER -->
-    <section class="statement-banner reveal-card">
-        <h2 class="statement-text">
-            Smart Hand™ Framework<br>
-            <span style="font-size: clamp(1rem, 3vw, 1.4rem); color: var(--gold); font-weight: 700;">
-                From Human Intent to Intelligent Economic Execution
-            </span>
+        <h3 style="color: var(--accent); margin-top: 25px;">49. Final Framework Statement</h3>
+        <p>The Command Economy of AI™ framework proposes that the next phase of AI development requires a shift from systems that merely generate intelligence toward systems capable of participating in governed economic execution.</p>
+        <p>The central architectural challenge is therefore not only: <strong>«How intelligent is the AI?»</strong> but increasingly:</p>
+
+        <div class="highlight-quote">
+            <p>«What can the AI do, under whose authority, within which boundaries, with what evidence, and with what measurable economic result?»</p>
+        </div>
+
+        <p style="text-align: center; font-weight: 800; color: var(--gold); margin-top: 20px;">
+            Commit to the Outcome. &nbsp;|&nbsp; Test the Architecture. &nbsp;|&nbsp; Follow the Evidence. &nbsp;|&nbsp; Compound the Learning.
+        </p>
+    </article>
+
+    <!-- FINAL BRANDING & NORTH STAR BANNER -->
+    <section class="statement-banner reveal-card" style="border-color: var(--accent); background: linear-gradient(180deg, rgba(230, 153, 45, 0.12) 0%, rgba(4, 9, 22, 0.95) 100%);">
+        <span class="tagline-badge">CE-AI North Star</span>
+        <h2 class="statement-text" style="font-size: clamp(1.1rem, 3.2vw, 1.65rem); margin-top: 10px;">
+            From AI Intelligence → AI Execution → Governed Execution → Economic Execution → Verified Economic Outcomes → Trusted AI Economic Agency
         </h2>
-        <p style="color: var(--text-dim); margin-top: 15px; font-size: 1rem;">
-            Prepared by Ouamarkom Research Lab<br>
-            Building the Execution Infrastructure for the AI Economy
+        <p style="color: var(--gold); margin-top: 20px; font-weight: 800; font-size: 1.1rem;">
+            Ouamarkom™<br>
+            <span style="color: var(--text-dim); font-size: 0.95rem; font-weight: 400;">Building the Infrastructure for the Command Economy of AI™</span>
         </p>
     </section>
 
     <!-- FOOTER CTA -->
     <section class="footer-cta reveal-card">
-        <h2>Explore More About <span>Ouamarkom Enterprise</span></h2>
+        <h2>Explore More About <span>Ouamarkom Infrastructure</span></h2>
         <div class="btn-group">
             <a href="/en/about/" class="btn-cta-primary">About Ouamarkom Infrastructure</a>
-            <a href="/framework" class="btn-cta-secondary">Smart Hand™ Framework (العربية)</a>
+            <a href="/framework" class="btn-cta-secondary">CE-AI Framework (العربية)</a>
         </div>
     </section>
 
