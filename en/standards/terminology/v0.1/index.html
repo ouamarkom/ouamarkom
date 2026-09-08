@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ouamarkom™ Terminology Standard v0.1 | Official Concept Naming Standard</title>
+    <meta name="description" content="The official terminology and concept naming standard for Ouamarkom™, CE-AI (The Command Economy of AI™), and Smart Hand Infrastructure. Defines canonical terms, architectural relationships, and governing principles.">
+    <meta name="keywords" content="Ouamarkom Terminology Standard, Command Economy of AI, CE-AI, Smart Hand Infrastructure, Economic Command, Governed Economic Agency, Delegated Economic Authority, Authority Envelope, Outcome Verification, AI Execution Infrastructure">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Hreflang & Canonical -->
+    <link rel="canonical" href="https://ouamarkom.com/en/standards/terminology/v0.1/" />
+    <link rel="alternate" hreflang="en" href="https://ouamarkom.com/en/standards/terminology/v0.1/" />
+    <link rel="alternate" hreflang="ar" href="https://ouamarkom.com/standards/terminology/v0.1" />
+    <link rel="alternate" hreflang="x-default" href="https://ouamarkom.com/standards/terminology/v0.1" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:site_name" content="Ouamarkom" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Ouamarkom™ Terminology Standard v0.1 | Official Concept Naming Standard" />
+    <meta property="og:description" content="Official Terminology & Concept Naming Standard for The Command Economy of AI (CE-AI) and Smart Hand Infrastructure." />
+    <meta property="og:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg" />
+    <meta property="og:url" content="https://ouamarkom.com/en/standards/terminology/v0.1/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="ar_SA" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ouamarkom™ Terminology Standard v0.1">
+    <meta name="twitter:description" content="Official Terminology & Concept Naming Standard for The Command Economy of AI (CE-AI) and Smart Hand Infrastructure.">
+    <meta name="twitter:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg">
+    <meta name="theme-color" content="#040916">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- SEO Schema Knowledge Graph Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TechArticle",
+          "@id": "https://ouamarkom.com/en/standards/terminology/v0.1/#article",
+          "url": "https://ouamarkom.com/en/standards/terminology/v0.1/",
+          "name": "Ouamarkom™ Terminology Standard v0.1: Official Terminology & Concept Naming Standard",
+          "headline": "Ouamarkom™ Terminology Standard v0.1",
+          "description": "The official terminology and concept naming standard defining canonical terms, architectural relationships, and governing principles for The Command Economy of AI (CE-AI) and Smart Hand Infrastructure.",
+          "inLanguage": "en",
+          "datePublished": "2026-09-01",
+          "dateModified": "2026-09-08",
+          "author": {
+            "@type": "Organization",
+            "name": "Ouamarkom",
+            "url": "https://ouamarkom.com/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Ouamarkom",
+            "url": "https://ouamarkom.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://ouamarkom.com/logo.webp"
+            }
+          }
+        },
+        {
+          "@type": "DefinedTermSet",
+          "@id": "https://ouamarkom.com/en/standards/terminology/v0.1/#termset",
+          "name": "Ouamarkom™ Canonical Terminology Standard v0.1",
+          "description": "The authoritative nomenclature set establishing exact conceptual mappings for AI economic execution architectures.",
+          "url": "https://ouamarkom.com/en/standards/terminology/v0.1/",
+          "inLanguage": "en",
+          "hasDefinedTerm": [
+            {
+              "@type": "DefinedTerm",
+              "name": "The Command Economy of AI™ (CE-AI)",
+              "description": "An emerging economic and architectural framework exploring how to structure economic activity when AI acts on behalf of institutions."
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "Economic Command",
+              "description": "A governed unit of delegated institutional intent binding an objective to authority, constraints, execution, evidence, and verifiable outcome."
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "Delegated Economic Authority (DEA)",
+              "description": "The economic operating bounds granted by an institution to an AI system to act toward a defined goal."
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "Governed Economic Agency",
+              "description": "The capacity of an AI system to manage economic tasks on behalf of an enterprise within strict governance and risk envelopes."
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "Smart Hand™",
+              "description": "The primary experimental system used by Ouamarkom™ to test CE-AI hypotheses in real-world economic execution."
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #040916;
+            --secondary: #0a192f;
+            --accent: #e6992d;
+            --gold: #fcd34d;
+            --text-main: #e6f1ff;
+            --text-dim: #8892b0;
+            --card-bg: rgba(10, 25, 47, 0.45);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --brand-orange-glow: rgba(230, 153, 45, 0.35);
+            --brand-orange-subtle: rgba(230, 153, 45, 0.08);
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--primary);
+            color: var(--text-main);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            margin: 0;
+            text-align: left;
+            line-height: 1.8;
+        }
+
+        /* Navigation Bar */
+        .top-nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 24px 20px 10px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .brand-logo-wrap {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .brand-logo-wrap:hover { transform: scale(1.03); }
+
+        .brand-logo-img {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+            display: block;
+        }
+
+        .lang-switch-btn {
+            background: var(--brand-orange-subtle);
+            border: 1px solid rgba(230, 153, 45, 0.35);
+            color: var(--accent);
+            padding: 8px 18px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 0.88rem;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .lang-switch-btn svg {
+            width: 16px;
+            height: 16px;
+            stroke: currentColor;
+            transition: transform 0.4s ease;
+        }
+
+        .lang-switch-btn:hover {
+            background: rgba(230, 153, 45, 0.22);
+            color: #fff;
+            border-color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(230, 153, 45, 0.2);
+        }
+
+        /* Container */
+        .manifesto-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 10px 20px 60px;
+            position: relative;
+            z-index: 1;
+            box-sizing: border-box;
+        }
+
+        .hero-manifesto {
+            text-align: center;
+            padding: 30px 0 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUpHero 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        @keyframes fadeInUpHero {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-manifesto h1 {
+            font-size: clamp(1.6rem, 5vw, 2.8rem);
+            line-height: 1.35;
+            margin-bottom: 18px;
+            font-weight: 900;
+            color: #ffffff;
+        }
+
+        .hero-manifesto h1 span {
+            display: block;
+            margin-top: 6px;
+            background: linear-gradient(90deg, var(--accent), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-manifesto .subtitle {
+            font-size: clamp(0.98rem, 2.5vw, 1.2rem);
+            color: var(--text-dim);
+            line-height: 1.7;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .tagline-badge {
+            display: inline-block;
+            padding: 6px 18px;
+            background: var(--brand-orange-subtle);
+            border: 1px solid rgba(230, 153, 45, 0.3);
+            color: var(--accent);
+            border-radius: 50px;
+            font-size: clamp(0.8rem, 2vw, 0.9rem);
+            font-weight: 800;
+            margin-bottom: 22px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Cards Styling */
+        .manifesto-card {
+            background: var(--card-bg);
+            padding: clamp(22px, 5vw, 42px);
+            border-radius: 24px;
+            border: 1px solid var(--border-color);
+            backdrop-filter: blur(12px);
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .manifesto-card h2 {
+            color: var(--accent);
+            font-size: clamp(1.3rem, 4vw, 1.8rem);
+            margin-bottom: 20px;
+            font-weight: 800;
+            line-height: 1.3;
+            border-left: 4px solid var(--accent);
+            padding-left: 14px;
+        }
+
+        .category-group-title {
+            color: var(--gold);
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin: 24px 0 12px;
+        }
+
+        .manifesto-card p {
+            color: var(--text-main);
+            font-size: clamp(0.98rem, 2.5vw, 1.08rem);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .concept-segment a, .manifesto-card p a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            padding-bottom: 2px;
+            transition: all 0.25s ease;
+        }
+
+        .concept-segment a:hover, .manifesto-card p a:hover {
+            color: var(--gold);
+            border-bottom-color: var(--gold);
+            text-shadow: 0 0 8px rgba(252, 211, 77, 0.3);
+        }
+
+        .concept-segment {
+            margin-bottom: 45px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 35px;
+        }
+
+        .concept-segment:first-of-type {
+            border-top: none;
+            padding-top: 0;
+        }
+
+        h3.concept-term-title {
+            color: #fff;
+            font-size: clamp(1.3rem, 3.5vw, 1.7rem);
+            margin-bottom: 20px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h3.concept-term-title::before {
+            content: "◆";
+            color: var(--accent);
+            font-size: 1rem;
+        }
+
+        h4.property-label {
+            color: var(--gold);
+            font-size: 1.08rem;
+            margin: 22px 0 10px;
+            font-weight: 700;
+        }
+
+        blockquote {
+            border-left: 3px solid var(--accent);
+            padding: 16px 20px;
+            background: var(--brand-orange-subtle);
+            margin: 20px 0;
+            border-radius: 8px;
+            color: var(--text-main);
+            font-style: italic;
+        }
+
+        ul.styled-list {
+            padding-left: 20px;
+            margin-bottom: 20px;
+            list-style-type: none;
+        }
+
+        ul.styled-list li {
+            position: relative;
+            margin-bottom: 10px;
+            color: var(--text-main);
+            padding-left: 20px;
+        }
+
+        ul.styled-list li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        /* Meta Metadata Header Info Grid */
+        .meta-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin: 20px 0 30px;
+            background: rgba(4, 9, 22, 0.6);
+            padding: 20px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+        }
+
+        .meta-item-box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .meta-item-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-dim);
+            font-weight: 700;
+        }
+
+        .meta-item-val {
+            font-size: 0.98rem;
+            color: var(--gold);
+            font-weight: 700;
+            margin-top: 4px;
+        }
+
+        /* Tables & Visuals */
+        .table-responsive-container {
+            overflow-x: auto;
+            margin: 24px 0;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            background: rgba(4, 9, 22, 0.6);
+        }
+
+        table.luxury-data-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.95rem;
+            min-width: 600px;
+        }
+
+        table.luxury-data-table th {
+            background: rgba(230, 153, 45, 0.12);
+            color: var(--gold);
+            padding: 16px;
+            border-bottom: 1px solid var(--border-color);
+            font-weight: 700;
+        }
+
+        table.luxury-data-table td {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-main);
+        }
+
+        .visual-diagram-box {
+            margin: 24px 0;
+            background: rgba(4, 9, 22, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 18px;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .diagram-flow {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .diagram-node {
+            background: var(--secondary);
+            border: 1px solid rgba(230, 153, 45, 0.3);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .diagram-arrow {
+            color: var(--accent);
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .grid-tags-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 12px;
+            margin: 16px 0 28px;
+        }
+
+        a.tag-node-item {
+            display: block;
+            text-decoration: none;
+            background: rgba(4, 9, 22, 0.6);
+            border: 1px solid var(--border-color);
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            color: var(--text-dim);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        a.tag-node-item:hover {
+            border-color: var(--accent);
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(230, 153, 45, 0.12);
+        }
+
+        span.tag-node-item {
+            display: block;
+            background: rgba(4, 9, 22, 0.3);
+            border: 1px dashed var(--border-color);
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-size: 0.88rem;
+            color: rgba(136, 146, 176, 0.6);
+            text-align: center;
+            cursor: default;
+        }
+
+        .reveal-card {
+            opacity: 0;
+            transform: translateY(25px);
+            transition: opacity 0.6s cubic-bezier(0.215, 0.610, 0.355, 1), 
+                        transform 0.6s cubic-bezier(0.215, 0.610, 0.355, 1);
+        }
+
+        .reveal-card.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Footer */
+        .site-footer {
+            padding: 30px 20px;
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+
+        .footer-legal-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .footer-legal-links a {
+            color: var(--text-dim);
+            text-decoration: none;
+        }
+
+        .footer-legal-links a:hover {
+            color: var(--accent);
+        }
+
+        @media (max-width: 768px) {
+            .diagram-flow { flex-direction: column; gap: 8px; }
+            .diagram-arrow { transform: rotate(90deg); }
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="network-canvas"></canvas>
+
+<!-- Top Header Navigation Bar -->
+<nav class="top-nav-bar">
+    <a href="/en/" class="brand-logo-wrap" aria-label="Ouamarkom Home">
+        <img src="/logo.webp" alt="Ouamarkom" class="brand-logo-img">
+    </a>
+    
+<div style="display: flex; gap: 10px; align-items: center;">
+        <a href="/en/glossary/" class="lang-switch-btn">Glossary</a>
+        
+        <a href="/standards/terminology/v0.1" class="lang-switch-btn" aria-label="Switch to Arabic Version">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            <span>العربية</span>
+        </a>
+    </div>
+</nav>
+
+<main class="manifesto-container">
+    
+    <!-- Hero Header -->
+    <header class="hero-manifesto">
+        <span class="tagline-badge">Ouamarkom™ Standard v0.1</span>
+        <h1>Terminology & Concept Naming Standard<span>Official Architectural & Research Vocabulary</span></h1>
+        <p class="subtitle">
+            The canonical conceptual dictionary and vocabulary standard for The Command Economy of AI™ (CE-AI) and Smart Hand Infrastructure.
+        </p>
+    </header>
+
+    <!-- Standard Metadata Box -->
+    <section class="manifesto-card reveal-card">
+        <div class="meta-info-grid">
+            <div class="meta-item-box">
+                <span class="meta-item-label">Organization</span>
+                <span class="meta-item-val">Ouamarkom™</span>
+            </div>
+            <div class="meta-item-box">
+                <span class="meta-item-label">Framework</span>
+                <span class="meta-item-val">The Command Economy of AI™ (CE-AI)</span>
+            </div>
+            <div class="meta-item-box">
+                <span class="meta-item-label">Primary Experimental System</span>
+                <span class="meta-item-val">Smart Hand™</span>
+            </div>
+            <div class="meta-item-box">
+                <span class="meta-item-label">Status</span>
+                <span class="meta-item-val">Research & Experimental Standard</span>
+            </div>
+            <div class="meta-item-box">
+                <span class="meta-item-label">Version</span>
+                <span class="meta-item-val">v0.1</span>
+            </div>
+            <div class="meta-item-box">
+                <span class="meta-item-label">Effective Date</span>
+                <span class="meta-item-val">September 2026</span>
+            </div>
+            <div class="meta-item-box">
+                <span class="meta-item-label">Languages</span>
+                <span class="meta-item-val">English / Arabic</span>
+            </div>
+            <div class="meta-item-box">
+                <span class="meta-item-label">Scope</span>
+                <span class="meta-item-val">Strategic, Technical & Research</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Purpose of the Standard -->
+    <section class="manifesto-card reveal-card" id="purpose">
+        <h2>1. Purpose of the Standard</h2>
+        <p>This document specifies the official terminology standard used across the entire Ouamarkom™ ecosystem, including:</p>
+        <ul class="styled-list">
+            <li>Academic research papers and technical studies.</li>
+            <li>Architectural specification blueprints.</li>
+            <li>Product definition and engineering specifications.</li>
+            <li>Smart Hand™ technical documentation.</li>
+            <li>CE-AI framework specifications.</li>
+            <li>Investor and strategic communications.</li>
+            <li>Enterprise institutional documentation.</li>
+            <li>Marketing and brand positioning materials.</li>
+            <li>Future protocol specifications.</li>
+            <li>Testing, benchmarking, and conformance standards.</li>
+        </ul>
+        <p>The core objective is not merely linguistic translation alignment, but unifying the underlying <strong>conceptual model</strong> upon which all technical and economic terms rely.</p>
+    </section>
+
+    <!-- Section 2: Core Principle -->
+    <section class="manifesto-card reveal-card" id="core-principle">
+        <h2>2. Core Principle</h2>
+        <p>Ouamarkom™ adopts the strict mapping governance rule:</p>
+        <blockquote>«One Concept → One Primary Term → One Arabic Equivalent»</blockquote>
+        <p>Explanatory synonyms may be utilized for contextual clarity when required; however, they shall not replace the canonical term in official technical, research, or specification documentation.</p>
+    </section>
+
+    <!-- Section 3: Core Terminology Table -->
+    <section class="manifesto-card reveal-card" id="primary-terms">
+        <h2>3. Primary Terminology Mapping</h2>
+        <p>The following canonical table defines the mandatory vocabulary mapping and functional roles within the ecosystem:</p>
+        
+        <div class="table-responsive-container">
+            <table class="luxury-data-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Canonical English Term</th>
+                        <th>Official Arabic Equivalent</th>
+                        <th>Architectural / Functional Role</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td><strong>The Command Economy of AI™ (CE-AI)</strong></td><td>اقتصاد الأوامر للذكاء الاصطناعي™</td><td>Economic and architectural framework</td></tr>
+                    <tr><td>2</td><td><strong>Economic Command</strong></td><td>الأمر الاقتصادي</td><td>Fundamental governed organizational unit</td></tr>
+                    <tr><td>3</td><td><strong>Institutional Intent</strong></td><td>النية المؤسسية</td><td>Target corporate objective or mandate</td></tr>
+                    <tr><td>4</td><td><strong>Economic Goal</strong></td><td>الهدف الاقتصادي</td><td>Measurable and actionable operational target</td></tr>
+                    <tr><td>5</td><td><strong>Economic Delegation</strong></td><td>التفويض الاقتصادي</td><td>Formal delegation of economic responsibility</td></tr>
+                    <tr><td>6</td><td><strong>Delegated Economic Authority (DEA)</strong></td><td>السلطة الاقتصادية المفوّضة</td><td>Operating authority granted to AI system</td></tr>
+                    <tr><td>7</td><td><strong>Authority Envelope</strong></td><td>نطاق السلطة</td><td>Operational boundary of permissible AI actions</td></tr>
+                    <tr><td>8</td><td><strong>Governed Economic Agency</strong></td><td>الوكالة الاقتصادية المحكومة</td><td>Regulated capacity to act on behalf of enterprise</td></tr>
+                    <tr><td>9</td><td><strong>Economic Execution</strong></td><td>التنفيذ الاقتصادي</td><td>Conversion of decision into real-world action</td></tr>
+                    <tr><td>10</td><td><strong>Evidence</strong></td><td>الأدلة</td><td>Data making execution observable & audit-ready</td></tr>
+                    <tr><td>11</td><td><strong>Economic Outcome</strong></td><td>النتيجة الاقتصادية</td><td>Verifiable result resulting from execution</td></tr>
+                    <tr><td>12</td><td><strong>Outcome Verification</strong></td><td>التحقق من النتيجة</td><td>Evaluating outcome against predefined criteria</td></tr>
+                    <tr><td>13</td><td><strong>Learning / Memory</strong></td><td>التعلّم والذاكرة</td><td>Converting historical execution into capability</td></tr>
+                    <tr><td>14</td><td><strong>Authority Recalibration</strong></td><td>إعادة معايرة السلطة</td><td>Adjusting bounds based on performance evidence</td></tr>
+                    <tr><td>15</td><td><strong>Adaptive Economic Agency</strong></td><td>الوكالة الاقتصادية المتكيفة</td><td>Agency adapting dynamically to risk & performance</td></tr>
+                    <tr><td>16</td><td><strong>Earned Autonomy</strong></td><td>الاستقلالية المكتسبة</td><td>Autonomy expanding progressively through evidence</td></tr>
+                    <tr><td>17</td><td><strong>Economic Execution Infrastructure</strong></td><td>البنية التحتية للتنفيذ الاقتصادي</td><td>System layer enabling execution lifecycle</td></tr>
+                    <tr><td>18</td><td><strong>Institutional Gateway</strong></td><td>البوابة المؤسسية</td><td>Governance boundary between AI and Enterprise</td></tr>
+                    <tr><td>19</td><td><strong>Smart Hand™</strong></td><td>اليد الذكية™</td><td>Primary experimental thesis testing engine</td></tr>
+                    <tr><td>20</td><td><strong>Command-Centric Architecture</strong></td><td>معمارية متمحورة حول الأوامر</td><td>Proposed execution-first design paradigm</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Sections 4 to 13: Core Concept Definitions -->
+    <section class="manifesto-card reveal-card" id="conceptual-specs">
+        <h2>Conceptual Specifications</h2>
+
+        <!-- 4. CE-AI -->
+        <div class="concept-segment" id="ce-ai">
+            <h3 class="concept-term-title">4. The Command Economy of AI™ (CE-AI)</h3>
+            <p><strong>Official Definition:</strong> The Command Economy of AI™ is an emerging economic and architectural framework for exploring how economic activity is structured when artificial intelligence becomes capable of acting directly on behalf of institutions, focusing on the Economic Command as the primary unit linking intent, authority, execution, evidence, and outcomes.</p>
+            <p><strong>Methodological Rule:</strong> In Specification v0.1, CE-AI is treated as a research hypothesis rather than an established commercial fact.</p>
+            <p><strong>Permitted Formulations:</strong></p>
+            <ul class="styled-list">
+                <li>«CE-AI is an emerging framework and research hypothesis.»</li>
+                <li>«CE-AI is a proposed architectural framework for AI execution.»</li>
+            </ul>
+            <p><strong>Prohibited Formulations:</strong> Do not assert «CE-AI is the established new global economy» prior to conclusive independent empirical evidence.</p>
+        </div>
+
+        <!-- 5. Economic Command -->
+        <div class="concept-segment" id="economic-command">
+            <h3 class="concept-term-title">5. Economic Command</h3>
+            <p><strong>Official Definition:</strong> An Economic Command is a governed unit of delegated institutional intent that binds an economic objective to authority, constraints, execution, evidence, and an expected verifiable outcome.</p>
+            <p><strong>Core Distinction:</strong> An Economic Command is <strong>not</strong> a Prompt, Task, Agent, Workflow, or API call. It represents a higher-level governed unit linking:</p>
+            <blockquote>Intent ➔ Authority ➔ Execution ➔ Evidence ➔ Outcome</blockquote>
+        </div>
+
+        <!-- 6. AI Agent -->
+        <div class="concept-segment" id="ai-agent">
+            <h3 class="concept-term-title">6. AI Agent</h3>
+            <p><strong>Official Definition:</strong> An AI Agent is an execution actor capable of making local decisions and executing tasks using tools and data within defined bounds.</p>
+            <p>Within CE-AI: <code>Agent = Execution Capability</code>. An agent is not treated as the primary economic accounting unit.</p>
+            <p><strong>Structural Relationship:</strong> <code>Command ➔ coordinates ➔ Agents</code>. A single Economic Command may orchestrate multiple agents.</p>
+        </div>
+
+        <!-- 7. Command vs Agent -->
+        <div class="concept-segment" id="command-vs-agent">
+            <h3 class="concept-term-title">7. Command-Centric vs. Agent-Centric Paradigm</h3>
+            <div class="table-responsive-container">
+                <table class="luxury-data-table">
+                    <thead>
+                        <tr>
+                            <th>Agent-Centric Focus</th>
+                            <th>Command-Centric Focus (CE-AI)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>What can the agent do?</td><td>What economic objective is delegated?</td></tr>
+                        <tr><td>Capability focus</td><td>Authority + Objective focus</td></tr>
+                        <tr><td>Individual Agent actor</td><td>Economic Command orchestration unit</td></tr>
+                        <tr><td>Task execution output</td><td>Verifiable Economic Execution</td></tr>
+                        <tr><td>Tool execution logs</td><td>Economic Execution Record</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <blockquote>«Agent remains the execution actor; Command becomes the economic coordination and accountability unit.»</blockquote>
+        </div>
+
+        <!-- 8. Prompt vs Command -->
+        <div class="concept-segment" id="prompt-vs-command">
+            <h3 class="concept-term-title">8. Prompt vs. Command</h3>
+            <p>A <strong>Prompt</strong> is a natural language text input provided to a model. An <strong>Economic Command</strong> is a structured, governed system entity containing:</p>
+            <ul class="styled-list">
+                <li>Economic objective & institutional context.</li>
+                <li>Delegated economic authority & spending limits.</li>
+                <li>Operational scope, constraints, and risk classification.</li>
+                <li>Time-to-live and approval requirements.</li>
+                <li>Required evidence structure and verification criteria.</li>
+            </ul>
+            <blockquote>Prompt ≠ Command</blockquote>
+        </div>
+
+        <!-- 9. Delegation vs Authorization -->
+        <div class="concept-segment" id="delegation-vs-authorization">
+            <h3 class="concept-term-title">9. Delegation vs. Authorization</h3>
+            <p><strong>Delegation (التفويض):</strong> Assigns overall responsibility and operational mandate to act for an objective.</p>
+            <p><strong>Authorization (التخويل):</strong> Explicit technical permission allowing a specific action to take place.</p>
+            <blockquote>«Delegation establishes responsibility. Authorization permits action.»</blockquote>
+        </div>
+
+        <!-- 10. DEA & Authority Envelope -->
+        <div class="concept-segment" id="authority-envelope">
+            <h3 class="concept-term-title">10 & 11. Delegated Authority & Authority Envelope</h3>
+            <p><strong>Delegated Economic Authority (DEA):</strong> The precise operational bounds granted by an enterprise to an AI system (e.g., maximum budget limits, preferred vendors, negotiation boundaries, risk thresholds).</p>
+            <p><strong>Authority Envelope:</strong> The dynamic boundary defining: <em>"What the AI may do, where, when, under which conditions, and up to what economic risk."</em></p>
+        </div>
+
+        <!-- 12-13. Agency vs Autonomy -->
+        <div class="concept-segment" id="agency-vs-autonomy">
+            <h3 class="concept-term-title">12 & 13. Agency vs. Autonomy Separation</h3>
+            <p><strong>Governed Economic Agency:</strong> The system's capacity to direct multi-step economic activity on behalf of the institution.</p>
+            <p><strong>Autonomy:</strong> The degree of freedom granted to act without human intervention.</p>
+            <blockquote>«Agency ≠ Autonomy»</blockquote>
+            <p><em>High Agency + Low Autonomy Example:</em> An AI system managing a SAR 1,000,000 procurement savings strategy (High Agency), but requiring explicit human approval for every PO exceeding SAR 50,000 (Low Autonomy).</p>
+        </div>
+
+        <!-- 14. Earned Autonomy -->
+        <div class="concept-segment" id="earned-autonomy">
+            <h3 class="concept-term-title">14. Earned Autonomy</h3>
+            <p>Systems do not receive elevated operational autonomy merely because they possess higher LLM intelligence scores. Autonomy expands progressively based on observable performance, evidence, policy compliance, and verified outcomes.</p>
+            <blockquote>«Capability enables action. Authority permits action. Evidence earns trust. Verification validates outcomes. Performance earns autonomy.»</blockquote>
+        </div>
+    </section>
+
+    <!-- Sections 15 to 21: Execution, Evidence & Infrastructure -->
+    <section class="manifesto-card reveal-card" id="execution-and-infrastructure">
+        <h2>Execution, Verification & Architecture</h2>
+
+        <div class="concept-segment" id="economic-execution">
+            <h3 class="concept-term-title">15. Economic Execution</h3>
+            <p>The operational process of translating an economic objective into real transactional effects within business systems.</p>
+            <p><em>Not merely:</em> "AI suggests a vendor list."</p>
+            <p><em>Rather:</em> "AI evaluates vendors ➔ negotiates terms within DEA ➔ selects vendor ➔ generates purchase order ➔ routes approval ➔ executes transaction ➔ records evidence."</p>
+        </div>
+
+        <div class="concept-segment" id="evidence-verification">
+            <h3 class="concept-term-title">16 - 18. Evidence & Outcome Verification</h3>
+            <p><strong>Evidence:</strong> Audit-ready execution logs, cryptographic timestamps, API responses, human sign-offs, and state logs.</p>
+            <p><strong>Outcome Verification:</strong> Independent evaluation confirming that the declared outcome meets preset success criteria.</p>
+            <ul class="styled-list">
+                <li><strong>Execution Verified:</strong> Confirms the sequence took place.</li>
+                <li><strong>Outcome Verified:</strong> Confirms the target state was attained.</li>
+                <li><strong>Outcome Attributed:</strong> Determines how much of the outcome was caused by the AI execution.</li>
+            </ul>
+            <blockquote>«Outcome Verified ≠ Outcome Caused by AI»</blockquote>
+        </div>
+
+        <div class="concept-segment" id="smart-hand">
+            <h3 class="concept-term-title">19 - 21. Smart Hand™ & Institutional Gateway</h3>
+            <p><strong>Institutional Gateway:</strong> The secure perimeter controlling identity, authorization, risk thresholds, and escalation pathways between the AI execution engine and enterprise core systems.</p>
+            <p><strong>Smart Hand™ Positioning:</strong> Smart Hand™ is Ouamarkom's primary experimental system for testing CE-AI hypotheses in live environments.</p>
+            <blockquote>«Smart Hand™ = Economic Execution Engine»</blockquote>
+            <p>In Specification v0.1, Smart Hand™ is strictly positioned as an <em>"Experimental system for testing governed AI-driven economic execution,"</em> not a general AI OS or generic agent marketplace.</p>
+        </div>
+    </section>
+
+    <!-- Sections 22 & 23: Lifecycle & Execution Loop Diagrams -->
+    <section class="manifesto-card reveal-card" id="lifecycles">
+        <h2>22 & 23. Reference Lifecycles & Operational Loops</h2>
+
+        <p class="category-group-title">Command Lifecycle Reference Flow</p>
+        <div class="visual-diagram-box">
+            <div class="diagram-flow">
+                <div class="diagram-node">Creation</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Delegation</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Authorization</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Execution</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Monitoring</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Verification</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Optimization</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Learning</div>
+            </div>
+        </div>
+
+        <p class="category-group-title">Economic Execution Loop (EEL)</p>
+        <div class="visual-diagram-box">
+            <div class="diagram-flow">
+                <div class="diagram-node">Institutional Intent</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Economic Goal</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Economic Command</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Delegated Authority (DEA)</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Governed Agency</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Execution</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Evidence</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Outcome</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Verification</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Memory</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Authority Recalibration</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sections 24 to 35: Advanced Operational Concepts -->
+    <section class="manifesto-card reveal-card" id="operational-concepts">
+        <h2>Advanced Operational Specifications</h2>
+
+        <div class="concept-segment" id="evidence-vs-verification">
+            <h3 class="concept-term-title">24. Evidence vs. Verification Rule</h3>
+            <blockquote>«Evidence makes execution observable. Verification makes outcomes trustworthy.»</blockquote>
+            <p>The terms shall not be used interchangeably (<code>Evidence ≠ Verification</code>).</p>
+        </div>
+
+        <div class="concept-segment" id="outcome-states">
+            <h3 class="concept-term-title">25. Outcome Tri-State Classification</h3>
+            <ul class="styled-list">
+                <li><strong>Observed Outcome:</strong> The system detected a change or metric delta.</li>
+                <li><strong>Verified Outcome:</strong> The observed delta met predefined validation parameters.</li>
+                <li><strong>Attributed Outcome:</strong> Causal evidence links the delta directly to the AI execution.</li>
+            </ul>
+        </div>
+
+        <div class="concept-segment" id="authority-recalibration">
+            <h3 class="concept-term-title">27. Authority Recalibration</h3>
+            <p>The process of dynamically adjusting an Authority Envelope based on: <code>Performance + Evidence + Risk + Verification</code>.</p>
+            <p><em>Example:</em> Upon successful completion of 100 low-risk purchase commands without error, an AI agent's authorization envelope may be recalibrated from SAR 10,000 to SAR 25,000 under defined policy criteria.</p>
+        </div>
+
+        <div class="concept-segment" id="command-graph">
+            <h3 class="concept-term-title">28. Economic Command Graph</h3>
+            <p>Represents parent-child relationships across complex economic objectives:</p>
+            <div class="visual-diagram-box">
+                <div class="diagram-flow">
+                    <div class="diagram-node">Reduce Procurement Cost by 5%</div>
+                </div>
+                <div style="margin: 10px 0;" class="diagram-arrow">↓</div>
+                <div class="diagram-flow">
+                    <div class="diagram-node">Research Suppliers</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Compare Quotes</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Negotiate Terms</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Issue PO</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Verify Savings</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="concept-segment" id="execution-receipt">
+            <h3 class="concept-term-title">30. Economic Execution Receipt</h3>
+            <p>An immutable, audit-ready summary proving execution integrity, including: Command ID, Objective, DEA limits utilized, Agents deployed, Evidence hashes, Verification status, Human approvals, and Attribution confidence score.</p>
+        </div>
+
+        <div class="concept-segment" id="execution-lab">
+            <h3 class="concept-term-title">32. Real Economic Execution Laboratory</h3>
+            <p><strong>Strategic Hypothesis:</strong> Describes live enterprise environments where CE-AI concepts are tested through real economic operations rather than synthetic benchmarks.</p>
+            <blockquote>«Saudi Arabia may serve as a Real Economic Execution Laboratory for validating the thesis.»</blockquote>
+        </div>
+    </section>
+
+    <!-- Sections 36 to 40: Governance & Architecture Formulas -->
+    <section class="manifesto-card reveal-card" id="governance-rules">
+        <h2>Governance Rules & Architectural Discipline</h2>
+
+        <div class="concept-segment" id="prohibited-equivalences">
+            <h3 class="concept-term-title">36. Non-Equivalence Axioms</h3>
+            <ul class="styled-list">
+                <li><code>Capability ≠ Authority</code></li>
+                <li><code>Capability ≠ Trust</code></li>
+                <li><code>Capability ≠ Autonomy</code></li>
+                <li><code>Agency ≠ Autonomy</code></li>
+                <li><code>Execution ≠ Outcome</code></li>
+                <li><code>Outcome ≠ Attribution</code></li>
+                <li><code>Evidence ≠ Verification</code></li>
+            </ul>
+        </div>
+
+        <div class="concept-segment" id="architectural-formula">
+            <h3 class="concept-term-title">37. Official Architectural Chain</h3>
+            <blockquote>«Institutional Intent ➔ Economic Command ➔ Delegated Economic Authority ➔ Authority Envelope ➔ Governed Economic Agency ➔ Economic Execution ➔ Evidence ➔ Economic Outcome ➔ Outcome Verification ➔ Learning ➔ Authority Recalibration»</blockquote>
+        </div>
+
+        <div class="concept-segment" id="discipline-rules">
+            <h3 class="concept-term-title">38 - 40. Core Architectural Rules</h3>
+            <p><strong>Golden Rule:</strong> <em>«Do not create a new term when an existing term already explains the concept.»</em></p>
+            <p><strong>Discipline Principle:</strong> <em>«Terminology must follow the evidence.»</em> (<code>Evidence ➔ Concept ➔ Definition ➔ Architecture ➔ Standardization</code>).</p>
+            <p><strong>No Layer Without Evidence:</strong> No architectural layer or abstraction shall be created solely for marketing or artificial complexity without empirical necessity.</p>
+        </div>
+    </section>
+
+    <!-- Sections 41 to 47: Epistemic Status & Thesis -->
+    <section class="manifesto-card reveal-card" id="epistemic-status">
+        <h2>Epistemic Status & Strategic Positioning</h2>
+
+        <div class="concept-segment" id="status-levels">
+            <h3 class="concept-term-title">41. Epistemic Classification Levels</h3>
+            <p>All concepts in Ouamarkom™ documentation must carry explicit epistemic status tags:</p>
+            <div class="grid-tags-layout">
+                <span class="tag-node-item">Established</span>
+                <span class="tag-node-item">Emerging</span>
+                <span class="tag-node-item">Proposed</span>
+                <span class="tag-node-item">Hypothesized</span>
+                <span class="tag-node-item">Experimental</span>
+            </div>
+            <p><strong>Current Status of CE-AI (v0.1):</strong> <code>Emerging + Proposed + Research Hypothesis</code>.</p>
+            <p><strong>Central Research Question:</strong> <em>«Can the Economic Command become the fundamental unit of governed AI-driven economic execution?»</em></p>
+        </div>
+
+        <div class="concept-segment" id="asset-relationships">
+            <h3 class="concept-term-title">43. Ecosystem Asset Relationships</h3>
+            <div class="visual-diagram-box">
+                <div class="diagram-flow">
+                    <div class="diagram-node">CE-AI Framework</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Economic Command</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Smart Hand™ Engine</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Institutional Gateway</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Evidence & Verification</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Refined Reference Architecture</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="concept-segment" id="canonical-statements">
+            <h3 class="concept-term-title">45 - 47. Standard Strategic Statements</h3>
+            <p><strong>Official Corporate Description:</strong></p>
+            <blockquote>«Ouamarkom™ is building and testing an economic execution infrastructure designed to connect institutional intent with governed AI-driven execution and verifiable economic outcomes.»</blockquote>
+            
+            <p><strong>Thesis Formulation:</strong></p>
+            <blockquote>«We do not seek to prove the Command Economy because we named it; we seek to discover whether the evolution of AI and economic execution makes it necessary.»</blockquote>
+
+            <p><strong>Central Research Axiom:</strong></p>
+            <blockquote>«The category should emerge from evidence, not the evidence from the category.»</blockquote>
+        </div>
+    </section>
+
+    <!-- Section 48 & Version Governance -->
+    <section class="manifesto-card reveal-card" id="versioning">
+        <h2>48. Version Governance & Change Control</h2>
+        <p><strong>Document ID:</strong> Ouamarkom™ Terminology Standard v0.1</p>
+        <p><strong>Update Policy:</strong> Subsequent versions (v0.2, v1.0) must explicitly maintain a <em>Terminology Change Log</em> documenting added terms, modified definitions, deprecated terms, supporting evidence, and architectural impact.</p>
+    </section>
+
+    <!-- Summary Canonical Chain -->
+    <section class="manifesto-card reveal-card" id="summary">
+        <h2>Summary & Canonical Chain</h2>
+        <p>This standard forms the foundational conceptual discipline for the entire Ouamarkom™ ecosystem.</p>
+        <p>The mandatory sequence that must remain uniform across all future specifications is:</p>
+        <div class="visual-diagram-box">
+            <div class="diagram-flow">
+                <div class="diagram-node">Intent</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Command</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Authority</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Agency</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Execution</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Evidence</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Outcome</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Verification</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Learning</div><div class="diagram-arrow">➔</div>
+                <div class="diagram-node">Recalibration</div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="footer-bottom-container" dir="ltr">
+        <p>© 2026 Ouamarkom. All Rights Reserved.</p>
+        <div class="footer-legal-links">
+            <a href="/en/intellectual-property/">Intellectual Property</a>
+            <span class="footer-legal-separator">·</span>
+            <a href="mailto:contact@ouamarkom.com">Contact</a>
+        </div>
+    </div>
+</footer>
+
+<script src="/script.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const revealCards = document.querySelectorAll('.reveal-card');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.05, rootMargin: "0px 0px -20px 0px" });
+
+        revealCards.forEach(card => revealObserver.observe(card));
+    });
+</script>
+</body>
+</html>

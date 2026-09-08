@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المعيار الرسمي للمصطلحات v0.1 | اقتصاد الأوامر للذكاء الاصطناعي - أوامركم</title>
+    <meta name="description" content="المعيار الرسمي الموحد لتسمية المفاهيم والمصطلحات وحوكمة التنفيذ الاقتصادي لإطار اقتصاد الأوامر للذكاء الاصطناعي (CE-AI) ونظام اليد الذكية Smart Hand™.">
+    <meta name="keywords" content="معيار المصطلحات, اقتصاد الأوامر للذكاء الاصطناعي, CE-AI, اليد الذكية, Smart Hand, حوكمة الذكاء الاصطناعي, السلطة الاقتصادية المفوضة, التنفيذ الاقتصادي, أوامركم, Ouamarkom">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Hreflang & Canonical -->
+    <link rel="canonical" href="https://ouamarkom.com/standards/terminology/v0.1" />
+    <link rel="alternate" hreflang="ar" href="https://ouamarkom.com/standards/terminology/v0.1" />
+    <link rel="alternate" hreflang="en" href="https://ouamarkom.com/en/standards/terminology/v0.1/" />
+    <link rel="alternate" hreflang="x-default" href="https://ouamarkom.com/standards/terminology/v0.1" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:site_name" content="أوامركم | Ouamarkom" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Ouamarkom™ Terminology Standard v0.1 | المعيار الرسمي للمصطلحات" />
+    <meta property="og:description" content="المستند المعياري الموحد للمصطلحات والمفاهيم لإطار اقتصاد الأوامر للذكاء الاصطناعي (CE-AI) والبنية التحتية للتنفيذ الاقتصادي." />
+    <meta property="og:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg" />
+    <meta property="og:url" content="https://ouamarkom.com/standards/terminology/v0.1" />
+    <meta property="og:locale" content="ar_SA" />
+    <meta property="og:locale:alternate" content="en_US" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ouamarkom™ Terminology Standard v0.1">
+    <meta name="twitter:description" content="المعيار الرسمي الموحد لمصطلحات اقتصاد الأوامر للذكاء الاصطناعي والبنية التحتية لليد الذكية.">
+    <meta name="twitter:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg">
+    <meta name="theme-color" content="#040916">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- SEO Advanced Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TechArticle",
+          "@id": "https://ouamarkom.com/standards/terminology/v0.1#article",
+          "url": "https://ouamarkom.com/standards/terminology/v0.1",
+          "name": "Ouamarkom™ Terminology Standard v0.1",
+          "headline": "المعيار الرسمي للمصطلحات والمفاهيم لإطار اقتصاد الأوامر للذكاء الاصطناعي (CE-AI)",
+          "description": "المستند المعياري الرسمي الموحد لتسمية المفاهيم، وحوكمة الأوامر، والتفويض والسلطة التنفيذية للذكاء الاصطناعي داخل منظومة أوامركم.",
+          "inLanguage": "ar",
+          "version": "v0.1",
+          "datePublished": "2026-09-01",
+          "dateModified": "2026-09-01",
+          "author": {
+            "@type": "Organization",
+            "name": "أوامركم",
+            "url": "https://ouamarkom.com/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "أوامركم",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://ouamarkom.com/logo.webp"
+            }
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://ouamarkom.com/standards/terminology/v0.1#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "الرئيسية",
+              "item": "https://ouamarkom.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "القاموس الرسمي",
+              "item": "https://ouamarkom.com/glossary"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "معيار المصطلحات v0.1",
+              "item": "https://ouamarkom.com/standards/terminology/v0.1"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #040916;
+            --secondary: #0a192f;
+            --accent: #e6992d;
+            --gold: #fcd34d;
+            --text-main: #e6f1ff;
+            --text-dim: #8892b0;
+            --card-bg: rgba(10, 25, 47, 0.45);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --brand-orange-glow: rgba(230, 153, 45, 0.35);
+            --brand-orange-subtle: rgba(230, 153, 45, 0.08);
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--primary);
+            color: var(--text-main);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            text-align: right;
+            line-height: 1.8;
+        }
+
+        /* Top Nav */
+        .top-nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 24px 20px 10px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .brand-logo-wrap {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .brand-logo-wrap:hover { transform: scale(1.03); }
+
+        .brand-logo-img {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+            display: block;
+        }
+
+        .nav-actions-group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .glossary-link-btn, .lang-switch-btn {
+            background: var(--brand-orange-subtle);
+            border: 1px solid rgba(230, 153, 45, 0.35);
+            color: var(--accent);
+            padding: 8px 18px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 0.88rem;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .glossary-link-btn:hover, .lang-switch-btn:hover {
+            background: rgba(230, 153, 45, 0.22);
+            color: #fff;
+            border-color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(230, 153, 45, 0.2);
+        }
+
+        /* Container */
+        .manifesto-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 10px 20px 60px;
+            position: relative;
+            z-index: 1;
+            box-sizing: border-box;
+        }
+
+        .hero-manifesto {
+            text-align: center;
+            padding: 30px 0 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUpHero 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        @keyframes fadeInUpHero {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-manifesto h1 {
+            font-size: clamp(1.6rem, 4.5vw, 2.6rem);
+            line-height: 1.35;
+            margin-bottom: 18px;
+            font-weight: 900;
+            color: #ffffff;
+        }
+
+        .hero-manifesto h1 span {
+            display: block;
+            margin-top: 6px;
+            background: linear-gradient(90deg, var(--accent), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-manifesto .subtitle {
+            font-size: clamp(0.95rem, 2.3vw, 1.15rem);
+            color: var(--text-dim);
+            line-height: 1.7;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .tagline-badge {
+            display: inline-block;
+            padding: 6px 18px;
+            background: var(--brand-orange-subtle);
+            border: 1px solid rgba(230, 153, 45, 0.3);
+            color: var(--accent);
+            border-radius: 50px;
+            font-size: clamp(0.8rem, 2vw, 0.9rem);
+            font-weight: 800;
+            margin-bottom: 22px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Metadata Header Card */
+        .spec-metadata-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 14px;
+            background: rgba(4, 9, 22, 0.6);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 16px;
+            margin-bottom: 25px;
+        }
+
+        .spec-meta-item {
+            font-size: 0.88rem;
+        }
+
+        .spec-meta-item strong {
+            color: var(--gold);
+            display: block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 2px;
+        }
+
+        .spec-meta-item span {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        /* Cards Styling */
+        .manifesto-card {
+            background: var(--card-bg);
+            padding: clamp(22px, 5vw, 42px);
+            border-radius: 24px;
+            border: 1px solid var(--border-color);
+            backdrop-filter: blur(12px);
+            margin-bottom: 30px;
+            text-align: right;
+        }
+
+        .manifesto-card h2 {
+            color: var(--accent);
+            font-size: clamp(1.3rem, 4vw, 1.75rem);
+            margin-bottom: 20px;
+            font-weight: 800;
+            line-height: 1.3;
+            border-right: 4px solid var(--accent);
+            padding-right: 14px;
+        }
+
+        .manifesto-card p {
+            color: var(--text-main);
+            font-size: clamp(0.98rem, 2.5vw, 1.05rem);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .concept-segment {
+            margin-bottom: 40px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 30px;
+        }
+
+        .concept-segment:first-of-type {
+            border-top: none;
+            padding-top: 0;
+        }
+
+        h3.concept-term-title {
+            color: #fff;
+            font-size: clamp(1.25rem, 3.2vw, 1.65rem);
+            margin-bottom: 18px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h3.concept-term-title::before {
+            content: "◆";
+            color: var(--accent);
+            font-size: 0.9rem;
+        }
+
+        h4.property-label {
+            color: var(--gold);
+            font-size: 1.02rem;
+            margin: 20px 0 8px;
+            font-weight: 700;
+        }
+
+        blockquote {
+            border-right: 3px solid var(--accent);
+            padding: 14px 18px;
+            background: var(--brand-orange-subtle);
+            margin: 18px 0;
+            border-radius: 8px;
+            color: var(--text-main);
+            font-style: italic;
+        }
+
+        ul.styled-list {
+            padding-right: 20px;
+            margin-bottom: 20px;
+            list-style-type: none;
+        }
+
+        ul.styled-list li {
+            position: relative;
+            margin-bottom: 8px;
+            color: var(--text-main);
+            padding-right: 20px;
+        }
+
+        ul.styled-list li::before {
+            content: "▪";
+            position: absolute;
+            right: 0;
+            color: var(--accent);
+            font-size: 0.9rem;
+        }
+
+        /* Tables & Diagrams */
+        .table-responsive-container {
+            overflow-x: auto;
+            margin: 20px 0;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            background: rgba(4, 9, 22, 0.6);
+        }
+
+        table.luxury-data-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: right;
+            font-size: 0.92rem;
+            min-width: 550px;
+        }
+
+        table.luxury-data-table th {
+            background: rgba(230, 153, 45, 0.12);
+            color: var(--gold);
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border-color);
+            font-weight: 700;
+        }
+
+        table.luxury-data-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-main);
+        }
+
+        .visual-diagram-box {
+            margin: 20px 0;
+            background: rgba(4, 9, 22, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 18px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .diagram-flow {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .diagram-node {
+            background: var(--secondary);
+            border: 1px solid rgba(230, 153, 45, 0.3);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .diagram-arrow {
+            color: var(--accent);
+            font-weight: bold;
+            font-size: 1.1rem;
+            rotate: 180deg;
+        }
+
+        .reveal-card {
+            opacity: 0;
+            transform: translateY(25px);
+            transition: opacity 0.6s cubic-bezier(0.215, 0.610, 0.355, 1), 
+                        transform 0.6s cubic-bezier(0.215, 0.610, 0.355, 1);
+        }
+
+        .reveal-card.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            .diagram-flow { flex-direction: column; gap: 8px; }
+            .diagram-arrow { transform: rotate(270deg); }
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="network-canvas"></canvas>
+
+<!-- Header Navigation -->
+<nav class="top-nav-bar">
+    <a href="/" class="brand-logo-wrap" aria-label="أوامركم الرئيسية">
+        <img src="/logo.webp" alt="أوامركم" class="brand-logo-img">
+    </a>
+    
+    <div class="nav-actions-group">
+        <a href="/glossary" class="glossary-link-btn" aria-label="العودة إلى القاموس الرسمي">
+            <span>القاموس الرسمي</span>
+        </a>
+        <a href="/en/standards/terminology/v0.1/" class="lang-switch-btn" aria-label="English Version">
+            <span>English</span>
+        </a>
+    </div>
+</nav>
+
+<main class="manifesto-container">
+    
+    <!-- Hero Header -->
+    <header class="hero-manifesto">
+        <span class="tagline-badge">المعيار الرسمي للمصطلحات v0.1</span>
+        <h1>Ouamarkom™ Terminology Standard v0.1<span>Official Terminology & Concept Naming Standard</span></h1>
+        <p class="subtitle">
+            المعيار الموحد لتسمية المفاهيم، وحوكمة نطاق السلطة، وتنسيق الأوامر والتنفيذ الاقتصادي لذكاء الاصطناعي.
+        </p>
+    </header>
+
+    <!-- Metadata Grid Card -->
+    <section class="manifesto-card reveal-card">
+        <div class="spec-metadata-grid">
+            <div class="spec-meta-item">
+                <strong>المؤسسة (Organization)</strong>
+                <span>Ouamarkom™</span>
+            </div>
+            <div class="spec-meta-item">
+                <strong>الإطار المعماري (Framework)</strong>
+                <span>The Command Economy of AI™ (CE-AI)</span>
+            </div>
+            <div class="spec-meta-item">
+                <strong>النظام التجريبي (Primary System)</strong>
+                <span>Smart Hand™</span>
+            </div>
+            <div class="spec-meta-item">
+                <strong>الحالة الإصدارية (Status)</strong>
+                <span>Research & Experimental Standard</span>
+            </div>
+            <div class="spec-meta-item">
+                <strong>الإصدار وتاريخ التفعيل (Version & Date)</strong>
+                <span>v0.1 — سبتمبر 2026</span>
+            </div>
+            <div class="spec-meta-item">
+                <strong>نطاق التطبيق (Scope)</strong>
+                <span>Strategic, Architectural, Technical, Research & Investor Communications</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1 & 2 -->
+    <section class="manifesto-card reveal-card">
+        <h2>1. الغرض من المعيار</h2>
+        <p>يحدد هذا المستند القاموس الاصطلاحي الرسمي المستخدم داخل منظومة Ouamarkom™، بما يشمل:</p>
+        <ul class="styled-list">
+            <li>الأبحاث والدراسات العلمية.</li>
+            <li>الوثائق المعمارية والمواصفات التقنية.</li>
+            <li>مواصفات المنتجات ووثائق Smart Hand™ و CE-AI.</li>
+            <li>الأوراق البحثية والعروض الاستثمارية والوثائق المؤسسية.</li>
+            <li>المواد التسويقية والبروتوكولات المستقبلية ومعايير الاختبار والمطابقة.</li>
+        </ul>
+        <p><strong>الهدف:</strong> ليس توحيد الترجمة اللغوية فقط، بل توحيد النموذج المفاهيمي الذي تستند إليه جميع المصطلحات.</p>
+
+        <h2 style="margin-top: 35px;">2. المبدأ الأساسي</h2>
+        <p>تعتمد Ouamarkom™ المبدأ الأصيل التالي:</p>
+        <blockquote>«One Concept → One Primary Term → One Arabic Equivalent»</blockquote>
+        <p>أي: <strong>مفهوم واحد ← مصطلح إنجليزي أساسي واحد ← مقابل عربي أساسي واحد.</strong></p>
+        <p>يجوز استخدام مرادفات تفسيرية عند الحاجة، لكن لا يجوز أن تحل محل المصطلح الرسمي في الوثائق التقنية أو البحثية.</p>
+    </section>
+
+    <!-- Section 3: Master Terms Table -->
+    <section class="manifesto-card reveal-card">
+        <h2>3. المصطلحات الأساسية</h2>
+        <p>جدول الحصر المرجعي الشامل للمصطلحات الأساسية العشرين المعتمدة في الإصدار v0.1:</p>
+
+        <div class="table-responsive-container">
+            <table class="luxury-data-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>English Term</th>
+                        <th>المصطلح العربي الرسمي</th>
+                        <th>الوظيفة والتموضع</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>The Command Economy of AI™ (CE-AI)</td><td>اقتصاد الأوامر للذكاء الاصطناعي™</td><td>الإطار الاقتصادي والمعماري</td></tr>
+                    <tr><td>2</td><td>Economic Command</td><td>الأمر الاقتصادي</td><td>الوحدة التنظيمية الأساسية المفترضة</td></tr>
+                    <tr><td>3</td><td>Institutional Intent</td><td>النية المؤسسية</td><td>ما تريد المؤسسة تحقيقه</td></tr>
+                    <tr><td>4</td><td>Economic Goal</td><td>الهدف الاقتصادي</td><td>الهدف القابل للتنفيذ والقياس</td></tr>
+                    <tr><td>5</td><td>Economic Delegation</td><td>التفويض الاقتصادي</td><td>تفويض هدف أو مسؤولية اقتصادية</td></tr>
+                    <tr><td>6</td><td>Delegated Economic Authority</td><td>السلطة الاقتصادية المفوّضة</td><td>السلطة الممنوحة للذكاء الاصطناعي</td></tr>
+                    <tr><td>7</td><td>Authority Envelope</td><td>نطاق السلطة</td><td>الحدود التي تحدد ما يجوز للنظام فعله</td></tr>
+                    <tr><td>8</td><td>Governed Economic Agency</td><td>الوكالة الاقتصادية المحكومة</td><td>القدرة على التصرف نيابة عن المؤسسة ضمن حوكمة محددة</td></tr>
+                    <tr><td>9</td><td>Economic Execution</td><td>التنفيذ الاقتصادي</td><td>تحويل القرار إلى فعل اقتصادي حقيقي</td></tr>
+                    <tr><td>10</td><td>Evidence</td><td>الأدلة</td><td>ما يجعل التنفيذ قابلًا للملاحظة وإعادة البناء</td></tr>
+                    <tr><td>11</td><td>Economic Outcome</td><td>النتيجة الاقتصادية</td><td>النتيجة الناتجة عن التنفيذ</td></tr>
+                    <tr><td>12</td><td>Outcome Verification</td><td>التحقق من النتيجة</td><td>التحقق من تحقق النتيجة وفق معايير محددة</td></tr>
+                    <tr><td>13</td><td>Learning / Memory</td><td>التعلّم والذاكرة</td><td>تحويل الخبرة إلى قدرة مستقبلية</td></tr>
+                    <tr><td>14</td><td>Authority Recalibration</td><td>إعادة معايرة السلطة</td><td>تعديل نطاق السلطة بناءً على الأدلة والأداء</td></tr>
+                    <tr><td>15</td><td>Adaptive Economic Agency</td><td>الوكالة الاقتصادية المتكيفة</td><td>وكالة تتكيف مع الحالة والأداء والمخاطر</td></tr>
+                    <tr><td>16</td><td>Earned Autonomy</td><td>الاستقلالية المكتسبة</td><td>استقلالية تزداد بناءً على الأدلة والأداء</td></tr>
+                    <tr><td>17</td><td>Economic Execution Infrastructure</td><td>البنية التحتية للتنفيذ الاقتصادي</td><td>طبقة البنية التي تمكّن دورة التنفيذ الاقتصادي</td></tr>
+                    <tr><td>18</td><td>Institutional Gateway</td><td>البوابة المؤسسية</td><td>حدود الحوكمة بين AI والمؤسسة</td></tr>
+                    <tr><td>19</td><td>Smart Hand™</td><td>اليد الذكية™</td><td>النظام التجريبي لإثبات الأطروحة</td></tr>
+                    <tr><td>20</td><td>Command-Centric Architecture</td><td>معمارية متمحورة حول الأوامر</td><td>النموذج المعماري المقترح</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Sections 4 to 8: Core Conceptual Units -->
+    <section class="manifesto-card reveal-card">
+        <h2>الوحدات المفاهيمية الأساسية</h2>
+
+        <!-- 4 -->
+        <div class="concept-segment" id="ce-ai">
+            <h3 class="concept-term-title">4. CE-AI (اقتصاد الأوامر للذكاء الاصطناعي™)</h3>
+            <p><strong>English:</strong> The Command Economy of AI™ (CE-AI)<br>
+            <strong>العربية:</strong> اقتصاد الأوامر للذكاء الاصطناعي™</p>
+            <h4 class="property-label">التعريف الرسمي</h4>
+            <p>اقتصاد الأوامر للذكاء الاصطناعي هو إطار اقتصادي ومعماري ناشئ لاستكشاف كيفية تنظيم النشاط الاقتصادي عندما يصبح الذكاء الاصطناعي قادرًا على التصرف نيابة عن المؤسسات، مع التركيز على الأمر الاقتصادي كوحدة تربط النية والسلطة والتنفيذ والأدلة والنتائج.</p>
+            <h4 class="property-label">ملاحظة منهجية وإلزامية</h4>
+            <p>لا يُعامل CE-AI في الإصدار v0.1 باعتباره حقيقة اقتصادية مثبتة. الصياغة الصحيحة إلتزاماً بالدقة العلمية:</p>
+            <blockquote>«CE-AI is an emerging framework and research hypothesis.» / «CE-AI هو إطار ناشئ وفرضية بحثية قيد الاختبار.»</blockquote>
+            <p>ولا تُستخدم صياغات الجزم مثل: <em>"CE-AI is the established new economy"</em> إلا بعد وجود أدلة مستقلة وكافية تدعم ذلك.</p>
+        </div>
+
+        <!-- 5 -->
+        <div class="concept-segment" id="economic-command">
+            <h3 class="concept-term-title">5. Economic Command (الأمر الاقتصادي)</h3>
+            <p><strong>English:</strong> Economic Command | <strong>العربية:</strong> الأمر الاقتصادي</p>
+            <h4 class="property-label">التعريف الرسمي</h4>
+            <blockquote>«An Economic Command is a governed unit of delegated institutional intent that binds an economic objective to authority, constraints, execution, evidence, and an expected verifiable outcome.»</blockquote>
+            <p>«الأمر الاقتصادي هو وحدة محكومة من النية المؤسسية المفوّضة، تربط الهدف الاقتصادي بالسلطة والقيود والتنفيذ والأدلة والنتيجة المتوقعة القابلة للتحقق.»</p>
+            <h4 class="property-label">المبدأ الفاصل</h4>
+            <p>الأمر الاقتصادي ليس مجرد (Prompt) أو (Task) أو (Agent) أو (Workflow) أو (API Call). بل هو كيان أعلى مستوى يربط الهيكل التالي:</p>
+            <div class="visual-diagram-box">
+                <div class="diagram-flow">
+                    <div class="diagram-node">Intent (النية)</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Authority (السلطة)</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Execution (التنفيذ)</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Evidence (الأدلة)</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Outcome (النتيجة)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6 & 7 -->
+        <div class="concept-segment" id="agent-vs-command">
+            <h3 class="concept-term-title">6 & 7. AI Agent مقابل Economic Command</h3>
+            <p><strong>AI Agent (الوكيل):</strong> مكوّن قادر على اتخاذ قرارات أو تنفيذ أفعال باستخدام أدوات وبيانات ضمن نطاق محدد.</p>
+            <p>في CE-AI: <code>Agent = Execution Capability</code> (الوكيل = قدرة تنفيذية). ولا يُعامل الوكيل باعتباره الوحدة الاقتصادية الأساسية.</p>
+            <p><strong>العلاقة:</strong> <code>Command → coordinates → Agents</code> (الأمر → ينسق → الوكلاء). وقد يستخدم أمر اقتصادي واحد عدة وكلاء.</p>
+
+            <h4 class="property-label">جدول التمييز الرسمي (Agent-centric vs Command-centric)</h4>
+            <div class="table-responsive-container">
+                <table class="luxury-data-table">
+                    <thead>
+                        <tr>
+                            <th>المنظور المتمحور حول الوكلاء (Agent-centric)</th>
+                            <th>المنظور المتمحور حول الأوامر (Command-centric)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>ماذا يستطيع الوكيل أن يفعل؟</td><td>ما الهدف الاقتصادي المفوّض؟</td></tr>
+                        <tr><td>Capability (القدرة)</td><td>Authority + Objective (السلطة + الهدف)</td></tr>
+                        <tr><td>Agent (الوكيل)</td><td>Command (الأمر الاقتصادي)</td></tr>
+                        <tr><td>Task execution (تنفيذ المهمة)</td><td>Economic execution (التنفيذ الاقتصادي)</td></tr>
+                        <tr><td>Tool use (استخدام الأدوات)</td><td>Outcome responsibility (مسؤولية النتيجة)</td></tr>
+                        <tr><td>Agent log (سجل الوكيل)</td><td>Economic execution record (سجل التنفيذ الاقتصادي)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <blockquote>«Agent remains the execution actor; Command becomes the economic coordination and accountability unit.»<br>
+            (يبقى الوكيل هو الفاعل التنفيذي، بينما يصبح الأمر وحدة التنسيق والمساءلة الاقتصادية.)</blockquote>
+        </div>
+
+        <!-- 8 -->
+        <div class="concept-segment" id="prompt">
+            <h3 class="concept-term-title">8. Prompt (الموجّه / البرومبت)</h3>
+            <p>في الوثائق التقنية، يمكن الإبقاء على Prompt عند الحديث عن المفهوم التقني المعروف. <strong>ولا يُستخدم Prompt كمرادف لـ Economic Command.</strong></p>
+
+            <div class="table-responsive-container">
+                <table class="luxury-data-table">
+                    <thead>
+                        <tr>
+                            <th>Prompt (الموجّه)</th>
+                            <th>Economic Command (الأمر الاقتصادي)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>تعليمات لغوية موجهة للذكاء الاصطناعي.</td>
+                            <td>كيان محكوم يحتوي على: هدف اقتصادي، سلطة، نطاق، قيود، مخاطر، مدة، متطلبات موافقة، أدلة، نتيجة متوقعة، وآلية تحقق.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>القاعدة الحاسمة: <code>Prompt ≠ Command</code>.</p>
+        </div>
+    </section>
+
+    <!-- Sections 9 to 14: Delegation & Authority -->
+    <section class="manifesto-card reveal-card">
+        <h2>التفويض والحوكمة والسلطة</h2>
+
+        <!-- 9 -->
+        <div class="concept-segment" id="delegation">
+            <h3 class="concept-term-title">9. Delegation (التفويض)</h3>
+            <p><strong>التفويض (Delegation):</strong> هو منح النظام مسؤولية أو صلاحية محددة للتصرف نيابة عن جهة أخرى.<br>
+            أما <strong>التخويل (Authorization):</strong> فهو السماح الرسمي بتنفيذ فعل محدد.</p>
+            <blockquote>«Delegation establishes responsibility. Authorization permits action.»<br>
+            (التفويض ينشئ نطاق المسؤولية، بينما التخويل يسمح بالفعل.)</blockquote>
+        </div>
+
+        <!-- 10 -->
+        <div class="concept-segment" id="dea">
+            <h3 class="concept-term-title">10. Delegated Economic Authority (السلطة الاقتصادية المفوّضة)</h3>
+            <p>هي السلطة التي تمنحها المؤسسة للذكاء الاصطناعي للتصرف ضمن هدف اقتصادي محدد. وتشمل: الميزانية، الحد الأقصى للمعاملة، الموردين المسموحين، الخصومات، حدود التفاوض، مدة التفويض، نوع العقود، مستوى المخاطر، ومتطلبات الموافقة.</p>
+        </div>
+
+        <!-- 11 -->
+        <div class="concept-segment" id="authority-envelope">
+            <h3 class="concept-term-title">11. Authority Envelope (نطاق السلطة)</h3>
+            <p>هو الحدود التشغيلية التي تحدد:</p>
+            <blockquote>«What the AI may do, where, when, under which conditions, and up to what economic risk.»<br>
+            (ما الذي يجوز للذكاء الاصطناعي فعله، وأين، ومتى، وتحت أي شروط، وإلى أي مستوى من المخاطر الاقتصادية.)</blockquote>
+        </div>
+
+        <!-- 12 & 13 -->
+        <div class="concept-segment" id="agency-vs-autonomy">
+            <h3 class="concept-term-title">12 & 13. Agency (الوكالة) مقابل Autonomy (الاستقلالية)</h3>
+            <p><strong>الوكالة الاقتصادية المحكومة (Governed Economic Agency):</strong> قدرة الذكاء الاصطناعي على إدارة هدف اقتصادي والتصرف نيابة عن المؤسسة ضمن سلطة مفوّضة، سياسات، حدود مخاطر، أدلة، آليات تحقق، وآليات تصعيد وتدخل.</p>
+            <p>الفصل الإلزامي: <code>Agency ≠ Autonomy</code></p>
+            <ul class="styled-list">
+                <li><strong>Agency (الوكالة):</strong> قدرة النظام على التصرف نيابة عن المؤسسة.</li>
+                <li><strong>Autonomy (الاستقلالية):</strong> مقدار الحرية الممنوحة للنظام في اتخاذ وتنفيذ القرارات دون تدخل مباشر.</li>
+            </ul>
+            <p>مثال على <strong>وكالة مرتفعة + استقلالية منخفضة (High Agency + Low Autonomy):</strong> نظام AI يدير هدف خفض تكلفة المشتريات، لكنه يحتاج إلى موافقة بشرية على كل صفقة تتجاوز 50,000 ريال.</p>
+        </div>
+
+        <!-- 14 -->
+        <div class="concept-segment" id="earned-autonomy">
+            <h3 class="concept-term-title">14. Earned Autonomy (الاستقلالية المكتسبة)</h3>
+            <p>لا يحصل النظام على استقلالية أكبر لمجرد امتلاكه قدرات أعلى؛ بل تتوسع استقلاليته بناءً على: الأداء، الأدلة، الامتثال، انخفاض الأخطاء، نجاح التنفيذ، تحقق النتائج، انخفاض المخاطر، وقدرته على التعامل مع الاستثناءات.</p>
+            <blockquote>«Capability enables action. Authority permits action. Evidence earns trust. Verification validates outcomes. Performance earns autonomy.»<br>
+            (القدرة تمكّن من الفعل، والسلطة تسمح بالفعل، والأدلة تكسب الثقة، والتحقق يثبت سلامة النتيجة، والأداء يكسب الاستقلالية.)</blockquote>
+        </div>
+    </section>
+
+    <!-- Sections 15 to 21: Execution, Evidence & Infrastructure -->
+    <section class="manifesto-card reveal-card">
+        <h2>التنفيذ والأدلة والبنية التحتية</h2>
+
+        <!-- 15 -->
+        <div class="concept-segment" id="economic-execution">
+            <h3 class="concept-term-title">15. Economic Execution (التنفيذ الاقتصادي)</h3>
+            <p>هو تحويل هدف أو أمر اقتصادي إلى أفعال حقيقية تؤثر في النشاط الاقتصادي للمؤسسة.</p>
+            <p>ليس مجرد إجابة لغوية مثل <em>"AI recommends a supplier"</em> بل مسار تنفيذي مكتمل:</p>
+            <blockquote>AI evaluates suppliers → negotiates within authority → selects supplier → creates purchase order → obtains required approval → executes transaction → records evidence.</blockquote>
+        </div>
+
+        <!-- 16 -->
+        <div class="concept-segment" id="evidence">
+            <h3 class="concept-term-title">16. Evidence (الأدلة)</h3>
+            <p>هي البيانات والسجلات التي تجعل ما حدث قابلًا للملاحظة وإعادة البناء والمراجعة. وتتضمن: سجلات الأوامر، القرارات، الموافقات، API logs، المستندات، المعاملات المالية، الطوابع الزمنية (Timestamps)، نتائج الأدوات، وسجلات تدخل البشر.</p>
+        </div>
+
+        <!-- 17 & 18 -->
+        <div class="concept-segment" id="outcomes-verification">
+            <h3 class="concept-term-title">17 & 18. Economic Outcome & Outcome Verification</h3>
+            <p><strong>النتيجة الاقتصادية (Economic Outcome):</strong> الأثر أو النتيجة الاقتصادية الملموسة بعد التنفيذ (مثل: خفض التكلفة، زيادة المبيعات، تقليل الهدر).</p>
+            <p><strong>التحقق من النتيجة (Outcome Verification):</strong> التأكد من أن النتيجة المعلنة تستوفي معايير التحقق المحددة مسبقًا.</p>
+            <p>ويجب الفصل الدقيق بين:</p>
+            <ul class="styled-list">
+                <li><strong>Execution Verified:</strong> تم التحقق من حدوث التنفيذ التشغيلي.</li>
+                <li><strong>Outcome Verified:</strong> تم التحقق من تحقق النتيجة الاقتصادية.</li>
+                <li><strong>Outcome Attributed:</strong> تم تحديد درجة إسناد النتيجة إلى الذكاء الاصطناعي.</li>
+            </ul>
+            <p>لذلك: <code>Outcome Verified ≠ Outcome Caused by AI</code>.</p>
+        </div>
+
+        <!-- 19 & 20 & 21 -->
+        <div class="concept-segment" id="infrastructure-and-hand">
+            <h3 class="concept-term-title">19 - 21. البنية التحتية، البوابة المؤسسية، و Smart Hand™</h3>
+            <p><strong>Economic Execution Infrastructure (البنية التحتية للتنفيذ الاقتصادي):</strong> الطبقة التي تربط النية المؤسسية بالنتيجة الاقتصادية المتحققة عبر مسار حوكمة متكامل.</p>
+            <p><strong>Institutional Gateway (البوابة المؤسسية):</strong> الحد المعماري الذي يفصل بين قدرة الذكاء الاصطناعي على التفكير/التخطيط وبين قدرته على التأثير في المؤسسة والعالم الخارجي (التحكم في الهوية، التفويض، الموافقات، والتصعيد).</p>
+            <p><strong>Smart Hand™ (اليد الذكية™):</strong> النظام التجريبي الذي تستخدمه Ouamarkom™ لاختبار فرضيات CE-AI في التنفيذ الاقتصادي الحقيقي.</p>
+            <blockquote>«Smart Hand™ = Economic Execution Engine» (محرك التنفيذ الاقتصادي)</blockquote>
+            <p>ولا تُقدم في الإصدار v0.1 كـ Agent Marketplace أو General AI OS، بل كـ <em>"نظام تجريبي لاختبار التنفيذ الاقتصادي المحكوم والمدفوع بالذكاء الاصطناعي"</em>.</p>
+        </div>
+    </section>
+
+    <!-- Sections 22 to 28: Lifecycles & Architectural Loops -->
+    <section class="manifesto-card reveal-card">
+        <h2>دورة الحياة والحلقات المعمارية</h2>
+
+        <!-- 22 -->
+        <div class="concept-segment">
+            <h3 class="concept-term-title">22. Command Lifecycle (دورة حياة الأمر)</h3>
+            <div class="visual-diagram-box">
+                <div class="diagram-flow">
+                    <div class="diagram-node">Command Creation</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Command Delegation</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Command Authorization</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Command Execution</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Command Monitoring</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Command Verification</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Command Optimization</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Command Learning</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 23 -->
+        <div class="concept-segment">
+            <h3 class="concept-term-title">23. Economic Execution Loop (حلقة التنفيذ الاقتصادي)</h3>
+            <div class="visual-diagram-box">
+                <div class="diagram-flow">
+                    <div class="diagram-node">Institutional Intent</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Economic Goal</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Economic Command</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Delegated Authority</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Governed Agency</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Economic Execution</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Evidence</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Economic Outcome</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Outcome Verification</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Learning / Memory</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Authority Recalibration</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Adaptive Agency</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 24 - 28 -->
+        <div class="concept-segment">
+            <h3 class="concept-term-title">24 - 28. القواعد التشغيلية وإعادة المعايرة</h3>
+            <p><strong>Evidence vs Verification (24):</strong></p>
+            <blockquote>«Evidence makes execution observable. Verification makes outcomes trustworthy.»<br>
+            (الأدلة تجعل التنفيذ قابلًا للملاحظة، والتحقق يجعل النتائج قابلة للثقة. ولا يجوز دمج المصطلحين).</blockquote>
+            
+            <p><strong>حالات النتائج الثلاث (25):</strong></p>
+            <ul class="styled-list">
+                <li><strong>Observed Outcome (النتيجة المرصودة):</strong> رصد تغيّر أو نتيجة.</li>
+                <li><strong>Verified Outcome (النتيجة المتحقَّق منها):</strong> النتيجة استوفت المعايير المحددة.</li>
+                <li><strong>Attributed Outcome (النتيجة المسندة):</strong> تحديد العلاقة السببية بين التنفيذ والنتيجة.</li>
+            </ul>
+
+            <p><strong>Authority Recalibration (إعادة معايرة السلطة - 27):</strong> تعديل نطاق السلطة بناءً على (Performance + Evidence + Risk + Verification). مثال: التوسع السلس من سقف 10,000 ريال إلى 25,000 ريال بناءً على 100 أمر ناجح وبدون خطأ، خاضعاً لسياسة محددة.</p>
+
+            <p><strong>Economic Command Graph (الرسم البياني للأوامر - 28):</strong> يمثل العلاقات المترابطة بين الأمر الرئيسي والأوامر الفرعية (وليس مجرد مجموعة Prompts):</p>
+            <div class="visual-diagram-box">
+                <div class="diagram-flow">
+                    <div class="diagram-node">Reduce Procurement Cost by 5%</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Research Suppliers</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Compare Prices</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Negotiate</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Request Approval</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Issue PO</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Verify Savings</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sections 29 to 35: Execution Records & Testing -->
+    <section class="manifesto-card reveal-card">
+        <h2>السجلات والمختبرات والمطابقة</h2>
+
+        <div class="concept-segment">
+            <h3 class="concept-term-title">29 & 30. سجل التنفيذ وإيصال التنفيذ الاقتصادي</h3>
+            <p><strong>Execution Record (سجل التنفيذ):</strong> السجل الشامل القادر على إعادة بناء كافة تفاصيل العملية (من أصدر الأمر، الهدف، السلطة، القرارات، الأدوات، الطوابع الزمنية، والنتائج).</p>
+            <p><strong>Economic Execution Receipt (إيصال التنفيذ الاقتصادي):</strong> سجل موجز قابل للمراجعة والتدقيق، يتضمن: Command ID، الهدف، السلطة، الوكلاء، الأدلة، النتيجة، حالة التحقق، وتدخل الإنسان.</p>
+        </div>
+
+        <div class="concept-segment">
+            <h3 class="concept-term-title">31 & 32. التجارب الاستراتيجية والمختبرات الحقيقية</h3>
+            <p><strong>Strategic Pilot / Economic Execution Pilot:</strong> يُفضل هذا المصطلح على وصف العميل بأنه "حقل اختبار". والعلاقة قائمة على معادلة القيمة المتبادلة: <code>Customer Value + Ouamarkom Evidence</code>.</p>
+            <p><strong>Real Economic Execution Laboratory (مختبر التنفيذ الاقتصادي الحقيقي):</strong> وصف لدور البيئة الاقتصادية الفردية أو الوطنية لاختبار الفرضيات عبر معاملات فعلية. الصياغة الرسمية:</p>
+            <blockquote>«Saudi Arabia may serve as a Real Economic Execution Laboratory for validating the thesis.»<br>
+            (يمكن أن تؤدي المملكة العربية السعودية دور مختبر للتنفيذ الاقتصادي الحقيقي لاختبار الأطروحة - كفرضية استراتيجية وليست ادعاءً مطلقاً).</blockquote>
+        </div>
+
+        <div class="concept-segment">
+            <h3 class="concept-term-title">33 - 35. المعمارية المرجعية والبروتوكولات</h3>
+            <p><strong>Reference Architecture (المعمارية المرجعية):</strong> بنية تُستخدم كنموذج مرجعي دون ادعاء أنها المعيار الصناعي النهائي.</p>
+            <p><strong>Command Economy Protocols™ (CEP):</strong> تُستخدم كلمة بروتوكول فقط عند وجود مواصفة محددة للبيانات والتفاعل. ولا يُوصف CEP بأنه "معيار عالمي" إلا بعد اكتمال المسار: <code>Specification → Implementation → Testing → Independent Adoption → Conformance</code>.</p>
+            <p><strong>Conformance Test (اختبار المطابقة):</strong> اختبار مدى التزام نظام أو تنفيذ معين بالمواصفة المحددة.</p>
+        </div>
+    </section>
+
+    <!-- Sections 36 to 41: Conceptual Governance & Strict Rules -->
+    <section class="manifesto-card reveal-card">
+        <h2>قواعد الحوكمة والانضباط الاصطلاحي</h2>
+
+        <div class="concept-segment">
+            <h3 class="concept-term-title">36. المصطلحات التي يجب عدم الخلط بينها</h3>
+            <ul class="styled-list">
+                <li><code>Capability ≠ Authority</code> (القدرة لا تعني السلطة)</li>
+                <li><code>Capability ≠ Trust</code> (القدرة لا تعني الثقة)</li>
+                <li><code>Capability ≠ Autonomy</code> (القدرة لا تعني الاستقلالية)</li>
+                <li><code>Agency ≠ Autonomy</code> (الوكالة لا تعني الاستقلالية)</li>
+                <li><code>Execution ≠ Outcome</code> (التنفيذ لا يعني النتيجة)</li>
+                <li><code>Outcome ≠ Attribution</code> (النتيجة لا تعني الإسناد)</li>
+                <li><code>Evidence ≠ Verification</code> (الأدلة لا تعني التحقق)</li>
+            </ul>
+        </div>
+
+        <div class="concept-segment">
+            <h3 class="concept-term-title">37. الصيغة المعمارية الرسمية المعتمدة</h3>
+            <div class="visual-diagram-box">
+                <div class="diagram-flow">
+                    <div class="diagram-node">النية المؤسسية</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">الأمر الاقتصادي</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">السلطة المفوّضة</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">نطاق السلطة</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">الوكالة المحكومة</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">التنفيذ الاقتصادي</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">الأدلة</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">النتيجة الاقتصادية</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">التحقق</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">التعلّم</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">إعادة المعايرة</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="concept-segment">
+            <h3 class="concept-term-title">38 - 40. القواعد الذهبية وانضباط الأدلة</h3>
+            <p><strong>القاعدة الذهبية (38):</strong> <em>«لا تنشئ مصطلحًا جديدًا عندما يكون هناك مصطلح قائم يشرح المفهوم بصورة كافية.»</em></p>
+            <p><strong>مبدأ الانضباط الاصطلاحي (39):</strong> <em>«Terminology must follow the evidence»</em> (يجب أن تتبع المصطلحات الأدلة):<br>
+            <code>Evidence → Concept → Definition → Architecture → Standardization</code></p>
+            <p><strong>قاعدة "No Layer Without Evidence" (40):</strong> لا تُستحدث طبقة معمارية جديدة لمجرد التسويق أو التعقيد إذا كانت الطبقة القائمة تستوعب الوظيفة.</p>
+        </div>
+
+        <div class="concept-segment">
+            <h3 class="concept-term-title">41. الوضع المعرفي للمصطلحات (Epistemic Status)</h3>
+            <div class="table-responsive-container">
+                <table class="luxury-data-table">
+                    <thead>
+                        <tr>
+                            <th>التصنيف المعرفي</th>
+                            <th>المعنى والتموضع</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Established (راسخ)</td><td>مفهوم مدعوم بأدلة وممارسة واسعة.</td></tr>
+                        <tr><td>Emerging (ناشئ)</td><td>مفهوم يتشكل حثيثاً في السوق أو البحث.</td></tr>
+                        <tr><td>Proposed (مقترح)</td><td>مفهوم تقترحه Ouamarkom™.</td></tr>
+                        <tr><td>Hypothesized (مفترض/فرضية)</td><td>مفهوم يتطلب إثباتات واختبارات.</td></tr>
+                        <tr><td>Experimental (تجريبي)</td><td>مفهوم يجري اختباره عملياً وميدانياً.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sections 42 to 48: Thesis Position, Asset Map & Standard Conclusion -->
+    <section class="manifesto-card reveal-card">
+        <h2>وضع الأطروحة والعلاقات الاستراتيجية</h2>
+
+        <div class="concept-segment">
+            <h3 class="concept-term-title">42 & 43. تموضع CE-AI والعلاقة بين أصول Ouamarkom™</h3>
+            <p>في الإصدار v0.1: <code>CE-AI = Emerging + Proposed + Research Hypothesis</code>.</p>
+            <p>والسؤال البحثي المركزي هو: <em>«هل يمكن أن يصبح الأمر الاقتصادي الوحدة الأساسية للتنفيذ الاقتصادي المحكوم والمدفوع بالذكاء الاصطناعي؟»</em></p>
+
+            <h4 class="property-label">الهيكلية الرسمية لترابط أصول المنظومة</h4>
+            <div class="visual-diagram-box">
+                <div class="diagram-flow">
+                    <div class="diagram-node">CE-AI (الإطار والأطروحة)</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Economic Command (الوحدة المفاهيمية)</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Smart Hand™ (النظام التجريبي)</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Institutional Gateway (حدود الحوكمة)</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Economic Execution Infrastructure</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Evidence & Outcome Verification</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Experiments & Data</div><div class="diagram-arrow">➔</div>
+                    <div class="diagram-node">Reference Architecture / Protocols</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="concept-segment">
+            <h3 class="concept-term-title">44 - 47. قواعد التطور والصياغات الاستراتيجية</h3>
+            <p><strong>سلسلة التطور الفرضية (44):</strong></p>
+            <blockquote>Command → Experiment → Evidence → Pattern → Infrastructure → Market Structure → Protocol</blockquote>
+
+            <p><strong>الصياغة الاستراتيجية الموحدة لـ Ouamarkom™ (45):</strong></p>
+            <blockquote>«Ouamarkom™ is building and testing an economic execution infrastructure designed to connect institutional intent with governed AI-driven execution and verifiable economic outcomes.»<br>
+            (أوامركم™ تبني وتختبر بنية تحتية للتنفيذ الاقتصادي تهدف إلى ربط النية المؤسسية بالتنفيذ المحكوم والمدفوع بالذكاء الاصطناعي والنتائج الاقتصادية القابلة للتحقق.)</blockquote>
+
+            <p><strong>الصياغة الموحدة للأطروحة (46):</strong></p>
+            <blockquote>«We do not seek to prove the Command Economy because we named it. We seek to discover whether the evolution of AI and economic execution makes it necessary.»<br>
+            (لا نسعى إلى إثبات أن اقتصاد الأوامر موجود لأننا أطلقنا عليه هذا الاسم؛ بل نسعى إلى اكتشاف ما إذا كانت تطورات الذكاء الاصطناعي والتنفيذ الاقتصادي ستجعل وجوده ضرورة.)</blockquote>
+
+            <p><strong>المبدأ البحثي المركزي (47):</strong></p>
+            <blockquote>«The category should emerge from evidence, not the evidence from the category.»<br>
+            (يجب أن تنشأ الفئة من الأدلة، لا أن تُنتج الأدلة لخدمة الفئة.)</blockquote>
+        </div>
+
+        <div class="concept-segment">
+            <h3 class="concept-term-title">48. إدارة الإصدارات والخلاصة التنفيذية</h3>
+            <p><strong>حالة المستند:</strong> Research & Experimental Standard v0.1 — <strong>تاريخ التفعيل:</strong> سبتمبر 2026.</p>
+            <p><strong>قاعدة التحديث المستقبلي:</strong> أي إصدار لاحق يلتزم بتقديم <code>Terminology Change Log</code> يوضح المصطلحات المعدلة أو المحذوفة، وأسباب التغيير والدليل التقني المرتبط به.</p>
+            <blockquote><strong>الخلاصة:</strong> يمثل هذا المعيار طبقة الانضباط اللغوي والمفاهيمي لمنظومة Ouamarkom™، وتظل السلسلة المرجعية الثابتة هي:<br>
+            «Intent → Command → Authority → Agency → Execution → Evidence → Outcome → Verification → Learning → Recalibration»</blockquote>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="footer-bottom-container" dir="rtl">
+        <p>© 2026 أوامركم. جميع الحقوق محفوظة.</p>
+        <div class="footer-legal-links">
+            <a href="/intellectual-property">الملكية الفكرية</a>
+            <span class="footer-legal-separator">·</span>
+            <a href="mailto:contact@ouamarkom.com">تواصل معنا</a>
+        </div>
+    </div>
+</footer>
+
+<script src="/script.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const revealCards = document.querySelectorAll('.reveal-card');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.05, rootMargin: "0px 0px -20px 0px" });
+
+        revealCards.forEach(card => revealObserver.observe(card));
+    });
+</script>
+</body>
+</html>
