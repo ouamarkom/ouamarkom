@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CE-AI Governed Economic Execution Model™ v0.1 | Ouamarkom Research Program</title>
+
+    <!-- Essential Meta SEO -->
+    <meta name="description" content="CE-AI Governed Economic Execution Model™ v0.1: a research framework for governing AI execution of economic actions under delegated authority, enforceable constraints, sufficient evidence, and verifiable outcomes. By Morad Nagib Alsahybi - Ouamarkom.">
+    <meta name="keywords" content="CE-AI, Governed Economic Execution Model, AI economic execution, Smart Hand, AI governance, delegated authority, Command Economy of AI, Morad Nagib Alsahybi, Ouamarkom, evidence and verification, economic agency">
+    <meta name="author" content="Morad Nagib Alsahybi">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#040916">
+
+    <!-- Canonical & Hreflang Tags -->
+    <link rel="canonical" href="https://ouamarkom.com/en/research/ce-ai-governed-economic-execution-v0-1" />
+    <link rel="alternate" hreflang="ar" href="https://ouamarkom.com/research/ce-ai-governed-economic-execution-v0-1" />
+    <link rel="alternate" hreflang="en" href="https://ouamarkom.com/en/research/ce-ai-governed-economic-execution-v0-1" />
+    <link rel="alternate" hreflang="x-default" href="https://ouamarkom.com/en/research/ce-ai-governed-economic-execution-v0-1" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:site_name" content="Ouamarkom AI Technologies" />
+    <meta property="og:url" content="https://ouamarkom.com/en/research/ce-ai-governed-economic-execution-v0-1" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="CE-AI Governed Economic Execution Model™ v0.1 - Ouamarkom" />
+    <meta property="og:description" content="A research model for studying the conditions and execution chain of governed AI economic action, under delegated authority and verifiable evidence. By Morad Nagib Alsahybi." />
+    <meta property="og:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CE-AI Governed Economic Execution Model™ v0.1">
+    <meta name="twitter:description" content="A Ouamarkom research framework for governable, verifiable AI economic execution. By Morad Nagib Alsahybi.">
+    <meta name="twitter:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg">
+
+    <!-- Structured Data (JSON-LD SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TechArticle",
+          "@id": "https://ouamarkom.com/en/research/ce-ai-governed-economic-execution-v0-1#article",
+          "headline": "CE-AI Governed Economic Execution Model™ v0.1",
+          "description": "An early-stage research model from the Ouamarkom Research Program studying the conditions required for AI systems to move from producing decisions to participating in economically consequential action under delegated, governed, and verifiable execution.",
+          "inLanguage": "en",
+          "mainEntityOfPage": "https://ouamarkom.com/en/research/ce-ai-governed-economic-execution-v0-1",
+          "datePublished": "2026-09-01",
+          "dateModified": "2026-09-21",
+          "author": {
+            "@type": "Person",
+            "name": "Morad Nagib Alsahybi",
+            "jobTitle": "Founder & CEO, Ouamarkom",
+            "url": "https://ouamarkom.com/founder"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Ouamarkom AI Technologies",
+            "url": "https://ouamarkom.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://ouamarkom.com/logo.webp"
+            }
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://ouamarkom.com/en/research/ce-ai-governed-economic-execution-v0-1#breadcrumb",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ouamarkom.com/en" },
+            { "@type": "ListItem", "position": 2, "name": "Research Knowledge Base", "item": "https://ouamarkom.com/en/research" },
+            { "@type": "ListItem", "position": 3, "name": "CE-AI Governed Economic Execution Model v0.1", "item": "https://ouamarkom.com/en/research/ce-ai-governed-economic-execution-v0-1" }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #040916;
+            --secondary: #0a192f;
+            --accent: #e6992d;
+            --gold: #fcd34d;
+            --text-main: #e6f1ff;
+            --text-dim: #8892b0;
+            --card-bg: rgba(10, 25, 47, 0.4);
+            --card-border: rgba(255, 255, 255, 0.05);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--primary);
+            color: var(--text-main);
+            line-height: 1.75;
+            overflow-x: hidden;
+            text-align: left;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        .container { max-width: 1040px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 2; }
+
+        #network-canvas {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            z-index: 1; pointer-events: none; opacity: 0.35;
+        }
+
+        header {
+            border-bottom: 1px solid var(--card-border);
+            position: sticky; top: 0; z-index: 1000;
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            background: rgba(4, 9, 22, 0.85);
+        }
+
+        .nav-container {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 15px 10px; max-width: 1200px; margin: 0 auto;
+        }
+
+        .logo-group { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-img { max-width: 100px; height: auto; transition: transform 0.3s ease; margin: 0; }
+        .logo-img:hover { transform: scale(1.05); }
+
+        .lang-controller {
+            display: flex; background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--card-border); border-radius: 30px; padding: 4px; gap: 4px;
+        }
+
+        .lang-btn {
+            display: inline-block; text-decoration: none; background: transparent; border: none;
+            color: var(--text-dim); padding: 6px 18px; border-radius: 20px;
+            font-weight: 600; font-size: 13px; transition: all 0.3s ease;
+        }
+
+        .lang-btn.active { background: var(--accent); color: #040916; box-shadow: 0 2px 10px rgba(230, 153, 45, 0.25); }
+
+        .hero-section { text-align: center; padding: 50px 0 30px 0; }
+
+        .tagline-badge {
+            display: inline-flex; align-items: center; gap: 8px; padding: 6px 18px;
+            background: rgba(230, 153, 45, 0.1); border: 1px solid rgba(230, 153, 45, 0.25);
+            color: var(--accent); border-radius: 50px; font-size: 0.9rem; font-weight: 700; margin-bottom: 20px;
+        }
+
+        .tagline-badge::before {
+            content: ""; display: inline-block; width: 7px; height: 7px;
+            background-color: var(--accent); border-radius: 50%; animation: pulse-dot 2s infinite;
+        }
+
+        @keyframes pulse-dot { 0% { transform: scale(0.9); opacity: 0.6; } 50% { transform: scale(1.3); opacity: 1; } 100% { transform: scale(0.9); opacity: 0.6; } }
+
+        .hero-section h1 { font-size: clamp(1.8rem, 4.5vw, 2.6rem); line-height: 1.35; color: var(--text-main); font-weight: 800; margin-bottom: 15px; }
+        .hero-section h1 span { color: var(--accent); }
+        .hero-subtitle { font-size: clamp(1.05rem, 2.2vw, 1.25rem); color: var(--text-dim); margin-bottom: 25px; font-weight: 600; }
+
+        .meta-info-card {
+            background: rgba(10, 25, 47, 0.6); border: 1px solid var(--card-border); border-radius: 12px;
+            padding: 16px 24px; margin: 0 auto 30px auto; max-width: 900px;
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px 20px; font-size: 0.88rem; color: var(--text-main); text-align: left;
+        }
+
+        .meta-item strong { color: var(--gold); }
+
+        .executive-summary-master {
+            background: var(--card-bg); border: 1px solid var(--card-border); border-top: 4px solid var(--accent);
+            padding: clamp(24px, 4vw, 40px); border-radius: 20px; margin-bottom: 35px;
+            backdrop-filter: blur(12px); box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        .summary-main-thesis {
+            font-size: clamp(1.05rem, 2.5vw, 1.2rem); color: var(--text-main); line-height: 1.7; font-weight: 700;
+            border-left: 4px solid var(--accent); padding: 15px 18px; margin: 25px 0 15px 0;
+            background: rgba(230, 153, 45, 0.06); border-radius: 8px;
+        }
+
+        .manifesto-card {
+            background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px;
+            padding: clamp(22px, 4vw, 36px); margin-bottom: 30px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); backdrop-filter: blur(12px);
+        }
+
+        .manifesto-card:hover { border-color: var(--accent); background: rgba(10, 25, 47, 0.6); transform: translateY(-2px); }
+
+        .manifesto-card h2 {
+            color: var(--gold); font-size: clamp(1.3rem, 3vw, 1.6rem); margin-bottom: 20px; font-weight: 700;
+            border-left: 4px solid var(--accent); padding-left: 14px; line-height: 1.4;
+        }
+
+        .manifesto-card h3 { color: var(--accent); font-size: 1.15rem; margin-top: 24px; margin-bottom: 12px; font-weight: 700; }
+        .manifesto-card p { color: var(--text-main); font-size: 1rem; line-height: 1.8; margin-bottom: 16px; }
+
+        .highlight-quote {
+            background: rgba(255, 255, 255, 0.02); border-left: 4px solid var(--accent);
+            padding: 16px 20px; border-radius: 12px 4px 4px 12px; margin: 20px 0;
+        }
+
+        .highlight-quote p { font-weight: 700; color: var(--gold); font-size: 1.05rem; line-height: 1.7; margin-bottom: 0; }
+
+        .diagram-wrapper {
+            background: rgba(4, 9, 22, 0.9); border: 1px solid rgba(230, 153, 45, 0.25);
+            border-radius: 16px; padding: 25px 15px; margin: 25px 0; text-align: center;
+        }
+
+        .diagram-flow { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; font-weight: 700; font-size: 0.88rem; }
+        .diagram-step { background: rgba(10, 25, 47, 0.9); border: 1px solid rgba(230, 153, 45, 0.35); color: var(--gold); padding: 8px 14px; border-radius: 30px; }
+        .diagram-arrow { color: var(--accent); font-size: 1.1rem; display: inline-block; }
+
+        .custom-bullet-list { list-style: none; padding-left: 22px; margin: 18px 0; }
+        .custom-bullet-list li { position: relative; margin-bottom: 12px; line-height: 1.75; color: var(--text-main); font-size: 0.98rem; }
+        .custom-bullet-list li::before { content: "✦"; position: absolute; left: -22px; color: var(--accent); font-size: 0.85rem; top: 2px; }
+
+        .comparison-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.92rem; }
+        .comparison-table th, .comparison-table td { border: 1px solid var(--card-border); padding: 12px 14px; text-align: left; }
+        .comparison-table th { background: rgba(230, 153, 45, 0.15); color: var(--gold); font-weight: 700; }
+        .comparison-table td { background: rgba(10, 25, 47, 0.3); color: var(--text-main); }
+
+        .formula-box {
+            background: rgba(4, 9, 22, 0.8); border: 1px solid rgba(230, 153, 45, 0.3); border-radius: 10px;
+            padding: 15px 20px; margin: 15px 0; text-align: center; color: var(--gold);
+            font-weight: bold; font-size: 1.02rem; line-height: 1.6;
+        }
+
+        .tags-container { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
+        .tag-pill { background: rgba(230, 153, 45, 0.08); border: 1px solid rgba(230, 153, 45, 0.2); color: var(--text-dim); padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; }
+
+        #backToTop {
+            position: fixed; bottom: 30px; right: 30px; background: var(--accent); color: #040916;
+            border: none; width: 45px; height: 45px; border-radius: 50%; font-size: 20px; font-weight: bold;
+            cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 999; transition: all 0.3s ease;
+            display: none; align-items: center; justify-content: center;
+        }
+
+        #backToTop:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(230, 153, 45, 0.4); }
+
+        .research-nav-container {
+            display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; align-items: center;
+            margin: 40px 0 20px 0; padding: 25px; background: rgba(10, 25, 47, 0.6);
+            border: 1px solid var(--card-border); border-radius: 16px; backdrop-filter: blur(12px);
+        }
+
+        .btn-research-primary {
+            display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: #040916;
+            padding: 12px 28px; border-radius: 30px; font-weight: 700; font-size: 0.95rem; text-decoration: none;
+            transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(230, 153, 45, 0.2);
+        }
+
+        .btn-research-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(230, 153, 45, 0.4); background: #fcd34d; }
+
+        .btn-research-secondary {
+            display: inline-flex; align-items: center; gap: 10px; background: transparent; color: var(--text-main);
+            border: 1px solid rgba(230, 153, 45, 0.4); padding: 12px 28px; border-radius: 30px;
+            font-weight: 600; font-size: 0.95rem; text-decoration: none; transition: all 0.3s ease;
+        }
+
+        .btn-research-secondary:hover { border-color: var(--accent); color: var(--accent); background: rgba(230, 153, 45, 0.08); }
+
+        footer { background: transparent; border-top: 1px solid var(--card-border); padding: 40px 0; text-align: center; color: var(--text-dim); font-size: 14px; position: relative; z-index: 2; }
+        .footer-legal-links a { color: var(--text-dim); text-decoration: none; transition: color 0.3s ease; }
+        .footer-legal-links a:hover { color: var(--accent); }
+        .footer-legal-separator { margin: 0 8px; color: var(--card-border); }
+
+        @media (max-width: 768px) {
+            .hero-section h1 { font-size: 22px; }
+            .manifesto-card { padding: 20px; }
+            .meta-info-card { grid-template-columns: 1fr; }
+            .comparison-table { display: block; overflow-x: auto; }
+            .diagram-flow { flex-direction: column; gap: 6px; }
+            .diagram-arrow { transform: rotate(90deg); }
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="network-canvas"></canvas>
+<button id="backToTop" title="Back to top">↑</button>
+
+<header>
+    <div class="nav-container">
+        <a href="/en" class="logo-group">
+            <img src="/logo.webp" alt="Ouamarkom - Command Economy of AI" class="logo-img" loading="eager">
+        </a>
+        <nav class="lang-controller" aria-label="Language Selector">
+            <a href="/research/ce-ai-governed-economic-execution-v0-1" class="lang-btn">العربية</a>
+            <span class="lang-btn active">English</span>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+
+    <!-- HERO HEADER -->
+    <div class="hero-section">
+        <div class="tagline-badge">Ouamarkom™ Research Program</div>
+        <h1>CE-AI Governed Economic Execution Model™<br><span>Version 0.1</span></h1>
+        <div class="hero-subtitle">Command Economy of AI™ (CE-AI) | Ouamarkom™ Research Program<br>Version 0.1 - September 2026</div>
+
+        <div class="meta-info-card">
+            <div class="meta-item">Organization: <strong>Ouamarkom™</strong></div>
+            <div class="meta-item">Research Program: <strong>Command Economy of AI™ (CE-AI)</strong></div>
+            <div class="meta-item">Lead Author: <strong>Morad Nagib Alsahybi</strong></div>
+            <div class="meta-item">Experimental System: <strong>Smart Hand™</strong></div>
+            <div class="meta-item">Document Type: <strong>Operational Research Model</strong></div>
+            <div class="meta-item">Date: <strong>September 2026</strong></div>
+        </div>
+    </div>
+
+    <!-- ABSTRACT / SUMMARY -->
+    <article class="executive-summary-master">
+        <h2 style="color: var(--gold); font-size: 1.35rem; font-weight: 800; margin-bottom: 16px; border: none; padding: 0;">Abstract</h2>
+
+        <p>The <strong>CE-AI Governed Economic Execution Model™ v0.1</strong> is an early-stage research model for studying what happens when AI systems move from producing information and decision support to participating in actions with executable economic consequences.</p>
+
+        <p>The model starts from a basic observation: an AI system's technical capability to carry out an action does not necessarily mean it holds the authority to do so; holding authority does not guarantee that the action complies with policy; and successful execution does not mean the intended economic outcome was actually achieved.</p>
+
+        <p>Accordingly, the model studies the economic execution chain through a set of interconnected stages:</p>
+
+        <div class="diagram-wrapper">
+            <div class="diagram-flow">
+                <span class="diagram-step">Intent</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Command</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Delegation</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Authority</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Governance</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Enforcement</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Decision</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Execution</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Evidence</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Verification</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Outcome</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Attribution</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Accountability</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Learning</span>
+            </div>
+        </div>
+
+        <p>This chain is not presented in v0.1 as a final software architecture, an industry standard, or a mandatory sequence for every system. It is presented as a testable, falsifiable, and evolvable research model that helps identify the conditions that governed AI economic execution may require.</p>
+
+        <div class="highlight-quote">
+            <p style="text-align: center; direction: ltr;">«Can AI execute economically consequential intent under delegated authority, enforceable constraints, sufficient evidence, and verifiable outcomes?»</p>
+        </div>
+
+        <p>The model does not presuppose that the answer is yes, nor that the emergence of new infrastructure is inevitable. Its purpose is to provide a structured framework for discovering whether these requirements recur, and whether existing infrastructure is already capable of accommodating them.</p>
+
+        <div class="tags-container">
+            <span class="tag-pill">CE-AI v0.1</span>
+            <span class="tag-pill">Governed Economic Execution</span>
+            <span class="tag-pill">Smart Hand™</span>
+            <span class="tag-pill">Evidence & Verification</span>
+            <span class="tag-pill">Delegated Authority</span>
+            <span class="tag-pill">Ouamarkom</span>
+        </div>
+    </article>
+
+    <!-- SECTION 1 -->
+    <section class="manifesto-card">
+        <h2>1. Background</h2>
+        <p>The traditional model of interacting with AI can be represented simply as:</p>
+        <div class="formula-box">Human → Command → AI → Output</div>
+        <p>This model can be sufficient when the output is:</p>
+        <ul class="custom-bullet-list">
+            <li>Text,</li>
+            <li>Analysis,</li>
+            <li>A recommendation,</li>
+            <li>A forecast,</li>
+            <li>Or a decision that still requires human execution.</li>
+        </ul>
+        <p>But once AI becomes capable of directly executing economic actions, the scope of the problem changes.</p>
+        <p>The following two commands, for example, differ fundamentally:</p>
+        <div class="highlight-quote"><p>«“Analyze the best suppliers.”»</p></div>
+        <p>versus:</p>
+        <div class="highlight-quote"><p>«“Select the supplier, create the purchase order, and manage the procurement process within a defined budget.”»</p></div>
+        <p>In the second case, the ability to understand or decide is no longer sufficient. New questions arise around:</p>
+        <p>Authority, delegation, identity, constraints, policy, enforcement, execution, evidence, outcomes, verification, attribution, and accountability.</p>
+        <p>From here, CE-AI shifts the unit of analysis from:</p>
+        <div class="formula-box">«AI as an information or decision system»</div>
+        <p>to:</p>
+        <div class="formula-box">«AI as a participant in economically consequential systems.»</div>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="manifesto-card">
+        <h2>2. Defining the Model</h2>
+        <p><strong>CE-AI Governed Economic Execution Model™ v0.1</strong> is a research model for studying how economic intent moves from a human or an institution to an action that AI can participate in executing, how that transition can be governed, how what happened can be evidenced, how its outcomes can be verified, and how learning can be extracted from it.</p>
+        <p>The base model can be represented as follows:</p>
+        <div class="formula-box" style="line-height: 2;">
+            Intent ↓ Command ↓ Delegation ↓ Authority ↓ Governance ↓ Enforcement ↓ Decision ↓ Execution ↓ Evidence ↓ Verification ↓ Outcome ↓ Attribution ↓ Accountability ↓ Learning ↺
+        </div>
+        <p>The relationship between these elements remains a testable research hypothesis, not a claim that every system must contain independent architectural layers bearing these exact names.</p>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section class="manifesto-card">
+        <h2>3. Core Principles</h2>
+
+        <h3>3.1 Capability ≠ Authority</h3>
+        <p>An AI system may be technically capable of executing a million-dollar transaction, while its delegated authority is limited to $5,000. Therefore:</p>
+        <div class="formula-box">«Technical capability does not imply economic authority.»</div>
+        <p>Capability determines what the system can do. Authority determines what it is permitted to do.</p>
+
+        <h3>3.2 Authority ≠ Governance</h3>
+        <p>Holding authority does not mean every action falling within that authority is permitted under all circumstances. An agent may hold authority to purchase up to $5,000, while institutional policy prohibits purchasing from an unapproved supplier. Therefore:</p>
+        <div class="formula-box">«Authority defines the scope of delegated power. Governance defines the conditions under which that power may be exercised.»</div>
+
+        <h3>3.3 Governance ≠ Enforcement</h3>
+        <p>The existence of a written policy does not mean the system is capable of enforcing it. Governance becomes operational only when the rule actually affects the execution path.</p>
+        <div class="formula-box">«Governance is not complete when a rule is written. Governance becomes operational when the rule affects execution.»</div>
+
+        <h3>3.4 Execution ≠ Outcome</h3>
+        <p>Technically successful execution of an action does not mean the intended economic outcome was achieved. A purchase order may be executed successfully, and the supplier may still fail to deliver. Therefore:</p>
+        <div class="formula-box">«Execution success does not necessarily imply economic success.»</div>
+
+        <h3>3.5 Evidence ≠ Verification</h3>
+        <p>The existence of a record or evidence of an event does not necessarily mean the outcome has been verified.</p>
+        <div class="formula-box">«Evidence supports verification; it does not automatically constitute verification.»</div>
+
+        <h3>3.6 Verified Outcome ≠ Verified Attribution</h3>
+        <p>It may be possible to establish that revenue increased without being able to establish how much of that increase can be attributed to the AI's action. Therefore:</p>
+        <div class="formula-box">«A verified outcome does not necessarily establish causal attribution.»</div>
+
+        <h3>3.7 Architecture ≠ Assumption</h3>
+        <p>The model does not assume that every stage must become an independent software layer. Some functions may already exist within:</p>
+        <p>IAM, RBAC, ABAC, Policy Engines, Workflow Systems, ERP, CRM, API Gateways, Audit Systems, Agent Infrastructure.</p>
+        <p>Therefore:</p>
+        <div class="formula-box">«The research model must not be confused with a predetermined software architecture.»</div>
+    </section>
+
+    <!-- SECTIONS 4-13 (STAGES) -->
+    <section class="manifesto-card">
+        <h2>The Ten Stages of the Model</h2>
+
+        <h3>4. Stage 1 - Intent</h3>
+        <p>Intent is the economic or institutional goal that a human or institution wants to achieve.</p>
+        <p>Examples:</p>
+        <ul class="custom-bullet-list">
+            <li>Reducing procurement costs by a certain percentage.</li>
+            <li>Increasing conversion rate.</li>
+            <li>Maintaining a given inventory level.</li>
+            <li>Improving profit margin.</li>
+            <li>Reducing sales cycle time.</li>
+        </ul>
+        <p>Intent does not necessarily specify the technical steps required to execute it. Example: «“Reduce procurement costs while maintaining supplier quality.”» This is an economic intent, not a detailed technical command.</p>
+        <div class="highlight-quote"><p>Research question: «Can AI translate economic intent into a governable, measurable execution plan?»</p></div>
+
+        <h3>5. Stage 2 - Command</h3>
+        <p>Command is the representation of intent in a form that can be interpreted and executed. It may be: natural language, a structured model, an API request, a workflow, or a composite representation of the goal and its constraints.</p>
+        <p>Here the concept of the <strong>Economic Command</strong> emerges as a research hypothesis, not a predetermined final abstraction.</p>
+        <p><strong>Question:</strong> «Does an economic command representation add independent value compared to traditional task, workflow, or API abstractions?»</p>
+        <p><strong>Falsification test:</strong> If traditional systems can represent and execute intent and constraints with equal effectiveness, then the value of the "Economic Command" may be limited or may need redefinition.</p>
+
+        <h3>6. Stage 3 - Delegation</h3>
+        <p>Delegation is the process by which a specific authority is transferred from a human or institution to the system.</p>
+        <p>Example: «“The procurement agent is delegated to manage raw-material purchases from approved suppliers for 30 days.”»</p>
+        <p>Delegation defines: the domain, the duration, the type of activity, the relevant parties, the boundaries of authority, and the escalation conditions.</p>
+        <div class="formula-box">Principle: «Intent does not automatically confer authority.»</div>
+        <p>Saying: «“I want to reduce procurement costs”» does not mean: «“You are authorized to purchase anything.”»</p>
+
+        <h3>7. Stage 4 - Authority</h3>
+        <p>Authority determines what the system is entitled to do within the delegation. Authority can be: per-transaction, daily, monthly, category-based, counterparty-based, risk-level-based, time-based, or based on a combination of conditions.</p>
+        <div class="formula-box" style="text-align: left;">
+            Maximum transaction value: $5,000<br>
+            Daily aggregate limit: $20,000<br>
+            Approved suppliers only<br>
+            Authorization validity: 30 days
+        </div>
+        <p>Here, a distinction must be drawn between: Capability, Authority, and Execution Permission.</p>
+
+        <h3>8. Stage 5 - Governance</h3>
+        <p>Governance defines the conditions and policies that govern the exercise of authority. It may include: spending limits, privacy constraints, risk rules, approval requirements, geographic constraints, supplier restrictions, conflict-of-interest rules, and escalation requirements.</p>
+        <p>Governance should not be understood merely as a document. The more important question is:</p>
+        <div class="formula-box">«Can governance influence the execution path at runtime?»</div>
+
+        <h3>9. Stage 6 - Enforcement</h3>
+        <p>Enforcement is the mechanism that makes constraints applicable during execution.</p>
+        <p>Example: if policy states: «“AI may not purchase above $5,000 without approval,”» then enforcement means the system: blocks the transaction, requests approval, escalates the case, or re-evaluates it.</p>
+        <p>Here, the following principle can be tested:</p>
+        <div class="formula-box">«No authorized execution without resolved constraints.»</div>
+        <p>That is, the system does not proceed to execution unless the relevant authority and constraints have been resolved.</p>
+        <div class="highlight-quote"><p>Research question: «Can economic AI policies be reliably converted into enforceable constraints during execution?»</p></div>
+
+        <h3>10. Stage 7 - Decision</h3>
+        <p>Once authority and constraints have been established, the system needs to make a decision.</p>
+        <p>Example: three suppliers - a cheaper supplier, a faster supplier, a more reliable supplier. The algorithm may select one based on: price, quality, risk, delivery time, prior history, and institutional objectives.</p>
+        <p>Here, <strong>«Decision»</strong> must be separated from <strong>«Execution»</strong>, because the system may make the correct decision yet fail to execute it, or execute an unsuitable decision because of insufficient data or policy.</p>
+
+        <h3>11. Stage 8 - Execution</h3>
+        <p>Execution is the transition of an authorized decision into an action with real effect in an economic or operational system. It may include: creating a purchase order, modifying a price, sending a payment, updating inventory, signing or sending a contract, issuing an invoice, executing a transaction, or changing an economic state in an external system.</p>
+        <p>Execution may occur via: APIs, ERP, CRM, databases, payment systems, enterprise workflows, or other systems.</p>
+        <p>Within the Ouamarkom program, Smart Hand™ is used as an experimental system for studying this stage and the relationships that precede and follow it.</p>
+
+        <h3>12. Stage 9 - Evidence & Verification</h3>
+        <p>The model does not end at execution. After the action, two different questions must be raised:</p>
+        <p><strong>Evidence:</strong> «What evidence exists about what happened?»</p>
+        <p><strong>Verification:</strong> «What can actually be established from that evidence?»</p>
+        <p>The evidence chain may include:</p>
+        <div class="formula-box">
+            Intent → Context → Authority → Policy Decision → AI Decision → Execution Request → Execution Result → State Change → Outcome
+        </div>
+        <p>Using digital records, signatures, or tamper-resistant logs does not mean the accuracy of the economic outcome has automatically been proven.</p>
+        <p><strong>Minimum Sufficient Evidence:</strong> CE-AI proposes the concept of Minimum Sufficient Evidence - «the smallest set of evidence sufficient to reconstruct the event and substantiate the claim under examination.» The goal is not to record everything indiscriminately, but to identify what is actually needed for verification and accountability.</p>
+
+        <h3>13. Stage 10 - Outcome, Attribution & Learning</h3>
+        <p>This stage closes the economic loop.</p>
+        <p><strong>Outcome:</strong> What happened as a result of execution? Example: «100 units were purchased,» but it may turn out that «only 96 units actually arrived.» A distinction must therefore be drawn between <em>Execution Outcome</em> and <em>Economic Outcome</em>.</p>
+        <p><strong>Attribution:</strong> To what degree can the outcome be attributed to the AI's action? Example: sales rose by 15%. This does not automatically mean «AI caused 15% growth» - other factors may be at play. Therefore: «Attribution requires stronger evidence than outcome observation.»</p>
+        <p><strong>Learning:</strong> What did we learn? Repeated execution may reveal that: a spending limit alone is insufficient, a new supplier needs escalation, some cases require re-verification, some data is insufficient, or that current enforcement mechanisms are inadequate. Learning then becomes an input for updating hypotheses, policies, experiments, or the architecture.</p>
+        <div class="formula-box">«Learning does not imply uncontrolled automatic policy change.»</div>
+        <div class="formula-box">Evidence → Interpretation → Review → Decision → Controlled Evolution</div>
+    </section>
+
+    <!-- SECTIONS 14-16 -->
+    <section class="manifesto-card">
+        <h2>14. The Model Is Not a Straight Line</h2>
+        <p>It can be represented more accurately as a closed learning loop:</p>
+        <div class="diagram-wrapper">
+            <div class="diagram-flow">
+                <span class="diagram-step">Intent</span> →
+                <span class="diagram-step">Command</span> →
+                <span class="diagram-step">Delegation</span> →
+                <span class="diagram-step">Authority</span> →
+                <span class="diagram-step">Governance</span> →
+                <span class="diagram-step">Enforcement</span> →
+                <span class="diagram-step">Decision</span> →
+                <span class="diagram-step">Execution</span> →
+                <span class="diagram-step">Evidence</span> →
+                <span class="diagram-step">Verification</span> →
+                <span class="diagram-step">Outcome</span> →
+                <span class="diagram-step">Attribution</span> →
+                <span class="diagram-step">Accountability</span> →
+                <span class="diagram-step">Learning</span> ↺
+                <span class="diagram-step" style="border-color: var(--accent);">New Intent / Policy / Experiment</span>
+            </div>
+        </div>
+        <p>This means that an AI-driven economic system is not merely a pipeline. It is a closed learning loop.</p>
+
+        <h3>15. Execution Boundary</h3>
+        <p>The model also helps identify the different boundaries of AI economic agency:</p>
+        <ul class="custom-bullet-list">
+            <li><strong>Capability Boundary:</strong> What can AI do?</li>
+            <li><strong>Authority Boundary:</strong> What is it entitled to do?</li>
+            <li><strong>Governance Boundary:</strong> What do policies permit?</li>
+            <li><strong>Enforcement Boundary:</strong> What can the system prevent or allow?</li>
+            <li><strong>Execution Boundary:</strong> What was actually executed?</li>
+            <li><strong>Evidence Boundary:</strong> What can we prove?</li>
+            <li><strong>Outcome Boundary:</strong> What happened economically?</li>
+            <li><strong>Attribution Boundary:</strong> What can be attributed to AI?</li>
+        </ul>
+        <p>These boundaries are not necessarily independent layers; they represent analytical questions that help locate risk and gaps.</p>
+
+        <h3>16. Failure Model</h3>
+        <p>CE-AI v0.1 allows failure to be analyzed by its location in the execution chain.</p>
+        <ul class="custom-bullet-list">
+            <li><strong>Intent Failure:</strong> The goal was unclear.</li>
+            <li><strong>Command Failure:</strong> The representation of intent was insufficient.</li>
+            <li><strong>Delegation Failure:</strong> The scope of delegation was undefined.</li>
+            <li><strong>Authority Failure:</strong> Authority was incorrect or unverifiable.</li>
+            <li><strong>Governance Failure:</strong> The policy was unsuitable.</li>
+            <li><strong>Enforcement Failure:</strong> The policy existed but was not applied.</li>
+            <li><strong>Decision Failure:</strong> The AI made an unsuitable decision.</li>
+            <li><strong>Execution Failure:</strong> The correct decision was not executed correctly.</li>
+            <li><strong>Evidence Failure:</strong> Insufficient evidence exists.</li>
+            <li><strong>Verification Failure:</strong> The evidence does not allow the outcome to be proven.</li>
+            <li><strong>Attribution Failure:</strong> AI's impact cannot be reliably determined.</li>
+            <li><strong>Accountability Failure:</strong> Responsibility cannot be reconstructed.</li>
+            <li><strong>Learning Failure:</strong> The experience did not turn into traceable knowledge or improvement.</li>
+        </ul>
+        <p>This transforms the question from «“AI failed”» into: «Where, exactly, did the governed execution system fail?»</p>
+    </section>
+
+    <!-- SECTIONS 17-18 -->
+    <section class="manifesto-card">
+        <h2>17. Smart Hand™ as a Research Tool</h2>
+        <p>Within the Ouamarkom program, Smart Hand™ represents an experimental system for studying governed economic execution.</p>
+        <p>Smart Hand is not assumed to be: the final architecture of CE-AI, an industry standard, or prior proof that the thesis is correct. Rather, it functions as an experimental environment in which the following can be tested: delegation, authority, governance, enforcement, execution, evidence, outcomes, and verification.</p>
+        <div class="highlight-quote">
+            <p>The goal is not to prove that a specific architectural model is correct, but to discover: «What does governed AI economic execution actually require?»</p>
+        </div>
+
+        <h3>18. Proposed Reference Experiment</h3>
+        <p>The model can be initially tested through: an <strong>AI Procurement Agent</strong> with delegated authority of «$5,000 per transaction,» followed by testing scenarios such as:</p>
+        <ul class="custom-bullet-list">
+            <li><strong>Scenario A ($4,000 - approved supplier):</strong> Expected: execution may proceed.</li>
+            <li><strong>Scenario B ($5,100 - approved supplier):</strong> Expected: escalation or rejection.</li>
+            <li><strong>Scenario C ($4,900 - unapproved supplier):</strong> Expected: policy intervention.</li>
+            <li><strong>Scenario D ($4,900 at decision time → $5,400 at execution time):</strong> Research question: is authority re-evaluated at execution time?</li>
+            <li><strong>Scenario E (Six transactions × $4,000):</strong> Research question: are aggregate limits enforced?</li>
+            <li><strong>Scenario F (Authorization expired):</strong> Research question: can the system detect expired delegation?</li>
+            <li><strong>Scenario G (Execution succeeds but delivery fails):</strong> Research question: does the system distinguish execution success from economic outcome?</li>
+            <li><strong>Scenario H (AI claims 100 units delivered; inventory records 96):</strong> Research question: how does the system handle conflicting evidence?</li>
+        </ul>
+        <p>These scenarios are not industry standards; they are research examples that can be developed and tested further.</p>
+    </section>
+
+    <!-- SECTION 19 (BENCHMARK TABLE) -->
+    <section class="manifesto-card">
+        <h2>19. Governed AI Economic Execution Benchmark</h2>
+        <p>The model can serve as an initial basis for building a «Governed AI Economic Execution Benchmark v0.1» - an internal research benchmark, not a public standard. Its dimensions and core questions:</p>
+
+        <div style="overflow-x: auto;">
+            <table class="comparison-table">
+                <thead>
+                    <tr><th>Dimension</th><th>Core Question</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Intent</strong></td><td>Was the goal understood?</td></tr>
+                    <tr><td><strong>Delegation</strong></td><td>What was delegated?</td></tr>
+                    <tr><td><strong>Authority</strong></td><td>Was the authority valid?</td></tr>
+                    <tr><td><strong>Governance</strong></td><td>Which rules were applied?</td></tr>
+                    <tr><td><strong>Enforcement</strong></td><td>Was overreach prevented?</td></tr>
+                    <tr><td><strong>Decision</strong></td><td>Was the decision consistent with context?</td></tr>
+                    <tr><td><strong>Execution</strong></td><td>Was the action carried out?</td></tr>
+                    <tr><td><strong>Evidence</strong></td><td>Is there sufficient evidence?</td></tr>
+                    <tr><td><strong>Verification</strong></td><td>Could the outcome be proven?</td></tr>
+                    <tr><td><strong>Attribution</strong></td><td>Could the impact be attributed?</td></tr>
+                    <tr><td><strong>Accountability</strong></td><td>Could responsibility be reconstructed?</td></tr>
+                    <tr><td><strong>Learning</strong></td><td>Did traceable learning result?</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>Additional quantitative measures may later be added, including: Human Intervention Rate, Policy Violation Rate, Evidence Completeness, Verification Rate, Execution Success Rate, Attribution Confidence, and Economic Outcome Rate.</p>
+    </section>
+
+    <!-- SECTIONS 20-24 -->
+    <section class="manifesto-card">
+        <h2>20. The Relationship Between the Model and Research-to-Architecture</h2>
+        <p>CE-AI v0.1 does not assume the existence of new infrastructure. It begins instead with the question: «Can existing infrastructure already solve these requirements?»</p>
+        <p>The following must be tested: IAM, policy engines, workflow systems, ERP, CRM, API gateways, audit systems, agent frameworks, and existing authorization mechanisms.</p>
+        <p>Then the following pattern is examined:</p>
+        <div class="formula-box">
+            Repeated Gap ↓ Existing Baseline Insufficient ↓ Independent Value ↓ Cross-Context Repetition ↓ Potential Architectural Requirement
+        </div>
+        <p>Only once this evidence emerges can the hypothesis of «Potential Economic Execution Infrastructure» begin to gain strength.</p>
+
+        <h3>21. Relationship to CE-AI</h3>
+        <p>The model represents an operational layer within the broader CE-AI framework. The research program can be conceived as follows:</p>
+        <div class="diagram-wrapper">
+            <div class="diagram-flow" style="flex-direction: column; gap: 8px;">
+                <span class="diagram-step">CE-AI (Research Framework)</span>
+                <span class="diagram-arrow">↓</span>
+                <span class="diagram-step">Governed Economic Execution Model (Operational Research Model)</span>
+                <span class="diagram-arrow">↓</span>
+                <span class="diagram-step">Smart Hand (Experimental System)</span>
+                <span class="diagram-arrow">↓</span>
+                <span class="diagram-step">Evidence & Verification (Measurement & Validation)</span>
+                <span class="diagram-arrow">↓</span>
+                <span class="diagram-step">Research-to-Architecture (Architecture Discovery)</span>
+                <span class="diagram-arrow">↓</span>
+                <span class="diagram-step">Potential Economic Execution Infrastructure (Possible Research Outcome)</span>
+            </div>
+        </div>
+        <p>This is not a deterministic sequence. Evidence may lead to: retaining the model, modifying it, merging some of its stages, splitting off new stages, redefining certain concepts, or even withdrawing some hypotheses.</p>
+
+        <h3>22. Epistemic Status of Version 0.1</h3>
+        <ul class="custom-bullet-list">
+            <li><strong>Framework:</strong> Command Economy of AI™</li>
+            <li><strong>Model:</strong> Governed Economic Execution Model™</li>
+            <li><strong>Version:</strong> v0.1 | <strong>Status:</strong> Research Model</li>
+            <li><strong>Maturity:</strong> Experimental / Early-stage | <strong>Architecture:</strong> Provisional</li>
+            <li><strong>Market Category:</strong> Not assumed | <strong>Standard:</strong> Not claimed</li>
+            <li><strong>Validation:</strong> Subject to empirical testing | <strong>Primary Experimental System:</strong> Smart Hand™</li>
+            <li><strong>Research Objective:</strong> Discover the conditions required for governed AI economic execution.</li>
+        </ul>
+        <p>This version does not claim that: CE-AI has become a global standard; the model represents a stable industry architecture; the ten stages are necessary in every system; new infrastructure is inevitable; or that AI economic agency will evolve in the same way across all sectors.</p>
+
+        <h3>23. Criteria for the Model's Evolution</h3>
+        <p>The CE-AI Governed Economic Execution Model should not move from v0.1 to a later version merely by adding new concepts. Evolution must be tied to evidence:</p>
+        <div class="formula-box">Signal → Observation → Question → Hypothesis → Experiment → Evidence → Verification → Learning → Model Evolution</div>
+        <p>Evidence may lead to: Retain, Modify, Merge, Split, Defer, Retire, or Reframe.</p>
+        <div class="formula-box">«The model evolves when the evidence requires a better explanation.»</div>
+
+        <h3>24. Methodological Principle</h3>
+        <p>CE-AI v0.1 is built on the principle: <strong>«Evidence Before Architecture.»</strong></p>
+        <div class="highlight-quote">
+            <p>«A smaller architecture supported by stronger evidence is progress.»</p>
+            <p>«A retired hypothesis is uncertainty removed. We preserve the research lineage, not the original assumptions.»</p>
+        </div>
+    </section>
+
+    <!-- SECTIONS 25-27 -->
+    <section class="manifesto-card">
+        <h2>25. Open Research Questions</h2>
+        <ol class="custom-bullet-list" style="list-style-type: decimal; padding-left: 25px;">
+            <li>Does the Economic Command represent an independently valuable abstraction?</li>
+            <li>How should AI delegation be represented?</li>
+            <li>Does AI's economic authority differ from traditional authorization mechanisms?</li>
+            <li>Where should enforcement occur?</li>
+            <li>What is the minimum evidence needed to reconstruct execution?</li>
+            <li>Do evidence requirements vary with risk level?</li>
+            <li>How can economic outcomes be verified?</li>
+            <li>When is attribution possible?</li>
+            <li>How should accountability be designed in multi-agent systems?</li>
+            <li>Do these requirements recur across sectors?</li>
+            <li>Can existing infrastructure accommodate them?</li>
+            <li>If not, what is the minimum new infrastructure required?</li>
+            <li>Do these requirements need an independent layer?</li>
+            <li>Does a need for new interoperability mechanisms emerge?</li>
+            <li>Do these requirements ultimately warrant independent infrastructure, a protocol, or a standard?</li>
+        </ol>
+
+        <h3 style="margin-top: 30px;">26. The Central Principle of CE-AI Governed Economic Execution</h3>
+        <div class="summary-main-thesis" style="text-align: center;">
+            «AI capability does not create economic authority. Economic authority must be delegated, constrained, enforced, executed, evidenced, verified, and governed through the full lifecycle of action and outcome.»
+        </div>
+
+        <h3>27. Conclusion</h3>
+        <p>The CE-AI Governed Economic Execution Model™ v0.1 represents an initial attempt to turn the question «“Can AI act?”» into a more precise set of questions:</p>
+        <ul class="custom-bullet-list">
+            <li>What is AI allowed to do?</li>
+            <li>Under whose authority? Within which constraints?</li>
+            <li>How are those constraints enforced?</li>
+            <li>What did AI actually execute? What evidence exists?</li>
+            <li>What outcome occurred? What can be verified?</li>
+            <li>What can reasonably be attributed to AI? Who is accountable?</li>
+            <li>What did the system learn?</li>
+        </ul>
+        <p>The final question is not «How do we build the largest possible infrastructure?» but: «What does economic execution by AI actually require-and what, if anything, must change in the architecture of economic systems as a result?»</p>
+        <p>This is the core hypothesis that v0.1 places before the research.</p>
+
+        <div class="highlight-quote" style="text-align: center;">
+            <p>CE-AI does not assume the architecture.<br>CE-AI tests the need for it.</p>
+            <p style="margin-top: 10px;">The architecture is not the starting assumption.<br>It is a possible outcome of the evidence.</p>
+        </div>
+
+        <div class="highlight-quote" style="text-align: center; margin-top: 30px;">
+            <p>Research Principle:</p>
+            <p style="color: var(--gold);">«Reality → Signal → Question → Hypothesis → Experiment → Evidence → Verification → Learning → Architecture»</p>
+
+            <p style="margin-top: 15px;">Operating Principle:</p>
+            <p style="color: var(--gold);">
+                «No Authority Without Delegation.<br>
+                No Execution Without Resolved Constraints.<br>
+                No Outcome Claim Without Verification.<br>
+                No Major Architecture Without Evidence.»
+            </p>
+
+            <p style="margin-top: 15px;">Final Principle:</p>
+            <p style="color: var(--accent);">«The framework may evolve. The evidence trail must not.»</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; font-weight: bold; color: var(--gold);">
+            Ouamarkom™ Research Program<br>
+            Command Economy of AI™ (CE-AI)<br>
+            CE-AI Governed Economic Execution Model™ v0.1 - September 2026
+        </div>
+    </section>
+
+    <!-- NAVIGATION LINKS -->
+    <div class="research-nav-container">
+        <a href="/en/research/paper-4" class="btn-research-secondary">← Paper No. 4</a>
+        <a href="/en/research" class="btn-research-primary">Ouamarkom Full Research Knowledge Base</a>
+        <a href="/en/research/paper-5" class="btn-research-secondary">Paper No. 5 →</a>
+    </div>
+
+</main>
+
+<footer>
+    <div class="container" dir="ltr">
+        <p>© 2026 Ouamarkom. All Rights Reserved.</p>
+        <div class="footer-legal-links">
+            <a href="/en/intellectual-property">Intellectual Property</a>
+            <span class="footer-legal-separator">·</span>
+            <a href="mailto:contact@ouamarkom.com">Contact</a>
+        </div>
+    </div>
+</footer>
+
+<script src="/script.js" defer></script>
+<script>
+    const backToTopBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) { backToTopBtn.style.display = 'flex'; }
+        else { backToTopBtn.style.display = 'none'; }
+    });
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
+</body>
+</html>
