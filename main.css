@@ -1780,6 +1780,10 @@ footer {
         min-height: 44px;
         min-width: 44px;
     }
+    .lang-switcher .lang-btn {
+        min-height: 24px;
+        min-width: 24px;
+    }
 
     .launch-status { margin: 1.75rem auto; padding: 1.4rem; }
     .status-icon { width: 58px; height: 58px; margin-bottom: 1.1rem; }
