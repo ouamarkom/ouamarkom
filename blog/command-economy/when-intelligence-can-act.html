@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Canonical & Hreflang Tags -->
+    <link id="canonical-url" rel="canonical" href="https://ouamarkom.com/blog/command-economy/when-intelligence-can-act.html" />
+    <link rel="alternate" hreflang="en" href="https://ouamarkom.com/blog/command-economy/when-intelligence-can-act.html" />
+    <link rel="alternate" hreflang="ar" href="https://ouamarkom.com/blog/command-economy/when-intelligence-can-act.html?lang=ar" />
+    <link rel="alternate" hreflang="x-default" href="https://ouamarkom.com/blog/command-economy/when-intelligence-can-act.html" />
+
+    <!-- Meta Title & Description -->
+    <title id="page-title">When Intelligence Can Act, Who Gives It the Right? From Capability to Governed Economic Agency | Ouamarkom</title>
+    <meta id="meta-description" name="description" content="An executive essay by Morad Nagib Alsahybi on AI agency, delegated authority, Economic Action Records, and Execution Assurance in the Command Economy of AI (CE-AI).">
+    <meta name="keywords" content="When Intelligence Can Act, AI Authority, Governed Economic Agency, Command Economy of AI, CE-AI, Capability vs Authority, Execution Assurance, Economic Action Record, Morad Nagib Alsahybi, Ouamarkom">
+    <meta name="author" content="Morad Nagib Alsahybi">
+
+    <!-- Open Graph / Facebook -->
+    <meta id="og-title" property="og:title" content="When Intelligence Can Act, Who Gives It the Right? From Capability to Governed Economic Agency | Ouamarkom">
+    <meta id="og-description" property="og:description" content="An executive essay by Morad Nagib Alsahybi on AI agency, delegated authority, Economic Action Records, and Execution Assurance in the Command Economy of AI (CE-AI).">
+    <meta property="og:type" content="article">
+    <meta id="og-url" property="og:url" content="https://ouamarkom.com/blog/command-economy/when-intelligence-can-act.html">
+    <meta property="og:image" content="https://ouamarkom.com/images/when-intelligence-can-act-en.webp">
+    <meta property="og:site_name" content="Ouamarkom">
+    <meta id="og-locale" property="og:locale" content="en_US">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta id="twitter-title" name="twitter:title" content="When Intelligence Can Act, Who Gives It the Right? From Capability to Governed Economic Agency | Ouamarkom">
+    <meta id="twitter-description" name="twitter:description" content="An executive essay by Morad Nagib Alsahybi on AI agency, delegated authority, Economic Action Records, and Execution Assurance in the Command Economy of AI (CE-AI).">
+    <meta name="twitter:image" content="https://ouamarkom.com/images/when-intelligence-can-act-en.webp">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json" id="schema-article">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ouamarkom.com/blog/command-economy/when-intelligence-can-act.html"
+      },
+      "headline": "When Intelligence Can Act, Who Gives It the Right?",
+      "description": "An executive essay by Morad Nagib Alsahybi on AI agency, delegated authority, Economic Action Records, and Execution Assurance in the Command Economy of AI (CE-AI).",
+      "image": "https://ouamarkom.com/images/when-intelligence-can-act-en.webp",
+      "author": {
+        "@type": "Person",
+        "name": "Morad Nagib Alsahybi",
+        "jobTitle": "Founder & CEO",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Ouamarkom",
+          "url": "https://ouamarkom.com"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Ouamarkom",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://ouamarkom.com/logo.webp"
+        }
+      },
+      "datePublished": "2026-09-29",
+      "dateModified": "2026-09-29",
+      "inLanguage": ["en", "ar"]
+    }
+    </script>
+    
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        :root {
+            --accent: #e6992d;
+            --bg-dark: #030712;
+            --card-bg: rgba(10, 25, 47, 0.25);
+            --card-border: rgba(255, 255, 255, 0.07);
+            --text-main: #f3f4f6;
+            --text-dim: #9ca3af;
+            --font-main: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --container-max: 1200px;
+            --nav-blur: blur(20px);
+            --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        html, body { overflow-x: clip; }
+
+        body { 
+            font-family: var(--font-main); 
+            background-color: var(--bg-dark); 
+            color: var(--text-main);
+            line-height: 1.85;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        #network-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; }
+        .container { max-width: var(--container-max); margin: 0 auto; padding: 0 clamp(16px, 4vw, 32px); }
+        
+        nav.nav-container { 
+            padding: clamp(12px, 2vw, 20px) 10px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: var(--nav-blur);
+            -webkit-backdrop-filter: var(--nav-blur);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-wrapper img { height: clamp(34px, 5vw, 55px); width: auto; object-fit: contain; }
+        
+        .nav-actions { display: flex; gap: clamp(6px, 2vw, 16px); align-items: center; }
+        
+        .btn-read-more { 
+            background: rgba(255, 255, 255, 0.03); 
+            color: var(--text-main); 
+            border: 1px solid rgba(255, 255, 255, 0.12); 
+            padding: clamp(7px, 1.2vw, 11px) clamp(12px, 1.8vw, 22px); 
+            border-radius: 30px; 
+            text-decoration: none; 
+            transition: var(--transition-smooth); 
+            font-size: clamp(0.75rem, 1.4vw, 0.88rem);
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            backdrop-filter: blur(8px);
+            white-space: nowrap;
+        }
+        
+        .btn-read-more:hover, .btn-read-more:active { 
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--accent);
+            color: #fff;
+            transform: translateY(-1px);
+        }
+        
+        .btn-lang-toggle { 
+            background: linear-gradient(135deg, var(--accent), var(--gold)); 
+            color: #030712; 
+            font-weight: 700; 
+            border: none; 
+            padding: clamp(8px, 1.2vw, 12px) clamp(14px, 2vw, 24px); 
+            border-radius: 30px; 
+            cursor: pointer; 
+            transition: var(--transition-smooth); 
+            font-size: clamp(0.75rem, 1.4vw, 0.88rem);
+            box-shadow: 0 4px 15px rgba(230, 153, 45, 0.18);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+        }
+        
+        .btn-lang-toggle:hover, .btn-lang-toggle:active { 
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3);
+            filter: brightness(1.08);
+        }
+        
+        .post-header { padding: clamp(35px, 6vw, 80px) 0 clamp(25px, 4vw, 40px); text-align: center; max-width: 950px; margin: 0 auto; }
+        .post-meta { color: var(--accent); font-weight: 700; margin-bottom: 16px; display: block; font-size: clamp(0.78rem, 1.4vw, 0.95rem); text-transform: uppercase; letter-spacing: 0.5px; }
+        
+        .post-header h1 { font-size: clamp(1.6rem, 4vw, 2.85rem); font-weight: 800; color: #fff; line-height: 1.35; }
+        .post-header h1 span { color: var(--gold); }
+
+        .subtitle-lead { color: var(--text-dim); margin-top: 18px; font-size: clamp(1rem, 2vw, 1.35rem); font-weight: 500; line-height: 1.6; }
+        
+        .post-hero-img { 
+            width: 100%; height: auto; max-height: 500px; 
+            border-radius: clamp(14px, 3vw, 24px); margin-bottom: clamp(25px, 5vw, 50px); 
+            border: 1px solid var(--card-border); object-fit: cover;
+        }
+        
+        .post-content-area { 
+            max-width: 860px; margin: 0 auto; background: var(--card-bg); 
+            padding: clamp(20px, 4.5vw, 55px); border-radius: clamp(16px, 3.5vw, 32px); 
+            border: 1px solid var(--card-border); backdrop-filter: blur(14px); 
+            -webkit-backdrop-filter: blur(14px); font-size: clamp(0.98rem, 1.8vw, 1.15rem); color: var(--text-main); 
+        }
+        
+        .part-divider { margin: 45px 0 30px; border-top: 2px solid rgba(230, 153, 45, 0.25); position: relative; }
+        
+        .post-content-area h2 { 
+            color: var(--gold); margin: 35px 0 18px; font-size: clamp(1.25rem, 2.8vw, 1.8rem); 
+            font-weight: 800; line-height: 1.4; border-bottom: 1px solid rgba(230, 153, 45, 0.15); padding-bottom: 10px; 
+        }
+        .post-content-area h3 { color: var(--accent); margin: 28px 0 14px; font-size: clamp(1.1rem, 2.3vw, 1.4rem); font-weight: 700; }
+        
+        .post-content-area p { margin-bottom: 20px; text-align: start; }
+        @media (min-width: 768px) { .post-content-area p { text-align: justify; text-justify: inter-word; } }
+        
+        .post-content-area ul, .post-content-area ol { padding-inline-start: clamp(18px, 3.5vw, 28px); margin-bottom: 22px; }
+        .post-content-area li { margin-bottom: 10px; }
+        
+        .tip-box { background: rgba(230, 153, 45, 0.04); border: 1px solid rgba(230, 153, 45, 0.35); padding: clamp(16px, 2.8vw, 26px); border-radius: 16px; margin: 28px 0; }
+        .tip-box strong { color: var(--gold); }
+        
+        .quote-box { 
+            border-inline-start: 4px solid var(--gold); 
+            padding: 16px clamp(16px, 2.8vw, 26px); 
+            background: rgba(255, 255, 255, 0.015); 
+            margin: 28px 0; font-style: italic; 
+            border-start-end-radius: 12px; border-end-end-radius: 12px;
+            font-weight: 600;
+        }
+
+        .highlight-statement {
+            color: var(--gold); font-weight: 700; text-align: center; background: rgba(255, 215, 0, 0.04);
+            border: 1px solid rgba(255, 215, 0, 0.35); padding: 18px 22px; border-radius: 16px; margin: 28px 0; line-height: 1.6;
+        }
+
+        .flow-diagram {
+            display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 6px 10px;
+            text-align: center; background: rgba(0, 0, 0, 0.25); border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 18px 14px; border-radius: 16px; margin: 22px 0; font-weight: 600; color: var(--gold); line-height: 1.6; font-size: clamp(0.85rem, 1.8vw, 1.05rem);
+        }
+        .flow-step { display: inline-flex; align-items: center; white-space: nowrap; }
+        .flow-arrow { color: var(--accent); font-weight: bold; margin: 0 4px; }
+        
+        .post-cta { background: rgba(230, 153, 45, 0.05); border: 1px solid rgba(230, 153, 45, 0.3); padding: clamp(25px, 4.5vw, 45px) clamp(16px, 3.5vw, 35px); border-radius: 24px; text-align: center; margin-top: 50px; }
+        .post-cta p { text-align: center !important; margin-bottom: 20px; color: var(--text-dim); }
+        
+        .btn-primary { 
+            background: var(--accent); color: #030712; padding: 12px clamp(20px, 3.5vw, 36px); 
+            border-radius: 50px; text-decoration: none; font-weight: 700; display: inline-block; 
+            transition: var(--transition-smooth); box-shadow: 0 4px 15px rgba(230, 153, 45, 0.2); font-size: clamp(0.85rem, 1.8vw, 1rem);
+        }
+        .btn-primary:hover, .btn-primary:active { background: var(--gold); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3); }
+        
+        .lang-section { display: none; }
+        .lang-section.active-lang { display: block; }
+
+        .site-footer { border-top: 1px solid rgba(255, 255, 255, 0.05); }
+        .footer-bottom-container { text-align: center; color: var(--text-dim); font-size: 0.9rem; }
+        .footer-legal-links { margin-top: 8px; }
+        .footer-legal-links a { color: var(--text-dim); text-decoration: none; transition: var(--transition-smooth); }
+        .footer-legal-links a:hover { color: var(--accent); }
+        .footer-legal-separator { margin: 0 8px; color: rgba(255, 255, 255, 0.2); }
+
+        @media (max-width: 480px) {
+            nav.nav-container { padding: 10px 6px; }
+            .nav-actions { gap: 6px; }
+            .post-content-area { padding: 16px 14px; }
+        }
+    </style>
+</head>
+<body>
+<canvas id="network-canvas"></canvas>
+
+<nav class="container nav-container">
+    <a href="/" id="logo-link" class="logo-wrapper">
+        <img src="/logo.webp" alt="Ouamarkom">
+    </a>
+    <div class="nav-actions">
+        <button class="btn-lang-toggle" onclick="switchLanguage()" id="lang-btn">العربية</button>
+        <a href="/blog" class="btn-read-more" id="back-blog-btn">← Blog</a>
+    </div>
+</nav>
+
+<main class="container">
+
+    <!-- ENGLISH SECTION (Active by Default) -->
+    <div class="lang-section lang-en active-lang">
+        <article>
+            <header class="post-header">
+                <span class="post-meta">Command Economy of AI (CE-AI™) • Executive Essay • 12 min read</span>
+                <h1>When Intelligence Can Act, <span>Who Gives It the Right?</span></h1>
+                <p class="subtitle-lead">As artificial intelligence shifts from recommendation to execution, the central question moves from technical capability to institutional authority, governed agency, and verifiable proof.</p>
+
+                <p style="color: var(--text-dim); margin-top: 15px; font-style: italic; font-size: 0.95rem;">By Morad Nagib Alsahybi — Founder & CEO, Ouamarkom™</p>
+            </header>
+
+            <img src="../images/when-intelligence-can-act-en.webp" alt="When Intelligence Can Act, Who Gives It the Right?" class="post-hero-img">
+
+            <div class="post-content-area">
+
+                <p>The biggest economic transformation brought by artificial intelligence may not be that machines become more intelligent. It may be that intelligent systems become capable of acting on our behalf.</p>
+
+                <p>That changes the question.</p>
+
+                <p>For decades, software executed instructions. The first generations of AI analyzed, predicted, generated and recommended. Now, increasingly agentic systems can use tools, access enterprise systems, make decisions and execute sequences of actions.</p>
+
+                <p>The distance between decision and execution is shrinking.</p>
+
+                <p>And when that happens, the central problem is no longer purely technical.</p>
+
+                <div class="quote-box">
+                    «It is a question of authority.»
+                </div>
+
+                <p>A system capable of purchasing goods is not necessarily authorized to purchase them. A system capable of transferring $100,000 does not necessarily have the institutional authority to spend it. A system that successfully executes an API call has not necessarily achieved the economic outcome for which the action was intended.</p>
+
+                <p>The emerging chain may therefore look less like:</p>
+
+                <div class="flow-diagram">
+                    <span class="flow-step">Model</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Output</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Human</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Action</span>
+                </div>
+
+                <p>and more like:</p>
+
+                <div class="flow-diagram">
+                    <span class="flow-step">Intelligence</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Intent</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Command</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Authority</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Governance</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Execution</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Evidence</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Outcome</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Verification</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Accountability</span>
+                </div>
+
+                <p>That chain may become one of the foundational questions of an economy increasingly populated by AI agents.</p>
+
+                <div class="part-divider"></div>
+                <h2>The Problem Is Not What Intelligence Can Do</h2>
+
+                <p>AI progress has largely been measured in terms of capability: better reasoning, greater accuracy, longer context, stronger tool use and more sophisticated planning.</p>
+
+                <p>But economies do not operate on capability alone.</p>
+
+                <p>Institutions constantly distinguish between what someone can do and what they are authorized to do.</p>
+
+                <p>An employee may technically be able to sign a million-dollar contract without having the authority to do so. A bank employee may have technical access to an account without being authorized to transfer funds. An executive may have system access while institutional policy prohibits a particular action.</p>
+
+                <p>Why should an AI agent be different?</p>
+
+                <p>If an AI system can technically execute a $100,000 transaction while its delegated authority is limited to $10,000, the difference is not merely a technical constraint. It is a boundary of authority.</p>
+
+                <p>The more capable AI becomes, the more important that distinction may become.</p>
+
+                <div class="highlight-statement">
+                    Capability is not authority.
+                </div>
+
+                <div class="part-divider"></div>
+                <h2>The Economy of Commands Begins at the Boundary of Delegation</h2>
+
+                <p>This is one of the questions explored through the Command Economy of AI — CE-AI.</p>
+
+                <p>CE-AI is not proposed as a completed economic theory, nor as a prediction of the future. It is a research framework for examining what happens when AI capabilities become capable of participating in economic activity through commands, delegated authority, governed execution and verifiable outcomes.</p>
+
+                <p>The question is not simply how to make AI better at executing instructions.</p>
+
+                <p>It is:</p>
+
+                <div class="quote-box">
+                    «How does intent become a command, a command become authorized action, and authorized action become an economic outcome that can be demonstrated?»
+                </div>
+
+                <p>That is a shift from engineering intelligence to engineering economic action.</p>
+
+                <div class="part-divider"></div>
+                <h2>Execution Is Not Success</h2>
+
+                <p>There is another distinction that becomes critical as AI agents enter real economic systems:</p>
+
+                <div class="highlight-statement">
+                    Execution ≠ Outcome
+                </div>
+
+                <p>A procurement system may successfully submit an order. That does not establish that the supplier accepted it, that the goods were shipped, that the quantity was correct, that the price was accurate, or that delivery occurred.</p>
+
+                <p>A payment API may return a successful response. That does not, by itself, establish that the intended economic settlement has been completed.</p>
+
+                <p>A marketing agent may execute an entire campaign exactly as instructed while producing little measurable commercial impact.</p>
+
+                <p>And even an outcome is not necessarily sufficient.</p>
+
+                <p>An increase in revenue does not automatically establish why it occurred, whether the measurement is reliable, or whether the claimed result can be independently verified.</p>
+
+                <p>The stronger chain is therefore:</p>
+
+                <div class="flow-diagram">
+                    <span class="flow-step">Execution</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Evidence</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Outcome</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Verification</span>
+                </div>
+
+                <p>The distinction is fundamental. There is a difference between a system saying:</p>
+
+                <div class="quote-box">
+                    “I executed the action.”
+                </div>
+
+                <p>and a system being able to establish:</p>
+
+                <div class="highlight-statement">
+                    “This is what I executed, this was the authority under which I acted, this is the evidence produced, this is the resulting economic outcome, and this is how that outcome can be verified.”
+                </div>
+
+                <div class="part-divider"></div>
+                <h2>From Agent Activity Records to Economic Action Records</h2>
+
+                <p>AI agents require activity records. But activity alone may not be sufficient once an action has economic or institutional consequences.</p>
+
+                <p>A richer record may be required — a research construct that can be described as an <strong>Economic Action Record</strong>.</p>
+
+                <p>The question is no longer simply: <em>What did the agent do?</em></p>
+
+                <div class="tip-box">
+                    <strong>Core Dimensions of an Economic Action Record:</strong>
+                    <br><br>
+                    • <strong>Identity:</strong> Who acted? On whose behalf?<br>
+                    • <strong>Intent & Authorization:</strong> Why? What was the command? Under what authority? Under which policy?<br>
+                    • <strong>Approval & Execution:</strong> What was approved? What was actually executed?<br>
+                    • <strong>Evidence & Outcome:</strong> What evidence was produced? What was the economic outcome?<br>
+                    • <strong>Verification & Accountability:</strong> Can it be verified? Who is accountable?
+                </div>
+
+                <p>This is not a claim that such an architecture has already been established. It is a research hypothesis.</p>
+
+                <p>The question is whether economies in which AI systems increasingly participate in transactions and institutional processes will require records capable of connecting intelligence to authority, authority to action, action to evidence, and evidence to accountability.</p>
+
+                <div class="part-divider"></div>
+                <h2>What Happens When the Agent Learns?</h2>
+
+                <p>Another distinction becomes increasingly important as AI systems become adaptive.</p>
+
+                <p>AI capability can improve through learning, feedback and adaptation.</p>
+
+                <p>But greater capability should not automatically imply greater authority.</p>
+
+                <div class="highlight-statement">
+                    Learning is not authorization. Adaptation is not permission.
+                </div>
+
+                <p>Improved capability does not automatically justify expanded authority.</p>
+
+                <p>This leads to a broader research hypothesis:</p>
+
+                <div class="quote-box">
+                    «AI capability may scale faster than the authority that institutions should delegate to it.»
+                </div>
+
+                <p>If an agent becomes significantly better at planning and execution, should its permissions automatically expand? Or should increases in authority remain subject to an independent institutional process?</p>
+
+                <p>The answer is not predetermined. But the question suggests that governance may need to evolve from a static control layer into a continuing process for reassessing the relationship between capability, authority, risk and evidence.</p>
+
+                <div class="part-divider"></div>
+                <h2>Superintelligence as a Stress Test</h2>
+
+                <p>These questions are often discussed in the context of superintelligence. But superintelligence does not need to be the starting point. It can instead serve as a stress test for the architecture.</p>
+
+                <p>If it is difficult today to establish whether a relatively limited AI agent acted within its delegated authority, whether the action was executed as approved, and whether the resulting economic outcome can be verified, those questions are unlikely to become simpler as systems become dramatically more capable.</p>
+
+                <p>The more useful question is therefore not: <em>What will superintelligence do?</em></p>
+
+                <p>It is:</p>
+
+                <div class="highlight-statement">
+                    «What must be true for intelligence of any level of capability to participate in economic activity under explicit, verifiable and accountable institutional authority?»
+                </div>
+
+                <p>Superintelligence then becomes less a prediction about the future and more an architectural stress test.</p>
+
+                <div class="part-divider"></div>
+                <h2>From Agent Safety to Economic Execution Assurance</h2>
+
+                <p>The AI industry is rapidly developing infrastructure for agent safety: identity, access controls, sandboxing, policy enforcement, monitoring, credential management and constrained execution.</p>
+
+                <p>These are essential foundations.</p>
+
+                <p>But when an agent moves from a software environment into consequential economic activity, additional questions emerge.</p>
+
+                <p>Not only: <em>Was the agent allowed to use the tool?</em></p>
+
+                <p>But:</p>
+
+                <ul>
+                    <li>Was the specific action authorized?</li>
+                    <li>Was the authority within its delegated limits?</li>
+                    <li>Was the required approval present?</li>
+                    <li>Was the action executed as approved?</li>
+                    <li>What economic outcome followed?</li>
+                    <li>What evidence supports that outcome?</li>
+                    <li>Can the outcome be independently verified?</li>
+                    <li>Who is accountable?</li>
+                </ul>
+
+                <p>This does not make agent safety irrelevant. Nor does it imply that security, identity or policy enforcement are insufficient. It suggests that economic execution may require an additional assurance layer concerned with the relationship between authorization, execution, evidence and outcome.</p>
+
+                <p>This motivates the research concept of <strong>Execution Assurance</strong>: Not an absolute claim that an AI system is “safe”, but a bounded, inspectable assurance that a specific consequential action occurred under a defined identity, authority, policy and set of constraints, with evidence that can support verification of the resulting outcome.</p>
+
+                <div class="part-divider"></div>
+                <h2>Evidence Before Infrastructure</h2>
+
+                <p>Technology companies often build platforms first and search for the problem they can justify later. The problem explored here requires the opposite sequence:</p>
+
+                <div class="flow-diagram">
+                    <span class="flow-step">Research</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Experiment</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Evidence</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Constraint</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Architecture</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Infrastructure</span>
+                </div>
+
+                <ul>
+                    <li><strong>Research</strong> identifies the question.</li>
+                    <li><strong>Experiments</strong> expose the boundary.</li>
+                    <li><strong>Evidence</strong> establishes what actually happened.</li>
+                    <li><strong>Constraints</strong> reveal what existing systems cannot adequately support.</li>
+                    <li><strong>Architecture</strong> translates validated requirements into system design.</li>
+                    <li><strong>Infrastructure</strong> follows only when the evidence demonstrates that it is necessary.</li>
+                </ul>
+
+                <p>The principle is simple: <strong>No layer without evidence.</strong> Or more broadly: <em>Research earns the right to become architecture.</em></p>
+
+                <p>This matters because infrastructure should not be created merely because a conceptual layer appears elegant. It should emerge because experiments reveal a persistent constraint that existing infrastructure cannot adequately address.</p>
+
+                <div class="part-divider"></div>
+                <h2>Reference Status Is Earned</h2>
+
+                <p>If a new body of economic infrastructure emerges around AI agency, there will inevitably be a race to define its terminology, frameworks and categories. But naming a category does not establish intellectual authority.</p>
+
+                <p>A claim to global reference status requires something more durable:</p>
+
+                <div class="flow-diagram">
+                    <span class="flow-step">Original research</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Clear framework</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Reproducible experiments</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Evidence</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Benchmarks</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Independent validation</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Institutional use</span> <span class="flow-arrow">→</span>
+                    <span class="flow-step">Citation & adoption</span>
+                </div>
+
+                <p>The relevant question is therefore not: <em>How do we declare ourselves the reference?</em></p>
+
+                <p>It is: <strong>How do we produce the research and evidence that makes others refer to us?</strong></p>
+
+                <p>That is how a research idea can become a body of knowledge, a body of knowledge can become a benchmark, and a benchmark — if proven necessary — can eventually inform infrastructure.</p>
+
+                <div class="part-divider"></div>
+                <h2>The Economy After Intelligence Becomes an Actor</h2>
+
+                <p>The greatest economic value of AI may ultimately extend beyond reducing the cost of producing information. It may reduce the cost of coordinating action.</p>
+
+                <p>When an intelligent system can understand intent, translate it into commands, use tools and act inside institutions, AI becomes something more than a source of information. It becomes part of the economic execution loop.</p>
+
+                <p>But productive capability alone is not enough.</p>
+
+                <p>Modern economies depend on trust: trust in authority, contracts, records, payments, outcomes and accountability.</p>
+
+                <p>When AI enters that loop as an actor, the standard of trust may need to evolve from: <em>“The system did it.”</em> to:</p>
+
+                <div class="tip-box">
+                    <strong>The New Standard of Trust:</strong>
+                    <br><br>
+                    • Who authorized it?<br>
+                    • What was it authorized to do?<br>
+                    • What did it actually do?<br>
+                    • What evidence exists?<br>
+                    • What happened economically?<br>
+                    • Can the outcome be verified?<br>
+                    • Who is accountable?
+                </div>
+
+                <p>That is the distance between intelligence capable of action and governed economic agency.</p>
+
+                <p>It is also the research territory Ouamarkom is working to investigate.</p>
+
+                <div class="highlight-statement">
+                    The category is not assumed. It is discovered.<br>
+                    The architecture is not declared. It is discovered.
+                </div>
+
+                <p>The decisive question in the emerging AI economy may therefore not be: <em>How intelligent has the system become?</em></p>
+
+                <p>But: <strong>What infrastructure, if any, is required to connect intelligence to authority, authority to action, action to evidence, evidence to outcome, and outcome to accountability?</strong></p>
+
+                <p>When intelligence can act, the architecture of authority and proof becomes part of the architecture of the economy itself.</p>
+
+                <div class="post-cta">
+                    <h3>Ouamarkom™</h3>
+                    <p>Ouamarkom researches the infrastructure that the agentic economy may require.</p>
+                    <a href="/#research" class="btn btn-primary">Explore Ouamarkom Research</a>
+                </div>
+
+            </div>
+
+            <footer class="site-footer">
+                <div class="footer-bottom-container" dir="ltr" style="margin-top: 50px;">
+                    <p>© 2026 Ouamarkom. All Rights Reserved.</p>
+                    <div class="footer-legal-links">
+                        <a href="/en/intellectual-property/">Intellectual Property</a>
+                        <span class="footer-legal-separator">·</span>
+                        <a href="mailto:contact@ouamarkom.com">Contact</a>
+                    </div>
+                </div>
+            </footer>
+        </article>
+    </div>
+
+    <!-- ARABIC SECTION (Hidden by Default) -->
+    <div class="lang-section lang-ar">
+        <article>
+            <header class="post-header">
+                <span class="post-meta">اقتصاد الأوامر للذكاء الاصطناعي (CE-AI™) • مقال استراتيجي • 12 دقيقة قراءة</span>
+                <h1>حين يصبح الذكاء قادرًا على الفعل: <span>من يمنحه السلطة؟</span></h1>
+                <p class="subtitle-lead">مع تحول الذكاء الاصطناعي من تقديم التوصيات إلى التنفيذ المباشر، ينتقل السؤال المركزي من القدرة التقنية إلى السلطة المؤسسية، والوكالة المحكومة، والأدلة القابلة للتحقق.</p>
+
+                <p style="color: var(--text-dim); margin-top: 15px; font-style: italic; font-size: 0.95rem;">بقلم مراد نجيب الصهيبي — المؤسس والرئيس التنفيذي لـ أوامركم™</p>
+            </header>
+
+            <img src="../images/when-intelligence-can-act-ar.webp" alt="حين يصبح الذكاء قادرًا على الفعل: من يمنحه السلطة؟" class="post-hero-img">
+
+            <div class="post-content-area">
+
+                <p>قد لا يكون التحول الاقتصادي الأكبر الذي يفرضه الذكاء الاصطناعي هو أن الآلات ستصبح أذكى من البشر، بل أن الأنظمة الذكية ستصبح قادرة على التصرف نيابةً عنهم.</p>
+
+                <p>وهنا يتغير السؤال.</p>
+
+                <p>ففي عصر البرمجيات التقليدية، كان النظام ينفذ ما يطلبه الإنسان. وفي الجيل الأول من الذكاء الاصطناعي، كان النظام يحلل ويقترح ويولد. أما مع صعود الوكلاء القادرين على استخدام الأدوات والوصول إلى الأنظمة واتخاذ سلسلة من الإجراءات، فإن المسافة بين القرار والتنفيذ بدأت تضيق.</p>
+
+                <p>عند هذه النقطة، لا تعود المشكلة اقتصادية أو تقنية فقط.</p>
+
+                <div class="quote-box">
+                    «إنها مشكلة سلطة.»
+                </div>
+
+                <p>فالنظام الذي يستطيع شراء سلعة لا يعني أنه مخول بشرائها. والنظام القادر على تحويل 100 ألف دولار لا يعني أن المؤسسة منحته صلاحية إنفاقها. والنظام الذي نجح في تنفيذ أمر عبر واجهة برمجية لا يعني أن النتيجة الاقتصادية التي كان يفترض أن يحققها قد حدثت بالفعل.</p>
+
+                <p>المعادلة التقليدية كانت تبدو كالتالي:</p>
+
+                <div class="flow-diagram">
+                    <span class="flow-step">الموديل</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">المخرجات</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">الإنسان</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">الفعل</span>
+                </div>
+
+                <p>أما المعادلة الجديدة فقد تصبح:</p>
+
+                <div class="flow-diagram">
+                    <span class="flow-step">الذكاء</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">النية</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">الأمر</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">السلطة</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">الحوكمة</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">التنفيذ</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">الدليل</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">النتيجة</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">التحقق</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">المساءلة</span>
+                </div>
+
+                <p>وهذه السلسلة، أكثر من مجرد زيادة في قوة النماذج، قد تكون إحدى اللبنات الأساسية لاقتصاد الوكلاء.</p>
+
+                <div class="part-divider"></div>
+                <h2>المشكلة ليست ما يستطيع الذكاء فعله</h2>
+
+                <p>لطالما قيس تقدم الذكاء الاصطناعي بقدراته: دقة أعلى، استدلال أفضل، أدوات أكثر، وسياقات أطول.</p>
+
+                <p>لكن الاقتصاد لا يعمل بالقدرة وحدها.</p>
+
+                <p>المؤسسات تفصل باستمرار بين القدرة والسلطة.</p>
+
+                <p>الموظف قد يكون قادرًا على توقيع عقد بمليون دولار، لكنه لا يملك بالضرورة التفويض لتوقيعه. والمصرفي قد يستطيع الوصول إلى حساب، لكن ذلك لا يعني أن لديه الحق في تحويل الأموال منه. والمدير قد يمتلك صلاحية تقنية للوصول إلى نظام، لكن سياسات المؤسسة قد تمنعه من تنفيذ إجراء محدد.</p>
+
+                <p>لماذا ينبغي أن يكون الوكيل الذكي مختلفًا؟</p>
+
+                <p>إذا كان الذكاء الاصطناعي قادرًا على تنفيذ عملية بقيمة 100 ألف دولار، بينما التفويض الممنوح له لا يتجاوز 10 آلاف، فإن الفجوة بين الاثنين ليست تفصيلًا تقنيًا. إنها حد السلطة.</p>
+
+                <p>ومن هنا تصبح العبارة البسيطة أكثر أهمية مما تبدو عليه:</p>
+
+                <div class="highlight-statement">
+                    القدرة ليست سلطة.
+                </div>
+
+                <p>كلما أصبحت النماذج أكثر قدرة، أصبح من الضروري أن يكون الفصل بين الاثنين أكثر وضوحًا، لا أقل.</p>
+
+                <div class="part-divider"></div>
+                <h2>اقتصاد الأوامر يبدأ عند حدود التفويض</h2>
+
+                <p>هذا هو أحد الأسئلة التي يحاول إطار Command Economy of AI — CE-AI دراستها.</p>
+
+                <p>ليس بوصفه نظرية اقتصادية مكتملة، ولا تنبؤًا بما سيكون عليه الاقتصاد مستقبلًا، بل بوصفه إطارًا بحثيًا لفهم ما يحدث عندما تصبح قدرات الذكاء الاصطناعي قابلة للتحول إلى نشاط اقتصادي من خلال الأوامر، والسلطة المفوضة، والتنفيذ المحكوم، والنتائج القابلة للتحقق.</p>
+
+                <p>السؤال ليس فقط كيف نجعل الذكاء أكثر قدرة على تنفيذ الأوامر.</p>
+
+                <p>السؤال هو:</p>
+
+                <div class="quote-box">
+                    «كيف تتحول النية إلى أمر، والأمر إلى سلطة، والسلطة إلى تنفيذ، والتنفيذ إلى نتيجة يمكن إثباتها؟»
+                </div>
+
+                <p>هذه نقلة من هندسة الذكاء إلى هندسة الفعل الاقتصادي.</p>
+
+                <div class="part-divider"></div>
+                <h2>التنفيذ ليس النجاح</h2>
+
+                <p>الاقتصاد أكثر تعقيدًا من سجل النظام.</p>
+
+                <div class="highlight-statement">
+                    Execution ≠ Outcome (التنفيذ لا يعني النتيجة)
+                </div>
+
+                <p>قد يسجل النظام أن أمر الشراء أُرسل بنجاح. لكن هل وافق المورد؟ هل شُحنت البضاعة؟ هل وصلت الكمية الصحيحة؟ هل كان السعر صحيحًا؟ هل تم إصدار الفاتورة؟ هل تمت التسوية؟</p>
+
+                <p>وقد يسجل نظام المدفوعات نجاح العملية. لكن النجاح التقني لا يثبت وحده اكتمال النتيجة الاقتصادية.</p>
+
+                <p>وفي التسويق، قد ينفذ الوكيل حملة كاملة وفق جميع التعليمات، ثم لا ترتفع المبيعات إلا بنسبة هامشية.</p>
+
+                <p>والنتيجة نفسها لا تكفي.</p>
+
+                <p>فالقول إن الإيرادات ارتفعت لا يجيب بالضرورة عن سؤال ما إذا كانت الزيادة ناتجة عن الإجراء، أو ما إذا كانت البيانات صحيحة، أو ما إذا كان القياس تم بطريقة يمكن التحقق منها.</p>
+
+                <p>لذلك نحتاج إلى سلسلة أكثر صرامة:</p>
+
+                <div class="flow-diagram">
+                    <span class="flow-step">التنفيذ</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">الدليل</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">النتيجة</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">التحقق</span>
+                </div>
+
+                <p>هذه ليست مسألة لغوية. إنها فرق بين نظام يستطيع أن يقول:</p>
+
+                <div class="quote-box">
+                    "لقد فعلت"
+                </div>
+
+                <p>ونظام يستطيع أن يثبت:</p>
+
+                <div class="highlight-statement">
+                    "هذا ما فعلته، وهذه السلطة التي استندت إليها، وهذا ما حدث نتيجة لذلك، وهذا هو الدليل، وهذه طريقة التحقق."
+                </div>
+
+                <div class="part-divider"></div>
+                <h2>من سجل نشاط الوكيل إلى سجل الفعل الاقتصادي</h2>
+
+                <p>أنظمة الوكلاء تحتاج إلى سجلات للنشاط. لكن النشاط وحده قد لا يكون كافيًا عندما يصبح الفعل ذا أثر اقتصادي أو مؤسسي.</p>
+
+                <p>قد نحتاج إلى نوع أكثر ثراءً من السجلات، يمكن وصفه — كفرضية بحثية — بـ <strong>Economic Action Record (سجل الفعل الاقتصادي)</strong>.</p>
+
+                <p>السؤال فيه ليس فقط: <em>ماذا فعل الوكيل؟</em></p>
+
+                <div class="tip-box">
+                    <strong>الأبعاد الأساسية لسجل الفعل الاقتصادي:</strong>
+                    <br><br>
+                    • <strong>الهوية والهادفيّة:</strong> من تصرف؟ نيابةً عن من؟ لماذا؟<br>
+                    • <strong>الأمر والسلطة:</strong> ما الأمر؟ تحت أي سلطة؟ وفق أي سياسة؟<br>
+                    • <strong>الموافقة والتنفيذ:</strong> ما الذي تمت الموافقة عليه؟ ما الذي نُفذ فعلًا؟<br>
+                    • <strong>الأدلة والنتائج:</strong> ما الأدلة الناتجة؟ ما النتيجة الاقتصادية؟<br>
+                    • <strong>التحقق والمساءلة:</strong> هل يمكن التحقق منها؟ ومن يتحمل المسؤولية؟
+                </div>
+
+                <p>إذا أصبح الذكاء الاصطناعي مشاركًا فعليًا في النشاط الاقتصادي، فقد تصبح القدرة على الإجابة عن هذه الأسئلة جزءًا من البنية التحتية نفسها.</p>
+
+                <div class="part-divider"></div>
+                <h2>المشكلة التالية: ماذا يحدث عندما يتعلم الوكيل؟</h2>
+
+                <p>هناك افتراض آخر يستحق الاختبار.</p>
+
+                <p>قدرة الذكاء الاصطناعي على التعلم والتحسن والتكيف يمكن أن تتوسع بسرعة. لكن هذا لا يعني أن سلطته ينبغي أن تتوسع تلقائيًا معها.</p>
+
+                <div class="highlight-statement">
+                    التعلم ليس تفويضًا. التكيف ليس تصريحًا.
+                </div>
+
+                <p>تحسن القدرة لا يعني تلقائيًا زيادة السلطة.</p>
+
+                <p>وهنا تظهر إحدى الفرضيات المهمة لأبحاث الوكالة الاقتصادية المحكومة:</p>
+
+                <div class="quote-box">
+                    «قد تتوسع قدرة الذكاء الاصطناعي أسرع من السلطة التي ينبغي منحها له.»
+                </div>
+
+                <p>إذا كان النظام يتعلم من نتائج أفعاله ويصبح أكثر قدرة على اتخاذ القرارات، فهل ينبغي أن يحصل تلقائيًا على صلاحيات أكبر؟ أم يجب أن تمر زيادة السلطة عبر آلية مؤسسية مستقلة؟</p>
+
+                <p>هذا السؤال ينقل الحوكمة من كونها طبقة ثابتة إلى كونها عملية مستمرة لإعادة تقييم العلاقة بين القدرة والسلطة والمخاطر والأدلة.</p>
+
+                <div class="part-divider"></div>
+                <h2>الذكاء المتفوق ليس نقطة البداية</h2>
+
+                <p>قد يبدو الحديث عن هذه القضايا مرتبطًا بالذكاء المتفوق. لكن الذكاء المتفوق ليس بالضرورة نقطة البداية. بل يمكن استخدامه كاختبار ضغط لهذه الفرضيات.</p>
+
+                <p>إذا كان من الصعب اليوم إثبات أن وكيلًا محدود القدرة تصرف ضمن السلطة الممنوحة له، وأن النتيجة التي حققها كانت صحيحة وقابلة للتحقق، فلن تصبح المشكلة أبسط عندما تصبح الأنظمة أكثر قدرة على التفكير والتخطيط والتنفيذ.</p>
+
+                <p>السؤال الأكثر فائدة ليس: <em>ماذا سيفعل الذكاء المتفوق؟</em></p>
+
+                <p>بل:</p>
+
+                <div class="highlight-statement">
+                    «ما الذي يجب أن يكون صحيحًا كي يصبح الذكاء، مهما بلغت قدرته، قادرًا على المشاركة في النشاط الاقتصادي تحت سلطة مؤسسية واضحة وقابلة للتحقق والمساءلة؟»
+                </div>
+
+                <p>وهنا يتحول الذكاء المتفوق من تنبؤ مستقبلي إلى اختبار معماري.</p>
+
+                <div class="part-divider"></div>
+                <h2>من سلامة الوكلاء إلى ضمان الفعل الاقتصادي</h2>
+
+                <p>تتقدم صناعة الذكاء الاصطناعي بسرعة في بناء طبقات لحماية الوكلاء: الهوية، إدارة الصلاحيات، عزل البيئات، السياسات، مراقبة الأدوات، التحكم في الوصول، والتنفيذ المقيد.</p>
+
+                <p>لكن عندما ينتقل الوكيل من بيئة برمجية إلى نشاط اقتصادي حقيقي، تظهر أسئلة إضافية.</p>
+
+                <p>ليس فقط: <em>هل كان مسموحًا له باستخدام الأداة؟</em></p>
+
+                <p>بل:</p>
+
+                <ul>
+                    <li>هل كان الفعل نفسه مصرحًا به؟</li>
+                    <li>هل تجاوز حدود التفويض؟</li>
+                    <li>هل كانت الموافقة المطلوبة موجودة؟</li>
+                    <li>هل نُفذ الأمر كما تمت الموافقة عليه؟</li>
+                    <li>ما النتيجة الاقتصادية؟</li>
+                    <li>هل يمكن إثباتها؟</li>
+                    <li>من يتحمل المسؤولية عنها؟</li>
+                </ul>
+
+                <p>هذه الأسئلة لا تعني أن سلامة الوكلاء غير كافية تقنيًا، ولا أنها بديل عن الأمن أو الحوكمة. بل تشير إلى أن التنفيذ الاقتصادي قد يحتاج إلى طبقة من الإثبات والضمان تتجاوز مجرد إثبات أن النظام نفذ الإجراء المسموح له به.</p>
+
+                <p>وهنا تظهر فرضية <strong>Execution Assurance (ضمان التنفيذ)</strong>: ليس ضمان أن الذكاء الاصطناعي "آمن" بصورة مطلقة، بل ضمان محدد وقابل للفحص بأن فعلًا اقتصاديًا معينًا وقع تحت هوية وسلطة وسياسة وقيود محددة، وأن أدلته ونتيجته يمكن تتبعهما والتحقق منهما ضمن نطاق معلوم.</p>
+
+                <div class="part-divider"></div>
+                <h2>الدليل قبل البنية التحتية</h2>
+
+                <p>الميل الطبيعي في صناعة التكنولوجيا هو بناء المنصة أولًا ثم البحث عن المشكلة التي تستحقها. لكن المشكلة التي نحاول دراستها هنا قد تتطلب ترتيبًا مختلفًا:</p>
+
+                <div class="flow-diagram">
+                    <span class="flow-step">البحث</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">التجربة</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">الدليل</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">اكتشاف القيود</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">المعمارية</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">البنية التحتية</span>
+                </div>
+
+                <p>فالطبقة الجديدة لا ينبغي أن تُبنى لأنها تبدو منطقية، بل لأن التجارب تكشف قيدًا لا تستطيع البنية الحالية التعامل معه.</p>
+
+                <p>وهذه نقطة جوهرية: <strong>لا طبقة بلا دليل.</strong></p>
+
+                <p>ويمكن اختصار المنهج في عبارة أخرى: <em>«البحث يكتشف ما نحتاجه، والدليل يحدد ما يمكن بناؤه.»</em></p>
+
+                <div class="part-divider"></div>
+                <h2>المرجعية لا تُعلن</h2>
+
+                <p>إذا كان هناك اقتصاد جديد يتشكل حول قدرة الذكاء الاصطناعي على الفعل، فسوف تظهر بالتأكيد محاولات لتسمية الفئات الجديدة وتعريفها.</p>
+
+                <p>لكن إطلاق مصطلح لا يصنع مرجعية. والقول إن جهة ما هي "المرجع العالمي الأول" يحتاج إلى أكثر من السبق في استخدام عبارة أو نشر تصور.</p>
+
+                <p>المرجعية تُبنى عبر سلسلة مختلفة:</p>
+
+                <div class="flow-diagram">
+                    <span class="flow-step">بحث أصيل</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">إطار واضح</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">تجارب قابلة للتكرار</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">أدلة</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">Benchmarks</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">تحقق مستقل</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">استخدام مؤسسي</span> <span class="flow-arrow">←</span>
+                    <span class="flow-step">استشهاد واعتماد</span>
+                </div>
+
+                <p>لهذا فإن السؤال الصحيح ليس: <em>كيف نعلن أننا المرجع؟</em></p>
+
+                <p>بل: <strong>كيف نبني المعرفة والأدلة التي تجعل الآخرين يرجعون إلينا؟</strong></p>
+
+                <p>هذه هي الطريقة التي يمكن بها أن تتحول فكرة بحثية إلى بنية معرفية، ثم إلى معيار، ثم — إذا أثبتت ضرورتها — إلى بنية تحتية.</p>
+
+                <div class="part-divider"></div>
+                <h2>الاقتصاد بعد أن يصبح الذكاء فاعلًا</h2>
+
+                <p>ربما تكون أعظم قيمة اقتصادية للذكاء الاصطناعي في السنوات المقبلة ليست فقط في خفض تكلفة إنتاج المعرفة، بل في خفض تكلفة تنسيق الفعل.</p>
+
+                <p>عندما يستطيع نظام ذكي أن يفهم النية، ويحولها إلى أوامر، ويستخدم الأدوات، ويتصرف داخل المؤسسات، فإن الاقتصاد يحصل على نوع جديد من القدرة الإنتاجية.</p>
+
+                <p>لكن القدرة الإنتاجية وحدها لا تكفي.</p>
+
+                <p>الاقتصاد الحديث قائم على الثقة: ثقة في السلطة، وفي العقود، وفي السجلات، وفي المدفوعات، وفي النتائج، وفي إمكانية تحديد المسؤولية عند حدوث الخطأ.</p>
+
+                <p>وعندما يدخل الذكاء الاصطناعي إلى هذه الدورة بوصفه فاعلًا، يجب أن تنتقل هذه الثقة من مستوى "النظام فعل ذلك" إلى مستوى أكثر صرامة:</p>
+
+                <div class="tip-box">
+                    <strong>معيار الثقة الجديد:</strong>
+                    <br><br>
+                    • من سمح له؟<br>
+                    • ماذا كان مسموحًا له أن يفعل؟<br>
+                    • ماذا فعل فعلًا؟<br>
+                    • ما الدليل؟<br>
+                    • ماذا حدث اقتصاديًا؟<br>
+                    • هل يمكن التحقق؟<br>
+                    • ومن يتحمل المسؤولية؟
+                </div>
+
+                <p>هذه هي المسافة التي تفصل بين ذكاء قادر على الفعل ووكالة اقتصادية محكومة.</p>
+
+                <p>وهي أيضًا المساحة البحثية التي تعمل أوامركم على استكشافها.</p>
+
+                <div class="highlight-statement">
+                    The category is not assumed. It is discovered.<br>
+                    الفئة لا تُفترض. بل تُكتشف.<br><br>
+                    The architecture is not declared. It is discovered.<br>
+                    المعمارية لا تُعلن. بل يكشفها الدليل.
+                </div>
+
+                <p>وفي النهاية، قد لا يكون السؤال الحاسم في اقتصاد الذكاء الاصطناعي: <em>كم أصبح الذكاء أكثر ذكاءً؟</em></p>
+
+                <p>بل: <strong>كيف نبني البنية التي تربط الذكاء بالسلطة، والسلطة بالفعل، والفعل بالدليل، والدليل بالنتيجة، والنتيجة بالمساءلة؟</strong></p>
+
+                <p>عندما يصبح الذكاء قادرًا على الفعل، تصبح هندسة السلطة والإثبات جزءًا من هندسة الاقتصاد نفسه.</p>
+
+                <div class="post-cta">
+                    <h3>أوامركم™</h3>
+                    <p>أوامركم تبحث في البنية التحتية التي قد يتطلبها اقتصاد الوكلاء المباشرين.</p>
+                    <a href="/#research" class="btn btn-primary">استكشف أبحاث أوامركم</a>
+                </div>
+
+            </div>
+
+            <footer class="site-footer">
+                <div class="footer-bottom-container" dir="rtl" style="margin-top: 50px;">
+                    <p>© 2026 أوامركم. جميع الحقوق محفوظة.</p>
+                    <div class="footer-legal-links">
+                        <a href="/intellectual-property">الملكية الفكرية</a>
+                        <span class="footer-legal-separator">·</span>
+                        <a href="mailto:contact@ouamarkom.com">تواصل معنا</a>
+                    </div>
+                </div>
+            </footer>
+        </article>
+    </div>
+
+</main>
+
+<script>
+    function setLanguage(lang) {
+        const enSection = document.querySelector('.lang-en');
+        const arSection = document.querySelector('.lang-ar');
+        const langBtn = document.getElementById('lang-btn');
+        const backBlogBtn = document.getElementById('back-blog-btn');
+        const htmlTag = document.documentElement;
+
+        if (lang === 'ar') {
+            enSection.classList.remove('active-lang');
+            arSection.classList.add('active-lang');
+            langBtn.textContent = 'English';
+            backBlogBtn.textContent = 'المدونة ←';
+            htmlTag.setAttribute('lang', 'ar');
+            htmlTag.setAttribute('dir', 'rtl');
+            
+            // Update Meta dynamically for Arabic SEO
+            document.title = "حين يصبح الذكاء قادرًا على الفعل: من يمنحه السلطة؟ من القدرة إلى الوكالة الاقتصادية المحكومة | أوامركم";
+            document.getElementById('meta-description').setAttribute('content', "مقال استراتيجي بقلم مراد نجيب الصهيبي يحلل وكالة الذكاء الاصطناعي، التفويض، سجلات الفعل الاقتصادي، وضمان التنفيذ في إطار اقتصاد الأوامر للذكاء الاصطناعي.");
+        } else {
+            arSection.classList.remove('active-lang');
+            enSection.classList.add('active-lang');
+            langBtn.textContent = 'العربية';
+            backBlogBtn.textContent = '← Blog';
+            htmlTag.setAttribute('lang', 'en');
+            htmlTag.setAttribute('dir', 'ltr');
+
+            // Restore Meta dynamically for English SEO
+            document.title = "When Intelligence Can Act, Who Gives It the Right? From Capability to Governed Economic Agency | Ouamarkom";
+            document.getElementById('meta-description').setAttribute('content', "An executive essay by Morad Nagib Alsahybi on AI agency, delegated authority, Economic Action Records, and Execution Assurance in the Command Economy of AI (CE-AI).");
+        }
+    }
+
+    function switchLanguage() {
+        const enSection = document.querySelector('.lang-en');
+        const isEnActive = enSection.classList.contains('active-lang');
+        const targetLang = isEnActive ? 'ar' : 'en';
+        
+        // Update URL query parameter cleanly without page refresh
+        const url = new URL(window.location);
+        if (targetLang === 'ar') {
+            url.searchParams.set('lang', 'ar');
+        } else {
+            url.searchParams.delete('lang');
+        }
+        window.history.pushState({}, '', url);
+
+        setLanguage(targetLang);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const langParam = urlParams.get('lang');
+
+        if (langParam === 'ar') {
+            setLanguage('ar');
+        }
+    });
+</script>
+</body>
+</html>
