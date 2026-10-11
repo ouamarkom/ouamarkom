@@ -1,1157 +1,582 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الموسوعة الاستراتيجية لاقتصاد أوامر الذكاء الاصطناعي (CEAI) | Ouamarkom</title>
-    <meta name="description" content="الموسوعة البحثية والاستراتيجية الرسمية لاقتصاد أوامر الذكاء الاصطناعي (CEAI)، وتضم الإطار المفاهيمي، 100 سؤال وجواب، قاموس المصطلحات، ومصفوفة المفاهيم.">
-    <meta name="keywords" content="اقتصاد أوامر الذكاء الاصطناعي، CEAI، اقتصاد الأوامر، بنية تنفيذ الذكاء الاصطناعي، AI Execution Infrastructure، Smart Hand، واجهة النية، هندسة الأوامر، وكلاء الذكاء الاصطناعي، تنسيق الوكلاء، Command Compiler، Execution Capital، Decision Capital، AI Economy، Ouamarkom">
-    <meta name="author" content="Ouamarkom">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    
-    <!-- Canonical & Hreflang Tags -->
-    <link rel="canonical" href="https://ouamarkom.com/research" />
-    <link rel="alternate" hreflang="ar" href="https://ouamarkom.com/research" />
-    <link rel="alternate" hreflang="en" href="https://ouamarkom.com/en/research" />
-    <link rel="alternate" hreflang="x-default" href="https://ouamarkom.com/en/research" />
-  
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="/style.css">
-  
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "TechArticle",
-          "@id": "https://ouamarkom.com/research#article",
-          "headline": "الموسوعة الاستراتيجية لاقتصاد أوامر الذكاء الاصطناعي (CEAI)",
-          "description": "إطار بحثي ومفاهيمي يدرس كيفية تطور التنسيق الاقتصادي والتنظيم المؤسسي عندما تصبح النية البشرية، المعبّر عنها باللغة الطبيعية، مدخلًا مباشرًا إلى أنظمة الذكاء الاصطناعي القادرة على التخطيط والتنفيذ وقياس النتائج.",
-          "inLanguage": "ar",
-          "mainEntityOfPage": "https://ouamarkom.com/research",
-          "publisher": {
-            "@type": "Organization",
-            "name": "Ouamarkom",
-            "url": "https://ouamarkom.com",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://ouamarkom.com/logo.webp"
-            }
-          }
-        },
-        {
-          "@type": "FAQPage",
-          "@id": "https://ouamarkom.com/research#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "ما هو اقتصاد أوامر الذكاء الاصطناعي (CEAI)؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "هو إطار بحثي وتحليلي يدرس كيف يتغير التنسيق الاقتصادي عندما تصبح النية البشرية، المعبر عنها باللغة الطبيعية، مدخلًا مباشرًا إلى أنظمة الذكاء الاصطناعي القادرة على التخطيط والتنفيذ وتحقيق نتائج اقتصادية."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل CEAI هو نفسه اقتصاد الأوامر التقليدي؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "لا. اقتصاد الأوامر التاريخي يرتبط بالتخطيط السياسي المركزي، بينما CEAI يدرس تنسيق النية البشرية مع الأنظمة الحاسوبية داخل بيئات اقتصادية ومؤسسية متنوعة."
-              }
-            }
-          ]
-        }
-      ]
-    }
-    </script>
-      
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:site_name" content="Ouamarkom" />
-    <meta property="og:url" content="https://ouamarkom.com/research" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="الموسوعة الاستراتيجية لاقتصاد أوامر الذكاء الاصطناعي | CEAI" />
-    <meta property="og:description" content="استكشف الإطار البحثي لاقتصاد أوامر الذكاء الاصطناعي، وفجوة النية والتنفيذ، وبنية التنفيذ الذكي، وحوكمة الوكلاء، ومستقبل الاقتصاد القائم على النية." />
-    <meta property="og:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg" />
-    <meta property="og:locale" content="ar_AR" />
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="اقتصاد أوامر الذكاء الاصطناعي (CEAI) | قاعدة المعرفة الاستراتيجية">
-    <meta name="twitter:description" content="الإطار البحثي والاستراتيجي الرسمي لفهم انتقال الذكاء الاصطناعي من توليد المعلومات إلى التنفيذ الاقتصادي الذكي.">
-    <meta name="twitter:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg">
-
-    <style>
-        :root {
-            --primary: #040916;
-            --secondary: #0a192f;
-            --accent: #e6992d;
-            --gold: #fcd34d;
-            --text-main: #e6f1ff;
-            --text-dim: #8892b0;
-            --card-bg: rgba(10, 25, 47, 0.4);
-            --card-border: rgba(255, 255, 255, 0.05);
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            background-color: var(--primary);
-            color: var(--text-main);
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            overflow-x: hidden;
-            text-align: start;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            position: relative;
-            z-index: 2;
-        }
-
-        #network-canvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            pointer-events: none;
-            opacity: 0.4;
-        }
-
-        header {
-            border-bottom: 1px solid var(--card-border);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-        }
-
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 10px;
-        }
-
-        .logo-group {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            text-decoration: none;
-        }
-
-        .lang-controller {
-            display: flex;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid var(--card-border);
-            border-radius: 30px;
-            padding: 4px;
-            gap: 4px;
-        }
-
-        .lang-btn {
-            display: inline-block;
-            text-decoration: none;
-            background: transparent;
-            border: none;
-            color: var(--text-dim);
-            padding: 6px 18px;
-            border-radius: 20px;
-            font-weight: 600;
-            font-size: 13px;
-            transition: all 0.3s ease;
-        }
-
-        .lang-btn.active {
-            background: var(--accent);
-            color: #040916;
-            box-shadow: 0 2px 10px rgba(230, 153, 45, 0.25);
-        }
-
-        .faq-header-section {
-            text-align: center;
-            padding: 40px 0 20px 0;
-            min-height: auto;
-        }
-
-        .logo-img {
-            max-width: 100px;
-            height: auto;
-            margin-bottom: 0;
-            transition: transform 0.5s ease;
-        }
-
-        .logo-img:hover {
-            transform: rotate(5deg) scale(1.05);
-        }
-
-        .faq-header-section h1 {
-            font-size: 36px;
-            color: var(--text-main);
-            margin-bottom: 15px;
-            font-weight: 800;
-            line-height: 1.4;
-        }
-
-        .faq-header-section h1 span {
-            color: var(--accent);
-        }
-
-        .faq-header-section .subtitle {
-            font-size: 17px;
-            color: var(--text-dim);
-            max-width: 850px;
-            margin: 0 auto;
-            line-height: 1.8;
-        }
-
-        .search-wrapper {
-            max-width: 650px;
-            margin: 30px auto;
-            position: relative;
-            padding: 0 15px;
-        }
-
-        .search-input {
-            width: 100%;
-            padding: 16px 25px;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid var(--card-border);
-            border-radius: 50px;
-            color: #fff;
-            font-size: 16px;
-            outline: none;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-            text-align: inherit;
-        }
-
-        .search-input:focus {
-            border-color: var(--accent);
-            box-shadow: 0 0 15px rgba(230, 153, 45, 0.25);
-            background: rgba(255, 255, 255, 0.05);
-        }
-
-        .master-tabs {
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-            margin: 20px 0 40px 0;
-            flex-wrap: wrap;
-            padding: 0 15px;
-        }
-
-        .master-tab-btn {
-            padding: 10px 22px;
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid var(--card-border);
-            border-radius: 30px;
-            color: var(--text-dim);
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            font-size: 14px;
-            font-weight: 500;
-        }
-
-        .master-tab-btn:hover, .master-tab-btn.active {
-            background: var(--accent);
-            color: #040916;
-            border-color: var(--accent);
-            font-weight: bold;
-            box-shadow: 0 4px 15px rgba(230, 153, 45, 0.2);
-            transform: translateY(-1px);
-        }
-
-        .sub-filters {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-            padding: 0 15px;
-        }
-
-        .sub-filter-btn {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid var(--card-border);
-            color: var(--text-dim);
-            padding: 8px 18px;
-            border-radius: 30px;
-            cursor: pointer;
-            font-size: 13.5px;
-            transition: all 0.3s;
-        }
-
-        .sub-filter-btn:hover, .sub-filter-btn.active {
-            border-color: var(--accent);
-            color: var(--accent);
-            background: rgba(230, 153, 45, 0.05);
-        }
-
-        .view-content-section {
-            display: none;
-        }
-
-        .view-content-section.active {
-            display: block;
-            animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(8px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .kb-layout {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            max-width: 900px;
-            margin: 0 auto 60px auto;
-            padding: 0 15px;
-        }
-
-        .kb-card {
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 16px;
-            padding: 24px;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .kb-card:hover {
-            border-color: var(--accent);
-            transform: translateY(-2px);
-            background: rgba(10, 25, 47, 0.7);
-        }
-
-        .kb-card h2 {
-            font-size: 22px;
-            color: var(--gold);
-            margin-bottom: 18px;
-            font-weight: 700;
-            line-height: 1.5;
-        }
-
-        .lang-condensed-block {
-            text-align: justify;
-        }
-
-        p.text-p {
-            margin-bottom: 15px;
-            font-size: 15.5px;
-            line-height: 1.75;
-            color: var(--text-main);
-        }
-
-        blockquote.quote-box {
-            background: rgba(255,255,255,0.01);
-            border-inline-start: 4px solid var(--accent);
-            padding: 20px;
-            border-radius: 8px;
-            margin: 25px 0;
-            text-align: center;
-            font-weight: 600;
-            color: #ffffff;
-        }
-
-        .faq-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            max-width: 900px;
-            margin: 0 auto 60px auto;
-            padding: 0 15px;
-        }
-
-        .faq-card-item {
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 16px;
-            padding: 24px;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .faq-card-item:hover {
-            border-color: var(--accent);
-            transform: translateY(-2px);
-            background: rgba(10, 25, 47, 0.7);
-        }
-
-        .faq-question-box {
-            display: flex;
-            gap: 16px;
-            align-items: flex-start;
-            margin-bottom: 14px;
-        }
-
-        .faq-badge {
-            background: rgba(230, 153, 45, 0.1);
-            color: var(--accent);
-            min-width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 13px;
-            border: 1px solid rgba(230, 153, 45, 0.2);
-        }
-
-        .faq-q-text-group {
-            flex: 1;
-        }
-
-        .faq-q-text-group h3 {
-            margin: 0;
-            font-size: 18px;
-            color: #ffffff;
-            line-height: 1.5;
-            font-weight: 600;
-        }
-
-        .faq-answer-box {
-            padding-right: 48px;
-            border-right: 2px solid rgba(255, 255, 255, 0.03);
-            margin-right: 15px;
-        }
-
-        .ans-text {
-            color: var(--text-main);
-            font-size: 15.5px;
-            line-height: 1.7;
-            margin: 0;
-        }
-
-        .glossary-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-            gap: 20px;
-            max-width: 900px;
-            margin: 0 auto 60px auto;
-            padding: 0 15px;
-        }
-
-        .glossary-card {
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 16px;
-            padding: 24px;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .glossary-card:hover {
-            border-color: var(--accent);
-            transform: translateY(-2px);
-            background: rgba(10, 25, 47, 0.7);
-        }
-
-        .glossary-title {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-            padding-bottom: 8px;
-            margin-bottom: 12px;
-        }
-
-        .glossary-title h3 {
-            color: var(--accent);
-            font-size: 17px;
-            font-weight: 700;
-        }
-
-        .table-wrapper {
-            width: 100%;
-            overflow-x: auto;
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 16px;
-            max-width: 900px;
-            margin: 0 auto 60px auto;
-        }
-
-        table.compare-table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        table.compare-table th, table.compare-table td {
-            padding: 16px 20px;
-            border-bottom: 1px solid var(--card-border);
-            text-align: start;
-        }
-
-        table.compare-table th {
-            background: rgba(230, 153, 45, 0.08);
-            color: #ffffff;
-            font-weight: 700;
-        }
-
-        table.compare-table tr:hover td {
-            background: rgba(255,255,255,0.02);
-        }
-
-        .no-results {
-            text-align: center;
-            padding: 40px;
-            color: var(--text-dim);
-            font-size: 16px;
-            display: none;
-            background: var(--card-bg);
-            border: 1px dashed var(--card-border);
-            border-radius: 16px;
-            max-width: 900px;
-            margin: 20px auto;
-        }
-
-        #backToTop {
-            position: fixed;
-            bottom: 30px;
-            left: 30px;
-            background: var(--accent);
-            color: #040916;
-            border: none;
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            font-size: 20px;
-            font-weight: bold;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            z-index: 999;
-            transition: all 0.3s ease;
-            display: none;
-            align-items: center;
-            justify-content: center;
-        }
-
-        #backToTop:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(230, 153, 45, 0.4);
-        }
-
-        .research-papers-nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-            flex-wrap: wrap;
-            margin-top: 24px;
-        }
-
-        .paper-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 18px;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid var(--card-border);
-            border-radius: 30px;
-            color: var(--text-dim);
-            text-decoration: none;
-            font-size: 15.5px;
-            font-weight: 500;
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-            backdrop-filter: blur(10px);
-        }
-
-        .paper-link:hover {
-            background: rgba(230, 153, 45, 0.08);
-            border-color: var(--accent);
-            color: #ffffff;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 15px rgba(230, 153, 45, 0.12);
-        }
-
-        .paper-tag {
-            color: var(--accent);
-            font-size: 13px;
-            font-weight: 700;
-        }
-
-        .paper-dot {
-            color: rgba(255, 255, 255, 0.2);
-            font-size: 10px;
-        }
-
-        .paper-title {
-            color: var(--text-main);
-            transition: color 0.25s ease;
-        }
-
-        .paper-link:hover .paper-title {
-            color: #ffffff;
-        }
-
-        .paper-arrow {
-            font-size: 12px;
-            opacity: 0.5;
-            transition: transform 0.25s ease, opacity 0.25s ease;
-        }
-
-        .paper-link:hover .paper-arrow {
-            opacity: 1;
-            color: var(--accent);
-        }
-
-        [dir="rtl"] .paper-link:hover .paper-arrow {
-            transform: translateX(-3px);
-        }
-
-        [dir="ltr"] .paper-link:hover .paper-arrow {
-            transform: translateX(3px);
-        }
-
-        footer {
-            background: transparent;
-            border-top: 1px solid var(--card-border);
-            padding: 40px 0;
-            text-align: center;
-            color: var(--text-dim);
-            font-size: 14px;
-            position: relative;
-            z-index: 2;
-        }
-        
-        @media (max-width: 768px) {
-            .glossary-grid { grid-template-columns: 1fr; }
-            .faq-header-section h1 { font-size: 28px; }
-            .faq-answer-box { padding-right: 20px; }
-            .kb-card { padding: 20px; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أبحاث الوكالة الاقتصادية المحكومة بالذكاء الاصطناعي | أوامركم™</title>
+<meta name="description" content="بحث وهندسة في الشروط والآليات التي تجعل الفعل الاقتصادي للذكاء الاصطناعي قابلًا للحوكمة والإنفاذ والتحقق والمساءلة، عبر بناء قاعدة الأدلة قبل المعمارية.">
+<meta name="keywords" content="الفعل الاقتصادي المحكوم, الذكاء الاصطناعي, الوكالة الاقتصادية, CE-AI, Smart Hand, GEAB, الحوكمة والإنفاذ, التحقق والمساءلة, أوامركم, Ouamarkom">
+<meta name="author" content="Ouamarkom">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#040916">
+<link rel="canonical" href="https://ouamarkom.com/research" />
+<link rel="alternate" hreflang="ar" href="https://ouamarkom.com/research" />
+<link rel="alternate" hreflang="en" href="https://ouamarkom.com/en/research" />
+<link rel="alternate" hreflang="x-default" href="https://ouamarkom.com/research" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://ouamarkom.com/research#page", "url": "https://ouamarkom.com/research", "name": "أبحاث الوكالة الاقتصادية المحكومة بالذكاء الاصطناعي | أوامركم™", "description": "بحث وهندسة في الشروط والآليات التي تجعل الفعل الاقتصادي للذكاء الاصطناعي قابلًا للحوكمة والإنفاذ والتحقق والمساءلة، عبر بناء قاعدة الأدلة قبل المعمارية.", "inLanguage": "ar", "isPartOf": {"@id": "https://ouamarkom.com/#website"}, "about": {"@type": "Thing", "name": "الفعل الاقتصادي المحكوم بالذكاء الاصطناعي", "alternateName": "Governed Economic Action"}, "publisher": {"@id": "https://ouamarkom.com/#organization"}, "breadcrumb": {"@id": "https://ouamarkom.com/research#breadcrumb"}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://ouamarkom.com/ouamarkom-og-image.jpeg"}}, {"@type": "WebSite", "@id": "https://ouamarkom.com/#website", "url": "https://ouamarkom.com/", "name": "Ouamarkom", "alternateName": "أوامركم", "publisher": {"@id": "https://ouamarkom.com/#organization"}, "inLanguage": ["ar", "en"]}, {"@type": "Organization", "@id": "https://ouamarkom.com/#organization", "name": "Ouamarkom", "alternateName": "أوامركم", "url": "https://ouamarkom.com", "logo": {"@type": "ImageObject", "url": "https://ouamarkom.com/logo.webp"}, "email": "contact@ouamarkom.com"}, {"@type": "ItemList", "@id": "https://ouamarkom.com/research#works", "name": "الأوراق والأعمال البحثية", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "اقتصاد الأوامر للذكاء الاصطناعي: من استرجاع المعلومات إلى التنفيذ الذكي", "url": "https://ouamarkom.com/research/paper-1"}, {"@type": "ListItem", "position": 2, "name": "اليد الذكية: طبقة اقتصادية وتشغيلية جديدة فوق الإنترنت والبنية البرمجية الحالية", "url": "https://ouamarkom.com/research/paper-2"}, {"@type": "ListItem", "position": 3, "name": "التنفيذ باعتباره اهتمامًا معماريًا في أنظمة الذكاء الاصطناعي", "url": "https://ouamarkom.com/research/paper-3"}, {"@type": "ListItem", "position": 4, "name": "Institutional Gateway™ - البوابة المؤسسية", "url": "https://ouamarkom.com/research/paper-4"}, {"@type": "ListItem", "position": 5, "name": "معمارية CE-AI الحاكمة™", "url": "https://ouamarkom.com/research/paper-5"}, {"@type": "ListItem", "position": 6, "name": "Economic Action Gateway - بوابة الفعل الاقتصادي", "url": "https://ouamarkom.com/research/paper-6"}, {"@type": "ListItem", "position": 7, "name": "نموذج CE-AI للتنفيذ الاقتصادي المحكوم v0.1", "url": "https://ouamarkom.com/research/ce-ai-governed-economic-execution-v0-1"}, {"@type": "ListItem", "position": 8, "name": "GEAB v0.1 - المعيار المرجعي البحثي للأفعال الاقتصادية المحكومة بالذكاء الاصطناعي", "url": "https://ouamarkom.com/research/geab"}]}, {"@type": "BreadcrumbList", "@id": "https://ouamarkom.com/research#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "أوامركم", "item": "https://ouamarkom.com/"}, {"@type": "ListItem", "position": 2, "name": "الأبحاث", "item": "https://ouamarkom.com/research"}]}]}</script>
+<meta property="og:site_name" content="Ouamarkom" />
+<meta property="og:url" content="https://ouamarkom.com/research" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="أبحاث الوكالة الاقتصادية المحكومة بالذكاء الاصطناعي | أوامركم™" />
+<meta property="og:description" content="أوامركم: برنامج بحث وهندسة يبني قاعدة الأدلة للفعل الاقتصادي المحكوم بالذكاء الاصطناعي: السلطة والحوكمة والإنفاذ والأدلة والتحقق والمساءلة." />
+<meta property="og:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg" />
+<meta property="og:image:alt" content="أوامركم: أبحاث الوكالة الاقتصادية المحكومة بالذكاء الاصطناعي" />
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:locale" content="ar_AR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="أبحاث الوكالة الاقتصادية المحكومة بالذكاء الاصطناعي | أوامركم™">
+<meta name="twitter:description" content="أوامركم: برنامج بحث وهندسة يبني قاعدة الأدلة للفعل الاقتصادي المحكوم بالذكاء الاصطناعي: السلطة والحوكمة والإنفاذ والأدلة والتحقق والمساءلة.">
+<meta name="twitter:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg">
+<meta name="twitter:image:alt" content="أوامركم: أبحاث الوكالة الاقتصادية المحكومة بالذكاء الاصطناعي">
+<style>
+:root{--primary:#040916;--secondary:#0a192f;--accent:#e6992d;--gold:#fcd34d;--blue:#60a5fa;--text-main:#e6f1ff;--text-dim:#8892b0;--card-bg:rgba(10,25,47,.4);--card-border:rgba(255,255,255,.05)}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{background:var(--primary);color:var(--text-main);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.6;overflow-x:hidden;text-align:start}
+.container{max-width:1200px;margin:0 auto;padding:0 20px;position:relative;z-index:2}
+#network-canvas{position:fixed;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;opacity:.4}
+header{border-bottom:1px solid var(--card-border);position:sticky;top:0;z-index:1000;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.nav-container{display:flex;justify-content:space-between;align-items:center;padding:15px 10px}
+.logo-group{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-img{max-width:100px;height:auto;margin: 0;transition:transform .5s ease}.logo-img:hover{transform:rotate(5deg) scale(1.05)}
+.lang-controller{display:flex;background:rgba(255,255,255,.03);border:1px solid var(--card-border);border-radius:30px;padding:4px;gap:4px}
+.lang-btn{display:inline-block;text-decoration:none;color:var(--text-dim);padding:6px 18px;border-radius:20px;font-weight:600;font-size:13px}
+.lang-btn.active{background:var(--accent);color:#040916;box-shadow:0 2px 10px rgba(230,153,45,.25)}
+.faq-header-section{text-align:center;padding:40px 0 20px;min-height:auto}
+.faq-header-section h1{font-size:36px;font-weight:800;line-height:1.4;margin-bottom:15px}
+.faq-header-section .subtitle{font-size:17px;color:var(--text-dim);max-width:850px;margin:0 auto;line-height:1.8}
+.hub-nav,.legend{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:22px auto 10px;padding:0 15px}
+.hub-nav a{background:rgba(255,255,255,.02);border:1px solid var(--card-border);color:var(--text-dim);padding:7px 16px;border-radius:30px;font-size:13.5px;text-decoration:none;transition:all .3s}
+.hub-nav a:hover{border-color:var(--accent);color:var(--accent);background:rgba(230,153,45,.05)}
+.legend{align-items:center;margin-top:18px;color:var(--text-dim);font-size:13.5px}
+.legend .badges{margin-bottom:0}
+.hub-sec{max-width:980px;margin:0 auto 34px;padding:0 15px;scroll-margin-top:90px}
+.sec-head{margin-bottom:18px}
+.pill{display:inline-block;color:var(--accent);font-size:13px;font-weight:700;border:1px solid rgba(230,153,45,.25);background:rgba(230,153,45,.08);padding:3px 14px;border-radius:30px;margin-bottom:10px}
+.hub-sec h2{font-size:26px;color:#fff;font-weight:700;line-height:1.45;margin-bottom:10px}
+.hub-sec h3{font-size:17px;color:#fff;font-weight:600;line-height:1.5;margin-bottom:8px}
+.lead{font-size:16.5px;color:var(--text-main);line-height:1.85}
+.sub{font-size:17px;color:var(--gold);margin:22px 0 10px}
+p.text-p{margin:12px 0;font-size:15.5px;line-height:1.75}
+.note{margin:12px 0;font-size:14px;color:var(--text-dim);line-height:1.7}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin:16px 0}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+.kb-card,.card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:22px;transition:all .3s cubic-bezier(.4,0,.2,1);scroll-margin-top:90px}
+.kb-card:hover,.card:hover{border-color:var(--accent);background:rgba(10,25,47,.7)}
+.card p{font-size:14.5px;color:var(--text-main);line-height:1.7;margin-top:6px}
+.card .links{margin-top:12px}
+.btn{display:inline-block;color:var(--accent);border:1px solid rgba(230,153,45,.4);border-radius:30px;padding:6px 16px;font-size:13.5px;text-decoration:none;margin-inline-end:8px;margin-top:6px}
+.btn:hover{background:rgba(230,153,45,.08);color:#fff}
+.badges{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.badge{font-size:12px;font-weight:700;padding:2px 11px;border-radius:30px;border:1px solid var(--card-border);color:var(--text-dim)}
+.b-cur{background:var(--accent);color:#040916;border-color:var(--accent)}
+.b-fnd{color:var(--blue);border-color:rgba(96,165,250,.45);background:rgba(96,165,250,.08)}
+.b-exp{color:var(--gold);border-color:rgba(252,211,77,.45);background:rgba(252,211,77,.07)}
+.b-his{color:var(--text-dim);border-color:rgba(136,146,176,.4)}
+.b-q{color:var(--text-main);border-style:solid}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:14px 0}
+.flow span{background:rgba(10,25,47,.9);border:1px solid rgba(230,153,45,.3);color:var(--gold);padding:6px 14px;border-radius:30px;font-size:13.5px;font-weight:600}
+.flow i{font-style:normal;color:var(--accent)}
+.hl{margin:12px 0;padding-inline-start:22px}.hl li{margin-bottom:8px;font-size:15.5px;line-height:1.7}
+.stagelist{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:8px 24px;margin:14px 0}
+.stagelist li{font-size:14.5px;line-height:1.65;border-inline-start:2px solid rgba(230,153,45,.35);padding-inline-start:12px}
+.stagelist b{color:var(--gold);font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0;font-size:13.5px;color:var(--text-dim)}
+.chips span{border:1px solid rgba(255,255,255,.18);padding:3px 12px;border-radius:30px}
+blockquote.quote-box{background:rgba(255,255,255,.01);border-inline-start:4px solid var(--accent);padding:18px 20px;border-radius:8px;margin:20px 0;font-weight:600;color:#fff;line-height:1.7}
+.rec{background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:18px 22px;margin-bottom:12px}
+.rec-top{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:6px}.rec-lab{color:var(--accent);font-size:13px;font-weight:700}
+.rec h3{margin-bottom:4px}.rec h3 a{color:#fff;text-decoration:none}.rec h3 a:hover{color:var(--gold)}.rec p{font-size:14.5px;color:var(--text-dim)}
+.rec .badges{margin-bottom:0}
+.search-wrapper{max-width:650px;margin:24px auto;padding:0 15px}
+.search-input{width:100%;padding:14px 24px;background:rgba(255,255,255,.03);border:1px solid var(--card-border);border-radius:50px;color:#fff;font-size:16px;outline:none;text-align:inherit}
+.search-input:focus{border-color:var(--accent);box-shadow:0 0 15px rgba(230,153,45,.25)}
+.master-tabs,.sub-filters{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:16px 0 24px;padding:0 15px}
+.master-tab-btn,.sub-filter-btn{background:rgba(255,255,255,.04);border:1px solid var(--card-border);border-radius:30px;color:var(--text-dim);cursor:pointer;font-size:14px;padding:9px 20px;transition:all .3s}
+.master-tab-btn:hover,.master-tab-btn.active{background:var(--accent);color:#040916;border-color:var(--accent);font-weight:700}
+.sub-filter-btn{font-size:13.5px;padding:7px 16px}.sub-filter-btn:hover,.sub-filter-btn.active{border-color:var(--accent);color:var(--accent);background:rgba(230,153,45,.05)}
+.view-content-section{display:none}.view-content-section.active{display:block;animation:fadeIn .4s forwards}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.kb-layout,.faq-grid{display:flex;flex-direction:column;gap:18px;max-width:900px;margin:0 auto 40px;padding:0 15px}
+.kb-card h2{font-size:21px;color:var(--gold);margin-bottom:14px;line-height:1.5}.lang-condensed-block{text-align:justify}
+.faq-card-item{background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:22px}
+.faq-card-item:hover{border-color:var(--accent)}
+.faq-question-box{display:flex;gap:16px;align-items:flex-start;margin-bottom:12px}
+.faq-badge{background:rgba(230,153,45,.1);color:var(--accent);min-width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;border:1px solid rgba(230,153,45,.2)}
+.faq-q-text-group{flex:1}.faq-q-text-group h3{font-size:17px;margin:0}
+.faq-answer-box{padding-inline-start:48px;border-inline-start:2px solid rgba(255,255,255,.03);margin-inline-start:15px}
+.ans-text{font-size:15.5px;line-height:1.7}
+.glossary-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:18px;max-width:900px;margin:0 auto 40px;padding:0 15px}
+.glossary-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:22px}
+.glossary-title{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,.05);padding-bottom:8px;margin-bottom:12px}
+.glossary-title h3{color:var(--accent);font-size:17px;margin:0}
+.table-wrapper{overflow-x:auto;background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;max-width:900px;margin:0 auto 40px}
+table.compare-table{width:100%;border-collapse:collapse}
+table.compare-table th,table.compare-table td{padding:14px 18px;border-bottom:1px solid var(--card-border);text-align:start}
+table.compare-table th{background:rgba(230,153,45,.08);color:#fff}
+.no-results{display:none;text-align:center;padding:36px;color:var(--text-dim);background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;max-width:900px;margin:20px auto}
+#backToTop{position:fixed;bottom:30px;inset-inline-start:28px;background:var(--accent);color:#040916;border:0;width:45px;height:45px;border-radius:50%;font-size:20px;font-weight:700;cursor:pointer;z-index:999;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .3s ease,visibility .3s ease}
+#backToTop.visible{opacity:1;visibility:visible}
+footer{border-top:1px solid var(--card-border);padding:40px 0;text-align:center;color:var(--text-dim);font-size:14px;position:relative;z-index:2}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+@media(max-width:768px){.faq-header-section h1{font-size:28px}.hub-sec h2{font-size:22px}.faq-answer-box{padding-inline-start:20px}.glossary-grid{grid-template-columns:1fr}.grid.two{grid-template-columns:1fr}.stagelist{grid-template-columns:1fr}}
+#progress{position:fixed;top:0;inset-inline:0;height:3px;background:var(--accent);transform-origin:right;transform:scaleX(0);z-index:3000;will-change:transform}[dir=ltr] #progress{transform-origin:left}
+.brandline{color:var(--accent);font-weight:700;letter-spacing:.02em}
+.tagline{color:var(--text-dim);font-size:16px;margin:0 auto 6px;direction:ltr;unicode-bidi:isolate}
+.hub-nav a[aria-current]{border-color:var(--accent);color:var(--accent)}
+.layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:40px;align-items:start;max-width:1100px;margin:30px auto 0}
+.toc-side{position:sticky;top:96px;max-height:calc(100vh - 120px);overflow:auto;scrollbar-width:thin}
+.toc-side ol,.toc-m ol{list-style:none;margin:0;padding:0}
+.toc-side a{display:block;color:var(--text-dim);text-decoration:none;font-size:13.5px;line-height:1.5;padding:7px 12px;border-inline-start:2px solid var(--card-border)}
+.toc-side a:hover{color:var(--gold)}.toc-side a[aria-current]{color:var(--accent);border-inline-start-color:var(--accent);background:rgba(230,153,45,.06);font-weight:700}
+.toc-m{display:none;position:sticky;top:76px;z-index:900;margin:10px 0}.toc-m summary{cursor:pointer;list-style:none;width:44px;height:44px;display:flex;align-items:center;justify-content:center;border:1px solid var(--card-border);border-radius:50%;background:rgba(4,9,22,.92);color:var(--accent);font-size:20px}
+.toc-m summary::-webkit-details-marker{display:none}.toc-m nav{margin-top:8px;background:rgba(4,9,22,.97);border:1px solid var(--card-border);border-radius:16px;padding:8px;max-height:60vh;overflow:auto}.toc-m a{display:block;padding:10px 12px;color:var(--text-main);text-decoration:none;font-size:14.5px;border-radius:10px}.toc-m a:hover{background:rgba(230,153,45,.08);color:var(--gold)}
+.content{min-width:0}.hub-sec{max-width:none;padding:0;content-visibility:auto;contain-intrinsic-size:auto 900px;border-bottom:1px solid var(--card-border);padding-bottom:34px;margin-bottom:38px;scroll-margin-top:90px}
+.hub-sec h2{font-size:28px;margin-bottom:16px;line-height:1.45}.hub-sec h3{margin:28px 0 10px;color:var(--accent);font-size:18px;scroll-margin-top:90px}
+p.text-p{font-size:16.5px;line-height:1.95;margin:14px 0;max-width:72ch}.hl{line-height:1.9;max-width:72ch}.hl li{font-size:16px}
+.callout{border:1px solid rgba(255,255,255,.08);border-inline-start:2px solid var(--accent);background:rgba(255,255,255,.02);padding:12px 16px;border-radius:10px;font-size:15px!important;color:var(--text-dim)}
+.quote-box{max-width:72ch}
+blockquote.quote-box{position:relative;padding-inline-start:2.75rem}
+.hub-sec[id=hypotheses],.hub-sec[id=eae]{border-inline-start:3px solid rgba(252,211,77,.4);padding-inline-start:20px}
+.hub-sec .hl.neg{list-style:none;padding:0}.hl.neg li{padding-inline-start:26px;position:relative}.hl.neg li::before{content:"✕";position:absolute;inset-inline-start:0;color:var(--text-dim)}
+ul.kv{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:16px 0;padding:0}.kv li{background:var(--card-bg);border:1px solid var(--card-border);border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:4px}.kv b{color:var(--accent);font-size:13.5px}.kv span{font-size:15px;line-height:1.7}
+ul.states{list-style:none;padding:0;margin:14px 0;display:grid;gap:10px}.states li{background:var(--card-bg);border:1px solid var(--card-border);border-radius:12px;padding:12px 16px;line-height:1.8}
+.st{display:inline-block;font-size:12.5px;font-weight:700;padding:1px 11px;border-radius:30px;border:1px solid var(--card-border);color:var(--text-dim);vertical-align:baseline}
+b.st{font-size:13.5px}.st-cur{background:var(--accent);color:#040916;border-color:var(--accent)}.st-fnd{color:var(--text-main);border-color:rgba(255,255,255,.14);background:rgba(255,255,255,.05)}.st-exp,.st-hyp,.st-tmp{color:var(--gold);border-color:rgba(252,211,77,.5);background:rgba(252,211,77,.07);border-style:solid}.st-his{color:var(--text-dim);border-color:rgba(136,146,176,.5)}.st-con{color:var(--text-main);border-style:solid}.st-sup{color:var(--text-main)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin:18px 0}.cards.papers{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.card h3,.card h4{margin:0 0 6px;font-size:17px;color:#fff;line-height:1.5}.card h4{font-size:16px;color:var(--accent)}.card p{font-size:15px;line-height:1.8;margin:0}
+.card{text-align:start;-webkit-backdrop-filter:none;backdrop-filter:none;background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.08);border-inline-start:2px solid rgba(230,153,45,.42)}.card:hover{transform:translateY(-3px);box-shadow:none;background:rgba(255,255,255,.04);border-inline-start-color:var(--accent)}
+.rec{margin:0;display:flex;flex-direction:column;gap:6px}.rec h3{margin:0 0 4px;font-size:15px;color:var(--text-dim);font-weight:600;line-height:2}.rec .pn{color:var(--accent);font-weight:700}
+.rec-title{font-size:17px;font-weight:700;line-height:1.6}.rec-title a{color:#fff;text-decoration:none}.rec-title a:hover{color:var(--gold);text-decoration:underline}.rec p{color:var(--text-main);font-size:15px;line-height:1.8;margin:0}
+.rec:hover{border-color:var(--accent)}
+.flow{line-height:1.6;margin:16px 0}.flow span{max-width:100%}
+.table-wrapper{max-width:100%;margin:18px 0}table.compare-table th[scope=row]{background:transparent;font-weight:600;color:var(--gold);min-width:11em}table.compare-table td{font-size:15px;line-height:1.7}table.compare-table tbody tr:nth-child(even){background:rgba(255,255,255,.015)}
+.links{margin:16px 0 4px}.hl a,.text-p a{color:var(--gold)}
+.links .btn{width:auto}
+.site-footer{padding:36px 0}.footer-legal-links{margin-top:10px;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px 12px}.footer-legal-links a{color:var(--text-dim)}.footer-legal-links a:hover{color:var(--gold)}
+@media(max-width:1000px){.layout{display:block}.toc-side{display:none}.toc-m{display:block}}
+@media(max-width:768px){.hub-sec h2{font-size:23px}p.text-p{font-size:16px}.cards,.cards.papers{grid-template-columns:1fr}.hub-sec[id=hypotheses],.hub-sec[id=eae]{padding-inline-start:12px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+@media print{#network-canvas,#backToTop,#progress,.toc-m,.toc-side,.lang-controller,.hub-nav{display:none!important}body{background:#fff;color:#000}.hub-sec h2,.hub-sec h3{color:#000}.layout{display:block}.hub-sec{content-visibility:visible}}
+#about.hub-sec h2{font-size:28px;text-align:start;margin-bottom:16px}
+@media(max-width:768px){#about.hub-sec h2{font-size:23px}}
+blockquote.quote-box::before{content:"\201C";position:absolute;top:.15em;inset-inline-start:.55rem;font:2.8rem/1 Georgia,serif;color:rgba(230,153,45,.42);pointer-events:none}
+[dir=rtl] blockquote.quote-box::before{content:"\201D"}
+</style>
 </head>
 <body>
-
-<canvas id="network-canvas"></canvas>
-<button id="backToTop" title="العودة للأعلى">↑</button>
-
-<header>
-    <div class="container nav-container">
-        <a href="/" class="logo-group">
-            <img src="/logo.webp" alt="Ouamarkom - اقتصاد أوامر الذكاء الاصطناعي" class="logo-img" loading="eager">
-        </a>
-        <nav class="lang-controller" aria-label="Language Selector">
-            <span class="lang-btn active">العربية</span>
-            <a href="/en/research" class="lang-btn">English</a>
-        </nav>
-    </div>
-</header>
-
-<main class="container">
-    
-    <section class="hero faq-header-section">
-        <h1>الموسوعة الاستراتيجية لـ <span>اقتصاد أوامر الذكاء الاصطناعي</span></h1>
-        <p style="font-size: 18px; color: var(--gold); font-weight: 600; margin-bottom: 12px;">Command Economy of AI - CEAI</p>
-        <p class="subtitle">الموسوعة البحثية والاستراتيجية الرسمية لـ أوامركم، المخصصة لدراسة التحول من الذكاء الاصطناعي بوصفه أداة لتوليد المعلومات إلى الذكاء الاصطناعي بوصفه بنية تنفيذ اقتصادية قادرة على تحويل النية البشرية إلى تخطيط، وتنسيق، وتنفيذ، ونتائج قابلة للقياس.<br><br><strong style="color: var(--accent);">من توليد الذكاء إلى تنفيذ الذكاء - ومن إدارة الأدوات إلى توجيه النتائج.</strong></p>
-        <div class="research-papers-nav">
-            <a href="/research/paper-1" class="paper-link" target="_blank" rel="noopener">
-                <span class="paper-tag">الورقة البحثية (1)</span>
-                <span class="paper-dot">•</span>
-                <span class="paper-title">اقتصاد الأوامر للذكاء الاصطناعي (CE-AI)</span>
-                <span class="paper-arrow">←</span>
-            </a>
-            <a href="/research/paper-2" class="paper-link" target="_blank" rel="noopener">
-                <span class="paper-tag">الورقة البحثية (2)</span>
-                <span class="paper-dot">•</span>
-                <span class="paper-title">اليد الذكية (Smart Hand)</span>
-                <span class="paper-arrow">←</span>
-            </a>
-            <a href="/research/paper-3" class="paper-link" target="_blank" rel="noopener">
-                <span class="paper-tag">الورقة البحثية (3)</span>
-                <span class="paper-dot">•</span>
-                <span class="paper-title">التنفيذ (AI Execution)</span>
-                <span class="paper-arrow">←</span>
-            </a>
-            <a href="/research/paper-4" class="paper-link" target="_blank" rel="noopener">
-                <span class="paper-tag">الورقة البحثية (4)</span>
-                <span class="paper-dot">•</span>
-                <span class="paper-title">البوابة المؤسسية (Institutional Gateway)</span>
-                <span class="paper-arrow">←</span>
-            </a>
-            <a href="/research/paper-5" class="paper-link" target="_blank" rel="noopener">
-                <span class="paper-tag">الورقة البحثية (5)</span>
-                <span class="paper-dot">•</span>
-                <span class="paper-title">معمارية CE-AI الحاكمة™ (CE-AI Governance Architecture)</span>
-                <span class="paper-arrow">←</span>
-            </a>
-            <a href="/research/paper-6" class="paper-link" target="_blank" rel="noopener">
-                <span class="paper-tag">الورقة البحثية (6)</span>
-                <span class="paper-dot">•</span>
-                <span class="paper-title">بوابة الفعل الاقتصادي (Economic Action Gateway)</span>
-                <span class="paper-arrow">←</span>
-            </a>
-        </div>
-    </section>
-
-    <div class="search-wrapper">
-        <input type="text" id="faqSearchInput" class="search-input" oninput="liveSearchFAQ()" placeholder="البحث في الموسوعة عن المفاهيم والأسئلة والمصطلحات... (مثال: النية، التنفيذ، رأس المال التنفيذي، Smart Hand)">
-    </div>
-
-    <div class="master-tabs" id="ui-tabs-container">
-        <button class="master-tab-btn active" onclick="switchMasterTab(this, 'faq-view')">الأسئلة الرسمية (100 سؤال)</button>
-        <button class="master-tab-btn" onclick="switchMasterTab(this, 'kb-view')">المعرفة التأسيسية</button>
-        <button class="master-tab-btn" onclick="switchMasterTab(this, 'glossary-view')">قاموس المصطلحات</button>
-        <button class="master-tab-btn" onclick="switchMasterTab(this, 'compare-view')">مصفوفة المفاهيم البنيوية</button>
-    </div>
-
-    <div class="no-results" id="faqNoResults">لم يتم العثور على نتائج مطابقة لبحثك. جرّب استخدام كلمات مفتاحية أخرى.</div>
-
-    <!-- التبويب الأول: الأسئلة الشائعة الرسمية -->
-    <section id="faq-view" class="view-content-section active">
-        <div class="sub-filters" id="ui-sub-filters">
-            <button class="sub-filter-btn active" onclick="filterFaqCategory(this, 'all')">جميع الأقسام (100)</button>
-            <button class="sub-filter-btn" onclick="filterFaqCategory(this, 'cat1')">الأساسيات والتعريفات (1–20)</button>
-            <button class="sub-filter-btn" onclick="filterFaqCategory(this, 'cat2')">الفلسفة والتحول (21–40)</button>
-            <button class="sub-filter-btn" onclick="filterFaqCategory(this, 'cat3')">البنية والتقنية (41–60)</button>
-            <button class="sub-filter-btn" onclick="filterFaqCategory(this, 'cat4')">الأعمال والأسواق (61–80)</button>
-            <button class="sub-filter-btn" onclick="filterFaqCategory(this, 'cat5')">المستقبل والنقد (81–100)</button>
-        </div>
-
-        <div class="faq-grid" id="masterFaqGrid">
-            <!-- يتم التعبئة تلقائياً عبر السكريبت -->
-        </div>
-    </section>
-
-    <!-- التبويب الثاني: المعرفة التأسيسية -->
-    <section id="kb-view" class="view-content-section">
-        <div class="kb-layout" id="kb-dynamic-content">
-            <!-- يتم تعبئته ديناميكياً -->
-        </div>
-    </section>
-
-    <!-- التبويب الثالث: قاموس المصطلحات -->
-    <section id="glossary-view" class="view-content-section">
-        <div class="glossary-grid" id="glossary-dynamic-content">
-            <!-- يتم تعبئته ديناميكياً -->
-        </div>
-    </section>
-
-    <!-- التبويب الرابع: مصفوفة المفاهيم البنيوية Matrix -->
-    <section id="compare-view" class="view-content-section">
-        <div class="table-wrapper" id="compare-dynamic-content">
-            <!-- يتم تعبئته ديناميكياً -->
-        </div>
-    </section>
-
+<div id="progress" aria-hidden="true"></div>
+<canvas id="network-canvas" aria-hidden="true"></canvas>
+<button id="backToTop" title="العودة للأعلى" aria-label="العودة للأعلى">↑</button>
+<header><div class="container nav-container">
+<a href="/" class="logo-group"><img src="/logo.webp" alt="أوامركم - أبحاث الوكالة الاقتصادية المحكومة" class="logo-img" loading="eager"></a>
+<nav class="lang-controller" aria-label="اللغة"><span class="lang-btn active" aria-current="true">العربية</span><a href="/en/research" class="lang-btn" hreflang="en" lang="en">English</a></nav>
+</div></header>
+<main class="container" id="main">
+<section class="hero faq-header-section">
+<p class="pill brandline">أوامركم™ | OUAMARKOM™</p>
+<h1>أبحاث الوكالة الاقتصادية المحكومة بالذكاء الاصطناعي</h1>
+<p class="tagline" lang="en" dir="ltr">Building the Evidence Base for Governed AI Economic Execution</p>
+</section>
+<nav class="hub-nav" aria-label="روابط رئيسية"><a href="/research" aria-current="page">الأبحاث</a><a href="/framework">إطار CE-AI™</a><a href="#smart-hand">Smart Hand™</a><a href="/research/geab">GEAB</a><a href="#record">السجل البحثي</a><a href="#resources">الموارد</a></nav>
+<details class="toc-m"><summary aria-label="أقسام الصفحة">☰</summary><nav aria-label="أقسام الصفحة"><ol><li><a href="#position">1. الموقف البحثي</a></li><li><a href="#why">2. لماذا الفعل الاقتصادي؟</a></li><li><a href="#object">3. موضوع البحث: الفعل الاقتصادي المحكوم</a></li><li><a href="#distinctions">4. الفروق البحثية الأساسية</a></li><li><a href="#question">5. السؤال البحثي المركزي</a></li><li><a href="#method">6. المنهج: الأدلة قبل المعمارية</a></li><li><a href="#maturity">7. نضج الأدلة وحالات الأعمال البحثية</a></li><li><a href="#dimensions">8. أبعاد البحث الحالية</a></li><li><a href="#ceai">9. CE-AI™: الإطار البحثي</a></li><li><a href="#smart-hand">10. Smart Hand™: البيئة التجريبية</a></li><li><a href="#benchmark">11. GEAB v0.1: برنامج القياس والمقارنة المرجعية</a></li><li><a href="#model">12. نموذج CE-AI للتنفيذ الاقتصادي المحكوم v0.1</a></li><li><a href="#hypotheses">13. الفرضيات المعمارية: من المتطلب إلى التدخل</a></li><li><a href="#eae">14. هندسة الفعل الاقتصادي</a></li><li><a href="#rules">15. قواعد اتخاذ القرار البحثي</a></li><li><a href="#record">16. السجل البحثي: كيف تطور البحث؟</a></li><li><a href="#lineage">17. السلالة الفكرية للبحث</a></li><li><a href="#concepts">18. قاموس المفاهيم والأسئلة البحثية</a></li><li><a href="#next">19. ما الذي ينبغي أن يأتي بعد ذلك؟</a></li><li><a href="#about">20. تعريف أوامركم</a></li></ol></nav></details>
+<div class="layout"><aside class="toc-side"><nav aria-label="أقسام الصفحة"><ol><li><a href="#position">1. الموقف البحثي</a></li><li><a href="#why">2. لماذا الفعل الاقتصادي؟</a></li><li><a href="#object">3. موضوع البحث: الفعل الاقتصادي المحكوم</a></li><li><a href="#distinctions">4. الفروق البحثية الأساسية</a></li><li><a href="#question">5. السؤال البحثي المركزي</a></li><li><a href="#method">6. المنهج: الأدلة قبل المعمارية</a></li><li><a href="#maturity">7. نضج الأدلة وحالات الأعمال البحثية</a></li><li><a href="#dimensions">8. أبعاد البحث الحالية</a></li><li><a href="#ceai">9. CE-AI™: الإطار البحثي</a></li><li><a href="#smart-hand">10. Smart Hand™: البيئة التجريبية</a></li><li><a href="#benchmark">11. GEAB v0.1: برنامج القياس والمقارنة المرجعية</a></li><li><a href="#model">12. نموذج CE-AI للتنفيذ الاقتصادي المحكوم v0.1</a></li><li><a href="#hypotheses">13. الفرضيات المعمارية: من المتطلب إلى التدخل</a></li><li><a href="#eae">14. هندسة الفعل الاقتصادي</a></li><li><a href="#rules">15. قواعد اتخاذ القرار البحثي</a></li><li><a href="#record">16. السجل البحثي: كيف تطور البحث؟</a></li><li><a href="#lineage">17. السلالة الفكرية للبحث</a></li><li><a href="#concepts">18. قاموس المفاهيم والأسئلة البحثية</a></li><li><a href="#next">19. ما الذي ينبغي أن يأتي بعد ذلك؟</a></li><li><a href="#about">20. تعريف أوامركم</a></li></ol></nav></aside>
+<div class="content">
+<section class="hub-sec" id="position" aria-labelledby="position-h"><div class="sec-head"><h2 id="position-h">1. الموقف البحثي</h2></div>
+<h3>بحث في ما يجب أن يتحقق عندما يستطيع الذكاء الاصطناعي أن يفعل اقتصاديًا</h3>
+<p class="text-p">تدرس أوامركم ما الذي يجب أن يتحقق عندما تنتقل أنظمة الذكاء الاصطناعي من إنتاج المعلومات والتوصيات إلى المشاركة في أفعال ذات أثر اقتصادي.</p>
+<p class="text-p">فعندما يستطيع نظام ذكي إنشاء طلب شراء، أو تحويل أموال، أو تعديل سعر، أو الالتزام بميزانية، أو تغيير عقد، أو تنفيذ سلسلة من المعاملات، لا تعود المسألة مقتصرة على ما يستطيع النظام فعله. يصبح السؤال أيضًا: ما الذي يخوّله بالفعل؟ وما القيود التي تحكمه؟ وكيف يُنفّذ الفعل؟ وما الأدلة التي تثبت ما حدث؟ وكيف تُتحقّق النتيجة الاقتصادية وتُحدّد المسؤولية عنها؟</p>
+<p class="text-p">أوامركم برنامج بحث وهندسة يستكشف الشروط والآليات التي قد تجعل الفعل الاقتصادي الذي تؤديه أو تتوسط فيه أنظمة الذكاء الاصطناعي قابلًا للحوكمة والإنفاذ والتحقق والمساءلة.</p>
+<p class="text-p">نبني قاعدة الأدلة اللازمة لتحديد المتطلبات المتكررة، واختبار التدخلات الممكنة، ومعرفة ما إذا كانت النتائج تبرر تطوير آليات قابلة لإعادة الاستخدام أو معمارية أو بنية تحتية جديدة.</p>
+<p class="text-p">لا نفترض مسبقًا شكل هذه البنية، ولا نفترض أن الآليات القائمة غير كافية. نختبر ذلك.</p>
+<blockquote class="quote-box"><strong>المبدأ المركزي:</strong> لا نفترض معمارية اقتصاد الذكاء الاصطناعي؛ بل نبني منهجًا بحثيًا لاكتشاف ما قد يتطلبه، وما إذا كان يتطلبه أصلًا.</blockquote>
+<h3>حالة البحث</h3>
+<ul class="kv">
+<li><b>المرحلة:</b><span> البحث والتطوير والتحقق التجريبي.</span></li>
+<li><b>موضوع البحث:</b><span> الفعل الاقتصادي المحكوم بالذكاء الاصطناعي.</span></li>
+<li><b>المنهج:</b><span> التجارب المضبوطة، والقياس، والمقارنة، والتكرار، والتحقق من الأدلة.</span></li>
+<li><b>المخرجات المستهدفة:</b><span> أدلة قابلة للفحص، ونتائج قابلة لإعادة الإنتاج، وتحديد للقيود المتكررة، وقرارات تطوير تستند إلى ما تثبته التجارب.</span></li>
+<li><b>القاعدة التجريبية الأولية:</b><span> المملكة العربية السعودية، مع السعي إلى اختبار قابلية تكرار النتائج في سياقات وأنظمة مختلفة.</span></li>
+</ul>
+<p class="text-p callout">تصنيفات الحالة والنضج المستخدمة في هذه الصفحة تنظيمية وتحريرية. وهي لا تعني أن أي فرضية قد ثبتت، أو أن أي منهج أصبح معيارًا صناعيًا، أو أن أي معمارية أصبحت ضرورية.</p>
+</section>
+<section class="hub-sec" id="why" aria-labelledby="why-h"><div class="sec-head"><h2 id="why-h">2. لماذا الفعل الاقتصادي؟</h2></div>
+<h3>من إنتاج الذكاء إلى دراسة الفعل</h3>
+<p class="text-p">تزداد قدرة أنظمة الذكاء الاصطناعي على التخطيط واستخدام الأدوات والتفاعل مع الأنظمة الخارجية وتنسيق المهام متعددة الخطوات. وقد يوسّع ذلك نطاق الأفعال الاقتصادية التي يمكن لهذه الأنظمة اقتراحها أو تنفيذها أو المشاركة فيها.</p>
+<p class="text-p">لكن القدرة التقنية لا تحسم وحدها الأسئلة المتعلقة بالسلطة والحوكمة والإنفاذ والنتائج.</p>
+<p class="text-p">قد يستطيع النظام إرسال طلب شراء، من دون أن يكون مخوّلًا بإتمامه. وقد يكون مخوّلًا بشراء سلعة ضمن ميزانية محددة، لكن تتجاوز سلسلة من المشتريات الصغيرة الحد الإجمالي المسموح به. وقد تُلغى صلاحية النظام في أثناء التنفيذ، بينما يظل طلب سابق قيد المعالجة. وقد ينجح النظام تقنيًا في تنفيذ معاملة، لكن تكون نتيجتها الاقتصادية مختلفة عن النتيجة المقصودة.</p>
+<p class="text-p">هذه ليست مشكلة واحدة بالضرورة، ولا تثبت مسبقًا الحاجة إلى طبقة تقنية جديدة. لكنها تتيح تحديد أسئلة قابلة للاختبار.</p>
+<h3>السياق: الذكاء المتزايد القدرة</h3>
+<p class="text-p">قد يوسّع الذكاء الفائق (Superintelligence)، إذا تحقق، نطاق القدرة على التخطيط واتخاذ القرار وتنفيذ الأفعال. لكن هذا السياق ليس تعريف أوامركم، ولا يتوقف البحث على تحقق الذكاء الفائق.</p>
+<p class="text-p">يسأل البحث في الذكاء عن حدود القدرة الممكنة. أما أوامركم فتدرس ما الذي يجب أن يتحقق عندما تُستخدم القدرة في فعل اقتصادي ذي أثر.</p>
+<p class="text-p">ازدياد القدرة لا يمنح سلطة اقتصادية تلقائيًا، ولا يثبت وحده أن معمارية جديدة مطلوبة.</p>
+</section>
+<section class="hub-sec" id="object" aria-labelledby="object-h"><div class="sec-head"><h2 id="object-h">3. موضوع البحث: الفعل الاقتصادي المحكوم</h2></div>
+<p class="text-p">كان الأمر نقطة الانطلاق في تطور البحث. أما موضوعه الأعمق الآن فهو الفعل الاقتصادي نفسه، وبالتحديد الفعل الذي تؤديه أو تتوسط فيه منظومة ذكية ويترتب عليه أثر اقتصادي.</p>
+<p class="text-p">يُستخدم مصطلح الفعل الاقتصادي المحكوم (Governed Economic Action) بوصفه توصيفًا بحثيًا مؤقتًا لفعل اقتصادي تُدرس فيه السلطة المنطبقة، والقيود الحاكمة، وآليات التنفيذ، والأدلة، والتحقق من النتيجة، والمساءلة.</p>
+<p class="text-p">ولا يفترض هذا التعريف أن جميع هذه العناصر يجب أن تُنفّذ في نظام مركزي واحد، أو أن تُنظّم عبر بروتوكول مستقل. فهذه مسائل معمارية وتجريبية مفتوحة.</p>
+<h3>الأسئلة التي ينظم حولها البحث</h3>
+<ol class="hl">
+<li value="1">ما الفعل الاقتصادي المقصود، وما أثره المحتمل؟</li>
+<li value="2">من يملك سلطة تخويله، وما مصدر تلك السلطة؟</li>
+<li value="3">ما نطاق التفويض وحدوده وشروطه ومدته؟</li>
+<li value="4">ما السياسات والموافقات والقيود التي تنطبق على الفعل؟</li>
+<li value="5">كيف يُتخذ قرار السماح بالتنفيذ أو رفضه أو تصعيده؟</li>
+<li value="6">ماذا يحدث فعليًا عند التنفيذ، بما في ذلك الفشل والتأخير والإلغاء وإعادة المحاولة؟</li>
+<li value="7">ما الأدلة التي تبيّن ما خُوّل وما نُفّذ وما ترتب عليه؟</li>
+<li value="8">كيف تُقاس النتيجة الاقتصادية ويُتحقّق منها؟</li>
+<li value="9">كيف تُحدّد المسؤولية عن القرار والتنفيذ والنتيجة؟</li>
+<li value="10">ما المتطلبات التي تتكرر عبر الأفعال والأنظمة والمؤسسات؟</li>
+<li value="11">هل تستطيع الآليات القائمة تلبية هذه المتطلبات؟</li>
+<li value="12">إذا لم تستطع، فما التدخل الأقل تعقيدًا الذي يحسّن النتيجة بصورة قابلة للقياس؟</li>
+</ol>
+<h3>فضاء المشكلة</h3>
+<div class="flow" role="list"><span role="listitem">القدرة</span><i aria-hidden="true">←</i><span role="listitem">الوكالة</span><i aria-hidden="true">←</i><span role="listitem">السلطة</span><i aria-hidden="true">←</i><span role="listitem">الفعل الاقتصادي</span><i aria-hidden="true">←</i><span role="listitem">الحوكمة والإنفاذ</span><i aria-hidden="true">←</i><span role="listitem">الأدلة</span><i aria-hidden="true">←</i><span role="listitem">التحقق</span><i aria-hidden="true">←</i><span role="listitem">النتيجة الاقتصادية</span><i aria-hidden="true">←</i><span role="listitem">التعلم وإعادة التقييم.</span></div>
+<p class="text-p callout">هذا التسلسل خريطة مفاهيمية للأسئلة البحثية، وليس معمارية نهائية أو وصفًا إلزاميًا لجميع الأنظمة.</p>
+<p class="text-p">قد تتداخل بعض المراحل عمليًا، وقد تتكرر بعض الخطوات أو تتزامن. كما قد تحدث النتيجة الاقتصادية قبل التحقق منها؛ لكن لا ينبغي وصفها بأنها نتيجة متحقق منها إلا بعد إجراء التحقق المناسب.</p>
+</section>
+<section class="hub-sec" id="distinctions" aria-labelledby="distinctions-h"><div class="sec-head"><h2 id="distinctions-h">4. الفروق البحثية الأساسية</h2></div>
+<p class="text-p">تعتمد أوامركم على مجموعة من الفروق التي تساعد على فصل الأسئلة التي قد تختلط عند تقييم الأنظمة التنفيذية.</p>
+<div class="table-wrapper"><table class="compare-table"><thead><tr><th scope="col">التمييز</th><th scope="col">الدلالة البحثية</th></tr></thead><tbody><tr><th scope="row">القدرة ≠ السلطة</th><td>إمكانية تنفيذ الفعل لا تثبت الإذن به.</td></tr><tr><th scope="row">الذكاء ≠ الوكالة الاقتصادية</th><td>جودة الاستدلال لا تثبت وحدها القدرة على المشاركة في فعل اقتصادي.</td></tr><tr><th scope="row">النية ≠ التفويض</th><td>التعبير عن هدف لا يمنح النظام حق تنفيذه.</td></tr><tr><th scope="row">الأمر ≠ الإذن</th><td>الأمر يعبّر عن تعليمة، لكن صلاحيته تعتمد على السلطة والسياسات المنطبقة.</td></tr><tr><th scope="row">السلطة ≠ صلاحية كل فعل</th><td>قد تكون السلطة محدودة بالنطاق أو المبلغ أو الغرض أو المدة.</td></tr><tr><th scope="row">التفويض ≠ الإنفاذ</th><td>وجود قاعدة أو إذن لا يثبت تطبيقهما عند نقطة التنفيذ.</td></tr><tr><th scope="row">التنفيذ ≠ النتيجة</th><td>تنفيذ التعليمة لا يضمن تحقق الأثر المقصود.</td></tr><tr><th scope="row">النجاح التقني ≠ النجاح الاقتصادي</th><td>قد تنجح العملية تقنيًا وتنتج أثرًا اقتصاديًا غير مرغوب.</td></tr><tr><th scope="row">النتيجة المسجلة ≠ النتيجة المتحقق منها</th><td>التسجيل وحده لا يثبت صحة النتيجة.</td></tr><tr><th scope="row">السجل ≠ الدليل الكافي</th><td>قد يكون السجل ناقصًا أو غير مرتبط بالحدث الاقتصادي الخارجي.</td></tr><tr><th scope="row">الدليل ≠ التحقق</th><td>الأدلة تحتاج إلى تقييم يحدد ما تدعمه وما لا تدعمه.</td></tr><tr><th scope="row">التعلم ≠ التفويض</th><td>التعلم من الأفعال السابقة لا يمنح سلطة إضافية تلقائيًا.</td></tr><tr><th scope="row">الإلغاء المسجل ≠ الإلغاء الفعّال</th><td>يجب فحص ما إذا كان الإلغاء قد وصل إلى النقطة التي يمكن عندها منع الأثر الاقتصادي.</td></tr></tbody></table></div>
+<p class="text-p callout">هذه فروق بحثية تساعد على بناء فرضيات واختبارات. ولا تُطرح بوصفها قوانين شاملة أو إثباتًا مسبقًا لقصور الأنظمة الحالية.</p>
+</section>
+<section class="hub-sec" id="question" aria-labelledby="question-h"><div class="sec-head"><h2 id="question-h">5. السؤال البحثي المركزي</h2></div>
+<blockquote class="quote-box">ما الذي يجب أن يتحقق عندما يستطيع الذكاء الاصطناعي أن يفعل اقتصاديًا؟</blockquote>
+<p class="text-p">ينبثق من السؤال المركزي عدد من الأسئلة القابلة للاختبار:</p>
+<ul class="hl">
+<li>متى تكون آليات الهوية والصلاحيات والسياسات القائمة كافية؟</li>
+<li>متى تنشأ فجوة بين التفويض والإنفاذ؟</li>
+<li>هل تتراكم الأفعال الصغيرة لتتجاوز حدود السلطة أو الميزانية؟</li>
+<li>ما الذي يحدث عندما تُسحب السلطة أثناء التنفيذ؟</li>
+<li>كيف ينبغي التعامل مع الأفعال غير القابلة للعكس، أو التي يتأخر أثرها الاقتصادي؟</li>
+<li>ما الأدلة اللازمة للتمييز بين الأمر المرسل والفعل المنفذ والنتيجة المتحقّق منها؟</li>
+<li>هل يمكن قياس تحسن الحوكمة دون زيادة غير مبررة في الرفض أو التأخير أو التكلفة؟</li>
+<li>ما القيود التي تتكرر عبر النماذج والمعماريات والقطاعات؟</li>
+<li>هل تتطلب هذه القيود تدخلًا جديدًا، أم يكفي تحسين تكامل الآليات القائمة؟</li>
+<li>إذا تكرر المتطلب، فهل يستحق آلية قابلة لإعادة الاستخدام أو حدًا معماريًا مستقلًا؟</li>
+</ul>
+<p class="text-p callout">تُعامل هذه الأسئلة باعتبارها برنامجًا بحثيًا مفتوحًا، لا مجموعة نتائج محسومة.</p>
+<p class="text-p">السؤال ليس كيف نبني البنية التحتية المفترضة؛ بل ما المتطلب الذي تثبته الأدلة، وما أقل تدخل يلبّيه، وهل يستحق هذا التدخل أن يصبح بنية دائمة؟</p>
+</section>
+<section class="hub-sec" id="method" aria-labelledby="method-h"><div class="sec-head"><h2 id="method-h">6. المنهج: الأدلة قبل المعمارية</h2></div>
+<p class="text-p">تتبنى أوامركم منهجًا استقرائيًا موجّهًا بالفرضيات: نبدأ بمشكلة قابلة للتحديد، ونصمم اختبارًا، ونقيس النتيجة، ثم نحدد ما إذا كانت هناك حاجة إلى تحقيق أعمق أو تدخل مختلف.</p>
+<h3>مسار البحث</h3>
+<div class="flow" role="list"><span role="listitem">مشكلة محددة</span><i aria-hidden="true">←</i><span role="listitem">سؤال بحثي</span><i aria-hidden="true">←</i><span role="listitem">فرضية قابلة للدحض</span><i aria-hidden="true">←</i><span role="listitem">تجربة مضبوطة</span><i aria-hidden="true">←</i><span role="listitem">بيانات وأدلة</span><i aria-hidden="true">←</i><span role="listitem">قياس ومقارنة</span><i aria-hidden="true">←</i><span role="listitem">تكرار</span><i aria-hidden="true">←</i><span role="listitem">قيد متكرر</span><i aria-hidden="true">←</i><span role="listitem">تدخل مختبر</span><i aria-hidden="true">←</i><span role="listitem">دلالة معمارية محتملة</span><i aria-hidden="true">←</i><span role="listitem">قرار بشأن البنية التحتية.</span></div>
+<h3>الخطوة الأولى: تحديد الفعل</h3>
+<p class="text-p">نختار فعلًا اقتصاديًا محددًا، مثل تحويل مالي أو عملية شراء أو إلغاء تفويض. ونحدد الأثر المتوقع والقيود التي تنطبق عليه.</p>
+<h3>الخطوة الثانية: تثبيت الفرضية وشروط الاختبار</h3>
+<p class="text-p">نحدد مسبقًا ما الذي نختبره، وما الذي سيُعد نجاحًا أو فشلًا أو نتيجة غير حاسمة، وما المتغيرات التي ينبغي تثبيتها أو تغييرها.</p>
+<h3>الخطوة الثالثة: رصد التنفيذ</h3>
+<p class="text-p">نجمع الأحداث ذات الصلة، بما فيها طلبات التفويض والقرارات ومحاولات التنفيذ والتغييرات في السلطة والأخطاء والنتائج الاقتصادية.</p>
+<h3>الخطوة الرابعة: بناء الأدلة وقياسها</h3>
+<p class="text-p">نربط السجلات بالأحداث الفعلية قدر الإمكان، ونحسب المقاييس المحددة مسبقًا، ونوثّق حدود الأدلة ومصادر عدم اليقين.</p>
+<h3>الخطوة الخامسة: مقارنة النتائج وتكرارها</h3>
+<p class="text-p">نقارن النتائج عبر تكرارات الاختبار وتكوينات النظام والبدائل المعقولة، ثم نسعى إلى التحقق المستقل متى أمكن.</p>
+<h3>الخطوة السادسة: اختبار الحاجة إلى التدخل</h3>
+<p class="text-p">إذا ظهر قصور متكرر، نختبر ما إذا كان تعديل السياسات أو تحسين التكامل أو تغيير نقطة الإنفاذ أو إضافة آلية قابلة لإعادة الاستخدام يحسّن النتائج.</p>
+<h3>الخطوة السابعة: اتخاذ قرار التطوير</h3>
+<p class="text-p">لا تُستنتج الحاجة إلى معمارية أو بنية تحتية من مجرد وجود مشكلة. يجب أن يُظهر الاختبار أن التدخل المقترح يعالج قيدًا مهمًا، وأن فائدته تبرر تكلفته وتعقيده ومخاطره مقارنة بالبدائل.</p>
+<blockquote class="quote-box">الأدلة قبل المعمارية. والتكرار قبل التعميم. والتحسن المقاس قبل الادعاء بالضرورة.</blockquote>
+<p class="text-p">قد ينتهي البحث إلى أن الآليات الحالية كافية. وهذه نتيجة ذات قيمة إذا توصلت إليها تجربة سليمة.</p>
+</section>
+<section class="hub-sec" id="maturity" aria-labelledby="maturity-h"><div class="sec-head"><h2 id="maturity-h">7. نضج الأدلة وحالات الأعمال البحثية</h2></div>
+<p class="text-p">تستخدم الصفحة تصنيفًا تحريريًا لحالة العمل، وتصنيفًا منفصلًا لنضجه. فكون الورقة «حالية» لا يعني أن فرضيتها مثبتة، وكونها «تجريبية» لا يعني أن نتائجها قد رُصدت أو تحققت بصورة مستقلة.</p>
+<h3>حالات العمل</h3>
+<ul class="states">
+<li><b class="st st-cur">حالي (Current):</b> يسهم في صياغة اتجاه البحث الحالي.</li>
+<li><b class="st st-fnd">تأسيسي (Foundational):</b> يظل مفيدًا لفهم المفاهيم أو الفروق، حتى إن تغيّر تأطيره الأصلي.</li>
+<li><b class="st st-exp">تجريبي (Experimental):</b> فرضية أو منهج أو نموذج قيد الاختبار.</li>
+<li><b class="st st-his">تاريخي (Historical):</b> يوثّق مرحلة سابقة من تطور البحث.</li>
+<li><b class="st st-sup">حلّ محلّه (Superseded):</b> علاقة بين عمل سابق وصياغة أحدث، وليست حالة نضج مستقلة.</li>
+</ul>
+<h3>نضج العمل</h3>
+<div class="table-wrapper"><table class="compare-table"><thead><tr><th scope="col">المستوى</th><th scope="col">المعنى</th></tr></thead><tbody><tr><th scope="row">مفاهيمي (Conceptual)</th><td>مفهوم أو سؤال أو فرضية مصاغة.</td></tr><tr><th scope="row">مصمّم (Designed)</th><td>تجربة أو مقياس أو نظام اختبار صُمّم لاختبار الفرضية.</td></tr><tr><th scope="row">مرصود (Observed)</th><td>نتيجة سُجلت فعلًا ضمن تجربة موصوفة.</td></tr><tr><th scope="row">مكرّر (Replicated)</th><td>نتيجة أُعيد اختبارها وفق شروط معلنة.</td></tr><tr><th scope="row">متحقق منه بصورة مستقلة (Independently Validated)</th><td>خضعت النتيجة لتقييم مستقل ضمن نطاق محدد.</td></tr></tbody></table></div>
+<p class="text-p callout">لا تُعرض أي نتيجة بوصفها مرصودة أو مكررة أو متحققًا منها بصورة مستقلة ما لم تتوفر أدلة منشورة تدعم ذلك.</p>
+<p class="text-p callout">ولا يُعد تصميم التجربة دليلًا على نجاحها، كما لا تكفي نتيجة إيجابية واحدة لإثبات قابلية التعميم.</p>
+</section>
+<section class="hub-sec" id="dimensions" aria-labelledby="dimensions-h"><div class="sec-head"><h2 id="dimensions-h">8. أبعاد البحث الحالية</h2></div>
+<p class="text-p">تنظم أوامركم أعمالها الحالية حول الأبعاد التالية. وهي محاور بحثية قابلة للتعديل مع تطور الأدلة، وليست تصنيفًا نهائيًا للسوق أو للهندسة.</p>
+<div class="cards"><div class="card"><h3>8.1 الفعل الاقتصادي</h3><p>تحديد وحدة الفعل وحدوده وأثره الاقتصادي، والتمييز بين النية والأمر والتنفيذ والنتيجة.</p></div>
+<div class="card"><h3>8.2 السلطة والتفويض</h3><p>دراسة مصدر السلطة ونطاقها ومدتها وشروطها، وكيفية تفويضها وتقييدها وتعديلها وإلغائها.</p></div>
+<div class="card"><h3>8.3 الحوكمة والقيود</h3><p>دراسة السياسات والموافقات والميزانيات وحدود المخاطر والشروط المؤسسية التي قد تحدد ما يجوز تنفيذه.</p></div>
+<div class="card"><h3>8.4 التنفيذ والإنفاذ</h3><p>دراسة ما إذا كانت القيود المعتمدة تُطبّق فعليًا عند النقطة التي يمكن عندها أن يحدث الاثر الاقتصادي، بما يشمل حالات الفشل وإعادة المحاولة والتأخير.</p></div>
+<div class="card"><h3>8.5 الأدلة والتحقق</h3><p>دراسة اكتمال الأدلة، وربط الأحداث بالسجلات، والتحقق من التنفيذ والنتائج، وحدود ما يمكن إثباته.</p></div>
+<div class="card"><h3>8.6 النتائج والمقارنة المرجعية</h3><p>تطوير اختبارات ومقاييس لمقارنة الأنظمة والآليات والبدائل ضمن شروط معلنة، مع فصل النجاح التقني عن النتيجة الاقتصادية.</p></div>
+<div class="card"><h3>8.7 المساءلة والتعلم</h3><p>دراسة إسناد القرارات والأفعال والنتائج، وكيف يمكن الاستفادة من النتائج السابقة دون تحويل التعلم إلى سلطة غير مخولة.</p></div>
+<div class="card"><h3>8.8 الفعل الاقتصادي عبر الأنظمة</h3><p>دراسة الأفعال التي تمتد عبر نماذج ووكلاء وخدمات وأنظمة خارجية ومؤسسات مختلفة، وما يترتب على ذلك من تحديات في السلطة والأدلة والتحقق.</p></div>
+<div class="card"><h3>8.9 هندسة الفعل الاقتصادي</h3><p>استكشاف ما إذا كانت المتطلبات المتكررة تبرر منهجيات أو آليات هندسية قابلة لإعادة الاستخدام، وما إذا كان ذلك يشكل اتجاهًا هندسيًا متميزًا.</p></div>
+</div>
+</section>
+<section class="hub-sec" id="ceai" aria-labelledby="ceai-h"><div class="sec-head"><h2 id="ceai-h">9. CE-AI™: الإطار البحثي</h2></div>
+<h3>Command Economy of AI</h3>
+<p class="text-p">اقتصاد الأوامر للذكاء الاصطناعي (CE-AI) إطار بحثي لدراسة العواقب الاقتصادية لمشاركة أنظمة الذكاء الاصطناعي في النشاط الاقتصادي عبر الأوامر والسلطة المفوّضة والتنفيذ المحكوم والنتائج القابلة للتحقق.</p>
+<p class="text-p">نشأ الإطار من بحث مبكر في الأوامر بوصفها وسيلة للتفاعل مع الأنظمة الذكية وتوجيهها. ومع تطور البحث، انتقل التركيز إلى ما يحدث عندما ترتبط الأوامر بأفعال اقتصادية ذات أثر، وما يتطلبه ذلك من سلطة وحوكمة وإنفاذ وأدلة ومساءلة.</p>
+<h3>ما دور CE-AI اليوم؟</h3>
+<p class="text-p">ينظم CE-AI الأسئلة والعلاقات التي يدرسها البرنامج البحثي. وهو لا يحدد مسبقًا شكل المنتج أو المعمارية أو البنية التحتية التي قد تنتج عن البحث.</p>
+<h3>دورة الفعل في CE-AI</h3>
+<div class="flow" role="list"><span role="listitem">النية</span><i aria-hidden="true">←</i><span role="listitem">الأمر</span><i aria-hidden="true">←</i><span role="listitem">السلطة</span><i aria-hidden="true">←</i><span role="listitem">الحوكمة</span><i aria-hidden="true">←</i><span role="listitem">القرار</span><i aria-hidden="true">←</i><span role="listitem">التنفيذ</span><i aria-hidden="true">←</i><span role="listitem">الأدلة</span><i aria-hidden="true">←</i><span role="listitem">التحقق</span><i aria-hidden="true">←</i><span role="listitem">النتيجة الاقتصادية</span><i aria-hidden="true">←</i><span role="listitem">التعلم وإعادة التقييم.</span></div>
+<p class="text-p">تمثل كل مرحلة سؤالًا بحثيًا:</p>
+<ul class="stagelist">
+<li><b>النية:</b> ما الهدف المطلوب تحقيقه؟</li>
+<li><b>الأمر:</b> كيف صيغ الهدف في تعليمة أو مواصفات قابلة للتفسير؟</li>
+<li><b>السلطة:</b> من يملك حق تخويل الفعل، وما نطاق هذا الحق؟</li>
+<li><b>الحوكمة:</b> ما السياسات والقيود والموافقات المنطبقة؟</li>
+<li><b>القرار:</b> هل ينبغي السماح بالفعل أو رفضه أو تصعيده؟</li>
+<li><b>التنفيذ:</b> ماذا حدث فعليًا؟</li>
+<li><b>الأدلة:</b> ما الذي يوثّق القرار والفعل والظروف المحيطة به؟</li>
+<li><b>التحقق:</b> ما الذي يمكن إثباته من الأدلة، وبأي مستوى من الثقة؟</li>
+<li><b>النتيجة الاقتصادية:</b> ما الأثر الفعلي للفعل؟</li>
+<li><b>التعلم وإعادة التقييم:</b> ما الذي ينبغي تغييره في التقدير أو السياسة أو التفويض اللاحق؟</li>
+</ul>
+<p class="text-p callout">لا يعني هذا أن جميع المراحل يجب أن تكون وحدات تقنية منفصلة، ولا أن كل نظام يجب أن يتبع التسلسل نفسه حرفيًا.</p>
+<h3>ما الذي لا يدّعيه CE-AI؟</h3>
+<p class="text-p">CE-AI ليس:</p>
+<ul class="hl neg">
+<li>نموذج ذكاء اصطناعي أساسيًا.</li>
+<li>منتجًا للوكلاء أو منصة أتمتة.</li>
+<li>بروتوكولًا مكتملًا.</li>
+<li>معمارية نهائية أو بنية تحتية مثبتة الضرورة.</li>
+<li>معيارًا صناعيًا.</li>
+<li>نظرية اقتصادية مثبتة.</li>
+<li>فئة سوقية معترفًا بها.</li>
+<li>ادعاءً بأن النشاط الاقتصادي المستقبلي سيعتمد كله على الأوامر.</li>
+<li>ادعاءً بأن أنظمة الحوكمة الحالية غير كافية.</li>
+</ul>
+<p class="text-p">CE-AI هو الإطار البحثي؛ أما الفعل الاقتصادي المحكوم فهو موضوع البحث الأعمق.</p>
+<p class="links"><a class="btn" href="/framework">اقرأ إطار CE-AI™</a></p>
+</section>
+<section class="hub-sec" id="smart-hand" aria-labelledby="smart-hand-h"><div class="sec-head"><h2 id="smart-hand-h">10. Smart Hand™: البيئة التجريبية</h2></div>
+<p class="text-p">Smart Hand™ بيئة تجريبية مضبوطة لدراسة الفعل الاقتصادي المحكوم وقياسه وإعادة إنتاجه.</p>
+<p class="text-p">تتيح البيئة اختبار كيفية انتقال نظام ذكي من النية الاقتصادية إلى القرار والتنفيذ، ورصد ما يحدث عند تطبيق القيود أو تغييرها أو إلغائها، وجمع الأدلة اللازمة لتقييم النتائج.</p>
+<h3>ما الذي نختبره عبر Smart Hand؟</h3>
+<ul class="hl">
+<li>حدود السلطة والتفويض.</li>
+<li>الالتزام بالميزانيات والقيود التراكمية.</li>
+<li>تطبيق السياسات عند نقطة التنفيذ.</li>
+<li>الاستجابة لتغيير الصلاحيات أو إلغائها.</li>
+<li>التعامل مع الفشل والتأخير وإعادة المحاولة.</li>
+<li>اكتمال الأدلة وإمكانية إعادة بناء تسلسل الأحداث.</li>
+<li>العلاقة بين التنفيذ التقني والنتيجة الاقتصادية.</li>
+<li>أثر التدخلات المقترحة مقارنة بالبدائل القائمة.</li>
+</ul>
+<h3>ما الذي لا يثبته Smart Hand بمفرده؟</h3>
+<p class="text-p callout">لا يثبت وجوده أن CE-AI إطار صحيح في جميع تطبيقاته، ولا أن GEAB معيار صالح صناعيًا، ولا أن البوابة المؤسسية أو أي معمارية مستقلة مطلوبة.</p>
+<p class="text-p">قيمة البيئة تأتي من جودة التجارب والقياسات والأدلة التي تنتجها، لا من وجود الأداة وحده.</p>
+<p class="text-p">ويُحافظ على الأوصاف الأقدم لـ Smart Hand بوصفه «طبقة تنفيذ» في السجل التاريخي، لأنها توثّق مرحلة سابقة من تطور الفكرة. أما الاستخدام الحالي فيركّز على دوره التجريبي.</p>
+<p class="links"><a class="btn" href="#record">اقرأ عن Smart Hand™</a></p>
+</section>
+<section class="hub-sec" id="benchmark" aria-labelledby="benchmark-h"><div class="sec-head"><h2 id="benchmark-h">11. GEAB v0.1: برنامج القياس والمقارنة المرجعية</h2></div>
+<h3>Governed Economic Action Benchmark</h3>
+<p class="text-p">GEAB هو برنامج بحثي مقترح لتطوير اختبارات ومقاييس تقارن أداء الأنظمة والآليات في سيناريوهات الفعل الاقتصادي المحكوم.</p>
+<p class="text-p">يهدف إلى تحويل بعض أسئلة الحوكمة والتنفيذ من أوصاف عامة إلى اختبارات قابلة للتكرار، ذات شروط ونتائج ومعايير تقييم معلنة.</p>
+<p class="text-p callout">GEAB v0.1 إصدار تجريبي، وليس معيارًا صناعيًا أو دليلًا على ضرورة معمارية محددة.</p>
+<h3>أمثلة على سيناريوهات الاختبار</h3>
+<div class="cards"><div class="card"><h4>حدود السلطة:</h4><p> هل يرفض النظام فعلًا يتجاوز نطاق التفويض؟</p></div>
+<div class="card"><h4>السلطة التراكمية:</h4><p> هل يمكن لمجموعة أفعال صغيرة أن تتجاوز حدًا إجماليًا رغم التزام كل فعل منفرد بحده؟</p></div>
+<div class="card"><h4>إلغاء التفويض:</h4><p> ماذا يحدث عندما تُسحب السلطة قبل تنفيذ الفعل أو أثناء انتقاله عبر الأنظمة؟</p></div>
+<div class="card"><h4>إعادة المحاولة:</h4><p> هل تؤدي إعادة إرسال الطلب إلى تنفيذ اقتصادي مكرر؟</p></div>
+<div class="card"><h4>فجوة النتيجة:</h4><p> هل يمكن أن ينجح التنفيذ التقني مع فشل النتيجة الاقتصادية المقصودة؟</p></div>
+<div class="card"><h4>الأدلة:</h4><p> هل تكفي البيانات المتاحة لإعادة بناء ما حدث وتحديد ما يمكن إثباته؟</p></div>
+</div>
+<h3>مثال: الحد التراكمي للميزانية</h3>
+<p class="text-p">لنفترض أن التفويض يسمح بإنفاق إجمالي قدره 100,000 وحدة نقدية، وبحد أقصى 25,000 لكل عملية.</p>
+<p class="text-p">قد تنفذ المنظومة أربع عمليات، قيمة كل منها 25,000. وبعد استنفاد الميزانية، يجب تقييم أي طلب إضافي في ضوء السياسة المحددة مسبقًا، لا في ضوء حد العملية المنفردة فقط.</p>
+<p class="text-p callout">هذا المثال يوضح فرضية اختبارية؛ ولا يمثل نتيجة تجريبية منشورة.</p>
+<h3>ما الذي ينبغي قياسه؟</h3>
+<p class="text-p">قد تشمل المقاييس، بحسب السيناريو:</p>
+<ul class="hl">
+<li>معدل الأفعال غير المصرح بها.</li>
+<li>التعرض الاقتصادي الناتج عن الفشل.</li>
+<li>معدل الرفض غير الصحيح للأفعال المسموح بها.</li>
+<li>زمن تطبيق القيود أو إلغاء التفويض.</li>
+<li>اكتمال الأدلة.</li>
+<li>جودة التحقق من النتيجة.</li>
+<li>تكرار الأفعال غير المقصود.</li>
+<li>تكلفة التكامل والتشغيل.</li>
+<li>قابلية إعادة إنتاج النتائج.</li>
+</ul>
+<p class="text-p">يجب تعريف كل مقياس وطريقة حسابه وشروط احتسابه قبل تقييم النتائج. كما ينبغي تمييز ما قيس فعلًا عما لم يُقَس أو تعذر إثباته.</p>
+<h3>مبدأ المقارنة</h3>
+<p class="text-p">لا يُقيّم GEAB آلية مقترحة بمعزل عن البدائل. ينبغي، حيثما أمكن، مقارنة:</p>
+<ol class="hl">
+<li value="1">الآليات القائمة ضمن إعداد معقول.</li>
+<li value="2">الآليات القائمة بعد تحسين التكامل بينها.</li>
+<li value="3">التدخل أو الآلية الجديدة المقترحة.</li>
+</ol>
+<p class="text-p">السؤال ليس هل يمكن للآلية المقترحة أن تعمل، بل هل تحسّن النتيجة مقارنة بالبدائل، وفي أي ظروف، وبأي تكلفة؟</p>
+<p class="links"><a class="btn" href="/research/geab">اقرأ GEAB v0.1</a></p>
+</section>
+<section class="hub-sec" id="model" aria-labelledby="model-h"><div class="sec-head"><h2 id="model-h">12. نموذج CE-AI للتنفيذ الاقتصادي المحكوم v0.1</h2></div>
+<p class="text-p">هذا النموذج تمثيل تشغيلي مؤقت يساعد على وصف عناصر دورة الفعل التي يمكن فحصها تجريبيًا.</p>
+<div class="flow" role="list"><span role="listitem">النية</span><i aria-hidden="true">←</i><span role="listitem">الأمر</span><i aria-hidden="true">←</i><span role="listitem">التفويض</span><i aria-hidden="true">←</i><span role="listitem">السلطة</span><i aria-hidden="true">←</i><span role="listitem">الحوكمة</span><i aria-hidden="true">←</i><span role="listitem">الإنفاذ</span><i aria-hidden="true">←</i><span role="listitem">القرار</span><i aria-hidden="true">←</i><span role="listitem">التنفيذ</span><i aria-hidden="true">←</i><span role="listitem">الأدلة</span><i aria-hidden="true">←</i><span role="listitem">التحقق</span><i aria-hidden="true">←</i><span role="listitem">النتيجة</span><i aria-hidden="true">←</i><span role="listitem">الإسناد</span><i aria-hidden="true">←</i><span role="listitem">المساءلة</span><i aria-hidden="true">←</i><span role="listitem">التعلم.</span></div>
+<p class="text-p">الغرض من النموذج هو جعل العلاقات والأسئلة قابلة للتحديد في تصميم التجارب، وليس فرض تسلسل إلزامي على جميع الأنظمة.</p>
+<h3>العلاقة بين النموذج والإطار والاختبار</h3>
+<ul class="stagelist">
+<li><b>CE-AI:</b> ينظم الإطار والأسئلة البحثية.</li>
+<li><b>نموذج التنفيذ الاقتصادي المحكوم:</b> يقدم تمثيلًا تشغيليًا مؤقتًا لدورة الفعل.</li>
+<li><b>Smart Hand:</b> يوفر بيئة لإجراء التجارب.</li>
+<li><b>GEAB:</b> ينظم سيناريوهات الاختبار والقياس والمقارنة.</li>
+</ul>
+<p class="text-p callout">لكل مكوّن وظيفة مختلفة. ولا يثبت وجود أحدها صحة البقية أو ضرورتها المعمارية.</p>
+<p class="text-p">وتبقى تفاصيل النموذج قابلة للمراجعة إذا أظهرت التجارب أن بعض العناصر ينبغي دمجها أو فصلها أو إعادة ترتيبها.</p>
+<p class="links"><a class="btn" href="/research/ce-ai-governed-economic-execution-v0-1">اقرأ النموذج v0.1</a></p>
+</section>
+<section class="hub-sec" id="hypotheses" aria-labelledby="hypotheses-h"><div class="sec-head"><h2 id="hypotheses-h">13. الفرضيات المعمارية: من المتطلب إلى التدخل</h2></div>
+<p class="text-p">لا تبدأ أوامركم بافتراض ضرورة بوابة أو بروتوكول أو طبقة بنية تحتية. تبدأ بالسؤال عما إذا كانت هناك قيود متكررة لا تعالجها الآليات المتاحة بالفاعلية المطلوبة.</p>
+<p class="text-p">إذا ظهرت قيود متكررة، يصبح من المشروع اختبار تدخلات مختلفة، من بينها تحسين السياسات أو التكامل أو إدارة التفويض أو جمع الأدلة أو إنشاء حد معماري متميز.</p>
+<h3>فرضية البوابة المؤسسية</h3>
+<p class="text-p">تفترض هذه الفرضية إمكان وجود وظيفة أو حد للتحكم بين النية أو القرار المولّد بواسطة نظام ذكي والتنفيذ المؤسسي، بحيث تُقيّم شروط الفعل قبل السماح بحدوث أثره.</p>
+<p class="text-p callout">لكن الحاجة إلى حد مستقل ليست مفترضة. فقد تكون الوظائف المطلوبة متوفرة بالفعل ضمن أنظمة الهوية والصلاحيات والسياسات وسير العمل والأنظمة المالية.</p>
+<h3>فرضية بوابة الفعل الاقتصادي</h3>
+<p class="text-p">تدرس هذه الفرضية ما إذا كانت بعض الأفعال الاقتصادية ذات الأثر تتطلب نقطة متميزة لتقييم السلطة والنطاق والمخاطر والموافقات والقيود قبل التنفيذ.</p>
+<p class="text-p">والسؤال التجريبي هو:</p>
+<blockquote class="quote-box">هل يضيف هذا الحد تحسنًا قابلًا للقياس مقارنة بالآليات القائمة أو بتحسين تكاملها؟</blockquote>
+<h3>بروتوكول التنفيذ المحكوم (CEP)</h3>
+<p class="text-p">يمكن دراسة بروتوكول مقترح للتعبير عن شروط الأفعال ذات الأثر وإنفاذها والتحقق منها. لكنه يظل فرضية تطويرية، لا معيارًا مكتملًا أو مكونًا ثبتت ضرورته.</p>
+<p class="text-p">يجب مقارنة أي تصميم من هذا النوع ببدائل واقعية، مع قياس أثره في الأفعال غير المصرح بها، والرفض غير الصحيح، والتأخير، وجودة الأدلة، وتكلفة التشغيل والتكامل.</p>
+<h3>المسار المعماري المحتمل</h3>
+<div class="flow" role="list"><span role="listitem">فعل مرصود</span><i aria-hidden="true">←</i><span role="listitem">دليل على قصور محدد</span><i aria-hidden="true">←</i><span role="listitem">تكرار القيد</span><i aria-hidden="true">←</i><span role="listitem">اختبار تدخل</span><i aria-hidden="true">←</i><span role="listitem">تحسن مقاس</span><i aria-hidden="true">←</i><span role="listitem">متطلب قابل لإعادة الاستخدام</span><i aria-hidden="true">←</i><span role="listitem">فرضية معمارية</span><i aria-hidden="true">←</i><span role="listitem">تقييم الحاجة إلى بنية تحتية.</span></div>
+<p class="text-p callout">وقد يتوقف المسار عند أي مرحلة. فقد تكفي الآليات الحالية، أو يكفي تحسين تكاملها، أو لا يتكرر القيد، أو لا يبرر التحسن تكلفة الحل الجديد.</p>
+<blockquote class="quote-box">البوابة فرضية، وCEP فرضية، والمعمارية فرضية. أما الضرورة فلا تُفترض؛ بل تُختبر.</blockquote>
+<h3>الأعمال المعمارية المنشورة</h3>
+<div class="cards papers"><article class="rec"><p class="rec-title"><a href="/research/paper-4">الورقة 4 - Institutional Gateway™: البوابة المؤسسية</a></p><p>عمل بحثي يقترح وظيفة تحكم بين النية المولّدة بالذكاء الاصطناعي والتنفيذ المؤسسي، مع شروط قابلة للدحض.</p></article>
+<article class="rec"><p class="rec-title"><a href="/research/paper-5">الورقة 5 - معمارية CE-AI الحاكمة™</a></p><p>معمارية مرجعية بحثية مؤقتة، تُعامل المجالات المقترحة فيها بوصفها فرضيات تحتاج إلى أدلة.</p></article>
+<article class="rec"><p class="rec-title"><a href="/research/paper-6">الورقة 6 - Economic Action Gateway: بوابة الفعل الاقتصادي</a></p><p>فرضية معمارية تدرس ما إذا كانت الأفعال الاقتصادية ذات الأثر تتطلب حدًا متميزًا لقبولها قبل التنفيذ.</p></article>
+</div>
+<p class="text-p callout">هذه الأعمال منفصلة، ولا يفترض هذا المركز وجود علاقة إحلال أو تسلسل نهائي بينها. كما لا تُعرض أي منها بوصفها معمارية مثبتة أو بنية تحتية مطلوبة.</p>
+<p class="links"><a class="btn" href="/research/paper-4">اقرأ الورقة 4</a><a class="btn" href="/research/paper-5">اقرأ الورقة 5</a><a class="btn" href="/research/paper-6">اقرأ الورقة 6</a></p>
+</section>
+<section class="hub-sec" id="eae" aria-labelledby="eae-h"><div class="sec-head"><h2 id="eae-h">14. هندسة الفعل الاقتصادي</h2></div>
+<h3>اتجاه هندسي قيد الاستكشاف</h3>
+<p class="text-p">تستكشف أوامركم احتمال أن تؤدي المتطلبات المتكررة في الفعل الاقتصادي المحكوم إلى منهجيات وآليات هندسية قابلة لإعادة الاستخدام.</p>
+<p class="text-p">يمكن وصف هذا الاتجاه مؤقتًا باسم هندسة الفعل الاقتصادي (Economic Action Engineering).</p>
+<p class="text-p">يدرس هذا الاتجاه كيفية تحديد الأفعال الاقتصادية ذات الأثر وتخويلها وتقييدها وحوكمتها وتنفيذها وتوثيقها بالأدلة والتحقق من نتائجها وإسناد المسؤولية عنها.</p>
+<p class="text-p">لكن تسمية الاتجاه لا تثبت وجود تخصص مستقل. كما أن وجود مشكلات متشابهة لا يكفي وحده لإثبات الحاجة إلى بنية تقنية جديدة.</p>
+<p class="text-p">لكي تكتسب هندسة الفعل الاقتصادي مبررًا أقوى، ينبغي أن تظهر أدلة على أن هناك متطلبات مهمة ومتكررة لا تُعالج بما يكفي من خلال الممارسات والهندسات القائمة، وأن منهجيات أو آليات محددة تحسّن النتائج بصورة قابلة للقياس والتكرار.</p>
+<blockquote class="quote-box">التخصص لا يُعلن بمجرد تسميته؛ بل تتحدد ملامحه من خلال المشكلات والأدلة والمنهجيات التي تثبت ضرورتها.</blockquote>
+<p class="links"><a class="btn" href="/economic-action-engineering">اقرأ عن هندسة الفعل الاقتصادي</a></p>
+</section>
+<section class="hub-sec" id="rules" aria-labelledby="rules-h"><div class="sec-head"><h2 id="rules-h">15. قواعد اتخاذ القرار البحثي</h2></div>
+<p class="text-p">تعمل أوامركم وفق مجموعة من القواعد التي تربط الادعاءات بالأدلة والقرارات الهندسية بالقيود المرصودة.</p>
+<ul class="hl">
+<li>لا ادعاء قويًا بلا دليل مناسب.</li>
+<li>لا تعميم واسعًا بلا تكرار كافٍ.</li>
+<li>لا معمارية بلا قيد محدد يستدعيها.</li>
+<li>لا لبنة أولية قابلة لإعادة الاستخدام بلا متطلب متكرر.</li>
+<li>لا بنية تحتية بلا حاجة تشغيلية مبررة.</li>
+<li>لا منتج تجاري بلا قيمة واضحة للعميل.</li>
+<li>لا استنتاج سببي من مقارنة لا تعزل العوامل المؤثرة بما يكفي.</li>
+<li>لا يُعامل غياب الدليل بوصفه دليلًا على غياب المشكلة.</li>
+<li>لا يُعامل فشل فرضية واحدة بوصفه فشل البرنامج البحثي كله.</li>
+<li>لا تُعامل النتيجة السلبية السليمة بوصفها هدرًا؛ فقد تمنع استثمارًا غير مبرر.</li>
+</ul>
+<h3>قاعدة الاستثمار في البحث</h3>
+<p class="text-p">كل قرار تطوير أو إنفاق ينبغي أن يرتبط بحالة عدم يقين محددة يراد تقليلها.</p>
+<p class="text-p">بدلًا من السؤال: «ما الذي ينبغي أن نبنيه بعد ذلك؟»، نسأل:</p>
+<blockquote class="quote-box">«ما أكبر حالة عدم يقين ينبغي أن نحسمها بعد ذلك، وما التجربة الأقل تكلفة التي يمكن أن تقدم دليلًا موثوقًا بشأنها؟»</blockquote>
+<p class="text-p callout">هذه القواعد توجه اختيار التجارب، وتخصيص الموارد، ونشر النتائج، واتخاذ قرارات التطوير.</p>
+</section>
+<section class="hub-sec" id="record" aria-labelledby="record-h"><div class="sec-head"><h2 id="record-h">16. السجل البحثي: كيف تطور البحث؟</h2></div>
+<p class="text-p">يوثّق السجل انتقال أوامركم من فرضيات اقتصاد الأوامر والتفاعل مع الأنظمة الذكية إلى دراسة الفعل الاقتصادي والسلطة والحوكمة والأدلة والتحقق والمتطلبات المعمارية المحتملة.</p>
+<p class="text-p">السجل ليس قائمة بأعمال متساوية في صلاحيتها الحالية. إنه يوثّق تطورًا فكريًا وهندسيًا، مع التمييز بين ما لا يزال مفيدًا، وما يُستخدم الآن، وما أصبح تاريخيًا.</p>
+<div class="cards papers"><article class="rec paper"><h3><span class="pn">الورقة 1</span> - <span class="st st-his">تاريخي</span> / <span class="st st-con">مفاهيمي</span></h3><p class="rec-title"><a href="/research/paper-1">اقتصاد الأوامر للذكاء الاصطناعي: من استرجاع المعلومات إلى التنفيذ الذكي</a></p><p>تؤسس للتأطير المفاهيمي المبكر لاقتصاد الأوامر، وتوثّق الفرضية الأصلية حول الانتقال من الحصول على المعلومات إلى توجيه الأنظمة لتنفيذ مهام.</p><p>تُقرأ اليوم بوصفها جزءًا من أصل البحث، لا وصفًا نهائيًا للموقف الحالي.</p></article>
+<article class="rec paper"><h3><span class="pn">الورقة 2</span> - <span class="st st-his">تاريخي</span> / <span class="st st-con">مفاهيمي</span></h3><p class="rec-title"><a href="/research/paper-2">اليد الذكية: طبقة اقتصادية وتشغيلية جديدة فوق الإنترنت والبنية البرمجية الحالية</a></p><p>تعبّر عن مرحلة مبكرة تصوّرت Smart Hand بوصفه طبقة تنفيذ. وقد تطور هذا التأطير إلى الاستخدام الحالي لـ Smart Hand بوصفه بيئة تجريبية.</p></article>
+<article class="rec paper"><h3><span class="pn">الورقة 3</span> - <span class="st st-fnd">تأسيسي</span> / <span class="st st-con">مفاهيمي</span></h3><p class="rec-title"><a href="/research/paper-3">التنفيذ باعتباره اهتمامًا معماريًا في أنظمة الذكاء الاصطناعي</a></p><p>تحتفظ بأهمية التمييز بين الاستدلال والتنفيذ والنتيجة، بينما تُعامل الاستنتاجات المرتبطة بالبنية التحتية فيها باعتبارها تأطيرًا سابقًا يحتاج إلى إعادة تقييم في ضوء البحث الحالي.</p></article>
+<article class="rec paper"><h3><span class="pn">الورقة 4</span> - <span class="st st-exp">تجريبي</span> / <span class="st st-con">مفاهيمي</span></h3><p class="rec-title"><a href="/research/paper-4">Institutional Gateway™ - البوابة المؤسسية</a></p><p>تقترح فرضية بوابة مؤسسية، وتُعامل بوصفها فرضية قابلة للاختبار والدحض.</p></article>
+<article class="rec paper"><h3><span class="pn">الورقة 5</span> - <span class="st st-exp">تجريبي</span> / <span class="st st-tmp">مؤقت</span></h3><p class="rec-title"><a href="/research/paper-5">معمارية CE-AI الحاكمة™</a></p><p>معمارية مرجعية بحثية مؤقتة، وليست معمارية نهائية.</p></article>
+<article class="rec paper"><h3><span class="pn">الورقة 6</span> - <span class="st st-exp">تجريبي</span> / <span class="st st-hyp">فرضية معمارية</span></h3><p class="rec-title"><a href="/research/paper-6">Economic Action Gateway - بوابة الفعل الاقتصادي</a></p><p>تبحث في الحاجة المحتملة إلى حد معماري لقبول الأفعال الاقتصادية ذات الأثر قبل تنفيذها.</p></article>
+<article class="rec paper"><h3>النموذج البحثي الحالي</h3><p class="rec-title"><a href="/research/ce-ai-governed-economic-execution-v0-1">نموذج CE-AI للتنفيذ الاقتصادي المحكوم v0.1</a></p><p>تمثيل تشغيلي مؤقت لعناصر دورة الفعل الاقتصادي المحكوم.</p></article>
+<article class="rec paper"><h3>العمل التجريبي</h3><p class="rec-title"><a href="/research/geab">GEAB v0.1 - المعيار المرجعي البحثي للأفعال الاقتصادية المحكومة بالذكاء الاصطناعي</a></p><p>برنامج تجريبي للقياس والمقارنة المرجعية. ولا يعني استخدام كلمة «معيار مرجعي» أنه معيار صناعي معتمد.</p></article>
+</div>
+<p class="text-p callout">تُعرض حالات هذه الأعمال ونضجها كما هو موضح في هذه الصفحة. ولا تُنسب إلى أي عمل نتيجة تجريبية أو تحقق مستقل لم يُنشر دليل عليه.</p>
+</section>
+<section class="hub-sec" id="lineage" aria-labelledby="lineage-h"><div class="sec-head"><h2 id="lineage-h">17. السلالة الفكرية للبحث</h2></div>
+<div class="flow" role="list"><span role="listitem">الأمر</span><i aria-hidden="true">←</i><span role="listitem">اقتصاد الأوامر للذكاء الاصطناعي</span><i aria-hidden="true">←</i><span role="listitem">التنفيذ</span><i aria-hidden="true">←</i><span role="listitem">الفعل الاقتصادي</span><i aria-hidden="true">←</i><span role="listitem">السلطة والحوكمة</span><i aria-hidden="true">←</i><span role="listitem">الأدلة والتحقق</span><i aria-hidden="true">←</i><span role="listitem">القيود المتكررة</span><i aria-hidden="true">←</i><span role="listitem">التدخلات الممكنة</span><i aria-hidden="true">←</i><span role="listitem">فرضيات معمارية</span><i aria-hidden="true">←</i><span role="listitem">بنية تحتية محتملة.</span></div>
+<p class="text-p">يعكس هذا المسار تعمّق السؤال البحثي، لا اكتمال مراحله.</p>
+<p class="text-p">بدأ البحث من كيفية تفاعل الإنسان مع الأنظمة الذكية عبر الأوامر، ثم اتسع إلى كيفية انتقال النية إلى التنفيذ، ثم إلى الشروط التي تحكم الأفعال ذات الأثر الاقتصادي، ثم إلى الأدلة اللازمة لتقييم تلك الأفعال.</p>
+<p class="text-p callout">لا يعني ذلك أن الأعمال المبكرة فقدت قيمتها، أو أن المعمارية النهائية قد اكتُشفت. بل يعني أن التأطير تطور، وأن بعض المفاهيم القديمة أصبحت تاريخية أو تأسيسية، بينما تخضع مفاهيم أخرى للاختبار.</p>
+<h3 id="resources">الموارد الداعمة</h3>
+<ul class="hl">
+<li><a href="/framework">إطار CE-AI™</a>.</li>
+<li><a href="/canonical-reference">المرجع المعرفي</a>.</li>
+<li><a href="/glossary">قاموس المصطلحات</a>.</li>
+<li>مصفوفة المفاهيم البنيوية.</li>
+<li><a href="/framework/evolution">سجل التطور</a>.</li>
+<li><a href="/whitepaper">الورقة البيضاء التأسيسية</a>.</li>
+<li><a href="/intellectual-property">وثائق الملكية الفكرية</a>.</li>
+</ul>
+<p class="text-p callout">تُحفظ الموارد السابقة بوصفها سجلًا للعمل وتطوره. وينبغي قراءة كل مورد وفق تاريخ نشره وحالته، لا افتراض أن جميع صياغاته تمثل الموقف الحالي.</p>
+<p class="links"><a class="btn" href="/framework/evolution">استكشف سجل التطور</a><a class="btn" href="/whitepaper">اقرأ الورقة البيضاء التأسيسية</a><a class="btn" href="/glossary">قاموس المصطلحات</a></p>
+</section>
+<section class="hub-sec" id="concepts" aria-labelledby="concepts-h"><div class="sec-head"><h2 id="concepts-h">18. قاموس المفاهيم والأسئلة البحثية</h2></div>
+<p class="text-p">يحتوي المرجع المعرفي لأوامركم على أسئلة ومفاهيم تغطي اقتصاد الأوامر، والنية، والتنفيذ، والوكالة الاقتصادية، والحوكمة، والأنظمة الوكيلة، والبنية التقنية، والأسواق، والأعمال، والنقد.</p>
+<p class="text-p">ويُحافظ على هذه المادة بوصفها سجلًا معرفيًا متطورًا، لا باعتبار أن كل تعريف فيها نهائي أو أن كل فرضية تجارية أو تقنية أصبحت نتيجة مثبتة.</p>
+<h3>طريقة قراءة المفاهيم</h3>
+<p class="text-p">تُقرأ المصطلحات وفق ثلاث طبقات:</p>
+<div class="cards"><div class="card"><h4>الطبقة الأولى - المفاهيم التأسيسية:</h4><p> تساعد على فهم أصل البحث، مثل الأمر والنية والتفاعل مع الأنظمة الذكية.</p></div>
+<div class="card"><h4>الطبقة الثانية - المفاهيم البحثية الحالية:</h4><p> تركز على الفعل الاقتصادي والسلطة والتفويض والحوكمة والإنفاذ والأدلة والتحقق والنتائج.</p></div>
+<div class="card"><h4>الطبقة الثالثة - الفرضيات المستقبلية:</h4><p> تشمل احتمالات مثل البوابات والبروتوكولات والمعماريات والبنى التحتية والأسواق الجديدة، ولا تُعرض باعتبارها نتائج إلا إذا دعمتها الأدلة.</p></div>
+</div>
+<h3>تنبيه بشأن الأسئلة التاريخية</h3>
+<p class="text-p callout">تتضمن بعض الأسئلة القديمة عبارات تتحدث عن طبقات تنفيذ أو أسواق أو أنظمة اقتصادية مستقبلية بصيغة تقريرية. ينبغي فهمها ضمن سياقها الأصلي بوصفها فرضيات أو تصورات استكشافية، ما لم يحدد البحث الحالي دليلًا مستقلًا يدعمها.</p>
+<p class="text-p">وعند تحديث القاموس، يُفضّل أن تتضمن كل مادة: تعريفًا، وحالة المفهوم، وسؤالًا قابلًا للاختبار، وعلاقته بالمفاهيم الأخرى، والأدلة المتاحة، والقيود أو الاعتراضات، والمراجع ذات الصلة.</p>
+<p class="text-p">ابحث في المفاهيم والأسئلة والمصطلحات:</p>
+<p class="links"><a class="btn" href="/glossary">النية</a><a class="btn" href="/glossary">التفويض</a><a class="btn" href="/glossary">الإنفاذ</a><a class="btn" href="/glossary">الفعل الاقتصادي</a><a class="btn" href="/glossary">Smart Hand</a><a class="btn" href="/glossary">GEAB</a><a class="btn" href="/glossary">التحقق</a><a class="btn" href="/glossary">المساءلة</a><a class="btn" href="/glossary">هندسة الفعل الاقتصادي</a></p>
+</section>
+<section class="hub-sec" id="next" aria-labelledby="next-h"><div class="sec-head"><h2 id="next-h">19. ما الذي ينبغي أن يأتي بعد ذلك؟</h2></div>
+<p class="text-p">تتقدم أوامركم عبر قرارات بحثية تعتمد على الأدلة، لا عبر الالتزام المسبق بمنتج أو معمارية.</p>
+<h3>الأولوية البحثية</h3>
+<ol class="hl">
+<li value="1">تثبيت تعريفات الأفعال والسلطة والنتيجة والتحقق.</li>
+<li value="2">تحديد سيناريوهات تجريبية واضحة يمكن تنفيذها في بيئة مضبوطة.</li>
+<li value="3">تثبيت المقاييس وشروط النجاح والفشل قبل إجراء الاختبارات.</li>
+<li value="4">تشغيل التجارب وتوثيق الأدلة الخام والنتائج والقيود.</li>
+<li value="5">مقارنة الآليات القائمة ببدائل التكامل والتدخل المقترح.</li>
+<li value="6">إعادة التجربة عبر تكوينات مختلفة، وطلب مراجعة مستقلة عند الإمكان.</li>
+<li value="7">نشر النتائج بما يشمل الإخفاقات والنتائج غير الحاسمة.</li>
+<li value="8">تحديد ما إذا كانت القيود متكررة ومهمة بما يكفي لتبرير تدخل قابل لإعادة الاستخدام.</li>
+<li value="9">اتخاذ قرار بشأن الحاجة إلى فرضية معمارية أوسع.</li>
+<li value="10">تقييم البنية التحتية فقط إذا أثبتت الأدلة وجود حاجة تشغيلية متكررة لا تلبّيها البدائل بصورة كافية.</li>
+</ol>
+<h3>ما الذي قد يغيّر اتجاه البحث؟</h3>
+<p class="text-p">إذا أظهرت التجارب أن الآليات القائمة تحقق النتائج المطلوبة، فسيكون ذلك دليلًا ضد الحاجة إلى بنية جديدة في نطاق الاختبار.</p>
+<p class="text-p">إذا لم تتكرر النتائج، فينبغي تضييق الفرضية أو مراجعة القياس.</p>
+<p class="text-p">إذا لم يحسن التدخل المقترح النتائج بما يكفي لتبرير تكلفته، فلا ينبغي ترقية التدخل إلى معمارية دائمة.</p>
+<p class="text-p">وإذا ظهر قيد متكرر، وتحسن مقاس، وقابلية لإعادة الاستخدام، فقد يصبح من المبرر الانتقال إلى مرحلة معمارية أكثر تحديدًا.</p>
+<blockquote class="quote-box">النجاح البحثي ليس إثبات أن الفكرة الأصلية صحيحة بأي ثمن؛ بل الوصول إلى استنتاج موثوق بشأن ما ينبغي بناؤه، وما لا ينبغي بناؤه، ولماذا.</blockquote>
+</section>
+<section class="hub-sec" id="about" aria-labelledby="about-h"><div class="sec-head"><h2 id="about-h">20. تعريف أوامركم</h2></div>
+<p class="text-p">أوامركم شركة أبحاث وهندسة تستكشف الشروط والآليات اللازمة لجعل الفعل الاقتصادي الذي تؤديه أو تتوسط فيه أنظمة الذكاء الاصطناعي قابلًا للحوكمة والإنفاذ والتحقق والمساءلة.</p>
+<p class="text-p">تستخدم أوامركم إطار CE-AI لتنظيم البحث، وSmart Hand لإجراء التجارب، وGEAB لتطوير القياس والمقارنة المرجعية، ونماذج تشغيلية مؤقتة لتحويل الأسئلة إلى اختبارات قابلة للفحص.</p>
+<p class="text-p">ومن خلال التجارب والأدلة والتكرار والتدخلات المقاسة، تسعى أوامركم إلى تحديد المتطلبات التي تتكرر عبر الأفعال والأنظمة والمؤسسات، وما إذا كانت هذه المتطلبات تبرر تطوير آليات أو معماريات أو بنية تحتية جديدة.</p>
+<p class="text-p">لا تفترض أوامركم النتيجة المعمارية مسبقًا، ولا تدّعي أن الفرضيات الحالية قد ثبتت. إنها تبني قاعدة الأدلة اللازمة لاتخاذ هذه القرارات.</p>
+<h3>الصياغة المرجعية المختصرة</h3>
+<blockquote class="quote-box">أوامركم تبني قاعدة الأدلة اللازمة لفهم الفعل الاقتصادي المحكوم بالذكاء الاصطناعي، وتحديد المتطلبات التي قد تستدعي تطوير آليات أو معماريات جديدة، واختبار ما إذا كانت هذه التطويرات ضرورية بالفعل.</blockquote>
+<h3>المبدأ المؤسس</h3>
+<blockquote class="quote-box">نبحث في الفعل. نختبر الحوكمة والإنفاذ. نتحقق من الأدلة والنتائج. ثم ندع الأدلة تحدد ما ينبغي تطويره.</blockquote>
+<h3>التمويل والبحث والتطوير</h3>
+<p class="text-p">يُوجَّه الاستثمار في أوامركم إلى تقليل حالات عدم اليقين البحثية، وبناء البيئة التجريبية، وتطوير المقاييس، وإنتاج أدلة قابلة للفحص، واختبار النتائج عبر تكوينات مختلفة، والتحقق المستقل عند الإمكان.</p>
+<p class="text-p callout">ولا يُفترض أن يكون المخرج النهائي بوابة أو بروتوكولًا أو بنية تحتية مستقلة. يتحدد ذلك وفق ما تثبته التجارب والقيمة التي يمكن تحقيقها للمؤسسات.</p>
+<h3>القاعدة البحثية الأولية</h3>
+<p class="text-p">تبدأ التجارب الأولية في المملكة العربية السعودية بوصفها قاعدة للبحث والتطوير والتحقق التجريبي. أما قابلية تعميم النتائج فلا تُستنتج من الموقع أو من تجربة منفردة؛ بل تُكتسب من خلال إعادة التجربة في سياقات وأنظمة مختلفة.</p>
+<h3>دعوة للمشاركة</h3>
+<p class="text-p">تدعو أوامركم الباحثين والمهندسين والمؤسسات والشركاء التجريبيين إلى التعاون في تصميم اختبارات قابلة للتكرار، وتقييم المقاييس، ومقارنة الآليات القائمة بالبدائل المقترحة، ومراجعة الأدلة والنتائج.</p>
+<p class="text-p">نرحب بالمساهمات التي تساعد على دحض الفرضيات بقدر ترحيبنا بالمساهمات التي تدعمها.</p>
+<blockquote class="quote-box"><strong>السؤال المفتوح أمام البحث:</strong> ما الذي يجب أن يتحقق عندما يستطيع الذكاء الاصطناعي أن يفعل اقتصاديًا، وما الذي يمكن إثباته بالتجربة حول أفضل طريقة لتحقيقه؟</blockquote>
+</section>
+</div></div>
 </main>
-
-<footer class="site-footer">
-    <div class="footer-bottom-container" dir="rtl">
-        <p>© 2026 أوامركم. جميع الحقوق محفوظة.</p>
-        <div class="footer-legal-links">
-            <a href="/intellectual-property">الملكية الفكرية</a>
-            <span class="footer-legal-separator">·</span>
-            <a href="mailto:contact@ouamarkom.com">تواصل معنا</a>
-        </div>
-    </div>
-</footer>
-
+<footer class="site-footer"><div class="footer-bottom-container" dir="rtl"><p>© 2026 أوامركم™ | OUAMARKOM™. جميع الحقوق محفوظة.</p><div class="footer-legal-links"><a href="/research">الأبحاث</a> <span class="footer-legal-separator">·</span> <a href="/canonical-reference">المرجع المعرفي</a> <span class="footer-legal-separator">·</span> <a href="/glossary">قاموس المصطلحات</a> <span class="footer-legal-separator">·</span> <a href="#record">السجل البحثي</a> <span class="footer-legal-separator">·</span> <a href="/whitepaper">الورقة البيضاء</a> <span class="footer-legal-separator">·</span> <a href="/intellectual-property">الملكية الفكرية</a> <span class="footer-legal-separator">·</span> <a href="mailto:contact@ouamarkom.com">تواصل معنا</a></div></div></footer>
 <script src="/script.js" defer></script>
-
 <script>
-    let currentTab = 'faq-view';
-
-    const kbDataset = [
-        {
-            title: "لماذا يختلف اقتصاد أوامر الذكاء الاصطناعي جوهريًا عن اقتصادات الأوامر التاريخية؟",
-            content: `<p class="text-p">يُعد توضيح هذا الاختلاف من أهم الأسس المفاهيمية لإطار اقتصاد أوامر الذكاء الاصطناعي، لأن مصطلح "اقتصاد الأوامر" يحمل في الأدبيات الاقتصادية التقليدية دلالة سياسية وتاريخية واضحة.</p>
-                      <p class="text-p">في الاقتصاد المخطط أو اقتصاد الأوامر التقليدي، تشير "الأوامر" إلى قرارات مركزية تصدر عن سلطة سياسية أو مؤسسات حكومية لتنظيم الإنتاج وتوزيع الموارد والأسعار.</p>
-                      <p class="text-p">أما في Command Economy of AI (CEAI)، فمصطلح "الأمر" لا يشير إلى سلطة سياسية أو ملكية حكومية أو تخطيط مركزي للاقتصاد. بل يشير إلى نية بشرية استراتيجية يتم التعبير عنها كلغة أو أهداف أو قيود، ثم تحويلها بواسطة البنية الحاسوبية إلى خطط تنفيذية وأعمال منسقة بواسطة أنظمة الذكاء الاصطناعي والوكلاء.</p>
-                      <p class="text-p">وبذلك، فإن CEAI ليس نموذجًا سياسيًا بديلًا للاقتصاد الحر، بل إطار تحليلي لدراسة طبقة جديدة من التنسيق والتنفيذ داخل الاقتصادات القائمة.</p>`
-        },
-        {
-            title: "المعنيان المختلفان لمفهوم \"الأمر\"",
-            content: `<p class="text-p">في الاقتصاد السياسي، يمثل الأمر قرارًا إداريًا مركزيًا يوجه الإنتاج أو توزيع الموارد داخل النظام الاقتصادي.</p>
-                      <p class="text-p">أما في CEAI، فإن الأمر يمثل تمثيلًا تشغيليًا للنية البشرية. فعندما يقول قائد مؤسسة: "أطلق المنتج في ثلاثة أسواق جديدة" أو "خفض تكلفة اكتساب العميل مع الحفاظ على مستوى معين من النمو"، فإن النظام لا يتعامل مع هذه الجملة بوصفها مجرد Prompt للحصول على إجابة، بل بوصفها هدفًا استراتيجيًا يمكن تفكيكه إلى قيود ومهام ووكلاء وعمليات ومقاييس نجاح.</p>
-                      <blockquote class="quote-box">الاقتصادات المخططة تاريخيًا سألت: من يسيطر على وسائل الإنتاج؟ بينما يدرس اقتصاد أوامر الذكاء الاصطناعي سؤالًا مختلفًا: كيف يمكن تحويل النية البشرية إلى تنفيذ حاسوبي منسق وقابل للقياس؟</blockquote>`
-        },
-        {
-            title: "CEAI إطار تحليلي وليس أيديولوجية",
-            content: `<p class="text-p">يجب فهم اقتصاد أوامر الذكاء الاصطناعي بوصفه إطارًا بحثيًا وتحليليًا لدراسة تطور التنسيق الاقتصادي في عصر الأنظمة الذكية.</p>
-                      <p class="text-p">لا يقترح CEAI إلغاء الأسواق الحرة، أو استبدال الملكية الخاصة، أو إنشاء نظام تخطيط اقتصادي مركزي. بل يدرس كيف يمكن للذكاء الاصطناعي أن يضيف طبقة تنفيذ جديدة فوق الأنظمة الاقتصادية والمؤسسية القائمة.</p>
-                      <p class="text-p">الفكرة الأساسية هي أن اللغة الطبيعية والنية المنظمة يمكن أن تصبحا واجهة أعلى مستوى بين الإنسان والأنظمة الحاسوبية، مما يقلل الاحتكاك بين: النية ← القرار ← التخطيط ← التنفيذ ← النتيجة.</p>`
-        },
-        {
-            title: "من الذكاء إلى التنفيذ",
-            content: `<p class="text-p">ركزت المراحل الأولى من ثورة الذكاء الاصطناعي على سؤال: ماذا يستطيع الذكاء الاصطناعي أن يعرف أو يولد؟ أما المرحلة التالية فتطرح سؤالًا أكثر ارتباطًا بالقيمة الاقتصادية: ماذا يستطيع الذكاء الاصطناعي أن ينفذ؟</p>
-                      <p class="text-p">هنا تظهر فجوة النية والتنفيذ (Intent-to-Execution Gap). فالذكاء الاصطناعي قد يستطيع تحليل السوق، كتابة خطة، إنشاء كود، إنتاج محتوى أو اقتراح استراتيجية. لكن القيمة الاقتصادية الكاملة لا تتحقق بمجرد إنتاج المخرجات، بل تتحقق عندما تتحول تلك المخرجات إلى أفعال وعمليات ونتائج قابلة للتحقق. ومن هنا تأتي أهمية بنية تنفيذ الذكاء الاصطناعي (AI Execution Infrastructure).</p>`
-        },
-        {
-            title: "Smart Hand - اليد الذكية",
-            content: `<p class="text-p">تمثل Smart Hand تصورًا لبنية تنفيذية تعمل كطبقة بين النية البشرية والبنية الرقمية التي تنفذها.</p>
-                      <p class="text-p">يمكن تصور المسار الأساسي على النحو التالي:</p>
-                      <p class="text-p" style="text-align: center; font-weight: bold; color: var(--gold);">Human Intent → Intent Understanding → Planning → Agent Orchestration → Execution → Verification → Outcome</p>
-                      <p class="text-p" style="text-align: center; font-size: 14px; color: var(--text-dim);">(النية البشرية ← فهم النية ← التخطيط ← تنسيق الوكلاء ← التنفيذ ← التحقق ← النتيجة)</p>
-                      <p class="text-p">وهذا هو المستوى الذي تسعى Ouamarkom إلى استكشافه وبنائه ضمن رؤية اقتصاد أوامر الذكاء الاصطناعي.</p>`
-        },
-        {
-            title: "النية كوحدة تنسيق جديدة",
-            content: `<p class="text-p">في البرمجيات التقليدية، يحتاج الإنسان غالبًا إلى تعلم كيفية استخدام الأدوات. أما في واجهات النية، فيبدأ التفاعل من الهدف الذي يريد الإنسان تحقيقه.</p>
-                      <p class="text-p">بدلًا من تساءل: "أي أداة أفتح؟"، يصبح السؤال: "ما النتيجة التي أريد تحقيقها؟". ثم تتولى طبقة التنفيذ ترجمة الهدف إلى سلسلة من الخطوات والأدوات والوكلاء والعمليات. وهذا التحول هو أحد المحاور الأساسية التي يدرسها CEAI.</p>`
-        },
-        {
-            title: "رأس المال التنفيذي ورأس مال القرار",
-            content: `<p class="text-p"><strong>رأس المال التنفيذي (Execution Capital):</strong> يقصد به مجموعة الأصول والبنية المؤسسية التي تجعل المؤسسة أكثر قدرة على تحويل الأهداف إلى نتائج. ويشمل البيانات المؤسسية، السياق المتراكم، التكاملات البرمجية، واجهات API، سير العمل، الوكلاء، الذاكرة المؤسسية، قواعد الحوكمة، وآليات التحقق.</p>
-                      <p class="text-p"><strong>رأس مال القرار (Decision Capital):</strong> هو القيمة المتراكمة من القرارات السابقة والنتائج والتقييمات والقواعد التي تساعد الأنظمة المستقبلية على اتخاذ قرارات أكثر اتساقًا مع أهداف المؤسسة. ولا يتعلق الأمر بمجرد تخزين البيانات، بل بتكوين ذاكرة تشغيلية للقرارات لاستخدامها في تحسين التنفيذ المستقبلي.</p>`
-        },
-        {
-            title: "مُصرّف الأوامر وواجهة النية",
-            content: `<p class="text-p"><strong>مُصرّف الأوامر (Command Compiler):</strong> هو طبقة مفاهيمية مسؤولة عن تحويل النية البشرية غير المنظمة إلى تمثيل تنفيذي منظم وفق المسار: Natural Language → Intent → Constraints → Objectives → Plan → Tasks → Agents → Execution.</p>
-                      <p class="text-p"><strong>واجهة النية (Intent Interface):</strong> جيل متتقدم من واجهات التفاعل، حيث لا يكون المستخدم مضطرًا إلى التنقل يدويًا بين عشرات الأدوات، بل يحدد الهدف وتتكيف الواجهة والنظام حول المهمة المطلوب إنجازها.</p>`
-        },
-        {
-            title: "من اقتصاد المعلومات إلى اقتصاد التنفيذ (الرسالة الختامية)",
-            content: `<p class="text-p">لم تعد المسألة الأساسية في الذكاء الاصطناعي هي مقدار المعلومات التي يستطيع النظام إنتاجها. السؤال الأهم هو: كيف تتحول هذه القدرة على الفهم إلى تنفيذ؟</p>
-                      <p class="text-p">وهنا تقع فرضية اقتصاد أوامر الذكاء الاصطناعي. إذا كانت البرمجيات التقليدية قد جعلت المعلومات قابلة للوصول، وإذا جعل الذكاء الاصطناعي المعرفة قابلة للتوليد، فإن المرحلة التالية قد تجعل النية قابلة للتنفيذ.</p>
-                      <p class="text-p">ومن هذا المنطلق، تمثل AI Execution Infrastructure طبقة بحثية وتقنية جديدة تستحق الدراسة. وتأتي Smart Hand ضمن هذه الرؤية باعتبارها تصورًا لبنية تربط الإنسان بالأنظمة الذكية عبر سلسلة القيمة المحكمة.</p>`
-        }
-    ];
-
-    const glossaryDataset = [
-        { term: "اقتصاد أوامر الذكاء الاصطناعي", code: "CEAI", desc: "إطار بحثي وتحليلي يدرس تطور التنسيق الاقتصادي عندما تصبح النية البشرية، المعبر عنها باللغة الطبيعية، مدخلًا مباشرًا إلى أنظمة الذكاء الاصطناعي القادرة على التخطيط والتنفيذ." },
-        { term: "بنية تنفيذ الذكاء الاصطناعي", code: "AI Execution Infrastructure", desc: "طبقة البنية التحتية التي تربط النية البشرية بالتخطيط والتنفيذ والتحقق والنتائج عبر أنظمة الذكاء الاصطناعي والوكلاء." },
-        { term: "اليد الذكية", code: "Smart Hand", desc: "مفهوم لبنية تنفيذية تهدف إلى تحويل النية البشرية إلى عمليات منسقة ونتائج قابلة للتحقق باستخدام الذكاء الاصطناعي والوكلاء." },
-        { term: "واجهة النية", code: "Intent Interface", desc: "واجهة تركز على الهدف الذي يريد المستخدم تحقيقه بدلًا من إجباره على التعامل يدويًا مع الأدوات والعمليات التقنية." },
-        { term: "هندسة الأوامر", code: "Command Engineering", desc: "منهجية تصميم الأوامر والأهداف والقيود والسياق بطريقة تجعلها قابلة للتفسير والتنفيذ والتحقق بواسطة الأنظمة الذكية." },
-        { term: "مُصرّف الأوامر", code: "Command Compiler", desc: "طبقة تحول اللغة الطبيعية والنية البشرية إلى تمثيل منظم يمكن تحويله إلى خطة تنفيذية ومهام ووكلاء." },
-        { term: "رأس المال التنفيذي", code: "Execution Capital", desc: "مجموعة الأصول المؤسسية والتقنية والسياقية التي تقلل الاحتكاك بين القرار والتنفيذ." },
-        { term: "رأس مال القرار", code: "Decision Capital", desc: "القيمة المتراكمة من القرارات السابقة ونتائجها وتقييماتها التي يمكن استخدامها لتوجيه قرارات وتنفيذات مستقبلية." },
-        { term: "الذاكرة المؤسسية للذكاء الاصطناعي", code: "AI Institutional Memory", desc: "طبقة تحتفظ بالسياق والقرارات والنتائج والتجارب السابقة للمؤسسة لتوفير أساس أكثر اتساقًا للأنظمة الذكية." },
-        { term: "تنسيق الوكلاء", code: "Multi-Agent Orchestration", desc: "تنسيق مجموعة من الوكلاء المتخصصين بحيث يعملون ضمن خطة واحدة ويتبادلون البيانات والمهام والنتائج." },
-        { term: "دورة حياة الأمر", code: "Command Lifecycle", desc: "المسار الذي يمر به الأمر منذ استقبال النية، وفهمها، وتخطيطها، وتوزيع المهام، وتنفيذها، ثم التحقق من النتائج." },
-        { term: "ميزة التنفيذ", code: "Execution Advantage", desc: "الميزة الناتجة عن قدرة مؤسسة ما على تحويل الاستراتيجية إلى تنفيذ فعلي بسرعة ودقة واحتكاك أقل من المنافسين." },
-        { term: "فجوة النية والتنفيذ", code: "Intent-to-Execution Gap", desc: "الفجوة بين ما يريد الإنسان تحقيقه وبين قدرته الفعلية على تحويل ذلك الهدف إلى عمليات رقمية ونتائج قابلة للتحقق." },
-        { term: "نظام التشغيل الاقتصادي الذكي", code: "Intelligent Economic OS", desc: "تصور لطبقة برمجية قادرة على تنسيق الموارد والعمليات والوكلاء والقرارات حول أهداف اقتصادية ومؤسسية محددة." },
-        { term: "اقتصاد الأوامر التاريخي", code: "Command Economy", desc: "مصطلح اقتصادي تاريخي يشير إلى نماذج التخطيط المركزي التي ترتبط عادةً بسلطة الدولة على الإنتاج وتوزيع الموارد. ويختلف هذا المفهوم عن CEAI اختلافًا جوهريًا." }
-    ];
-
-    const compareDataset = {
-        headers: ["محور المقارنة", "اقتصاد الأوامر التاريخي", "اقتصاد أوامر الذكاء الاصطناعي (CEAI)"],
-        rows: [
-            ["مصدر التوجيه", "سلطة سياسية مركزية أو مؤسسات حكومية", "نية وأهداف صادرة عن أفراد ومؤسسات ومستخدمين"],
-            ["طبيعة الأمر", "قرار إداري أو اقتصادي مركزي", "هدف تشغيلي قابل للترجمة والتنفيذ حاسوبيًا"],
-            ["آلية التنسيق", "التخطيط الإداري المركزي", "تنسيق رقمي متعدد الوكلاء"],
-            ["العلاقة بالسوق", "يستبدل أو يقيد آليات السوق في النموذج التقليدي", "يعمل داخل الأسوق والاقتصادات القائمة"],
-            ["وحدة التنسيق", "الخطة والقرار الإداري", "النية والأمر والهدف"],
-            ["البنية التقنية", "مؤسسات التخطيط والأنظمة الإدارية", "نماذج الذكاء الاصطناعي والوكلاء ومحركات التنفيذ"],
-            ["دور اللغة", "أداة تواصل", "واجهة محتملة للتفاعل مع الأنظمة والتنفيذ"],
-            ["التنفيذ", "مؤسسات وموارد بشرية وإدارية", "أنظمة رقمية ووكلاء وواجهات API وعمليات آلية"],
-            ["الذاكرة", "سجلات وخطط مؤسسية", "ذاكرة مؤسسية وسياق وبيانات ونتائج تشغيلية"],
-            ["القياس", "أهداف إنتاج ومؤشرات اقتصادية مركزية", "مؤشرات أداء ونتائج تنفيذية قابلة للتحقق"],
-            ["الحوكمة", "سلطة سياسية وإدارية", "حوكمة بشرية وتقنية وأمنية"],
-            ["الهدف البحثي", "دراسة التخطيط المركزي للاقتصاد", "دراسة التحول من النية إلى التنفيذ الاقتصادي الذكي"]
-        ]
-    };
-
-    const faqDataset = [
-        // القسم الأول - الأساسيات والتعريفات (1–20)
-        { id: 1, cat: "cat1", q: "ما هو اقتصاد أوامر الذكاء الاصطناعي (CEAI)؟", a: "هو إطار بحثي وتحليلي يدرس كيف يتغير التنسيق الاقتصادي عندما تصبح النية البشرية، المعبر عنها باللغة الطبيعية، مدخلًا مباشرًا إلى أنظمة الذكاء الاصطناعي القادرة على التخطيط والتنفيذ وتحقيق نتائج اقتصادية." },
-        { id: 2, cat: "cat1", q: "لماذا سُمي باقتصاد أوامر الذكاء الاصطناعي؟", a: "لأن الفرضية الأساسية هي أن الأمر أو الهدف المنظم يمكن أن يصبح وحدة جديدة من وحدات التنسيق بين الإنسان والبنية الحاسوبية." },
-        { id: 3, cat: "cat1", q: "هل CEAI هو نفسه اقتصاد الأوامر التقليدي؟", a: "لا. اقتصاد الأوامر التاريخي يرتبط بالتخطيط السياسي المركزي، بينما CEAI يدرس تنسيق النية البشرية مع الأنظمة الحاسوبية داخل بيئات اقتصادية ومؤسسية متنوعة." },
-        { id: 4, cat: "cat1", q: "هل CEAI نظام اقتصادي جديد بالكامل؟", a: "ليس المقصود به استبدال الأنظمة الاقتصادية القائمة، بل دراسة طبقة تنفيذ وتنسيق جديدة يمكن أن تعمل فوقها." },
-        { id: 5, cat: "cat1", q: "ما الفكرة المركزية في CEAI؟", a: "الانتقال من استخدام الذكاء الاصطناعي للحصول على إجابات ومخرجات إلى استخدامه لتحويل الأهداف البشرية إلى خطط وعمليات ونتائج." },
-        { id: 6, cat: "cat1", q: "ما المشكلة التي يحاول CEAI دراستها؟", a: "فجوة النية والتنفيذ؛ أي المسافة بين ما يريد الإنسان تحقيقه وبين الوقت والجهد والتعقيد اللازم لتحويل ذلك إلى نتيجة فعلية." },
-        { id: 7, cat: "cat1", q: "ما الفرق بين Prompt Economy وCEAI؟", a: "يركز Prompt Economy على تصميم واستخدام Prompts للحصول على مخرجات من نماذج الذكاء الاصطناعي، بينما يوسع CEAI الفكرة إلى منظومة تحول النية إلى تخطيط وتنفيذ ونتائج." },
-        { id: 8, cat: "cat1", q: "هل الأمر في CEAI مجرد Prompt؟", a: "لا. الأمر في CEAI يمثل هدفًا تشغيليًا قد يتضمن النتيجة المطلوبة والقيود والسياق ومؤشرات النجاح والموارد المطلوبة." },
-        { id: 9, cat: "cat1", q: "لماذا أصبحت النية البشرية مهمة اقتصاديًا؟", a: "لأن تطور الذكاء الاصطناعي يقلل تدريجيًا من الحواجز التقنية بين الفكرة والتنفيذ، مما يجعل جودة تحديد الهدف وتوجيه النظام أكثر أهمية." },
-        { id: 10, cat: "cat1", q: "ماذا يعني أن اللغة أصبحت واجهة اقتصادية؟", a: "يعني أن اللغة الطبيعية يمكن أن تصبح وسيلة للتفاعل مع الأنظمة وتوجيه العمليات بدل الاعتماد الكامل على واجهات الأدوات التقليدية." },
-        { id: 11, cat: "cat1", q: "ما الفرق بين اقتصاد المعلومات وCEAI؟", a: "اقتصاد المعلومات يركز بدرجة كبيرة على إنتاج المعلومات والوصول إليها وتداولها، بينما يدرس CEAI الانتقال من المعلومات إلى الفعل والتنفيذ." },
-        { id: 12, cat: "cat1", q: "ما الفرق بين اقتصاد المنصات وCEAI؟", a: "اقتصاد المنصات يركز على ربط المشاركين في شبكة، بينما يركز CEAI على ربط النية البشرية بالأنظمة القادرة على تنفيذ الهدف." },
-        { id: 13, cat: "cat1", q: "ما العنصر الجديد الذي يقترحه CEAI؟", a: "اقتراح دراسة طبقة معيارية بين النية البشرية والتنفيذ الحاسوبي، بحيث تتحول النية إلى خطط وأعمال ونتائج." },
-        { id: 14, cat: "cat1", q: "لماذا يمكن اعتبار CEAI طبقة اقتصادية ناشئة؟", a: "لأن تطور الوكلاء والأنظمة التنفيذية يفتح إمكانية انتقال الذكاء الاصطناعي من دور المساعد إلى دور البنية التشغيلية." },
-        { id: 15, cat: "cat1", q: "هل يقتصر CEAI على شركات التقنية؟", a: "لا. يمكن أن يظهر في قطاعات مثل التمويل، والتصنيع، والتعليم، والخدمات المهنية، والتجارة، وسلاسل الإمداد وغيرها." },
-        { id: 16, cat: "cat1", q: "ما مثال عملي بسيط؟", a: "يمكن لقائد مؤسسة تحديد هدف مثل دخول سوق جديد، ثم تتولى منظومة ذكية جمع البيانات، وبناء خطة، وتنسيق المهام، وتنفيذ أجزاء منها، وقياس النتائج." },
-        { id: 17, cat: "cat1", q: "ما الفرق بين المساعد الذكي ومحرك CEAI؟", a: "المساعد غالبًا يركز على الاستجابة لطلب المستخدم، بينما يستهدف محرك CEAI بناء سلسلة كاملة من الفهم والتخطيط والتنفيذ والتحقق." },
-        { id: 18, cat: "cat1", q: "هل يعني CEAI استبدال الإنسان؟", a: "لا. الفكرة الأساسية هي نقل الإنسان من تنفيذ العمليات المتكررة إلى تحديد الأهداف والإشراف والحوكمة واتخاذ القرارات ذات الأهمية." },
-        { id: 19, cat: "cat1", q: "لماذا أصبح هذا الإطار مهمًا الآن؟", a: "لأن الذكاء الاصطناعي ينتقل بسرعة من توليد المحتوى إلى الأنظمة الوكيلة القادرة على تنفيذ مهام متعددة الخطوات." },
-        { id: 20, cat: "cat1", q: "ما الرسالة الأساسية لـ CEAI؟", a: "القيمة المستقبلية لن تأتي فقط من امتلاك المعرفة، بل من القدرة على تحويل النية البشرية إلى تنفيذ ذكي قابل للتوسع والقياس." },
-
-        // القسم الثاني - الفلسفة والتحول (21–40)
-        { id: 21, cat: "cat2", q: "ما التحول الذي يدرسه CEAI؟", a: "الانتقال من بنية تقنية تتمحور حول الأدوات إلى بنية تتمحور حول النية والنتائج." },
-        { id: 22, cat: "cat2", q: "لماذا يمكن اعتبار النية أصلًا استراتيجيًا؟", a: "لأن الأنظمة قد تصبح قادرة على تنفيذ عدد متزايد من المهام، مما يجعل تحديد الأهداف الصحيحة وتوجيه الموارد نحوها عاملًا تنافسيًا مهمًا." },
-        { id: 23, cat: "cat2", q: "كيف تتحول الأوامر إلى سير عمل؟", a: "يتم تفسير الهدف، واستخراج القيود، وتقسيم المهمة إلى خطوات، وتحديد الوكلاء والأدوات، ثم تنفيذها ومراجعة النتائج." },
-        { id: 24, cat: "cat2", q: "ما أثر تكيف الآلة مع اللغة البشرية؟", a: "يمكن أن يقلل من الحاجة إلى تعلم تفاصيل الأدوات والواجهات، ويجعل التفاعل مع الأنظمة أكثر قربًا من طريقة التعبير البشري عن الأهداف." },
-        { id: 25, cat: "cat2", q: "لماذا تعد اللغة طبقة تنسيق مهمة؟", a: "لأنها تسمح بتوصيف الهدف والسياق والقيود بطريقة يمكن للنماذج والأنظمة الذكية تفسيرها وتحويلها إلى عمليات." },
-        { id: 26, cat: "cat2", q: "ما المقصود بميزة التنفيذ؟", a: "هي قدرة المؤسسة على الانتقال من الاستراتيجية إلى التنفيذ الفعلي بسرعة ودقة مع المحافظة على الحوكمة والقياس." },
-        { id: 27, cat: "cat2", q: "هل يلغي CEAI مرحلة البحث والاستكشاف؟", a: "ليس بالضرورة. الهدف هو تقليل الوقت والاحتكاك في العمليات التي يمكن للأنظمة الذكية تنفيذها، مع إبقاء البحث والتحقق البشري عند الحاجة." },
-        { id: 28, cat: "cat2", q: "ماذا يحدث عندما تتقلص مدة الانتقال من الفكرة إلى المنتج؟", a: "يمكن أن تتسارع دورات التجربة والتعلم وإطلاق المنتجات، ما يزيد من سرعة الابتكار والمنافسة." },
-        { id: 29, cat: "cat2", q: "ما الاقتصاد الدلالي؟", a: "هو تصور لاقتصاد تصبح فيه اللغة والنية والسياق طبقات أساسية للتفاعل مع الأنظمة الاقتصادية والرقمية." },
-        { id: 30, cat: "cat2", q: "كيف يمكن للتركيز على النتائج أن يغير تخصيص رأس المال؟", a: "يمكن أن يدفع المؤسسات إلى ربط بعض الإنفاق بالمخرجات والنتائج بدل الاعتماد فقط على عدد المستخدمين أو الساعات أو الأدوات." },
-        { id: 31, cat: "cat2", q: "ما مستقبل واجهات المستخدم التقليدية؟", a: "لن تختفي بالضرورة، لكنها قد تصبح أقل مركزية في بعض العمليات مع ظهور واجهات تعتمد على النية وتوليد الواجهات حسب المهمة." },
-        { id: 32, cat: "cat2", q: "لماذا يمثل السياق أصلًا استراتيجيًا؟", a: "لأن النظام الذي يفهم المؤسسة وبيئتها وتاريخ قراراتها يستطيع إنتاج تنفيذ أكثر ارتباطًا بالواقع المؤسسي." },
-        { id: 33, cat: "cat2", q: "كيف يمكن أن تتغير نماذج تسعير الخدمات؟", a: "قد تظهر نماذج تعتمد بصورة أكبر على النتائج المحققة، إلى جانب النماذج الحالية القائمة على الاشتراكات والاستخدام." },
-        { id: 34, cat: "cat2", q: "ما الشركة ذات المشغل الواحد؟", a: "هي تصور لمؤسسة يمكن أن يديرها عدد صغير جدًا من البشر بينما تتولى أنظمة ذكية ووكلاء أجزاء كبيرة من العمليات." },
-        { id: 35, cat: "cat2", q: "كيف يظهر رأس المال التنفيذي؟", a: "يمكن أن يظهر كقدرة مؤسسية متراكمة تشمل البيانات والتكاملات والسياق والوكلاء وسير العمل والحوكمة." },
-        { id: 36, cat: "cat2", q: "ماذا يحدث للخبرة التخصصية؟", a: "لا تختفي، بل قد تنتقل قيمتها من تنفيذ الخطوات يدويًا إلى صياغة الأهداف والتحقق من القرارات وإدارة الأنظمة." },
-        { id: 37, cat: "cat2", q: "كيف يمكن أن تتغير الوظائف؟", a: "قد تظهر أدوار جديدة مثل مهندس الأوامر الاستراتيجية، ومهندس تنسيق الوكلاء، ومدقق التنفيذ الذكي، ومدير محافظ الأهداف." },
-        { id: 38, cat: "cat2", q: "لماذا تظل المراجعة البشرية مهمة؟", a: "لأن الأنظمة الذكية يمكن أن تخطئ أو تفسر النية بصورة غير صحيحة، ولذلك تحتاج العمليات المهمة إلى رقابة بشرية وحوكمة واضحة." },
-        { id: 39, cat: "cat2", q: "ما خصائص واجهة النية؟", a: "تبدأ من الهدف والسياق، وتتكيف مع المهمة، وتعرض المعلومات والأدوات اللازمة لتنفيذ الهدف بدل فرض مسار ثابت على المستخدم." },
-        { id: 40, cat: "cat2", q: "كيف يمكن لـ CEAI تقليل تكاليف المعاملات؟", a: "من خلال تقليل العمليات اليدوية المتكررة، وتحسين التنسيق بين الأنظمة، وأتمتة أجزاء من سير العمل." },
-
-        // القسم الثالث - البنية والتقنية (41–60)
-        { id: 41, cat: "cat3", q: "ما البنية التقنية الأساسية لـ CEAI؟", a: "يمكن تصورها كسلسلة تبدأ بفهم النية، ثم التخطيط، ثم تنسيق الوكلاء، ثم التنفيذ، ثم التحقق من النتائج." },
-        { id: 42, cat: "cat3", q: "ما وظيفة طبقة النية؟", a: "استقبال المدخل البشري وتحليله واستخراج الهدف والسياق والقيود والمعلومات اللازمة للتنفيذ." },
-        { id: 43, cat: "cat3", q: "ما وظيفة طبقة الأمر؟", a: "تحويل النية المفهومة إلى مواصفات تنفيذية منظمة يمكن للنظام استخدامها في التخطيط." },
-        { id: 44, cat: "cat3", q: "ما دور النماذج الأساسية؟", a: "تعمل كمحركات للاستدلال وفهم السياق وتحليل المدخلات وتوليد الخطط والقرارات المقترحة." },
-        { id: 45, cat: "cat3", q: "لماذا تعد الوكلاء قوة تنفيذية؟", a: "لأن الوكلاء يمكن تصميمهم للتفاعل مع الأدوات والأنظمة والواجهات وتنفيذ خطوات محددة ضمن صلاحيات واضحة." },
-        { id: 46, cat: "cat3", q: "ما هو التنسيق الذكي؟", a: "هو إدارة المهام والتبعيات وتبادل المعلومات وترتيب التنفيذ بين مجموعة من الوكلاء والأنظمة." },
-        { id: 47, cat: "cat3", q: "ما الفرق بين Generative AI وCEAI؟", a: "يركز Generative AI على توليد المحتوى أو المخرجات، بينما يدرس CEAI البنية التي تحول الذكاء إلى عمليات وتنفيذ ونتائج." },
-        { id: 48, cat: "cat3", q: "ما المقصود بـ Command Architecture؟", a: "هي البنية التي تربط الأهداف والسياق والبيانات والقيود بالعمليات التنفيذية لضمان اتساق النظام مع الهدف." },
-        { id: 49, cat: "cat3", q: "ما هو Command Compiler؟", a: "هو طبقة تحول الأوامر الطبيعية إلى تمثيل منظم يمكن استخدامه لبناء خطط ومهام ومسارات تنفيذ." },
-        { id: 50, cat: "cat3", q: "ما هي الذاكرة المؤسسية للذكاء الاصطناعي؟", a: "مخزن للسياق والقرارات والنتائج والخبرات السابقة التي تساعد الأنظمة على العمل وفق تاريخ المؤسسة." },
-        { id: 51, cat: "cat3", q: "ما هو Decision Capital تقنيًا؟", a: "هو مجموعة القرارات والتقييمات والنتائج السابقة التي يمكن استخدامها لتوجيه عمليات اتخاذ القرار المستقبلية." },
-        { id: 52, cat: "cat3", q: "ما الفرق بين Copilot وIntelligent Economic OS؟", a: "Copilot يساعد المستخدم في مهمة محددة، بينما يهدف نظام التشغيل الاقتصادي الذكي إلى تنسيق مجموعة أكبر من الموارد والعمليات حول أهداف مؤسسية." },
-        { id: 53, cat: "cat3", q: "ما مراحل دورة حياة الأمر؟", a: "استقبال النية، فهمها، صياغة الهدف، التخطيط، توزيع المهام، التنفيذ، المراقبة، التحقق، ثم التعلم من النتيجة." },
-        { id: 54, cat: "cat3", q: "لماذا تعد حلقة التغذية الراجعة مهمة؟", a: "لأن النتائج الفعلية يمكن أن تكشف الانحراف عن الهدف وتسمح للنظام أو المشرف بإعادة ضبط المسار." },
-        { id: 55, cat: "cat3", q: "لماذا تعد قابلية القياس مهمة؟", a: "لأن النظام لا يستطيع معرفة نجاح التنفيذ دون وجود معايير أو مؤشرات يمكن مقارنة النتائج بها." },
-        { id: 56, cat: "cat3", q: "ما هي Command Network؟", a: "شبكة من الأنظمة والخدمات والوكلاء تتبادل الأوامر والبيانات والنتائج لتنفيذ أهداف أكبر." },
-        { id: 57, cat: "cat3", q: "ما البنية المميزة لواجهة النية؟", a: "هي واجهة تبدأ من الهدف ويمكن أن تغير طريقة عرض الأدوات والبيانات وفق المهمة المطلوبة." },
-        { id: 58, cat: "cat3", q: "ما الفرق بين RPA وCEAI؟", a: "RPA يعتمد غالبًا على مسارات وقواعد محددة مسبقًا، بينما يضيف CEAI قدرات الاستدلال والتكيف والتخطيط الديناميكي." },
-        { id: 59, cat: "cat3", q: "لماذا تحتاج منظومة CEAI إلى معايير مفتوحة؟", a: "لتمكين أنظمة ووكلاء مختلفين من التفاعل بأمان وفهم السياق والأوامر دون الاعتماد على نظام مغلق واحد." },
-        { id: 60, cat: "cat3", q: "ما سلسلة القيمة الكاملة لـ CEAI؟", a: "النية البشرية ← فهم النية ← الأمر المنظم ← التخطيط ← الوكلاء ← التنسيق ← التنفيذ ← التحقق ← النتيجة الاقتصادية." },
-
-        // القسم الرابع - الأعمال والأسواق (61–80)
-        { id: 61, cat: "cat4", q: "كيف يمكن أن يغير CEAI نماذج الأعمال؟", a: "يمكن أن ينقل بعض نماذج الأعمال من بيع الأدوات فقط إلى تقديم التنفيذ أو النتائج." },
-        { id: 62, cat: "cat4", q: "لماذا يمكن أن يصبح CEAI طبقة استراتيجية؟", a: "لأن القدرة على تقليل المسافة بين القرار والتنفيذ قد تمنح المؤسسات سرعة تشغيلية وتنافسية أعلى." },
-        { id: 63, cat: "cat4", q: "كيف يتغير مفهوم المنافسة؟", a: "قد تنتقل المنافسة جزئيًا من حجم القوى العاملة والبرمجيات إلى سرعة التعلم والتنفيذ وجودة التنسيق بين الإنسان والآلة." },
-        { id: 64, cat: "cat4", q: "أين توجد فرص الاستثمار؟", a: "في البنية التحتية للتنفيذ، وتنسيق الوكلاء، وأمن الأوامر، والذاكرة المؤسسية، وطبقات السياق، والتحقق، وواجهات النية." },
-        { id: 65, cat: "cat4", q: "لماذا تعد هندسة الأوامر مهارة استراتيجية؟", a: "لأن الأهداف غير الواضحة قد تؤدي إلى تنفيذ غير دقيق، بينما تساعد الأوامر المنظمة على تحديد المطلوب والقيود ومؤشرات النجاح." },
-        { id: 66, cat: "cat4", q: "كيف يمكن أن تستفيد الشركات الناشئة؟", a: "من خلال تمكين فرق صغيرة من تشغيل عمليات كانت تتطلب سابقًا فرقًا أكبر، مع الحفاظ على الرقابة والحوكمة." },
-        { id: 67, cat: "cat4", q: "ما الفرق بين SaaS التقليدي ومنصة CEAI؟", a: "SaaS يقدم أداة يستخدمها الإنسان، بينما يمكن لمنصة CEAI أن تضيف طبقة تنفذ الهدف عبر مجموعة من الأدوات والوكلاء." },
-        { id: 68, cat: "cat4", q: "كيف يمكن أن تتغير شركات الخدمات المهنية؟", a: "قد تنتقل تدريجيًا من بيع ساعات العمل فقط إلى تقديم أنظمة وخدمات مستمرة مدعومة بالذكاء الاصطناعي." },
-        { id: 69, cat: "cat4", q: "ما أثر CEAI على المؤسسات الكبيرة؟", a: "يمكن أن يقلل بعض طبقات التنسيق اليدوي بين القيادة والعمليات من خلال ترجمة الأهداف إلى مهام تنفيذية أكثر مباشرة." },
-        { id: 70, cat: "cat4", q: "هل يمكن أن تظهر أنواع جديدة من الشركات؟", a: "نعم، مثل الشركات الصغيرة المدعومة بفرق كبيرة من الوكلاء، أو منصات متخصصة في تنفيذ الأهداف، أو أسواق لتبادل سير العمل الذكي." },
-        { id: 71, cat: "cat4", q: "كيف يمكن أن يتغير مفهوم ريادة الأعمال؟", a: "يمكن أن يصبح بناء الأنظمة وتحديد الرؤية وإدارة المخاطر والحوكمة أكثر أهمية من إدارة كل عملية تشغيلية يدويًا." },
-        { id: 72, cat: "cat4", q: "كيف يمكن أن تتغير الأسواق؟", a: "قد تصبح بعض العمليات التجارية أكثر برمجية وديناميكية مع استخدام الوكلاء لاتخاذ قرارات وتنفيذ معاملات ضمن حدود محددة." },
-        { id: 73, cat: "cat4", q: "ما هو Command Marketplace؟", a: "سوق محتمل لتبادل الأوامر أو سير العمل أو البنى التنفيذية التي يمكن اختبارها وتقييمها وإعادة استخدامها." },
-        { id: 74, cat: "cat4", q: "لماذا تعد البيانات والسياق مهمين؟", a: "لأن الأمر العام لا يكفي وحده لتحقيق تنفيذ جيد؛ يحتاج النظام إلى سياق المؤسسة والبيانات والقيود المرتبطة بالمهمة." },
-        { id: 75, cat: "cat4", q: "ما الذي يصنع ميزة التنفيذ؟", a: "القدرة على تقليل الوقت والاحتكاك والأخطاء بين تحديد الهدف وتحقيق النتيجة." },
-        { id: 76, cat: "cat4", q: "كيف قد تتغير معايير تقييم الشركات؟", a: "يمكن أن تصبح جودة البنية التنفيذية، ومعدل استخدام الوكلاء، ووقت الوصول إلى النتائج، وكفاءة رأس المال، مؤشرات إضافية إلى جانب مؤشرات البرمجيات التقليدية." },
-        { id: 77, cat: "cat4", q: "ما القطاعات الأكثر قابلية للتأثر؟", a: "القطاعات كثيفة المعرفة والقرارات مثل التمويل، والخدمات المهنية، والإعلان، والبرمجيات، واللوجستيات، وسلاسل الإمداد." },
-        { id: 78, cat: "cat4", q: "ما الفرق بين اقتصاد المنصات وCEAI؟", a: "المنصة تسهل الوصول إلى شبكة أو خدمة، بينما يركز CEAI على تحويل هدف المستخدم إلى تنفيذ منسق." },
-        { id: 79, cat: "cat4", q: "هل يمكن أن تظهر أسواق جديدة؟", a: "نعم، يمكن أن تظهر أسواق مرتبطة بالتحقق من الوكلاء، وأمن التنفيذ، وإدارة السياق، وتأمين العمليات، وقياس النتائج." },
-        { id: 80, cat: "cat4", q: "ما الوجهة التجارية النهائية المحتملة؟", a: "اقتصاد تصبح فيه النية البشرية المنظمة نقطة انطلاق مباشرة للعمليات الرقمية، بينما تتولى طبقات التنفيذ الذكي تحويلها إلى نتائج." },
-
-        // القسم الخامس - المستقبل والنقد (81–100)
-        { id: 81, cat: "cat5", q: "لماذا يُطرح CEAI كإطار بحثي؟", a: "لأنه لا يركز على نموذج ذكاء اصطناعي محدد، بل يحاول دراسة التغيرات الأوسع في الإنتاج والتنظيم ورأس المال والتنفيذ." },
-        { id: 82, cat: "cat5", q: "هل يبني CEAI نظامًا اقتصاديًا كليًا جديدًا؟", a: "لا. هو إطار لتحليل طبقة تنفيذ تقنية واقتصادية يمكن أن تعمل داخل النظم الاقتصادية القائمة." },
-        { id: 83, cat: "cat5", q: "لماذا يسبب اسم Command Economy احتكاكًا دلاليًا؟", a: "لأن المصطلح مرتبط تاريخيًا بالاقتصادات المخططة مركزيًا." },
-        { id: 84, cat: "cat5", q: "كيف يمكن الفصل بين CEAI والاقتصادات المخططة؟", a: "من خلال تحديد مصدر الأمر؛ ففي CEAI يأتي الأمر من النية البشرية اللامركزية، بينما يشير النموذج التاريخي إلى سلطة سياسية مركزية." },
-        { id: 85, cat: "cat5", q: "هل يدعو CEAI إلى اقتصاد مخطط من الدولة؟", a: "لا. الإطار يركز على البنية التقنية والتنفيذية للعلاقة بين الإنسان والأنظمة الذكية." },
-        { id: 86, cat: "cat5", q: "هل يحمل CEAI توجهًا سياسيًا؟", a: "ليس في تعريفه البحثي. المصطلح 'Command' يشير إلى الأمر التشغيلي الموجه إلى النظام، وليس إلى السلطة السياسية." },
-        { id: 87, cat: "cat5", q: "لماذا لم يتم اختيار اسم مختلف؟", a: "لأن الاسم يعبر عن الفرضية الأساسية حول تحول الأمر والنية إلى وحدة تنسيق وتنفيذ جديدة، مع ضرورة توضيح الاختلاف التاريخي بوضوح." },
-        { id: 88, cat: "cat5", q: "كيف يمنع CEAI الالتباس مع التخطيط المركزي؟", a: "من خلال تعريفه للأمر باعتباره نية تشغيلية صادرة عن مستخدم أو مؤسسة، وليس قرارًا سياسيًا صادرًا عن دولة." },
-        { id: 89, cat: "cat5", q: "ما أهم الانتقادات البحثية المحتملة؟", a: "تشمل دقة فهم النوايا الغامضة، ومخاطر الانحراف أثناء التنفيذ، والاعتماد على جودة البيانات، وصعوبة ضمان الاستقلالية الآمنة." },
-        { id: 90, cat: "cat5", q: "هل يمكن لـ CEAI العمل دون أمن دلالي؟", a: "منظومات التنفيذ الحساسة تحتاج إلى طبقات قوية من الأمن والصلاحيات والتسجيل والتحقق حتى لا تتحول الأخطاء في فهم الأوامر إلى أخطاء تشغيلية." },
-        { id: 91, cat: "cat5", q: "ما الدور النهائي للإنسان؟", a: "يبقى الإنسان مصدر النية، وصاحب القرار الاستراتيجي، والمشرف على الحوكمة، والمسؤول عن القرارات التي تتطلب حكمًا أخلاقيًا أو قانونيًا أو تجاريًا." },
-        { id: 92, cat: "cat5", q: "هل يمكن أن تصبح الأوامر أصولًا رقمية؟", a: "قد تظهر أسواق لأوامر وسير عمل وبنى تنفيذية قابلة لإعادة الاستخدام، خصوصًا عندما تكون قابلة للتقييم وإثبات النتائج." },
-        { id: 93, cat: "cat5", q: "كيف يتغير مستقبل العمل المعرفي؟", a: "يمكن أن تنتقل بعض الأعمال من تنفيذ خطوات متكررة إلى تحديد الأهداف والإشراف والتصميم والحوكمة وإدارة الأنظمة الذكية." },
-        { id: 94, cat: "cat5", q: "هل يمكن لفريق صغير منافسة مؤسسة كبيرة؟", a: "يمكن للذكاء الاصطناعي تقليل بعض مزايا الحجم التقليدية، لكنه لا يلغي مزايا رأس المال والعلامة التجارية والخبرة والسوق والحوكمة." },
-        { id: 95, cat: "cat5", q: "هل يعتمد CEAI على AGI؟", a: "لا. يمكن تطوير كثير من عناصره باستخدام أنظمة الوكلاء والنماذج الحالية، بينما قد يؤدي ظهور قدرات أكثر تقدمًا إلى توسيع نطاق ما يمكن تنفيذه." },
-        { id: 96, cat: "cat5", q: "ما أهم المجالات البحثية التي يفتحها CEAI؟", a: "تشمل مواءمة النية، واقتصاديات الوكلاء، وبنية الشركات ذات التشغيل الذكي، ورأس المال التنفيذي، والحوكمة، وأمن التنفيذ، وقياس النتائج." },
-        { id: 97, cat: "cat5", q: "كيف يمكن أن يتطور CEAI خلال السنوات القادمة؟", a: "قد ينتقل من إطار مفاهيمي إلى منظومات عملية تتكامل فيها النية والتخطيط والتنفيذ والذاكرة والحوكمة داخل البنية المؤسسية." },
-        { id: 98, cat: "cat5", q: "ما الطبقات الأساسية لنضج CEAI؟", a: "يمكن تصور ست طبقات رئيسية: 1. التقاط النية 2. ترجمة الأوامر 3. التخطيط الذكي 4. الوكالة الذاتية 5. تنسيق الوكلاء والتنفيذ 6. الثقة والحوكمة وقياس النتائج." },
-        { id: 99, cat: "cat5", q: "ما الرؤية بعيدة المدى لـ CEAI؟", a: "أن تصبح اللغة والنية البشرية واجهة عالية المستوى للتفاعل مع البنية الاقتصادية الرقمية، بحيث تقل المسافة بين تحديد الهدف وتنفيذ القيمة." },
-        { id: 100, cat: "cat5", q: "ما الخلاصة النهائية لمفهوم اقتصاد أوامر الذكاء الاصطناعي؟", a: "يمثل CEAI إطارًا لدراسة تحول جوهري محتمل في الاقتصاد الرقمي: الانتقال من إدارة الأدوات والعمليات يدويًا إلى توجيه الأهداف والنتائج عبر أنظمة ذكاء اصطناعي قادرة على التخطيط والتنفيذ والتعلم ضمن حدود واضحة من الحوكمة البشرية." }
-    ];
-
-    function renderKnowledgeBase() {
-        const container = document.getElementById('kb-dynamic-content');
-        container.innerHTML = '';
-        kbDataset.forEach(block => {
-            const card = document.createElement('div');
-            card.className = 'kb-card';
-            card.innerHTML = `
-                <h2>${block.title}</h2>
-                <div class="lang-condensed-block">${block.content}</div>
-            `;
-            container.appendChild(card);
-        });
-    }
-
-    function renderFaqGrid() {
-        const grid = document.getElementById('masterFaqGrid');
-        grid.innerHTML = '';
-        faqDataset.forEach(item => {
-            const faqCard = document.createElement('div');
-            faqCard.className = 'faq-card-item faq-item-block';
-            faqCard.setAttribute('data-category', item.cat);
-            faqCard.innerHTML = `
-                <div class="faq-question-box">
-                    <div class="faq-badge">${item.id}</div>
-                    <div class="faq-q-text-group">
-                        <h3>${item.q}</h3>
-                    </div>
-                </div>
-                <div class="faq-answer-box">
-                    <p class="ans-text">${item.a}</p>
-                </div>
-            `;
-            grid.appendChild(faqCard);
-        });
-    }
-
-    function renderGlossary() {
-        const container = document.getElementById('glossary-dynamic-content');
-        container.innerHTML = '';
-        glossaryDataset.forEach(item => {
-            const card = document.createElement('div');
-            card.className = 'glossary-card';
-            card.innerHTML = `
-                <div class="glossary-title">
-                    <h3>${item.term}</h3>
-                    <span style="color: var(--text-dim); font-size: 13px; font-weight:600;">${item.code}</span>
-                </div>
-                <p class="ans-text" style="font-size:14.5px;">${item.desc}</p>
-            `;
-            container.appendChild(card);
-        });
-    }
-
-    function renderComparisonMatrix() {
-        const container = document.getElementById('compare-dynamic-content');
-        let tableHtml = `<table class="compare-table"><thead><tr>`;
-        compareDataset.headers.forEach(header => {
-            tableHtml += `<th>${header}</th>`;
-        });
-        tableHtml += `</tr></thead><tbody>`;
-
-        compareDataset.rows.forEach(row => {
-            tableHtml += `<tr>`;
-            row.forEach(cell => {
-                tableHtml += `<td>${cell}</td>`;
-            });
-            tableHtml += `</tr>`;
-        });
-        tableHtml += `</tbody></table>`;
-        container.innerHTML = tableHtml;
-    }
-
-    function switchMasterTab(element, tabId) {
-        currentTab = tabId;
-        document.querySelectorAll('.master-tab-btn').forEach(btn => btn.classList.remove('active'));
-        document.querySelectorAll('.view-content-section').forEach(view => view.classList.remove('active'));
-        
-        element.classList.add('active');
-        document.getElementById(tabId).classList.add('active');
-        
-        document.getElementById('faqSearchInput').value = '';
-        liveSearchFAQ();
-    }
-
-    function filterFaqCategory(btnElement, categoryId) {
-        document.querySelectorAll('.sub-filter-btn').forEach(btn => btn.classList.remove('active'));
-        btnElement.classList.add('active');
-        
-        const cards = document.querySelectorAll('.faq-item-block');
-        cards.forEach(card => {
-            if (categoryId === 'all' || card.getAttribute('data-category') === categoryId) {
-                card.setAttribute('data-filtered', 'true');
-            } else {
-                card.setAttribute('data-filtered', 'false');
-            }
-        });
-        liveSearchFAQ();
-    }
-
-    function liveSearchFAQ() {
-        const query = document.getElementById('faqSearchInput').value.toLowerCase().trim();
-        let totalVisible = 0;
-
-        if (currentTab === 'faq-view') {
-            const cards = document.querySelectorAll('.faq-item-block');
-            cards.forEach(card => {
-                const isFiltered = card.getAttribute('data-filtered') !== 'false';
-                const text = card.innerText.toLowerCase();
-                if (isFiltered && text.includes(query)) {
-                    card.style.display = 'block';
-                    totalVisible++;
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        } else if (currentTab === 'kb-view') {
-            const cards = document.querySelectorAll('.kb-card');
-            cards.forEach(card => {
-                if (card.innerText.toLowerCase().includes(query)) {
-                    card.style.display = 'block';
-                    totalVisible++;
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        } else if (currentTab === 'glossary-view') {
-            const cards = document.querySelectorAll('.glossary-card');
-            cards.forEach(card => {
-                if (card.innerText.toLowerCase().includes(query)) {
-                    card.style.display = 'block';
-                    totalVisible++;
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        } else if (currentTab === 'compare-view') {
-            const rows = document.querySelectorAll('.compare-table tbody tr');
-            const wrapper = document.querySelector('.table-wrapper');
-            let hasRows = false;
-            rows.forEach(row => {
-                if (row.innerText.toLowerCase().includes(query)) {
-                    row.style.display = '';
-                    hasRows = true;
-                    totalVisible++;
-                } else {
-                    row.style.display = 'none';
-                }
-            });
-            wrapper.style.display = hasRows ? 'block' : 'none';
-        }
-
-        const noResults = document.getElementById('faqNoResults');
-        if (totalVisible === 0) {
-            noResults.style.display = 'block';
-        } else {
-            noResults.style.display = 'none';
-        }
-    }
-
-    const bttBtn = document.getElementById('backToTop');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 400) {
-            bttBtn.style.display = 'flex';
-        } else {
-            bttBtn.style.display = 'none';
-        }
-    });
-    bttBtn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    document.addEventListener("DOMContentLoaded", function() {
-        renderKnowledgeBase();
-        renderFaqGrid();
-        renderGlossary();
-        renderComparisonMatrix();
-    });
+(function(){var p=document.getElementById('progress');function pr(){var h=document.documentElement;p.style.transform='scaleX('+(h.scrollTop/Math.max(1,h.scrollHeight-h.clientHeight))+')'}window.addEventListener('scroll',pr,{passive:true});pr();
+if('IntersectionObserver' in window){var L=document.querySelectorAll('.toc-side a');var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){L.forEach(function(a){a.removeAttribute('aria-current')});var a=document.querySelector('.toc-side a[href="#'+e.target.id+'"]');if(a)a.setAttribute('aria-current','true')}})},{rootMargin:'-20% 0px -70% 0px'});document.querySelectorAll('.hub-sec').forEach(function(x){io.observe(x)})}
+document.querySelectorAll('.toc-m a').forEach(function(a){a.addEventListener('click',function(){document.querySelector('.toc-m').open=false})});
+var b=document.getElementById('backToTop');window.addEventListener('scroll',function(){b.classList.toggle('visible',window.scrollY>400)},{passive:true});b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})})})();
 </script>
-
 </body>
 </html>

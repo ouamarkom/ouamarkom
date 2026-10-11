@@ -1,1180 +1,582 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Command Economy of AI (CEAI) | Strategic Encyclopedia & Knowledge Base | Ouamarkom</title>
-    <meta name="description" content="The official strategic knowledge base for the Command Economy of AI (CEAI), exploring AI execution infrastructure, human intent, command engineering, multi-agent systems, and intelligent economic execution.">
-    <meta name="keywords" content="Command Economy of AI, CEAI, AI Execution Infrastructure, Smart Hand, Intent Engineering, Command Engineering, AI Agents, Agentic AI, Multi-Agent Systems, Intelligent Economic Execution, Execution Capital, Decision Capital, Command Compiler, Intent Interface, Ouamarkom">
-    <meta name="author" content="Ouamarkom">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    
-    <!-- Canonical & Hreflang Tags -->
-    <link rel="canonical" href="https://ouamarkom.com/en/research" />
-    <link rel="alternate" hreflang="ar" href="https://ouamarkom.com/research" />
-    <link rel="alternate" hreflang="en" href="https://ouamarkom.com/en/research" />
-    <link rel="alternate" hreflang="x-default" href="https://ouamarkom.com/en/research" />
-  
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="/style.css">
-  
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "TechArticle",
-          "@id": "https://ouamarkom.com/en/research#article",
-          "headline": "Command Economy of AI (CEAI) | Strategic Encyclopedia & Knowledge Base",
-          "description": "An integrated research and conceptual framework comprising foundational literature and 100 pivotal Q&As detailing the conversion of human strategic intent into automated multi-agent execution.",
-          "inLanguage": "en",
-          "mainEntityOfPage": "https://ouamarkom.com/en/research",
-          "publisher": {
-            "@type": "Organization",
-            "name": "Ouamarkom",
-            "url": "https://ouamarkom.com/en",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://ouamarkom.com/logo.webp"
-            }
-          }
-        },
-        {
-          "@type": "FAQPage",
-          "@id": "https://ouamarkom.com/en/research#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "What is the Command Economy of AI (CEAI)?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "CEAI is a conceptual and research framework studying how economic coordination evolves when human intent, expressed through natural language and structured commands, becomes a primary interface for directing intelligent computational systems toward measurable execution and economic outcomes."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Why does CEAI differ fundamentally from historical command economies?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "In classic macroeconomics, a command economy implies centralized governmental planning and coercion. In CEAI, 'Command' represents high-level operationalized human intent converted into automated state-machine execution."
-              }
-            }
-          ]
-        }
-      ]
-    }
-    </script>
-      
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:site_name" content="Ouamarkom" />
-    <meta property="og:url" content="https://ouamarkom.com/en/research" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Command Economy of AI (CEAI) | Strategic Encyclopedia" />
-    <meta property="og:description" content="Explore the foundational concepts, strategic principles, technical architecture, terminology, and 100 core questions shaping the Command Economy of AI." />
-    <meta property="og:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Command Economy of AI (CEAI) | Strategic Knowledge Base">
-    <meta name="twitter:description" content="The official strategic knowledge base exploring how human intent becomes intelligent economic execution through AI execution infrastructure.">
-    <meta name="twitter:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg">
-
-    <style>
-        :root {
-            --primary: #040916;
-            --secondary: #0a192f;
-            --accent: #e6992d;
-            --gold: #fcd34d;
-            --text-main: #e6f1ff;
-            --text-dim: #8892b0;
-            --card-bg: rgba(10, 25, 47, 0.4);
-            --card-border: rgba(255, 255, 255, 0.05);
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            background-color: var(--primary);
-            color: var(--text-main);
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            overflow-x: hidden;
-            text-align: start;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            position: relative;
-            z-index: 2;
-        }
-
-        #network-canvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            pointer-events: none;
-            opacity: 0.4;
-        }
-
-        header {
-            border-bottom: 1px solid var(--card-border);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-        }
-
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 10px;
-        }
-
-        .logo-group {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            text-decoration: none;
-        }
-
-        .lang-controller {
-            display: flex;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid var(--card-border);
-            border-radius: 30px;
-            padding: 4px;
-            gap: 4px;
-        }
-
-        .lang-btn {
-            display: inline-block;
-            text-decoration: none;
-            background: transparent;
-            border: none;
-            color: var(--text-dim);
-            padding: 6px 18px;
-            border-radius: 20px;
-            font-weight: 600;
-            font-size: 13px;
-            transition: all 0.3s ease;
-        }
-
-        .lang-btn.active {
-            background: var(--accent);
-            color: #040916;
-            box-shadow: 0 2px 10px rgba(230, 153, 45, 0.25);
-        }
-
-        .faq-header-section {
-            text-align: center;
-            padding: 40px 0 20px 0;
-            min-height: auto;
-        }
-
-        .logo-img {
-            max-width: 100px;
-            height: auto;
-            margin-bottom: 0;
-            transition: transform 0.5s ease;
-        }
-
-        .logo-img:hover {
-            transform: rotate(5deg) scale(1.05);
-        }
-
-        .faq-header-section h1 {
-            font-size: 36px;
-            color: var(--text-main);
-            margin-bottom: 15px;
-            font-weight: 800;
-            line-height: 1.4;
-        }
-
-        .faq-header-section h1 span {
-            color: var(--accent);
-        }
-
-        .faq-header-section .subtitle {
-            font-size: 17px;
-            color: var(--text-dim);
-            max-width: 850px;
-            margin: 0 auto;
-            line-height: 1.8;
-        }
-
-        .search-wrapper {
-            max-width: 650px;
-            margin: 30px auto;
-            position: relative;
-            padding: 0 15px;
-        }
-
-        .search-input {
-            width: 100%;
-            padding: 16px 25px;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid var(--card-border);
-            border-radius: 50px;
-            color: #fff;
-            font-size: 16px;
-            outline: none;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-            text-align: inherit;
-        }
-
-        .search-input:focus {
-            border-color: var(--accent);
-            box-shadow: 0 0 15px rgba(230, 153, 45, 0.25);
-            background: rgba(255, 255, 255, 0.05);
-        }
-
-        .master-tabs {
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-            margin: 20px 0 40px 0;
-            flex-wrap: wrap;
-            padding: 0 15px;
-        }
-
-        .master-tab-btn {
-            padding: 10px 22px;
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid var(--card-border);
-            border-radius: 30px;
-            color: var(--text-dim);
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            font-size: 14px;
-            font-weight: 500;
-        }
-
-        .master-tab-btn:hover, .master-tab-btn.active {
-            background: var(--accent);
-            color: #040916;
-            border-color: var(--accent);
-            font-weight: bold;
-            box-shadow: 0 4px 15px rgba(230, 153, 45, 0.2);
-            transform: translateY(-1px);
-        }
-
-        .sub-filters {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-            padding: 0 15px;
-        }
-
-        .sub-filter-btn {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid var(--card-border);
-            color: var(--text-dim);
-            padding: 8px 18px;
-            border-radius: 30px;
-            cursor: pointer;
-            font-size: 13.5px;
-            transition: all 0.3s;
-        }
-
-        .sub-filter-btn:hover, .sub-filter-btn.active {
-            border-color: var(--accent);
-            color: var(--accent);
-            background: rgba(230, 153, 45, 0.05);
-        }
-
-        .view-content-section {
-            display: none;
-        }
-
-        .view-content-section.active {
-            display: block;
-            animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(8px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .kb-layout {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            max-width: 900px;
-            margin: 0 auto 60px auto;
-            padding: 0 15px;
-        }
-
-        .kb-card {
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 16px;
-            padding: 24px;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .kb-card:hover {
-            border-color: var(--accent);
-            transform: translateY(-2px);
-            background: rgba(10, 25, 47, 0.7);
-        }
-
-        .kb-card h2 {
-            font-size: 22px;
-            color: var(--gold);
-            margin-bottom: 18px;
-            font-weight: 700;
-            line-height: 1.5;
-        }
-
-        .lang-condensed-block {
-            text-align: justify;
-        }
-
-        p.text-p {
-            margin-bottom: 15px;
-            font-size: 15.5px;
-            line-height: 1.75;
-            color: var(--text-main);
-        }
-
-        blockquote.quote-box {
-            background: rgba(255,255,255,0.01);
-            border-inline-start: 4px solid var(--accent);
-            padding: 20px;
-            border-radius: 8px;
-            margin: 25px 0;
-            text-align: center;
-            font-weight: 600;
-            color: #ffffff;
-        }
-
-        .faq-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            max-width: 900px;
-            margin: 0 auto 60px auto;
-            padding: 0 15px;
-        }
-
-        .faq-card-item {
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 16px;
-            padding: 24px;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .faq-card-item:hover {
-            border-color: var(--accent);
-            transform: translateY(-2px);
-            background: rgba(10, 25, 47, 0.7);
-        }
-
-        .faq-question-box {
-            display: flex;
-            gap: 16px;
-            align-items: flex-start;
-            margin-bottom: 14px;
-        }
-
-        .faq-badge {
-            background: rgba(230, 153, 45, 0.1);
-            color: var(--accent);
-            min-width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 13px;
-            border: 1px solid rgba(230, 153, 45, 0.2);
-        }
-
-        .faq-q-text-group {
-            flex: 1;
-        }
-
-        .faq-q-text-group h3 {
-            margin: 0;
-            font-size: 18px;
-            color: #ffffff;
-            line-height: 1.5;
-            font-weight: 600;
-        }
-
-        .faq-answer-box {
-            padding-left: 48px;
-            border-left: 2px solid rgba(255, 255, 255, 0.03);
-            margin-left: 15px;
-        }
-
-        .ans-text {
-            color: var(--text-main);
-            font-size: 15.5px;
-            line-height: 1.7;
-            margin: 0;
-        }
-
-        .glossary-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-            gap: 20px;
-            max-width: 900px;
-            margin: 0 auto 60px auto;
-            padding: 0 15px;
-        }
-
-        .glossary-card {
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 16px;
-            padding: 24px;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .glossary-card:hover {
-            border-color: var(--accent);
-            transform: translateY(-2px);
-            background: rgba(10, 25, 47, 0.7);
-        }
-
-        .glossary-title {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-            padding-bottom: 8px;
-            margin-bottom: 12px;
-        }
-
-        .glossary-title h3 {
-            color: var(--accent);
-            font-size: 17px;
-            font-weight: 700;
-        }
-
-        .table-wrapper {
-            width: 100%;
-            overflow-x: auto;
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 16px;
-            max-width: 900px;
-            margin: 0 auto 60px auto;
-        }
-
-        table.compare-table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        table.compare-table th, table.compare-table td {
-            padding: 16px 20px;
-            border-bottom: 1px solid var(--card-border);
-            text-align: start;
-        }
-
-        table.compare-table th {
-            background: rgba(230, 153, 45, 0.08);
-            color: #ffffff;
-            font-weight: 700;
-        }
-
-        table.compare-table tr:hover td {
-            background: rgba(255,255,255,0.02);
-        }
-
-        .no-results {
-            text-align: center;
-            padding: 40px;
-            color: var(--text-dim);
-            font-size: 16px;
-            display: none;
-            background: var(--card-bg);
-            border: 1px dashed var(--card-border);
-            border-radius: 16px;
-            max-width: 900px;
-            margin: 20px auto;
-        }
-
-        #backToTop {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: var(--accent);
-            color: #040916;
-            border: none;
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            font-size: 20px;
-            font-weight: bold;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            z-index: 999;
-            transition: all 0.3s ease;
-            display: none;
-            align-items: center;
-            justify-content: center;
-        }
-
-        #backToTop:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(230, 153, 45, 0.4);
-        }
-
-        .research-papers-nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-            flex-wrap: wrap;
-            margin-top: 24px;
-        }
-
-        .paper-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 18px;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid var(--card-border);
-            border-radius: 30px;
-            color: var(--text-dim);
-            text-decoration: none;
-            font-size: 15.5px;
-            font-weight: 500;
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-            backdrop-filter: blur(10px);
-        }
-
-        .paper-link:hover {
-            background: rgba(230, 153, 45, 0.08);
-            border-color: var(--accent);
-            color: #ffffff;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 15px rgba(230, 153, 45, 0.12);
-        }
-
-        .paper-tag {
-            color: var(--accent);
-            font-size: 13px;
-            font-weight: 700;
-        }
-
-        .paper-dot {
-            color: rgba(255, 255, 255, 0.2);
-            font-size: 10px;
-        }
-
-        .paper-title {
-            color: var(--text-main);
-            transition: color 0.25s ease;
-        }
-
-        .paper-link:hover .paper-title {
-            color: #ffffff;
-        }
-
-        .paper-arrow {
-            font-size: 12px;
-            opacity: 0.5;
-            transition: transform 0.25s ease, opacity 0.25s ease;
-        }
-
-        .paper-link:hover .paper-arrow {
-            opacity: 1;
-            color: var(--accent);
-        }
-
-        [dir="rtl"] .paper-link:hover .paper-arrow {
-            transform: translateX(-3px);
-        }
-
-        [dir="ltr"] .paper-link:hover .paper-arrow {
-            transform: translateX(3px);
-        }
-
-        footer {
-            background: transparent;
-            border-top: 1px solid var(--card-border);
-            padding: 40px 0;
-            text-align: center;
-            color: var(--text-dim);
-            font-size: 14px;
-            position: relative;
-            z-index: 2;
-        }
-
-        @media (max-width: 768px) {
-            .glossary-grid { grid-template-columns: 1fr; }
-            .faq-header-section h1 { font-size: 28px; }
-            .faq-answer-box { padding-left: 20px; }
-            .kb-card { padding: 20px; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research on Governed AI Economic Agency | Ouamarkom™</title>
+<meta name="description" content="A research and engineering initiative investigating the conditions and mechanisms that may make AI-mediated economic action governable, enforceable, verifiable, and accountable.">
+<meta name="keywords" content="governed economic action, AI economic agency, AI governance, authority and delegation, enforcement, verification, accountability, CE-AI, Smart Hand, GEAB, Economic Action Engineering, Ouamarkom">
+<meta name="author" content="Ouamarkom">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#040916">
+<link rel="canonical" href="https://ouamarkom.com/en/research" />
+<link rel="alternate" hreflang="ar" href="https://ouamarkom.com/research" />
+<link rel="alternate" hreflang="en" href="https://ouamarkom.com/en/research" />
+<link rel="alternate" hreflang="x-default" href="https://ouamarkom.com/research" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://ouamarkom.com/en/research#page", "url": "https://ouamarkom.com/en/research", "name": "Research on Governed AI Economic Agency | Ouamarkom™", "description": "A research and engineering initiative investigating the conditions and mechanisms that may make AI-mediated economic action governable, enforceable, verifiable, and accountable.", "inLanguage": "en", "isPartOf": {"@id": "https://ouamarkom.com/#website"}, "about": {"@type": "Thing", "name": "Governed Economic Action", "alternateName": "الفعل الاقتصادي المحكوم"}, "publisher": {"@id": "https://ouamarkom.com/#organization"}, "breadcrumb": {"@id": "https://ouamarkom.com/en/research#breadcrumb"}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://ouamarkom.com/ouamarkom-og-image.jpeg"}, "translationOfWork": {"@id": "https://ouamarkom.com/research#page"}}, {"@type": "WebSite", "@id": "https://ouamarkom.com/#website", "url": "https://ouamarkom.com/", "name": "Ouamarkom", "alternateName": "أوامركم", "publisher": {"@id": "https://ouamarkom.com/#organization"}, "inLanguage": ["ar", "en"]}, {"@type": "Organization", "@id": "https://ouamarkom.com/#organization", "name": "Ouamarkom", "alternateName": "أوامركم", "url": "https://ouamarkom.com", "logo": {"@type": "ImageObject", "url": "https://ouamarkom.com/logo.webp"}, "email": "contact@ouamarkom.com"}, {"@type": "ItemList", "@id": "https://ouamarkom.com/en/research#works", "name": "Research papers and works", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Command Economy of AI: From Information Retrieval to Intelligent Execution", "url": "https://ouamarkom.com/en/research/paper-1"}, {"@type": "ListItem", "position": 2, "name": "Smart Hand: A New Economic and Operational Layer Above the Internet and Existing Software Infrastructure", "url": "https://ouamarkom.com/en/research/paper-2"}, {"@type": "ListItem", "position": 3, "name": "Execution as an Architectural Concern in AI Systems", "url": "https://ouamarkom.com/en/research/paper-3"}, {"@type": "ListItem", "position": 4, "name": "Institutional Gateway™", "url": "https://ouamarkom.com/en/research/paper-4"}, {"@type": "ListItem", "position": 5, "name": "CE-AI Governed Architecture™", "url": "https://ouamarkom.com/en/research/paper-5"}, {"@type": "ListItem", "position": 6, "name": "Economic Action Gateway", "url": "https://ouamarkom.com/en/research/paper-6"}, {"@type": "ListItem", "position": 7, "name": "CE-AI Governed Economic Execution Model v0.1", "url": "https://ouamarkom.com/en/research/ce-ai-governed-economic-execution-v0-1"}, {"@type": "ListItem", "position": 8, "name": "GEAB v0.1 - Governed Economic Action Benchmark", "url": "https://ouamarkom.com/en/research/geab"}]}, {"@type": "BreadcrumbList", "@id": "https://ouamarkom.com/en/research#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Ouamarkom", "item": "https://ouamarkom.com/en"}, {"@type": "ListItem", "position": 2, "name": "Research", "item": "https://ouamarkom.com/en/research"}]}]}</script>
+<meta property="og:site_name" content="Ouamarkom" />
+<meta property="og:url" content="https://ouamarkom.com/en/research" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Research on Governed AI Economic Agency | Ouamarkom™" />
+<meta property="og:description" content="Ouamarkom builds the evidence base for understanding governed AI economic action, identifying requirements that may justify new mechanisms or architectures, and testing whether those developments are necessary." />
+<meta property="og:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg" />
+<meta property="og:image:alt" content="Ouamarkom: research on governed AI economic agency" />
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="ar_AR" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Research on Governed AI Economic Agency | Ouamarkom™">
+<meta name="twitter:description" content="Ouamarkom builds the evidence base for understanding governed AI economic action, identifying requirements that may justify new mechanisms or architectures, and testing whether those developments are necessary.">
+<meta name="twitter:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg">
+<meta name="twitter:image:alt" content="Ouamarkom: research on governed AI economic agency">
+<style>
+:root{--primary:#040916;--secondary:#0a192f;--accent:#e6992d;--gold:#fcd34d;--blue:#60a5fa;--text-main:#e6f1ff;--text-dim:#8892b0;--card-bg:rgba(10,25,47,.4);--card-border:rgba(255,255,255,.05)}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{background:var(--primary);color:var(--text-main);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.6;overflow-x:hidden;text-align:start}
+.container{max-width:1200px;margin:0 auto;padding:0 20px;position:relative;z-index:2}
+#network-canvas{position:fixed;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;opacity:.4}
+header{border-bottom:1px solid var(--card-border);position:sticky;top:0;z-index:1000;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.nav-container{display:flex;justify-content:space-between;align-items:center;padding:15px 10px}
+.logo-group{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-img{max-width:100px;height:auto;margin: 0;transition:transform .5s ease}.logo-img:hover{transform:rotate(5deg) scale(1.05)}
+.lang-controller{display:flex;background:rgba(255,255,255,.03);border:1px solid var(--card-border);border-radius:30px;padding:4px;gap:4px}
+.lang-btn{display:inline-block;text-decoration:none;color:var(--text-dim);padding:6px 18px;border-radius:20px;font-weight:600;font-size:13px}
+.lang-btn.active{background:var(--accent);color:#040916;box-shadow:0 2px 10px rgba(230,153,45,.25)}
+.faq-header-section{text-align:center;padding:40px 0 20px;min-height:auto}
+.faq-header-section h1{font-size:36px;font-weight:800;line-height:1.4;margin-bottom:15px}
+.faq-header-section .subtitle{font-size:17px;color:var(--text-dim);max-width:850px;margin:0 auto;line-height:1.8}
+.hub-nav,.legend{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:22px auto 10px;padding:0 15px}
+.hub-nav a{background:rgba(255,255,255,.02);border:1px solid var(--card-border);color:var(--text-dim);padding:7px 16px;border-radius:30px;font-size:13.5px;text-decoration:none;transition:all .3s}
+.hub-nav a:hover{border-color:var(--accent);color:var(--accent);background:rgba(230,153,45,.05)}
+.legend{align-items:center;margin-top:18px;color:var(--text-dim);font-size:13.5px}
+.legend .badges{margin-bottom:0}
+.hub-sec{max-width:980px;margin:0 auto 34px;padding:0 15px;scroll-margin-top:90px}
+.sec-head{margin-bottom:18px}
+.pill{display:inline-block;color:var(--accent);font-size:13px;font-weight:700;border:1px solid rgba(230,153,45,.25);background:rgba(230,153,45,.08);padding:3px 14px;border-radius:30px;margin-bottom:10px}
+.hub-sec h2{font-size:26px;color:#fff;font-weight:700;line-height:1.45;margin-bottom:10px}
+.hub-sec h3{font-size:17px;color:#fff;font-weight:600;line-height:1.5;margin-bottom:8px}
+.lead{font-size:16.5px;color:var(--text-main);line-height:1.85}
+.sub{font-size:17px;color:var(--gold);margin:22px 0 10px}
+p.text-p{margin:12px 0;font-size:15.5px;line-height:1.75}
+.note{margin:12px 0;font-size:14px;color:var(--text-dim);line-height:1.7}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin:16px 0}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+.kb-card,.card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:22px;transition:all .3s cubic-bezier(.4,0,.2,1);scroll-margin-top:90px}
+.kb-card:hover,.card:hover{border-color:var(--accent);background:rgba(10,25,47,.7)}
+.card p{font-size:14.5px;color:var(--text-main);line-height:1.7;margin-top:6px}
+.card .links{margin-top:12px}
+.btn{display:inline-block;color:var(--accent);border:1px solid rgba(230,153,45,.4);border-radius:30px;padding:6px 16px;font-size:13.5px;text-decoration:none;margin-inline-end:8px;margin-top:6px}
+.btn:hover{background:rgba(230,153,45,.08);color:#fff}
+.badges{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.badge{font-size:12px;font-weight:700;padding:2px 11px;border-radius:30px;border:1px solid var(--card-border);color:var(--text-dim)}
+.b-cur{background:var(--accent);color:#040916;border-color:var(--accent)}
+.b-fnd{color:var(--blue);border-color:rgba(96,165,250,.45);background:rgba(96,165,250,.08)}
+.b-exp{color:var(--gold);border-color:rgba(252,211,77,.45);background:rgba(252,211,77,.07)}
+.b-his{color:var(--text-dim);border-color:rgba(136,146,176,.4)}
+.b-q{color:var(--text-main);border-style:solid}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:14px 0}
+.flow span{background:rgba(10,25,47,.9);border:1px solid rgba(230,153,45,.3);color:var(--gold);padding:6px 14px;border-radius:30px;font-size:13.5px;font-weight:600}
+.flow i{font-style:normal;color:var(--accent)}
+.hl{margin:12px 0;padding-inline-start:22px}.hl li{margin-bottom:8px;font-size:15.5px;line-height:1.7}
+.stagelist{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:8px 24px;margin:14px 0}
+.stagelist li{font-size:14.5px;line-height:1.65;border-inline-start:2px solid rgba(230,153,45,.35);padding-inline-start:12px}
+.stagelist b{color:var(--gold);font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0;font-size:13.5px;color:var(--text-dim)}
+.chips span{border:1px solid rgba(255,255,255,.18);padding:3px 12px;border-radius:30px}
+blockquote.quote-box{background:rgba(255,255,255,.01);border-inline-start:4px solid var(--accent);padding:18px 20px;border-radius:8px;margin:20px 0;font-weight:600;color:#fff;line-height:1.7}
+.rec{background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:18px 22px;margin-bottom:12px}
+.rec-top{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:6px}.rec-lab{color:var(--accent);font-size:13px;font-weight:700}
+.rec h3{margin-bottom:4px}.rec h3 a{color:#fff;text-decoration:none}.rec h3 a:hover{color:var(--gold)}.rec p{font-size:14.5px;color:var(--text-dim)}
+.rec .badges{margin-bottom:0}
+.search-wrapper{max-width:650px;margin:24px auto;padding:0 15px}
+.search-input{width:100%;padding:14px 24px;background:rgba(255,255,255,.03);border:1px solid var(--card-border);border-radius:50px;color:#fff;font-size:16px;outline:none;text-align:inherit}
+.search-input:focus{border-color:var(--accent);box-shadow:0 0 15px rgba(230,153,45,.25)}
+.master-tabs,.sub-filters{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:16px 0 24px;padding:0 15px}
+.master-tab-btn,.sub-filter-btn{background:rgba(255,255,255,.04);border:1px solid var(--card-border);border-radius:30px;color:var(--text-dim);cursor:pointer;font-size:14px;padding:9px 20px;transition:all .3s}
+.master-tab-btn:hover,.master-tab-btn.active{background:var(--accent);color:#040916;border-color:var(--accent);font-weight:700}
+.sub-filter-btn{font-size:13.5px;padding:7px 16px}.sub-filter-btn:hover,.sub-filter-btn.active{border-color:var(--accent);color:var(--accent);background:rgba(230,153,45,.05)}
+.view-content-section{display:none}.view-content-section.active{display:block;animation:fadeIn .4s forwards}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.kb-layout,.faq-grid{display:flex;flex-direction:column;gap:18px;max-width:900px;margin:0 auto 40px;padding:0 15px}
+.kb-card h2{font-size:21px;color:var(--gold);margin-bottom:14px;line-height:1.5}.lang-condensed-block{text-align:justify}
+.faq-card-item{background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:22px}
+.faq-card-item:hover{border-color:var(--accent)}
+.faq-question-box{display:flex;gap:16px;align-items:flex-start;margin-bottom:12px}
+.faq-badge{background:rgba(230,153,45,.1);color:var(--accent);min-width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;border:1px solid rgba(230,153,45,.2)}
+.faq-q-text-group{flex:1}.faq-q-text-group h3{font-size:17px;margin:0}
+.faq-answer-box{padding-inline-start:48px;border-inline-start:2px solid rgba(255,255,255,.03);margin-inline-start:15px}
+.ans-text{font-size:15.5px;line-height:1.7}
+.glossary-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:18px;max-width:900px;margin:0 auto 40px;padding:0 15px}
+.glossary-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:22px}
+.glossary-title{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,.05);padding-bottom:8px;margin-bottom:12px}
+.glossary-title h3{color:var(--accent);font-size:17px;margin:0}
+.table-wrapper{overflow-x:auto;background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;max-width:900px;margin:0 auto 40px}
+table.compare-table{width:100%;border-collapse:collapse}
+table.compare-table th,table.compare-table td{padding:14px 18px;border-bottom:1px solid var(--card-border);text-align:start}
+table.compare-table th{background:rgba(230,153,45,.08);color:#fff}
+.no-results{display:none;text-align:center;padding:36px;color:var(--text-dim);background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;max-width:900px;margin:20px auto}
+#backToTop{position:fixed;bottom:30px;inset-inline-start:28px;background:var(--accent);color:#040916;border:0;width:45px;height:45px;border-radius:50%;font-size:20px;font-weight:700;cursor:pointer;z-index:999;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .3s ease,visibility .3s ease}
+#backToTop.visible{opacity:1;visibility:visible}
+footer{border-top:1px solid var(--card-border);padding:40px 0;text-align:center;color:var(--text-dim);font-size:14px;position:relative;z-index:2}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+@media(max-width:768px){.faq-header-section h1{font-size:28px}.hub-sec h2{font-size:22px}.faq-answer-box{padding-inline-start:20px}.glossary-grid{grid-template-columns:1fr}.grid.two{grid-template-columns:1fr}.stagelist{grid-template-columns:1fr}}
+#progress{position:fixed;top:0;inset-inline:0;height:3px;background:var(--accent);transform-origin:right;transform:scaleX(0);z-index:3000;will-change:transform}[dir=ltr] #progress{transform-origin:left}
+.brandline{color:var(--accent);font-weight:700;letter-spacing:.02em}
+.tagline{color:var(--text-dim);font-size:16px;margin:0 auto 6px;direction:ltr;unicode-bidi:isolate}
+.hub-nav a[aria-current]{border-color:var(--accent);color:var(--accent)}
+.layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:40px;align-items:start;max-width:1100px;margin:30px auto 0}
+.toc-side{position:sticky;top:96px;max-height:calc(100vh - 120px);overflow:auto;scrollbar-width:thin}
+.toc-side ol,.toc-m ol{list-style:none;margin:0;padding:0}
+.toc-side a{display:block;color:var(--text-dim);text-decoration:none;font-size:13.5px;line-height:1.5;padding:7px 12px;border-inline-start:2px solid var(--card-border)}
+.toc-side a:hover{color:var(--gold)}.toc-side a[aria-current]{color:var(--accent);border-inline-start-color:var(--accent);background:rgba(230,153,45,.06);font-weight:700}
+.toc-m{display:none;position:sticky;top:76px;z-index:900;margin:10px 0}.toc-m summary{cursor:pointer;list-style:none;width:44px;height:44px;display:flex;align-items:center;justify-content:center;border:1px solid var(--card-border);border-radius:50%;background:rgba(4,9,22,.92);color:var(--accent);font-size:20px}
+.toc-m summary::-webkit-details-marker{display:none}.toc-m nav{margin-top:8px;background:rgba(4,9,22,.97);border:1px solid var(--card-border);border-radius:16px;padding:8px;max-height:60vh;overflow:auto}.toc-m a{display:block;padding:10px 12px;color:var(--text-main);text-decoration:none;font-size:14.5px;border-radius:10px}.toc-m a:hover{background:rgba(230,153,45,.08);color:var(--gold)}
+.content{min-width:0}.hub-sec{max-width:none;padding:0;content-visibility:auto;contain-intrinsic-size:auto 900px;border-bottom:1px solid var(--card-border);padding-bottom:34px;margin-bottom:38px;scroll-margin-top:90px}
+.hub-sec h2{font-size:28px;margin-bottom:16px;line-height:1.45}.hub-sec h3{margin:28px 0 10px;color:var(--accent);font-size:18px;scroll-margin-top:90px}
+p.text-p{font-size:16.5px;line-height:1.95;margin:14px 0;max-width:72ch}.hl{line-height:1.9;max-width:72ch}.hl li{font-size:16px}
+.callout{border:1px solid rgba(255,255,255,.08);border-inline-start:2px solid var(--accent);background:rgba(255,255,255,.02);padding:12px 16px;border-radius:10px;font-size:15px!important;color:var(--text-dim)}
+.quote-box{max-width:72ch}
+blockquote.quote-box{position:relative;padding-inline-start:2.75rem}
+.hub-sec[id=hypotheses],.hub-sec[id=eae]{border-inline-start:3px solid rgba(252,211,77,.4);padding-inline-start:20px}
+.hub-sec .hl.neg{list-style:none;padding:0}.hl.neg li{padding-inline-start:26px;position:relative}.hl.neg li::before{content:"✕";position:absolute;inset-inline-start:0;color:var(--text-dim)}
+ul.kv{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:16px 0;padding:0}.kv li{background:var(--card-bg);border:1px solid var(--card-border);border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:4px}.kv b{color:var(--accent);font-size:13.5px}.kv span{font-size:15px;line-height:1.7}
+ul.states{list-style:none;padding:0;margin:14px 0;display:grid;gap:10px}.states li{background:var(--card-bg);border:1px solid var(--card-border);border-radius:12px;padding:12px 16px;line-height:1.8}
+.st{display:inline-block;font-size:12.5px;font-weight:700;padding:1px 11px;border-radius:30px;border:1px solid var(--card-border);color:var(--text-dim);vertical-align:baseline}
+b.st{font-size:13.5px}.st-cur{background:var(--accent);color:#040916;border-color:var(--accent)}.st-fnd{color:var(--text-main);border-color:rgba(255,255,255,.14);background:rgba(255,255,255,.05)}.st-exp,.st-hyp,.st-tmp{color:var(--gold);border-color:rgba(252,211,77,.5);background:rgba(252,211,77,.07);border-style:solid}.st-his{color:var(--text-dim);border-color:rgba(136,146,176,.5)}.st-con{color:var(--text-main);border-style:solid}.st-sup{color:var(--text-main)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin:18px 0}.cards.papers{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.card h3,.card h4{margin:0 0 6px;font-size:17px;color:#fff;line-height:1.5}.card h4{font-size:16px;color:var(--accent)}.card p{font-size:15px;line-height:1.8;margin:0}
+.card{text-align:start;-webkit-backdrop-filter:none;backdrop-filter:none;background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.08);border-inline-start:2px solid rgba(230,153,45,.42)}.card:hover{transform:translateY(-3px);box-shadow:none;background:rgba(255,255,255,.04);border-inline-start-color:var(--accent)}
+.rec{margin:0;display:flex;flex-direction:column;gap:6px}.rec h3{margin:0 0 4px;font-size:15px;color:var(--text-dim);font-weight:600;line-height:2}.rec .pn{color:var(--accent);font-weight:700}
+.rec-title{font-size:17px;font-weight:700;line-height:1.6}.rec-title a{color:#fff;text-decoration:none}.rec-title a:hover{color:var(--gold);text-decoration:underline}.rec p{color:var(--text-main);font-size:15px;line-height:1.8;margin:0}
+.rec:hover{border-color:var(--accent)}
+.flow{line-height:1.6;margin:16px 0}.flow span{max-width:100%}
+.table-wrapper{max-width:100%;margin:18px 0}table.compare-table th[scope=row]{background:transparent;font-weight:600;color:var(--gold);min-width:11em}table.compare-table td{font-size:15px;line-height:1.7}table.compare-table tbody tr:nth-child(even){background:rgba(255,255,255,.015)}
+.links{margin:16px 0 4px}.hl a,.text-p a{color:var(--gold)}
+.links .btn{width:auto}
+.site-footer{padding:36px 0}.footer-legal-links{margin-top:10px;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px 12px}.footer-legal-links a{color:var(--text-dim)}.footer-legal-links a:hover{color:var(--gold)}
+@media(max-width:1000px){.layout{display:block}.toc-side{display:none}.toc-m{display:block}}
+@media(max-width:768px){.hub-sec h2{font-size:23px}p.text-p{font-size:16px}.cards,.cards.papers{grid-template-columns:1fr}.hub-sec[id=hypotheses],.hub-sec[id=eae]{padding-inline-start:12px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+@media print{#network-canvas,#backToTop,#progress,.toc-m,.toc-side,.lang-controller,.hub-nav{display:none!important}body{background:#fff;color:#000}.hub-sec h2,.hub-sec h3{color:#000}.layout{display:block}.hub-sec{content-visibility:visible}}
+#about.hub-sec h2{font-size:28px;text-align:start;margin-bottom:16px}
+@media(max-width:768px){#about.hub-sec h2{font-size:23px}}
+blockquote.quote-box::before{content:"\201C";position:absolute;top:.15em;inset-inline-start:.55rem;font:2.8rem/1 Georgia,serif;color:rgba(230,153,45,.42);pointer-events:none}
+[dir=rtl] blockquote.quote-box::before{content:"\201D"}
+</style>
 </head>
 <body>
-
-<canvas id="network-canvas"></canvas>
-<button id="backToTop" title="Back to Top">↑</button>
-
-<header>
-    <div class="container nav-container">
-        <a href="/en" class="logo-group">
-            <img src="/logo.webp" alt="Ouamarkom - Command Economy" class="logo-img" loading="eager">
-        </a>
-        <nav class="lang-controller" aria-label="Language Selector">
-            <a href="/research" class="lang-btn">العربية</a>
-            <span class="lang-btn active">English</span>
-        </nav>
-    </div>
-</header>
-
-<main class="container">
-    
-    <section class="hero faq-header-section">
-        <h1>The Strategic Encyclopedia of the <span>Command Economy of AI</span></h1>
-        <p style="font-size: 18px; color: var(--gold); font-weight: 600; margin-bottom: 12px;">Command Economy of AI - CEAI</p>
-        <p class="subtitle">The official strategic knowledge base of Ouamarkom exploring the Command Economy of AI (CEAI) - a framework for understanding how human intent can become intelligent economic execution through AI agents, execution infrastructure, and measurable outcomes.</p>
-        <div class="research-papers-nav">
-            <a href="/en/research/paper-1" class="paper-link" target="_blank" rel="noopener">
-                <span class="paper-tag">Research Paper (1)</span>
-                <span class="paper-dot">•</span>
-                <span class="paper-title">Command Economy of AI</span>
-                <span class="paper-arrow">→</span>
-            </a>
-            <a href="/en/research/paper-2" class="paper-link" target="_blank" rel="noopener">
-                <span class="paper-tag">Research Paper (2)</span>
-                <span class="paper-dot">•</span>
-                <span class="paper-title">Smart Hand Infrastructure</span>
-                <span class="paper-arrow">→</span>
-            </a>
-            <a href="/en/research/paper-3" class="paper-link" target="_blank" rel="noopener">
-                <span class="paper-tag">Research Paper (3)</span>
-                <span class="paper-dot">•</span>
-                <span class="paper-title">AI Execution Architecture</span>
-                <span class="paper-arrow">→</span>
-            </a>
-            <a href="/en/research/paper-4" class="paper-link" target="_blank" rel="noopener">
-                <span class="paper-tag">Research Paper (4)</span>
-                <span class="paper-dot">•</span>
-                <span class="paper-title">Institutional Gateway Architecture</span>
-                <span class="paper-arrow">→</span>
-            </a>
-            <a href="/en/research/paper-5" class="paper-link" target="_blank" rel="noopener">
-                <span class="paper-tag">Research Paper (5)</span>
-                <span class="paper-dot">•</span>
-                <span class="paper-title">CE-AI Governing Architecture</span>
-                <span class="paper-arrow">→</span>
-            </a>
-            <a href="/en/research/paper-6" class="paper-link" target="_blank" rel="noopener">
-                <span class="paper-tag">Research Paper (6)</span>
-                <span class="paper-dot">•</span>
-                <span class="paper-title">Economic Action Gateway</span>
-                <span class="paper-arrow">→</span>
-            </a>
-        </div>
-    </section>
-
-    <div class="search-wrapper">
-        <input type="text" id="faqSearchInput" class="search-input" oninput="liveSearchFAQ()" placeholder="Search the encyclopedia for concepts, frameworks, technologies, or strategic principles...">
-    </div>
-
-    <div class="master-tabs" id="ui-tabs-container">
-        <button class="master-tab-btn active" onclick="switchMasterTab(this, 'faq-view')">Official FAQs (100 Core Questions)</button>
-        <button class="master-tab-btn" onclick="switchMasterTab(this, 'kb-view')">Foundational Knowledge</button>
-        <button class="master-tab-btn" onclick="switchMasterTab(this, 'glossary-view')">Glossary</button>
-        <button class="master-tab-btn" onclick="switchMasterTab(this, 'compare-view')">Conceptual Comparison</button>
-    </div>
-
-    <div class="no-results" id="faqNoResults">No results matched your search query. Try using different keywords.</div>
-
-    <!-- First Tab: Official FAQs -->
-    <section id="faq-view" class="view-content-section active">
-        <div class="sub-filters" id="ui-sub-filters">
-            <button class="sub-filter-btn active" onclick="filterFaqCategory(this, 'all')">All Questions (100)</button>
-            <button class="sub-filter-btn" onclick="filterFaqCategory(this, 'cat1')">Foundations & Definitions (1–20)</button>
-            <button class="sub-filter-btn" onclick="filterFaqCategory(this, 'cat2')">Philosophy & Economic Shift (21–40)</button>
-            <button class="sub-filter-btn" onclick="filterFaqCategory(this, 'cat3')">Architecture & Technology (41–60)</button>
-            <button class="sub-filter-btn" onclick="filterFaqCategory(this, 'cat4')">Business, Markets & Value (61–80)</button>
-            <button class="sub-filter-btn" onclick="filterFaqCategory(this, 'cat5')">Future, Governance & Criticism (81–100)</button>
-        </div>
-
-        <div class="faq-grid" id="masterFaqGrid">
-            <!-- Dynamically populated via JS -->
-        </div>
-    </section>
-
-    <!-- Second Tab: Foundational Knowledge Base -->
-    <section id="kb-view" class="view-content-section">
-        <div class="kb-layout" id="kb-dynamic-content">
-            <!-- Dynamically populated via JS -->
-        </div>
-    </section>
-
-    <!-- Third Tab: Glossary -->
-    <section id="glossary-view" class="view-content-section">
-        <div class="glossary-grid" id="glossary-dynamic-content">
-            <!-- Dynamically populated via JS -->
-        </div>
-    </section>
-
-    <!-- Fourth Tab: Structural Concept Matrix -->
-    <section id="compare-view" class="view-content-section">
-        <div class="table-wrapper" id="compare-dynamic-content">
-            <!-- Dynamically populated via JS -->
-        </div>
-    </section>
-
+<div id="progress" aria-hidden="true"></div>
+<canvas id="network-canvas" aria-hidden="true"></canvas>
+<button id="backToTop" title="Back to top" aria-label="Back to top">↑</button>
+<header><div class="container nav-container">
+<a href="/en" class="logo-group"><img src="/logo.webp" alt="Ouamarkom - Governed AI Economic Agency research" class="logo-img" loading="eager"></a>
+<nav class="lang-controller" aria-label="Language Selector"><a href="/research" class="lang-btn" hreflang="ar" lang="ar">العربية</a><span class="lang-btn active" aria-current="true">English</span></nav>
+</div></header>
+<main class="container" id="main">
+<section class="hero faq-header-section">
+<p class="pill brandline">OUAMARKOM™</p>
+<h1>Research on Governed AI Economic Agency</h1>
+<p class="tagline">Building the Evidence Base for Governed AI Economic Execution</p>
+</section>
+<nav class="hub-nav" aria-label="Primary links"><a href="/en/framework/">CE-AI™</a><a href="#smart-hand">Smart Hand™</a><a href="/en/research/geab">GEAB</a><a href="/en/economic-action-engineering">Economic Action Engineering</a><a href="#record">Research Archive</a><a href="#concepts">Knowledge Base</a></nav>
+<details class="toc-m"><summary aria-label="Page sections">☰</summary><nav aria-label="Page sections"><ol><li><a href="#position">1. Research Position</a></li><li><a href="#why">2. Why Economic Action?</a></li><li><a href="#object">3. Research Subject: Governed Economic Action</a></li><li><a href="#distinctions">4. Core Research Distinctions</a></li><li><a href="#question">5. The Central Research Question</a></li><li><a href="#method">6. Methodology: Evidence Before Architecture</a></li><li><a href="#maturity">7. Evidence Maturity and Research Status</a></li><li><a href="#dimensions">8. Current Research Dimensions</a></li><li><a href="#ceai">9. CE-AI™: The Research Framework</a></li><li><a href="#smart-hand">10. Smart Hand™: The Experimental Environment</a></li><li><a href="#benchmark">11. GEAB v0.1: Benchmarking and Measurement</a></li><li><a href="#model">12. The CE-AI Governed Economic Execution Model v0.1</a></li><li><a href="#hypotheses">13. Architectural Hypotheses: From Requirement to Intervention</a></li><li><a href="#eae">14. Economic Action Engineering</a></li><li><a href="#rules">15. Research Decision Principles</a></li><li><a href="#record">16. Research Archive: How the Work Evolved</a></li><li><a href="#lineage">17. Research Lineage</a></li><li><a href="#concepts">18. Knowledge Base and Research Questions</a></li><li><a href="#next">19. What Comes Next?</a></li><li><a href="#about">20. About Ouamarkom</a></li></ol></nav></details>
+<div class="layout"><aside class="toc-side"><nav aria-label="Page sections"><ol><li><a href="#position">1. Research Position</a></li><li><a href="#why">2. Why Economic Action?</a></li><li><a href="#object">3. Research Subject: Governed Economic Action</a></li><li><a href="#distinctions">4. Core Research Distinctions</a></li><li><a href="#question">5. The Central Research Question</a></li><li><a href="#method">6. Methodology: Evidence Before Architecture</a></li><li><a href="#maturity">7. Evidence Maturity and Research Status</a></li><li><a href="#dimensions">8. Current Research Dimensions</a></li><li><a href="#ceai">9. CE-AI™: The Research Framework</a></li><li><a href="#smart-hand">10. Smart Hand™: The Experimental Environment</a></li><li><a href="#benchmark">11. GEAB v0.1: Benchmarking and Measurement</a></li><li><a href="#model">12. The CE-AI Governed Economic Execution Model v0.1</a></li><li><a href="#hypotheses">13. Architectural Hypotheses: From Requirement to Intervention</a></li><li><a href="#eae">14. Economic Action Engineering</a></li><li><a href="#rules">15. Research Decision Principles</a></li><li><a href="#record">16. Research Archive: How the Work Evolved</a></li><li><a href="#lineage">17. Research Lineage</a></li><li><a href="#concepts">18. Knowledge Base and Research Questions</a></li><li><a href="#next">19. What Comes Next?</a></li><li><a href="#about">20. About Ouamarkom</a></li></ol></nav></aside>
+<div class="content">
+<section class="hub-sec" id="position" aria-labelledby="position-h"><div class="sec-head"><h2 id="position-h">1. Research Position</h2></div>
+<h3>Investigating What Must Hold When AI Can Act Economically</h3>
+<p class="text-p">Ouamarkom studies what must hold as artificial intelligence systems move from generating information and recommendations toward participating in actions with real economic consequences.</p>
+<p class="text-p">When an intelligent system can initiate a purchase, transfer funds, modify a price, commit a budget, alter a contract, or execute a sequence of transactions, the question is no longer limited to what the system can do. It also becomes necessary to examine what authorizes the action, which constraints govern it, how execution is enforced, what evidence establishes what happened, and how the resulting economic outcome can be verified and attributed.</p>
+<p class="text-p">Ouamarkom is a research and engineering initiative investigating the conditions and mechanisms that may make AI-mediated economic action governable, enforceable, verifiable, and accountable.</p>
+<p class="text-p">We build the evidence base needed to identify recurring requirements, test potential interventions, and determine whether the findings justify reusable mechanisms, an architecture, or new infrastructure.</p>
+<p class="text-p">We do not assume the required architecture in advance. Nor do we assume that existing mechanisms are insufficient. We investigate both possibilities.</p>
+<blockquote class="quote-box"><strong>Our central principle:</strong> We do not assume the architecture of the AI economy. We build a research method to discover what it may require-and whether it requires anything new at all.</blockquote>
+<h3>Research Status</h3>
+<ul class="kv">
+<li><b>Stage:</b><span> Research, Development &amp; Experimental Validation</span></li>
+<li><b>Research subject:</b><span> Governed Economic Action</span></li>
+<li><b>Method:</b><span> Controlled experimentation, measurement, comparative evaluation, replication, and evidence verification</span></li>
+<li><b>Intended outputs:</b><span> Inspectable evidence, reproducible findings, recurring-constraint identification, and evidence-based development decisions</span></li>
+<li><b>Initial experimental base:</b><span> Saudi Arabia, with broader generalization pursued through replication across systems and contexts</span></li>
+</ul>
+<p class="text-p callout">The status and maturity labels used on this page are editorial classifications. They do not establish that a hypothesis has been validated, that a method is an industry standard, or that a particular architecture is necessary.</p>
+</section>
+<section class="hub-sec" id="why" aria-labelledby="why-h"><div class="sec-head"><h2 id="why-h">2. Why Economic Action?</h2></div>
+<h3>From Producing Intelligence to Studying Action</h3>
+<p class="text-p">AI systems are becoming increasingly capable of planning, using tools, interacting with external systems, and coordinating multi-step tasks. These capabilities may expand the range of economic actions that such systems can propose, perform, or mediate.</p>
+<p class="text-p">Technical capability, however, does not resolve the questions of authority, governance, enforcement, and outcomes.</p>
+<p class="text-p">A system may be able to submit a purchase order without being authorized to complete the purchase. It may be authorized to buy goods within a defined budget while a sequence of individually permissible transactions exceeds the aggregate limit. Its authority may be revoked while a previously initiated transaction remains in progress. A transaction may succeed technically while producing an economic outcome different from the intended one.</p>
+<p class="text-p">These are not necessarily manifestations of one underlying problem, and they do not establish that a new technical layer is required. They provide, however, concrete questions that can be investigated experimentally.</p>
+<h3>Context: Increasing AI Capability</h3>
+<p class="text-p">Superintelligence, if realized, could expand the scope of planning, decision-making, and action. It is contextual to this research, not the definition of Ouamarkom, and the research does not depend on the arrival of superintelligence.</p>
+<p class="text-p">Research into intelligence examines the limits of what intelligent systems may be capable of doing. Ouamarkom investigates what must hold when those capabilities are applied to economically consequential action.</p>
+<p class="text-p">Increasing capability does not automatically confer legitimate economic authority, nor does it establish the necessity of a new architecture.</p>
+</section>
+<section class="hub-sec" id="object" aria-labelledby="object-h"><div class="sec-head"><h2 id="object-h">3. Research Subject: Governed Economic Action</h2></div>
+<p class="text-p">Commands were the original point of entry into this research. The deeper subject is now economic action itself-particularly action performed or mediated by an intelligent system that can produce economic consequences.</p>
+<p class="text-p">Governed Economic Action is used provisionally as a research term for economic action whose applicable authority, governing constraints, execution, evidence, outcome verification, and accountability are examined explicitly.</p>
+<p class="text-p">This definition does not assume that every function must be implemented in one centralized system or organized through a separate protocol. Those remain open architectural and experimental questions.</p>
+<h3>Questions Organized Around the Action</h3>
+<ol class="hl">
+<li value="1">What is the intended economic action, and what consequences could it produce?</li>
+<li value="2">Who or what has the authority to authorize it, and where does that authority originate?</li>
+<li value="3">What are the scope, limits, duration, and conditions of the authorization?</li>
+<li value="4">Which policies, approvals, and constraints apply?</li>
+<li value="5">How is the decision to proceed, reject, or escalate made?</li>
+<li value="6">What actually happens during execution, including failures, delays, cancellations, and retries?</li>
+<li value="7">What evidence establishes what was authorized, decided, and executed?</li>
+<li value="8">How is the economic outcome measured and verified?</li>
+<li value="9">How is responsibility attributed for the decision, execution, and outcome?</li>
+<li value="10">Which requirements recur across actions, systems, and institutions?</li>
+<li value="11">Can existing mechanisms satisfy those requirements?</li>
+<li value="12">If not, what is the least complex intervention that measurably improves the outcome?</li>
+</ol>
+<h3>The Problem Space</h3>
+<div class="flow" role="list"><span role="listitem">Capability</span><i aria-hidden="true">→</i><span role="listitem">Agency</span><i aria-hidden="true">→</i><span role="listitem">Authority</span><i aria-hidden="true">→</i><span role="listitem">Economic Action</span><i aria-hidden="true">→</i><span role="listitem">Governance and Enforcement</span><i aria-hidden="true">→</i><span role="listitem">Evidence</span><i aria-hidden="true">→</i><span role="listitem">Verification</span><i aria-hidden="true">→</i><span role="listitem">Economic Outcome</span><i aria-hidden="true">→</i><span role="listitem">Learning and Reassessment.</span></div>
+<p class="text-p callout">This sequence is a conceptual map of the research questions, not a completed architecture or a mandatory workflow for every system.</p>
+<p class="text-p">Some stages may overlap or occur concurrently in practice. An economic outcome may occur before it is verified, but it should not be described as a verified outcome until the relevant verification has taken place.</p>
+</section>
+<section class="hub-sec" id="distinctions" aria-labelledby="distinctions-h"><div class="sec-head"><h2 id="distinctions-h">4. Core Research Distinctions</h2></div>
+<p class="text-p">Ouamarkom uses a set of distinctions to separate questions that can otherwise become conflated when evaluating systems capable of taking action.</p>
+<div class="table-wrapper"><table class="compare-table"><thead><tr><th scope="col">Distinction</th><th scope="col">Research implication</th></tr></thead><tbody><tr><th scope="row">Capability ≠ Authority</th><td>The ability to perform an action does not establish permission to perform it.</td></tr><tr><th scope="row">Intelligence ≠ Economic Agency</th><td>Reasoning performance alone does not establish the ability to participate in economic action.</td></tr><tr><th scope="row">Intent ≠ Authorization</th><td>Expressing a goal does not grant a system the right to execute it.</td></tr><tr><th scope="row">Command ≠ Permission</th><td>A command expresses an instruction; its validity depends on applicable authority and policy.</td></tr><tr><th scope="row">Authority ≠ Unrestricted Permission</th><td>Authority may be limited by scope, amount, purpose, duration, or conditions.</td></tr><tr><th scope="row">Authorization ≠ Enforcement</th><td>The existence of permission or a rule does not establish that it is enforced at the point of execution.</td></tr><tr><th scope="row">Execution ≠ Outcome</th><td>Executing an instruction does not guarantee the intended economic result.</td></tr><tr><th scope="row">Technical Success ≠ Economic Success</th><td>A technically successful operation may produce an undesirable economic outcome.</td></tr><tr><th scope="row">Recorded Outcome ≠ Verified Outcome</th><td>A recorded result is not, by itself, proof that the result is correct.</td></tr><tr><th scope="row">Log ≠ Sufficient Evidence</th><td>A system log may be incomplete or disconnected from the external economic event.</td></tr><tr><th scope="row">Evidence ≠ Verification</th><td>Evidence must be evaluated to establish what it supports and what remains uncertain.</td></tr><tr><th scope="row">Learning ≠ Authorization</th><td>Learning from previous actions does not automatically grant additional authority.</td></tr><tr><th scope="row">Recorded Revocation ≠ Effective Revocation</th><td>It is necessary to examine whether revocation reached the point where the economic effect could still be prevented.</td></tr></tbody></table></div>
+<p class="text-p callout">These distinctions help define hypotheses and tests. They are research propositions, not universal laws or advance proof that existing systems are inadequate.</p>
+</section>
+<section class="hub-sec" id="question" aria-labelledby="question-h"><div class="sec-head"><h2 id="question-h">5. The Central Research Question</h2></div>
+<blockquote class="quote-box">What Must Hold When AI Can Act Economically?</blockquote>
+<p class="text-p">The central question leads to a set of testable inquiries:</p>
+<ul class="hl">
+<li>When are existing identity, permission, and policy mechanisms sufficient?</li>
+<li>Under what conditions does a gap emerge between authorization and enforcement?</li>
+<li>Can individually permissible actions accumulate into a violation of an aggregate authority or budget limit?</li>
+<li>What happens when authority is revoked during execution?</li>
+<li>How should irreversible actions or actions with delayed economic effects be handled?</li>
+<li>What evidence is needed to distinguish a submitted command, an executed action, and a verified outcome?</li>
+<li>Can governance improve without an unjustified increase in false rejection, latency, or operating cost?</li>
+<li>Which constraints recur across models, architectures, and sectors?</li>
+<li>Do these constraints require a new intervention, or would better integration of existing mechanisms be sufficient?</li>
+<li>If a requirement recurs, does it justify a reusable mechanism or a distinct architectural boundary?</li>
+</ul>
+<p class="text-p callout">These questions define an open research program, not a set of settled conclusions.</p>
+<p class="text-p">The question is not how to build presumed infrastructure. It is which requirement the evidence establishes, what is the least complex intervention that addresses it, and whether that intervention merits becoming a permanent architectural component.</p>
+</section>
+<section class="hub-sec" id="method" aria-labelledby="method-h"><div class="sec-head"><h2 id="method-h">6. Methodology: Evidence Before Architecture</h2></div>
+<p class="text-p">Ouamarkom follows a hypothesis-guided, increasingly inductive approach. We begin with a defined problem, design a test, measure the outcome, and then determine whether further investigation or a different intervention is warranted.</p>
+<h3>The Research Path</h3>
+<div class="flow" role="list"><span role="listitem">Defined Problem</span><i aria-hidden="true">→</i><span role="listitem">Research Question</span><i aria-hidden="true">→</i><span role="listitem">Falsifiable Hypothesis</span><i aria-hidden="true">→</i><span role="listitem">Controlled Experiment</span><i aria-hidden="true">→</i><span role="listitem">Data and Evidence</span><i aria-hidden="true">→</i><span role="listitem">Measurement and Comparison</span><i aria-hidden="true">→</i><span role="listitem">Replication</span><i aria-hidden="true">→</i><span role="listitem">Recurring Constraint</span><i aria-hidden="true">→</i><span role="listitem">Tested Intervention</span><i aria-hidden="true">→</i><span role="listitem">Potential Architectural Implication</span><i aria-hidden="true">→</i><span role="listitem">Infrastructure Decision.</span></div>
+<h3>Step 1: Define the Action</h3>
+<p class="text-p">Select a specific economic action, such as a financial transfer, purchase, or authorization revocation. Define the intended effect and the constraints that apply.</p>
+<h3>Step 2: Freeze the Hypothesis and Test Conditions</h3>
+<p class="text-p">Specify what is being tested, what constitutes success, failure, or an inconclusive result, and which variables must be held constant or changed.</p>
+<h3>Step 3: Observe Execution</h3>
+<p class="text-p">Collect relevant events, including authorization requests, decisions, execution attempts, authority changes, errors, and economic outcomes.</p>
+<h3>Step 4: Establish and Measure Evidence</h3>
+<p class="text-p">Link system records to actual events where possible, calculate predefined metrics, and document the limits of the evidence and sources of uncertainty.</p>
+<h3>Step 5: Compare and Replicate</h3>
+<p class="text-p">Compare outcomes across repeated trials, system configurations, and reasonable alternatives. Seek independent evaluation where feasible.</p>
+<h3>Step 6: Test the Need for an Intervention</h3>
+<p class="text-p">If a recurring limitation emerges, test whether policy changes, better integration, a different enforcement point, or a reusable mechanism improves outcomes.</p>
+<h3>Step 7: Make the Development Decision</h3>
+<p class="text-p">A problem alone does not establish the need for an architecture or infrastructure. The proposed intervention must address a material constraint, and its benefits must justify its cost, complexity, and risks relative to alternatives.</p>
+<blockquote class="quote-box">Evidence before architecture. Replication before generalization. Measured improvement before claims of necessity.</blockquote>
+<p class="text-p">The research may conclude that existing mechanisms are sufficient. If reached through sound experimentation, that is a valuable finding.</p>
+</section>
+<section class="hub-sec" id="maturity" aria-labelledby="maturity-h"><div class="sec-head"><h2 id="maturity-h">7. Evidence Maturity and Research Status</h2></div>
+<p class="text-p">This page distinguishes the status of a research work from the maturity of its evidence. A work classified as Current does not necessarily contain a validated hypothesis, and a work classified as Experimental does not necessarily contain observed results.</p>
+<h3>Work Status</h3>
+<ul class="states">
+<li><b class="st st-cur">Current:</b> Contributes to the present research direction.</li>
+<li><b class="st st-fnd">Foundational:</b> Remains useful for understanding concepts or distinctions, even if its original framing has evolved.</li>
+<li><b class="st st-exp">Experimental:</b> A hypothesis, method, or model under investigation.</li>
+<li><b class="st st-his">Historical:</b> Documents an earlier stage of research development.</li>
+<li><b class="st st-sup">Superseded:</b> Describes a relationship between an earlier work and a later formulation; it is not a separate maturity level.</li>
+</ul>
+<h3>Evidence Maturity</h3>
+<div class="table-wrapper"><table class="compare-table"><thead><tr><th scope="col">Level</th><th scope="col">Meaning</th></tr></thead><tbody><tr><th scope="row">Conceptual</th><td>A concept, question, or hypothesis has been formulated.</td></tr><tr><th scope="row">Designed</th><td>An experiment, metric, or test system has been designed.</td></tr><tr><th scope="row">Observed</th><td>A result has actually been recorded in a documented experiment.</td></tr><tr><th scope="row">Replicated</th><td>A result has been tested again under stated conditions.</td></tr><tr><th scope="row">Independently Validated</th><td>The result has undergone independent evaluation within a defined scope.</td></tr></tbody></table></div>
+<p class="text-p callout">No result is presented as observed, replicated, or independently validated unless published evidence supports that classification.</p>
+<p class="text-p callout">An experiment's design is not evidence of its success. A single positive result is not, by itself, evidence of generalizability.</p>
+</section>
+<section class="hub-sec" id="dimensions" aria-labelledby="dimensions-h"><div class="sec-head"><h2 id="dimensions-h">8. Current Research Dimensions</h2></div>
+<p class="text-p">Ouamarkom organizes its current work around the following dimensions. They are revisable research areas, not a definitive market taxonomy or a final engineering classification.</p>
+<div class="cards"><div class="card"><h3>8.1 Economic Action</h3><p>Defining the unit, boundaries, and economic consequences of an action, and distinguishing intent, command, execution, and outcome.</p></div>
+<div class="card"><h3>8.2 Authority and Delegation</h3><p>Investigating the source, scope, duration, and conditions of authority, including delegation, restriction, modification, and revocation.</p></div>
+<div class="card"><h3>8.3 Governance and Constraints</h3><p>Examining the policies, approvals, budgets, risk limits, and institutional requirements that determine which actions may proceed.</p></div>
+<div class="card"><h3>8.4 Execution and Enforcement</h3><p>Investigating whether applicable constraints are enforced at the point where an economic effect can occur, including failures, delays, and retries.</p></div>
+<div class="card"><h3>8.5 Evidence and Verification</h3><p>Examining evidence completeness, event-to-record linkage, execution verification, outcome verification, and the limits of what can be established.</p></div>
+<div class="card"><h3>8.6 Outcomes and Benchmarking</h3><p>Developing tests and metrics to compare systems, mechanisms, and alternatives under declared conditions, while separating technical success from economic outcomes.</p></div>
+<div class="card"><h3>8.7 Accountability and Learning</h3><p>Investigating the attribution of decisions, actions, and outcomes, and how prior results can inform reassessment without becoming unauthorized sources of additional authority.</p></div>
+<div class="card"><h3>8.8 Economic Action Across Systems</h3><p>Studying actions that span models, agents, services, external systems, and institutions, including the resulting challenges for authority, evidence, and verification.</p></div>
+<div class="card"><h3>8.9 Economic Action Engineering</h3><p>Exploring whether recurring requirements justify reusable engineering methods or mechanisms, and whether they constitute a distinct engineering direction.</p></div>
+</div>
+</section>
+<section class="hub-sec" id="ceai" aria-labelledby="ceai-h"><div class="sec-head"><h2 id="ceai-h">9. CE-AI™: The Research Framework</h2></div>
+<h3>Command Economy of AI</h3>
+<p class="text-p">Command Economy of AI (CE-AI) is a research framework for studying the economic consequences of AI participation in economic activity through commands, delegated authority, governed execution, and verifiable outcomes.</p>
+<p class="text-p">The framework originated in early research into commands as a means of interacting with and directing intelligent systems. As the research evolved, its focus expanded to what happens when commands are connected to consequential economic actions-and what authority, governance, enforcement, evidence, and accountability may be required.</p>
+<h3>What CE-AI Does Today</h3>
+<p class="text-p">CE-AI organizes the questions and relationships investigated by the research program. It does not prescribe the product, architecture, or infrastructure that the research must ultimately produce.</p>
+<h3>The CE-AI Action Lifecycle</h3>
+<div class="flow" role="list"><span role="listitem">Intent</span><i aria-hidden="true">→</i><span role="listitem">Command</span><i aria-hidden="true">→</i><span role="listitem">Authority</span><i aria-hidden="true">→</i><span role="listitem">Governance</span><i aria-hidden="true">→</i><span role="listitem">Decision</span><i aria-hidden="true">→</i><span role="listitem">Execution</span><i aria-hidden="true">→</i><span role="listitem">Evidence</span><i aria-hidden="true">→</i><span role="listitem">Verification</span><i aria-hidden="true">→</i><span role="listitem">Economic Outcome</span><i aria-hidden="true">→</i><span role="listitem">Learning and Reassessment.</span></div>
+<p class="text-p">Each stage raises a distinct research question:</p>
+<ul class="stagelist">
+<li><b>Intent:</b> What economic objective is being pursued?</li>
+<li><b>Command:</b> How is the objective expressed as an instruction or executable specification?</li>
+<li><b>Authority:</b> Who or what has the right to authorize the action, and within what scope?</li>
+<li><b>Governance:</b> Which policies, constraints, approvals, and institutional requirements apply?</li>
+<li><b>Decision:</b> Should the action proceed, be rejected, or be escalated?</li>
+<li><b>Execution:</b> What actually happens?</li>
+<li><b>Evidence:</b> What records establish the decision, action, and surrounding conditions?</li>
+<li><b>Verification:</b> What can be established from the evidence, and to what degree of confidence?</li>
+<li><b>Economic Outcome:</b> What economic effect actually results?</li>
+<li><b>Learning and Reassessment:</b> What should change in future evaluation, policy, or delegation?</li>
+</ul>
+<p class="text-p callout">This lifecycle does not imply that every stage must be implemented as a separate technical component or that every system must follow the sequence literally.</p>
+<h3>What CE-AI Does Not Claim to Be</h3>
+<p class="text-p">CE-AI is not:</p>
+<ul class="hl neg">
+<li>A foundation AI model.</li>
+<li>An agent product or automation platform.</li>
+<li>A completed protocol.</li>
+<li>A finalized architecture or proven infrastructure layer.</li>
+<li>An industry standard.</li>
+<li>A validated economic theory.</li>
+<li>An established market category.</li>
+<li>A claim that all future economic activity will be command-based.</li>
+<li>A claim that existing governance systems are insufficient.</li>
+</ul>
+<p class="text-p">CE-AI is the research framework. Governed Economic Action is the deeper subject of investigation.</p>
+<p class="links"><a class="btn" href="/en/framework/">Read the CE-AI™ Framework</a></p>
+</section>
+<section class="hub-sec" id="smart-hand" aria-labelledby="smart-hand-h"><div class="sec-head"><h2 id="smart-hand-h">10. Smart Hand™: The Experimental Environment</h2></div>
+<p class="text-p">Smart Hand™ is a controlled experimental environment for studying, measuring, and reproducing governed economic action.</p>
+<p class="text-p">It enables experiments into how an intelligent system moves from economic intent to decision and execution, and how evidence and outcomes can be examined when constraints are applied, modified, or revoked.</p>
+<h3>What Smart Hand Investigates</h3>
+<ul class="hl">
+<li>Authority and delegation boundaries.</li>
+<li>Budget constraints and cumulative spending limits.</li>
+<li>Policy enforcement at the execution point.</li>
+<li>Responses to authority changes and revocation.</li>
+<li>Failures, delays, and retries.</li>
+<li>Evidence completeness and event reconstruction.</li>
+<li>The relationship between technical execution and economic outcomes.</li>
+<li>The effects of proposed interventions compared with existing alternatives.</li>
+</ul>
+<h3>What Smart Hand Does Not Establish by Itself</h3>
+<p class="text-p callout">Its existence does not establish the validity of CE-AI in every application, the industrial validity of GEAB, or the necessity of an institutional gateway or any separate architecture.</p>
+<p class="text-p">The value of the environment depends on the quality of the experiments, measurements, and evidence it produces-not on the tool's existence alone.</p>
+<p class="text-p">Earlier descriptions of Smart Hand as an “execution layer” are preserved in the historical archive because they document an earlier stage of the research. Its current role is experimental.</p>
+<p class="links"><a class="btn" href="#record">Read About Smart Hand™</a></p>
+</section>
+<section class="hub-sec" id="benchmark" aria-labelledby="benchmark-h"><div class="sec-head"><h2 id="benchmark-h">11. GEAB v0.1: Benchmarking and Measurement</h2></div>
+<h3>Governed Economic Action Benchmark</h3>
+<p class="text-p">GEAB is a proposed research program for developing tests and metrics that compare the performance of systems and mechanisms across governed economic action scenarios.</p>
+<p class="text-p">Its purpose is to turn selected governance and execution questions into repeatable tests with declared conditions, outcomes, and evaluation criteria.</p>
+<p class="text-p callout">GEAB v0.1 is experimental. It is not an industry standard and does not establish the necessity of any particular architecture.</p>
+<h3>Illustrative Test Scenarios</h3>
+<div class="cards"><div class="card"><h4>Authority Boundaries:</h4><p> Does the system reject an action that exceeds its authorized scope?</p></div>
+<div class="card"><h4>Cumulative Authority:</h4><p> Can a series of individually permissible actions exceed an aggregate limit?</p></div>
+<div class="card"><h4>Revocation:</h4><p> What happens when authority is withdrawn before execution or while an action is moving through connected systems?</p></div>
+<div class="card"><h4>Retries:</h4><p> Can resubmitting a request produce an unintended duplicate economic action?</p></div>
+<div class="card"><h4>Outcome Failure:</h4><p> Can technical execution succeed while the intended economic outcome fails?</p></div>
+<div class="card"><h4>Evidence:</h4><p> Is the available evidence sufficient to reconstruct what happened and establish what can be verified?</p></div>
+</div>
+<h3>Example: A Cumulative Budget Limit</h3>
+<p class="text-p">Assume a delegation permits total spending of 100,000 currency units, with a maximum of 25,000 per transaction.</p>
+<p class="text-p">The system may execute four transactions of 25,000 each. Once the total budget has been exhausted, any additional request must be evaluated against the predefined policy, not merely against the per-transaction limit.</p>
+<p class="text-p callout">This illustrates a testable hypothesis. It is not a claim of an experimentally observed result.</p>
+<h3>What Should Be Measured?</h3>
+<p class="text-p">Depending on the scenario, relevant metrics may include:</p>
+<ul class="hl">
+<li>Unauthorized action rate.</li>
+<li>Economic exposure resulting from failure.</li>
+<li>False rejection rate for permitted actions.</li>
+<li>Constraint enforcement and revocation latency.</li>
+<li>Evidence completeness.</li>
+<li>Outcome verification quality.</li>
+<li>Unintended duplicate execution.</li>
+<li>Integration and operating cost.</li>
+<li>Reproducibility of results.</li>
+</ul>
+<p class="text-p">Each metric must have a defined calculation method and counting conditions before evaluation begins. The report must distinguish what was measured from what was not measured or could not be established.</p>
+<h3>The Comparative Principle</h3>
+<p class="text-p">GEAB should not evaluate a proposed mechanism in isolation. Where feasible, it should compare:</p>
+<ol class="hl">
+<li value="1">Existing mechanisms under a reasonable configuration.</li>
+<li value="2">Existing mechanisms with improved integration.</li>
+<li value="3">The proposed intervention or new mechanism.</li>
+</ol>
+<p class="text-p">The question is not whether a proposed mechanism can work. It is whether it improves outcomes relative to alternatives, under which conditions, and at what cost.</p>
+<p class="links"><a class="btn" href="/en/research/geab">Read GEAB v0.1</a></p>
+</section>
+<section class="hub-sec" id="model" aria-labelledby="model-h"><div class="sec-head"><h2 id="model-h">12. The CE-AI Governed Economic Execution Model v0.1</h2></div>
+<p class="text-p">This model is a provisional operational representation of the elements of an economic action lifecycle that can be examined experimentally.</p>
+<div class="flow" role="list"><span role="listitem">Intent</span><i aria-hidden="true">→</i><span role="listitem">Command</span><i aria-hidden="true">→</i><span role="listitem">Delegation</span><i aria-hidden="true">→</i><span role="listitem">Authority</span><i aria-hidden="true">→</i><span role="listitem">Governance</span><i aria-hidden="true">→</i><span role="listitem">Enforcement</span><i aria-hidden="true">→</i><span role="listitem">Decision</span><i aria-hidden="true">→</i><span role="listitem">Execution</span><i aria-hidden="true">→</i><span role="listitem">Evidence</span><i aria-hidden="true">→</i><span role="listitem">Verification</span><i aria-hidden="true">→</i><span role="listitem">Outcome</span><i aria-hidden="true">→</i><span role="listitem">Attribution</span><i aria-hidden="true">→</i><span role="listitem">Accountability</span><i aria-hidden="true">→</i><span role="listitem">Learning.</span></div>
+<p class="text-p">Its purpose is to make relationships and questions more precise when designing experiments, not to impose a mandatory sequence on every system.</p>
+<h3>How the Components Relate</h3>
+<ul class="hl">
+<li>CE-AI organizes the research framework and questions.</li>
+<li>The Governed Economic Execution Model provides a provisional operational representation of the action lifecycle.</li>
+<li>Smart Hand provides an environment for experimentation.</li>
+<li>GEAB organizes test scenarios, measurement, and comparative evaluation.</li>
+</ul>
+<p class="text-p callout">Each component has a distinct role. The existence of one does not establish the validity or architectural necessity of the others.</p>
+<p class="text-p">The model remains revisable if experiments show that certain elements should be combined, separated, or reordered.</p>
+<p class="links"><a class="btn" href="/en/research/ce-ai-governed-economic-execution-v0-1">Read Model v0.1</a></p>
+</section>
+<section class="hub-sec" id="hypotheses" aria-labelledby="hypotheses-h"><div class="sec-head"><h2 id="hypotheses-h">13. Architectural Hypotheses: From Requirement to Intervention</h2></div>
+<p class="text-p">Ouamarkom does not begin by assuming the necessity of a gateway, protocol, or infrastructure layer. It begins by asking whether recurring constraints exist that are not adequately addressed by available mechanisms.</p>
+<p class="text-p">If recurring constraints emerge, different interventions can be tested. These may include policy improvements, better integration, changes to delegation management, improved evidence collection, or a distinct architectural boundary.</p>
+<h3>Institutional Gateway Hypothesis</h3>
+<p class="text-p">This hypothesis considers whether a control function or boundary between AI-generated intent or decisions and institutional execution could evaluate the conditions for an action before its economic effect occurs.</p>
+<p class="text-p callout">The need for a separate boundary is not assumed. The relevant functions may already be available through identity, permissions, policy engines, workflow systems, and financial controls.</p>
+<h3>Economic Action Gateway Hypothesis</h3>
+<p class="text-p">This hypothesis investigates whether certain consequential economic actions require a distinct decision boundary at which authority, scope, risk, approvals, and constraints are evaluated before execution.</p>
+<p class="text-p">The experimental question is:</p>
+<blockquote class="quote-box">Does this boundary provide measurable improvement over existing mechanisms or better integration of those mechanisms?</blockquote>
+<h3>Governed Execution Protocol (CEP)</h3>
+<p class="text-p">A proposed protocol could be investigated as a means of expressing, enforcing, and verifying the conditions under which AI systems may execute consequential actions.</p>
+<p class="text-p">CEP remains a development hypothesis, not a completed standard or a component whose necessity has been established.</p>
+<p class="text-p">Any such design should be compared with realistic alternatives, measuring its effects on unauthorized actions, false rejection, latency, evidence quality, and integration and operating costs.</p>
+<h3>The Potential Architectural Path</h3>
+<div class="flow" role="list"><span role="listitem">Observed Action</span><i aria-hidden="true">→</i><span role="listitem">Evidence of a Specific Limitation</span><i aria-hidden="true">→</i><span role="listitem">Recurring Constraint</span><i aria-hidden="true">→</i><span role="listitem">Tested Intervention</span><i aria-hidden="true">→</i><span role="listitem">Measured Improvement</span><i aria-hidden="true">→</i><span role="listitem">Reusable Requirement</span><i aria-hidden="true">→</i><span role="listitem">Architectural Hypothesis</span><i aria-hidden="true">→</i><span role="listitem">Infrastructure Assessment.</span></div>
+<p class="text-p callout">The process may stop at any stage. Existing mechanisms may be sufficient; improved integration may be enough; the constraint may not recur; or the proposed solution may not justify its cost.</p>
+<blockquote class="quote-box">The gateway is a hypothesis. CEP is a hypothesis. Architecture is a hypothesis. Necessity is not assumed; it is tested.</blockquote>
+<h3>Published Architectural Work</h3>
+<div class="cards papers"><article class="rec"><p class="rec-title"><a href="/en/research/paper-4">Paper 4 - Institutional Gateway™</a></p><p>A research paper proposing an institutional control boundary between AI-generated intent and institutional execution, with conditions under which the hypothesis could be falsified.</p></article>
+<article class="rec"><p class="rec-title"><a href="/en/research/paper-5">Paper 5 - CE-AI Governed Architecture™</a></p><p>A provisional research architecture that treats its proposed domains as hypotheses requiring evidence.</p></article>
+<article class="rec"><p class="rec-title"><a href="/en/research/paper-6">Paper 6 - Economic Action Gateway</a></p><p>An architectural hypothesis investigating whether consequential economic actions require a distinct boundary for authorization before execution.</p></article>
+</div>
+<p class="text-p callout">These works are separate. This research center does not assume that one replaces another or that they form a finalized sequence. None is presented as a validated architecture or necessary infrastructure.</p>
+<p class="links"><a class="btn" href="/en/research/paper-4">Read Paper 4</a><a class="btn" href="/en/research/paper-5">Read Paper 5</a><a class="btn" href="/en/research/paper-6">Read Paper 6</a></p>
+</section>
+<section class="hub-sec" id="eae" aria-labelledby="eae-h"><div class="sec-head"><h2 id="eae-h">14. Economic Action Engineering</h2></div>
+<h3>An Emerging Engineering Direction Under Investigation</h3>
+<p class="text-p">Ouamarkom investigates whether recurring requirements in governed economic action may give rise to reusable engineering methods and mechanisms.</p>
+<p class="text-p">This direction is provisionally described as Economic Action Engineering.</p>
+<p class="text-p">It examines how consequential economic actions performed or mediated by intelligent systems might be specified, authorized, constrained, governed, executed, evidenced, verified, attributed, and learned from.</p>
+<p class="text-p">Naming this direction does not establish that a distinct discipline already exists. Nor does the presence of similar problems establish the need for a new technical infrastructure.</p>
+<p class="text-p">A stronger case for Economic Action Engineering would require evidence that important, recurring requirements are not adequately addressed by existing practices and engineering methods, and that specific methods or mechanisms improve outcomes in measurable and reproducible ways.</p>
+<blockquote class="quote-box">A discipline is not established by declaration. Its scope and necessity must emerge from the problems, evidence, and methods that justify it.</blockquote>
+<p class="links"><a class="btn" href="/en/economic-action-engineering">Read About Economic Action Engineering</a></p>
+</section>
+<section class="hub-sec" id="rules" aria-labelledby="rules-h"><div class="sec-head"><h2 id="rules-h">15. Research Decision Principles</h2></div>
+<p class="text-p">Ouamarkom follows a set of principles connecting claims to evidence and engineering decisions to observed constraints.</p>
+<ul class="hl">
+<li>No strong claim without appropriate evidence.</li>
+<li>No broad generalization without sufficient replication.</li>
+<li>No architecture without a specific constraint that warrants it.</li>
+<li>No reusable primitive without a recurring requirement.</li>
+<li>No infrastructure without a justified operational need.</li>
+<li>No commercial product without clear customer value.</li>
+<li>No causal conclusion from a comparison that does not adequately account for relevant factors.</li>
+<li>Absence of evidence is not automatically evidence of absence.</li>
+<li>Failure of an individual hypothesis is not necessarily failure of the research program.</li>
+<li>A sound negative result is not waste; it may prevent unjustified investment.</li>
+</ul>
+<h3>The Research Investment Rule</h3>
+<p class="text-p">Every development decision and expenditure should be tied to a specific uncertainty that the investment is intended to reduce.</p>
+<p class="text-p">Instead of asking, “What should we build next?” we ask:</p>
+<blockquote class="quote-box">“Which uncertainty should we resolve next, and what is the least costly experiment that can produce reliable evidence about it?”</blockquote>
+<p class="text-p callout">These principles guide experiment selection, resource allocation, publication, and development decisions.</p>
+</section>
+<section class="hub-sec" id="record" aria-labelledby="record-h"><div class="sec-head"><h2 id="record-h">16. Research Archive: How the Work Evolved</h2></div>
+<p class="text-p">The research archive documents Ouamarkom's progression from early Command Economy of AI hypotheses and interaction with intelligent systems toward the investigation of economic action, authority, governance, evidence, verification, and potential architectural requirements.</p>
+<p class="text-p">The archive is not a list of works with equal present-day standing. It records intellectual and engineering development while distinguishing what remains useful, what is currently used, and what has become historical.</p>
+<div class="cards papers"><article class="rec paper"><h3><span class="pn">Paper 1</span> - <span class="st st-his">Historical</span> / <span class="st st-con">Conceptual</span></h3><p class="rec-title"><a href="/en/research/paper-1">Command Economy of AI: From Information Retrieval to Intelligent Execution</a></p><p>Introduces the original conceptual framing of Command Economy of AI and the early hypothesis that interaction with intelligent systems could extend from information retrieval toward directing systems to perform tasks.</p><p>It should now be read as part of the research's origin, not as a complete description of its current position.</p></article>
+<article class="rec paper"><h3><span class="pn">Paper 2</span> - <span class="st st-his">Historical</span> / <span class="st st-con">Conceptual</span></h3><p class="rec-title"><a href="/en/research/paper-2">Smart Hand: A New Economic and Operational Layer Above the Internet and Existing Software Infrastructure</a></p><p>Represents an early stage in which Smart Hand was envisioned as an execution layer. That framing has since evolved toward its current role as an experimental environment.</p></article>
+<article class="rec paper"><h3><span class="pn">Paper 3</span> - <span class="st st-fnd">Foundational</span> / <span class="st st-con">Conceptual</span></h3><p class="rec-title"><a href="/en/research/paper-3">Execution as an Architectural Concern in AI Systems</a></p><p>Retains the useful distinction between reasoning, execution, and outcomes, while its infrastructure-related conclusions are treated as an earlier framing that requires reassessment in light of current research.</p></article>
+<article class="rec paper"><h3><span class="pn">Paper 4</span> - <span class="st st-exp">Experimental</span> / <span class="st st-con">Conceptual</span></h3><p class="rec-title"><a href="/en/research/paper-4">Institutional Gateway™</a></p><p>Proposes an institutional gateway hypothesis treated as testable and falsifiable.</p></article>
+<article class="rec paper"><h3><span class="pn">Paper 5</span> - <span class="st st-exp">Experimental</span> / <span class="st st-tmp">Provisional</span></h3><p class="rec-title"><a href="/en/research/paper-5">CE-AI Governed Architecture™</a></p><p>A provisional research architecture, not a finalized architecture.</p></article>
+<article class="rec paper"><h3><span class="pn">Paper 6</span> - <span class="st st-exp">Experimental</span> / <span class="st st-hyp">Architectural Hypothesis</span></h3><p class="rec-title"><a href="/en/research/paper-6">Economic Action Gateway</a></p><p>Investigates the potential need for an architectural boundary governing consequential economic actions before execution.</p></article>
+<article class="rec paper"><h3>Current Research Model</h3><p class="rec-title"><a href="/en/research/ce-ai-governed-economic-execution-v0-1">CE-AI Governed Economic Execution Model v0.1</a></p><p>A provisional operational representation of governed economic action.</p></article>
+<article class="rec paper"><h3>Experimental Research Work</h3><p class="rec-title"><a href="/en/research/geab">GEAB v0.1 - Governed Economic Action Benchmark</a></p><p>An experimental program for measurement and comparative evaluation. The use of the term benchmark does not imply an accredited industry standard.</p></article>
+</div>
+<p class="text-p callout">The status and maturity of these works are described according to the classifications on this page. No experimental result or independent validation is attributed to a work unless published evidence supports that claim.</p>
+</section>
+<section class="hub-sec" id="lineage" aria-labelledby="lineage-h"><div class="sec-head"><h2 id="lineage-h">17. Research Lineage</h2></div>
+<div class="flow" role="list"><span role="listitem">Command</span><i aria-hidden="true">→</i><span role="listitem">Command Economy of AI</span><i aria-hidden="true">→</i><span role="listitem">Execution</span><i aria-hidden="true">→</i><span role="listitem">Economic Action</span><i aria-hidden="true">→</i><span role="listitem">Authority and Governance</span><i aria-hidden="true">→</i><span role="listitem">Evidence and Verification</span><i aria-hidden="true">→</i><span role="listitem">Recurring Constraints</span><i aria-hidden="true">→</i><span role="listitem">Potential Interventions</span><i aria-hidden="true">→</i><span role="listitem">Architectural Hypotheses</span><i aria-hidden="true">→</i><span role="listitem">Potential Infrastructure.</span></div>
+<p class="text-p">This progression reflects a deepening research question, not the completion of each stage.</p>
+<p class="text-p">The research began with how people interact with intelligent systems through commands. It expanded toward how intent becomes execution, then toward the conditions governing economically consequential actions, and finally toward the evidence needed to evaluate those actions.</p>
+<p class="text-p callout">This does not mean the earlier work has lost its value or that the final architecture has been discovered. It means the research framing has evolved. Some earlier concepts are now historical or foundational, while others remain under investigation.</p>
+<h3 id="resources">Supporting Resources</h3>
+<ul class="hl">
+<li><a href="/en/framework/">CE-AI™ Framework</a>.</li>
+<li><a href="/en/canonical-reference/">Knowledge Reference</a>.</li>
+<li><a href="/en/glossary/">Glossary</a>.</li>
+<li>Structural Concept Matrix.</li>
+<li><a href="/en/framework/evolution/">Research Evolution Archive</a>.</li>
+<li><a href="/en/whitepaper/">Foundational Whitepaper</a>.</li>
+<li><a href="/en/intellectual-property/">Intellectual Property</a>.</li>
+</ul>
+<p class="text-p callout">Earlier resources are preserved as records of the work and its evolution. Each should be read in the context of its publication date and status rather than assumed to represent the current position in every detail.</p>
+<p class="links"><a class="btn" href="/en/framework/evolution/">Explore the Research Archive</a><a class="btn" href="/en/whitepaper/">Read the Foundational Whitepaper</a><a class="btn" href="/en/glossary/">Explore the Glossary</a></p>
+</section>
+<section class="hub-sec" id="concepts" aria-labelledby="concepts-h"><div class="sec-head"><h2 id="concepts-h">18. Knowledge Base and Research Questions</h2></div>
+<p class="text-p">Ouamarkom's knowledge base contains questions and concepts covering Command Economy of AI, intent, execution, economic agency, governance, agents, technical architecture, markets, business models, and critical perspectives.</p>
+<p class="text-p">This material is maintained as an evolving knowledge reference. It should not be read as implying that every definition is final or that every commercial or technical hypothesis has been validated.</p>
+<h3>How to Read the Concepts</h3>
+<div class="cards"><div class="card"><h4>Layer 1 - Foundational Concepts:</h4><p> Establish the origin of the research, including commands, intent, and interaction with intelligent systems.</p></div>
+<div class="card"><h4>Layer 2 - Current Research Concepts:</h4><p> Focus on economic action, authority, delegation, governance, enforcement, evidence, verification, outcomes, and accountability.</p></div>
+<div class="card"><h4>Layer 3 - Future Hypotheses:</h4><p> Include potential gateways, protocols, architectures, infrastructure, and new markets. These remain hypotheses unless supported by evidence.</p></div>
+</div>
+<h3>Note on Historical Questions</h3>
+<p class="text-p callout">Some earlier questions describe execution layers, markets, or future economic systems in declarative language. They should be interpreted in their original context as exploratory concepts or hypotheses unless the current research provides independent evidence supporting them.</p>
+<p class="text-p">As the knowledge base evolves, each entry should ideally include a definition, concept status, testable question, relationships to other concepts, available evidence, limitations or counterarguments, and relevant references.</p>
+<p class="text-p">Explore the concepts and questions:</p>
+<p class="links"><a class="btn" href="/en/glossary/">Intent</a><a class="btn" href="/en/glossary/">Delegation</a><a class="btn" href="/en/glossary/">Enforcement</a><a class="btn" href="/en/glossary/">Economic Action</a><a class="btn" href="/en/glossary/">Smart Hand</a><a class="btn" href="/en/glossary/">GEAB</a><a class="btn" href="/en/glossary/">Verification</a><a class="btn" href="/en/glossary/">Accountability</a><a class="btn" href="/en/glossary/">Economic Action Engineering</a></p>
+</section>
+<section class="hub-sec" id="next" aria-labelledby="next-h"><div class="sec-head"><h2 id="next-h">19. What Comes Next?</h2></div>
+<p class="text-p">Ouamarkom progresses through evidence-driven research decisions rather than predetermined commitments to a product or architecture.</p>
+<h3>Research Priorities</h3>
+<ol class="hl">
+<li value="1">Stabilize definitions of actions, authority, outcomes, and verification.</li>
+<li value="2">Define experimental scenarios that can be executed in a controlled environment.</li>
+<li value="3">Specify metrics and success, failure, and inconclusive criteria before testing.</li>
+<li value="4">Run experiments and document raw evidence, results, and limitations.</li>
+<li value="5">Compare existing mechanisms with integration improvements and proposed interventions.</li>
+<li value="6">Replicate findings across different configurations and seek independent review where feasible.</li>
+<li value="7">Publish results, including failures and inconclusive findings.</li>
+<li value="8">Determine whether recurring constraints are significant enough to justify a reusable intervention.</li>
+<li value="9">Decide whether the evidence warrants a more specific architectural hypothesis.</li>
+<li value="10">Assess infrastructure only when evidence establishes a recurring operational need that available alternatives do not adequately address.</li>
+</ol>
+<h3>What Could Change the Research Direction?</h3>
+<p class="text-p">If experiments show that existing mechanisms achieve the required outcomes, that would count as evidence against the need for new infrastructure within the tested scope.</p>
+<p class="text-p">If findings fail to replicate, the hypothesis may need to be narrowed or the measurement approach revised.</p>
+<p class="text-p">If a proposed intervention does not improve outcomes enough to justify its cost, it should not be promoted to a permanent architectural component.</p>
+<p class="text-p">If a recurring constraint, measurable improvement, and reusable requirement emerge, a more specific architectural investigation may be justified.</p>
+<blockquote class="quote-box">Research success does not mean proving the original idea right at any cost. It means reaching a reliable conclusion about what should be built, what should not be built, and why.</blockquote>
+</section>
+<section class="hub-sec" id="about" aria-labelledby="about-h"><div class="sec-head"><h2 id="about-h">20. About Ouamarkom</h2></div>
+<p class="text-p">Ouamarkom is a research and engineering initiative investigating the conditions and mechanisms that may make economic actions performed or mediated by AI systems governable, enforceable, verifiable, and accountable.</p>
+<p class="text-p">Ouamarkom uses CE-AI as its research framework, Smart Hand as its experimental environment, GEAB as its developing measurement and benchmarking program, and provisional operational models to turn research questions into testable investigations.</p>
+<p class="text-p">Through experimentation, evidence, replication, and measured interventions, Ouamarkom seeks to identify requirements that recur across actions, systems, and institutions-and determine whether those requirements justify new mechanisms, architectures, or infrastructure.</p>
+<p class="text-p">Ouamarkom does not assume the architectural outcome in advance and does not claim that its current hypotheses have been proven. It builds the evidence base needed to make those decisions.</p>
+<h3>Canonical Short Description</h3>
+<blockquote class="quote-box">Ouamarkom builds the evidence base for understanding governed AI economic action, identifying requirements that may justify new mechanisms or architectures, and testing whether those developments are necessary.</blockquote>
+<h3>Founding Principle</h3>
+<blockquote class="quote-box">We study the action. We test governance and enforcement. We verify evidence and outcomes. Then we let the evidence determine what should be built.</blockquote>
+<h3>Research, Development, and Investment</h3>
+<p class="text-p">Investment in Ouamarkom is directed toward reducing research uncertainty, developing the experimental environment, refining metrics, producing inspectable evidence, testing findings across different configurations, and pursuing independent validation where feasible.</p>
+<p class="text-p">The intended output is not predetermined to be a gateway, protocol, or standalone infrastructure layer. That decision depends on experimental findings and the value that can be demonstrated for institutions.</p>
+<h3>Initial Research Base</h3>
+<p class="text-p">Initial experiments begin in Saudi Arabia as a base for research, development, and experimental validation. The generalizability of findings is not inferred from location or a single experiment; it must be established through replication across different systems and contexts.</p>
+<h3>Invitation to Collaborate</h3>
+<p class="text-p">Ouamarkom invites researchers, engineers, institutions, and experimental partners to collaborate on repeatable test design, metric evaluation, comparisons between existing mechanisms and proposed alternatives, and independent review of evidence and findings.</p>
+<p class="text-p">Contributions that falsify a hypothesis are as welcome as those that support it.</p>
+<blockquote class="quote-box"><strong>The open research question remains:</strong> What must hold when AI can act economically, and what can be established through experiments about the best way to make that action governable?</blockquote>
+</section>
+</div></div>
 </main>
-
-<footer class="site-footer">
-    <div class="footer-bottom-container" dir="ltr">
-        <p>© 2026 Ouamarkom. All Rights Reserved.</p>
-        <div class="footer-legal-links">
-            <a href="/en/intellectual-property/">Intellectual Property</a>
-            <span class="footer-legal-separator">·</span>
-            <a href="mailto:contact@ouamarkom.com">Contact</a>
-        </div>
-    </div>
-</footer>
-
+<footer class="site-footer"><div class="footer-bottom-container" dir="ltr"><p>© 2026 Ouamarkom™. All rights reserved.</p><div class="footer-legal-links"><a href="/en/research">Research</a> <span class="footer-legal-separator">·</span> <a href="/en/canonical-reference/">Knowledge Reference</a> <span class="footer-legal-separator">·</span> <a href="/en/glossary/">Glossary</a> <span class="footer-legal-separator">·</span> <a href="#record">Research Archive</a> <span class="footer-legal-separator">·</span> <a href="/en/whitepaper/">Whitepaper</a> <span class="footer-legal-separator">·</span> <a href="/en/intellectual-property/">Intellectual Property</a> <span class="footer-legal-separator">·</span> <a href="mailto:contact@ouamarkom.com">Contact</a></div></div></footer>
 <script src="/script.js" defer></script>
-
 <script>
-    let currentTab = 'faq-view';
-
-    const kbDataset = [
-        {
-            title: "1. What Is the Command Economy of AI?",
-            content: `<p class="text-p">The Command Economy of AI (CEAI) is a conceptual and research framework for studying how economic coordination evolves when human intent, expressed through natural language and structured commands, becomes a primary interface for directing intelligent computational systems toward measurable execution and economic outcomes.</p>
-                      <p class="text-p">CEAI does not describe a political system or a replacement for capitalism or free markets. It describes an emerging technological and economic coordination layer operating within existing markets.</p>
-                      <blockquote class="quote-box">Its central question is: How can human intent become executable economic action with minimal operational friction?</blockquote>`
-        },
-        {
-            title: "2. The Meaning of \"Command\"",
-            content: `<p class="text-p">The word "command" in CEAI must be distinguished from its historical use in political economy.</p>
-                      <p class="text-p">A historical command economy refers to centralized state control over production, allocation, and distribution.</p>
-                      <p class="text-p">In CEAI, a command represents a high-level expression of human intent that can be interpreted, structured, decomposed, executed, monitored, and optimized by intelligent systems.</p>
-                      <p class="text-p">A command may express a business objective such as: <em>«Launch a new product in three markets, within a defined budget, while achieving specific performance targets.»</em></p>
-                      <p class="text-p">The command is not a political decree. It is an executable strategic objective.</p>`
-        },
-        {
-            title: "3. CEAI Is Not a Political or Ideological System",
-            content: `<p class="text-p">CEAI is not an argument for centralized economic planning. It does not advocate government ownership, political coercion, elimination of markets, or centralized control of economic resources.</p>
-                      <p class="text-p">Instead, CEAI examines how computational infrastructure can reduce the friction between:</p>
-                      <p class="text-p" style="text-align: center; font-weight: bold; color: var(--gold);">Human Intent → Decision → Coordination → Execution → Outcome</p>
-                      <p class="text-p">The framework can therefore operate within capitalist, mixed-market, decentralized, or other economic environments. Its focus is technological coordination and economic execution.</p>`
-        },
-        {
-            title: "4. From Artificial Intelligence to Intelligent Execution",
-            content: `<p class="text-p">Much of the first generation of AI focused on intelligence generation: generating text, generating images, retrieving information, analyzing data, writing code, and answering questions.</p>
-                      <p class="text-p">The next stage moves beyond generation toward execution. The critical question becomes: <strong>How does intelligence translate into action?</strong></p>
-                      <p class="text-p">This creates the need for an execution layer capable of connecting models, agents, APIs, workflows, enterprise systems, data, and real-world operations. CEAI provides a conceptual framework for understanding that transition.</p>`
-        },
-        {
-            title: "5. The Execution Gap",
-            content: `<p class="text-p">The modern economy already contains powerful software. The problem is increasingly not the absence of tools; the problem is the friction required to operate them.</p>
-                      <p class="text-p">A single strategic objective may require: research, analysis, software, spreadsheets, communication, marketing systems, CRM platforms, payment systems, APIs, databases, human approvals, and operational monitoring.</p>
-                      <p class="text-p">The execution gap is the distance between what a human wants to achieve and the amount of operational work required to make it happen. CEAI focuses on compressing that gap.</p>`
-        },
-        {
-            title: "6. The Intent Interface",
-            content: `<p class="text-p">The Intent Interface represents a shift in human-computer interaction.</p>
-                      <p class="text-p">Instead of asking users to understand every application, workflow, dashboard, or technical procedure, systems increasingly allow users to express the desired outcome directly.</p>
-                      <p class="text-p">The interface therefore moves from: <strong>Tool → User → Task</strong> toward: <strong style="color: var(--accent);">Intent → Intelligence → Execution</strong>.</p>
-                      <p class="text-p">This does not necessarily eliminate graphical interfaces. Instead, it changes their role from primary control surfaces into dynamic execution environments.</p>`
-        },
-        {
-            title: "7. The Command Compiler",
-            content: `<p class="text-p">A Command Compiler is the conceptual layer that transforms human intent into an executable computational structure.</p>
-                      <p class="text-p">It may perform functions such as: 1. Intent interpretation | 2. Context retrieval | 3. Constraint extraction | 4. Goal decomposition | 5. Task planning | 6. Agent assignment | 7. Tool selection | 8. Execution routing | 9. Verification | 10. Feedback and optimization.</p>
-                      <p class="text-p">The result is a structured transition from natural-language intent to programmatic execution.</p>`
-        },
-        {
-            title: "8. Multi-Agent Execution",
-            content: `<p class="text-p">CEAI assumes that complex objectives cannot always be fulfilled by a single model or agent.</p>
-                      <p class="text-p">Instead, specialized agents may perform different functions (Research, Strategy, Development, Finance, Marketing, Operations, Compliance, Analytics).</p>
-                      <p class="text-p">An orchestration layer coordinates these agents around a shared objective. The value is therefore not simply intelligence at the individual-agent level, but coordinated intelligence at the system level.</p>`
-        },
-        {
-            title: "9. Smart Hand Infrastructure",
-            content: `<p class="text-p">The Smart Hand represents the execution infrastructure envisioned within the CEAI thesis. If AI has traditionally functioned as an intelligence layer, the Smart Hand represents the infrastructure that connects intelligence to execution.</p>
-                      <p class="text-p" style="text-align: center; font-weight: bold; color: var(--gold);">Human Intent → Intent Understanding → Planning → Agent Orchestration → Execution → Verification → Outcome</p>
-                      <p class="text-p">The objective is not to replace human strategic authority, but to make human intent operationally executable at unprecedented speed and scale.</p>`
-        },
-        {
-            title: "10. Execution Capital",
-            content: `<p class="text-p">Execution Capital describes the accumulated organizational capability required to turn commands into reliable outcomes.</p>
-                      <p class="text-p">It may include: institutional context, proprietary data, system integrations, APIs, workflows, agent configurations, historical execution patterns, decision records, operational knowledge, and governance policies.</p>
-                      <p class="text-p">The more mature an organization's execution infrastructure becomes, the less friction exists between strategic intent and operational outcome.</p>`
-        },
-        {
-            title: "From Intelligence to Execution (Closing Statement)",
-            content: `<p class="text-p">The history of computing has repeatedly moved toward abstraction: from machine code to programming languages, from programming languages to software, from software to platforms, and now from platforms toward intelligent systems.</p>
-                      <p class="text-p">The next abstraction may be the ability to express an objective directly and allow intelligent infrastructure to coordinate the execution beneath it. That is the problem space explored by the Command Economy of AI.</p>
-                      <blockquote class="quote-box">At the center of that transition is the Smart Hand: Intent → Intelligence → Orchestration → Execution → Outcome</blockquote>
-                      <p class="text-p">The strategic question is no longer only: <em>How intelligent can AI become?</em> It is increasingly: <em>How effectively can intelligence become execution?</em></p>`
-        }
-    ];
-
-    const glossaryDataset = [
-        { term: "Command Economy of AI (CEAI)", code: "CEAI Core Concept", desc: "A conceptual and research framework examining how economic coordination changes when human intent becomes a primary interface for directing intelligent computational systems toward measurable execution and economic outcomes." },
-        { term: "AI Execution Infrastructure", code: "Execution Infrastructure", desc: "The technological layer connecting AI intelligence to real-world digital or physical execution through agents, APIs, workflows, orchestration, verification, and outcome management." },
-        { term: "Smart Hand", code: "Execution Primitive", desc: "A conceptual execution infrastructure designed to translate human intent into coordinated intelligent action and measurable outcomes." },
-        { term: "Human Intent", code: "Intent Layer", desc: "The strategic objective, desired outcome, constraints, and priorities expressed by a human decision-maker." },
-        { term: "Intent Interface", code: "UI Paradigm", desc: "An interaction layer through which users communicate desired objectives directly to intelligent systems rather than manually operating individual software tools." },
-        { term: "Intent Engineering", code: "Methodology", desc: "The discipline of structuring human objectives, constraints, context, priorities, and success criteria so that intelligent systems can reliably interpret and execute them." },
-        { term: "Command Engineering", code: "System Engineering", desc: "The design of high-level executable commands that translate strategic objectives into structured computational workflows." },
-        { term: "Command Compiler", code: "Middleware Layer", desc: "A conceptual middleware layer that converts natural-language commands into structured plans, dependencies, tasks, and executable workflows." },
-        { term: "Agentic AI", code: "Agent Architecture", desc: "AI systems capable of planning, using tools, maintaining state, taking actions, and pursuing objectives across multiple steps." },
-        { term: "Multi-Agent Orchestration", code: "Orchestration Layer", desc: "The coordination of multiple specialized AI agents working together toward a shared objective." },
-        { term: "Execution Capital", code: "Balance Sheet Asset", desc: "The accumulated infrastructure, data, integrations, workflows, context, and institutional knowledge that increase an organization's ability to execute AI-driven commands." },
-        { term: "Decision Capital", code: "Knowledge Asset", desc: "The accumulated value of historical decisions, evaluations, outcomes, and organizational judgment that can inform future intelligent execution." },
-        { term: "Institutional Memory", code: "Context Layer", desc: "Persistent organizational context that enables AI systems to understand previous decisions, workflows, constraints, outcomes, and organizational knowledge." },
-        { term: "Outcome Intelligence", code: "System Intelligence", desc: "The ability of an intelligent system to evaluate execution against predefined objectives and adapt its actions accordingly." },
-        { term: "Execution Advantage", code: "Strategic Metric", desc: "A measurable competitive advantage created by reducing the time, cost, complexity, and friction between strategic intent and operational execution." },
-        { term: "Command Network", code: "System Network", desc: "A connected computational environment in which commands, agents, services, data, and execution outcomes interact to fulfill strategic objectives." },
-        { term: "Intelligent Economic OS", code: "Operating System", desc: "A conceptual operating layer capable of coordinating intelligent agents, enterprise resources, workflows, and economic operations around human-defined objectives." },
-        { term: "Outcome-Based Execution", code: "Execution Model", desc: "An execution model in which systems are evaluated primarily by measurable results rather than activity, tool usage, or human hours." }
-    ];
-
-    const compareDataset = {
-        headers: ["Dimension", "Traditional Software Economy", "Command Economy of AI"],
-        rows: [
-            ["Primary Interface", "Applications and dashboards", "Human intent and commands"],
-            ["Unit of Interaction", "Tool / feature", "Objective / command"],
-            ["Human Role", "Operator", "Strategic director and governor"],
-            ["AI Role", "Assistant / generator", "Reasoning and execution system"],
-            ["Workflow", "Manually assembled", "Dynamically orchestrated"],
-            ["Coordination", "Human-driven", "Multi-agent and system-driven"],
-            ["Execution", "Tool-by-tool", "End-to-end"],
-            ["Data", "Stored information", "Context for intelligent execution"],
-            ["Memory", "Application-specific", "Institutional and cross-system"],
-            ["Pricing", "Seats, licenses, usage", "Increasingly outcome-oriented"],
-            ["Competitive Advantage", "Software and headcount", "Execution speed and system intelligence"],
-            ["Core Bottleneck", "Tool operation", "Intent quality and governance"],
-            ["Organizational Model", "Teams operating software", "Humans directing intelligent systems"],
-            ["Measurement", "Activity and productivity", "Verified outcomes"],
-            ["Strategic Layer", "Software management", "Intent engineering and execution infrastructure"]
-        ]
-    };
-
-    const faqDataset = [
-        // Section 1: Foundations & Definitions (1-20)
-        { id: 1, cat: "cat1", q: "What is the Command Economy of AI (CEAI)?", a: "CEAI is a conceptual and research framework studying how economic coordination evolves when human intent becomes a primary interface for directing intelligent computational systems toward measurable execution and economic outcomes." },
-        { id: 2, cat: "cat1", q: "Why is it called the Command Economy of AI?", a: "Because the framework treats the command as a fundamental unit of coordination between human strategic intent and intelligent computational execution." },
-        { id: 3, cat: "cat1", q: "Is CEAI the same as a traditional command economy?", a: "No. Traditional command economies are associated with centralized political authority and state-directed resource allocation. CEAI refers to decentralized human and organizational intent being translated into computational execution." },
-        { id: 4, cat: "cat1", q: "Is CEAI a new economic system?", a: "Not in the political or macroeconomic sense. It is better understood as an emerging technological and economic coordination layer operating within existing markets." },
-        { id: 5, cat: "cat1", q: "What is the central idea behind CEAI?", a: "The central idea is that economic coordination can increasingly move from operating software tools manually to expressing desired outcomes directly and allowing intelligent systems to coordinate execution." },
-        { id: 6, cat: "cat1", q: "What problem does CEAI address?", a: "It addresses the execution gap between strategic human intent and the fragmented operational work required to transform that intent into measurable results." },
-        { id: 7, cat: "cat1", q: "How does CEAI differ from the Prompt Economy?", a: "The Prompt Economy focuses primarily on prompts used to generate content or obtain responses. CEAI extends the concept toward end-to-end execution of strategic objectives across multiple systems and agents." },
-        { id: 8, cat: "cat1", q: "Is a CEAI command simply a prompt?", a: "No. A command is an operational objective that can contain goals, constraints, context, resources, dependencies, and measurable success criteria." },
-        { id: 9, cat: "cat1", q: "Why is human intent becoming more important?", a: "As AI systems become increasingly capable of execution, the strategic quality of the objective becomes a major determinant of system performance." },
-        { id: 10, cat: "cat1", q: "What does it mean for language to become an economic interface?", a: "It means natural language can increasingly serve as a mechanism for expressing objectives that intelligent systems translate into operational actions." },
-        { id: 11, cat: "cat1", q: "How does CEAI differ from the Information Economy?", a: "The Information Economy primarily emphasizes information creation, storage, access, and distribution. CEAI emphasizes converting information and intent into coordinated action and outcomes." },
-        { id: 12, cat: "cat1", q: "How does CEAI differ from the Platform Economy?", a: "Platforms primarily connect participants. CEAI focuses on connecting strategic human intent directly to intelligent computational execution." },
-        { id: 13, cat: "cat1", q: "What is CEAI's most important conceptual contribution?", a: "Its central contribution is framing the transition from AI intelligence generation toward intelligent economic execution as a distinct infrastructure problem." },
-        { id: 14, cat: "cat1", q: "Why is CEAI an emerging economic layer?", a: "Because AI systems are increasingly capable of planning, using tools, coordinating agents, and executing multi-step workflows rather than merely generating information." },
-        { id: 15, cat: "cat1", q: "Is CEAI limited to technology companies?", a: "No. Its principles can apply to finance, healthcare, manufacturing, education, logistics, professional services, commerce, and other sectors." },
-        { id: 16, cat: "cat1", q: "What is a simple example of CEAI?", a: "A business leader could define a market-entry objective and have an intelligent execution system coordinate research, strategy, product development, marketing, and analytics instead of manually managing each workflow." },
-        { id: 17, cat: "cat1", q: "How does CEAI differ from a conventional AI assistant?", a: "A conventional assistant primarily responds to requests. A CEAI-oriented system is designed around persistent objectives, coordinated execution, system interaction, verification, and measurable outcomes." },
-        { id: 18, cat: "cat1", q: "Does CEAI mean humans become unnecessary?", a: "No. CEAI changes the human role from repetitive operational execution toward strategic intent, governance, judgment, and accountability." },
-        { id: 19, cat: "cat1", q: "Why is CEAI relevant now?", a: "Because AI is rapidly moving from content generation and conversational assistance toward agentic systems capable of performing increasingly complex multi-step actions." },
-        { id: 20, cat: "cat1", q: "What is the core message of CEAI?", a: "The next competitive advantage may increasingly belong to organizations that can transform high-quality human intent into reliable, scalable execution." },
-
-        // Section 2: Philosophy & Economic Shift (21-40)
-        { id: 21, cat: "cat2", q: "What paradigm shift does CEAI describe?", a: "A transition from software-centered interaction toward intent-centered coordination, where humans increasingly define objectives while intelligent systems coordinate execution." },
-        { id: 22, cat: "cat2", q: "Why is structured intent strategically valuable?", a: "Because capable execution systems require clear objectives, constraints, context, and success criteria to produce reliable outcomes." },
-        { id: 23, cat: "cat2", q: "How can commands become workflows?", a: "A structured command can be decomposed into objectives, dependencies, tasks, resources, agents, and verification criteria, creating an executable workflow." },
-        { id: 24, cat: "cat2", q: "What happens when machines adapt to human communication?", a: "The interaction burden shifts away from requiring humans to learn complex technical interfaces and toward systems learning to interpret human objectives." },
-        { id: 25, cat: "cat2", q: "Why are semantic systems important?", a: "Because semantic systems can bridge human language and machine-executable operations across software, data, APIs, and workflows." },
-        { id: 26, cat: "cat2", q: "What is Execution Advantage?", a: "Execution Advantage is the ability to move from strategic intent to measurable operational outcome faster, more efficiently, and more reliably than competing organizations." },
-        { id: 27, cat: "cat2", q: "Does CEAI eliminate traditional information discovery?", a: "No. It changes the role of discovery by integrating research, reasoning, and action into a more continuous execution loop." },
-        { id: 28, cat: "cat2", q: "What happens when the idea-to-execution cycle becomes shorter?", a: "Organizations can experiment, validate, iterate, and launch initiatives more rapidly, potentially changing the economics of innovation." },
-        { id: 29, cat: "cat2", q: "What is a decentralized semantic economy?", a: "It is an environment in which individuals and organizations can express objectives through semantic interfaces while intelligent systems coordinate execution across distributed infrastructure." },
-        { id: 30, cat: "cat2", q: "How can CEAI change capital allocation?", a: "Capital can increasingly be allocated according to measurable objectives and verified execution rather than simply funding labor, software licenses, or fixed operational capacity." },
-        { id: 31, cat: "cat2", q: "What happens to traditional graphical interfaces?", a: "They are unlikely to disappear entirely, but some may become secondary to adaptive interfaces and intelligent orchestration layers." },
-        { id: 32, cat: "cat2", q: "Why is organizational context strategically important?", a: "Generic intelligence is widely accessible. Proprietary context, institutional memory, data, constraints, and decision history can create differentiation." },
-        { id: 33, cat: "cat2", q: "How could pricing evolve under CEAI?", a: "Some services may shift from pricing software access or human hours toward pricing based on usage, execution, performance, or verified outcomes." },
-        { id: 34, cat: "cat2", q: "What is a single-operator enterprise?", a: "A highly automated organization in which a small number of humans direct intelligent systems that perform substantial portions of research, operations, development, marketing, and administration." },
-        { id: 35, cat: "cat2", q: "How does Execution Capital affect organizations?", a: "It can become a source of accumulated operational advantage as systems, data, workflows, integrations, and institutional knowledge become increasingly optimized for execution." },
-        { id: 36, cat: "cat2", q: "What happens to traditional domain expertise?", a: "Expertise increasingly shifts from memorizing information toward judgment, validation, governance, context design, and effective direction of intelligent systems." },
-        { id: 37, cat: "cat2", q: "How might organizational roles change?", a: "New roles may emerge around AI orchestration, intent engineering, system governance, agent supervision, execution architecture, and outcome verification." },
-        { id: 38, cat: "cat2", q: "Why is human oversight still important?", a: "Because intelligent systems can make incorrect assumptions, misunderstand objectives, or produce unsafe or ineffective actions. Human governance remains essential." },
-        { id: 39, cat: "cat2", q: "What is an adaptive Intent Interface?", a: "An interface that dynamically presents tools, information, workflows, and controls according to the user's objective rather than forcing the user into a fixed application structure." },
-        { id: 40, cat: "cat2", q: "How can CEAI reduce transaction costs?", a: "By automating coordination, information exchange, workflow execution, verification, and other repetitive activities that traditionally require multiple human intermediaries." },
-
-        // Section 3: Architecture & Technology (41-60)
-        { id: 41, cat: "cat3", q: "What is the technical foundation of CEAI?", a: "A CEAI architecture can combine intent interfaces, foundation models, context systems, command compilation, agent orchestration, execution engines, APIs, memory, governance, and outcome verification." },
-        { id: 42, cat: "cat3", q: "What is the Intent Layer?", a: "The Intent Layer captures and interprets the user's objective, context, constraints, priorities, and desired outcomes." },
-        { id: 43, cat: "cat3", q: "What is the Command Layer?", a: "The Command Layer converts interpreted intent into structured execution specifications that systems and agents can act upon." },
-        { id: 44, cat: "cat3", q: "What role do foundation models play?", a: "Foundation models provide reasoning, language understanding, planning, synthesis, and other cognitive capabilities within the broader execution architecture." },
-        { id: 45, cat: "cat3", q: "Why are AI agents considered an execution workforce?", a: "Because agents can interact with tools, APIs, data, software environments, and workflows to perform tasks toward defined objectives." },
-        { id: 46, cat: "cat3", q: "What is Intelligent Orchestration?", a: "Intelligent Orchestration coordinates multiple agents, tasks, systems, dependencies, data flows, and execution states around a shared objective." },
-        { id: 47, cat: "cat3", q: "How does CEAI differ from Generative AI?", a: "Generative AI primarily produces content or information. CEAI focuses on using intelligence as part of a broader system capable of coordinated action and measurable execution." },
-        { id: 48, cat: "cat3", q: "What is Command Architecture?", a: "Command Architecture defines how intent, context, constraints, agents, systems, workflows, and governance mechanisms are connected to produce reliable execution." },
-        { id: 49, cat: "cat3", q: "What is a Command Compiler?", a: "A conceptual compiler that translates natural-language objectives into structured plans, dependencies, tasks, and executable workflows." },
-        { id: 50, cat: "cat3", q: "What is AI Institutional Memory?", a: "A persistent organizational memory layer containing relevant historical decisions, context, workflows, outcomes, and knowledge used to improve future execution." },
-        { id: 51, cat: "cat3", q: "What is Decision Capital?", a: "Decision Capital is the accumulated organizational value contained in validated decisions, evaluations, outcomes, and judgment patterns." },
-        { id: 52, cat: "cat3", q: "What is an Intelligent Economic OS?", a: "A conceptual operating layer that coordinates AI agents, data, software systems, resources, and workflows around economic objectives." },
-        { id: 53, cat: "cat3", q: "What are the stages of a Command Lifecycle?", a: "A typical lifecycle includes: Intent → Interpretation → Planning → Compilation → Orchestration → Execution → Verification → Feedback." },
-        { id: 54, cat: "cat3", q: "Why is the feedback loop important?", a: "It allows the system to compare execution with intended outcomes and adjust its behavior when performance deviates from defined objectives." },
-        { id: 55, cat: "cat3", q: "Why are measurable objectives important?", a: "Because intelligent execution requires observable criteria against which performance can be evaluated." },
-        { id: 56, cat: "cat3", q: "What is a Command Network?", a: "A connected system through which commands, agents, services, data, and execution outcomes interact to achieve organizational objectives." },
-        { id: 57, cat: "cat3", q: "What distinguishes an Intent Interface?", a: "It allows the system to adapt the interaction model around the user's objective instead of requiring the user to navigate a fixed collection of tools." },
-        { id: 58, cat: "cat3", q: "How does CEAI differ from traditional RPA?", a: "RPA typically depends on predefined deterministic workflows. CEAI-oriented systems can incorporate reasoning, adaptation, dynamic planning, and alternative execution paths." },
-        { id: 59, cat: "cat3", q: "Why are open standards important?", a: "Interoperable standards can allow different agents, models, tools, and systems to communicate and coordinate safely." },
-        { id: 60, cat: "cat3", q: "What is the CEAI value chain?", a: "Human Intent → Intent Understanding → Command Compilation → Agentic Planning → Multi-Agent Orchestration → Execution → Verification → Economic Outcome." },
-
-        // Section 4: Business, Markets & Value (61-80)
-        { id: 61, cat: "cat4", q: "How could CEAI change business models?", a: "It can shift businesses from selling access to software toward delivering intelligent execution, automation, and measurable outcomes." },
-        { id: 62, cat: "cat4", q: "Why is execution infrastructure strategically important?", a: "Because organizations that execute strategic decisions faster and more reliably can gain meaningful competitive advantages." },
-        { id: 63, cat: "cat4", q: "How could competition change?", a: "Competition may increasingly be measured by execution speed, adaptability, intelligence, capital efficiency, and the ability to convert objectives into outcomes." },
-        { id: 64, cat: "cat4", q: "Where are CEAI investment opportunities?", a: "Potential infrastructure categories include agent orchestration, execution engines, command compilers, context systems, governance, security, observability, verification, and enterprise integration." },
-        { id: 65, cat: "cat4", q: "Why is Command Engineering important?", a: "Because poorly defined objectives can produce inefficient or incorrect execution. High-quality command design improves alignment between human intent and machine action." },
-        { id: 66, cat: "cat4", q: "Can CEAI benefit startups?", a: "Yes. Intelligent execution can allow small teams to coordinate capabilities that previously required significantly larger operational organizations." },
-        { id: 67, cat: "cat4", q: "How does a CEAI platform differ from traditional SaaS?", a: "Traditional SaaS primarily provides tools. A CEAI platform aims to provide intelligent execution toward defined objectives." },
-        { id: 68, cat: "cat4", q: "How could professional services change?", a: "Some professional services may evolve from labor-hour delivery toward AI-enabled continuous execution, advisory systems, and outcome-based models." },
-        { id: 69, cat: "cat4", q: "How could CEAI affect enterprise management?", a: "It could reduce the operational distance between executive objectives and the systems responsible for executing them." },
-        { id: 70, cat: "cat4", q: "Could CEAI create new types of companies?", a: "Potentially. New organizational forms may emerge around highly automated operations, agent-native services, execution marketplaces, and specialized AI infrastructure." },
-        { id: 71, cat: "cat4", q: "How could entrepreneurship change?", a: "Lower execution costs could allow founders to test, build, and operate businesses with smaller teams and greater speed." },
-        { id: 72, cat: "cat4", q: "How might markets evolve?", a: "Some markets may increasingly incorporate autonomous agents capable of searching, negotiating, transacting, monitoring, and optimizing within defined constraints." },
-        { id: 73, cat: "cat4", q: "What is a Command Marketplace?", a: "A potential marketplace for reusable, verified command architectures, workflows, agent configurations, and execution strategies." },
-        { id: 74, cat: "cat4", q: "Why are context and data important?", a: "Because intelligent execution depends not only on general intelligence but also on accurate, relevant, organization-specific context." },
-        { id: 75, cat: "cat4", q: "What creates Execution Advantage?", a: "The combination of high-quality intent, strong context, reliable infrastructure, effective orchestration, fast execution, and measurable feedback." },
-        { id: 76, cat: "cat4", q: "How might investors evaluate AI-native companies?", a: "Evaluation may increasingly consider execution infrastructure, agent deployment, proprietary context, automation depth, outcome metrics, and system reliability in addition to traditional software metrics." },
-        { id: 77, cat: "cat4", q: "Which industries could experience significant transformation?", a: "Industries involving complex knowledge workflows and coordination may be particularly affected, including finance, healthcare, legal services, logistics, manufacturing, marketing, and enterprise operations." },
-        { id: 78, cat: "cat4", q: "How does CEAI differ from the Platform Economy?", a: "Platforms primarily coordinate participants. CEAI seeks to coordinate intelligent execution around explicit objectives." },
-        { id: 79, cat: "cat4", q: "Could new markets emerge?", a: "Potentially, including markets for agent verification, execution infrastructure, AI governance, command architectures, outcome assurance, and specialized enterprise intelligence." },
-        { id: 80, cat: "cat4", q: "What is the commercial destination of CEAI?", a: "A more intent-driven economy in which individuals and organizations can increasingly express desired outcomes directly while intelligent infrastructure coordinates the underlying execution." },
-
-        // Section 5: Future, Governance & Criticism (81-100)
-        { id: 81, cat: "cat5", q: "Why is CEAI a research framework?", a: "Because it examines structural changes in economic coordination, organizations, capital, labor, technology, and production rather than focusing only on individual AI models." },
-        { id: 82, cat: "cat5", q: "Does CEAI replace existing economic systems?", a: "No. It describes an emerging technological coordination layer that can operate within existing economic systems." },
-        { id: 83, cat: "cat5", q: "Why can the term \"Command Economy\" cause confusion?", a: "Because the historical phrase is strongly associated with centralized political planning. CEAI uses \"command\" in the computational sense of a high-level human instruction." },
-        { id: 84, cat: "cat5", q: "How can CEAI be distinguished from political command economies?", a: "The distinction lies in the source of authority. Historical command economies depend on centralized political authority, while CEAI commands originate from decentralized users and organizations directing computational systems." },
-        { id: 85, cat: "cat5", q: "Does CEAI advocate state-planned economics?", a: "No. CEAI is not a political doctrine. It is a technological and economic framework focused on intelligent execution." },
-        { id: 86, cat: "cat5", q: "Does CEAI contain a political ideology?", a: "No. The framework is intended to analyze technological coordination, execution infrastructure, and economic transformation." },
-        { id: 87, cat: "cat5", q: "Why retain the term \"Command Economy of AI\"?", a: "Because the term emphasizes the structural shift from manually operating tools toward expressing high-level objectives that intelligent systems can execute." },
-        { id: 88, cat: "cat5", q: "How does CEAI prevent semantic confusion?", a: "By explicitly distinguishing computational commands from political or governmental commands and defining the framework around decentralized intent and intelligent execution." },
-        { id: 89, cat: "cat5", q: "What are the strongest criticisms of CEAI?", a: "Important criticisms include the reliability of AI reasoning, ambiguity of human intent, agent autonomy, security risks, economic concentration, accountability, and the difficulty of verifying complex outcomes." },
-        { id: 90, cat: "cat5", q: "Can CEAI operate without strong security?", a: "No. Secure identity, authorization, observability, auditability, data protection, policy enforcement, and execution controls are fundamental to trustworthy AI execution." },
-        { id: 91, cat: "cat5", q: "What remains the human role?", a: "Humans remain the source of strategic intent and retain responsibility for governance, values, judgment, accountability, and high-stakes decisions." },
-        { id: 92, cat: "cat5", q: "Could commands become digital economic assets?", a: "Potentially. Reusable and verified command architectures may acquire economic value if they consistently produce valuable outcomes across organizations or environments." },
-        { id: 93, cat: "cat5", q: "How could CEAI affect knowledge work?", a: "Knowledge work may shift from manually performing workflows toward designing objectives, supervising intelligent systems, validating outcomes, and managing strategic exceptions." },
-        { id: 94, cat: "cat5", q: "Could small teams compete with large organizations?", a: "Potentially. AI execution infrastructure can reduce some traditional scale advantages by allowing small teams to coordinate substantial computational and operational capacity." },
-        { id: 95, cat: "cat5", q: "Does CEAI require AGI?", a: "No. CEAI can develop incrementally using current foundation models, agentic systems, automation, and orchestration technologies. More capable models may expand its potential." },
-        { id: 96, cat: "cat5", q: "What are the major research frontiers?", a: "Key research areas include intent alignment, agent reliability, economic measurement, organizational design, execution capital, decision capital, AI governance, autonomous firms, and outcome verification." },
-        { id: 97, cat: "cat5", q: "How could CEAI evolve over the next decade?", a: "It may progress from isolated AI assistants and agents toward integrated execution infrastructure connecting human decision-makers with increasingly autonomous organizational systems." },
-        { id: 98, cat: "cat5", q: "What layers are required for mature CEAI infrastructure?", a: "A mature architecture may require: 1. Intent Capture, 2. Intent Understanding, 3. Command Compilation, 4. Agentic Planning, 5. Multi-Agent Orchestration, 6. Execution Infrastructure, 7. Trust & Governance, 8. Outcome Measurement, 9. Institutional Memory, 10. Continuous Feedback." },
-        { id: 99, cat: "cat5", q: "What is the long-term vision of CEAI?", a: "The long-term vision is an economy in which natural language and structured intent become increasingly powerful interfaces for coordinating intelligent systems and creating economic value." },
-        { id: 100, cat: "cat5", q: "What is the ultimate synthesis of the Command Economy of AI?", a: "CEAI represents a conceptual shift from managing software and computational tools toward directing intelligent execution through human intent. The next layer of the AI economy may not be defined by how intelligently AI can generate information, but by how reliably human intent can become economic execution." }
-    ];
-    function renderKnowledgeBase() {
-        const container = document.getElementById('kb-dynamic-content');
-        container.innerHTML = '';
-        kbDataset.forEach(block => {
-            const card = document.createElement('div');
-            card.className = 'kb-card';
-            card.innerHTML = `
-                <h2>${block.title}</h2>
-                <div class="lang-condensed-block">${block.content}</div>
-            `;
-            container.appendChild(card);
-        });
-    }
-
-    function renderFaqGrid() {
-        const grid = document.getElementById('masterFaqGrid');
-        grid.innerHTML = '';
-        faqDataset.forEach(item => {
-            const faqCard = document.createElement('div');
-            faqCard.className = 'faq-card-item faq-item-block';
-            faqCard.setAttribute('data-category', item.cat);
-            faqCard.innerHTML = `
-                <div class="faq-question-box">
-                    <div class="faq-badge">${item.id}</div>
-                    <div class="faq-q-text-group">
-                        <h3>${item.q}</h3>
-                    </div>
-                </div>
-                <div class="faq-answer-box">
-                    <p class="ans-text">${item.a}</p>
-                </div>
-            `;
-            grid.appendChild(faqCard);
-        });
-    }
-
-    function renderGlossary() {
-        const container = document.getElementById('glossary-dynamic-content');
-        container.innerHTML = '';
-        glossaryDataset.forEach(item => {
-            const card = document.createElement('div');
-            card.className = 'glossary-card';
-            card.innerHTML = `
-                <div class="glossary-title">
-                    <h3>${item.term}</h3>
-                    <span style="color: var(--text-dim); font-size: 13px; font-weight:600;">${item.code}</span>
-                </div>
-                <p class="ans-text" style="font-size:14.5px;">${item.desc}</p>
-            `;
-            container.appendChild(card);
-        });
-    }
-
-    function renderComparisonMatrix() {
-        const container = document.getElementById('compare-dynamic-content');
-        let tableHtml = `<table class="compare-table"><thead><tr>`;
-        compareDataset.headers.forEach(header => {
-            tableHtml += `<th>${header}</th>`;
-        });
-        tableHtml += `</tr></thead><tbody>`;
-
-        compareDataset.rows.forEach(row => {
-            tableHtml += `<tr>`;
-            row.forEach(cell => {
-                tableHtml += `<td>${cell}</td>`;
-            });
-            tableHtml += `</tr>`;
-        });
-        tableHtml += `</tbody></table>`;
-        container.innerHTML = tableHtml;
-    }
-
-    function switchMasterTab(element, tabId) {
-        currentTab = tabId;
-        document.querySelectorAll('.master-tab-btn').forEach(btn => btn.classList.remove('active'));
-        document.querySelectorAll('.view-content-section').forEach(view => view.classList.remove('active'));
-        
-        element.classList.add('active');
-        document.getElementById(tabId).classList.add('active');
-        
-        document.getElementById('faqSearchInput').value = '';
-        liveSearchFAQ();
-    }
-
-    function filterFaqCategory(btnElement, categoryId) {
-        document.querySelectorAll('.sub-filter-btn').forEach(btn => btn.classList.remove('active'));
-        btnElement.classList.add('active');
-        
-        const cards = document.querySelectorAll('.faq-item-block');
-        cards.forEach(card => {
-            if (categoryId === 'all' || card.getAttribute('data-category') === categoryId) {
-                card.setAttribute('data-filtered', 'true');
-            } else {
-                card.setAttribute('data-filtered', 'false');
-            }
-        });
-        liveSearchFAQ();
-    }
-
-    function liveSearchFAQ() {
-        const query = document.getElementById('faqSearchInput').value.toLowerCase().trim();
-        let totalVisible = 0;
-
-        if (currentTab === 'faq-view') {
-            const cards = document.querySelectorAll('.faq-item-block');
-            cards.forEach(card => {
-                const isFiltered = card.getAttribute('data-filtered') !== 'false';
-                const text = card.innerText.toLowerCase();
-                if (isFiltered && text.includes(query)) {
-                    card.style.display = 'block';
-                    totalVisible++;
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        } else if (currentTab === 'kb-view') {
-            const cards = document.querySelectorAll('.kb-card');
-            cards.forEach(card => {
-                if (card.innerText.toLowerCase().includes(query)) {
-                    card.style.display = 'block';
-                    totalVisible++;
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        } else if (currentTab === 'glossary-view') {
-            const cards = document.querySelectorAll('.glossary-card');
-            cards.forEach(card => {
-                if (card.innerText.toLowerCase().includes(query)) {
-                    card.style.display = 'block';
-                    totalVisible++;
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        } else if (currentTab === 'compare-view') {
-            const rows = document.querySelectorAll('.compare-table tbody tr');
-            const wrapper = document.querySelector('.table-wrapper');
-            let hasRows = false;
-            rows.forEach(row => {
-                if (row.innerText.toLowerCase().includes(query)) {
-                    row.style.display = '';
-                    hasRows = true;
-                    totalVisible++;
-                } else {
-                    row.style.display = 'none';
-                }
-            });
-            wrapper.style.display = hasRows ? 'block' : 'none';
-        }
-
-        const noResults = document.getElementById('faqNoResults');
-        if (totalVisible === 0) {
-            noResults.style.display = 'block';
-        } else {
-            noResults.style.display = 'none';
-        }
-    }
-
-    const bttBtn = document.getElementById('backToTop');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 400) {
-            bttBtn.style.display = 'flex';
-        } else {
-            bttBtn.style.display = 'none';
-        }
-    });
-    bttBtn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    document.addEventListener("DOMContentLoaded", function() {
-        renderKnowledgeBase();
-        renderFaqGrid();
-        renderGlossary();
-        renderComparisonMatrix();
-    });
+(function(){var p=document.getElementById('progress');function pr(){var h=document.documentElement;p.style.transform='scaleX('+(h.scrollTop/Math.max(1,h.scrollHeight-h.clientHeight))+')'}window.addEventListener('scroll',pr,{passive:true});pr();
+if('IntersectionObserver' in window){var L=document.querySelectorAll('.toc-side a');var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){L.forEach(function(a){a.removeAttribute('aria-current')});var a=document.querySelector('.toc-side a[href="#'+e.target.id+'"]');if(a)a.setAttribute('aria-current','true')}})},{rootMargin:'-20% 0px -70% 0px'});document.querySelectorAll('.hub-sec').forEach(function(x){io.observe(x)})}
+document.querySelectorAll('.toc-m a').forEach(function(a){a.addEventListener('click',function(){document.querySelector('.toc-m').open=false})});
+var b=document.getElementById('backToTop');window.addEventListener('scroll',function(){b.classList.toggle('visible',window.scrollY>400)},{passive:true});b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})})})();
 </script>
-
 </body>
 </html>
