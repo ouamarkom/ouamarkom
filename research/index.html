@@ -36,7 +36,7 @@
 <style>
 :root{--primary:#040916;--secondary:#0a192f;--accent:#e6992d;--gold:#fcd34d;--blue:#60a5fa;--text-main:#e6f1ff;--text-dim:#8892b0;--card-bg:rgba(10,25,47,.4);--card-border:rgba(255,255,255,.05)}
 *{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
-body{background:var(--primary);color:var(--text-main);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.6;overflow-x:hidden;text-align:start}
+body{background:var(--primary);color:var(--text-main);line-height:1.6;overflow-x:hidden;text-align:start}
 .container{max-width:1200px;margin:0 auto;padding:0 20px;position:relative;z-index:2}
 #network-canvas{position:fixed;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;opacity:.4}
 header{border-bottom:1px solid var(--card-border);position:sticky;top:0;z-index:1000;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
@@ -119,9 +119,9 @@ table.compare-table{width:100%;border-collapse:collapse}
 table.compare-table th,table.compare-table td{padding:14px 18px;border-bottom:1px solid var(--card-border);text-align:start}
 table.compare-table th{background:rgba(230,153,45,.08);color:#fff}
 .no-results{display:none;text-align:center;padding:36px;color:var(--text-dim);background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;max-width:900px;margin:20px auto}
-#backToTop{position:fixed;bottom:30px;inset-inline-start:28px;background:var(--accent);color:#040916;border:0;width:45px;height:45px;border-radius:50%;font-size:20px;font-weight:700;cursor:pointer;z-index:999;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .3s ease,visibility .3s ease}
+#backToTop{position:fixed;bottom:30px;inset-inline-end:28px;background:var(--accent);color:#040916;border:0;width:45px;height:45px;border-radius:50%;font-size:20px;font-weight:700;cursor:pointer;z-index:999;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .3s ease,visibility .3s ease}
 #backToTop.visible{opacity:1;visibility:visible}
-footer{border-top:1px solid var(--card-border);padding:40px 0;text-align:center;color:var(--text-dim);font-size:14px;position:relative;z-index:2}
+footer{padding:40px 0;text-align:center;color:var(--text-dim);font-size:14px;position:relative;z-index:2}
 a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 @media(max-width:768px){.faq-header-section h1{font-size:28px}.hub-sec h2{font-size:22px}.faq-answer-box{padding-inline-start:20px}.glossary-grid{grid-template-columns:1fr}.grid.two{grid-template-columns:1fr}.stagelist{grid-template-columns:1fr}}
 #progress{position:fixed;top:0;inset-inline:0;height:3px;background:var(--accent);transform-origin:right;transform:scaleX(0);z-index:3000;will-change:transform}[dir=ltr] #progress{transform-origin:left}
@@ -135,7 +135,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .toc-side a:hover{color:var(--gold)}.toc-side a[aria-current]{color:var(--accent);border-inline-start-color:var(--accent);background:rgba(230,153,45,.06);font-weight:700}
 .toc-m{display:none;position:sticky;top:76px;z-index:900;margin:10px 0}.toc-m summary{cursor:pointer;list-style:none;width:44px;height:44px;display:flex;align-items:center;justify-content:center;border:1px solid var(--card-border);border-radius:50%;background:rgba(4,9,22,.92);color:var(--accent);font-size:20px}
 .toc-m summary::-webkit-details-marker{display:none}.toc-m nav{margin-top:8px;background:rgba(4,9,22,.97);border:1px solid var(--card-border);border-radius:16px;padding:8px;max-height:60vh;overflow:auto}.toc-m a{display:block;padding:10px 12px;color:var(--text-main);text-decoration:none;font-size:14.5px;border-radius:10px}.toc-m a:hover{background:rgba(230,153,45,.08);color:var(--gold)}
-.content{min-width:0}.hub-sec{max-width:none;padding:0;content-visibility:auto;contain-intrinsic-size:auto 900px;border-bottom:1px solid var(--card-border);padding-bottom:34px;margin-bottom:38px;scroll-margin-top:90px}
+.content{min-width:0}.hub-sec{max-width:none;padding:0;content-visibility:auto;contain-intrinsic-size:auto 900px;margin-bottom:38px;scroll-margin-top:90px}
 .hub-sec h2{font-size:28px;margin-bottom:16px;line-height:1.45}.hub-sec h3{margin:28px 0 10px;color:var(--accent);font-size:18px;scroll-margin-top:90px}
 p.text-p{font-size:16.5px;line-height:1.95;margin:14px 0;max-width:72ch}.hl{line-height:1.9;max-width:72ch}.hl li{font-size:16px}
 .callout{border:1px solid rgba(255,255,255,.08);border-inline-start:2px solid var(--accent);background:rgba(255,255,255,.02);padding:12px 16px;border-radius:10px;font-size:15px!important;color:var(--text-dim)}
@@ -157,7 +157,7 @@ b.st{font-size:13.5px}.st-cur{background:var(--accent);color:#040916;border-colo
 .table-wrapper{max-width:100%;margin:18px 0}table.compare-table th[scope=row]{background:transparent;font-weight:600;color:var(--gold);min-width:11em}table.compare-table td{font-size:15px;line-height:1.7}table.compare-table tbody tr:nth-child(even){background:rgba(255,255,255,.015)}
 .links{margin:16px 0 4px}.hl a,.text-p a{color:var(--gold)}
 .links .btn{width:auto}
-.site-footer{padding:36px 0}.footer-legal-links{margin-top:10px;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px 12px}.footer-legal-links a{color:var(--text-dim)}.footer-legal-links a:hover{color:var(--gold)}
+.site-footer{padding:36px 0}.footer-legal-links{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px 12px}.footer-legal-links a{color:var(--text-dim)}.footer-legal-links a:hover{color:var(--gold)}
 @media(max-width:1000px){.layout{display:block}.toc-side{display:none}.toc-m{display:block}}
 @media(max-width:768px){.hub-sec h2{font-size:23px}p.text-p{font-size:16px}.cards,.cards.papers{grid-template-columns:1fr}.hub-sec[id=hypotheses],.hub-sec[id=eae]{padding-inline-start:12px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
@@ -166,6 +166,9 @@ b.st{font-size:13.5px}.st-cur{background:var(--accent);color:#040916;border-colo
 @media(max-width:768px){#about.hub-sec h2{font-size:23px}}
 blockquote.quote-box::before{content:"\201C";position:absolute;top:.15em;inset-inline-start:.55rem;font:2.8rem/1 Georgia,serif;color:rgba(230,153,45,.42);pointer-events:none}
 [dir=rtl] blockquote.quote-box::before{content:"\201D"}
+.toc-m{pointer-events:none}
+.toc-m summary,.toc-m nav{pointer-events:auto}
+.toc-m summary{margin-inline-start:auto}
 </style>
 </head>
 <body>
@@ -182,7 +185,7 @@ blockquote.quote-box::before{content:"\201C";position:absolute;top:.15em;inset-i
 <h1>أبحاث الوكالة الاقتصادية المحكومة بالذكاء الاصطناعي</h1>
 <p class="tagline" lang="en" dir="ltr">Building the Evidence Base for Governed AI Economic Execution</p>
 </section>
-<nav class="hub-nav" aria-label="روابط رئيسية"><a href="/research" aria-current="page">الأبحاث</a><a href="/framework">إطار CE-AI™</a><a href="#smart-hand">Smart Hand™</a><a href="/research/geab">GEAB</a><a href="#record">السجل البحثي</a><a href="#resources">الموارد</a></nav>
+<nav class="hub-nav" aria-label="روابط رئيسية"><a href="/research" aria-current="page">الأبحاث</a><a href="/framework">إطار CE-AI™</a><a href="#smart-hand">Smart Hand™</a><a href="/research/geab">GEAB</a><a href="/economic-action-engineering">هندسة الفعل الاقتصادي</a><a href="#record">السجل البحثي</a><a href="#resources">الموارد</a></nav>
 <details class="toc-m"><summary aria-label="أقسام الصفحة">☰</summary><nav aria-label="أقسام الصفحة"><ol><li><a href="#position">1. الموقف البحثي</a></li><li><a href="#why">2. لماذا الفعل الاقتصادي؟</a></li><li><a href="#object">3. موضوع البحث: الفعل الاقتصادي المحكوم</a></li><li><a href="#distinctions">4. الفروق البحثية الأساسية</a></li><li><a href="#question">5. السؤال البحثي المركزي</a></li><li><a href="#method">6. المنهج: الأدلة قبل المعمارية</a></li><li><a href="#maturity">7. نضج الأدلة وحالات الأعمال البحثية</a></li><li><a href="#dimensions">8. أبعاد البحث الحالية</a></li><li><a href="#ceai">9. CE-AI™: الإطار البحثي</a></li><li><a href="#smart-hand">10. Smart Hand™: البيئة التجريبية</a></li><li><a href="#benchmark">11. GEAB v0.1: برنامج القياس والمقارنة المرجعية</a></li><li><a href="#model">12. نموذج CE-AI للتنفيذ الاقتصادي المحكوم v0.1</a></li><li><a href="#hypotheses">13. الفرضيات المعمارية: من المتطلب إلى التدخل</a></li><li><a href="#eae">14. هندسة الفعل الاقتصادي</a></li><li><a href="#rules">15. قواعد اتخاذ القرار البحثي</a></li><li><a href="#record">16. السجل البحثي: كيف تطور البحث؟</a></li><li><a href="#lineage">17. السلالة الفكرية للبحث</a></li><li><a href="#concepts">18. قاموس المفاهيم والأسئلة البحثية</a></li><li><a href="#next">19. ما الذي ينبغي أن يأتي بعد ذلك؟</a></li><li><a href="#about">20. تعريف أوامركم</a></li></ol></nav></details>
 <div class="layout"><aside class="toc-side"><nav aria-label="أقسام الصفحة"><ol><li><a href="#position">1. الموقف البحثي</a></li><li><a href="#why">2. لماذا الفعل الاقتصادي؟</a></li><li><a href="#object">3. موضوع البحث: الفعل الاقتصادي المحكوم</a></li><li><a href="#distinctions">4. الفروق البحثية الأساسية</a></li><li><a href="#question">5. السؤال البحثي المركزي</a></li><li><a href="#method">6. المنهج: الأدلة قبل المعمارية</a></li><li><a href="#maturity">7. نضج الأدلة وحالات الأعمال البحثية</a></li><li><a href="#dimensions">8. أبعاد البحث الحالية</a></li><li><a href="#ceai">9. CE-AI™: الإطار البحثي</a></li><li><a href="#smart-hand">10. Smart Hand™: البيئة التجريبية</a></li><li><a href="#benchmark">11. GEAB v0.1: برنامج القياس والمقارنة المرجعية</a></li><li><a href="#model">12. نموذج CE-AI للتنفيذ الاقتصادي المحكوم v0.1</a></li><li><a href="#hypotheses">13. الفرضيات المعمارية: من المتطلب إلى التدخل</a></li><li><a href="#eae">14. هندسة الفعل الاقتصادي</a></li><li><a href="#rules">15. قواعد اتخاذ القرار البحثي</a></li><li><a href="#record">16. السجل البحثي: كيف تطور البحث؟</a></li><li><a href="#lineage">17. السلالة الفكرية للبحث</a></li><li><a href="#concepts">18. قاموس المفاهيم والأسئلة البحثية</a></li><li><a href="#next">19. ما الذي ينبغي أن يأتي بعد ذلك؟</a></li><li><a href="#about">20. تعريف أوامركم</a></li></ol></nav></aside>
 <div class="content">
@@ -502,10 +505,9 @@ blockquote.quote-box::before{content:"\201C";position:absolute;top:.15em;inset-i
 <h3 id="resources">الموارد الداعمة</h3>
 <ul class="hl">
 <li><a href="/framework">إطار CE-AI™</a>.</li>
+<li><a href="/framework/evolution">سجل التطور</a>.</li>
 <li><a href="/canonical-reference">المرجع المعرفي</a>.</li>
 <li><a href="/glossary">قاموس المصطلحات</a>.</li>
-<li>مصفوفة المفاهيم البنيوية.</li>
-<li><a href="/framework/evolution">سجل التطور</a>.</li>
 <li><a href="/whitepaper">الورقة البيضاء التأسيسية</a>.</li>
 <li><a href="/intellectual-property">وثائق الملكية الفكرية</a>.</li>
 </ul>
@@ -570,7 +572,7 @@ blockquote.quote-box::before{content:"\201C";position:absolute;top:.15em;inset-i
 </section>
 </div></div>
 </main>
-<footer class="site-footer"><div class="footer-bottom-container" dir="rtl"><p>© 2026 أوامركم™ | OUAMARKOM™. جميع الحقوق محفوظة.</p><div class="footer-legal-links"><a href="/research">الأبحاث</a> <span class="footer-legal-separator">·</span> <a href="/canonical-reference">المرجع المعرفي</a> <span class="footer-legal-separator">·</span> <a href="/glossary">قاموس المصطلحات</a> <span class="footer-legal-separator">·</span> <a href="#record">السجل البحثي</a> <span class="footer-legal-separator">·</span> <a href="/whitepaper">الورقة البيضاء</a> <span class="footer-legal-separator">·</span> <a href="/intellectual-property">الملكية الفكرية</a> <span class="footer-legal-separator">·</span> <a href="mailto:contact@ouamarkom.com">تواصل معنا</a></div></div></footer>
+<footer class="site-footer"><div class="footer-bottom-container" dir="rtl"><p>© 2026 أوامركم™ | OUAMARKOM™. جميع الحقوق محفوظة.</p><div class="footer-legal-links"> <a href="/intellectual-property">الملكية الفكرية</a> <span class="footer-legal-separator">·</span> <a href="mailto:contact@ouamarkom.com">تواصل معنا</a></div></div></footer>
 <script src="/script.js" defer></script>
 <script>
 (function(){var p=document.getElementById('progress');function pr(){var h=document.documentElement;p.style.transform='scaleX('+(h.scrollTop/Math.max(1,h.scrollHeight-h.clientHeight))+')'}window.addEventListener('scroll',pr,{passive:true});pr();
