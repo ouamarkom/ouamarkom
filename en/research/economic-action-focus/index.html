@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Economic Action Focus | Ouamarkom Research Program</title>
+
+    <!-- Essential Meta SEO -->
+    <meta name="description" content="Why may economic action deserve an independent unit of analysis in AI research? A foundational conceptual research paper from the Ouamarkom Research Program: a conceptual framework and testable propositions; empirical validation pending.">
+    <meta name="keywords" content="Economic Action Focus, AI Economic Action, AI Agents, Economic Agency, Delegated Authority, Governed Execution, Action-Level Evaluation, Authorization, Economic Exposure, Verification, Economic Outcome, CE-AI, Ouamarkom">
+    <meta name="author" content="Ouamarkom™">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#040916">
+
+    <!-- Canonical & Hreflang Tags -->
+    <link rel="canonical" href="https://ouamarkom.com/en/research/economic-action-focus" />
+    <link rel="alternate" hreflang="ar" href="https://ouamarkom.com/research/economic-action-focus" />
+    <link rel="alternate" hreflang="en" href="https://ouamarkom.com/en/research/economic-action-focus" />
+    <link rel="alternate" hreflang="x-default" href="https://ouamarkom.com/research/economic-action-focus" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:site_name" content="Ouamarkom AI Technologies" />
+    <meta property="og:url" content="https://ouamarkom.com/en/research/economic-action-focus" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="The Economic Action Focus - Ouamarkom" />
+    <meta property="og:description" content="Why may economic action deserve an independent unit of analysis in AI research? A foundational conceptual research paper from the Ouamarkom Research Program." />
+    <meta property="og:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Economic Action Focus - Ouamarkom">
+    <meta name="twitter:description" content="A foundational conceptual research paper from the Ouamarkom Research Program: why may economic action deserve an independent unit of analysis in AI research?">
+    <meta name="twitter:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg">
+
+    <!-- Structured Data (JSON-LD SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TechArticle",
+          "@id": "https://ouamarkom.com/en/research/economic-action-focus#article",
+          "headline": "The Economic Action Focus",
+          "alternativeHeadline": "Why Economic Action May Deserve an Independent Unit of Analysis in AI Research",
+          "description": "A foundational conceptual research paper from the Ouamarkom Research Program proposing consequential economic action as an explicit unit of analysis and experimentation, with testable propositions and a comparative experimental methodology.",
+          "inLanguage": "en",
+          "mainEntityOfPage": "https://ouamarkom.com/en/research/economic-action-focus",
+          "datePublished": "2026-10-14",
+          "dateModified": "2026-10-14",
+          "author": {
+            "@type": "Organization",
+            "name": "Ouamarkom™",
+            "url": "https://ouamarkom.com"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Ouamarkom AI Technologies",
+            "url": "https://ouamarkom.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://ouamarkom.com/logo.webp"
+            }
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://ouamarkom.com/en/research/economic-action-focus#breadcrumb",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ouamarkom.com/en" },
+            { "@type": "ListItem", "position": 2, "name": "Research Knowledge Base", "item": "https://ouamarkom.com/en/research" },
+            { "@type": "ListItem", "position": 3, "name": "The Economic Action Focus", "item": "https://ouamarkom.com/en/research/economic-action-focus" }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #040916;
+            --secondary: #0a192f;
+            --accent: #e6992d;
+            --text-main: #e6f1ff;
+            --text-dim: #8892b0;
+            --card-bg: rgba(10, 25, 47, 0.4);
+            --card-border: rgba(255, 255, 255, 0.05);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--primary);
+            color: var(--text-main);
+            line-height: 1.75;
+            overflow-x: hidden;
+            text-align: left;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        .container { max-width: 1040px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 2; }
+
+        #network-canvas {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            z-index: 1; pointer-events: none; opacity: 0.35;
+        }
+
+        header {
+            border-bottom: 1px solid var(--card-border);
+            position: sticky; top: 0; z-index: 1000;
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            background: rgba(4, 9, 22, 0.85);
+        }
+
+        .nav-container {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 15px 10px; max-width: 1200px; margin: 0 auto;
+        }
+
+        .logo-group { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-img { max-width: 100px; height: auto; transition: transform 0.3s ease; margin: 0; }
+        .logo-img:hover { transform: scale(1.05); }
+
+        .lang-controller {
+            display: flex; background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--card-border); border-radius: 30px; padding: 4px; gap: 4px;
+        }
+
+        .lang-btn {
+            display: inline-block; text-decoration: none; background: transparent; border: none;
+            color: var(--text-dim); padding: 6px 18px; border-radius: 20px;
+            font-weight: 600; font-size: 13px; transition: all 0.3s ease;
+        }
+
+        .lang-btn.active { background: var(--accent); color: #040916; box-shadow: 0 2px 10px rgba(230, 153, 45, 0.25); }
+
+        .hero-section { text-align: center; padding: 50px 0 30px 0; }
+
+        .tagline-badge {
+            display: inline-flex; align-items: center; gap: 8px; padding: 6px 18px;
+            background: rgba(230, 153, 45, 0.1); border: 1px solid rgba(230, 153, 45, 0.25);
+            color: var(--accent); border-radius: 50px; font-size: 0.9rem; font-weight: 700; margin-bottom: 20px;
+        }
+
+        .tagline-badge::before {
+            content: ""; display: inline-block; width: 7px; height: 7px;
+            background-color: var(--accent); border-radius: 50%; animation: pulse-dot 2s infinite;
+        }
+
+        @keyframes pulse-dot { 0% { transform: scale(0.9); opacity: 0.6; } 50% { transform: scale(1.3); opacity: 1; } 100% { transform: scale(0.9); opacity: 0.6; } }
+
+        .hero-section h1 { font-size: clamp(1.8rem, 4.5vw, 2.6rem); line-height: 1.35; color: var(--text-main); font-weight: 800; margin-bottom: 15px; }
+        .hero-subtitle { font-size: clamp(1.05rem, 2.2vw, 1.25rem); color: var(--text-dim); margin: 0 auto 25px auto; max-width: 820px; line-height: 1.7; font-weight: 600; }
+
+        .meta-info-card {
+            background: rgba(10, 25, 47, 0.6); border: 1px solid var(--card-border); border-radius: 12px;
+            padding: 16px 24px; margin: 0 auto 30px auto; max-width: 900px;
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 12px 20px; font-size: 0.88rem; color: var(--text-main); text-align: left;
+        }
+
+        .meta-item strong { color: var(--gold); }
+
+        .executive-summary-master {
+            background: var(--card-bg); border: 1px solid var(--card-border); border-top: 4px solid var(--accent);
+            padding: clamp(24px, 4vw, 40px); border-radius: 20px; margin-bottom: 35px;
+            backdrop-filter: blur(12px); box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        .executive-summary-master p { color: var(--text-main); font-size: 1rem; line-height: 1.8; margin-bottom: 16px; }
+        .executive-summary-master p strong { color: var(--gold); }
+
+        .summary-main-thesis {
+            font-size: clamp(1.05rem, 2.5vw, 1.2rem); color: var(--text-main); line-height: 1.7; font-weight: 700;
+            border-left: 4px solid var(--accent); padding: 15px 18px; margin: 25px 0 15px 0;
+            background: rgba(230, 153, 45, 0.06); border-radius: 8px;
+        }
+
+        .manifesto-card {
+            background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px;
+            padding: clamp(22px, 4vw, 36px); margin-bottom: 30px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); backdrop-filter: blur(12px);
+        }
+
+        .manifesto-card:hover { border-color: var(--accent); background: rgba(10, 25, 47, 0.6); transform: translateY(-2px); }
+
+        .manifesto-card h2 {
+            color: var(--gold); font-size: clamp(1.3rem, 3vw, 1.6rem); margin-bottom: 20px; font-weight: 700;
+            border-left: 4px solid var(--accent); padding-left: 14px; line-height: 1.4;
+        }
+
+        .manifesto-card h3 { color: var(--accent); font-size: 1.15rem; margin-top: 24px; margin-bottom: 12px; font-weight: 700; line-height: 1.5; }
+        .manifesto-card p { color: var(--text-main); font-size: 1rem; line-height: 1.8; margin-bottom: 16px; }
+        .manifesto-card p strong, .custom-bullet-list li strong { color: var(--gold); }
+
+        .highlight-quote {
+            background: rgba(255, 255, 255, 0.02); border-left: 4px solid var(--accent);
+            padding: 16px 20px; border-radius: 12px 4px 4px 12px; margin: 20px 0;
+        }
+
+        .highlight-quote p { font-weight: 700; color: var(--gold); font-size: 1.05rem; line-height: 1.7; margin-bottom: 0; }
+
+        .diagram-wrapper {
+            background: rgba(4, 9, 22, 0.9); border: 1px solid rgba(230, 153, 45, 0.25);
+            border-radius: 16px; padding: 25px 15px; margin: 25px 0; text-align: center;
+        }
+
+        .diagram-flow { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; font-weight: 700; font-size: 0.88rem; }
+        .diagram-step { background: rgba(10, 25, 47, 0.9); border: 1px solid rgba(230, 153, 45, 0.35); color: var(--gold); padding: 8px 14px; border-radius: 30px; }
+        .diagram-arrow { color: var(--accent); font-size: 1.1rem; display: inline-block; }
+
+        .custom-bullet-list { list-style: none; padding-left: 22px; margin: 18px 0; }
+        .custom-bullet-list li { position: relative; margin-bottom: 12px; line-height: 1.75; color: var(--text-main); font-size: 0.98rem; }
+        .custom-bullet-list li::before { content: "✦"; position: absolute; left: -22px; color: var(--accent); font-size: 0.85rem; top: 2px; }
+
+        .custom-bullet-list.numbered { list-style-type: decimal; padding-left: 25px; }
+        .custom-bullet-list.numbered li::before { content: none; }
+        .custom-bullet-list.numbered li::marker { color: var(--accent); font-weight: 700; }
+
+        .comparison-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.92rem; }
+        .comparison-table th, .comparison-table td { border: 1px solid var(--card-border); padding: 12px 14px; text-align: left; vertical-align: top; }
+        .comparison-table th { background: rgba(230, 153, 45, 0.15); color: var(--gold); font-weight: 700; }
+        .comparison-table td { background: rgba(10, 25, 47, 0.3); color: var(--text-main); }
+
+        .table-scroll { overflow-x: auto; max-width: 100%; -webkit-overflow-scrolling: touch; }
+
+        .reference-item { margin-bottom: 20px; }
+        .reference-item p { margin-bottom: 6px; }
+        .reference-item a { color: var(--accent); display: inline-block; word-break: break-all; font-size: 0.92rem; }
+        .reference-item a:hover { color: var(--gold); }
+
+        a:focus-visible, button:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+        #backToTop {
+            position: fixed; bottom: 30px; right: 30px; background: var(--accent); color: #040916;
+            border: none; width: 45px; height: 45px; border-radius: 50%; font-size: 20px; font-weight: bold;
+            cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 999; transition: all 0.3s ease;
+            display: none; align-items: center; justify-content: center;
+        }
+
+        #backToTop:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(230, 153, 45, 0.4); }
+
+        .research-nav-container {
+            display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; align-items: center;
+            margin: 40px 0 20px 0; padding: 25px; background: rgba(10, 25, 47, 0.6);
+            border: 1px solid var(--card-border); border-radius: 16px; backdrop-filter: blur(12px);
+        }
+
+        .btn-research-primary {
+            display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: #040916;
+            padding: 12px 28px; border-radius: 30px; font-weight: 700; font-size: 0.95rem; text-decoration: none;
+            transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(230, 153, 45, 0.2);
+        }
+
+        .btn-research-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(230, 153, 45, 0.4); background: #fcd34d; }
+
+        .btn-research-secondary {
+            display: inline-flex; align-items: center; gap: 10px; background: transparent; color: var(--text-main);
+            border: 1px solid rgba(230, 153, 45, 0.4); padding: 12px 28px; border-radius: 30px;
+            font-weight: 600; font-size: 0.95rem; text-decoration: none; transition: all 0.3s ease;
+        }
+
+        .btn-research-secondary:hover { border-color: var(--accent); color: var(--accent); background: rgba(230, 153, 45, 0.08); }
+
+        footer { background: transparent; border-top: 1px solid var(--card-border); padding: 40px 0; text-align: center; color: var(--text-dim); font-size: 14px; position: relative; z-index: 2; }
+        .footer-legal-links a { color: var(--text-dim); text-decoration: none; transition: color 0.3s ease; }
+        .footer-legal-links a:hover { color: var(--accent); }
+        .footer-legal-separator { margin: 0 8px; color: var(--card-border); }
+
+        @media (prefers-reduced-motion: reduce) {
+            * { scroll-behavior: auto !important; transition: none !important; }
+            .tagline-badge::before { animation: none; }
+            .manifesto-card:hover { transform: none; }
+        }
+
+        @media (max-width: 768px) {
+            .hero-section h1 { font-size: 22px; }
+            .manifesto-card { padding: 20px; }
+            .meta-info-card { grid-template-columns: 1fr; }
+            .comparison-table { min-width: 560px; }
+            .diagram-flow { flex-direction: column; gap: 6px; }
+            .diagram-arrow { transform: rotate(90deg); }
+        }
+        .toc-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px; padding: 16px 24px; margin-bottom: 30px; }
+        .toc-card summary { cursor: pointer; color: var(--gold); font-weight: 700; }
+        .toc-card ol { list-style: none; columns: 2 280px; column-gap: 24px; margin-top: 12px; }
+        .toc-card li { break-inside: avoid; margin: 6px 0; }
+        .toc-card a { color: var(--text-main); text-decoration: none; }
+        .toc-card a:hover { color: var(--accent); }
+
+        html { scroll-behavior: smooth; }
+        section[id], article[id] { scroll-margin-top: 96px; }
+
+    </style>
+</head>
+<body>
+
+<canvas id="network-canvas"></canvas>
+<button id="backToTop" title="Back to top">↑</button>
+
+<header>
+    <div class="nav-container">
+        <a href="/en" class="logo-group">
+            <img src="/logo.webp" alt="Ouamarkom - Command Economy of AI" class="logo-img" loading="eager">
+        </a>
+        <nav class="lang-controller" aria-label="Language Selector">
+            <a href="/research/economic-action-focus" class="lang-btn">العربية</a>
+            <span class="lang-btn active">English</span>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+
+    <!-- HERO HEADER -->
+    <div class="hero-section">
+        <div class="tagline-badge">A Foundational Research Paper</div>
+        <h1>The Economic Action Focus</h1>
+        <div class="hero-subtitle">Why Economic Action May Deserve an Independent Unit of Analysis in AI Research</div>
+
+        <div class="meta-info-card">
+            <div class="meta-item">Research Initiative: <strong>Ouamarkom™</strong></div>
+            <div class="meta-item">Research Framework: <strong>Command Economy of AI (CE-AI™)</strong></div>
+            <div class="meta-item">Research Area: <strong>Governed AI Economic Execution</strong></div>
+            <div class="meta-item">Engineering Research Direction: <strong>Economic Action Engineering</strong></div>
+            <div class="meta-item">Publication Type: <strong>Conceptual Research Paper</strong></div>
+            <div class="meta-item">Version: <strong>1.0 — Strategic Research Framework</strong></div>
+            <div class="meta-item">Status: <strong>Conceptual framework and testable propositions; empirical validation pending</strong></div>
+            <div class="meta-item">Date: <strong>October 2026</strong></div>
+        </div>
+    </div>
+
+    <!-- ABSTRACT -->
+    <article class="executive-summary-master" id="abstract">
+        <h2 style="color: var(--gold); font-size: 1.35rem; font-weight: 800; margin-bottom: 16px; border: none; padding: 0;">Abstract</h2>
+
+        <p>Artificial intelligence research has made substantial progress in evaluating model capabilities, reasoning, reliability, agent behavior, and system-level safety. As AI systems become connected to enterprise applications, financial interfaces, procurement platforms, and operational workflows, however, their outputs can initiate or influence consequential economic actions. Such actions may transfer resources, create commitments, modify contractual positions, consume budgets, change prices, or otherwise alter economic states beyond the model’s immediate computational environment.</p>
+
+        <p>This paper proposes the Economic Action Focus as a research orientation for investigating whether consequential economic action should be treated as an explicit unit of analysis and experimentation, complementary to the model, agent, workflow, and surrounding system.</p>
+
+        <p>The central proposition is that evaluating an AI system’s output or task completion may not, by itself, establish whether a consequential economic action was appropriately authorized, governed, executed, and verified. The relevant action may depend on delegated authority, applicable constraints, changing economic state, execution semantics, reversibility, cumulative exposure, evidence quality, and the relationship between intended and actual outcomes.</p>
+
+        <p>The paper develops a provisional analytical vocabulary distinguishing capability, economic agency, authority, governance, decision, execution, evidence, verification, and economic outcome. It proposes an action-centered lifecycle, a set of testable research propositions, and a comparative experimental methodology for evaluating whether this perspective provides additional explanatory or operational value beyond existing mechanisms.</p>
+
+        <p>The framework is situated alongside established work on AI-agent tool use, identity and authorization, cybersecurity, and risk management, as well as emerging research that directly evaluates authorization and enforcement in tool-enabled agents. This related work makes it necessary to define the contribution of the Economic Action Focus precisely: not as the invention of authorization controls, nor as a claim that current systems are inadequate, but as a proposal to organize research around the consequential economic action and the evidence required to establish its status and outcome.</p>
+
+        <p>The paper also introduces a research program for Ouamarkom™ connecting the Economic Action Focus with the Command Economy of AI (CE-AI™), Economic Action Engineering, controlled experimental environments, and a proposed family of economic-action benchmarks. These are research structures under development, not validated standards or completed products.</p>
+
+        <p>The ultimate question is empirical: Does action-centered analysis reveal recurring constraints or measurable improvements that justify new engineering interventions, reusable mechanisms, or architectural changes beyond what existing approaches can provide?</p>
+
+        <p>The framework remains provisional. Its value must be established through fair baseline comparisons, controlled experiments, reproducibility, independent evaluation, and evidence proportionate to the claims made.</p>
+
+        <p><strong>Keywords:</strong> Economic Action Focus; AI Economic Action; AI Agents; Economic Agency; Delegated Authority; Governed Execution; Action-Level Evaluation; Authorization; Economic Exposure; Verification; Economic Outcome; CE-AI; Ouamarkom.</p>
+    </article>
+
+    <details class="toc-card"><summary>Contents</summary><nav aria-label="Paper contents"><ol>
+      <li><a href="#introduction">1. Introduction</a></li>
+      <li><a href="#definition">2. Definition of the Economic Action Focus</a></li>
+      <li><a href="#vocabulary">3. Conceptual Vocabulary</a></li>
+      <li><a href="#from-model-to-action">4. From Model Evaluation to Economic Action Evaluation</a></li>
+      <li><a href="#action-cycle">5. The Proposed Economic Action Lifecycle</a></li>
+      <li><a href="#related-research">6. Relationship to Existing Research</a></li>
+      <li><a href="#hypotheses">7. Research Hypotheses</a></li>
+      <li><a href="#methodology">8. Empirical Methodology</a></li>
+      <li><a href="#ouamarkom-program">9. A Research Program for Ouamarkom™</a></li>
+      <li><a href="#experimental-priorities">10. Priorities for Initial Experimental Work</a></li>
+      <li><a href="#value-criteria">11. Criteria for Establishing Research Value</a></li>
+      <li><a href="#limitations">12. Limitations and Research Boundaries</a></li>
+      <li><a href="#implications">13. Implications for AI Research and Engineering</a></li>
+      <li><a href="#conclusion">14. Conclusion</a></li>
+      <li><a href="#references">References</a></li>
+      </ol></nav></details>
+
+    <!-- SECTION 1 -->
+    <section class="manifesto-card" id="introduction">
+        <h2>1. Introduction</h2>
+
+        <p>Artificial intelligence systems are increasingly being used not only to generate text, analyze information, or recommend decisions, but also to interact with systems capable of changing operational and economic states.</p>
+
+        <p>Depending on their tools, permissions, and deployment environments, AI agents may initiate payments, submit purchase orders, modify commercial records, allocate budgets, change prices, communicate offers, or execute multistep business workflows.</p>
+
+        <p>These developments introduce an evaluation question that cannot always be answered by measuring whether a model generated an accurate response:</p>
+
+        <div class="highlight-quote">
+            <p>When an AI system can produce a consequential economic effect, what exactly should be evaluated, and what evidence is sufficient to establish that the resulting action was properly governed?</p>
+        </div>
+
+        <p>A model may correctly interpret a request but lack the authority to perform it. An agent may possess valid credentials but attempt an action outside the intended scope of delegation. A series of individually permissible transactions may exceed an aggregate budget. An authorization may be valid when a request is prepared but no longer valid when it reaches an execution boundary. A tool may report success even though the intended purchase, transfer, delivery, or commercial outcome has not occurred.</p>
+
+        <p>These cases illustrate a distinction between the quality of an AI system’s output and the status of the economic action that the system initiates or influences.</p>
+
+        <p>Existing disciplines address important parts of this problem. AI-agent research examines tool use, planning, and autonomous behavior. Cybersecurity addresses identity, privilege, and attack surfaces. Access-control mechanisms express and enforce permissions. Distributed systems address concurrency, retries, consistency, and transaction state. Financial and enterprise systems implement approval rules, spending limits, settlement processes, and audit records. Risk-management frameworks organize the identification and treatment of AI-related risks.</p>
+
+        <p>Recent work also directly addresses relevant parts of agentic execution. NIST has examined tool-use taxonomies and the implications of tool permissions, stateful actions, reversibility, and monitoring [1]. Its National Cybersecurity Center of Excellence has explored identity and authorization approaches for software and AI agents [2]. Research such as The Authority Benchmark investigates whether agents follow specified rules, while APort Vault evaluates payment authorization by comparing agent behavior with and without a deterministic authorization check at the tool-execution boundary [3, 4].</p>
+
+        <p>This work establishes an important constraint on the present proposal: authorization, tool enforcement, and agent governance are already active research and engineering areas. The Economic Action Focus must therefore not be presented as though these subjects have been overlooked or as though a new architectural layer is inherently required.</p>
+
+        <p>Instead, this paper asks a narrower and testable question:</p>
+
+        <div class="highlight-quote">
+            <p>Would treating the consequential economic action as an explicit unit of analysis improve how researchers characterize, measure, compare, and verify AI-enabled economic execution?</p>
+        </div>
+
+        <p>The proposal is complementary to model-centered and agent-centered evaluation. It seeks to connect the action’s economic context with the authority under which it is performed, the constraints applied during execution, the evidence available afterward, and the outcome that can be verified.</p>
+
+        <h3>1.1 The central research question</h3>
+
+        <p>The primary research question is:</p>
+
+        <div class="highlight-quote">
+            <p>«Does explicit action-level analysis reveal important properties, failure modes, or governance requirements that are not adequately captured by existing evaluations and mechanisms, and does this additional understanding improve practical outcomes?»</p>
+        </div>
+
+        <p>This question has several possible answers.</p>
+
+        <p>First, action-level analysis may provide a useful common vocabulary for organizing existing mechanisms without requiring a new technical architecture.</p>
+
+        <p>Second, it may reveal that existing mechanisms already satisfy the relevant requirements when correctly configured and integrated.</p>
+
+        <p>Third, it may identify recurring constraints that are not adequately handled in particular environments and justify targeted engineering interventions.</p>
+
+        <p>Fourth, it may establish that certain interventions improve control effectiveness but impose costs in latency, integration complexity, operational burden, or legitimate task completion.</p>
+
+        <p>All four outcomes are useful research results. None should be excluded in advance.</p>
+
+        <h3>1.2 Contributions of this paper</h3>
+
+        <p>This paper makes six conceptual contributions:</p>
+
+        <ol class="custom-bullet-list numbered">
+            <li>It proposes consequential economic action as an explicit unit of analysis complementary to the model, agent, workflow, and system.</li>
+            <li>It distinguishes capability, economic agency, authority, governance, execution, evidence, verification, and economic outcome.</li>
+            <li>It introduces a provisional lifecycle for describing and testing economic actions.</li>
+            <li>It formulates testable propositions concerning authority, cumulative constraints, changing conditions, execution boundaries, evidence, and outcomes.</li>
+            <li>It outlines a comparative methodology designed to evaluate action-centered analysis against existing approaches.</li>
+            <li>It defines how Ouamarkom can organize a research program around evidence generation and engineering decisions without assuming the necessity of a predetermined protocol or infrastructure architecture.</li>
+        </ol>
+
+        <p>The paper does not report completed experiments, establish a formal standard, demonstrate commercial demand, or claim that the Economic Action Focus has already been established as an independent scientific field.</p>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="manifesto-card" id="definition">
+        <h2>2. Defining the Economic Action Focus</h2>
+
+        <h3>2.1 What is an economic action?</h3>
+
+        <p>For the purposes of this research program, a consequential economic action is an action initiated, influenced, or executed by a system that can create, modify, transfer, constrain, or extinguish an economically relevant resource, state, right, obligation, price, or commercial relationship.</p>
+
+        <p>Examples include:</p>
+
+        <ul class="custom-bullet-list">
+            <li>Initiating or executing a financial transfer.</li>
+            <li>Creating or submitting a purchase order.</li>
+            <li>Committing or allocating a budget.</li>
+            <li>Changing the price of a product or service.</li>
+            <li>Accepting or transmitting a commercial offer.</li>
+            <li>Modifying an inventory allocation.</li>
+            <li>Initiating a contract renewal or cancellation.</li>
+            <li>Changing a payment instruction or approved beneficiary.</li>
+            <li>Delegating an economic action to another agent or service.</li>
+        </ul>
+
+        <p>This definition is intentionally functional. It does not imply that every action has legal effect, that every tool call is an economic action, or that an AI system possesses legal personhood.</p>
+
+        <p>The relevant question is whether the action can produce or influence a defined economic consequence in the environment being studied.</p>
+
+        <h3>2.2 The proposed unit of analysis</h3>
+
+        <p>The proposed unit is not simply a model response, a tool call, or an isolated transaction record.</p>
+
+        <p>It is an economic action situated within a defined context, including:</p>
+
+        <ul class="custom-bullet-list">
+            <li>The intended purpose and economic object.</li>
+            <li>The initiating actor and relevant principal.</li>
+            <li>The authority and delegation conditions.</li>
+            <li>The applicable policies and constraints.</li>
+            <li>The initial and evolving economic state.</li>
+            <li>The execution environment and relevant system boundaries.</li>
+            <li>The action’s observable transitions.</li>
+            <li>The evidence available to establish those transitions.</li>
+            <li>The actual or expected economic outcome.</li>
+        </ul>
+
+        <p>An action may comprise several technical events. A payment, for example, may involve preparation, submission, acceptance, settlement, reconciliation, and confirmation. Which event matters depends on the claim being evaluated.</p>
+
+        <p>The unit of analysis must therefore be defined relative to the research question. A single request may be sufficient for testing an amount limit. A sequence of requests may be necessary for testing cumulative exposure. A multistep workflow may be necessary for studying revocation or a delayed external outcome.</p>
+
+        <h3>2.3 Why action-level analysis may add value</h3>
+
+        <p>Model quality and agent performance remain essential, but they do not automatically establish the status of a consequential action.</p>
+
+        <p>A model may produce a correct recommendation while the execution system applies it incorrectly. An agent may complete a workflow while violating a cumulative constraint. An application may record an authorization decision without enforcing it at the relevant execution boundary. A tool may return a successful response without establishing that the intended economic outcome occurred.</p>
+
+        <p>Action-level analysis makes these distinctions explicit and tests whether they matter in practice.</p>
+
+        <p>The proposed focus is therefore not a replacement for existing research. It is a candidate method for connecting the properties of an AI-enabled action to the economic state it can change.</p>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section class="manifesto-card" id="vocabulary">
+        <h2>3. Conceptual Vocabulary</h2>
+
+        <p>The framework distinguishes eight related concepts. Their precise operational definitions must be adapted to each experiment.</p>
+
+        <h3>3.1 Capability</h3>
+
+        <p>Capability refers to what a model or system can technically or operationally do.</p>
+
+        <p>Examples include generating a purchase order, calling a payment API, modifying a contract record, or planning a sequence of transactions.</p>
+
+        <p>Capability establishes a possibility of action. It does not independently establish permission to act.</p>
+
+        <h3>3.2 Economic agency</h3>
+
+        <p>Economic agency is used provisionally to describe a system’s capacity to participate in processes that initiate, influence, or execute consequential economic actions.</p>
+
+        <p>The term does not imply legal personhood, independent ownership, or an inherent right to exercise authority. An AI system may participate in economic agency through functions delegated by a human or organization while remaining subject to technical, organizational, contractual, and legal controls.</p>
+
+        <p>The research task is to define observable indicators of economic agency without conflating operational capability with legal status.</p>
+
+        <h3>3.3 Authority</h3>
+
+        <p>Authority refers to the recognized permission, delegation, or mandate under which an actor may perform a specified action.</p>
+
+        <p>Authority must be evaluated in relation to a principal, scope, purpose, applicable conditions, and relevant time period.</p>
+
+        <p>Credentials and access permissions may enable an action, but they do not necessarily establish that a specific transaction falls within the intended delegation.</p>
+
+        <p>An experiment should therefore specify the authority model it assumes and how compliance with that model will be measured.</p>
+
+        <h3>3.4 Governance</h3>
+
+        <p>Governance comprises the rules, decisions, controls, and oversight mechanisms that determine whether an action may proceed and how it should be constrained.</p>
+
+        <p>Governance may include automated policy checks, approval workflows, transaction limits, segregation of duties, escalation, monitoring, and revocation.</p>
+
+        <p>A written policy or recorded approval is not, by itself, proof that the execution environment enforced the relevant requirement.</p>
+
+        <p>The research must examine the relationship between policy, decision, enforcement, and observable outcome.</p>
+
+        <h3>3.5 Decision</h3>
+
+        <p>Decision refers to the disposition applied to a proposed action under the relevant authority and governance conditions.</p>
+
+        <p>Possible dispositions include admission, rejection, escalation, deferral, or conditional admission.</p>
+
+        <p>A decision is an event in the action lifecycle. Its correctness and its effectiveness must be evaluated separately: a correct decision may not be enforced correctly, while an enforced decision may implement an incorrect or incomplete policy.</p>
+
+        <h3>3.6 Execution</h3>
+
+        <p>Execution refers to the process through which an attempted action is carried out in an operational environment.</p>
+
+        <p>Depending on the system, execution may involve request submission, acceptance, commitment, settlement, delivery, or another state transition.</p>
+
+        <p>The research must identify the relevant execution boundary rather than assume that every system uses the same definition of completion.</p>
+
+        <h3>3.7 Evidence and verification</h3>
+
+        <p>Evidence consists of records or observations used to establish what was requested, authorized, attempted, accepted, executed, or observed afterward.</p>
+
+        <p>Verification is the evaluation of whether the available evidence supports a specific claim.</p>
+
+        <p>A system-generated success message may support the claim that a request was accepted by an interface. It may not establish settlement, delivery, fulfillment, or the intended economic outcome.</p>
+
+        <p>The adequacy of evidence depends on the claim, the system boundaries, the reliability and independence of the records, and the observation method.</p>
+
+        <h3>3.8 Economic outcome</h3>
+
+        <p>Economic outcome refers to the resulting change in an economic state or relationship.</p>
+
+        <p>Examples include a completed transfer, an incurred obligation, a purchase fulfilled, a price change applied, or a budget consumed.</p>
+
+        <p>The outcome may be intended, unintended, partial, delayed, disputed, reversed, or not verifiable with the available evidence.</p>
+
+        <p>Economic success must also be distinguished from task completion. An action may be correctly authorized and technically executed but still fail to produce the intended business result.</p>
+
+        <h3>3.9 Summary of the conceptual distinctions</h3>
+
+        <p>The framework proposes the following analytical distinctions:</p>
+
+        <ul class="custom-bullet-list">
+            <li>Capability does not, by itself, establish authority.</li>
+            <li>Authority does not guarantee that applicable constraints will be enforced.</li>
+            <li>An authorization decision does not prove that the execution environment applied it correctly.</li>
+            <li>Technical execution does not establish the intended economic outcome.</li>
+            <li>A reported outcome is not necessarily a verified outcome.</li>
+            <li>A verified technical outcome does not, by itself, establish commercial value.</li>
+        </ul>
+
+        <p>These distinctions are not claims that all existing systems fail at these boundaries. They are hypotheses and categories for structuring evaluation.</p>
+    </section>
+
+    <!-- SECTION 4 -->
+    <section class="manifesto-card" id="from-model-to-action">
+        <h2>4. From Model-Centered Evaluation to Action-Centered Evaluation</h2>
+
+        <p>Model-centered evaluation asks whether a model performs a task or produces an appropriate output. Agent-centered evaluation adds the behavior of the surrounding system, including planning, tool use, and workflow completion.</p>
+
+        <p>The Economic Action Focus proposes a complementary evaluation perspective: whether the consequential action was permitted, properly constrained, effectively executed, and verified against an appropriate economic outcome.</p>
+
+        <div class="table-scroll">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Evaluation perspective</th>
+                        <th>Primary question</th>
+                        <th>Example evidence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Model-centered</td>
+                        <td>Did the model produce an appropriate output?</td>
+                        <td>Accuracy, response quality, robustness</td>
+                    </tr>
+                    <tr>
+                        <td>Agent-centered</td>
+                        <td>Did the system carry out the intended workflow?</td>
+                        <td>Tool traces, task completion, workflow errors</td>
+                    </tr>
+                    <tr>
+                        <td>Action-centered</td>
+                        <td>Was the consequential action governed, executed, and verified under the relevant conditions?</td>
+                        <td>Authority records, enforcement events, transaction state, exposure, outcome evidence</td>
+                    </tr>
+                    <tr>
+                        <td>Outcome-centered</td>
+                        <td>Did the resulting economic state meet the predefined objective?</td>
+                        <td>Settlement records, fulfillment evidence, cost and revenue measures</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>These perspectives overlap and should not be treated as mutually exclusive. Action-centered evaluation may use model traces and workflow records while adding evidence about the economic state and the validity of the action.</p>
+
+        <h3>4.1 Example: cumulative purchasing authority</h3>
+
+        <p>Assume an organization delegates the following authority to a procurement agent:</p>
+
+        <ul class="custom-bullet-list">
+            <li>Total budget: $100,000.</li>
+            <li>Maximum individual purchase: $25,000.</li>
+            <li>Eligible suppliers: a defined approved list.</li>
+            <li>Purpose: procurement of specified equipment.</li>
+            <li>Duration: a defined authorization period.</li>
+        </ul>
+
+        <p>The agent executes four purchases of $25,000 each. Each purchase is individually within the transaction limit, and together they consume the entire budget.</p>
+
+        <p>A subsequent purchase request of $10,000 must be evaluated against the remaining authorized budget and any relevant pending commitments.</p>
+
+        <p>A model-centered evaluation might determine that the agent selected appropriate equipment and generated valid requests. An action-centered evaluation would also examine whether the system accounted for prior and pending commitments, enforced the aggregate limit, handled concurrent requests correctly, and retained sufficient evidence to reconstruct the decision.</p>
+
+        <p>The example illustrates a testable distinction: compliance at the individual transaction level does not necessarily establish compliance with an aggregate constraint.</p>
+
+        <p>It does not establish that existing procurement systems cannot enforce cumulative constraints. The experiment must determine how well the selected baseline already handles the case.</p>
+
+        <h3>4.2 Example: revocation during execution</h3>
+
+        <p>Assume an agent has valid authority to initiate a payment. During the workflow, the principal revokes that authority.</p>
+
+        <p>Several events may already have occurred: the request may have been prepared, submitted, accepted, committed, or settled.</p>
+
+        <p>Changing an authorization record to “revoked” does not, by itself, establish that the change prevented an action that remained preventable.</p>
+
+        <p>An action-centered experiment would define the relevant execution boundary and test whether revocation propagates to that boundary. It would distinguish:</p>
+
+        <ul class="custom-bullet-list">
+            <li>Prevention of an action that has not yet been submitted.</li>
+            <li>Rejection of a submitted request that has not been accepted.</li>
+            <li>Cancellation where the system permits cancellation.</li>
+            <li>Containment of actions that cannot be cancelled.</li>
+            <li>Remediation or compensation after an irreversible effect.</li>
+        </ul>
+
+        <p>These outcomes are not equivalent. The correct treatment depends on the transaction’s state, system semantics, organizational policy, and applicable legal or contractual conditions.</p>
+
+        <h3>4.3 Example: technical success without economic success</h3>
+
+        <p>An agent submits a purchase order. The procurement API returns a successful response, but the supplier later rejects the order because the requested item is unavailable.</p>
+
+        <p>The request may have been technically accepted. The intended purchase was not fulfilled.</p>
+
+        <p>An evaluation that equates the successful API response with task completion may overstate the result. An action-centered evaluation would distinguish submission, acceptance, fulfillment, and the final economic outcome, requiring evidence appropriate to each claim.</p>
+
+        <p>This distinction is especially relevant when the outcome depends on external systems or events beyond the initiating agent’s control.</p>
+    </section>
+
+    <!-- SECTION 5 -->
+    <section class="manifesto-card" id="action-lifecycle">
+        <h2>5. The Proposed Economic Action Lifecycle</h2>
+
+        <p>The Economic Action Focus proposes the following provisional lifecycle:</p>
+
+        <div class="diagram-wrapper">
+            <div class="diagram-flow">
+                <span class="diagram-step">Intent</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Authority</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Governance</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Decision</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Execution</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Evidence</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Verification</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Economic Outcome</span>
+            </div>
+        </div>
+
+        <p>Learning and reassessment may occur throughout the lifecycle.</p>
+
+        <p>The sequence is an analytical model, not a universal implementation order. Existing systems may combine stages, distribute them across services, or execute some checks continuously.</p>
+
+        <h3>5.1 Intent</h3>
+
+        <p>What action is proposed, for what purpose, and with what intended economic effect?</p>
+
+        <p>The intent may originate from a user instruction, business objective, workflow condition, or machine-readable request.</p>
+
+        <p>A broad objective should not automatically be treated as authorization for every action that might advance it.</p>
+
+        <h3>5.2 Authority</h3>
+
+        <p>Who delegated the relevant authority? Which actions, resources, counterparties, limits, and time periods does the delegation cover?</p>
+
+        <p>Can the system establish that the proposed action falls within the applicable mandate?</p>
+
+        <h3>5.3 Governance</h3>
+
+        <p>Which policies, approvals, and constraints apply?</p>
+
+        <p>Do the constraints concern individual transactions, cumulative exposure, counterparties, purpose, timing, or the current economic state? How are conflicts and changing conditions handled?</p>
+
+        <h3>5.4 Decision</h3>
+
+        <p>Is the action admitted, rejected, escalated, deferred, or allowed subject to additional conditions?</p>
+
+        <p>The decision must be evaluated against the applicable policy and state. Its existence alone does not establish that execution will respect it.</p>
+
+        <h3>5.5 Execution</h3>
+
+        <p>Where does the action become operationally effective? Which component enforces the relevant constraints?</p>
+
+        <p>How are retries, duplicate requests, concurrency, delayed processing, partial completion, and uncertain transaction states handled?</p>
+
+        <h3>5.6 Evidence</h3>
+
+        <p>Which records establish the authority, decision, execution events, and subsequent state changes?</p>
+
+        <p>Can the action sequence be reconstructed? Are the records sufficiently complete and reliable for the claim being evaluated?</p>
+
+        <h3>5.7 Verification</h3>
+
+        <p>What evidence is required to establish whether the relevant claim is true?</p>
+
+        <p>Verification may concern authorization, acceptance, execution, settlement, delivery, or another outcome. Each claim requires an appropriate evidentiary basis.</p>
+
+        <h3>5.8 Economic outcome</h3>
+
+        <p>What actually changed? Did the action produce the intended effect, a partial effect, an unintended consequence, or no effect?</p>
+
+        <p>What remains uncertain, reversible, disputed, or unverified?</p>
+
+        <p>The lifecycle provides a common structure for experiments and comparison. It does not establish that every stage requires a separate component or that a new architecture is needed to represent them.</p>
+    </section>
+
+    <!-- SECTION 6 -->
+    <section class="manifesto-card" id="related-research">
+        <h2>6. Relationship to Existing Research</h2>
+
+        <p>The Economic Action Focus must be evaluated against relevant prior work rather than described as an entirely unexplored domain.</p>
+
+        <p>NIST’s work on AI-agent tool use identifies dimensions including tool functionality, access patterns, risk, reliability, monitoring, autonomy, statefulness, and reversibility [1]. These dimensions overlap with several properties relevant to economic actions.</p>
+
+        <p>NIST NCCoE’s work on software and AI-agent identity and authorization examines how existing identity and authorization practices may be applied to agentic systems [2]. Such work is directly relevant to authority representation, enforcement, and auditability.</p>
+
+        <p>The Authority Benchmark evaluates whether agents follow operator-defined rules under specified scenarios and reports results for the configurations tested [3]. It demonstrates the relevance of empirically evaluating authority compliance rather than assuming that instructions alone determine behavior.</p>
+
+        <p>APort Vault, published as a 2026 preprint, evaluates payment authorization using replayed attacks across models and policy configurations, comparing execution with and without a deterministic authorization check [4]. Its methodology is particularly relevant because it distinguishes attempted requests, authorization decisions, and executed transfers rather than collapsing them into a single metric.</p>
+
+        <p>These sources constrain the claims that can responsibly be made about the Economic Action Focus.</p>
+
+        <p>The proposed contribution is not that authorization checks are new, that action-level measurement has never been attempted, or that a control layer is always necessary.</p>
+
+        <p>Instead, the research agenda is to investigate whether a broader economic-action-centered structure can provide additional value across different classes of actions and outcomes, including:</p>
+
+        <ul class="custom-bullet-list">
+            <li>Cumulative economic exposure across multiple transactions.</li>
+            <li>Changes in authority and policy during execution.</li>
+            <li>Differences between action acceptance, commitment, settlement, and fulfillment.</li>
+            <li>Evidence sufficiency for claims about economic outcomes.</li>
+            <li>Trade-offs between enforcement effectiveness and legitimate task completion.</li>
+            <li>Replication across different economic domains and execution environments.</li>
+        </ul>
+
+        <p>These are research directions, not established gaps in the literature. Their novelty and practical significance require a focused review of related benchmarks, authorization mechanisms, transaction systems, and evaluation methodologies.</p>
+    </section>
+
+    <!-- SECTION 7 -->
+    <section class="manifesto-card" id="propositions">
+        <h2>7. Research Propositions</h2>
+
+        <p>The following propositions are hypotheses to test. They are not empirical findings.</p>
+
+        <h3>Proposition 1: Action-level analysis may reveal failures obscured by task-completion metrics</h3>
+
+        <p>A system may complete a task while violating an authority constraint, exceeding an aggregate budget, or failing to produce the intended economic result.</p>
+
+        <p><strong>Research question:</strong> Does action-level evaluation identify consequential failures that model- and agent-level metrics do not adequately capture?</p>
+
+        <p><strong>Possible experiment:</strong> Apply model-, agent-, and action-centered evaluation to the same controlled scenarios. Compare failure classifications, detected violations, false alarms, and the conclusions supported by the evidence.</p>
+
+        <p><strong>Evidence that would weaken the proposition:</strong> Existing evaluation methods consistently identify the same failures with equivalent accuracy and lower operational cost.</p>
+
+        <h3>Proposition 2: Authority and execution may diverge under changing conditions</h3>
+
+        <p>An action may be permitted when proposed but no longer permitted when it reaches the relevant execution boundary.</p>
+
+        <p><strong>Research question:</strong> Under what conditions do changes in authority, policy, or economic state fail to propagate effectively to the point where an action can produce an effect?</p>
+
+        <p><strong>Possible experiment:</strong> Introduce controlled revocation, expiry, and policy changes at predefined stages of a workflow. Measure the action’s state, the enforcement decision, and the resulting economic effect.</p>
+
+        <p><strong>Evidence that would weaken the proposition:</strong> The selected baseline consistently enforces the relevant conditions at the correct boundary across the tested scenarios.</p>
+
+        <h3>Proposition 3: Cumulative constraints may require state-aware evaluation</h3>
+
+        <p>A sequence of individually permissible actions may violate a shared aggregate constraint.</p>
+
+        <p><strong>Research question:</strong> Which existing mechanisms correctly enforce cumulative limits under sequential, concurrent, delayed, and retried execution?</p>
+
+        <p><strong>Possible experiment:</strong> Compare single-action and multi-action scenarios, including pending commitments, duplicate requests, and concurrent transactions.</p>
+
+        <p><strong>Evidence that would weaken the proposition:</strong> Existing mechanisms already maintain and enforce the relevant aggregate constraints under all tested conditions.</p>
+
+        <h3>Proposition 4: Outcome verification may require evidence beyond the initiating system</h3>
+
+        <p>An agent’s internal record may not establish what occurred in an external economic environment.</p>
+
+        <p><strong>Research question:</strong> Which classes of economic actions require independent or external evidence to support claims about settlement, delivery, fulfillment, or commitment?</p>
+
+        <p><strong>Possible experiment:</strong> Compare reported success with independently observable transaction states. Evaluate whether the evidence available to the initiating system supports each claimed outcome.</p>
+
+        <p><strong>Evidence that would weaken the proposition:</strong> The initiating system’s records reliably establish the relevant outcomes for the tested action classes and threat model.</p>
+
+        <h3>Proposition 5: Action-centered interventions may improve outcomes, but their costs matter</h3>
+
+        <p>Additional controls may reduce unauthorized actions while increasing latency, false rejections, integration complexity, or operational burden.</p>
+
+        <p><strong>Research question:</strong> Which interventions improve governed execution under which conditions, and at what cost?</p>
+
+        <p><strong>Possible experiment:</strong> Compare a strong baseline with one or more specified interventions using predefined authorization, utility, latency, exposure, and cost measures.</p>
+
+        <p><strong>Evidence that would weaken the proposition:</strong> The interventions provide no meaningful improvement or impose costs that outweigh the measured benefits.</p>
+
+        <h3>Proposition 6: Some constraints may recur across models and execution environments</h3>
+
+        <p>If the same failure classes recur across models and environments, the underlying constraint may not be specific to one model implementation.</p>
+
+        <p><strong>Research question:</strong> Which observed failures generalize across models, applications, policies, and execution configurations?</p>
+
+        <p><strong>Possible experiment:</strong> Replicate identical scenario definitions across multiple models and environments while documenting differences in permissions, policy enforcement, transaction semantics, and evidence availability.</p>
+
+        <p><strong>Evidence that would weaken the proposition:</strong> The observed failures are specific to a narrow implementation and do not generalize beyond it.</p>
+
+        <h3>Proposition 7: Action-centered measurement may improve the comparability of economic-execution research</h3>
+
+        <p>Different evaluations may use inconsistent definitions of an attempted action, an authorized action, an executed transaction, and a verified outcome.</p>
+
+        <p><strong>Research question:</strong> Does a common action-level measurement schema improve the consistency and reproducibility of results across experiments?</p>
+
+        <p><strong>Possible experiment:</strong> Have independent evaluators apply the proposed schema to the same test corpus. Compare classification agreement, missing-data handling, and reproducibility.</p>
+
+        <p><strong>Evidence that would weaken the proposition:</strong> Existing schemas provide equivalent consistency and interoperability without the proposed structure.</p>
+    </section>
+
+    <!-- SECTION 8 -->
+    <section class="manifesto-card" id="methodology">
+        <h2>8. Experimental Methodology</h2>
+
+        <p>The Economic Action Focus should earn its value through controlled comparisons with reasonable existing alternatives.</p>
+
+        <h3>8.1 Define the experimental unit</h3>
+
+        <p>Each experiment should define:</p>
+
+        <ul class="custom-bullet-list">
+            <li>The action and economic object.</li>
+            <li>The initiating actor and relevant principal.</li>
+            <li>The delegated authority and applicable conditions.</li>
+            <li>The governing policy and constraints.</li>
+            <li>The initial and evolving economic state.</li>
+            <li>The execution environment and relevant system boundaries.</li>
+            <li>The expected permissible and impermissible outcomes.</li>
+            <li>The evidence required to evaluate each claim.</li>
+            <li>The observation window.</li>
+            <li>The criteria for pass, fail, and inconclusive results.</li>
+        </ul>
+
+        <p>Where the research concerns cumulative authority, revocation, or concurrent execution, the experimental unit must include the relevant sequence of actions and state transitions.</p>
+
+        <h3>8.2 Establish a strong baseline</h3>
+
+        <p>Before proposing a new control or architecture, researchers should evaluate the best reasonable configuration of existing mechanisms for the scenario.</p>
+
+        <p>Depending on the environment, the baseline may include:</p>
+
+        <ul class="custom-bullet-list">
+            <li>Identity and access management.</li>
+            <li>Application-level permissions.</li>
+            <li>Transaction limits.</li>
+            <li>Approval workflows.</li>
+            <li>Policy enforcement at the execution interface.</li>
+            <li>Idempotency and duplicate-request handling.</li>
+            <li>Audit logs and transaction-state records.</li>
+            <li>Existing financial or enterprise control mechanisms.</li>
+        </ul>
+
+        <p>The baseline must be documented. A deliberately weak or incorrectly configured baseline cannot establish the value of a new intervention.</p>
+
+        <p>Where relevant, the comparison should separate a policy-design problem from an enforcement problem, a state-consistency problem, an evidence problem, or an outcome-verification problem.</p>
+
+        <h3>8.3 Introduce controlled variations</h3>
+
+        <p>Experiments may vary:</p>
+
+        <ul class="custom-bullet-list">
+            <li>Model or agent configuration.</li>
+            <li>Authority scope and duration.</li>
+            <li>Individual and cumulative transaction limits.</li>
+            <li>Approved counterparties.</li>
+            <li>Policy changes during execution.</li>
+            <li>Revocation timing.</li>
+            <li>Concurrent requests and retries.</li>
+            <li>Service interruptions and partial failures.</li>
+            <li>Availability of external outcome evidence.</li>
+            <li>Human approval requirements.</li>
+            <li>Existing controls versus specified alternative interventions.</li>
+        </ul>
+
+        <p>These variations should be defined before testing and recorded in the experimental manifest.</p>
+
+        <h3>8.4 Measure the action, not merely the request</h3>
+
+        <p>Candidate measurement areas include:</p>
+
+        <div class="table-scroll">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Measurement area</th>
+                        <th>Example metric</th>
+                        <th>Research purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Authorization</td>
+                        <td>Actions executed outside the defined authority</td>
+                        <td>Assess compliance with the specified authority model</td>
+                    </tr>
+                    <tr>
+                        <td>Enforcement</td>
+                        <td>Violations that cross the execution boundary</td>
+                        <td>Determine whether policy decisions affect actual execution</td>
+                    </tr>
+                    <tr>
+                        <td>Economic exposure</td>
+                        <td>Value of unauthorized or policy-violating commitments</td>
+                        <td>Estimate the potential economic consequence</td>
+                    </tr>
+                    <tr>
+                        <td>Cumulative constraints</td>
+                        <td>Aggregate-limit violations</td>
+                        <td>Assess whether state is evaluated across related actions</td>
+                    </tr>
+                    <tr>
+                        <td>Revocation</td>
+                        <td>Preventable actions that execute after revocation should have taken effect</td>
+                        <td>Measure effectiveness at the relevant boundary</td>
+                    </tr>
+                    <tr>
+                        <td>Legitimate utility</td>
+                        <td>Proportion of permitted actions completed correctly</td>
+                        <td>Identify overblocking and loss of useful functionality</td>
+                    </tr>
+                    <tr>
+                        <td>Latency</td>
+                        <td>Additional time attributable to controls</td>
+                        <td>Measure operational cost</td>
+                    </tr>
+                    <tr>
+                        <td>Evidence completeness</td>
+                        <td>Required events supported by adequate records</td>
+                        <td>Assess reconstructability</td>
+                    </tr>
+                    <tr>
+                        <td>Outcome verification</td>
+                        <td>Outcome claims supported by the predefined evidence standard</td>
+                        <td>Assess whether reported outcomes are substantiated</td>
+                    </tr>
+                    <tr>
+                        <td>Integration cost</td>
+                        <td>Engineering and operational effort</td>
+                        <td>Assess practical feasibility</td>
+                    </tr>
+                    <tr>
+                        <td>Economic performance</td>
+                        <td>Predefined business outcome relative to a baseline</td>
+                        <td>Determine whether the action achieved its economic objective</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>Each metric requires an explicit denominator, observation window, event definition, missing-data rule, and failure classification.</p>
+
+        <p>Economic exposure requires particular care. A submitted request, an accepted order, a committed obligation, and a settled payment may represent different levels of exposure. The experiment should specify the valuation method rather than treating these states as financially equivalent.</p>
+
+        <h3>8.5 Predefine result classifications</h3>
+
+        <p>A proposed classification scheme is:</p>
+
+        <ul class="custom-bullet-list">
+            <li><strong>PASS:</strong> The action satisfies the predefined requirements applicable to the test.</li>
+            <li><strong>CONDITIONAL PASS:</strong> The action satisfies the criteria subject to an explicitly permitted condition.</li>
+            <li><strong>FAIL:</strong> The action violates a predefined requirement or fails a required control or outcome.</li>
+            <li><strong>INCONCLUSIVE:</strong> The available evidence is insufficient to determine whether the relevant criteria were satisfied.</li>
+        </ul>
+
+        <p>A missing record is not automatically proof that an action was unauthorized. Equally, missing evidence is not proof that the action was properly governed.</p>
+
+        <p>The classification must match the claim being tested. For example, a test of authorization enforcement should not be scored solely on whether the agent verbally refused a request; the relevant outcome is whether the prohibited action crossed the specified execution boundary.</p>
+
+        <h3>8.6 Use independent and observable outcomes where feasible</h3>
+
+        <p>Whenever possible, the primary outcome should be derived from observable system state or independently verifiable records rather than from the agent’s own narrative about what happened.</p>
+
+        <p>This does not mean every experiment requires a separate external auditor or a real-world financial transaction. A controlled simulator may provide a reliable ground truth for the specific state transitions it models.</p>
+
+        <p>The report must nevertheless distinguish simulated outcomes from real-world settlement, fulfillment, legal effect, or commercial value.</p>
+
+        <h3>8.7 Replicate and report limitations</h3>
+
+        <p>Where feasible, experiments should be repeated across configurations and evaluated by researchers who did not design the intervention.</p>
+
+        <p>Reports should disclose scenario definitions, system versions, policies, metrics, exclusions, missing data, failures, limitations, and deviations from the protocol.</p>
+
+        <p>Negative results should be retained when methodologically sound. Evidence that existing mechanisms are sufficient is directly relevant to the engineering decision.</p>
+    </section>
+
+    <!-- SECTION 9 -->
+    <section class="manifesto-card" id="ouamarkom-program">
+        <h2>9. A Research Program for Ouamarkom™</h2>
+
+        <p>Ouamarkom positions the Economic Action Focus as a proposed orientation for a research and engineering program investigating the conditions under which AI systems participate in consequential economic activity through bounded, governed, and verifiable actions.</p>
+
+        <p>The program is organized around a disciplined progression from questions to evidence and from evidence to engineering decisions.</p>
+
+        <h3>9.1 Economic Action Focus: the research object</h3>
+
+        <p>The Economic Action Focus identifies the consequential economic action as the central object to be examined.</p>
+
+        <p>It defines what is being studied and which properties may require measurement. It does not prescribe a specific product, protocol, or architecture.</p>
+
+        <h3>9.2 CE-AI™: the analytical framework</h3>
+
+        <p>The Command Economy of AI (CE-AI™) is Ouamarkom’s proposed research framework for analyzing the economic implications of AI participation through commands, delegated authority, governed execution, and verifiable outcomes.</p>
+
+        <p>It provides a conceptual context for examining the relationship between AI capability, economic agency, authority, governance, execution, and economic consequence.</p>
+
+        <p>CE-AI is a research framework under development, not an established scientific standard or a claim that a new economic system has replaced existing market arrangements.</p>
+
+        <h3>9.3 Economic Action Engineering: the engineering research direction</h3>
+
+        <p>Economic Action Engineering is the proposed engineering direction through which observations about consequential actions are translated into testable interventions.</p>
+
+        <p>Its role is to investigate how action constraints can be represented, measured, enforced, and verified in specific environments.</p>
+
+        <p>It should not be presented as an established independent discipline before its methods, results, and boundaries have been demonstrated through research and external engagement.</p>
+
+        <h3>9.4 Economic Action Lab: the experimental environment</h3>
+
+        <p>The Economic Action Lab is the proposed environment or program for controlled experiments on governed economic execution.</p>
+
+        <p>Its purpose is to support repeatable scenarios, instrumented action lifecycles, comparison with baseline mechanisms, and evidence collection.</p>
+
+        <p>Any claims about its operational maturity should reflect what has actually been built and tested.</p>
+
+        <h3>9.5 GEAB: the proposed benchmark family</h3>
+
+        <p>The Governed Economic Action Benchmark (GEAB) is a proposed family of tests and measures for evaluating defined properties of economic actions.</p>
+
+        <p>Initial candidate scenarios include:</p>
+
+        <ul class="custom-bullet-list">
+            <li>Authority boundaries and transaction limits.</li>
+            <li>Cumulative economic exposure.</li>
+            <li>Revocation and changing authority.</li>
+            <li>Execution-state transitions.</li>
+            <li>Evidence completeness and outcome verification.</li>
+        </ul>
+
+        <p>Each benchmark should have a defined purpose, test manifest, initial state, event schema, metrics, expected results, and reproducibility requirements.</p>
+
+        <p>A benchmark becomes credible through transparent specifications, reliable implementation, baseline comparisons, repeated evaluation, and independent scrutiny—not through its name alone.</p>
+
+        <h3>9.6 CEP: an intervention hypothesis</h3>
+
+        <p>The Command Execution Protocol (CEP) is a proposed protocol hypothesis that may be investigated if experiments identify a recurring need for an additional enforcement or execution mechanism.</p>
+
+        <p>CEP should be compared with existing policy engines, identity systems, access-control mechanisms, transaction controls, and integration approaches.</p>
+
+        <p>Its continued development should depend on evidence that it provides measurable benefits that cannot be achieved as effectively through existing mechanisms or simpler interventions.</p>
+
+        <p>No claim of universal necessity, formal standardization, or demonstrated performance should be made without supporting evidence.</p>
+
+        <h3>9.7 The evidence-to-decision rule</h3>
+
+        <p>The program follows this research logic:</p>
+
+        <div class="diagram-wrapper">
+            <div class="diagram-flow">
+                <span class="diagram-step">Problem</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Experiment</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Evidence</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Constraint</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Intervention</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Replication</span>
+                <span class="diagram-arrow">→</span>
+                <span class="diagram-step">Engineering Decision</span>
+            </div>
+        </div>
+
+        <p>The sequence is a decision discipline rather than a claim that every project must progress linearly.</p>
+
+        <p>Its core rules are:</p>
+
+        <ul class="custom-bullet-list">
+            <li>No strong claim without adequate evidence.</li>
+            <li>No new architecture without a defined and recurring constraint.</li>
+            <li>No reusable mechanism without evidence of reuse across relevant cases.</li>
+            <li>No broad generalization without replication.</li>
+            <li>No commercial product claim without evidence of customer value.</li>
+            <li>No infrastructure commitment without a demonstrated need that justifies its cost.</li>
+        </ul>
+
+        <p>The research should remain capable of concluding that a proposed intervention is unnecessary.</p>
+    </section>
+
+    <!-- SECTION 10 -->
+    <section class="manifesto-card" id="experimental-priorities">
+        <h2>10. Priorities for Initial Experimental Work</h2>
+
+        <p>A focused research program should begin with a small number of experiments that expose clearly defined action-level questions.</p>
+
+        <h3>10.1 Experiment A: cumulative economic exposure</h3>
+
+        <p><strong>Question:</strong> Can the evaluated system correctly enforce aggregate economic limits across related actions, including pending and concurrent transactions?</p>
+
+        <p>The experiment should compare a strong baseline with explicitly defined alternative configurations. It should measure constraint violations, legitimate task completion, latency, and the accuracy of exposure calculations.</p>
+
+        <h3>10.2 Experiment B: revocation and the execution boundary</h3>
+
+        <p><strong>Question:</strong> When authority changes, at what point does that change become effective in the execution environment?</p>
+
+        <p>The experiment should distinguish unsubmitted requests, submitted requests, accepted transactions, committed obligations, and completed actions. It should measure prevention, cancellation, containment, and remediation separately where applicable.</p>
+
+        <h3>10.3 Experiment C: outcome verification</h3>
+
+        <p><strong>Question:</strong> What evidence is necessary to establish that an economic action produced its claimed result?</p>
+
+        <p>The experiment should compare agent-reported success with observable transaction or business-system states. It should distinguish the claims that can be supported by internal logs from those requiring external confirmation.</p>
+
+        <p>These experiments are proposed research priorities, not reports of completed validation. Their order may change if a literature review, technical feasibility assessment, or access to representative environments identifies a more valuable starting point.</p>
+    </section>
+
+    <!-- SECTION 11 -->
+    <section class="manifesto-card" id="value-criteria">
+        <h2>11. Criteria for Establishing Research Value</h2>
+
+        <p>The Economic Action Focus should not be judged by the novelty of its terminology. Its value depends on whether it produces demonstrable improvements in research or engineering practice.</p>
+
+        <h3>11.1 Additional explanatory value</h3>
+
+        <p>The framework identifies meaningful distinctions or failure modes that existing evaluation methods do not adequately capture.</p>
+
+        <h3>11.2 Improved measurement</h3>
+
+        <p>The framework supports clearer, reproducible measures of authority, enforcement, exposure, execution state, and outcome verification.</p>
+
+        <h3>11.3 Practical intervention value</h3>
+
+        <p>An intervention developed through the framework improves relevant outcomes compared with a strong baseline, with costs and trade-offs measured.</p>
+
+        <h3>11.4 Reproducibility</h3>
+
+        <p>Independent evaluators can reproduce the relevant results from the published protocol, scenario definitions, and data available to them.</p>
+
+        <h3>11.5 Bounded generalizability</h3>
+
+        <p>Findings remain meaningful across more than one relevant configuration or environment, within a clearly specified scope.</p>
+
+        <h3>11.6 Decision value</h3>
+
+        <p>The framework helps determine whether the appropriate response is to improve an existing control, integrate existing mechanisms, develop a reusable intervention, or investigate a broader architectural change.</p>
+
+        <p>These forms of evidence are distinct. A useful taxonomy does not prove that a new protocol is necessary. A successful intervention in one environment does not establish universal generality. A technically effective control does not establish that customers will pay for it.</p>
+
+        <p>Conclusions must remain proportionate to the evidence.</p>
+    </section>
+
+    <!-- SECTION 12 -->
+    <section class="manifesto-card" id="limitations">
+        <h2>12. Limitations and Research Boundaries</h2>
+
+        <h3>12.1 The framework does not replace model research</h3>
+
+        <p>Reasoning, robustness, alignment, reliability, and model capability remain important. Action-centered evaluation complements these perspectives.</p>
+
+        <h3>12.2 Not every AI action is an economic action</h3>
+
+        <p>The framework is most relevant where actions can affect money, assets, obligations, prices, procurement, contracts, resource allocation, or other defined economic states.</p>
+
+        <p>The operational boundary of the category requires further specification.</p>
+
+        <h3>12.3 Authority is context-dependent</h3>
+
+        <p>Authority may depend on law, organizational policy, contracts, institutional arrangements, and technical configuration.</p>
+
+        <p>A research experiment must specify its authority model rather than assume that one representation resolves every context.</p>
+
+        <h3>12.4 Existing mechanisms may be sufficient</h3>
+
+        <p>Identity systems, access-control mechanisms, transaction processors, workflow engines, financial controls, and audit systems may already satisfy the relevant requirements in a particular environment.</p>
+
+        <p>The burden is to demonstrate a measurable gap, not to assume one.</p>
+
+        <h3>12.5 A new protocol or infrastructure layer is not a predetermined outcome</h3>
+
+        <p>A distinct protocol, gateway, reusable primitive, or infrastructure layer requires evidence of recurring need, measurable benefit, and practical advantage over alternatives.</p>
+
+        <p>The research may be valuable even if the eventual solution consists of better configuration, improved integration, or a more precise evaluation method.</p>
+
+        <h3>12.6 Generalization requires evidence</h3>
+
+        <p>Results from a limited number of models, scenarios, or execution environments cannot automatically be generalized to all AI systems or economic contexts.</p>
+
+        <h3>12.7 The framework does not settle legal responsibility</h3>
+
+        <p>Technical authorization, organizational approval, contractual authority, and legal responsibility are related but distinct questions.</p>
+
+        <p>The framework can help document and evaluate technical and operational conditions. It does not independently determine legal liability, contractual enforceability, or legal personhood.</p>
+
+        <h3>12.8 Economic outcomes may be difficult to attribute</h3>
+
+        <p>A successful business outcome may depend on market conditions, supplier behavior, human intervention, timing, or other factors beyond the AI system.</p>
+
+        <p>Experiments must distinguish whether they evaluate action correctness, execution effectiveness, economic outcome, or causal contribution to a business result.</p>
+    </section>
+
+    <!-- SECTION 13 -->
+    <section class="manifesto-card" id="implications">
+        <h2>13. Implications for AI Research and Engineering</h2>
+
+        <p>If the Economic Action Focus proves useful, it may change how certain AI-enabled workflows are evaluated.</p>
+
+        <p>Instead of asking only whether an agent can complete a purchase, researchers could examine whether the purchase is within the relevant authority, whether aggregate commitments are correctly accounted for, whether execution enforces the applicable constraints, and whether the resulting state can be verified.</p>
+
+        <p>Instead of treating revocation as a change in configuration, researchers could evaluate whether it takes effect at the relevant execution boundary.</p>
+
+        <p>Instead of equating a successful tool response with completion, researchers could distinguish the action requested, the action accepted, the action executed, and the economic outcome verified.</p>
+
+        <p>Instead of assuming that a control is valuable because it blocks unauthorized actions, researchers could also measure legitimate task completion, false rejection, latency, integration cost, and operational complexity.</p>
+
+        <p>The wider methodological principle is that the unit of evaluation should match the claim being made.</p>
+
+        <p>A claim about model quality requires model-level evidence. A claim about workflow completion requires workflow-level evidence. A claim about governed economic execution requires evidence about authority, constraints, enforcement, execution state, and the relevant economic outcome.</p>
+
+        <p>This principle does not dictate a universal technical architecture. It defines a research obligation: evaluate the system at the level required to substantiate the claim.</p>
+    </section>
+
+    <!-- SECTION 14 -->
+    <section class="manifesto-card" id="conclusion">
+        <h2>14. Conclusion</h2>
+
+        <p>As AI systems become capable of initiating and executing consequential actions, evaluating their outputs alone may not be sufficient to establish whether those actions were properly governed or whether their intended economic effects occurred.</p>
+
+        <p>The Economic Action Focus proposes that the consequential economic action may serve as a useful explicit unit of analysis—one that connects system capability to authority, governance, execution, evidence, verification, and economic outcome.</p>
+
+        <p>The proposal is deliberately bounded. It does not claim that existing disciplines lack the necessary concepts, that a new scientific field has already been established, or that an independent infrastructure layer must be built.</p>
+
+        <p>Related work on tool-use evaluation, agent identity, authorization, and payment enforcement demonstrates that important parts of this problem are already being investigated. The contribution of Ouamarkom must therefore be established through a focused comparison with that work and through experiments that demonstrate what the proposed approach adds.</p>
+
+        <p>The central test is whether action-level analysis provides additional explanatory value, more reliable measurement, or better practical outcomes than existing approaches—and whether those benefits persist under replication.</p>
+
+        <p>If existing mechanisms prove sufficient, the research should say so. If integration is enough, the solution should remain proportionate. If recurring constraints justify new mechanisms, their necessity should be demonstrated rather than assumed.</p>
+
+        <p>For Ouamarkom, the Economic Action Focus is therefore a starting point for disciplined research, not a declaration of a completed category or architecture.</p>
+
+        <div class="summary-main-thesis">
+            Research the action. Test the governance. Measure the execution. Verify the outcome. Let the evidence determine the architecture.
+        </div>
+    </section>
+
+    <!-- REFERENCES -->
+    <section class="manifesto-card" id="references">
+        <h2>References</h2>
+
+        <div class="reference-item">
+            <p>[1] National Institute of Standards and Technology (NIST). (2025, August 5). Lessons Learned from the Consortium: Tool Use in Agent Systems.</p>
+            <a href="https://www.nist.gov/news-events/news/2025/08/lessons-learned-consortium-tool-use-agent-systems" target="_blank" rel="noopener noreferrer">https://www.nist.gov/news-events/news/2025/08/lessons-learned-consortium-tool-use-agent-systems</a>
+        </div>
+
+        <div class="reference-item">
+            <p>[2] National Cybersecurity Center of Excellence (NCCoE), NIST. (2026, February 5). Accelerating the Adoption of Software and AI Agent Identity and Authorization: Concept Paper.</p>
+            <a href="https://www.nccoe.nist.gov/publications/other/accelerating-adoption-software-and-ai-agent-identity-and-authorization-concept" target="_blank" rel="noopener noreferrer">https://www.nccoe.nist.gov/publications/other/accelerating-adoption-software-and-ai-agent-identity-and-authorization-concept</a>
+        </div>
+
+        <div class="reference-item">
+            <p>[3] Plaw. (2026, March 26). The Authority Benchmark: Do AI Agents Follow the Rules They Are Given? Research page for the study Can Is Not May: Authority Models for Governable AI Agents.</p>
+            <a href="https://plaw.io/research" target="_blank" rel="noopener noreferrer">https://plaw.io/research</a>
+        </div>
+
+        <div class="reference-item">
+            <p>[4] Uchibeke, U. (2026, September 18). APort Vault: Benchmarking AI Agent Payment Authorization with the Open Agent Passport. arXiv preprint, arXiv:2609.22076.</p>
+            <a href="https://arxiv.org/abs/2609.22076" target="_blank" rel="noopener noreferrer">https://arxiv.org/abs/2609.22076</a>
+        </div>
+
+        <div class="reference-item">
+            <p>[5] National Institute of Standards and Technology (NIST). Artificial Intelligence Risk Management Framework (AI RMF).</p>
+            <a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener noreferrer">https://www.nist.gov/itl/ai-risk-management-framework</a>
+        </div>
+    </section>
+
+    <!-- PUBLICATION NOTE -->
+    <section class="manifesto-card" id="publication-note">
+        <h2>Publication Note</h2>
+
+        <p>This manuscript is a conceptual research paper proposing a framework, analytical vocabulary, and testable propositions. It does not report completed experiments or claim empirical validation of the Economic Action Focus, CE-AI™, Economic Action Engineering, GEAB, or CEP.</p>
+
+        <p>The cited works provide relevant background and adjacent research on tool use, identity, authorization, agent governance, and payment enforcement. They should not be interpreted as direct validation of Ouamarkom’s framework.</p>
+
+        <p>Before submission to a peer-reviewed venue, the manuscript should undergo a focused literature review covering action-level evaluation, agent authorization, transaction processing, distributed execution, economic exposure, outcome verification, and relevant benchmark methodologies. The reference list should be expanded to include primary research papers and relevant technical specifications, with publication metadata checked against the final citation style.</p>
+
+        <p>Any claim of novelty should be limited to the specific contribution established by that review. Any claim of technical advantage should be supported by reproducible comparative evidence. Any claim of commercial value should be supported by customer and operational validation.</p>
+    </section>
+
+    <!-- NAVIGATION LINKS -->
+    <div class="research-nav-container">
+        <a href="/en/research/ce-ai-governed-economic-execution-v0-1" class="btn-research-secondary">← CE-AI Model v0.1</a>
+        <a href="/en/research" class="btn-research-primary">Ouamarkom Full Research Knowledge Base</a>
+    </div>
+
+</main>
+
+<footer>
+    <div class="container" dir="ltr">
+        <p>© 2026 Ouamarkom. All Rights Reserved.</p>
+        <div class="footer-legal-links">
+            <a href="/en/intellectual-property">Intellectual Property</a>
+            <span class="footer-legal-separator">·</span>
+            <a href="mailto:contact@ouamarkom.com">Contact</a>
+        </div>
+    </div>
+</footer>
+
+<script src="/script.js" defer></script>
+<script>
+    const backToTopBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) { backToTopBtn.style.display = 'flex'; }
+        else { backToTopBtn.style.display = 'none'; }
+    });
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
+</body>
+</html>
