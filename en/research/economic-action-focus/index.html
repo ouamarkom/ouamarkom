@@ -167,7 +167,7 @@
             gap: 12px 20px; font-size: 0.88rem; color: var(--text-main); text-align: left;
         }
 
-        .meta-item strong { color: var(--gold); }
+        .meta-item strong { color: var(--accent); }
 
         .executive-summary-master {
             background: var(--card-bg); border: 1px solid var(--card-border); border-top: 4px solid var(--accent);
@@ -193,7 +193,7 @@
         .manifesto-card:hover { border-color: var(--accent); background: rgba(10, 25, 47, 0.6); transform: translateY(-2px); }
 
         .manifesto-card h2 {
-            color: var(--gold); font-size: clamp(1.3rem, 3vw, 1.6rem); margin-bottom: 20px; font-weight: 700;
+            color: var(--accent); font-size: clamp(1.3rem, 3vw, 1.6rem); margin-bottom: 20px; font-weight: 700;
             border-left: 4px solid var(--accent); padding-left: 14px; line-height: 1.4;
         }
 
@@ -243,7 +243,7 @@
             position: fixed; bottom: 30px; right: 30px; background: var(--accent); color: #040916;
             border: none; width: 45px; height: 45px; border-radius: 50%; font-size: 20px; font-weight: bold;
             cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 999; transition: all 0.3s ease;
-            display: none; align-items: center; justify-content: center;
+            display: none; align-items: center; justify-content: center; left: auto;
         }
 
         #backToTop:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(230, 153, 45, 0.4); }
@@ -290,7 +290,7 @@
             .diagram-arrow { transform: rotate(90deg); }
         }
         .toc-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px; padding: 16px 24px; margin-bottom: 30px; }
-        .toc-card summary { cursor: pointer; color: var(--gold); font-weight: 700; }
+        .toc-card summary { cursor: pointer; color: var(--accent); font-weight: 700; }
         .toc-card ol { list-style: none; columns: 2 280px; column-gap: 24px; margin-top: 12px; }
         .toc-card li { break-inside: avoid; margin: 6px 0; }
         .toc-card a { color: var(--text-main); text-decoration: none; }
@@ -332,7 +332,7 @@
             <div class="meta-item">Research Area: <strong>Governed AI Economic Execution</strong></div>
             <div class="meta-item">Engineering Research Direction: <strong>Economic Action Engineering</strong></div>
             <div class="meta-item">Publication Type: <strong>Conceptual Research Paper</strong></div>
-            <div class="meta-item">Version: <strong>1.0 — Strategic Research Framework</strong></div>
+            <div class="meta-item">Version: <strong>1.0 - Strategic Research Framework</strong></div>
             <div class="meta-item">Status: <strong>Conceptual framework and testable propositions; empirical validation pending</strong></div>
             <div class="meta-item">Date: <strong>October 2026</strong></div>
         </div>
@@ -340,7 +340,7 @@
 
     <!-- ABSTRACT -->
     <article class="executive-summary-master" id="abstract">
-        <h2 style="color: var(--gold); font-size: 1.35rem; font-weight: 800; margin-bottom: 16px; border: none; padding: 0;">Abstract</h2>
+        <h2 style="color: var(--accent); font-size: 1.35rem; font-weight: 800; margin-bottom: 16px; border: none; padding: 0;">Abstract</h2>
 
         <p>Artificial intelligence research has made substantial progress in evaluating model capabilities, reasoning, reliability, agent behavior, and system-level safety. As AI systems become connected to enterprise applications, financial interfaces, procurement platforms, and operational workflows, however, their outputs can initiate or influence consequential economic actions. Such actions may transfer resources, create commitments, modify contractual positions, consume budgets, change prices, or otherwise alter economic states beyond the model’s immediate computational environment.</p>
 
@@ -366,9 +366,9 @@
       <li><a href="#definition">2. Definition of the Economic Action Focus</a></li>
       <li><a href="#vocabulary">3. Conceptual Vocabulary</a></li>
       <li><a href="#from-model-to-action">4. From Model Evaluation to Economic Action Evaluation</a></li>
-      <li><a href="#action-cycle">5. The Proposed Economic Action Lifecycle</a></li>
+      <li><a href="#action-lifecycle">5. The Proposed Economic Action Lifecycle</a></li>
       <li><a href="#related-research">6. Relationship to Existing Research</a></li>
-      <li><a href="#hypotheses">7. Research Hypotheses</a></li>
+      <li><a href="#propositions">7. Research Hypotheses</a></li>
       <li><a href="#methodology">8. Empirical Methodology</a></li>
       <li><a href="#ouamarkom-program">9. A Research Program for Ouamarkom™</a></li>
       <li><a href="#experimental-priorities">10. Priorities for Initial Experimental Work</a></li>
@@ -1118,7 +1118,7 @@
 
         <p>Each benchmark should have a defined purpose, test manifest, initial state, event schema, metrics, expected results, and reproducibility requirements.</p>
 
-        <p>A benchmark becomes credible through transparent specifications, reliable implementation, baseline comparisons, repeated evaluation, and independent scrutiny—not through its name alone.</p>
+        <p>A benchmark becomes credible through transparent specifications, reliable implementation, baseline comparisons, repeated evaluation, and independent scrutiny-not through its name alone.</p>
 
         <h3>9.6 CEP: an intervention hypothesis</h3>
 
@@ -1306,13 +1306,13 @@
 
         <p>As AI systems become capable of initiating and executing consequential actions, evaluating their outputs alone may not be sufficient to establish whether those actions were properly governed or whether their intended economic effects occurred.</p>
 
-        <p>The Economic Action Focus proposes that the consequential economic action may serve as a useful explicit unit of analysis—one that connects system capability to authority, governance, execution, evidence, verification, and economic outcome.</p>
+        <p>The Economic Action Focus proposes that the consequential economic action may serve as a useful explicit unit of analysis-one that connects system capability to authority, governance, execution, evidence, verification, and economic outcome.</p>
 
         <p>The proposal is deliberately bounded. It does not claim that existing disciplines lack the necessary concepts, that a new scientific field has already been established, or that an independent infrastructure layer must be built.</p>
 
         <p>Related work on tool-use evaluation, agent identity, authorization, and payment enforcement demonstrates that important parts of this problem are already being investigated. The contribution of Ouamarkom must therefore be established through a focused comparison with that work and through experiments that demonstrate what the proposed approach adds.</p>
 
-        <p>The central test is whether action-level analysis provides additional explanatory value, more reliable measurement, or better practical outcomes than existing approaches—and whether those benefits persist under replication.</p>
+        <p>The central test is whether action-level analysis provides additional explanatory value, more reliable measurement, or better practical outcomes than existing approaches-and whether those benefits persist under replication.</p>
 
         <p>If existing mechanisms prove sufficient, the research should say so. If integration is enough, the solution should remain proportionate. If recurring constraints justify new mechanisms, their necessity should be demonstrated rather than assumed.</p>
 
