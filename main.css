@@ -1765,7 +1765,7 @@ footer {
 @media (max-width: 480px) {
     .container { padding-inline: 16px; }
     .site-header { padding-block: 14px; }
-    .site-brand img { height: 33px; }
+    .site-brand img { height: 34px; }
     .header-actions { gap: 8px; }
 
     .lang-switcher { height: 34px; padding: 3px 4px; }
@@ -1776,7 +1776,7 @@ footer {
     .hamburger span { width: 16px; }
 
 
-    .btn, .lang-btn, .hamburger, #backToTop, .social-circle {
+    .btn, .lang-btn, #backToTop, .social-circle {
         min-height: 44px;
         min-width: 44px;
     }
@@ -1863,4 +1863,119 @@ footer {
     .launch-status {
         background: rgba(10, 25, 47, 0.94);
     }
+}
+
+
+
+
+/* ==========================================
+    GCEAR Charter page 
+   ========================================== */
+.charter-hero { min-height: auto; }
+
+.charter-meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-3);
+    width: 100%;
+    max-width: 920px;
+    margin: var(--space-5) auto 0;
+    text-align: start;
+}
+
+.charter-meta-item {
+    background: var(--card-bg-flat);
+    border: 1px solid var(--border-color);
+    border-inline-start: 2px solid var(--accent-border-strong);
+    border-radius: var(--radius-sm);
+    padding: var(--space-3) var(--space-4);
+}
+
+.charter-meta-item .eyebrow-label { margin-bottom: 4px; }
+
+.charter-meta-item p {
+    color: var(--text-main);
+    font-size: 0.97rem;
+    line-height: 1.7;
+}
+
+.charter-meta-item.is-wide { grid-column: 1 / -1; }
+
+.charter-meta-item.is-key p {
+    color: var(--accent);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.charter-meta-item.is-notice {
+    background: var(--accent-wash);
+    border-color: var(--accent-border-soft);
+}
+
+.charter-toc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-1);
+    max-width: 980px;
+    margin: 0 auto var(--space-6);
+}
+
+.charter-toc a {
+    padding: 6px 14px;
+    border-radius: var(--radius-pill);
+    background: var(--card-bg-flat);
+    border: 1px solid var(--border-color);
+    color: var(--text-dim);
+    font-size: 0.84rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color var(--dur-fast) ease, border-color var(--dur-fast) ease, background var(--dur-fast) ease;
+}
+
+.charter-toc a:hover {
+    color: var(--accent);
+    border-color: var(--accent-border-strong);
+    background: var(--accent-wash);
+}
+
+.charter-text .info-box,
+.charter-text .section-card { margin-top: var(--space-4); }
+
+.charter-list {
+    margin: 0 0 var(--space-4);
+    padding-inline-start: 1.5rem;
+}
+
+.charter-list li {
+    color: var(--text-main);
+    font-size: 0.97rem;
+    line-height: 1.75;
+    margin-bottom: var(--space-2);
+    padding-inline-start: 0.35rem;
+}
+
+.charter-list li::marker { color: var(--accent); font-weight: 700; }
+.charter-text .bullet-list { margin-top: 0; margin-bottom: var(--space-4); }
+.charter-text .bullet-list li strong,
+.charter-list li strong { color: #fff; }
+
+.charter-subs .section-card p + p { margin-top: var(--space-2); }
+.charter-subs.section-grid.single-col { max-width: 780px; text-align: start; }
+
+.charter-end {
+    margin-top: var(--space-5);
+    text-align: center;
+    font-size: 0.88rem !important;
+    font-weight: 700;
+    color: var(--accent) !important;
+}
+
+.section-shell[id] { scroll-margin-top: 16px; }
+
+@media (max-width: 768px) {
+    .charter-meta { grid-template-columns: 1fr; }
+    .charter-meta-item.is-key p { font-size: 1.2rem; }
+    .charter-toc { justify-content: flex-start; }
 }

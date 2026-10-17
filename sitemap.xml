@@ -733,4 +733,16 @@
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
     </url>
+    <url>
+      <loc>https://ouamarkom.com/research/gcear-charter</loc>
+      <lastmod>2026-10-17</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+    </url>
+    <url>
+      <loc>https://ouamarkom.com/en/research/gcear-charter/</loc>
+      <lastmod>2026-10-17</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+    </url>
 </urlset>
