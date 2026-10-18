@@ -1,1093 +1,902 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Evolution - From Prompt Engineering to AI Execution Infrastructure - Ouamarkom</title>
-    <meta name="description" content="The evolutionary journey of Ouamarkom from prompt engineering and prompt economy to AI execution infrastructure, Command Economy of AI (CEAI), and Smart Hand™.">
-    <meta name="keywords" content="Our Evolution, Prompt Engineering, Prompt Economy, Command Economy of AI, CEAI, AI Execution Gap, Smart Hand, Execution Intelligence, Decision Capital, Ouamarkom">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Hreflang & Canonical -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Evolution - From Prompt Engineering to Discovering the Infrastructure for Governed AI Economic Agency - OUAMARKOM™</title>
+
+    <meta name="description" content="The evolution of OUAMARKOM™ from Prompt Engineering to discovering the infrastructure required for governed AI economic agency: questions, hypotheses, experiments, and evidence, without assuming the architecture or the market category in advance." />
+    <meta name="keywords" content="Our Evolution, Evolution, Prompt Engineering, Prompt Economy, CE-AI, Command Economy of AI, Governed AI Economic Agency, Smart Hand, GEAB, CEP, Architecture Discovery, Evidence-to-Architecture, Ouamarkom" />
+    <meta name="robots" content="index, follow" />
+
     <link rel="canonical" href="https://ouamarkom.com/en/evolution/" />
     <link rel="alternate" hreflang="ar" href="https://ouamarkom.com/evolution" />
     <link rel="alternate" hreflang="en" href="https://ouamarkom.com/en/evolution/" />
     <link rel="alternate" hreflang="x-default" href="https://ouamarkom.com/evolution" />
-    
-    <!-- Open Graph / Facebook -->
+
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preload" as="image" href="/logo.webp" imagesrcset="/logo.webp" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Our Evolution - OUAMARKOM™" />
+    <meta name="twitter:description" content="From Prompt Engineering to discovering the infrastructure required for governed AI economic agency: a research journey of questions, hypotheses, experiments, and evidence." />
+    <meta name="twitter:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg" />
+    <meta name="theme-color" content="#040916" />
+
     <meta property="og:site_name" content="Ouamarkom" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Our Evolution - Ouamarkom" />
-    <meta property="og:description" content="From Prompt Engineering to AI Execution Infrastructure: How Ouamarkom evolved to build the execution layer for the AI economy." />
-    <meta property="og:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg" />
     <meta property="og:url" content="https://ouamarkom.com/en/evolution/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Our Evolution - OUAMARKOM™" />
+    <meta property="og:description" content="From Prompt Engineering to discovering the infrastructure required for governed AI economic agency: a research journey of questions, hypotheses, experiments, and evidence." />
+    <meta property="og:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:locale:alternate" content="ar_SA" />
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Our Evolution - Ouamarkom">
-    <meta name="twitter:description" content="From Prompt Engineering to AI Execution Infrastructure: Ouamarkom's journey in bridging the AI execution gap and delivering economic value.">
-    <meta name="twitter:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg">
-    <meta name="theme-color" content="#040916">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/main.css" />
 
-    <!-- SEO Schema Markup -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "TechArticle",
-          "@id": "https://ouamarkom.com/en/evolution/#article",
-          "url": "https://ouamarkom.com/en/evolution/",
-          "name": "Our Evolution: From Prompt Engineering to AI Execution Infrastructure",
-          "headline": "Our Evolution: From Prompt Engineering to AI Execution Infrastructure",
-          "description": "Comprehensive document covering Ouamarkom's evolution from prompt engineering to building the infrastructure for AI execution and the Command Economy of AI (CEAI).",
-          "inLanguage": "en",
-          "publisher": {
-            "@type": "Organization",
-            "name": "Ouamarkom",
-            "url": "https://ouamarkom.com",
-            "logo": "https://ouamarkom.com/logo.webp"
-          }
-        },
-        {
-          "@type": "BreadcrumbList",
-          "@id": "https://ouamarkom.com/en/evolution/#breadcrumb",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://ouamarkom.com/en/"
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "TechArticle",
+            "@id": "https://ouamarkom.com/en/evolution/#article",
+            "url": "https://ouamarkom.com/en/evolution/",
+            "name": "Our Evolution: From Prompt Engineering to Discovering the Infrastructure Required for Governed AI Economic Agency",
+            "headline": "The Evolution of OUAMARKOM™: From Prompt Engineering to Discovering the Infrastructure Required for Governed AI Economic Agency",
+            "description": "The evolution of OUAMARKOM™ from Prompt Engineering to discovering the infrastructure required for governed AI economic agency: questions, hypotheses, experiments, and evidence, without assuming the architecture or the market category in advance.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@type": "WebSite",
+              "name": "Ouamarkom",
+              "url": "https://ouamarkom.com/en/"
             },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Our Evolution",
-              "item": "https://ouamarkom.com/en/evolution/"
+            "publisher": {
+              "@type": "Organization",
+              "@id": "https://ouamarkom.com/#organization",
+              "name": "Ouamarkom",
+              "url": "https://ouamarkom.com",
+              "logo": "https://ouamarkom.com/logo.webp"
+            },
+            "breadcrumb": {
+              "@id": "https://ouamarkom.com/en/evolution/#breadcrumb"
             }
-          ]
-        }
-      ]
-    }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://ouamarkom.com/en/evolution/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://ouamarkom.com/en/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Our Evolution",
+                "item": "https://ouamarkom.com/en/evolution/"
+              }
+            ]
+          }
+        ]
+      }
     </script>
+  </head>
+  <body>
+    <header class="site-header container">
+      <a class="site-brand" href="/en/" aria-label="Ouamarkom Home">
+        <img src="/logo.webp" alt="Ouamarkom" />
+      </a>
 
-    <style>
-        :root {
-            --primary: #040916;
-            --secondary: #0a192f;
-            --accent: #e6992d;
-            --gold: #fcd34d;
-            --text-main: #e6f1ff;
-            --text-dim: #8892b0;
-            --card-bg: rgba(10, 25, 47, 0.45);
-            --border-color: rgba(255, 255, 255, 0.08);
-            
-            --brand-orange-glow: rgba(230, 153, 45, 0.35);
-            --brand-orange-subtle: rgba(230, 153, 45, 0.08);
-        }
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="/en/about/">About Ouamarkom</a>
+        <a href="/en/vision/">Vision</a>
+        <a href="/en/framework/">Framework</a>
+        <a href="/en/research">Research</a>
+        <a href="/en/canonical-reference/">Canonical Reference</a>
+        <a href="/en/evolution/" aria-current="page">Evolution</a>
+        <a href="/blog">Blog</a>
+        <a href="mailto:contact@ouamarkom.com">Contact</a>
+      </nav>
 
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            background-color: var(--primary);
-            color: var(--text-main);
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            margin: 0;
-        }
-
-        /* Top Header Navigation Bar */
-        .top-nav-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 24px 20px 10px;
-            position: relative;
-            z-index: 10;
-        }
-
-        .brand-logo-wrap {
-            display: inline-flex;
-            align-items: center;
-            text-decoration: none;
-            transition: transform 0.3s ease;
-        }
-
-        .brand-logo-wrap:hover {
-            transform: scale(1.03);
-        }
-
-        .brand-logo-img {
-            height: 50px;
-            width: auto;
-            object-fit: contain;
-            display: block;
-        }
-
-        .lang-switch-btn {
-            background: var(--brand-orange-subtle);
-            border: 1px solid rgba(230, 153, 45, 0.35);
-            color: var(--accent);
-            padding: 8px 18px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-size: 0.88rem;
-            font-weight: 700;
-            transition: all 0.3s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .lang-switch-btn svg {
-            width: 16px;
-            height: 16px;
-            stroke: currentColor;
-            transition: transform 0.4s ease;
-        }
-
-        .lang-switch-btn:hover {
-            background: rgba(230, 153, 45, 0.22);
-            color: #fff;
-            border-color: var(--accent);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(230, 153, 45, 0.2);
-        }
-
-        .lang-switch-btn:hover svg {
-            transform: rotate(180deg);
-        }
-
-        /* Layout Container */
-        .manifesto-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 10px 20px 60px;
-            position: relative;
-            z-index: 1;
-            box-sizing: border-box;
-        }
-
-        .hero-manifesto {
-            text-align: center;
-            padding: 30px 0 20px;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUpHero 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-        }
-
-        @keyframes fadeInUpHero {
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .hero-manifesto h1 {
-            font-size: clamp(1.6rem, 5vw, 2.8rem);
-            line-height: 1.35;
-            margin-bottom: 18px;
-            font-weight: 900;
-            color: #ffffff;
-        }
-
-        .hero-manifesto h1 span {
-            display: inline-block;
-            background: linear-gradient(90deg, var(--accent), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            line-height: 1.6;
-        }
-
-        .hero-manifesto .subtitle {
-            font-size: clamp(0.98rem, 2.5vw, 1.2rem);
-            color: var(--text-dim);
-            line-height: 1.7;
-            max-width: 850px;
-            margin: 0 auto;
-        }
-
-        .tagline-badge {
-            display: inline-block;
-            padding: 6px 18px;
-            background: var(--brand-orange-subtle);
-            border: 1px solid rgba(230, 153, 45, 0.3);
-            color: var(--accent);
-            border-radius: 50px;
-            font-size: clamp(0.8rem, 2vw, 0.9rem);
-            font-weight: 800;
-            margin-bottom: 22px;
-            letter-spacing: 0.5px;
-        }
-
-        /* Generic Card Styling */
-        .manifesto-card {
-            background: var(--card-bg);
-            padding: clamp(22px, 5vw, 42px);
-            border-radius: 24px;
-            border: 1px solid var(--border-color);
-            backdrop-filter: blur(12px);
-            margin-bottom: 30px;
-        }
-
-        .manifesto-card h2 {
-            color: var(--accent);
-            font-size: clamp(1.3rem, 4vw, 1.8rem);
-            margin-bottom: 20px;
-            font-weight: 800;
-            line-height: 1.3;
-        }
-
-        .manifesto-card p {
-            color: var(--text-main);
-            font-size: clamp(0.98rem, 2.5vw, 1.08rem);
-            line-height: 1.8;
-            margin-bottom: 16px;
-        }
-
-        .manifesto-card p:last-child {
-            margin-bottom: 0;
-        }
-
-        /* Step Card Styling for Evolution Sequence */
-        .step-number-tag {
-            display: inline-block;
-            font-size: 0.9rem;
-            font-weight: 900;
-            color: var(--accent);
-            background: var(--brand-orange-subtle);
-            border: 1px solid rgba(230, 153, 45, 0.3);
-            padding: 4px 14px;
-            border-radius: 30px;
-            margin-bottom: 12px;
-        }
-
-        /* Interactive Process & Flow Diagrams */
-        .flow-chain {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            background: rgba(4, 9, 22, 0.65);
-            border: 1px solid rgba(230, 153, 45, 0.25);
-            padding: 18px 22px;
-            border-radius: 16px;
-            margin: 20px 0;
-            direction: ltr;
-        }
-
-        .flow-item {
-            background: rgba(230, 153, 45, 0.1);
-            color: var(--gold);
-            border: 1px solid rgba(230, 153, 45, 0.3);
-            padding: 8px 14px;
-            border-radius: 8px;
-            font-size: 0.9rem;
-            font-weight: 700;
-            text-align: center;
-            white-space: nowrap;
-        }
-
-        .flow-arrow {
-            color: var(--accent);
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
-
-        .vertical-flow {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-            background: rgba(4, 9, 22, 0.65);
-            border: 1px solid rgba(230, 153, 45, 0.25);
-            padding: 24px;
-            border-radius: 18px;
-            margin: 22px 0;
-        }
-
-        .vertical-flow .flow-item {
-            width: 100%;
-            max-width: 480px;
-            box-sizing: border-box;
-            direction: ltr;
-        }
-
-        .vertical-flow .flow-arrow {
-            color: var(--accent);
-            font-size: 1.2rem;
-        }
-
-        /* Highlight Boxes (LTR Adjusted) */
-        .highlight-quote {
-            background: var(--brand-orange-subtle);
-            border-left: 4px solid var(--accent);
-            padding: 22px;
-            border-radius: 16px 4px 4px 16px;
-            margin: 25px 0;
-        }
-
-        .highlight-quote p {
-            font-weight: 700;
-            color: var(--text-main);
-            font-size: clamp(1rem, 3vw, 1.12rem);
-            line-height: 1.7;
-            margin-bottom: 0;
-        }
-
-        .comparison-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 16px;
-            margin: 20px 0;
-        }
-
-        @media (min-width: 640px) {
-            .comparison-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        .comp-card {
-            background: rgba(4, 9, 22, 0.6);
-            border: 1px solid var(--border-color);
-            padding: 20px;
-            border-radius: 16px;
-        }
-
-        .comp-card.active-comp {
-            border-color: var(--accent);
-            background: rgba(230, 153, 45, 0.05);
-        }
-
-        .comp-card h4 {
-            color: var(--accent);
-            font-size: 1.1rem;
-            margin-top: 0;
-            margin-bottom: 10px;
-        }
-
-        .comp-card p {
-            font-size: 0.95rem;
-            margin-bottom: 0;
-            color: var(--text-dim);
-        }
-
-        /* Statement Banner */
-        .statement-banner {
-            background: linear-gradient(135deg, rgba(4, 9, 22, 0.9) 0%, rgba(230, 153, 45, 0.12) 100%);
-            border: 1px solid rgba(230, 153, 45, 0.35);
-            border-radius: 24px;
-            padding: clamp(30px, 5vw, 45px) 20px;
-            margin: 35px auto;
-            text-align: center;
-        }
-
-        .statement-text-en {
-            color: var(--gold);
-            font-size: clamp(1.05rem, 3vw, 1.4rem);
-            font-weight: 800;
-            margin-bottom: 15px;
-            direction: ltr;
-            line-height: 1.4;
-        }
-
-        /* Footer CTA */
-        .footer-cta {
-            text-align: center;
-            padding: clamp(35px, 6vw, 55px) clamp(20px, 4vw, 40px);
-            margin-top: 50px;
-            margin-bottom: 25px;
-            background: linear-gradient(180deg, rgba(230, 153, 45, 0.06) 0%, rgba(4, 9, 22, 0.8) 100%);
-            border: 1px solid rgba(230, 153, 45, 0.25);
-            border-radius: 28px;
-            backdrop-filter: blur(12px);
-        }
-
-        .footer-cta h2 {
-            color: #ffffff;
-            font-size: clamp(1.3rem, 4vw, 2.1rem);
-            font-weight: 900;
-            margin-bottom: 30px;
-            line-height: 1.35;
-        }
-
-        .footer-cta h2 span {
-            color: var(--accent);
-        }
-
-        .btn-group {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            width: 100%;
-            max-width: 540px;
-            margin: 0 auto;
-            align-items: center;
-            justify-content: center;
-        }
-
-        @media (min-width: 640px) {
-            .btn-group {
-                flex-direction: row;
-                max-width: 100%;
-            }
-        }
-
-        .btn-cta-primary {
-            background: linear-gradient(135deg, var(--accent) 0%, #ffab3d 100%);
-            color: var(--primary);
-            padding: 15px 34px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 800;
-            font-size: 1rem;
-            box-shadow: 0 8px 25px rgba(230, 153, 45, 0.3);
-            transition: all 0.3s ease;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        @media (min-width: 640px) {
-            .btn-cta-primary {
-                width: auto;
-            }
-        }
-
-        .btn-cta-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 35px rgba(230, 153, 45, 0.5);
-            background: linear-gradient(135deg, #ffab3d 0%, var(--gold) 100%);
-        }
-
-        .btn-cta-secondary {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(230, 153, 45, 0.35);
-            color: var(--text-main);
-            padding: 15px 34px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        @media (min-width: 640px) {
-            .btn-cta-secondary {
-                width: auto;
-            }
-        }
-
-        .btn-cta-secondary:hover {
-            background: rgba(230, 153, 45, 0.15);
-            border-color: var(--accent);
-            color: #ffffff;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(230, 153, 45, 0.15);
-        }
-
-        .reveal-card {
-            opacity: 0;
-            transform: translateY(25px);
-            transition: opacity 0.6s cubic-bezier(0.215, 0.610, 0.355, 1), 
-                        transform 0.6s cubic-bezier(0.215, 0.610, 0.355, 1);
-        }
-
-        .reveal-card.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
-</head>
-<body>
-
-<canvas id="network-canvas"></canvas>
-
-<!-- Top Navigation Bar -->
-<nav class="top-nav-bar">
-    <a href="/en/" class="brand-logo-wrap" aria-label="Ouamarkom Homepage">
-        <img src="/logo.webp" alt="Ouamarkom" class="brand-logo-img">
-    </a>
-    
-    <a href="/evolution" class="lang-switch-btn" aria-label="التحويل إلى العربية">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <div class="header-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <svg class="globe-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="12" cy="12" r="10"></circle>
-            <line x1="2" y1="12" x2="22" y2="12"></line>
-            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-        </svg>
-        <span>العربية</span>
-    </a>
-</nav>
+            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+            <path d="M2 12h20"></path>
+          </svg>
+          <a href="/evolution" class="lang-btn" hreflang="ar" lang="ar">AR</a>
+          <span class="lang-divider"></span>
+          <span class="lang-btn active">EN</span>
+        </div>
 
-<main class="manifesto-container">
-    
-    <!-- Hero Header -->
-    <header class="hero-manifesto">
-        <span class="tagline-badge">Our Evolution</span>
-        
-        <h1>Our Evolution: From <span>Prompt Engineering</span> to AI Execution Infrastructure</h1>
-        
-        <p class="subtitle">
-            Ouamarkom's journey began with a simple question: «What happens when language becomes a new interface for production through artificial intelligence?»
-        </p>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-controls="menuOverlay" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </header>
 
-    <!-- OVERVIEW INTRO -->
-    <section class="manifesto-card reveal-card">
-        <h2>A Conceptual Turning Point</h2>
-        <p>Our initial work focused on Prompt Engineering, and later expanded into the exploration of the Prompt Economy.</p>
-        <p>As our understanding evolved, a larger question emerged:</p>
-        <div class="highlight-quote">
-            <p>«What happens after the prompt?»</p>
-        </div>
-        <p>That question became a turning point. It moved Ouamarkom from thinking about prompts as instructions for AI models toward exploring commands, execution, coordination, and the economic value generated when AI systems are connected to real-world objectives.</p>
-    </section>
+    <canvas id="network-canvas" aria-hidden="true"></canvas>
+    <button id="backToTop" title="Back to top" aria-label="Back to top">↑</button>
 
-    <!-- STEP 01 -->
-    <section class="manifesto-card reveal-card">
-        <span class="step-number-tag">01</span>
-        <h2>The Beginning: Prompt Engineering</h2>
-        <p>Ouamarkom began with prompts. In the early stages of generative AI, prompts represented one of the primary interfaces through which people interacted with AI models:</p>
-        
-        <div class="flow-chain">
-            <span class="flow-item">Human</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item">Prompt</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item">AI</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item">Response</span>
-        </div>
+    <div class="menu-overlay" id="menuOverlay">
+      <ul>
+        <li class="menu-group-title">Organization</li>
+        <li><a href="/en/">Home</a></li>
+        <li><a href="/en/about/">About Ouamarkom</a></li>
+        <li><a href="/en/vision/">Vision and Mission</a></li>
+        <li><a href="/en/founder/">Founder</a></li>
+        <li><a href="/en/evolution/" aria-current="page">Evolution Record</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li class="menu-group-title">Framework &amp; Knowledge</li>
+        <li><a href="/en/framework/">CE-AI™ Framework</a></li>
+        <li><a href="/en/canonical-reference/">Canonical Reference</a></li>
+        <li><a href="/en/glossary/">Glossary</a></li>
+        <li class="menu-group-title">Research</li>
+        <li><a href="/en/research">Research Hub</a></li>
+        <li><a href="/en/whitepaper/">Whitepaper</a></li>
+        <li class="menu-group-title">Contact</li>
+        <li><a href="mailto:contact@ouamarkom.com">Contact Us</a></li>
+      </ul>
+    </div>
 
-        <p>Prompt Engineering focused on improving the quality of AI outputs through better instructions, context, objectives, and constraints.</p>
-        <p>But we began to recognize that a prompt could represent more than a piece of text sent to a model. It could become:</p>
-        <ul style="color: var(--text-main); line-height: 1.8; margin-bottom: 16px;">
-            <li>Reusable knowledge.</li>
-            <li>Repeatable instructions.</li>
-            <li>A production tool.</li>
-            <li>A digital asset.</li>
-            <li>A unit that could be shared, improved, and reused.</li>
-        </ul>
-        <p>This led us to explore a broader concept: <strong>Prompt Economy</strong>.</p>
-    </section>
+    <main class="container">
 
-    <!-- STEP 02 -->
-    <section class="manifesto-card reveal-card">
-        <span class="step-number-tag">02</span>
-        <h2>The Prompt Economy</h2>
-        <p>At this stage, Ouamarkom began exploring prompts not only as a mechanism for interacting with AI, but as potentially valuable production assets.</p>
-        <p>If language can direct AI systems, and if high-quality instructions can improve productivity, then a broader question emerges:</p>
-        <div class="highlight-quote">
-            <p>«Can prompts become part of a new knowledge and production economy?»</p>
-        </div>
-        <p>This led to the development and exploration of the Prompt Economy concept. However, the more we explored the idea, the clearer it became that the prompt was not the end of the journey. It was only the beginning.</p>
-    </section>
+      <!-- Hero -->
+      <section class="hero reveal">
+        <p class="section-pill">Our Evolution</p>
+        <h1>
+          The Evolution of OUAMARKOM<br />
+          <span>From Prompt Engineering to Discovering the Infrastructure Required for Governed AI Economic Agency</span>
+        </h1>
 
-    <!-- STEP 03 -->
-    <section class="manifesto-card reveal-card">
-        <span class="step-number-tag">03</span>
-        <h2>From Prompt to Command</h2>
-        <p>We realized that people ultimately do not want an answer alone. They want an <strong>outcome</strong>.</p>
-        <p>A business leader might say:</p>
-        <div class="highlight-quote">
-            <p>«"Increase our revenue by 20% within 90 days."»</p>
+        <p class="subtitle">We did not begin with an infrastructure category. We began with an observation.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/en/research">Explore the Research</a>
+          <a class="btn btn-secondary-outline" href="/en/framework/">Read the CE-AI™ Framework</a>
         </div>
-        <p>This is not simply a request for information. It is an intent, an objective, and an economic goal.</p>
-        <p>This led to a conceptual transition:</p>
-        
-        <div class="flow-chain">
-            <span class="flow-item">Prompt</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item" style="border-color: var(--accent);">Command</span>
+      </section>
+
+      <section class="section-shell reveal" id="intro" aria-labelledby="intro-title">
+        <div class="section-header">
+          <p class="section-pill">Introduction</p>
+          <h2 id="intro-title">The Evolution of a Question</h2>
         </div>
 
-        <p>A prompt may request something from an AI model. A command can represent a structured direction toward an executable objective. This shift led us to a broader question:</p>
-        <p style="color: var(--accent); font-weight: 700;">«What happens when commands become a mechanism for coordinating AI-driven work?»</p>
-    </section>
+        <div class="research-note">
+          <p>OUAMARKOM™ did not begin with a decision to build new infrastructure, a finalized architecture, or an assumption that a new market category already existed. It began with a practical question: How can AI systems be directed more precisely, and how can human intent be translated into instructions and outputs that are more usable, evaluable, and reusable?</p>
+          <p>Initially, this question was closely associated with Prompt Engineering. But as models evolved and became more capable of using tools and interacting with external systems, the scope of inquiry expanded. The challenge was no longer limited to the quality of an answer. It also involved understanding what happens when instructions lead to real actions, and what institutions require to authorize those actions, govern their execution, examine the evidence, and verify their outcomes.</p>
+          <p>This evolution led to the question that guides OUAMARKOM’s current work:</p>
+        </div>
+        <div class="quote-box mt-5">
+          <p class="quote-line">What must hold when AI can participate in actions with economic consequences?</p>
+        </div>
+        <div class="research-note mt-5">
+          <p>The final answer was not known at the outset, and some of the most important hypotheses remain under investigation.</p>
+          <p>This is not the story of an architecture assumed to be correct and then built around that assumption. It is a research journey to discover what deserves to be built, and whether new infrastructure is necessary at all.</p>
+        </div>
+      </section>
 
-    <!-- STEP 04 -->
-    <section class="manifesto-card reveal-card">
-        <span class="step-number-tag">04</span>
-        <h2>From Prompt Economy to Command Economy of AI™</h2>
-        <p>The thesis evolved into: <strong>Command Economy of AI™</strong>. This represents an emerging economic and conceptual framework for exploring how human and organizational intent can be transformed into executable commands within AI-driven systems.</p>
-        <p>The conceptual chain can be represented as:</p>
 
-        <div class="vertical-flow">
-            <span class="flow-item">Human Intent</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Economic Command</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">AI Systems</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Economic Activity</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item" style="border-color: var(--gold); color: #fff;">Economic Outcome</span>
+      <section class="section-shell reveal" id="s01" aria-labelledby="s01-title">
+        <div class="section-header">
+          <p class="section-pill">01</p>
+          <h2 id="s01-title">The Beginning: Prompt Engineering</h2>
+          <p class="lead-text">The Human–Model Interface</p>
         </div>
 
-        <p>The thesis does not suggest that commands literally replace money as the foundation of traditional economic exchange. Rather, it explores the possibility that commands may become an increasingly important mechanism for coordinating AI-driven work, execution, and production.</p>
-        <p>The central question therefore evolved from: <em>«How can we make AI respond better?»</em> to: <strong>«How can we make AI work toward meaningful objectives?»</strong></p>
-    </section>
-
-    <!-- STEP 05 -->
-    <section class="manifesto-card reveal-card">
-        <span class="step-number-tag">05</span>
-        <h2>Discovering the AI Execution Gap</h2>
-        <p>Commands alone do not solve the problem. We can write an excellent command:</p>
-        <div class="highlight-quote">
-            <p style="color: var(--gold);">"Increase revenue by 20%."</p>
+        <div class="research-note">
+          <p>The initial focus was on the interaction between people and AI models. How could instructions produce more accurate responses? How should context be supplied? How could ambiguity be reduced and output consistency improved?</p>
+          <p>Prompt Engineering revealed that instructions could be more than simple questions. They could include objectives, context, tasks, constraints, preferences, and criteria for evaluating results.</p>
+          <p>This raised a deeper question:</p>
         </div>
-        <p>But writing the command does not increase revenue. The objective must be translated into a chain of coordinated operations:</p>
+        <div class="quote-box mt-5">
+          <p class="quote-line">Can human intent be organized into instructions that are evaluable, repeatable, and reusable?</p>
+        </div>
+        <div class="research-note mt-5">
+          <p>At this stage, the focus was on improving interaction with AI. But treating instructions as more than transient text opened the door to examining their role in broader workflows.</p>
+          <p>Prompt Engineering was not the destination. It was the starting point for the next question.</p>
+        </div>
+      </section>
 
-        <div class="vertical-flow">
-            <span class="flow-item">Command</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Actions</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Workflows</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Agents</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Tools</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Systems</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Monitoring</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Optimization</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item" style="border-color: var(--accent);">Outcome</span>
+
+      <section class="section-shell reveal" id="s02" aria-labelledby="s02-title">
+        <div class="section-header">
+          <p class="section-pill">02</p>
+          <h2 id="s02-title">From Prompt to Command</h2>
+          <p class="lead-text">When Intent Becomes Execution-Oriented</p>
         </div>
 
-        <p>This revealed a new question: <strong>«How can intelligence, intent, and commands be transformed into reliable, coordinated, measurable execution?»</strong></p>
-        <p>We refer to this challenge as the: <strong>AI Execution Gap</strong>. The AI Execution Gap represents the space between what AI systems can understand, reason about, or recommend and what they can reliably execute in real-world environments in a coordinated, governed, and measurable way.</p>
-    </section>
-
-    <!-- STEP 06 -->
-    <section class="manifesto-card reveal-card">
-        <span class="step-number-tag">06</span>
-        <h2>From Intelligence to Execution</h2>
-        <p>As AI systems became increasingly capable, it became clear that execution itself involves multiple dimensions. Real-world organizational execution requires more than intelligence. It involves:</p>
-        <p style="color: var(--text-dim); font-size: 0.95rem; line-height: 1.8;">
-            Objectives • Context • Constraints • Commands • Dependencies • Agents • Tools • Enterprise systems • Permissions • Execution state • Exceptions • Monitoring • Human intervention • Measurement • Correction • Outcomes.
-        </p>
-        <p>This led Ouamarkom to explore <strong>AI Execution</strong>: the transition from AI-generated intelligence to:</p>
-        
-        <div class="flow-chain">
-            <span class="flow-item">Intelligence</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item">Coordinated Action</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item" style="border-color: var(--gold);">Measurable Outcomes</span>
+        <div class="research-note">
+          <p>Not every prompt is an executable command. A user may request an explanation, summary, or recommendation without granting a system permission to change anything outside the conversation.</p>
+          <p>Instructions directed toward execution may require a clearer representation of objectives, scope, constraints, resources, budgets, authority, approval conditions, and success criteria.</p>
+          <p>A user may ask an AI system to suggest a marketing campaign. In another context, the user may direct a system capable of launching the campaign or changing prices within a defined budget. The language may look similar, but the authority, risks, responsibilities, and consequences differ.</p>
+          <p>The inquiry expanded:</p>
         </div>
-    </section>
+        <div class="quote-box mt-5">
+          <p class="quote-line">What can AI do when human intent becomes executable?</p>
+        </div>
+        <div class="research-note mt-5">
+          <p>This distinction did not assume that every command requires a separate protocol. It initiated an investigation into the relationship between instructions, authority, action, and outcomes.</p>
+        </div>
+      </section>
 
-    <!-- STEP 07 -->
-    <section class="manifesto-card reveal-card">
-        <span class="step-number-tag">07</span>
-        <h2>The Emergence of Smart Hand™</h2>
-        <p>As the execution challenge expanded, a need emerged for an architectural layer capable of coordinating the execution environment itself. This led to: <strong>Smart Hand™</strong>.</p>
-        <p>Smart Hand™ is Ouamarkom's vision for an AI execution layer designed to connect objectives, commands, agents, tools, workflows, execution state, governance, and outcomes.</p>
-        <p>The conceptual architecture can be represented as:</p>
 
-        <div class="vertical-flow">
-            <span class="flow-item">Human / Organizational Intent</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Intent Understanding</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Objective</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Command Engine</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Command Graph</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Agent Network</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Tools + Enterprise Systems</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Execution Governance</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Execution State</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Monitoring</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Outcome Intelligence</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item" style="border-color: var(--gold); color: #fff;">Economic Outcome</span>
+      <section class="section-shell reveal" id="s03" aria-labelledby="s03-title">
+        <div class="section-header">
+          <p class="section-pill">03</p>
+          <h2 id="s03-title">From Prompt Economy to the Value of Action</h2>
+          <p class="lead-text">From Organizing Knowledge to Organizing Work</p>
         </div>
 
-        <p>Smart Hand™ is not simply another AI agent, nor is it simply another automation tool. It represents an emerging architectural framework through which Ouamarkom proposes treating execution as an explicit architectural concern within AI systems.</p>
-    </section>
+        <div class="research-note">
+          <p>The Prompt Economy concept expanded the inquiry from optimizing individual prompts to exploring how instructions might be organized and reused as knowledge assets and productive units of work.</p>
+          <p>Well-designed instructions can save time, improve consistency, and make tasks easier to repeat. But as AI systems gain the ability to use tools and interact with external services, another question emerges.</p>
+        </div>
+        <div class="quote-box mt-5">
+          <p class="quote-line">If instructions can direct actions beyond information generation, where does the economic value reside: in the instruction itself, in the work it directs, or in the mechanisms that allow the work to be executed within defined boundaries and its outcomes evaluated?</p>
+        </div>
+        <div class="research-note mt-5">
+          <p>This shift did not diminish the importance of Prompt Engineering. It placed it within a broader research context.</p>
+          <p>The inquiry moved from optimizing instructions to understanding the economic actions that may follow from them.</p>
+        </div>
+        <div class="info-box mt-5">
+          <p>This was a change in the subject of research, not a claim that Prompt Economy had become a validated economic theory or that an independent market had been established.</p>
+        </div>
+      </section>
 
-    <!-- STEP 08 -->
-    <section class="manifesto-card reveal-card">
-        <span class="step-number-tag">08</span>
-        <h2>From Execution to Data: Execution Intelligence</h2>
-        <p>We then recognized another important characteristic of execution: <em>«Execution does not only produce outcomes. It also produces data about how execution occurred.»</em> Every execution cycle can generate information about:</p>
-        <ul style="color: var(--text-dim); line-height: 1.8; font-size: 0.95rem;">
-            <li>What worked and what failed.</li>
-            <li>Which agent performed better and which workflow was more efficient.</li>
-            <li>What the execution cost and how long it took.</li>
-            <li>Where and why failures occurred.</li>
-            <li>Which actions produced better outcomes and what could be improved.</li>
-        </ul>
 
-        <div class="flow-chain">
-            <span class="flow-item">Execution</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item">Execution Data</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item">Patterns</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item">Knowledge</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item" style="border-color: var(--accent);">Execution Intelligence</span>
+      <section class="section-shell reveal" id="s04" aria-labelledby="s04-title">
+        <div class="section-header">
+          <p class="section-pill">04</p>
+          <h2 id="s04-title">The Emergence of CE-AI™: A Framework for Economic Agency</h2>
+          <p class="lead-text">Command Economy of AI™</p>
         </div>
 
-        <p>Execution itself becomes a source of intelligence.</p>
-    </section>
+        <div class="research-note">
+          <p>As the inquiry expanded, OUAMARKOM began developing Command Economy of AI™, or CE-AI, as a research and analytical framework for examining AI participation in economic activity and the relationship between commands, delegated authority, governed execution, and verifiable outcomes.</p>
+          <p>The name does not refer to a political system, a replacement for market economies, or an established industry standard. Nor does it represent a finalized architecture or a proven market category.</p>
+          <p>CE-AI’s current role is to organize the questions and relationships investigated by the research program, particularly what changes when AI instructions become connected to actions with economic consequences.</p>
+          <p>Through this framework, the research trajectory expanded:</p>
+        </div>
+        <div class="section-card highlight-box text-center mt-5">
+          <p class="flow-sequence">AI Intelligence → AI Agency → Economic Agency → Governed Economic Agency</p>
+        </div>
+        <div class="research-note mt-5">
+          <p>From intelligence to agency, from agency to economic agency, and then to the conditions required to govern economic action.</p>
+          <p>The question became more than whether a system could perform a step. It also concerned the source of authority for that action, the boundaries of delegation, the applicable constraints, what happens during execution, and how outcomes can be evidenced and accountability established.</p>
+        </div>
+        <div class="section-card highlight-box text-center mt-5">
+          <blockquote class="manifesto-quote">
+            CE-AI was not the end of the research. It was a way to make the questions more precise and testable.
+          </blockquote>
+        </div>
+      </section>
 
-    <!-- STEP 09 -->
-    <section class="manifesto-card reveal-card">
-        <span class="step-number-tag">09</span>
-        <h2>From Execution Intelligence to Execution Memory</h2>
-        <p>As execution data, decisions, and outcomes accumulate, systems may begin to develop a persistent memory of execution:</p>
 
-        <div class="flow-chain">
-            <span class="flow-item">Decision</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item">Execution</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item">Outcome</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item">Learning</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item" style="border-color: var(--accent);">Future Decision</span>
+      <section class="section-shell reveal" id="s05" aria-labelledby="s05-title">
+        <div class="section-header">
+          <p class="section-pill">05</p>
+          <h2 id="s05-title">The Core Shift: From Information to Economic Action</h2>
+          <p class="lead-text">When Information Becomes Action</p>
         </div>
 
-        <p>This introduces the concept of <strong>Execution Memory</strong>: the ability to preserve and reuse knowledge derived from previous execution cycles rather than treating every new operation as if it were starting from zero.</p>
-    </section>
+        <div class="research-note">
+          <p>When a model produces an inaccurate answer, the primary challenge concerns information quality. But when a system executes a financial action, changes a price, creates a purchase order, or commits a budget, additional questions arise.</p>
+          <p>Who has the authority to permit the action? What are the limits of that authority? Are constraints enforced at execution? What happens when delegation changes or is revoked? Do the available records establish that the intended economic outcome occurred?</p>
+          <p>OUAMARKOM uses several research distinctions to separate these questions:</p>
+        </div>
+        <div class="section-grid two-col mt-5">
+          <div class="section-card">
+            <h4>Capability ≠ Authority</h4>
+            <p>Technical capability does not automatically confer authority.</p>
+          </div>
+          <div class="section-card">
+            <h4>Authority ≠ Execution</h4>
+            <p>Authorization does not establish that execution occurred.</p>
+          </div>
+          <div class="section-card">
+            <h4>Execution ≠ Outcome</h4>
+            <p>Successful technical execution does not guarantee the intended economic outcome.</p>
+          </div>
+          <div class="section-card">
+            <h4>Evidence ≠ Verification</h4>
+            <p>The existence of a record or evidence does not mean the outcome has been achieved or fully verified.</p>
+          </div>
+        </div>
+        <div class="research-note mt-5">
+          <p>These distinctions do not establish that every problem requires a separate software component. They help identify what needs to be tested and whether existing mechanisms already address the problem.</p>
+          <p>This inquiry gave rise to a focus on Governed AI Economic Execution.</p>
+        </div>
+      </section>
 
-    <!-- STEP 10 -->
-    <section class="manifesto-card reveal-card">
-        <span class="step-number-tag">10</span>
-        <h2>From Execution Memory to Execution Capital</h2>
-        <p>As the organization accumulates execution data, decisions, experience, patterns, outcomes, best practices, and knowledge of success and failure, that accumulated knowledge may develop strategic value.</p>
-        <p>This leads to the longer-term concept: <strong>Execution Capital</strong>.</p>
-        <p>Execution Capital is a strategic and research thesis suggesting that accumulated execution intelligence may become a reusable economic asset. This remains a long-term hypothesis rather than an established economic category; its value must ultimately be demonstrated through real-world data, products, customers, and measurable outcomes.</p>
-    </section>
 
-    <!-- STEP 11 -->
-    <section class="manifesto-card reveal-card">
-        <span class="step-number-tag">11</span>
-        <h2>From Execution Capital to Execution Economy</h2>
-        <p>At a broader scale, another possibility emerges: <strong>Execution Economy</strong>.</p>
-        <p>The Execution Economy represents a longer-term thesis that intelligent, measurable, and increasingly autonomous execution could become an important layer of economic coordination and production. The conceptual progression becomes:</p>
-
-        <div class="vertical-flow">
-            <span class="flow-item">Intent</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Intelligence</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Command</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Execution</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Execution Data</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Execution Intelligence</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Execution Memory</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Execution Capital</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item" style="border-color: var(--gold); color: #fff;">Economic Value</span>
+      <section class="section-shell reveal" id="s06" aria-labelledby="s06-title">
+        <div class="section-header">
+          <p class="section-pill">06</p>
+          <h2 id="s06-title">From the Ability to Act to Governed AI Economic Agency</h2>
+          <p class="lead-text">Governed AI Economic Agency</p>
         </div>
 
-        <p>This represents Ouamarkom's long-term research and strategic direction-not a claim that such an economy has already fully emerged.</p>
-    </section>
-
-    <!-- STEP 12 -->
-    <section class="manifesto-card reveal-card">
-        <span class="step-number-tag">12</span>
-        <h2>Measuring Outcomes, Not Activity</h2>
-        <p>In its initial development, Smart Hand™ is not intended to maximize the number of actions performed. The objective is to demonstrate that execution can be directed toward a specific, measurable economic outcome.</p>
-        <p>For example, Objective: <strong style="color: var(--gold);">Increase revenue by 15% within 90 days.</strong></p>
-        <p>It is not enough to report: <em>10,000 Actions Completed</em>. The more important questions are:</p>
-        <ul style="color: var(--text-dim); line-height: 1.8; font-size: 0.95rem;">
-            <li>Was the objective achieved? What did execution cost and how long did it take?</li>
-            <li>How reliable was execution and how much human intervention was required?</li>
-            <li>What risks were introduced, what was the ROI, and what was the final economic outcome?</li>
-        </ul>
-        <p>This shifts the evaluation framework from <strong>Activity Metrics</strong> to <strong>Outcome Metrics</strong>.</p>
-    </section>
-
-    <!-- STEP 13 -->
-    <section class="manifesto-card reveal-card">
-        <span class="step-number-tag">13</span>
-        <h2>From Automation to Execution</h2>
-        <p>Ouamarkom does not position Smart Hand™ simply as another automation technology.</p>
-
-        <div class="comparison-grid">
-            <div class="comp-card">
-                <h4>Traditional Automation</h4>
-                <p>Asks: «How can we make this process happen automatically?»</p>
-            </div>
-            <div class="comp-card active-comp">
-                <h4>Smart Hand™ Execution</h4>
-                <p>Explores: «How can we coordinate multiple processes, tools, agents, and systems toward a defined objective, under defined constraints, with measurable outcomes?»</p>
-            </div>
+        <div class="research-note">
+          <p>The central question is no longer limited to whether AI can execute actions. It concerns the conditions under which institutions can rely on those actions within clearly defined boundaries.</p>
+          <p>A system may have technical access to a financial tool without being authorized to use it in every context. Its delegation may be limited by budget, duration, purpose, or approval conditions. It may execute an operation correctly while producing an economic outcome different from the intended one.</p>
+          <p>OUAMARKOM therefore investigates the relationship between authority, delegation, governance, enforcement, execution, evidence, verification, outcomes, and accountability.</p>
+          <p>It does not assume that these elements must exist as independent technical layers or separate products.</p>
         </div>
-    </section>
+        <div class="quote-box mt-5">
+          <p class="quote-line">The question is not how to add more components. It is how to identify the problems that genuinely require solutions, and the least complex intervention that produces measurable improvement.</p>
+        </div>
+      </section>
 
-    <!-- STEP 14 -->
-    <section class="manifesto-card reveal-card">
-        <span class="step-number-tag">14</span>
-        <h2>From Tasks to Objectives</h2>
-        <p>Many traditional systems begin with a Task, while the execution-oriented perspective begins with an Objective:</p>
 
-        <div class="comparison-grid">
-            <div class="comp-card">
-                <h4>Task Focus</h4>
-                <p>Send an email to a potential customer.</p>
-            </div>
-            <div class="comp-card active-comp">
-                <h4>Objective Focus</h4>
-                <p>Increase qualified lead conversion by 10%.</p>
-            </div>
+      <section class="section-shell reveal" id="s07" aria-labelledby="s07-title">
+        <div class="section-header">
+          <p class="section-pill">07</p>
+          <h2 id="s07-title">Smart Hand™: Turning Questions into Experiments</h2>
+          <p class="lead-text">From Concepts to Experiments</p>
         </div>
 
-        <p>The distinction is significant. In the second scenario, the system can potentially determine which combination of actions, workflows, agents, and tools is most appropriate for achieving the objective.</p>
-    </section>
+        <div class="research-note">
+          <p>Architectural questions cannot be resolved through theory alone. Some problems emerge only when a system attempts to act within a defined environment where constraints, events, and changes can be examined.</p>
+          <p>OUAMARKOM is developing Smart Hand™ as an experimental environment for studying governed economic action, measuring behavior, and examining what happens when constraints are applied, changed, or revoked.</p>
+          <p>Smart Hand does not claim that a final architecture has been discovered, nor does it independently prove all CE-AI hypotheses. Its value depends on the quality of the experiments, measurements, and evidence it produces.</p>
+          <p>For example, a system could be tested on improving sales within a defined budget while preserving profit margins and respecting delegated authority. This raises practical questions: Does the system exceed its authorized scope? What happens when authority is revoked? Can individually permissible actions accumulate beyond an overall limit? What evidence is available to reconstruct what happened?</p>
+        </div>
+        <div class="info-box mt-5">
+          <p>These are examples of research questions, not claims that the corresponding results have already been demonstrated.</p>
+        </div>
+        <div class="quote-box mt-5">
+          <p class="quote-line">The objective is not to prove a predetermined architecture. It is to discover what the problem actually requires.</p>
+        </div>
+      </section>
 
-    <!-- STEP 15 -->
-    <section class="manifesto-card reveal-card">
-        <span class="step-number-tag">15</span>
-        <h2>From Activity to Outcomes</h2>
-        <p>An AI system can execute thousands of actions and still fail economically. For example:</p>
-        
-        <div class="highlight-quote" style="border-left-color: #ef4444;">
-            <p style="color: #f87171;">10,000 Actions | Revenue: +0.5% | Cost: +12%</p>
+
+      <section class="section-shell reveal" id="s08" aria-labelledby="s08-title">
+        <div class="section-header">
+          <p class="section-pill">08</p>
+          <h2 id="s08-title">GEAB and CEP: Research Instruments Under Development</h2>
+          <p class="lead-text">Making Hypotheses Testable</p>
         </div>
 
-        <p>In this case, the system was active-but not economically effective. Therefore, execution should increasingly be evaluated through its relationship with outcomes:</p>
-        
-        <div class="flow-chain">
-            <span class="flow-item" style="border-color: var(--accent);">Execution → Outcome</span>
+        <div class="research-note">
+          <p>As the research program evolved, the need emerged to organize test scenarios, define metrics, and compare results.</p>
+          <p>GEAB, or the Governed Economic Action Benchmark, is a proposed research program for developing tests and metrics to compare systems and mechanisms across governed economic action scenarios.</p>
+          <p>It is intended to investigate cases involving authority boundaries, cumulative limits, revocation, retries, and the evidence available to reconstruct events.</p>
+          <p>OUAMARKOM is also examining CEP as a proposed protocol concept concerning how the conditions governing consequential actions might be represented, enforced, and verified.</p>
         </div>
-        <p style="text-align: center; color: var(--text-dim); font-size: 0.9rem;">rather than: Execution → Activity Volume</p>
-    </section>
+        <div class="info-box mt-5">
+          <p>The existence of GEAB or CEP does not establish that an industry standard has emerged, that an independent protocol is necessary, or that a particular design outperforms alternatives.</p>
+        </div>
+        <div class="research-note mt-5">
+          <p>Their value must be demonstrated through inspectable results, comparison with existing mechanisms, and measurable improvements that justify any additional cost and complexity.</p>
+        </div>
+      </section>
 
-    <!-- STEP 16 -->
-    <section class="manifesto-card reveal-card">
-        <span class="step-number-tag">16</span>
-        <h2>From Intelligence to Economic Value</h2>
-        <p>This leads to the central economic proposition. Intelligence alone does not constitute economic value. An AI system may reason, analyze, predict, and plan. Economic value emerges when intelligence is translated into coordinated action and measurable outcomes.</p>
-        <p>The progression can therefore be expressed as:</p>
 
-        <div class="flow-chain">
-            <span class="flow-item">Intelligence</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item">Action</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item">Outcome</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item" style="border-color: var(--gold);">Economic Value</span>
+      <section class="section-shell reveal" id="s09" aria-labelledby="s09-title">
+        <div class="section-header">
+          <p class="section-pill">09</p>
+          <h2 id="s09-title">From Designing Architecture to Discovering It</h2>
+          <p class="lead-text">Architecture Discovery</p>
         </div>
 
-        <p>Or more completely:</p>
-        <p style="color: var(--accent); text-align: center; font-weight: 700;">
-            Intent → Intelligence → Command → Execution → Measurement → Outcome → Economic Value
-        </p>
-    </section>
-
-    <!-- STEP 17 -->
-    <section class="manifesto-card reveal-card">
-        <span class="step-number-tag">17</span>
-        <h2>What Ouamarkom Is Building</h2>
-        <p>Ouamarkom does not claim that AI execution is an entirely new technological capability. Modern AI systems already support:</p>
-        <p style="color: var(--text-dim); font-size: 0.95rem;">
-            Agents • Workflows • Tool Use • APIs • Automation • Orchestration • Governance
-        </p>
-        <p>The proposition is more specific:</p>
-        <div class="highlight-quote">
-            <p>«These capabilities can be studied, organized, and evaluated through an explicit execution-oriented architectural perspective that connects objectives, commands, execution, governance, measurement, and economic outcomes.»</p>
+        <div class="research-note">
+          <p>A technology company may assume that a new problem requires a new software layer and then build a product around that assumption. This can lead to unnecessary complexity, duplicated functionality, or investment in components that provide no independent value.</p>
+          <p>OUAMARKOM follows a different path:</p>
         </div>
-        <p>This is the conceptual foundation of Smart Hand™ as an emerging research, architectural, and product framework.</p>
-    </section>
+        <div class="section-card highlight-box text-center mt-5">
+          <p class="flow-sequence">Question → Hypothesis → Experiment → Evidence → Decision → Architecture</p>
+        </div>
+        <div class="research-note mt-5">
+          <p>The process begins with a defined question, followed by a testable hypothesis, an experiment, evidence, and a decision.</p>
+          <p>Experiments may show that a function requires an independent component. They may instead show that existing mechanisms are sufficient, that better integration is the appropriate intervention, or that the problem itself needs to be redefined.</p>
+          <p>Three principles guide this process:</p>
+        </div>
+        <div class="section-grid three-col mt-5">
+          <div class="section-card">
+            <h4>No Layer Without Evidence.</h4>
+            <p>No layer without an evidence-based justification.</p>
+          </div>
+          <div class="section-card">
+            <h4>Every Layer Must Earn Its Existence.</h4>
+            <p>Every proposed layer must demonstrate that it deserves to exist.</p>
+          </div>
+          <div class="section-card">
+            <h4>The Architecture Is Provisional. The Evidence Is Authoritative.</h4>
+            <p>Architecture remains revisable; evidence guides the decision.</p>
+          </div>
+        </div>
+        <div class="research-note mt-5">
+          <p>These principles do not guarantee that every decision will be correct. They make decisions reviewable and reduce reliance on untested assumptions.</p>
+        </div>
+      </section>
 
-    <!-- STEP 18 -->
-    <section class="manifesto-card reveal-card">
-        <span class="step-number-tag">18</span>
-        <h2>The Next Phase: From Thesis to Evidence</h2>
-        <p>The evolution of the thesis now enters its most important phase: From Thesis to Evidence. Ouamarkom's development path is:</p>
 
-        <div class="flow-chain">
-            <span class="flow-item">Ideas</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item">Framework</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item">Architecture</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item">Prototype</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item">Pilot</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item">Customer Evidence</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item" style="border-color: var(--gold);">Revenue</span>
+      <section class="section-shell reveal" id="s10" aria-labelledby="s10-title">
+        <div class="section-header">
+          <p class="section-pill">10</p>
+          <h2 id="s10-title">Evidence as a Foundation for Institutional Learning</h2>
+          <p class="lead-text">From Experiments to Institutional Learning</p>
         </div>
 
-        <p>The objective is to transform intellectual positioning into working technology, real-world experiments, measurable outcomes, customer evidence, execution data, revenue, and case studies.</p>
-    </section>
+        <div class="research-note">
+          <p>An experiment without a systematic record may need to be repeated, or an organization may lose the rationale behind an earlier engineering decision.</p>
+          <p>Cumulative learning therefore requires connecting experiments, hypotheses, observations, evidence, and decisions to the changes made to a system.</p>
+          <p>OUAMARKOM is exploring the concept of an Evidence-to-Architecture Knowledge System, a knowledge system that connects evidence to decisions and architectural evolution.</p>
+          <p>The concept is organized around questions such as:</p>
+          <ul class="bullet-list">
+            <li>What did we observe?</li>
+            <li>What hypothesis did we formulate?</li>
+            <li>What evidence supported or challenged it?</li>
+            <li>Which alternatives were compared?</li>
+            <li>Why was the decision made?</li>
+            <li>What changed as a result?</li>
+            <li>What should be tested next?</li>
+          </ul>
+          <p>Preserving the history of revised or rejected hypotheses and designs may also help explain why decisions changed and avoid repeating approaches that proved unhelpful under previously tested conditions.</p>
+        </div>
+        <div class="info-box mt-5">
+          <p>This concept should not be mistaken for a claim that a complete institutional system has already been implemented. Its value depends on practical application and its contribution to better experiments, decisions, and resource allocation.</p>
+        </div>
+      </section>
 
-    <!-- STEP 19 -->
-    <section class="manifesto-card reveal-card">
-        <span class="step-number-tag">19</span>
-        <h2>A Focused Market Entry</h2>
-        <p>Smart Hand™ will not attempt to solve every enterprise execution problem simultaneously. The initial strategy is to focus on a specific use case with a clearly measurable economic outcome, such as:</p>
-        <p style="color: var(--gold); font-weight: 700; text-align: center;">
-            Increase Revenue | Reduce Operating Cost | Reduce Processing Time | Improve Conversion
-        </p>
-        <p>The system can then be evaluated through:</p>
 
-        <div class="flow-chain">
-            <span class="flow-item">Objective Achievement</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item">Reliability</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item">Cost</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item">Time</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item">Human Intervention</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-item" style="border-color: var(--accent);">Economic Outcome</span>
+      <section class="section-shell reveal" id="s11" aria-labelledby="s11-title">
+        <div class="section-header">
+          <p class="section-pill">11</p>
+          <h2 id="s11-title">From Repeated Problems to Reusable Capabilities</h2>
         </div>
 
-        <p>Once value is demonstrated in a focused entry point, the architecture can expand into adjacent use cases, industries, and markets.</p>
-    </section>
+        <div class="research-note">
+          <p>Observing a single problem does not establish the need for a general architectural pattern. But when a problem recurs across different contexts and experiments indicate that existing solutions do not address it adequately, there may be a case for developing a reusable capability.</p>
+          <p>The potential progression is:</p>
+        </div>
+        <div class="section-card highlight-box text-center mt-5">
+          <p class="flow-sequence">Repeated Problem → Repeated Evidence → Reusable Capability → Architecture Hypothesis → Infrastructure Decision</p>
+        </div>
+        <div class="research-note mt-5">
+          <p>Each transition requires evidence. Recurrence alone does not prove that a solution must be independent, and reusability does not automatically establish market demand.</p>
+          <p>OUAMARKOM investigates recurring problems and constraints that provide a clear engineering rationale for intervention, rather than assuming every problem requires a new protocol, layer, or product.</p>
+          <p>The result may be a clearer architecture, smaller components, better integration with existing systems, or the conclusion that a new intervention is unnecessary.</p>
+        </div>
+      </section>
 
-    <!-- STEP 20 -->
-    <section class="manifesto-card reveal-card">
-        <span class="step-number-tag">20</span>
-        <h2>Where Ouamarkom Is Going</h2>
-        <p>Ouamarkom is not simply building another AI agent or traditional automation application. The company is moving toward an <strong>AI execution infrastructure layer</strong>, beginning with a focused product around a specific use case, expanding through measurable customer outcomes, and pursuing a long-term vision of an emerging category around intelligent economic execution.</p>
-        <p>The thesis can be expressed as:</p>
-        
-        <div class="highlight-quote">
-            <p style="color: var(--gold); text-align: center;">Intelligence → Command → Execution → Measurement → Outcome → Economic Value</p>
+
+      <section class="section-shell reveal" id="s12" aria-labelledby="s12-title">
+        <div class="section-header">
+          <p class="section-pill">12</p>
+          <h2 id="s12-title">Does Economic Agency Require New Infrastructure?</h2>
+          <p class="lead-text">Infrastructure as a Research Outcome</p>
         </div>
 
-        <p>The future value of Ouamarkom will therefore depend on its ability to demonstrate that the technology can:</p>
-        <ul style="color: var(--text-main); line-height: 1.8;">
-            <li>Transform intent into objectives.</li>
-            <li>Transform objectives into commands.</li>
-            <li>Transform commands into coordinated execution.</li>
-            <li>Transform execution into data and intelligence.</li>
-            <li>Transform measurable outcomes into economic value.</li>
-        </ul>
-    </section>
-
-    <!-- ROADMAP SUMMARY CARD -->
-    <section class="manifesto-card reveal-card" style="border-color: var(--accent);">
-        <h2 style="text-align: center;">Our Evolution | Execution Roadmap</h2>
-        <p style="text-align: center; color: var(--gold); font-weight: 700;">From Prompts to Execution Infrastructure</p>
-        <p>We started with prompts. Then we discovered commands. Commands revealed the execution challenge. The execution challenge led to Smart Hand™. Smart Hand™ led to the exploration of Execution Intelligence. And the next stage is to turn the thesis into evidence.</p>
-
-        <div class="vertical-flow">
-            <span class="flow-item">Prompt Engineering</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Prompt Economy</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Commands</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Command Economy of AI™</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">AI Execution</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Smart Hand™</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Execution Intelligence</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Execution Memory</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item">Execution Capital</span>
-            <span class="flow-arrow">↓</span>
-            <span class="flow-item" style="border-color: var(--gold); color: #fff;">Execution Economy</span>
+        <div class="research-note">
+          <p>This is one of the central questions in OUAMARKOM’s current work.</p>
+          <p>When AI systems participate in procurement, spending, pricing, or contractual commitments, recurring requirements may emerge around authority, constraints, execution, evidence, and outcome verification.</p>
+          <p>But the existence of these requirements does not establish that independent infrastructure is necessary.</p>
+          <p>Some problems may be addressed by existing identity and access systems, policy engines, approval mechanisms, and audit records. Others may require better integration or additional mechanisms. Some gaps may justify new capabilities.</p>
+          <p>OUAMARKOM seeks to test these possibilities and compare interventions based on effectiveness, cost, complexity, and risk.</p>
+          <p>If evidence establishes recurring constraints that existing alternatives do not adequately address, reusable engineering capabilities may emerge and could eventually justify broader infrastructure.</p>
+          <p>If the evidence does not establish that need, the hypothesis should be refined, narrowed, or abandoned.</p>
         </div>
-    </section>
-
-    <!-- VISION BANNER -->
-    <section class="statement-banner reveal-card">
-        <h2 style="color: var(--accent); font-size: clamp(1.4rem, 4vw, 2rem); font-weight: 900; margin-bottom: 20px;">The Vision</h2>
-        <p style="color: var(--text-main); font-size: 1.1rem; line-height: 1.8; max-width: 800px; margin: 0 auto 20px;">
-            AI can think. But thinking is not the same as getting things done. Commands can direct intelligence. But commands alone do not create outcomes. <strong>Execution is the bridge between intent and results.</strong>
-        </p>
-        <p style="color: var(--text-dim); font-size: 1rem; line-height: 1.7; max-width: 800px; margin: 0 auto 25px;">
-            Ouamarkom is therefore exploring how that bridge can become: More structured • More reliable • More governable • More measurable • More outcome-oriented • More economically meaningful.
-        </p>
-
-        <div style="background: rgba(4, 9, 22, 0.85); border: 1px solid var(--accent); padding: 25px; border-radius: 18px; max-width: 750px; margin: 0 auto;">
-            <p class="statement-text-en" style="margin-bottom: 0;">
-                «AI creates intelligence.<br>
-                Smart Hand™ organizes execution.<br>
-                Execution creates outcomes.<br>
-                Outcomes create economic value.»
-            </p>
+        <div class="section-card highlight-box text-center mt-5">
+          <blockquote class="manifesto-quote">
+            Infrastructure is not the starting point. It is a possible outcome that must earn its place through evidence.
+          </blockquote>
         </div>
-    </section>
+      </section>
 
-    <!-- FOOTER CTA -->
-    <section class="footer-cta reveal-card">
-        <h2>Be Part of the <span>Smart Execution Revolution</span></h2>
-        <div class="btn-group">
-            <a href="/en/#register" class="btn-cta-primary">Join the Exclusive Partner List</a>
-            <a href="/en/about" class="btn-cta-secondary">About Ouamarkom Infrastructure</a>
+
+      <section class="section-shell reveal" id="s13" aria-labelledby="s13-title">
+        <div class="section-header">
+          <p class="section-pill">13</p>
+          <h2 id="s13-title">From an Architectural Possibility to a Potential Market Category</h2>
+          <p class="lead-text">The Category Is Not Assumed</p>
         </div>
-    </section>
 
-</main>
+        <div class="research-note">
+          <p>Even if a technical component proves useful, that does not automatically mean the market needs an independent industry category.</p>
+          <p>Such a transition requires additional evidence of recurring institutional demand, differentiated value, willingness to pay, repeated use, and economic scalability.</p>
+          <p>OUAMARKOM therefore distinguishes four separate questions:</p>
+        </div>
+        <div class="section-grid two-col mt-5">
+          <div class="section-card">
+            <span class="eyebrow-label">01</span>
+            <h4>Is there a real problem?</h4>
+          </div>
+          <div class="section-card">
+            <span class="eyebrow-label">02</span>
+            <h4>Can an engineering capability address it?</h4>
+          </div>
+          <div class="section-card">
+            <span class="eyebrow-label">03</span>
+            <h4>Does that capability deliver commercial value?</h4>
+          </div>
+          <div class="section-card">
+            <span class="eyebrow-label">04</span>
+            <h4>Is an independent market category necessary?</h4>
+          </div>
+        </div>
+        <div class="research-note mt-5">
+          <p>Each question carries different hypotheses, risks, and evidence requirements.</p>
+          <p>The research may lead to new infrastructure, capabilities integrated into existing systems, or a commercial model different from the one initially anticipated.</p>
+        </div>
+        <div class="section-card highlight-box text-center mt-5">
+          <blockquote class="manifesto-quote">
+            The category is not assumed. The need for it must be established in reality.
+          </blockquote>
+        </div>
+      </section>
 
-<footer class="site-footer">
-    <div class="footer-bottom-container" dir="ltr">
+
+      <section class="section-shell reveal" id="s14" aria-labelledby="s14-title">
+        <div class="section-header">
+          <p class="section-pill">14</p>
+          <h2 id="s14-title">The Evolution of CE-AI™</h2>
+          <p class="lead-text">A Research Framework Open to Revision</p>
+        </div>
+
+        <div class="research-note">
+          <p>OUAMARKOM does not treat CE-AI as a closed framework to which every result must conform. It is a research framework that remains open to revision as new evidence emerges.</p>
+          <p>Experiments may support certain conceptual distinctions, reveal that some problems are more interconnected than expected, or show that an earlier definition was too broad.</p>
+          <p>The framework should therefore evolve through a traceable process:</p>
+        </div>
+        <div class="section-card highlight-box text-center mt-5">
+          <p class="flow-sequence">Observation → Interpretation → Evidence → Impact Assessment → Decision → Evolution</p>
+        </div>
+        <div class="research-note mt-5">
+          <p>The objective is not to protect CE-AI from falsification. It is to use the framework to organize questions and hypotheses while allowing evidence to change it when results warrant revision.</p>
+        </div>
+        <div class="section-card highlight-box text-center mt-5">
+          <blockquote class="manifesto-quote">
+            CE-AI remains a tool for structuring research, not a guarantee that every hypothesis or conclusion is correct.
+          </blockquote>
+        </div>
+      </section>
+
+
+      <section class="section-shell reveal" id="s15" aria-labelledby="s15-title">
+        <div class="section-header">
+          <p class="section-pill">15</p>
+          <h2 id="s15-title">Research Method as a Way of Operating</h2>
+          <p class="lead-text">From Research Method to Company Operating Principles</p>
+        </div>
+
+        <div class="research-note">
+          <p>The research method extends beyond conceptual work into how OUAMARKOM makes development decisions.</p>
+          <p>Rather than treating progress as a sequence of software additions, the work can be organized around a learning cycle that connects experiments to engineering and commercial decisions:</p>
+        </div>
+        <div class="section-card highlight-box text-center mt-5">
+          <p class="flow-sequence">Observe → Question → Hypothesize → Experiment → Measure → Verify → Learn → Decide → Evolve</p>
+        </div>
+        <div class="research-note mt-5">
+          <p>This cycle helps determine what should be built next and what evidence justifies allocating resources to it.</p>
+          <p>The next step may be to add a component, combine existing components, improve integration, defer development, or abandon a hypothesis that has not demonstrated sufficient value.</p>
+          <p>Progress is not measured only by the number of components created. It also depends on the quality of questions, the strength of evidence, the clarity of decisions, and the reduction of uncertainty around important assumptions.</p>
+        </div>
+      </section>
+
+
+      <section class="section-shell reveal" id="s16" aria-labelledby="s16-title">
+        <div class="section-header">
+          <p class="section-pill">16</p>
+          <h2 id="s16-title">From Research to Investment</h2>
+          <p class="lead-text">What Capital Is Intended to Fund</p>
+        </div>
+
+        <div class="research-note">
+          <p>If the final architecture remains unresolved, what should capital fund?</p>
+          <p>Investment should not be a bet on an architecture declared correct in advance, nor a guarantee that a new market category will emerge. It can instead fund the capacity to test hypotheses, develop experimental tools, gather evidence, compare alternatives, reduce uncertainty, and validate commercial value when the research reaches that stage.</p>
+          <p>Key investment questions include:</p>
+        </div>
+        <div class="section-card mt-5">
+          <ul class="bullet-list two-col-list">
+            <li>Is the problem real and recurring?</li>
+            <li>Do existing systems address it adequately?</li>
+            <li>Is there a gap that justifies an engineering intervention?</li>
+            <li>Does the intervention deliver measurable improvement?</li>
+            <li>Can it be reused across different contexts?</li>
+            <li>Is there a customer willing to pay for it?</li>
+            <li>Does use recur?</li>
+            <li>Can unit economics support sustainable growth?</li>
+          </ul>
+        </div>
+        <div class="research-note mt-5">
+          <p>Funding should be tied to milestones with defined outputs, acceptance criteria, and decisions to continue, revise, or stop.</p>
+        </div>
+        <div class="section-card highlight-box text-center mt-5">
+          <blockquote class="manifesto-quote">
+            Capital should fund discovery and validation, not merely defend a hypothesis that has yet to be established.
+          </blockquote>
+        </div>
+      </section>
+
+
+      <section class="section-shell reveal" id="s17" aria-labelledby="s17-title">
+        <div class="section-header">
+          <p class="section-pill">17</p>
+          <h2 id="s17-title">Where OUAMARKOM Stands Today</h2>
+          <p class="lead-text">What We Study, What We Test, What Remains Unproven</p>
+        </div>
+
+        <div class="research-note">
+          <p>OUAMARKOM is in a research, development, and experimental validation phase, studying what changes when AI systems move from generating information and supporting decisions toward participating in actions with economic consequences.</p>
+          <p>Within this program, OUAMARKOM is developing CE-AI as a research framework, working on Smart Hand as an experimental environment, advancing GEAB as a research program for measurement and comparison, and examining hypotheses about potential interventions and protocols.</p>
+          <p>It is essential to distinguish observations, hypotheses, and established results.</p>
+        </div>
+        <div class="section-grid two-col mt-5">
+          <div class="section-card">
+            <h4>What we observe</h4>
+            <p>AI systems are becoming more capable of using tools, interacting with external systems, and performing multi-step tasks.</p>
+          </div>
+          <div class="section-card">
+            <h4>What we study</h4>
+            <p>The conditions required to govern actions with economic consequences, including authority, delegation, constraints, execution, evidence, outcomes, and accountability.</p>
+          </div>
+          <div class="section-card">
+            <h4>What we test</h4>
+            <p>Whether identified problems recur and whether proposed interventions improve results compared with existing alternatives.</p>
+          </div>
+          <div class="section-card">
+            <h4>What remains unresolved</h4>
+            <p>The final architecture, the necessity of an independent protocol, the need for new infrastructure, the existence of a standalone market category, and customer willingness to pay.</p>
+          </div>
+        </div>
+        <div class="info-box mt-5">
+          <p>These boundaries are not merely editorial qualifications. They are part of the method for distinguishing what can be said today from what requires further evidence.</p>
+        </div>
+      </section>
+
+
+      <section class="section-shell reveal" id="s18" aria-labelledby="s18-title">
+        <div class="section-header">
+          <p class="section-pill">18</p>
+          <h2 id="s18-title">From Being Early to Learning Early</h2>
+        </div>
+
+        <div class="research-note">
+          <p>Beginning to explore a problem early does not guarantee that initial hypotheses are correct, nor does timing automatically create a competitive advantage.</p>
+          <p>Time becomes potentially valuable when it is converted into better questions, more disciplined experiments, documented results, comparisons with alternatives, and the ability to revise direction in response to evidence.</p>
+          <p>The idea is not to claim that the future is already understood, but to develop the ability to learn from it.</p>
+        </div>
+        <div class="section-card highlight-box text-center mt-5">
+          <blockquote class="manifesto-quote" dir="ltr">Being early is not the advantage. Learning from being early can become the advantage.</blockquote>
+          <p class="translation-line">Early exploration is not an advantage by itself. The ability to turn it into knowledge and better decisions may become a strategic advantage if experience demonstrates that it does.</p>
+        </div>
+      </section>
+
+
+      <section class="section-shell reveal" id="s19" aria-labelledby="s19-title">
+        <div class="section-header">
+          <p class="section-pill">19</p>
+          <h2 id="s19-title">Toward a Broader Research Program</h2>
+          <p class="lead-text">From Company Research to Broader Collaboration</p>
+        </div>
+
+        <div class="research-note">
+          <p>If the questions and experiments expand and a need for more structured research collaboration emerges, a program extending beyond the company itself may become appropriate.</p>
+          <p>Within this possibility, OUAMARKOM is considering the Global Center for Economic Action Research (GCEAR) as a proposed institutional initiative for organizing research collaboration, documenting findings, and facilitating review.</p>
+        </div>
+        <div class="info-box mt-5">
+          <p>GCEAR is not presented as an established independent center or registered institution. Its formation would require decisions about legal structure, governance, resources, contractual relationships, intellectual property, and responsibilities.</p>
+        </div>
+        <div class="research-note mt-5">
+          <p>The rationale is practical: how can research collaboration be organized to support inspectability and reproducibility while maintaining clarity about the relationship between research and commercial interests?</p>
+          <p>The initiative may develop if institutional need and capacity justify it. For now, the priority remains building the research, experiments, and evidence that can support the next decision.</p>
+        </div>
+      </section>
+
+
+      <section class="section-shell reveal" id="s20" aria-labelledby="s20-title">
+        <div class="section-header">
+          <p class="section-pill">20</p>
+          <h2 id="s20-title">The Full Trajectory: From Commands to Discovering What Deserves to Be Built</h2>
+        </div>
+
+        <div class="research-note">
+          <p>OUAMARKOM’s evolution can be summarized as a research trajectory:</p>
+        </div>
+        <div class="research-grid mt-5">
+          <div class="research-card">
+            <span class="eyebrow-label">01</span>
+            <h3><bdi dir="ltr">Prompt Engineering</bdi></h3>
+            <p>Improving how models are directed.</p>
+          </div>
+          <div class="research-card">
+            <span class="eyebrow-label">02</span>
+            <h3><bdi dir="ltr">Prompt Economy</bdi></h3>
+            <p>Exploring the value of organizing and reusing instructions.</p>
+          </div>
+          <div class="research-card">
+            <span class="eyebrow-label">03</span>
+            <h3><bdi dir="ltr">Prompt → Command</bdi></h3>
+            <p>Studying instructions as they become directed toward executable objectives.</p>
+          </div>
+          <div class="research-card">
+            <span class="eyebrow-label">04</span>
+            <h3><bdi dir="ltr">Command Economy of AI™ (CE-AI)</bdi></h3>
+            <p>Organizing questions about AI participation in economic activity.</p>
+          </div>
+          <div class="research-card">
+            <span class="eyebrow-label">05</span>
+            <h3><bdi dir="ltr">Governed AI Economic Agency</bdi></h3>
+            <p>Investigating the relationship between capability, authority, delegation, and governance.</p>
+          </div>
+          <div class="research-card">
+            <span class="eyebrow-label">06</span>
+            <h3><bdi dir="ltr">Smart Hand™ &amp; GEAB</bdi></h3>
+            <p>Developing an experimental environment and a measurement program for testing hypotheses and comparing results.</p>
+          </div>
+          <div class="research-card">
+            <span class="eyebrow-label">07</span>
+            <h3><bdi dir="ltr">CEP &amp; Architecture Discovery</bdi></h3>
+            <p>Testing whether protocols, mechanisms, or architectural components are necessary.</p>
+          </div>
+          <div class="research-card">
+            <span class="eyebrow-label">08</span>
+            <h3><bdi dir="ltr">Evidence-to-Architecture Knowledge</bdi></h3>
+            <p>Connecting experiments and evidence to decisions and engineering evolution.</p>
+          </div>
+          <div class="research-card">
+            <span class="eyebrow-label">09</span>
+            <h3><bdi dir="ltr">Reusable Capabilities</bdi></h3>
+            <p>Identifying capabilities that demonstrate value and potential for reuse.</p>
+          </div>
+          <div class="research-card">
+            <span class="eyebrow-label">10</span>
+            <h3><bdi dir="ltr">Potential Economic Execution Infrastructure</bdi></h3>
+            <p>The possibility of developing infrastructure if evidence establishes the need.</p>
+          </div>
+          <div class="research-card">
+            <span class="eyebrow-label">11</span>
+            <h3><bdi dir="ltr">Potential Market Category</bdi></h3>
+            <p>The possibility of an independent market category if distinct economic demand is established.</p>
+          </div>
+        </div>
+        <div class="research-note mt-5">
+          <p>This trajectory is not a predetermined sequence, nor does it mean that every stage is complete or that the next stage is guaranteed.</p>
+          <p>It is a map of the questions that led to one another and the evidence required to justify moving between them.</p>
+        </div>
+        <div class="section-card highlight-box text-center mt-5">
+          <blockquote class="manifesto-quote">
+            Each stage must earn the next.
+          </blockquote>
+        </div>
+      </section>
+
+
+      <section class="section-shell reveal" id="conclusion" aria-labelledby="conclusion-title">
+        <div class="section-header">
+          <p class="section-pill">Conclusion</p>
+          <h2 id="conclusion-title">We Began Without Knowing the Destination</h2>
+        </div>
+
+        <div class="research-note">
+          <p>OUAMARKOM did not begin with a final blueprint for the architecture that AI economic agency might require.</p>
+          <p>It began with Prompt Engineering. The question then expanded from the quality of instructions to the nature of the actions they might direct. From there, the research moved toward governed AI economic agency and the relationships between authority, governance, execution, evidence, and outcomes.</p>
+          <p>At every transition, the task was not simply to add another concept. It was to identify the next question worth testing.</p>
+          <p>Today, OUAMARKOM does not claim to have discovered the final infrastructure, established a new industry category, or resolved every foundational hypothesis. It is developing the research and engineering capabilities needed to determine whether new infrastructure is necessary, what form it might take, and what value it could deliver.</p>
+          <p>The journey may lead to a new architecture. It may lead to smaller components integrated into existing systems. It may change some of the underlying hypotheses. The direction will be determined by what experiments, evidence, and economic outcomes can establish.</p>
+        </div>
+        <div class="section-card highlight-box text-center mt-5">
+          <blockquote class="manifesto-quote">
+            We did not begin with an infrastructure category.<br />
+            We began with an observation.
+          </blockquote>
+        </div>
+        <div class="research-note mt-5">
+          <p>The observation became a question, the question became a hypothesis, and the hypothesis led to experiments. Those experiments raised new questions and created opportunities to distinguish what we assume from what we know, and what appears reasonable from what deserves to be built.</p>
+          <p>OUAMARKOM continues to investigate a larger question:</p>
+        </div>
+        <div class="quote-box mt-5">
+          <p class="quote-line">What infrastructure will AI-driven economic agency actually require?</p>
+        </div>
+        <div class="research-note mt-5">
+          <p>We do not consider the answer settled.</p>
+        </div>
+        <div class="section-card highlight-box text-center mt-5">
+          <blockquote class="manifesto-quote">
+            Discovering it is the work itself.
+          </blockquote>
+        </div>
+      </section>
+
+
+      <section class="section-shell reveal cta-banner" id="closing">
+        <div class="cta-inner">
+          <p class="section-pill">OUAMARKOM™</p>
+          <h2 dir="ltr">Researching. Building. Testing. Learning. Discovering.</h2>
+          <p class="text-muted">We do not assume the architecture. We investigate what the evidence requires.</p>
+          <p class="text-muted">We do not assume the category. We test whether it is needed.</p>
+          <p class="text-muted">We do not shield hypotheses from falsification. We let evidence change them.</p>
+          <p class="text-muted">The architecture is provisional. The evidence is authoritative. The category is not assumed. Reality is the final arbiter.</p>
+          <div class="btn-group mt-5">
+            <a class="btn btn-primary" href="/en/research">Explore the Research</a>
+            <a class="btn btn-secondary-outline" href="/en/about/">About Ouamarkom</a>
+            <a class="btn btn-secondary-outline" href="/en/#register">Connect and Engage with the Research</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-shell">
+        <div class="footer-card">
+          <h2>Ouamarkom</h2>
+          <p>
+            A research and engineering company exploring the infrastructure required for governed AI economic agency.
+          </p>
+          <blockquote class="footer-motto">
+            "We preserve the work.<br />
+            We reclassify the claims.<br />
+            We test the hypotheses.<br />
+            We follow the evidence.<br />
+            And we build what reality requires."
+          </blockquote>
+          <div class="social-flex">
+            <a href="https://linkedin.com/company/ouamarkom" class="social-circle" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://x.com/ouamarkom" class="social-circle" title="X Platform" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg>
+            </a>
+            <a href="https://facebook.com/ouamarkom" class="social-circle" title="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+            </a>
+            <a href="https://instagram.com/ouamarkom" class="social-circle" title="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://wa.me/966578061018" class="social-circle" title="WhatsApp" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M12.012 2c-5.506 0-9.969 4.463-9.969 9.969 0 1.763.459 3.483 1.332 5.004L2 22l5.161-1.354c1.472.803 3.134 1.226 4.85 1.226 5.508 0 9.971-4.463 9.971-9.969 0-5.506-4.463-9.969-9.97-9.969zm0 18.271c-1.498 0-2.966-.403-4.246-1.164l-.305-.181-3.15.826.84-3.071-.199-.316c-.837-1.33-1.28-2.875-1.28-4.465 0-4.557 3.708-8.265 8.266-8.265 4.556 0 8.264 3.708 8.264 8.265 0 4.558-3.708 8.264-8.264 8.264zm4.536-6.19c-.249-.125-1.472-.726-1.7-.809-.228-.083-.394-.125-.56.125-.167.249-.644.809-.789.975-.145.166-.291.187-.54.062s-1.05-.387-2.001-1.234c-.74-.66-1.24-1.474-1.385-1.723-.145-.249-.016-.384.109-.508.113-.112.249-.291.374-.436.124-.145.166-.249.249-.415.083-.166.042-.312-.021-.436-.062-.125-.56-1.351-.768-1.85-.202-.486-.408-.419-.56-.427h-.478c-.166 0-.436.062-.664.312s-.872.851-.872 2.074.892 2.407 1.017 2.573c.125.166 1.756 2.681 4.254 3.761.594.257 1.058.411 1.42.526.597.19 1.14.163 1.57.099.479-.071 1.472-.602 1.679-1.183.208-.581.208-1.079.145-1.183-.062-.104-.228-.187-.477-.312z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-card">
+          <h3>Explore the Research</h3>
+          <ul class="footer-links-list">
+            <li><a href="/en/framework/">CE-AI™ Framework</a></li>
+            <li><a href="/en/research">Research Hub</a></li>
+            <li><a href="/en/canonical-reference/">Canonical Reference</a></li>
+            <li><a href="/en/evolution/">Evolution Archive</a></li>
+            <li><a href="/en/glossary/">Glossary</a></li>
+            <li><a href="/en/whitepaper/">Whitepaper</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-card">
+          <h3>Ouamarkom</h3>
+          <ul class="footer-links-list">
+            <li><a href="/en/about/">About Ouamarkom</a></li>
+            <li><a href="/en/vision/">Vision</a></li>
+            <li><a href="/en/founder/">Founder</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/en/intellectual-property/">Intellectual Property</a></li>
+            <li><a href="mailto:contact@ouamarkom.com">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom container" dir="ltr">
         <p>© 2026 Ouamarkom. All Rights Reserved.</p>
         <div class="footer-legal-links">
-            <a href="/en/intellectual-property/">Intellectual Property</a>
-            <span class="footer-legal-separator">·</span>
-            <a href="mailto:contact@ouamarkom.com">Contact</a>
+          <a href="/en/intellectual-property/">Intellectual Property</a>
+          <span class="footer-legal-separator">·</span>
+          <a href="mailto:contact@ouamarkom.com">Contact</a>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<script src="/script.js" defer></script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const revealCards = document.querySelectorAll('.reveal-card');
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                    revealObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.05, rootMargin: "0px 0px -20px 0px" });
-
-        revealCards.forEach(card => revealObserver.observe(card));
-    });
-</script>
-</body>
+    <script src="/script.js" defer></script>
+  </body>
 </html>
