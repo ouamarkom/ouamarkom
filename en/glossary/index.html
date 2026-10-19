@@ -1,1071 +1,2134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Command Economy of AI (CE-AI) | Official Glossary - Ouamarkom</title>
-    <meta name="description" content="The official glossary defining the core concepts, terminology, and architectural relationships of the Command Economy of AI (CE-AI), including human intent, commands, intelligent execution, verification, outcomes, and Smart Hand Infrastructure.">
-    <meta name="keywords" content="AI Glossary, Command Economy of AI, CE-AI, Smart Hand Infrastructure, AI Execution Infrastructure, Human Intent, Command, Intent Understanding, AI Agent, Agent Orchestration, Planning, Execution, Verification, Outcome, Decision Memory, Ouamarkom Glossary">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Hreflang & Canonical -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Glossary | Command Economy of AI — OUAMARKOM™</title>
+
+    <meta name="description" content="Explore OUAMARKOM™’s glossary of concepts related to the Command Economy of AI (CE-AI), AI economic agency, authority, delegation, governance, execution, evidence, verification, and economic outcomes." />
+    <meta name="keywords" content="Command Economy of AI, CE-AI, AI economic agency, AI economic action, governed AI execution, delegated authority, AI governance, execution control, execution evidence, Smart Hand, GEAB, CEP, OUAMARKOM" />
+    <meta name="robots" content="index, follow" />
+
     <link rel="canonical" href="https://ouamarkom.com/en/glossary/" />
-    <link rel="alternate" hreflang="en" href="https://ouamarkom.com/en/glossary/" />
     <link rel="alternate" hreflang="ar" href="https://ouamarkom.com/glossary" />
+    <link rel="alternate" hreflang="en" href="https://ouamarkom.com/en/glossary/" />
     <link rel="alternate" hreflang="x-default" href="https://ouamarkom.com/glossary" />
-    
-    <!-- Open Graph / Facebook -->
+
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preload" as="image" href="/logo.webp" imagesrcset="/logo.webp" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="OUAMARKOM™ Research &amp; Engineering Glossary" />
+    <meta name="twitter:description" content="A conceptual reference for understanding and evaluating AI economic agency, delegated authority, governed execution, and verifiable economic outcomes." />
+    <meta name="twitter:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg" />
+    <meta name="theme-color" content="#040916" />
+
     <meta property="og:site_name" content="Ouamarkom" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Command Economy of AI (CE-AI) | Official Glossary" />
-    <meta property="og:description" content="The official glossary defining the concepts, terminology, and architectural relationships of the Command Economy of AI (CE-AI)." />
-    <meta property="og:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg" />
     <meta property="og:url" content="https://ouamarkom.com/en/glossary/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Command Economy of AI | OUAMARKOM™ Glossary" />
+    <meta property="og:description" content="Explore the research and engineering concepts used by OUAMARKOM™ to study AI economic actions, authority, delegation, governed execution, verifiable evidence, and economic outcomes." />
+    <meta property="og:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:locale:alternate" content="ar_SA" />
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Command Economy of AI (CE-AI) | Official Glossary">
-    <meta name="twitter:description" content="The official glossary defining the concepts, terminology, and architectural relationships of the Command Economy of AI (CE-AI).">
-    <meta name="twitter:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg">
-    <meta name="theme-color" content="#040916">
+    <meta property="og:locale:alternate" content="ar_AR" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/main.css" />
 
-    <!-- SEO Schema Knowledge Graph Markup -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "WebPage",
+      "@id": "https://ouamarkom.com/en/glossary/#webpage",
+      "url": "https://ouamarkom.com/en/glossary/",
+      "name": "Command Economy of AI | OUAMARKOM™ Glossary",
+      "description": "Explore OUAMARKOM™’s glossary of concepts related to the Command Economy of AI (CE-AI), AI economic agency, authority, delegation, governance, execution, evidence, verification, and economic outcomes.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Ouamarkom",
+        "url": "https://ouamarkom.com/en/"
+      },
+      "about": {
+        "@id": "https://ouamarkom.com/#organization"
+      },
+      "breadcrumb": {
+        "@id": "https://ouamarkom.com/en/glossary/#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://ouamarkom.com/en/glossary/#termset"
+      }
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://ouamarkom.com/en/glossary/#termset",
+      "name": "Command Economy of AI | OUAMARKOM™ Glossary",
+      "description": "Explore OUAMARKOM™’s glossary of concepts related to the Command Economy of AI (CE-AI), AI economic agency, authority, delegation, governance, execution, evidence, verification, and economic outcomes.",
+      "url": "https://ouamarkom.com/en/glossary/",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://ouamarkom.com/#organization"
+      },
+      "hasDefinedTerm": [
         {
-          "@type": "WebPage",
-          "@id": "https://ouamarkom.com/en/glossary/#webpage",
-          "url": "https://ouamarkom.com/en/glossary/",
-          "name": "Command Economy of AI (CE-AI) | Official Glossary",
-          "description": "The official glossary defining the core concepts, terminology, and architectural relationships of the Command Economy of AI (CE-AI).",
-          "inLanguage": "en"
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#ce-ai",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "ce-ai",
+          "name": "Command Economy of AI (CE-AI)",
+          "description": "A research and analytical framework developed by OUAMARKOM™ to study economic actions performed by or involving AI systems, including the relationships among commands, capability, authority, delegation, governance, execution, evidence, and economic outcomes.",
+          "url": "https://ouamarkom.com/en/glossary/#ce-ai"
         },
         {
-          "@type": "DefinedTermSet",
-          "@id": "https://ouamarkom.com/en/glossary/#termset",
-          "name": "Command Economy of AI (CE-AI) Official Glossary",
-          "description": "The canonical glossary defining the core concepts, terminology, and architectural relationships of the Command Economy of AI (CE-AI) and Smart Hand Infrastructure.",
-          "url": "https://ouamarkom.com/en/glossary/",
-          "inLanguage": "en",
-          "publisher": {
-            "@type": "Organization",
-            "name": "Ouamarkom",
-            "url": "https://ouamarkom.com/"
-          },
-          "hasDefinedTerm": [
-            {
-              "@type": "DefinedTerm",
-              "@id": "https://ouamarkom.com/en/glossary/#human-intent",
-              "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
-              "termCode": "human-intent",
-              "name": "Human Intent",
-              "description": "The desired goal, objective, or outcome expressed by a person that initiates an intelligent execution process.",
-              "url": "https://ouamarkom.com/en/glossary/#human-intent"
-            },
-            {
-              "@type": "DefinedTerm",
-              "@id": "https://ouamarkom.com/en/glossary/#command",
-              "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
-              "termCode": "command",
-              "name": "Command",
-              "description": "The executable expression of human intent that initiates or directs an intelligent execution process toward a defined objective.",
-              "url": "https://ouamarkom.com/en/glossary/#command"
-            },
-            {
-              "@type": "DefinedTerm",
-              "@id": "https://ouamarkom.com/en/glossary/#intent-understanding",
-              "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
-              "termCode": "intent-understanding",
-              "name": "Intent Understanding",
-              "description": "The process through which an intelligent system interprets human language and identifies the underlying objective, constraints, context, and desired outcome behind a command.",
-              "url": "https://ouamarkom.com/en/glossary/#intent-understanding"
-            },
-            {
-              "@type": "DefinedTerm",
-              "@id": "https://ouamarkom.com/en/glossary/#planning",
-              "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
-              "termCode": "planning",
-              "name": "Planning",
-              "description": "The process of determining the sequence of actions, resources, tools, and dependencies required to transform an understood intent into an executable workflow.",
-              "url": "https://ouamarkom.com/en/glossary/#planning"
-            },
-            {
-              "@type": "DefinedTerm",
-              "@id": "https://ouamarkom.com/en/glossary/#language-interface",
-              "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
-              "termCode": "language-interface",
-              "name": "Language Interface",
-              "description": "An interaction layer that enables humans to communicate with digital systems using natural language instead of relying on buttons, menus, and programming interfaces.",
-              "url": "https://ouamarkom.com/en/glossary/#language-interface"
-            },
-            {
-              "@type": "DefinedTerm",
-              "@id": "https://ouamarkom.com/en/glossary/#ai-agent",
-              "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
-              "termCode": "ai-agent",
-              "name": "AI Agent",
-              "description": "An intelligent execution participant within the Command Economy of AI that can interpret objectives, plan actions, use tools, coordinate with other agents, and perform defined tasks.",
-              "url": "https://ouamarkom.com/en/glossary/#ai-agent"
-            },
-            {
-              "@type": "DefinedTerm",
-              "@id": "https://ouamarkom.com/en/glossary/#agent-orchestration",
-              "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
-              "termCode": "agent-orchestration",
-              "name": "Agent Orchestration",
-              "description": "The coordination of multiple AI agents, tools, workflows, and execution resources to achieve a shared objective through an organized execution process.",
-              "url": "https://ouamarkom.com/en/glossary/#agent-orchestration"
-            },
-            {
-              "@type": "DefinedTerm",
-              "@id": "https://ouamarkom.com/en/glossary/#workflow",
-              "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
-              "termCode": "workflow",
-              "name": "Workflow",
-              "description": "A structured sequence of interconnected steps, operational rules, and execution paths required to achieve a specific outcome within an execution system.",
-              "url": "https://ouamarkom.com/en/glossary/#workflow"
-            },
-            {
-              "@type": "DefinedTerm",
-              "@id": "https://ouamarkom.com/en/glossary/#ai-execution-infrastructure",
-              "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
-              "termCode": "ai-execution-infrastructure",
-              "name": "AI Execution Infrastructure",
-              "description": "The technological and operational infrastructure that enables intelligent systems to transform human intent and commands into coordinated, executable, verifiable, and outcome-oriented operations.",
-              "url": "https://ouamarkom.com/en/glossary/#ai-execution-infrastructure"
-            },
-            {
-              "@type": "DefinedTerm",
-              "@id": "https://ouamarkom.com/en/glossary/#smart-hand-infrastructure",
-              "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
-              "termCode": "smart-hand-infrastructure",
-              "name": "Smart Hand Infrastructure",
-              "description": "The proposed execution architecture within the Command Economy of AI (CE-AI), designed to transform human intent into coordinated, verifiable, and economically meaningful execution.",
-              "url": "https://ouamarkom.com/en/glossary/#smart-hand-infrastructure"
-            },
-            {
-              "@type": "DefinedTerm",
-              "@id": "https://ouamarkom.com/en/glossary/#verification",
-              "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
-              "termCode": "verification",
-              "name": "Verification",
-              "description": "The process of evaluating whether an executed action or produced result satisfies the intended objective, required conditions, and defined constraints.",
-              "url": "https://ouamarkom.com/en/glossary/#verification"
-            },
-            {
-              "@type": "DefinedTerm",
-              "@id": "https://ouamarkom.com/en/glossary/#outcome",
-              "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
-              "termCode": "outcome",
-              "name": "Outcome",
-              "description": "The final verifiable output produced after the completion of an intelligent execution process.",
-              "url": "https://ouamarkom.com/en/glossary/#outcome"
-            },
-            {
-              "@type": "DefinedTerm",
-              "@id": "https://ouamarkom.com/en/glossary/#economic-outcome",
-              "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
-              "termCode": "economic-outcome",
-              "name": "Economic Outcome",
-              "description": "The measurable value and practical business impact generated after execution and verification are completed within an economic environment.",
-              "url": "https://ouamarkom.com/en/glossary/#economic-outcome"
-            },
-            {
-              "@type": "DefinedTerm",
-              "@id": "https://ouamarkom.com/en/glossary/#decision-memory",
-              "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
-              "termCode": "decision-memory",
-              "name": "Decision Memory",
-              "description": "The structured retention of relevant decisions, execution context, outcomes, and lessons that can inform future planning, coordination, and execution.",
-              "url": "https://ouamarkom.com/en/glossary/#decision-memory"
-            }
-          ]
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#ai-economic-action",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "ai-economic-action",
+          "name": "AI Economic Action",
+          "description": "An action performed or facilitated by an AI system that affects, or is intended to affect, economic resources, transactions, commitments, prices, procurement decisions, or other economically relevant activities.",
+          "url": "https://ouamarkom.com/en/glossary/#ai-economic-action"
         },
         {
-          "@type": "Organization",
-          "name": "Ouamarkom",
-          "url": "https://ouamarkom.com/",
-          "logo": "https://ouamarkom.com/logo.webp",
-          "sameAs": [
-            "https://linkedin.com/company/ouamarkom"
-          ]
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#technical-capability",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "technical-capability",
+          "name": "Technical Capability",
+          "description": "The set of technical abilities that enables a system to perform a task, such as analyzing information, planning, using a tool, or invoking an API.",
+          "url": "https://ouamarkom.com/en/glossary/#technical-capability"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#human-intent",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "human-intent",
+          "name": "Human Intent",
+          "description": "The goal or desired outcome a person seeks to achieve, as explicitly expressed or inferred from the available context.",
+          "url": "https://ouamarkom.com/en/glossary/#human-intent"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#command",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "command",
+          "name": "Command",
+          "description": "An instruction or task request directed to a system to initiate an activity or pursue a specified objective.",
+          "url": "https://ouamarkom.com/en/glossary/#command"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#intent-understanding",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "intent-understanding",
+          "name": "Intent Understanding",
+          "description": "The process through which a system interprets a user's objective, instructions, context, and relevant constraints to form a representation of the requested task.",
+          "url": "https://ouamarkom.com/en/glossary/#intent-understanding"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#language-interface",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "language-interface",
+          "name": "Language Interface",
+          "description": "An interaction layer that allows people to communicate with digital systems through natural language rather than relying exclusively on graphical controls or traditional programming interfaces.",
+          "url": "https://ouamarkom.com/en/glossary/#language-interface"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#ai-economic-agency",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "ai-economic-agency",
+          "name": "AI Economic Agency",
+          "description": "The capacity of an AI system, within a particular environment, to participate in actions affecting economic resources, transactions, commitments, or outcomes, with varying degrees of autonomy and delegation.",
+          "url": "https://ouamarkom.com/en/glossary/#ai-economic-agency"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#authority",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "authority",
+          "name": "Authority",
+          "description": "The permission or recognized right granted to an entity or system to make a decision or perform an action within a defined scope and under applicable rules.",
+          "url": "https://ouamarkom.com/en/glossary/#authority"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#delegated-authority",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "delegated-authority",
+          "name": "Delegated Authority",
+          "description": "The granting of specified permissions to an agent or system to perform actions or make decisions within defined limits, conditions, and responsibilities.",
+          "url": "https://ouamarkom.com/en/glossary/#delegated-authority"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#authority-boundary",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "authority-boundary",
+          "name": "Authority Boundary",
+          "description": "The limits separating actions an agent is permitted to perform from actions that require additional authorization or are prohibited.",
+          "url": "https://ouamarkom.com/en/glossary/#authority-boundary"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#governance",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "governance",
+          "name": "Governance",
+          "description": "The policies, responsibilities, decision-making rules, and review mechanisms that regulate system use, permissions, risks, exceptions, and changes.",
+          "url": "https://ouamarkom.com/en/glossary/#governance"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#human-oversight",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "human-oversight",
+          "name": "Human Oversight",
+          "description": "The practical ability of authorized people to review, approve, reject, or stop system actions within a defined scope of responsibility.",
+          "url": "https://ouamarkom.com/en/glossary/#human-oversight"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#hitl",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "hitl",
+          "name": "Human-in-the-Loop (HITL)",
+          "description": "An operating pattern in which a human participates at one or more points in an AI workflow, such as approving an action, reviewing an output, or handling an exception.",
+          "url": "https://ouamarkom.com/en/glossary/#hitl"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#revocation-of-authority",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "revocation-of-authority",
+          "name": "Revocation of Authority",
+          "description": "The cancellation or termination of previously granted permission, such that the affected agent or system is no longer authorized to perform the actions covered by that permission.",
+          "url": "https://ouamarkom.com/en/glossary/#revocation-of-authority"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#planning",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "planning",
+          "name": "Planning",
+          "description": "The process of identifying the actions, resources, dependencies, and conditions required to pursue an objective.",
+          "url": "https://ouamarkom.com/en/glossary/#planning"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#ai-agent",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "ai-agent",
+          "name": "AI Agent",
+          "description": "A system that uses AI capabilities to pursue an objective or perform a task and may incorporate planning, tool use, and interactions with other systems.",
+          "url": "https://ouamarkom.com/en/glossary/#ai-agent"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#agent-orchestration",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "agent-orchestration",
+          "name": "Agent Orchestration",
+          "description": "The coordination of interactions, dependencies, and information flows among multiple agents, tools, or services to accomplish a shared task.",
+          "url": "https://ouamarkom.com/en/glossary/#agent-orchestration"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#workflow",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "workflow",
+          "name": "Workflow",
+          "description": "A structured set of connected steps and transition rules that determine how a task progresses from one state to another.",
+          "url": "https://ouamarkom.com/en/glossary/#workflow"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#execution",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "execution",
+          "name": "Execution",
+          "description": "The performance of an action or sequence of actions within an operational environment according to specified instructions and conditions.",
+          "url": "https://ouamarkom.com/en/glossary/#execution"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#execution-control",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "execution-control",
+          "name": "Execution Control",
+          "description": "The mechanisms used to permit, prevent, suspend, or revalidate operational actions according to applicable permissions, policies, and conditions.",
+          "url": "https://ouamarkom.com/en/glossary/#execution-control"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#governed-execution",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "governed-execution",
+          "name": "Governed Execution",
+          "description": "The execution of actions within applicable authority limits, policies, approval requirements, and operational constraints, with the ability to evaluate compliance using appropriate evidence.",
+          "url": "https://ouamarkom.com/en/glossary/#governed-execution"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#event-log",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "event-log",
+          "name": "Event Log",
+          "description": "A structured record of relevant operational events, including timestamps, identifiers, states, and data needed to reconstruct an execution sequence.",
+          "url": "https://ouamarkom.com/en/glossary/#event-log"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#execution-evidence",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "execution-evidence",
+          "name": "Execution Evidence",
+          "description": "Data, records, and references that support a specific claim about an action or operational state.",
+          "url": "https://ouamarkom.com/en/glossary/#execution-evidence"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#verification",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "verification",
+          "name": "Verification",
+          "description": "The process of examining evidence to determine whether a claim, action, or output satisfies specified conditions and criteria.",
+          "url": "https://ouamarkom.com/en/glossary/#verification"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#outcome",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "outcome",
+          "name": "Outcome",
+          "description": "The state or change actually achieved following an action or sequence of actions, compared with a desired or reference state.",
+          "url": "https://ouamarkom.com/en/glossary/#outcome"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#economic-outcome",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "economic-outcome",
+          "name": "Economic Outcome",
+          "description": "An observable or measurable economic effect associated with an action or decision, such as a change in cost, revenue, resource utilization, financial commitment, or risk exposure.",
+          "url": "https://ouamarkom.com/en/glossary/#economic-outcome"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#economic-exposure",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "economic-exposure",
+          "name": "Economic Exposure",
+          "description": "The potential financial or economic value that could be affected by an action, failure, or decision under a specified scenario and set of assumptions.",
+          "url": "https://ouamarkom.com/en/glossary/#economic-exposure"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#evidence-package",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "evidence-package",
+          "name": "Evidence Package",
+          "description": "An organized collection of experimental materials needed to review a result, such as the test description, system version, raw data, metric definitions, calculations, limitations, and decision record.",
+          "url": "https://ouamarkom.com/en/glossary/#evidence-package"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#reproducibility",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "reproducibility",
+          "name": "Reproducibility",
+          "description": "The ability to repeat an experiment or reanalyze its data using documented procedures and materials to assess whether its results can be obtained under the specified conditions.",
+          "url": "https://ouamarkom.com/en/glossary/#reproducibility"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#decision-memory",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "decision-memory",
+          "name": "Decision Memory",
+          "description": "A structured record of previous decisions, their rationale, supporting evidence, observed outcomes, limitations, and lessons learned.",
+          "url": "https://ouamarkom.com/en/glossary/#decision-memory"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#smart-hand",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "smart-hand",
+          "name": "Smart Hand™",
+          "description": "A controlled experimental environment under development by OUAMARKOM™ for testing, measuring, and documenting economic actions performed by or involving AI systems, with a focus on authority, delegation, execution control, evidence, and outcomes.",
+          "url": "https://ouamarkom.com/en/glossary/#smart-hand"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#geab",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "geab",
+          "name": "GEAB",
+          "description": "A developing evaluation framework for organizing scenarios, tests, and metrics used to study AI behavior during governed economic actions.",
+          "url": "https://ouamarkom.com/en/glossary/#geab",
+          "alternateName": "Governed Economic Action Benchmark"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#cep",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "cep",
+          "name": "CEP™",
+          "description": "An execution protocol under development within OUAMARKOM™'s research program. It is intended to explore how commands, delegated authority, governance controls, and execution boundaries can be connected during operation.",
+          "url": "https://ouamarkom.com/en/glossary/#cep",
+          "alternateName": "Command Execution Protocol"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#ai-execution-infrastructure",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "ai-execution-infrastructure",
+          "name": "AI Execution Infrastructure",
+          "description": "The technical and operational components that enable AI systems to interact with external tools, services, and systems and to perform actions within a defined environment.",
+          "url": "https://ouamarkom.com/en/glossary/#ai-execution-infrastructure"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#architecture",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "architecture",
+          "name": "Architecture",
+          "description": "The organization of a system's components, interfaces, responsibilities, information flows, and constraints.",
+          "url": "https://ouamarkom.com/en/glossary/#architecture"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#gcear",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "gcear",
+          "name": "GCEAR",
+          "description": "A proposed research initiative or center intended to organize research into AI economic actions, develop methodologies, coordinate collaboration, and support evidence quality and reproducibility.",
+          "url": "https://ouamarkom.com/en/glossary/#gcear",
+          "alternateName": "Global Center for Economic Action Research"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#metrics",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "metrics",
+          "name": "Metrics",
+          "description": "Quantitative or qualitative indicators used to evaluate a specific aspect of system behavior, control performance, or experimental outcomes.",
+          "url": "https://ouamarkom.com/en/glossary/#metrics"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#baseline",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "baseline",
+          "name": "Baseline",
+          "description": "A reference condition against which an intervention or change is evaluated, such as the performance of existing controls before a new mechanism is introduced.",
+          "url": "https://ouamarkom.com/en/glossary/#baseline"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#controlled-experiment",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "controlled-experiment",
+          "name": "Controlled Experiment",
+          "description": "An experiment in which the scenario, variables, conditions, and measurement methods are specified in advance, with relevant factors controlled as far as practical.",
+          "url": "https://ouamarkom.com/en/glossary/#controlled-experiment"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#generalizability",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "generalizability",
+          "name": "Generalizability",
+          "description": "The extent to which findings from an experiment may apply to systems, conditions, or institutions beyond those directly tested.",
+          "url": "https://ouamarkom.com/en/glossary/#generalizability"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#engineering-intervention",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "engineering-intervention",
+          "name": "Engineering Intervention",
+          "description": "A technical or operational change introduced to address a measured failure or improve a specified outcome.",
+          "url": "https://ouamarkom.com/en/glossary/#engineering-intervention"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#economic-value",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "economic-value",
+          "name": "Economic Value",
+          "description": "The benefit generated by a solution or action relative to its costs, risks, and alternatives within a defined context.",
+          "url": "https://ouamarkom.com/en/glossary/#economic-value"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/en/glossary/#evidence-before-architecture",
+          "inDefinedTermSet": "https://ouamarkom.com/en/glossary/#termset",
+          "termCode": "evidence-before-architecture",
+          "name": "Evidence Before Architecture",
+          "description": "A research principle requiring problems, alternatives, and supporting evidence to be examined before committing to a substantial architectural design or broad infrastructure investment.",
+          "url": "https://ouamarkom.com/en/glossary/#evidence-before-architecture"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ouamarkom.com/#organization",
+      "name": "Ouamarkom",
+      "alternateName": [
+        "Ouamarkom AI",
+        "أوامركم"
+      ],
+      "url": "https://ouamarkom.com/en/",
+      "logo": "https://ouamarkom.com/logo.webp",
+      "description": "Ouamarkom is a research and engineering company exploring the infrastructure required for governed AI economic agency.",
+      "sameAs": [
+        "https://linkedin.com/company/ouamarkom",
+        "https://x.com/ouamarkom",
+        "https://facebook.com/ouamarkom",
+        "https://instagram.com/ouamarkom",
+        "https://wa.me/966578061018"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://ouamarkom.com/en/glossary/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ouamarkom.com/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Glossary",
+          "item": "https://ouamarkom.com/en/glossary/"
         }
       ]
     }
+  ]
+}
     </script>
+  </head>
+  <body>
+    <header class="site-header container">
+      <a class="site-brand" href="/en/" aria-label="Ouamarkom Home">
+        <img src="/logo.webp" alt="Ouamarkom" />
+      </a>
 
-    <style>
-        :root {
-            --primary: #040916;
-            --secondary: #0a192f;
-            --accent: #e6992d;
-            --gold: #fcd34d;
-            --text-main: #e6f1ff;
-            --text-dim: #8892b0;
-            --card-bg: rgba(10, 25, 47, 0.45);
-            --border-color: rgba(255, 255, 255, 0.08);
-            --brand-orange-glow: rgba(230, 153, 45, 0.35);
-            --brand-orange-subtle: rgba(230, 153, 45, 0.08);
-        }
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="/en/about/">About Ouamarkom</a>
+        <a href="/en/vision/">Vision</a>
+        <a href="/en/framework/">Framework</a>
+        <a href="/en/research">Research</a>
+        <a href="/en/canonical-reference/">Canonical Reference</a>
+        <a href="/en/evolution/">Evolution</a>
+        <a href="/blog">Blog</a>
+        <a href="mailto:contact@ouamarkom.com">Contact</a>
+      </nav>
 
-        html { scroll-behavior: smooth; }
+      <div class="header-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <svg class="globe-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+            <path d="M2 12h20"></path>
+          </svg>
+          <a href="/glossary" class="lang-btn" hreflang="ar" lang="ar">AR</a>
+          <span class="lang-divider"></span>
+          <span class="lang-btn active">EN</span>
+        </div>
 
-        body {
-            background-color: var(--primary);
-            color: var(--text-main);
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            margin: 0;
-            text-align: left;
-            line-height: 1.8;
-        }
-
-        /* Navigation Bar */
-        .top-nav-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 24px 20px 10px;
-            position: relative;
-            z-index: 10;
-        }
-
-        .brand-logo-wrap {
-            display: inline-flex;
-            align-items: center;
-            text-decoration: none;
-            transition: transform 0.3s ease;
-        }
-
-        .brand-logo-wrap:hover { transform: scale(1.03); }
-
-        .brand-logo-img {
-            height: 50px;
-            width: auto;
-            object-fit: contain;
-            display: block;
-        }
-
-        .lang-switch-btn {
-            background: var(--brand-orange-subtle);
-            border: 1px solid rgba(230, 153, 45, 0.35);
-            color: var(--accent);
-            padding: 8px 18px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-size: 0.88rem;
-            font-weight: 700;
-            transition: all 0.3s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .lang-switch-btn svg {
-            width: 16px;
-            height: 16px;
-            stroke: currentColor;
-            transition: transform 0.4s ease;
-        }
-
-        .lang-switch-btn:hover {
-            background: rgba(230, 153, 45, 0.22);
-            color: #fff;
-            border-color: var(--accent);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(230, 153, 45, 0.2);
-        }
-
-        /* Container */
-        .manifesto-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 10px 20px 60px;
-            position: relative;
-            z-index: 1;
-            box-sizing: border-box;
-        }
-
-        .hero-manifesto {
-            text-align: center;
-            padding: 30px 0 20px;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUpHero 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-        }
-
-        @keyframes fadeInUpHero {
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .hero-manifesto h1 {
-            font-size: clamp(1.6rem, 5vw, 2.8rem);
-            line-height: 1.35;
-            margin-bottom: 18px;
-            font-weight: 900;
-            color: #ffffff;
-        }
-
-        .hero-manifesto h1 span {
-            display: block;
-            margin-top: 6px;
-            background: linear-gradient(90deg, var(--accent), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .hero-manifesto .subtitle {
-            font-size: clamp(0.98rem, 2.5vw, 1.2rem);
-            color: var(--text-dim);
-            line-height: 1.7;
-            max-width: 850px;
-            margin: 0 auto;
-        }
-
-        .tagline-badge {
-            display: inline-block;
-            padding: 6px 18px;
-            background: var(--brand-orange-subtle);
-            border: 1px solid rgba(230, 153, 45, 0.3);
-            color: var(--accent);
-            border-radius: 50px;
-            font-size: clamp(0.8rem, 2vw, 0.9rem);
-            font-weight: 800;
-            margin-bottom: 22px;
-            letter-spacing: 0.5px;
-        }
-
-        /* Cards Styling */
-        .manifesto-card {
-            background: var(--card-bg);
-            padding: clamp(22px, 5vw, 42px);
-            border-radius: 24px;
-            border: 1px solid var(--border-color);
-            backdrop-filter: blur(12px);
-            margin-bottom: 30px;
-            text-align: left;
-        }
-
-        .manifesto-card h2 {
-            color: var(--accent);
-            font-size: clamp(1.3rem, 4vw, 1.8rem);
-            margin-bottom: 20px;
-            font-weight: 800;
-            line-height: 1.3;
-            border-left: 4px solid var(--accent);
-            padding-left: 14px;
-        }
-
-        .category-group-title {
-            color: var(--gold);
-            font-size: 1.15rem;
-            font-weight: 700;
-            margin: 24px 0 12px;
-        }
-
-        .manifesto-card p {
-            color: var(--text-main);
-            font-size: clamp(0.98rem, 2.5vw, 1.08rem);
-            line-height: 1.8;
-            margin-bottom: 16px;
-        }
-
-        /* Clean Link Styling Inside Paragraphs & Concepts */
-        .concept-segment a, .manifesto-card p a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 600;
-            padding-bottom: 2px;
-            transition: all 0.25s ease;
-        }
-
-        .concept-segment a:hover, .manifesto-card p a:hover {
-            color: var(--gold);
-            border-bottom-color: var(--gold);
-            text-shadow: 0 0 8px rgba(252, 211, 77, 0.3);
-        }
-
-        .concept-segment {
-            margin-bottom: 45px;
-            border-top: 1px solid var(--border-color);
-            padding-top: 35px;
-        }
-
-        .concept-segment:first-of-type {
-            border-top: none;
-            padding-top: 0;
-        }
-
-        h3.concept-term-title {
-            color: #fff;
-            font-size: clamp(1.4rem, 3.5vw, 1.9rem);
-            margin-bottom: 20px;
-            font-weight: 800;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        h3.concept-term-title::before {
-            content: "◆";
-            color: var(--accent);
-            font-size: 1rem;
-        }
-
-        h4.property-label {
-            color: var(--gold);
-            font-size: 1.08rem;
-            margin: 22px 0 10px;
-            font-weight: 700;
-        }
-
-        blockquote {
-            border-left: 3px solid var(--accent);
-            padding: 16px 20px;
-            background: var(--brand-orange-subtle);
-            margin: 20px 0;
-            border-radius: 8px;
-            color: var(--text-main);
-            font-style: italic;
-        }
-
-        ul.styled-list {
-            padding-left: 20px;
-            margin-bottom: 20px;
-            list-style-type: none;
-        }
-
-        ul.styled-list li {
-            position: relative;
-            margin-bottom: 10px;
-            color: var(--text-main);
-            padding-left: 20px;
-        }
-
-        ul.styled-list li::before {
-            content: "-";
-            position: absolute;
-            left: 0;
-            color: var(--accent);
-            font-weight: bold;
-        }
-
-        /* Tables & Visuals */
-        .table-responsive-container {
-            overflow-x: auto;
-            margin: 24px 0;
-            border-radius: 16px;
-            border: 1px solid var(--border-color);
-            background: rgba(4, 9, 22, 0.6);
-        }
-
-        table.luxury-data-table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: left;
-            font-size: 0.95rem;
-            min-width: 500px;
-        }
-
-        table.luxury-data-table th {
-            background: rgba(230, 153, 45, 0.12);
-            color: var(--gold);
-            padding: 16px;
-            border-bottom: 1px solid var(--border-color);
-            font-weight: 700;
-        }
-
-        table.luxury-data-table td {
-            padding: 14px 16px;
-            border-bottom: 1px solid var(--border-color);
-            color: var(--text-main);
-        }
-
-        .visual-diagram-box {
-            margin: 24px 0;
-            background: rgba(4, 9, 22, 0.6);
-            border: 1px solid var(--border-color);
-            border-radius: 18px;
-            padding: 24px;
-            text-align: center;
-        }
-
-        .diagram-flow {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-
-        .diagram-node {
-            background: var(--secondary);
-            border: 1px solid rgba(230, 153, 45, 0.3);
-            padding: 8px 18px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 700;
-            color: #fff;
-        }
-
-        .diagram-arrow {
-            color: var(--accent);
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        .grid-tags-layout {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 12px;
-            margin: 16px 0 28px;
-        }
-
-        a.tag-node-item {
-            display: block;
-            text-decoration: none;
-            background: rgba(4, 9, 22, 0.6);
-            border: 1px solid var(--border-color);
-            padding: 12px 16px;
-            border-radius: 12px;
-            font-size: 0.9rem;
-            color: var(--text-dim);
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        a.tag-node-item:hover {
-            border-color: var(--accent);
-            color: #fff;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 18px rgba(230, 153, 45, 0.12);
-        }
-
-        span.tag-node-item {
-            display: block;
-            background: rgba(4, 9, 22, 0.3);
-            border: 1px dashed var(--border-color);
-            padding: 12px 16px;
-            border-radius: 12px;
-            font-size: 0.88rem;
-            color: rgba(136, 146, 176, 0.6);
-            text-align: center;
-            cursor: default;
-        }
-
-        .reveal-card {
-            opacity: 0;
-            transform: translateY(25px);
-            transition: opacity 0.6s cubic-bezier(0.215, 0.610, 0.355, 1), 
-                        transform 0.6s cubic-bezier(0.215, 0.610, 0.355, 1);
-        }
-
-        .reveal-card.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        @media (max-width: 768px) {
-            .diagram-flow { flex-direction: column; gap: 8px; }
-            .diagram-arrow { transform: rotate(90deg); }
-        }
-    </style>
-</head>
-<body>
-
-<canvas id="network-canvas"></canvas>
-
-<!-- Top Header Navigation Bar -->
-<nav class="top-nav-bar">
-    <a href="/en/" class="brand-logo-wrap" aria-label="Ouamarkom Home">
-        <img src="/logo.webp" alt="Ouamarkom" class="brand-logo-img">
-    </a>
-    
-    <div style="display: flex; gap: 10px; align-items: center;">
-        <a href="/en/standards/terminology/v0.1/" class="lang-switch-btn">Terminology Standard</a>
-        
-        <a href="/glossary/" class="lang-switch-btn" aria-label="Switch to Arabic Version">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="2" y1="12" x2="22" y2="12"></line>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-            </svg>
-            <span>العربية</span>
-        </a>
-    </div>
-</nav>
-
-<main class="manifesto-container">
-    
-    <!-- Hero Header -->
-    <header class="hero-manifesto">
-        <span class="tagline-badge">Official Glossary</span>
-        <h1>Command Economy of AI (CE-AI)<span>Official Conceptual Glossary & Knowledge Base</span></h1>
-        <p class="subtitle">
-            The official glossary defining the concepts, terminology, and architectural relationships of the Command Economy of AI (CE-AI).
-        </p>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-controls="menuOverlay" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </header>
 
-    <!-- Intro Card -->
-    <section class="manifesto-card reveal-card">
-        <blockquote>
-            The Command Economy of AI (CE-AI) Glossary is the official knowledge base defining the core concepts, terminology, and architectural relationships that form the conceptual framework of CE-AI.
-        </blockquote>
-        <p>Unlike traditional dictionaries, this glossary does not only explain what each concept means; it also clarifies why each concept matters, how it connects to the other elements of the framework, and how it relates to real-world technological and economic developments.</p>
-    </section>
+    <canvas id="network-canvas" aria-hidden="true"></canvas>
+    <button id="backToTop" title="Back to top" aria-label="Back to top">↑</button>
 
-    <!-- How to Use Card -->
-    <section class="manifesto-card reveal-card">
-        <h2>How to Use This Glossary</h2>
-        <p>Each dedicated entry in this knowledge base contains the following elements:</p>
-        <ul class="styled-list">
-            <li>Official Definition.</li>
-            <li>Why This Concept Matters.</li>
-            <li>Relationship to the Command Economy of AI Framework.</li>
-            <li>Practical Example.</li>
-            <li>Conceptual Diagram.</li>
-            <li>Related Articles.</li>
-            <li>Related Terms.</li>
-        </ul>
-        <p>Through the connections between all glossary entries, this framework forms an integrated <strong>Knowledge Graph</strong> rather than a simple alphabetical list of definitions.</p>
-    </section>
+    <div class="menu-overlay" id="menuOverlay">
+      <ul>
+        <li class="menu-group-title">Organization</li>
+        <li><a href="/en/">Home</a></li>
+        <li><a href="/en/about/">About Ouamarkom</a></li>
+        <li><a href="/en/vision/">Vision and Mission</a></li>
+        <li><a href="/en/founder/">Founder</a></li>
+        <li><a href="/en/evolution/">Evolution Record</a></li>
+        <li><a href="/blog">Blog</a></li>
 
-    <!-- Central Architectural Flow Diagram -->
-    <section class="manifesto-card reveal-card">
-        <h2>Framework Conceptual Chain</h2>
-        <p>The architectural flow of the Command Economy of AI (CE-AI) relies on the following sequential operational process:</p>
-        <div class="visual-diagram-box">
-            <div class="diagram-flow">
-                <div class="diagram-node">Human</div><div class="diagram-arrow">➔</div>
-                <div class="diagram-node">Intent</div><div class="diagram-arrow">➔</div>
-                <div class="diagram-node">Command</div><div class="diagram-arrow">➔</div>
-                <div class="diagram-node">Intent Understanding</div><div class="diagram-arrow">➔</div>
-                <div class="diagram-node">Planning</div><div class="diagram-arrow">➔</div>
-                <div class="diagram-node">Agent Orchestration</div><div class="diagram-arrow">➔</div>
-                <div class="diagram-node">Workflow</div><div class="diagram-arrow">➔</div>
-                <div class="diagram-node">Execution Infrastructure</div><div class="diagram-arrow">➔</div>
-                <div class="diagram-node">Verification</div><div class="diagram-arrow">➔</div>
-                <div class="diagram-node">Outcome</div><div class="diagram-arrow">➔</div>
-                <div class="diagram-node">Economic Value</div>
-            </div>
+        <li class="menu-group-title">Framework &amp; Knowledge</li>
+        <li><a href="/en/framework/">CE-AI™ Framework</a></li>
+        <li><a href="/en/canonical-reference/">Canonical Reference</a></li>
+        <li><a href="/en/glossary/" aria-current="page">Glossary</a></li>
+
+        <li class="menu-group-title">Research</li>
+        <li><a href="/en/research">Research Hub</a></li>
+        <li><a href="/en/whitepaper/">Whitepaper</a></li>
+
+        <li class="menu-group-title">Contact</li>
+        <li><a href="mailto:contact@ouamarkom.com">Contact Us</a></li>
+
+      </ul>
+    </div>
+
+    <main class="container">
+
+      <!-- Hero -->
+      <section class="hero reveal">
+        <p class="section-pill">Official Glossary</p>
+        <h1>
+          Command Economy of AI (CE-AI)<br />
+          <span>A Conceptual Reference for AI Economic Agency, Governance, Execution, and Evidence</span>
+        </h1>
+
+        <p class="subtitle">OUAMARKOM™ studies how artificial intelligence systems move from generating information and planning tasks to participating in actions that affect economic resources, transactions, commitments, and decisions.</p>
+        <p class="subtitle">This glossary defines the concepts used across OUAMARKOM™’s research and engineering work. It distinguishes established technical concepts from working definitions, research hypotheses, and assets that remain under development.</p>
+        <p class="subtitle-sub">The glossary is a developing conceptual reference, not an accredited technical standard. Its definitions may evolve as experiments, evidence, and independent evaluations refine the underlying research.</p>
+
+        <div class="hero-actions">
+            <a class="btn btn-primary" href="#core-concepts">Start with Core Concepts</a>
+            <a class="btn btn-secondary-outline" href="/en/research">Explore the Research</a>
+            <a class="btn btn-secondary-outline" href="/en/framework/">Read the CE-AI™ Framework</a>
+            <a class="btn btn-secondary-outline" href="/en/standards/terminology/v0.1/">Terminology Standard</a>
         </div>
-    </section>
+      </section>
 
-    <!-- Core Concepts Section -->
-    <section class="manifesto-card reveal-card">
-        <h2>Core Concepts</h2>
+      <nav class="charter-toc" aria-label="Glossary sections">
+        <a href="#pathway">The Conceptual Pathway</a>
+        <a href="#core-concepts">Core Concepts</a>
+        <a href="#agency-authority-governance">Economic Agency, Authority, and Governance</a>
+        <a href="#planning-execution">Planning, Orchestration, and Execution</a>
+        <a href="#evidence-outcomes">Evidence, Verification, and Economic Outcomes</a>
+        <a href="#assets">OUAMARKOM Research and Engineering Assets</a>
+        <a href="#supporting">Supporting Concepts</a>
+        <a href="#relationships">Conceptual Relationship Map</a>
+        <a href="#principles">Principles for Interpreting the Glossary</a>
+        <a href="#explore">Explore More Concepts</a>
+      </nav>
 
-        <!-- Concept 1: Human Intent -->
-        <div class="concept-segment" id="human-intent">
-            <h3 class="concept-term-title">1. Human Intent</h3>
-            
-            <h4 class="property-label">Official Definition</h4>
-            <p>Human Intent is the desired goal, objective, or outcome expressed by a person that initiates an intelligent execution process. Within the Command Economy of AI (CE-AI), intent is the starting point of digital production.</p>
-            
-            <h4 class="property-label">Why Is Intent Important?</h4>
-            <p>In traditional software systems, humans had to translate their goals into long sequences of steps and instructions. In modern intelligent systems, software can increasingly determine the appropriate execution path based on clearly expressed human intent. As artificial intelligence capabilities continue to evolve, the ability to express precise and meaningful intent may become one of the most valuable economic assets.</p>
-            
-            <h4 class="property-label">Relationship to Commands</h4>
-            <p>A command is the executable expression of intent. Intent answers the question:</p>
-            <blockquote>"What do I want to achieve?"</blockquote>
-            <p>The command initiates the execution process required to achieve that goal.</p>
-            
-            <h4 class="property-label">Relationship to Execution</h4>
-            <p>Intent defines the destination. Execution defines the path to reach it.</p>
+      <section class="section-shell reveal" id="introduction" aria-labelledby="introduction-title">
+        <div class="section-header">
+          <p class="section-pill">Introduction</p>
+          <h2 id="introduction-title">Understanding AI Economic Action</h2>
+        </div>
+        <div class="research-note">
+          <p>As AI systems gain access to tools, APIs, enterprise applications, and operational workflows, a set of important distinctions becomes increasingly relevant:</p>
+        </div>
+        <div class="info-box mt-4 mb-3">
+          <ul class="bullet-list">
+            <li><strong>Capability:</strong> What a system can technically do.</li>
+            <li><strong>Authority and delegation:</strong> What the system is permitted to do, within which scope and under whose authorization.</li>
+            <li><strong>Governance:</strong> The policies, responsibilities, and controls that regulate permitted actions.</li>
+            <li><strong>Execution:</strong> What actually happens in the operational environment.</li>
+            <li><strong>Evidence and verification:</strong> What can be substantiated about an action and its execution.</li>
+            <li><strong>Economic outcomes:</strong> The observable or measurable effects of an action on resources, costs, revenues, commitments, or economic risk.</li>
+          </ul>
+        </div>
+        <div class="research-note">
+          <p>The Command Economy of AI (CE-AI) is a research and analytical framework developed by OUAMARKOM™ to organize questions concerning these relationships.</p>
+        </div>
+      </section>
 
-            <h4 class="property-label">Practical Example</h4>
-            <p>Instead of manually performing all steps required to create a marketing campaign, a user can state:</p>
-            <blockquote>"Launch a marketing campaign targeting small businesses."</blockquote>
-            <p>The system understands the objective, coordinates planning, creates content, designs materials, and analyzes results.</p>
-            
-            <h4 class="property-label">Conceptual Diagram</h4>
-            <div class="visual-diagram-box">
-                <div class="diagram-flow">
-                    <div class="diagram-node">Human</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">Intent</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">Command</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">Intent Understanding</div>
-                </div>
-            </div>
-            
-            <h4 class="property-label">Related Articles</h4>
-            <ul class="styled-list">
-                <li>Related research and articles will be linked as they are published.</li>
+      <section class="section-shell reveal" id="how-to-use" aria-labelledby="how-to-use-title">
+        <div class="section-header">
+          <p class="section-pill">Usage</p>
+          <h2 id="how-to-use-title">How to Use This Glossary</h2>
+        </div>
+        <div class="research-note">
+          <p>Each glossary entry may include:</p>
+        </div>
+        <div class="info-box mt-4 mb-3">
+          <ol class="charter-list">
+            <li>A definition.</li>
+            <li>Its research or operational significance.</li>
+            <li>Its relationship to the CE-AI framework.</li>
+            <li>A practical example.</li>
+            <li>Related concepts.</li>
+            <li>A development-status note where appropriate.</li>
+          </ol>
+        </div>
+        <div class="research-note">
+          <p>The glossary is intended to support consistent terminology across research papers, experimental protocols, benchmark specifications, engineering documents, and evidence reports.</p>
+          <p>A term's inclusion does not imply universal agreement on its definition, demonstrated technical necessity, or formal recognition by an external standards body.</p>
+        </div>
+      </section>
+
+      <section class="section-shell reveal" id="pathway" aria-labelledby="pathway-title">
+        <div class="section-header">
+          <p class="section-pill">The Conceptual Pathway</p>
+          <h2 id="pathway-title">From Capability to Economic Outcome</h2>
+        </div>
+        <div class="research-note text-center">
+          <p>The relationships among these concepts do not form a mandatory linear sequence for every AI system. They represent a conceptual map of elements that may interact during AI-enabled economic action.</p>
+        </div>
+        <div class="section-card highlight-box text-center mt-4 mb-3">
+          <p class="flow-sequence">Capability → Intent or Goal → Command or Task Request → Planning → Authority and Delegation → Execution Controls → Economic Action → Evidence and Verification → Economic Outcome</p>
+        </div>
+        <div class="research-note text-center">
+          <p>Depending on the system, the process may involve multiple agents, tools, approval steps, exception handling, or changes in authorization during execution. A system may need to revalidate authority, escalate a decision to a human, stop a workflow, or attempt to reverse an action where reversal remains possible.</p>
+        </div>
+        <div class="info-box mt-4">
+          <p><span class="highlight-text">Core research principle:</span> Technical capability does not automatically confer authority. A command does not, by itself, establish authorization. Successful technical execution does not independently establish that the intended economic outcome has been achieved.</p>
+        </div>
+      </section>
+
+      <section class="section-shell term-group" id="core-concepts" aria-labelledby="core-concepts-title">
+        <div class="section-header">
+          <p class="section-pill">Concepts 1–7</p>
+          <h2 id="core-concepts-title">Core Concepts</h2>
+        </div>
+        <div class="term-list">
+<article class="section-card term-card" id="ce-ai">
+  <div class="term-head"><span class="term-no">1</span><h3>Command Economy of AI (CE-AI)</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>A research and analytical framework developed by OUAMARKOM™ to study economic actions performed by or involving AI systems, including the relationships among commands, capability, authority, delegation, governance, execution, evidence, and economic outcomes.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>CE-AI provides a structured way to investigate the transition from AI-generated information to actions that can affect transactions, resources, contractual commitments, and economic decisions.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>Investigating whether existing controls can prevent an AI agent from executing a financial transfer after its authorization has been revoked.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Scope and Status</span>
+    <p>CE-AI is a developing research framework, not an established technical standard, finished product, or replacement for existing economic systems.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#ai-economic-agency">AI Economic Agency</a></li>
+<li><a class="term-chip" href="#ai-economic-action">AI Economic Action</a></li>
+<li><a class="term-chip" href="#authority">Authority</a></li>
+<li><a class="term-chip" href="#delegated-authority">Delegation</a></li>
+<li><a class="term-chip" href="#governance">Governance</a></li>
+<li><a class="term-chip" href="#governed-execution">Governed Execution</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="ai-economic-action">
+  <div class="term-head"><span class="term-no">2</span><h3>AI Economic Action</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>An action performed or facilitated by an AI system that affects, or is intended to affect, economic resources, transactions, commitments, prices, procurement decisions, or other economically relevant activities.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>It shifts the focus from what an AI system can say or recommend to what it actually does and what consequences follow.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>Creating a purchase order, submitting a price offer, modifying a contract, or initiating a financial transfer.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Scope and Distinctions</span>
+    <p>A conversational response is not necessarily an economic action. Research and operational records should distinguish a proposed action, a simulated action, an execution attempt, a completed action, and a verified outcome.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#ai-economic-agency">AI Economic Agency</a></li>
+<li><a class="term-chip" href="#execution">Execution</a></li>
+<li><a class="term-chip" href="#economic-outcome">Economic Outcome</a></li>
+<li><a class="term-chip" href="#economic-exposure">Economic Exposure</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="technical-capability">
+  <div class="term-head"><span class="term-no">3</span><h3>Technical Capability</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>The set of technical abilities that enables a system to perform a task, such as analyzing information, planning, using a tool, or invoking an API.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Capability describes what a system can technically do. It does not independently establish what the system is authorized to do.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>An AI agent may be technically able to submit a purchase order through an API, while its permitted spending limit remains restricted.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Related Principle</span>
+    <p>Capability Does Not Confer Authority.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#ai-economic-agency">AI Economic Agency</a></li>
+<li><a class="term-chip" href="#authority">Authority</a></li>
+<li><a class="term-chip" href="#delegated-authority">Delegation</a></li>
+<li><a class="term-chip" href="#execution">Execution</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="human-intent">
+  <div class="term-head"><span class="term-no">4</span><h3>Human Intent</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>The goal or desired outcome a person seeks to achieve, as explicitly expressed or inferred from the available context.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Intent helps establish the purpose of a task, but does not necessarily specify every permitted action or grant authority to execute it.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>“I want to reduce procurement costs” describes a goal. It does not automatically authorize an AI system to terminate existing contracts or change suppliers without constraints.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Relationship to Commands</span>
+    <p>A command may express human intent directly, partially, or ambiguously. The intended goal must therefore be distinguished from the actual instruction and the applicable authorization.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#command">Command</a></li>
+<li><a class="term-chip" href="#intent-understanding">Intent Understanding</a></li>
+<li><a class="term-chip" href="#planning">Planning</a></li>
+<li><a class="term-chip" href="#delegated-authority">Delegation</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="command">
+  <div class="term-head"><span class="term-no">5</span><h3>Command</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>An instruction or task request directed to a system to initiate an activity or pursue a specified objective.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>A command may initiate or direct work, but it does not independently prove that its issuer has the authority to grant permission or that the requested action satisfies all applicable requirements.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>“Prepare a transfer request for SAR 5,000 for review” is different from “Execute the transfer.” Neither instruction alone proves that the required financial authorization exists.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Key Distinction</span>
+    <p>A command is not necessarily authorization. Authorization is not evidence of execution. Execution is not proof of an economic outcome.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#human-intent">Human Intent</a></li>
+<li><a class="term-chip" href="#delegated-authority">Delegation</a></li>
+<li><a class="term-chip" href="#intent-understanding">Intent Understanding</a></li>
+<li><a class="term-chip" href="#execution">Execution</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="intent-understanding">
+  <div class="term-head"><span class="term-no">6</span><h3>Intent Understanding</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>The process through which a system interprets a user's objective, instructions, context, and relevant constraints to form a representation of the requested task.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Intent understanding can help identify ambiguity, conflicting requirements, or missing information before planning or execution.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>When asked to “select the best supplier,” a system may need to clarify whether best means lowest price, highest quality, shortest delivery time, or the strongest overall fit.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Scope and Distinctions</span>
+    <p>Understanding intent does not establish the requester's identity, verify their authority, or grant permission to execute the requested action.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#human-intent">Human Intent</a></li>
+<li><a class="term-chip" href="#command">Command</a></li>
+<li><a class="term-chip" href="#planning">Planning</a></li>
+<li><span class="term-chip"><a href="#authority">Authority</a> and <a href="#delegated-authority">Delegation</a></span></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="language-interface">
+  <div class="term-head"><span class="term-no">7</span><h3>Language Interface</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>An interaction layer that allows people to communicate with digital systems through natural language rather than relying exclusively on graphical controls or traditional programming interfaces.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Language interfaces can reduce the need to specify every operational step manually, but may introduce ambiguity or variation in interpretation.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>A user describes a procurement objective in natural language, after which the system requests clarification about budget limits and supplier restrictions.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Scope and Distinctions</span>
+    <p>A language interface is a means of interaction, not an independent authorization or execution-control mechanism.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#human-intent">Human Intent</a></li>
+<li><a class="term-chip" href="#command">Command</a></li>
+<li><a class="term-chip" href="#intent-understanding">Intent Understanding</a></li>
+<li><a class="term-chip" href="#ai-agent">AI Agent</a></li>
+    </ul>
+  </div>
+</article>
+        </div>
+      </section>
+
+      <section class="section-shell term-group" id="agency-authority-governance" aria-labelledby="agency-authority-governance-title">
+        <div class="section-header">
+          <p class="section-pill">Concepts 8–15</p>
+          <h2 id="agency-authority-governance-title">Economic Agency, Authority, and Governance</h2>
+        </div>
+        <div class="term-list">
+<article class="section-card term-card" id="ai-economic-agency">
+  <div class="term-head"><span class="term-no">8</span><h3>AI Economic Agency</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>The capacity of an AI system, within a particular environment, to participate in actions affecting economic resources, transactions, commitments, or outcomes, with varying degrees of autonomy and delegation.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>It distinguishes systems that only provide recommendations from systems that can initiate or execute operational actions through available tools and permissions.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>One AI system recommends a price reduction. Another can directly change a product's price in a sales system if its permissions allow it.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Scope and Distinctions</span>
+    <p>Economic agency describes a system's participation in economic action. It does not automatically confer independent legal authority or determine legal responsibility.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#ai-economic-action">AI Economic Action</a></li>
+<li><a class="term-chip" href="#technical-capability">Technical Capability</a></li>
+<li><a class="term-chip" href="#authority">Authority</a></li>
+<li><a class="term-chip" href="#delegated-authority">Delegation</a></li>
+<li><a class="term-chip" href="#execution">Execution</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="authority">
+  <div class="term-head"><span class="term-no">9</span><h3>Authority</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>The permission or recognized right granted to an entity or system to make a decision or perform an action within a defined scope and under applicable rules.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Technical ability to perform an action does not establish that the system is permitted to perform it.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>An AI agent may prepare a purchase order while final approval remains the responsibility of an authorized procurement manager.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#delegated-authority">Delegated Authority</a></li>
+<li><a class="term-chip" href="#authority-boundary">Authority Boundary</a></li>
+<li><a class="term-chip" href="#governance">Governance</a></li>
+<li><span class="term-chip">Approval</span></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="delegated-authority">
+  <div class="term-head"><span class="term-no">10</span><h3>Delegated Authority</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>The granting of specified permissions to an agent or system to perform actions or make decisions within defined limits, conditions, and responsibilities.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Delegation establishes who may perform an action, which actions are permitted, and under what conditions the permission remains valid.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>An AI agent may issue purchase orders up to SAR 10,000, while purchases involving new suppliers require additional approval.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Potential Components</span>
+    <ul class="bullet-list">
+      <li>The person or entity granting authority.</li>
+      <li>The agent or system receiving authority.</li>
+      <li>The permitted actions.</li>
+      <li>Financial or operational limits.</li>
+      <li>Duration and expiration conditions.</li>
+      <li>Approval and escalation requirements.</li>
+      <li>Revocation procedures and enforcement mechanisms.</li>
+    </ul>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#authority">Authority</a></li>
+<li><a class="term-chip" href="#authority-boundary">Authority Boundary</a></li>
+<li><a class="term-chip" href="#revocation-of-authority">Revocation of Authority</a></li>
+<li><a class="term-chip" href="#governance">Governance</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="authority-boundary">
+  <div class="term-head"><span class="term-no">11</span><h3>Authority Boundary</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>The limits separating actions an agent is permitted to perform from actions that require additional authorization or are prohibited.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Authority boundaries translate general permissions into operational constraints that can be examined and tested.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>An agent may request supplier quotations but may not approve a purchase that exceeds its authorized budget.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Research Question</span>
+    <p>Do authority boundaries remain effective across multi-step workflows, changing contexts, tool calls, and delegated subtasks?</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#delegated-authority">Delegated Authority</a></li>
+<li><a class="term-chip" href="#governance">Governance</a></li>
+<li><a class="term-chip" href="#execution-control">Execution Control</a></li>
+<li><a class="term-chip" href="#revocation-of-authority">Revocation</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="governance">
+  <div class="term-head"><span class="term-no">12</span><h3>Governance</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>The policies, responsibilities, decision-making rules, and review mechanisms that regulate system use, permissions, risks, exceptions, and changes.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Governance connects institutional objectives and policies to operational processes and accountability.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>A policy requires human approval for transfers above a specified threshold and records the approver, approval time, and transaction status.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Scope and Distinctions</span>
+    <p>A written policy does not, by itself, prove that the policy is technically enforced or effective under operational conditions.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#delegated-authority">Delegated Authority</a></li>
+<li><a class="term-chip" href="#human-oversight">Human Oversight</a></li>
+<li><a class="term-chip" href="#execution-control">Execution Control</a></li>
+<li><a class="term-chip" href="#execution-evidence">Evidence</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="human-oversight">
+  <div class="term-head"><span class="term-no">13</span><h3>Human Oversight</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>The practical ability of authorized people to review, approve, reject, or stop system actions within a defined scope of responsibility.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Effective oversight requires more than a human being present in the workflow. It also requires adequate information, actual decision authority, and a meaningful opportunity to intervene.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>Before approving a transfer, a reviewer sees the amount, recipient, authorization source, and relevant transaction details.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><span class="term-chip">Approval</span></li>
+<li><a class="term-chip" href="#governance">Governance</a></li>
+<li><a class="term-chip" href="#authority-boundary">Authority Boundary</a></li>
+<li><a class="term-chip" href="#revocation-of-authority">Revocation</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="hitl">
+  <div class="term-head"><span class="term-no">14</span><h3>Human-in-the-Loop (HITL)</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>An operating pattern in which a human participates at one or more points in an AI workflow, such as approving an action, reviewing an output, or handling an exception.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Human participation can provide an additional review or authorization step before, during, or after an action, depending on the system design.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>An AI agent prepares a transfer request but must wait for an authorized employee's approval before submitting it.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Scope and Distinctions</span>
+    <p>A human approval step does not automatically guarantee safety. The approver's identity and authority must be established, the approval must be linked to the correct transaction, and the decision must be enforced.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#human-oversight">Human Oversight</a></li>
+<li><a class="term-chip" href="#authority">Authority</a></li>
+<li><a class="term-chip" href="#delegated-authority">Delegation</a></li>
+<li><a class="term-chip" href="#execution">Execution</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="revocation-of-authority">
+  <div class="term-head"><span class="term-no">15</span><h3>Revocation of Authority</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>The cancellation or termination of previously granted permission, such that the affected agent or system is no longer authorized to perform the actions covered by that permission.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Workflows may continue after a task begins. Research must therefore examine how revocation behaves during planning, waiting, execution, and other operational states.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>A financial agent's authorization is revoked after a transfer has been prepared but before it is submitted. The experiment tests whether the transfer is prevented when the authorization is no longer valid.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Research Question</span>
+    <p>What is the last point in the execution lifecycle at which revocation can be enforced reliably? Which actions, if any, become irreversible beyond that point?</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#delegated-authority">Delegated Authority</a></li>
+<li><a class="term-chip" href="#authority-boundary">Authority Boundary</a></li>
+<li><a class="term-chip" href="#execution-control">Execution Control</a></li>
+<li><a class="term-chip" href="#verification">Verification</a></li>
+    </ul>
+  </div>
+</article>
+        </div>
+      </section>
+
+      <section class="section-shell term-group" id="planning-execution" aria-labelledby="planning-execution-title">
+        <div class="section-header">
+          <p class="section-pill">Concepts 16–22</p>
+          <h2 id="planning-execution-title">Planning, Orchestration, and Execution</h2>
+        </div>
+        <div class="term-list">
+<article class="section-card term-card" id="planning">
+  <div class="term-head"><span class="term-no">16</span><h3>Planning</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>The process of identifying the actions, resources, dependencies, and conditions required to pursue an objective.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Planning translates a goal into steps that can be evaluated, reviewed, and potentially executed.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>Breaking a procurement task into requirements definition, quotation collection, supplier comparison, approval, and purchase-order submission.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Scope and Distinctions</span>
+    <p>A plan is not an execution. It does not establish that every planned action is authorized or feasible under current conditions.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#intent-understanding">Intent Understanding</a></li>
+<li><a class="term-chip" href="#workflow">Workflow</a></li>
+<li><a class="term-chip" href="#agent-orchestration">Agent Orchestration</a></li>
+<li><a class="term-chip" href="#execution">Execution</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="ai-agent">
+  <div class="term-head"><span class="term-no">17</span><h3>AI Agent</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>A system that uses AI capabilities to pursue an objective or perform a task and may incorporate planning, tool use, and interactions with other systems.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Governance requirements depend partly on what an agent can access and what actions it can actually perform.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>One agent reads inventory data and recommends replenishment. Another can issue purchase orders directly.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Scope and Distinctions</span>
+    <p>Describing a system as an agent does not imply complete autonomy or unlimited authority.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#ai-economic-agency">AI Economic Agency</a></li>
+<li><a class="term-chip" href="#planning">Planning</a></li>
+<li><a class="term-chip" href="#agent-orchestration">Agent Orchestration</a></li>
+<li><span class="term-chip"><a href="#authority">Authority</a> and <a href="#delegated-authority">Delegation</a></span></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="agent-orchestration">
+  <div class="term-head"><span class="term-no">18</span><h3>Agent Orchestration</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>The coordination of interactions, dependencies, and information flows among multiple agents, tools, or services to accomplish a shared task.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Additional risks may arise when tasks pass between components or when one agent delegates work to another.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>One agent collects quotations, another compares them, an enterprise service checks the budget, and an authorized employee approves the purchase.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Research Question</span>
+    <p>How are permissions, approvals, and evidence records preserved as tasks move across components?</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#ai-agent">AI Agent</a></li>
+<li><a class="term-chip" href="#workflow">Workflow</a></li>
+<li><a class="term-chip" href="#delegated-authority">Delegation</a></li>
+<li><a class="term-chip" href="#execution-control">Execution Control</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="workflow">
+  <div class="term-head"><span class="term-no">19</span><h3>Workflow</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>A structured set of connected steps and transition rules that determine how a task progresses from one state to another.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Workflows identify decision points, approval gates, stopping conditions, retries, and escalation paths.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>Purchase request created → budget reviewed → request approved → order submitted to supplier → confirmation recorded.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#planning">Planning</a></li>
+<li><a class="term-chip" href="#agent-orchestration">Agent Orchestration</a></li>
+<li><a class="term-chip" href="#execution">Execution</a></li>
+<li><a class="term-chip" href="#verification">Verification</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="execution">
+  <div class="term-head"><span class="term-no">20</span><h3>Execution</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>The performance of an action or sequence of actions within an operational environment according to specified instructions and conditions.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Execution marks the transition from a plan or request to an action that has occurred or has been attempted.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>Submitting a purchase order to an enterprise system through an API.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Scope and Distinctions</span>
+    <p>A request to execute, an execution attempt, system acceptance, completed execution, and a verified economic outcome are different states and should be recorded separately.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#execution-control">Execution Control</a></li>
+<li><a class="term-chip" href="#event-log">Event Log</a></li>
+<li><a class="term-chip" href="#verification">Verification</a></li>
+<li><a class="term-chip" href="#outcome">Outcome</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="execution-control">
+  <div class="term-head"><span class="term-no">21</span><h3>Execution Control</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>The mechanisms used to permit, prevent, suspend, or revalidate operational actions according to applicable permissions, policies, and conditions.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Permissions and circumstances may change between task creation and execution. An authorization check performed only at the beginning may therefore be insufficient in some workflows.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>Rechecking a transfer's authorization at the point of submission rather than relying exclusively on an earlier check.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Scope and Distinctions</span>
+    <p>No single control mechanism should be assumed appropriate for every system. Proposed controls should be compared with existing safeguards and simpler alternatives.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#delegated-authority">Delegated Authority</a></li>
+<li><a class="term-chip" href="#authority-boundary">Authority Boundary</a></li>
+<li><a class="term-chip" href="#revocation-of-authority">Revocation</a></li>
+<li><a class="term-chip" href="#governed-execution">Governed Execution</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="governed-execution">
+  <div class="term-head"><span class="term-no">22</span><h3>Governed Execution</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>The execution of actions within applicable authority limits, policies, approval requirements, and operational constraints, with the ability to evaluate compliance using appropriate evidence.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Governed execution connects what a system is permitted to do with what actually happens during operation.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>A financial transfer is blocked when its authorization has expired or a required approval is missing.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Scope and Distinctions</span>
+    <p>The term does not imply that execution is risk-free or that outcomes are guaranteed. The effectiveness of controls must be demonstrated within a defined evaluation scope.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#governance">Governance</a></li>
+<li><a class="term-chip" href="#authority">Authority</a></li>
+<li><a class="term-chip" href="#execution-control">Execution Control</a></li>
+<li><span class="term-chip"><a href="#execution-evidence">Evidence</a> and <a href="#verification">Verification</a></span></li>
+    </ul>
+  </div>
+</article>
+        </div>
+      </section>
+
+      <section class="section-shell term-group" id="evidence-outcomes" aria-labelledby="evidence-outcomes-title">
+        <div class="section-header">
+          <p class="section-pill">Concepts 23–31</p>
+          <h2 id="evidence-outcomes-title">Evidence, Verification, and Economic Outcomes</h2>
+        </div>
+        <div class="term-list">
+<article class="section-card term-card" id="event-log">
+  <div class="term-head"><span class="term-no">23</span><h3>Event Log</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>A structured record of relevant operational events, including timestamps, identifiers, states, and data needed to reconstruct an execution sequence.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Event logs support analysis of what happened and comparison of actual behavior against specified conditions.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>Recording when authority was granted, when it was revoked, when authorization was checked, when execution was attempted, and what response followed.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#execution-evidence">Evidence</a></li>
+<li><a class="term-chip" href="#verification">Verification</a></li>
+<li><span class="term-chip">Experiment Log</span></li>
+<li><a class="term-chip" href="#economic-exposure">Economic Exposure</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="execution-evidence">
+  <div class="term-head"><span class="term-no">24</span><h3>Execution Evidence</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>Data, records, and references that support a specific claim about an action or operational state.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Evidence helps reviewers assess whether an action occurred, under which conditions, and whether a conclusion is supported by the available records.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>An internal log stating that a transfer completed may be insufficient if the claim requires confirmation from the financial system that processed the transaction.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Scope and Distinctions</span>
+    <p>A record is not automatically reliable evidence. Its source, completeness, timing, integrity, and connection to the claimed event must be evaluated.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#event-log">Event Log</a></li>
+<li><a class="term-chip" href="#verification">Verification</a></li>
+<li><a class="term-chip" href="#evidence-package">Evidence Package</a></li>
+<li><a class="term-chip" href="#economic-outcome">Economic Outcome</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="verification">
+  <div class="term-head"><span class="term-no">25</span><h3>Verification</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>The process of examining evidence to determine whether a claim, action, or output satisfies specified conditions and criteria.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Verification distinguishes what a system reports from what can be substantiated using appropriate data.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>Checking that a purchase order remained within its authorized limit and that the required approval occurred before submission.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Scope and Distinctions</span>
+    <p>Verifying that an action occurred does not necessarily establish that it achieved the intended economic result. Economic outcomes may require separate measurement.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#execution-evidence">Execution Evidence</a></li>
+<li><a class="term-chip" href="#outcome">Outcome</a></li>
+<li><a class="term-chip" href="#evidence-package">Evidence Package</a></li>
+<li><a class="term-chip" href="#event-log">Event Log</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="outcome">
+  <div class="term-head"><span class="term-no">26</span><h3>Outcome</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>The state or change actually achieved following an action or sequence of actions, compared with a desired or reference state.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>An outcome helps establish whether a process achieved its intended result, rather than merely completing its operational steps.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>A supplier's acceptance of a purchase order is an operational state. Receiving the agreed goods in the required quantity and quality is a subsequent outcome that requires separate verification.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#execution">Execution</a></li>
+<li><a class="term-chip" href="#verification">Verification</a></li>
+<li><a class="term-chip" href="#economic-outcome">Economic Outcome</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="economic-outcome">
+  <div class="term-head"><span class="term-no">27</span><h3>Economic Outcome</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>An observable or measurable economic effect associated with an action or decision, such as a change in cost, revenue, resource utilization, financial commitment, or risk exposure.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Economic outcomes help determine whether an action created practical value and whether that value justifies the cost and risk of execution and control.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>Reducing procurement costs while maintaining agreed quality and contractual requirements.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Scope and Distinctions</span>
+    <p>An observed improvement does not automatically prove that AI caused it. Attribution may require a suitable comparison, control condition, or evaluation design.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#outcome">Outcome</a></li>
+<li><a class="term-chip" href="#verification">Verification</a></li>
+<li><a class="term-chip" href="#economic-exposure">Economic Exposure</a></li>
+<li><a class="term-chip" href="#economic-value">Economic Value</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="economic-exposure">
+  <div class="term-head"><span class="term-no">28</span><h3>Economic Exposure</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>The potential financial or economic value that could be affected by an action, failure, or decision under a specified scenario and set of assumptions.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Economic exposure describes the scale of a potential risk even when no actual loss has occurred.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>An unauthorized transfer request for SAR 5,000 may represent potential exposure of that amount under a defined scenario. It should not be recorded as a realized loss unless a loss actually occurs.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Scope and Distinctions</span>
+    <p>Potential exposure, realized loss, transaction value, and expected loss are different concepts. Reports should identify which measure is being used and state relevant assumptions.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#economic-outcome">Economic Outcome</a></li>
+<li><a class="term-chip" href="#governance">Governance</a></li>
+<li><a class="term-chip" href="#execution">Execution</a></li>
+<li><a class="term-chip" href="#metrics">Metrics</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="evidence-package">
+  <div class="term-head"><span class="term-no">29</span><h3>Evidence Package</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>An organized collection of experimental materials needed to review a result, such as the test description, system version, raw data, metric definitions, calculations, limitations, and decision record.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Evidence packages facilitate review, reanalysis, and replication while reducing reliance on unsupported summaries.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>A package containing an experiment identifier, agent configuration, authority limits, event sequence, metric results, and the data supporting the conclusion.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#event-log">Event Log</a></li>
+<li><a class="term-chip" href="#verification">Verification</a></li>
+<li><a class="term-chip" href="#reproducibility">Reproducibility</a></li>
+<li><a class="term-chip" href="#decision-memory">Decision Memory</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="reproducibility">
+  <div class="term-head"><span class="term-no">30</span><h3>Reproducibility</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>The ability to repeat an experiment or reanalyze its data using documented procedures and materials to assess whether its results can be obtained under the specified conditions.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Reproducibility reduces dependence on a single experiment and helps determine whether a result is stable or specific to particular conditions.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>Repeating a revocation test under the same settings, then changing one variable to examine its effect.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Scope and Distinctions</span>
+    <p>Reproducing a result in one environment does not establish that it generalizes to every model, institution, or operational setting.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><span class="term-chip">Experiment</span></li>
+<li><a class="term-chip" href="#evidence-package">Evidence Package</a></li>
+<li><a class="term-chip" href="#metrics">Metrics</a></li>
+<li><a class="term-chip" href="#verification">Verification</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="decision-memory">
+  <div class="term-head"><span class="term-no">31</span><h3>Decision Memory</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>A structured record of previous decisions, their rationale, supporting evidence, observed outcomes, limitations, and lessons learned.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Decision memory supports traceability, helps prevent repeated mistakes, and documents why a research hypothesis or engineering direction changed.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>Recording a decision not to build a new component because existing controls achieved the required performance within the tested conditions.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Scope and Distinctions</span>
+    <p>Preserving a decision does not establish that it was correct or that a system should follow it automatically. Its context and conditions of validity must remain available.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#economic-outcome">Economic Outcome</a></li>
+<li><a class="term-chip" href="#evidence-package">Evidence Package</a></li>
+<li><span class="term-chip">Experiment Log</span></li>
+<li><a class="term-chip" href="#governance">Governance</a></li>
+    </ul>
+  </div>
+</article>
+        </div>
+      </section>
+
+      <section class="section-shell term-group" id="assets" aria-labelledby="assets-title">
+        <div class="section-header">
+          <p class="section-pill">Concepts 32–37</p>
+          <h2 id="assets-title">OUAMARKOM Research and Engineering Assets</h2>
+        </div>
+        <div class="term-list">
+<article class="section-card term-card" id="smart-hand"><span id="smart-hand-infrastructure"></span>
+  <div class="term-head"><span class="term-no">32</span><h3>Smart Hand™</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>A controlled experimental environment under development by OUAMARKOM™ for testing, measuring, and documenting economic actions performed by or involving AI systems, with a focus on authority, delegation, execution control, evidence, and outcomes.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Role in the Research Program</span>
+    <p>Smart Hand is intended to support scenario execution, event recording, data collection, metric calculation, and the preparation of evidence that can be reviewed and used in replication efforts.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>Testing whether an AI financial agent can continue a transaction after its authorization has been revoked, using a simulation environment that does not move real funds.</p>
+  </div>
+  <div class="term-field is-status">
+    <span class="term-label">Status</span>
+    <p>An experimental asset under development. It should not be described as completed production infrastructure until readiness, reliability, security, and integration requirements have been demonstrated.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#geab">GEAB</a></li>
+<li><a class="term-chip" href="#cep">CEP</a></li>
+<li><a class="term-chip" href="#event-log">Event Log</a></li>
+<li><a class="term-chip" href="#evidence-package">Evidence Package</a></li>
+<li><a class="term-chip" href="#governed-execution">Governed Execution</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="geab">
+  <div class="term-head"><span class="term-no">33</span><h3>GEAB</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Governed Economic Action Benchmark</bdi></p>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>A developing evaluation framework for organizing scenarios, tests, and metrics used to study AI behavior during governed economic actions.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Research Purpose</span>
+    <p>GEAB is intended to support structured comparisons of system behavior in defined situations, including financial-transfer and authorization-revocation scenarios, while documenting test conditions, results, and limitations.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>Comparing two systems' behavior when execution authority is revoked after a transaction has been prepared but before it is submitted.</p>
+  </div>
+  <div class="term-field is-status">
+    <span class="term-label">Status</span>
+    <p>A benchmark under development and validation. It is not currently presented here as a universally accepted standard or a comprehensive guarantee of system safety.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#smart-hand">Smart Hand</a></li>
+<li><a class="term-chip" href="#metrics">Metrics</a></li>
+<li><a class="term-chip" href="#evidence-package">Evidence Package</a></li>
+<li><a class="term-chip" href="#reproducibility">Reproducibility</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="cep">
+  <div class="term-head"><span class="term-no">34</span><h3>CEP™</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Command Execution Protocol</bdi></p>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>An execution protocol under development within OUAMARKOM™'s research program. It is intended to explore how commands, delegated authority, governance controls, and execution boundaries can be connected during operation.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Engineering Question</span>
+    <p>Can a defined mechanism improve the enforcement of authority limits, the response to changes in authorization, or the quality of execution evidence compared with existing controls and simpler alternatives?</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>Testing an authorization revalidation mechanism at the execution boundary and comparing failure rates, response times, and operational costs against an appropriate baseline.</p>
+  </div>
+  <div class="term-field is-status">
+    <span class="term-label">Status</span>
+    <p>A protocol under development, not an established standard or a solution whose necessity has already been demonstrated. Its value must be determined through comparative testing.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#smart-hand">Smart Hand</a></li>
+<li><a class="term-chip" href="#geab">GEAB</a></li>
+<li><a class="term-chip" href="#execution-control">Execution Control</a></li>
+<li><a class="term-chip" href="#delegated-authority">Delegation</a></li>
+<li><a class="term-chip" href="#execution-evidence">Evidence</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="ai-execution-infrastructure">
+  <div class="term-head"><span class="term-no">35</span><h3>AI Execution Infrastructure</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>The technical and operational components that enable AI systems to interact with external tools, services, and systems and to perform actions within a defined environment.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Execution infrastructure supports the transition from generating outputs to interacting with systems that may be affected by AI-enabled decisions and actions.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>An AI agent integrates with a procurement system to read data and prepare a request, while approvals and submission remain subject to applicable authority controls.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Scope and Distinctions</span>
+    <p>The presence of APIs or execution tools does not, by itself, establish that governance is adequate or that new infrastructure is necessary.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#execution">Execution</a></li>
+<li><a class="term-chip" href="#execution-control">Execution Control</a></li>
+<li><a class="term-chip" href="#smart-hand">Smart Hand</a></li>
+<li><a class="term-chip" href="#cep">CEP</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="architecture">
+  <div class="term-head"><span class="term-no">36</span><h3>Architecture</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>The organization of a system's components, interfaces, responsibilities, information flows, and constraints.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Architecture helps determine where controls should operate and how permissions, events, and evidence should flow between components.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>Defining where authorization is checked during a transaction, which component must reject an invalid request, and which source establishes the final transaction status.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">OUAMARKOM Research Principle</span>
+    <p>Research first. Evidence second. Architecture third. Infrastructure only if justified by the findings.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#cep">CEP</a></li>
+<li><a class="term-chip" href="#smart-hand">Smart Hand</a></li>
+<li><a class="term-chip" href="#governed-execution">Governed Execution</a></li>
+<li><a class="term-chip" href="#evidence-package">Evidence Package</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="gcear">
+  <div class="term-head"><span class="term-no">37</span><h3>GCEAR</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Global Center for Economic Action Research</bdi></p>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>A proposed research initiative or center intended to organize research into AI economic actions, develop methodologies, coordinate collaboration, and support evidence quality and reproducibility.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Proposed Functions</span>
+    <ul class="bullet-list">
+      <li>Organize a research agenda.</li>
+      <li>Develop evaluation and documentation methodologies.</li>
+      <li>Coordinate research review and institutional collaboration.</li>
+      <li>Document findings, limitations, and lessons learned.</li>
+      <li>Support comparison and replication across different environments where feasible.</li>
+    </ul>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Relationship with OUAMARKOM</span>
+    <p>OUAMARKOM may serve as the commercial and engineering vehicle for developing tools and technical assets, while GCEAR may provide a research-organizational function under clearly defined legal and governance arrangements. Intellectual property, data rights, publication rights, and institutional independence must be determined through actual agreements and governance mechanisms.</p>
+  </div>
+  <div class="term-field is-status">
+    <span class="term-label">Status</span>
+    <p>A proposed initiative. Its name alone does not establish legal incorporation, academic standing, grant eligibility, or institutional independence.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">Related Concepts</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#ce-ai">CE-AI</a></li>
+<li><a class="term-chip" href="#smart-hand">Smart Hand</a></li>
+<li><a class="term-chip" href="#geab">GEAB</a></li>
+<li><span class="term-chip">Research Methodology</span></li>
+<li><span class="term-chip">Evidence Governance</span></li>
+    </ul>
+  </div>
+</article>
+        </div>
+      </section>
+
+      <section class="section-shell term-group" id="supporting" aria-labelledby="supporting-title">
+        <div class="section-header">
+          <p class="section-pill">Concepts 38–44</p>
+          <h2 id="supporting-title">Supporting Concepts</h2>
+        </div>
+        <div class="term-list">
+<article class="section-card term-card" id="metrics">
+  <div class="term-head"><span class="term-no">38</span><h3>Metrics</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>Quantitative or qualitative indicators used to evaluate a specific aspect of system behavior, control performance, or experimental outcomes.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>The rate of unauthorized execution attempts, the response time following authorization revocation, or the proportion of experiments with complete evidence records.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Measurement Principle</span>
+    <p>Each metric should have a defined calculation method, data source, scope, and limitations before its results are interpreted. Distinct metrics should not be combined into a single score without evidence that such aggregation is valid.</p>
+  </div>
+</article>
+<article class="section-card term-card" id="baseline">
+  <div class="term-head"><span class="term-no">39</span><h3>Baseline</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>A reference condition against which an intervention or change is evaluated, such as the performance of existing controls before a new mechanism is introduced.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>Comparing the failure rate before and after adding an authorization check under equivalent test conditions.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Why It Matters</span>
+    <p>Without an appropriate baseline, it is difficult to determine whether an intervention actually improved performance.</p>
+  </div>
+</article>
+<article class="section-card term-card" id="controlled-experiment">
+  <div class="term-head"><span class="term-no">40</span><h3>Controlled Experiment</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>An experiment in which the scenario, variables, conditions, and measurement methods are specified in advance, with relevant factors controlled as far as practical.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>Changing the timing of an authorization check while keeping other test conditions constant to examine its effect.</p>
+  </div>
+</article>
+<article class="section-card term-card" id="generalizability">
+  <div class="term-head"><span class="term-no">41</span><h3>Generalizability</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>The extent to which findings from an experiment may apply to systems, conditions, or institutions beyond those directly tested.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>A control that succeeds in one simulated environment is not automatically proven effective in different financial systems.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Principle</span>
+    <p>Generalizability must be established through appropriate repetition, varied test conditions, and supporting evidence. It should not be assumed from a single successful experiment.</p>
+  </div>
+</article>
+<article class="section-card term-card" id="engineering-intervention">
+  <div class="term-head"><span class="term-no">42</span><h3>Engineering Intervention</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>A technical or operational change introduced to address a measured failure or improve a specified outcome.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>Adding an authorization check at the execution boundary or changing how a workflow stops after authority is revoked.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Evaluation Principle</span>
+    <p>An intervention should be compared with a baseline and reasonable alternatives, measuring its benefits, costs, and side effects.</p>
+  </div>
+</article>
+<article class="section-card term-card" id="economic-value">
+  <div class="term-head"><span class="term-no">43</span><h3>Economic Value</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>The benefit generated by a solution or action relative to its costs, risks, and alternatives within a defined context.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Example</span>
+    <p>Reducing exception-handling costs, lowering financial exposure, or shortening review time, provided these effects can be measured and substantiated.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Scope and Distinctions</span>
+    <p>Technical sophistication alone does not establish economic value. A solution must provide meaningful benefits to a user or institution relative to available alternatives.</p>
+  </div>
+</article>
+<article class="section-card term-card" id="evidence-before-architecture">
+  <div class="term-head"><span class="term-no">44</span><h3>Evidence Before Architecture</h3></div>
+  <div class="term-field">
+    <span class="term-label">Definition</span>
+    <p>A research principle requiring problems, alternatives, and supporting evidence to be examined before committing to a substantial architectural design or broad infrastructure investment.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Application at OUAMARKOM</span>
+    <p>An experiment begins with a specific research question, a baseline, and defined metrics. The findings then inform whether a new intervention or reusable component is warranted.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">Purpose</span>
+    <p>To reduce the risk of investing prematurely in solutions whose necessity has not been demonstrated.</p>
+  </div>
+</article>
+        </div>
+      </section>
+
+      <section class="section-shell reveal" id="relationships" aria-labelledby="relationships-title">
+        <div class="section-header">
+          <p class="section-pill">Relationships</p>
+          <h2 id="relationships-title">Conceptual Relationship Map</h2>
+          <p>The following map groups related concepts. It is not a mandatory execution sequence for every AI system.</p>
+        </div>
+        <div class="research-grid">
+          <div class="research-card">
+            <span class="eyebrow-label">Group 1</span>
+            <h3>Goals and Instructions</h3>
+            <div class="term-chain"><a href="#human-intent">Human Intent</a> ↔ <a href="#command">Command</a> ↔ <a href="#intent-understanding">Intent Understanding</a> ↔ <a href="#planning">Planning</a></div>
+          </div>
+          <div class="research-card">
+            <span class="eyebrow-label">Group 2</span>
+            <h3>Authority and Governance</h3>
+            <div class="term-chain"><a href="#authority">Authority</a> ↔ <a href="#delegated-authority">Delegated Authority</a> ↔ <a href="#authority-boundary">Authority Boundary</a> ↔ <a href="#governance">Governance</a> ↔ <a href="#human-oversight">Human Oversight</a></div>
+          </div>
+          <div class="research-card">
+            <span class="eyebrow-label">Group 3</span>
+            <h3>Agency and Execution</h3>
+            <div class="term-chain"><a href="#ai-economic-agency">AI Economic Agency</a> ↔ <a href="#ai-agent">AI Agent</a> ↔ <a href="#workflow">Workflow</a> ↔ <a href="#execution">Execution</a> ↔ <a href="#execution-control">Execution Control</a></div>
+          </div>
+          <div class="research-card">
+            <span class="eyebrow-label">Group 4</span>
+            <h3>Evidence and Outcomes</h3>
+            <div class="term-chain"><a href="#event-log">Event Log</a> ↔ <a href="#execution-evidence">Execution Evidence</a> ↔ <a href="#verification">Verification</a> ↔ <a href="#outcome">Outcome</a> ↔ <a href="#economic-outcome">Economic Outcome</a> ↔ <a href="#economic-exposure">Economic Exposure</a></div>
+          </div>
+          <div class="research-card">
+            <span class="eyebrow-label">Group 5</span>
+            <h3>Research and Engineering</h3>
+            <div class="term-chain"><a href="#ce-ai">CE-AI</a> ↔ <a href="#smart-hand">Smart Hand</a> ↔ <a href="#geab">GEAB</a> ↔ <a href="#cep">CEP</a> ↔ Experiments ↔ <a href="#metrics">Metrics</a> ↔ <a href="#evidence-package">Evidence Packages</a> ↔ Engineering Decisions</div>
+          </div>
+          <div class="research-card">
+            <span class="eyebrow-label">Group 6</span>
+            <h3>Research Organization and Collaboration</h3>
+            <div class="term-chain"><a href="#gcear">GCEAR</a> ↔ Research Methodology ↔ Evidence Review ↔ <a href="#reproducibility">Reproducibility</a> ↔ Research Collaboration</div>
+          </div>
+        </div>
+        <div class="research-note text-center mt-5">
+          <p>The precise relationships among these concepts depend on the use case, the system under evaluation, and the available evidence.</p>
+        </div>
+      </section>
+
+      <section class="section-shell reveal" id="principles" aria-labelledby="principles-title">
+        <div class="section-header">
+          <p class="section-pill">Interpretation</p>
+          <h2 id="principles-title">Principles for Interpreting the Glossary</h2>
+          <p>OUAMARKOM™ uses the following principles when applying these terms in research papers, reports, and technical materials.</p>
+        </div>
+        <div class="info-box">
+          <ol class="charter-list">
+          <li><strong>Capability does not confer authority.</strong> The ability to perform an action does not establish permission to perform it.</li>
+          <li><strong>A command is not necessarily authorization.</strong> An instruction alone does not prove that its issuer can grant the required authority.</li>
+          <li><strong>Authorization may change.</strong> A previously valid delegation may expire or be revoked during a workflow.</li>
+          <li><strong>Execution is not outcome.</strong> Technical completion does not independently establish that the intended economic result was achieved.</li>
+          <li><strong>A record is not automatically sufficient evidence.</strong> Data sources, completeness, integrity, and reliability must be assessed.</li>
+          <li><strong>One experiment does not establish generalizability.</strong> Broader conclusions require appropriate replication and evidence.</li>
+          <li><strong>A concept is not an accredited standard.</strong> Claims of universal adoption, formal approval, or external certification require substantiation.</li>
+          <li><strong>A hypothesis is not a finding.</strong> Research assets and methods under development must be described according to their actual status.</li>
+          <li><strong>A proposed solution does not establish the need for new infrastructure.</strong> Existing controls and simpler alternatives should be evaluated first.</li>
+          <li><strong>Economic value requires measurement.</strong> Observed benefits must be distinguished from estimates, assumptions, and unverified claims.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section-shell reveal" id="explore" aria-labelledby="explore-title">
+        <div class="section-header">
+          <p class="section-pill">Index</p>
+          <h2 id="explore-title">Explore More Concepts</h2>
+        </div>
+        <div class="section-grid three-col">
+          <div class="section-card">
+            <h4>Core Concepts</h4>
+            <ul class="bullet-list term-index">
+            <li><a href="#ce-ai">Command Economy of AI (CE-AI)</a></li>
+            <li><a href="#ai-economic-action">AI Economic Action</a></li>
+            <li><a href="#technical-capability">Technical Capability</a></li>
+            <li><a href="#human-intent">Human Intent</a></li>
+            <li><a href="#command">Command</a></li>
+            <li><a href="#intent-understanding">Intent Understanding</a></li>
             </ul>
-            
-            <h4 class="property-label">Related Terms</h4>
-            <p><a href="#command">Command</a> | <a href="#intent-understanding">Intent Understanding</a> | <a href="#outcome">Outcome</a> | <a href="#ai-agent">AI Agent</a></p>
-        </div>
-
-        <!-- Concept 2: Command -->
-        <div class="concept-segment" id="command">
-            <h3 class="concept-term-title">2. Command</h3>
-            
-            <h4 class="property-label">Official Definition</h4>
-            <p>A Command is the executable expression of human intent that initiates or directs an intelligent execution process toward a defined objective.</p>
-
-            <h4 class="property-label">Relationship to Intent</h4>
-            <p>Intent expresses what a person wants to achieve, while a command expresses that intent in a form that can initiate an execution process.</p>
-
-            <h4 class="property-label">Conceptual Diagram</h4>
-            <div class="visual-diagram-box">
-                <div class="diagram-flow">
-                    <div class="diagram-node">Human</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">Intent</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">Command</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">Intent Understanding</div>
-                </div>
-            </div>
-
-            <h4 class="property-label">Related Terms</h4>
-            <p><a href="#human-intent">Human Intent</a> | <a href="#intent-understanding">Intent Understanding</a> | <a href="#planning">Planning</a></p>
-        </div>
-
-        <!-- Concept 3: Intent Understanding -->
-        <div class="concept-segment" id="intent-understanding">
-            <h3 class="concept-term-title">3. Intent Understanding</h3>
-            
-            <h4 class="property-label">Official Definition</h4>
-            <p>Intent Understanding is the process through which an intelligent system interprets human language and identifies the underlying objective, constraints, context, and desired outcome behind a command.</p>
-
-            <h4 class="property-label">Relationship to Execution</h4>
-            <p>Intent Understanding converts a human command from a linguistic expression into an operational representation that can be planned, orchestrated, and executed.</p>
-
-            <h4 class="property-label">Conceptual Diagram</h4>
-            <div class="visual-diagram-box">
-                <div class="diagram-flow">
-                    <div class="diagram-node">Command</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">Intent Understanding</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">Planning</div>
-                </div>
-            </div>
-
-            <h4 class="property-label">Related Terms</h4>
-            <p><a href="#command">Command</a> | <a href="#planning">Planning</a> | <a href="#language-interface">Language Interface</a></p>
-        </div>
-
-        <!-- Concept 4: Planning -->
-        <div class="concept-segment" id="planning">
-            <h3 class="concept-term-title">4. Planning</h3>
-            
-            <h4 class="property-label">Official Definition</h4>
-            <p>Planning is the process of determining the sequence of actions, resources, tools, and dependencies required to transform an understood intent into an executable workflow.</p>
-
-            <h4 class="property-label">Operational Path</h4>
-            <p>Within the Smart Hand MVP architecture and the CE-AI framework, planning functions along the direct path:</p>
-            <blockquote>Intent ➔ Plan ➔ Execute ➔ Results</blockquote>
-
-            <h4 class="property-label">Conceptual Diagram</h4>
-            <div class="visual-diagram-box">
-                <div class="diagram-flow">
-                    <div class="diagram-node">Intent Understanding</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">Planning</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">Agent Orchestration</div>
-                </div>
-            </div>
-
-            <h4 class="property-label">Related Terms</h4>
-            <p><a href="#intent-understanding">Intent Understanding</a> | <a href="#agent-orchestration">Agent Orchestration</a> | <a href="#workflow">Workflow</a></p>
-        </div>
-
-        <!-- Concept 5: Language Interface -->
-        <div class="concept-segment" id="language-interface">
-            <h3 class="concept-term-title">5. Language Interface</h3>
-            
-            <h4 class="property-label">Official Definition</h4>
-            <p>A Language Interface is an interaction layer that enables humans to communicate with digital systems using natural language instead of relying primarily on buttons, menus, and programming interfaces.</p>
-            
-            <h4 class="property-label">Language Interface vs. Graphical User Interface (GUI)</h4>
-            <div class="table-responsive-container">
-                <table class="luxury-data-table">
-                    <thead>
-                        <tr>
-                            <th>Graphical Interface (GUI)</th>
-                            <th>Language Interface</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>Fixed menus and buttons</td><td>Conversational language</td></tr>
-                        <tr><td>Restricted input forms</td><td>Adaptive intent and goals</td></tr>
-                        <tr><td>Screen-by-screen navigation</td><td>Direct result prompts</td></tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <h4 class="property-label">Related Terms</h4>
-            <p><a href="#human-intent">Human Intent</a> | <a href="#ai-agent">AI Agent</a> | <a href="#intent-understanding">Intent Understanding</a></p>
-        </div>
-
-        <!-- Concept 6: AI Agent -->
-        <div class="concept-segment" id="ai-agent">
-            <h3 class="concept-term-title">6. AI Agent</h3>
-            
-            <h4 class="property-label">Official Definition</h4>
-            <p>An AI Agent is an intelligent execution participant within the Command Economy of AI (CE-AI). It can interpret objectives, plan actions, use tools, coordinate with other agents, and perform defined tasks within a broader execution infrastructure.</p>
-
-            <h4 class="property-label">AI Agent vs. Chatbot</h4>
-            <div class="table-responsive-container">
-                <table class="luxury-data-table">
-                    <thead>
-                        <tr>
-                            <th>Chatbot</th>
-                            <th>AI Agent</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>Answers queries</td><td>Executes objectives</td></tr>
-                        <tr><td>Interactive dialogue</td><td>Goal-oriented execution</td></tr>
-                        <tr><td>Single-turn responses</td><td>Multi-step workflow management</td></tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <h4 class="property-label">Related Terms</h4>
-            <p><a href="#agent-orchestration">Agent Orchestration</a> | <a href="#planning">Planning</a> | <a href="#smart-hand-infrastructure">Smart Hand Infrastructure</a></p>
-        </div>
-
-        <!-- Concept 7: Agent Orchestration -->
-        <div class="concept-segment" id="agent-orchestration">
-            <h3 class="concept-term-title">7. Agent Orchestration</h3>
-            
-            <h4 class="property-label">Official Definition</h4>
-            <p>Agent Orchestration is the coordination of multiple AI agents, tools, workflows, and execution resources to achieve a shared objective through an organized execution process.</p>
-
-            <h4 class="property-label">Difference Between Agent and Orchestration</h4>
-            <p>While an individual agent performs defined tasks, orchestration manages the interactive relationships, dependencies, and operational flows across multiple agents and tools.</p>
-
-            <h4 class="property-label">Conceptual Diagram</h4>
-            <div class="visual-diagram-box">
-                <div class="diagram-flow">
-                    <div class="diagram-node">Planning</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">Agent Orchestration</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">Workflow</div>
-                </div>
-            </div>
-
-            <h4 class="property-label">Related Terms</h4>
-            <p><a href="#ai-agent">AI Agent</a> | <a href="#workflow">Workflow</a> | <a href="#smart-hand-infrastructure">Smart Hand Infrastructure</a></p>
-        </div>
-
-        <!-- Concept 8: Workflow -->
-        <div class="concept-segment" id="workflow">
-            <h3 class="concept-term-title">8. Workflow</h3>
-            
-            <h4 class="property-label">Official Definition</h4>
-            <p>A Workflow is the structured sequence of interconnected steps, operational rules, and execution paths required to achieve a specific outcome within the execution engine.</p>
-
-            <h4 class="property-label">Related Terms</h4>
-            <p><a href="#agent-orchestration">Agent Orchestration</a> | <a href="#ai-execution-infrastructure">AI Execution Infrastructure</a></p>
-        </div>
-
-        <!-- Concept 9: AI Execution Infrastructure -->
-        <div class="concept-segment" id="ai-execution-infrastructure">
-            <h3 class="concept-term-title">9. AI Execution Infrastructure</h3>
-            
-            <h4 class="property-label">Official Definition</h4>
-            <p>AI Execution Infrastructure is the broader technological and operational infrastructure layer required to enable intelligent systems to transform human intent and commands into coordinated, executable, verifiable, and outcome-oriented operations across digital environments.</p>
-
-            <h4 class="property-label">Why Is It Important?</h4>
-            <p>AI systems are increasingly capable of generating intelligence, recommendations, and plans. AI Execution Infrastructure provides the systems, orchestration mechanisms, integrations, and execution capabilities required to turn that intelligence into real operational outcomes.</p>
-
-            <h4 class="property-label">Relationship to Smart Hand Infrastructure</h4>
-            <p>AI Execution Infrastructure represents the broader infrastructure category, whereas Smart Hand Infrastructure is the proposed execution architecture specifically designed within the CE-AI framework.</p>
-
-            <h4 class="property-label">Conceptual Diagram</h4>
-            <div class="visual-diagram-box">
-                <div class="diagram-flow">
-                    <div class="diagram-node">Human Intent</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">Intelligent Systems</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">AI Execution Infrastructure</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">Outcome</div>
-                </div>
-            </div>
-
-            <h4 class="property-label">Related Terms</h4>
-            <p><a href="#smart-hand-infrastructure">Smart Hand Infrastructure</a> | <a href="#verification">Verification</a> | <a href="#economic-outcome">Economic Outcome</a></p>
-        </div>
-
-        <!-- Concept 10: Smart Hand Infrastructure -->
-        <div class="concept-segment" id="smart-hand-infrastructure">
-            <h3 class="concept-term-title">10. Smart Hand Infrastructure</h3>
-            
-            <h4 class="property-label">Official Definition</h4>
-            <p>Smart Hand Infrastructure is the proposed execution architecture designed within the Command Economy of AI (CE-AI) framework to transform human intent into coordinated, verifiable, and economically meaningful execution across AI agents, digital systems, and enterprise environments.</p>
-
-            <h4 class="property-label">How Does It Work?</h4>
-            <ul class="styled-list">
-                <li>Translating agent decisions into live API calls and system integrations.</li>
-                <li>Interfacing with Enterprise Resource Planning (ERP) systems and enterprise databases.</li>
-                <li>Managing execution resources and cross-system workflows.</li>
-                <li>Ensuring real-time state management and verifiable performance logging.</li>
+          </div>
+          <div class="section-card">
+            <h4>Economic Agency, Authority, and Governance</h4>
+            <ul class="bullet-list term-index">
+            <li><a href="#ai-economic-agency">AI Economic Agency</a></li>
+            <li><a href="#authority">Authority</a></li>
+            <li><a href="#delegated-authority">Delegated Authority</a></li>
+            <li><a href="#authority-boundary">Authority Boundary</a></li>
+            <li><a href="#governance">Governance</a></li>
+            <li><a href="#human-oversight">Human Oversight</a></li>
+            <li><a href="#hitl">Human-in-the-Loop (HITL)</a></li>
+            <li><a href="#revocation-of-authority">Revocation of Authority</a></li>
             </ul>
+          </div>
+          <div class="section-card">
+            <h4>Planning and Execution</h4>
+            <ul class="bullet-list term-index">
+            <li><a href="#planning">Planning</a></li>
+            <li><a href="#ai-agent">AI Agent</a></li>
+            <li><a href="#agent-orchestration">Agent Orchestration</a></li>
+            <li><a href="#workflow">Workflow</a></li>
+            <li><a href="#execution">Execution</a></li>
+            <li><a href="#execution-control">Execution Control</a></li>
+            <li><a href="#governed-execution">Governed Execution</a></li>
+            </ul>
+          </div>
+          <div class="section-card">
+            <h4>Evidence and Outcomes</h4>
+            <ul class="bullet-list term-index">
+            <li><a href="#event-log">Event Log</a></li>
+            <li><a href="#execution-evidence">Execution Evidence</a></li>
+            <li><a href="#verification">Verification</a></li>
+            <li><a href="#outcome">Outcome</a></li>
+            <li><a href="#economic-outcome">Economic Outcome</a></li>
+            <li><a href="#economic-exposure">Economic Exposure</a></li>
+            <li><a href="#evidence-package">Evidence Package</a></li>
+            <li><a href="#reproducibility">Reproducibility</a></li>
+            <li><a href="#decision-memory">Decision Memory</a></li>
+            </ul>
+          </div>
+          <div class="section-card">
+            <h4>Research and Engineering Assets</h4>
+            <ul class="bullet-list term-index">
+            <li><a href="#smart-hand">Smart Hand</a></li>
+            <li><a href="#geab">GEAB</a></li>
+            <li><a href="#cep">CEP</a></li>
+            <li><a href="#ai-execution-infrastructure">AI Execution Infrastructure</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#gcear">GCEAR</a></li>
+            </ul>
+          </div>
+          <div class="section-card">
+            <h4>Supporting Concepts</h4>
+            <ul class="bullet-list term-index">
+            <li><a href="#metrics">Metrics</a></li>
+            <li><a href="#baseline">Baseline</a></li>
+            <li><a href="#controlled-experiment">Controlled Experiment</a></li>
+            <li><a href="#generalizability">Generalizability</a></li>
+            <li><a href="#engineering-intervention">Engineering Intervention</a></li>
+            <li><a href="#economic-value">Economic Value</a></li>
+            <li><a href="#evidence-before-architecture">Evidence Before Architecture</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-            <h4 class="property-label">Practical Example</h4>
-            <p>For example, when a user issues a command to expand supply capacity, Smart Hand Infrastructure coordinates procurement systems, vendor integrations, logistics workflows, and verification mechanisms according to predefined permissions and human oversight requirements.</p>
+      <section class="section-shell reveal" id="glossary-governance" aria-labelledby="glossary-governance-title">
+        <div class="section-header">
+          <p class="section-pill">Governance</p>
+          <h2 id="glossary-governance-title">Glossary Governance and Versioning</h2>
+        </div>
+        <div class="research-note">
+          <p>This glossary is maintained as a developing conceptual reference within OUAMARKOM™'s research and engineering program.</p>
+          <p>Definitions may be revised when hypotheses change, new evidence becomes available, or more precise terminology is established.</p>
+          <p>Where practical, each revision should document:</p>
+        </div>
+        <div class="info-box mt-4 mb-3">
+<ul class="bullet-list">
+  <li>The English and Arabic term.</li>
+  <li>A concise, stable definition.</li>
+  <li>Scope and exclusions.</li>
+  <li>Relationships to other concepts.</li>
+  <li>Relevant research or engineering references.</li>
+  <li>Version number and revision date.</li>
+  <li>Concept status: general concept, working definition, research hypothesis, or asset under development.</li>
+</ul>
+        </div>
+        <div class="research-note">
+          <p>Inclusion in the glossary does not imply that a concept is universally accepted or that an associated solution has demonstrated effectiveness. Claims concerning performance, engineering necessity, or economic value remain subject to appropriate evidence.</p>
+          <p class="mt-3"><span class="highlight-text">Methodological principle:</span> Research first. Evidence second. Architecture third. Infrastructure only if justified by the findings.</p>
+        </div>
+      </section>
 
-            <h4 class="property-label">Conceptual Diagram</h4>
-            <div class="visual-diagram-box">
-                <div class="diagram-flow">
-                    <div class="diagram-node">Human Intent</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">Command</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">AI Agent Orchestration</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">Smart Hand Infrastructure</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">Verification</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">Economic Outcome</div>
-                </div>
-            </div>
+      <section class="section-shell reveal cta-banner" id="about-reference">
+        <div class="cta-inner">
+          <p class="section-pill">About This Reference</p>
+          <h2>About This Reference</h2>
+          <p class="text-muted mb-3">This glossary organizes concepts used in OUAMARKOM™'s research into AI economic actions, governance, execution, and the verification of outcomes.</p>
+          <p class="text-muted mb-3">CE-AI is a developing research and analytical framework. Smart Hand, GEAB, and CEP are research or engineering assets and methods at different stages of development, as described in their respective entries.</p>
+          <p class="text-muted mb-3">GCEAR is a proposed research initiative whose legal status, governance, institutional independence, and operational arrangements must be established separately.</p>
+          <p class="highlight-text mb-3"><bdi dir="ltr" lang="en">OUAMARKOM™</bdi><br /><bdi dir="ltr" lang="en">Building the Evidence Base for Governed AI Economic Execution.</bdi></p>
+          <div class="btn-group">
+            <a class="btn btn-primary" href="/en/" hreflang="en" lang="en">Home</a>
+            <a class="btn btn-secondary-outline" href="/glossary" hreflang="ar" lang="ar">العربية</a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-            <h4 class="property-label">Related Terms</h4>
-            <p><a href="#ai-execution-infrastructure">AI Execution Infrastructure</a> | <a href="#verification">Verification</a> | <a href="#decision-memory">Decision Memory</a></p>
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-shell">
+        <div class="footer-card">
+          <h2>Ouamarkom</h2>
+          <p>
+            A research and engineering company exploring the infrastructure required for governed AI economic agency.
+          </p>
+          <blockquote class="footer-motto">
+            "We preserve the work.<br />
+            We reclassify the claims.<br />
+            We test the hypotheses.<br />
+            We follow the evidence.<br />
+            And we build what reality requires."
+          </blockquote>
+          <div class="social-flex">
+            <a href="https://linkedin.com/company/ouamarkom" class="social-circle" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://x.com/ouamarkom" class="social-circle" title="X Platform" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg>
+            </a>
+            <a href="https://facebook.com/ouamarkom" class="social-circle" title="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+            </a>
+            <a href="https://instagram.com/ouamarkom" class="social-circle" title="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://wa.me/966578061018" class="social-circle" title="WhatsApp" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M12.012 2c-5.506 0-9.969 4.463-9.969 9.969 0 1.763.459 3.483 1.332 5.004L2 22l5.161-1.354c1.472.803 3.134 1.226 4.85 1.226 5.508 0 9.971-4.463 9.971-9.969 0-5.506-4.463-9.969-9.97-9.969zm0 18.271c-1.498 0-2.966-.403-4.246-1.164l-.305-.181-3.15.826.84-3.071-.199-.316c-.837-1.33-1.28-2.875-1.28-4.465 0-4.557 3.708-8.265 8.266-8.265 4.556 0 8.264 3.708 8.264 8.265 0 4.558-3.708 8.264-8.264 8.264zm4.536-6.19c-.249-.125-1.472-.726-1.7-.809-.228-.083-.394-.125-.56.125-.167.249-.644.809-.789.975-.145.166-.291.187-.54.062s-1.05-.387-2.001-1.234c-.74-.66-1.24-1.474-1.385-1.723-.145-.249-.016-.384.109-.508.113-.112.249-.291.374-.436.124-.145.166-.249.249-.415.083-.166.042-.312-.021-.436-.062-.125-.56-1.351-.768-1.85-.202-.486-.408-.419-.56-.427h-.478c-.166 0-.436.062-.664.312s-.872.851-.872 2.074.892 2.407 1.017 2.573c.125.166 1.756 2.681 4.254 3.761.594.257 1.058.411 1.42.526.597.19 1.14.163 1.57.099.479-.071 1.472-.602 1.679-1.183.208-.581.208-1.079.145-1.183-.062-.104-.228-.187-.477-.312z"/></svg>
+            </a>
+          </div>
         </div>
 
-        <!-- Concept 11: Verification -->
-        <div class="concept-segment" id="verification">
-            <h3 class="concept-term-title">11. Verification</h3>
-            
-            <h4 class="property-label">Official Definition</h4>
-            <p>Verification is the process of evaluating whether an executed action or produced result satisfies the intended objective, required conditions, and defined constraints.</p>
-
-            <h4 class="property-label">Execution vs. Verification</h4>
-            <p><strong>Execution</strong> confirms that an action was taken, while <strong>Verification</strong> answers: <em>Did the requested execution actually occur as expected, and does the result match the defined criteria?</em></p>
-
-            <h4 class="property-label">Related Terms</h4>
-            <p><a href="#ai-execution-infrastructure">AI Execution Infrastructure</a> | <a href="#outcome">Outcome</a> | <a href="#smart-hand-infrastructure">Smart Hand Infrastructure</a></p>
+        <div class="footer-card">
+          <h3>Explore the Research</h3>
+          <ul class="footer-links-list">
+            <li><a href="/en/framework/">CE-AI™ Framework</a></li>
+            <li><a href="/en/research">Research Hub</a></li>
+            <li><a href="/en/canonical-reference/">Canonical Reference</a></li>
+            <li><a href="/en/evolution/">Evolution Archive</a></li>
+            <li><a href="/en/glossary/">Glossary</a></li>
+            <li><a href="/en/whitepaper/">Whitepaper</a></li>
+          </ul>
         </div>
 
-        <!-- Concept 12: Outcome -->
-        <div class="concept-segment" id="outcome">
-            <h3 class="concept-term-title">12. Outcome</h3>
-            
-            <h4 class="property-label">Official Definition</h4>
-            <p>An Outcome is the final verifiable output produced after the completion of an intelligent execution process. It represents the achievement of a goal rather than merely providing information.</p>
-
-            <h4 class="property-label">Conceptual Diagram</h4>
-            <div class="visual-diagram-box">
-                <div class="diagram-flow">
-                    <div class="diagram-node">Execution</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">Verification</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">Outcome</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">Economic Value</div>
-                </div>
-            </div>
-
-            <h4 class="property-label">Related Terms</h4>
-            <p><a href="#verification">Verification</a> | <a href="#economic-outcome">Economic Outcome</a> | <a href="#human-intent">Human Intent</a></p>
+        <div class="footer-card">
+          <h3>Ouamarkom</h3>
+          <ul class="footer-links-list">
+            <li><a href="/en/about/">About Ouamarkom</a></li>
+            <li><a href="/en/vision/">Vision</a></li>
+            <li><a href="/en/founder/">Founder</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/en/intellectual-property/">Intellectual Property</a></li>
+            <li><a href="mailto:contact@ouamarkom.com">Contact Us</a></li>
+          </ul>
         </div>
+      </div>
 
-        <!-- Concept 13: Economic Outcome -->
-        <div class="concept-segment" id="economic-outcome">
-            <h3 class="concept-term-title">13. Economic Outcome</h3>
-            
-            <h4 class="property-label">Official Definition</h4>
-            <p>An Economic Outcome is the measurable value and practical business impact generated after execution and verification are completed within the economic environment.</p>
-
-            <h4 class="property-label">Related Terms</h4>
-            <p><a href="#outcome">Outcome</a> | <a href="#verification">Verification</a> | <a href="#decision-memory">Decision Memory</a></p>
-        </div>
-
-        <!-- Concept 14: Decision Memory -->
-        <div class="concept-segment" id="decision-memory">
-            <h3 class="concept-term-title">14. Decision Memory</h3>
-            
-            <h4 class="property-label">Official Definition</h4>
-            <p>Decision Memory is the structured retention of relevant decisions, execution context, outcomes, and lessons that can inform future planning, coordination, and execution.</p>
-
-            <h4 class="property-label">Related Terms</h4>
-            <p><a href="#economic-outcome">Economic Outcome</a> | <a href="#verification">Verification</a> | <a href="#smart-hand-infrastructure">Smart Hand Infrastructure</a></p>
-        </div>
-
-    </section>
-
-    <!-- Structured Categories for Concept Exploration -->
-    <section class="manifesto-card reveal-card">
-        <h2>Explore More Concepts</h2>
-        
-        <div class="category-group-title">Core Concepts</div>
-        <div class="grid-tags-layout">
-            <a href="#human-intent" class="tag-node-item">Human Intent</a>
-            <a href="#command" class="tag-node-item">Command</a>
-            <a href="#intent-understanding" class="tag-node-item">Intent Understanding</a>
-            <a href="#language-interface" class="tag-node-item">Language Interface</a>
-        </div>
-
-        <div class="category-group-title">Architecture Concepts</div>
-        <div class="grid-tags-layout">
-            <a href="#planning" class="tag-node-item">Planning</a>
-            <a href="#ai-agent" class="tag-node-item">AI Agent</a>
-            <a href="#agent-orchestration" class="tag-node-item">Agent Orchestration</a>
-            <a href="#workflow" class="tag-node-item">Workflow</a>
-            <a href="#ai-execution-infrastructure" class="tag-node-item">AI Execution Infrastructure</a>
-            <a href="#smart-hand-infrastructure" class="tag-node-item">Smart Hand Infrastructure</a>
-        </div>
-
-        <div class="category-group-title">Economic Concepts</div>
-        <div class="grid-tags-layout">
-            <a href="#outcome" class="tag-node-item">Outcome</a>
-            <a href="#economic-outcome" class="tag-node-item">Economic Outcome</a>
-            <a href="#decision-memory" class="tag-node-item">Decision Memory</a>
-        </div>
-
-        <div class="category-group-title">Governance & Control</div>
-        <div class="grid-tags-layout">
-            <a href="#verification" class="tag-node-item">Verification</a>
-            <span class="tag-node-item">Human Oversight</span>
-            <span class="tag-node-item">Human-in-the-Loop</span>
-            <span class="tag-node-item">Verifiable Execution</span>
-        </div>
-
-        <div class="category-group-title">Related Concepts</div>
-        <div class="grid-tags-layout">
-            <span class="tag-node-item">Autonomous Coordination</span>
-            <span class="tag-node-item">Intent-Driven Systems</span>
-            <span class="tag-node-item">Natural Language Computing</span>
-            <span class="tag-node-item">Digital Production</span>
-        </div>
-    </section>
-
-    <!-- Knowledge Graph Card -->
-    <section class="manifesto-card reveal-card">
-        <h2>Knowledge Graph Architecture</h2>
-        <p>The concepts in this glossary are organized as an interconnected conceptual framework rather than as isolated definitions. Their relationships describe how human intent, commands, intelligent systems, execution infrastructure, verification, and outcomes interact within the Command Economy of AI (CE-AI).</p>
-    </section>
-
-</main>
-
-<footer class="site-footer">
-    <div class="footer-bottom-container" dir="ltr">
+      <div class="footer-bottom container" dir="ltr">
         <p>© 2026 Ouamarkom. All Rights Reserved.</p>
         <div class="footer-legal-links">
-            <a href="/en/intellectual-property/">Intellectual Property</a>
-            <span class="footer-legal-separator">·</span>
-            <a href="mailto:contact@ouamarkom.com">Contact</a>
+          <a href="/en/intellectual-property/">Intellectual Property</a>
+          <span class="footer-legal-separator">·</span>
+          <a href="mailto:contact@ouamarkom.com">Contact</a>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<script src="/script.js" defer></script>
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const revealCards = document.querySelectorAll('.reveal-card');
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                    revealObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.05, rootMargin: "0px 0px -20px 0px" });
-
-        revealCards.forEach(card => revealObserver.observe(card));
-    });
-</script>
-</body>
+    <script src="/script.js" defer></script>
+  </body>
 </html>

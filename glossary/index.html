@@ -1,1068 +1,2215 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>قاموس المصطلحات الرسمي | اقتصاد الأوامر للذكاء الاصطناعي - أوامركم</title>
-    <meta name="description" content="القاموس الرسمي لمفاهيم ومصطلحات اقتصاد الأوامر للذكاء الاصطناعي (CE-AI)، بما يشمل النية، الأوامر، فهم النية، التخطيط، الوكلاء، التنفيذ، التحقق، والنتائج الاقتصادية.">
-    <meta name="keywords" content="اقتصاد الأوامر للذكاء الاصطناعي, CE-AI, قاموس الذكاء الاصطناعي, النية, الأمر, فهم النية, التخطيط, وكيل الذكاء الاصطناعي, تنسيق الوكلاء, التنفيذ, البنية التحتية لتنفيذ الذكاء الاصطناعي, Smart Hand Infrastructure, التحقق, النتيجة الاقتصادية, أوامركم">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Hreflang & Canonical -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>قاموس المصطلحات | اقتصاد الأوامر للذكاء الاصطناعي - أوامركم</title>
+
+    <meta name="description" content="قاموس أوامركم™ للمفاهيم المرتبطة باقتصاد الأوامر للذكاء الاصطناعي (CE-AI)، والوكالة الاقتصادية، والسلطة والتفويض، والحوكمة، والتنفيذ، والأدلة، والتحقق من النتائج الاقتصادية." />
+    <meta name="keywords" content="CE-AI، اقتصاد الأوامر للذكاء الاصطناعي، الوكالة الاقتصادية للذكاء الاصطناعي، الفعل الاقتصادي، سلطة التنفيذ، التفويض، حوكمة الذكاء الاصطناعي، التنفيذ المحكوم، أدلة التنفيذ، Smart Hand، GEAB، CEP، أوامركم" />
+    <meta name="robots" content="index, follow" />
+
     <link rel="canonical" href="https://ouamarkom.com/glossary" />
     <link rel="alternate" hreflang="ar" href="https://ouamarkom.com/glossary" />
     <link rel="alternate" hreflang="en" href="https://ouamarkom.com/en/glossary/" />
     <link rel="alternate" hreflang="x-default" href="https://ouamarkom.com/glossary" />
-    
-    <!-- Open Graph / Facebook -->
+
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preload" as="image" href="/logo.webp" imagesrcset="/logo.webp" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="قاموس أوامركم للمصطلحات البحثية والهندسية" />
+    <meta name="twitter:description" content="المفاهيم والعلاقات الأساسية في أبحاث أوامركم حول حوكمة الأفعال الاقتصادية للذكاء الاصطناعي وتنفيذها والتحقق من نتائجها." />
+    <meta name="twitter:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg" />
+    <meta name="theme-color" content="#040916" />
+
     <meta property="og:site_name" content="أوامركم | Ouamarkom" />
+    <meta property="og:url" content="https://ouamarkom.com/glossary" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="قاموس المصطلحات الرسمي | اقتصاد الأوامر للذكاء الاصطناعي" />
-    <meta property="og:description" content="القاموس الرسمي لمفاهيم ومصطلحات اقتصاد الأوامر للذكاء الاصطناعي (CE-AI) والبنية التحتية لتنفيذ الذكاء الاصطناعي." />
+    <meta property="og:title" content="قاموس المصطلحات | اقتصاد الأوامر للذكاء الاصطناعي" />
+    <meta property="og:description" content="استكشف المفاهيم البحثية والهندسية التي تستخدمها أوامركم لدراسة الأفعال الاقتصادية للذكاء الاصطناعي، من القدرة والسلطة والتفويض إلى التنفيذ والأدلة والنتائج القابلة للتحقق." />
     <meta property="og:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg" />
-    <meta property="og:url" content="https://ouamarkom.com/glossary/" />
-    <meta property="og:locale" content="ar_SA" />
+    <meta property="og:locale" content="ar_AR" />
     <meta property="og:locale:alternate" content="en_US" />
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="قاموس المصطلحات الرسمي | اقتصاد الأوامر للذكاء الاصطناعي">
-    <meta name="twitter:description" content="القاموس الرسمي لمفاهيم ومصطلحات اقتصاد الأوامر للذكاء الاصطناعي والبنية التحتية لليد الذكية.">
-    <meta name="twitter:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg">
-    <meta name="theme-color" content="#040916">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/main.css" />
 
-    <!-- SEO Schema Markup -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "WebPage",
+      "@id": "https://ouamarkom.com/glossary#webpage",
+      "url": "https://ouamarkom.com/glossary",
+      "name": "قاموس المصطلحات | اقتصاد الأوامر للذكاء الاصطناعي",
+      "description": "قاموس أوامركم™ للمفاهيم المرتبطة باقتصاد الأوامر للذكاء الاصطناعي (CE-AI)، والوكالة الاقتصادية، والسلطة والتفويض، والحوكمة، والتنفيذ، والأدلة، والتحقق من النتائج الاقتصادية.",
+      "inLanguage": "ar",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Ouamarkom",
+        "url": "https://ouamarkom.com/"
+      },
+      "about": {
+        "@id": "https://ouamarkom.com/#organization"
+      },
+      "breadcrumb": {
+        "@id": "https://ouamarkom.com/glossary#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://ouamarkom.com/glossary#termset"
+      }
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://ouamarkom.com/glossary#termset",
+      "name": "قاموس المصطلحات | اقتصاد الأوامر للذكاء الاصطناعي",
+      "description": "قاموس أوامركم™ للمفاهيم المرتبطة باقتصاد الأوامر للذكاء الاصطناعي (CE-AI)، والوكالة الاقتصادية، والسلطة والتفويض، والحوكمة، والتنفيذ، والأدلة، والتحقق من النتائج الاقتصادية.",
+      "url": "https://ouamarkom.com/glossary",
+      "inLanguage": "ar",
+      "publisher": {
+        "@id": "https://ouamarkom.com/#organization"
+      },
+      "hasDefinedTerm": [
         {
-          "@type": "WebPage",
-          "@id": "https://ouamarkom.com/glossary/#webpage",
-          "url": "https://ouamarkom.com/glossary/",
-          "name": "قاموس المصطلحات الرسمي | اقتصاد الأوامر للذكاء الاصطناعي",
-          "description": "القاموس الرسمي لمفاهيم ومصطلحات اقتصاد الأوامر للذكاء الاصطناعي (CE-AI).",
-          "inLanguage": "ar"
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#ce-ai",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "ce-ai",
+          "name": "اقتصاد الأوامر للذكاء الاصطناعي",
+          "description": "إطار بحثي وتحليلي تطوره أوامركم لدراسة الأفعال الاقتصادية التي تنفذها أنظمة الذكاء الاصطناعي أو تشارك فيها، والعلاقات بين الأوامر والقدرة والسلطة والتفويض والحوكمة والتنفيذ والأدلة والنتائج الاقتصادية.",
+          "url": "https://ouamarkom.com/glossary#ce-ai",
+          "alternateName": "Command Economy of AI (CE-AI)"
         },
         {
-          "@type": "DefinedTermSet",
-          "@id": "https://ouamarkom.com/glossary/#termset",
-          "name": "قاموس اقتصاد الأوامر للذكاء الاصطناعي",
-          "description": "الرسم البياني المعرفي والقاموس الرسمي الموحد لإطار اقتصاد الأوامر للذكاء الاصطناعي (CE-AI).",
-          "url": "https://ouamarkom.com/glossary/",
-          "inLanguage": "ar",
-          "publisher": {
-            "@type": "Organization",
-            "name": "أوامركم",
-            "url": "https://ouamarkom.com/"
-          },
-          "hasDefinedTerm": [
-            {
-              "@type": "DefinedTerm",
-              "name": "النية البشرية",
-              "termCode": "intent",
-              "description": "الهدف أو المقصد النهائي الذي يعبر عنه الإنسان ويبدأ منه سير العمل الذكي.",
-              "url": "https://ouamarkom.com/glossary/#intent"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "الأمر",
-              "termCode": "command",
-              "description": "التعبير التنفيذي الصريح عن النية الذي يوجه النظام الذكي لبدء عملية العمل.",
-              "url": "https://ouamarkom.com/glossary/#command"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "فهم النية",
-              "termCode": "intent-understanding",
-              "description": "تحليل الأمر اللغوي وتفكيك مقاصده وسياقه وتحويله إلى تمثيل برمجي.",
-              "url": "https://ouamarkom.com/glossary/#intent-understanding"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "التخطيط",
-              "termCode": "planning",
-              "description": "تحديد تسلسل الإجراءات والمهام الفرعية والأدوات اللازمة لتحقيق الهدف.",
-              "url": "https://ouamarkom.com/glossary/#planning"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "واجهة اللغة",
-              "termCode": "language-interface",
-              "description": "طبقة التفاعل التي تمكن الإنسان من التواصل مع الأنظمة الرقمية عبر اللغة الطبيعية.",
-              "url": "https://ouamarkom.com/glossary/#language-interface"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "وكيل الذكاء الاصطناعي",
-              "termCode": "ai-agent",
-              "description": "كيان برمجي ذكي يتولى التخطيط واستخدام الأدوات وتنفيذ المهام بمرونة وتكيف.",
-              "url": "https://ouamarkom.com/glossary/#ai-agent"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "تنسيق الوكلاء",
-              "termCode": "agent-orchestration",
-              "description": "إدارة وإشراف العلاقات المتبادلة والاعتماديات بين عدة وكلاء وأدوات متفرقة.",
-              "url": "https://ouamarkom.com/glossary/#agent-orchestration"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "سير العمل",
-              "termCode": "workflow",
-              "description": "المسار الهيكلي المترابط الذي يحدد خطوات وشروط إتمام المهام داخل محرك التنفيذ.",
-              "url": "https://ouamarkom.com/glossary/#workflow"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "التنفيذ",
-              "termCode": "execution",
-              "description": "الإجراء العملي أو السلسلة التشغيلية التي تطبق خطة العمل وتحدث تغييراً فعلياً.",
-              "url": "https://ouamarkom.com/glossary/#execution"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "البنية التحتية لتنفيذ الذكاء الاصطناعي",
-              "termCode": "ai-execution-infrastructure",
-              "description": "المنظومة التقنية التشغيلية التي تمكن الأنظمة الذكية من تحويل الأوامر إلى عمليات ملموسة.",
-              "url": "https://ouamarkom.com/glossary/#ai-execution-infrastructure"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "البنية التحتية لليد الذكية",
-              "termCode": "smart-hand-infrastructure",
-              "description": "المعمارية التنفيذية المقترحة داخل CE-AI التي تربط التخطيط والوكلاء بالأنظمة المؤسسية.",
-              "url": "https://ouamarkom.com/glossary/#smart-hand"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "التحقق",
-              "termCode": "verification",
-              "description": "عملية تقييم مطابقة النتائج المنفذة للهدف والشروط والمحددات المطلوبة.",
-              "url": "https://ouamarkom.com/glossary/#verification"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "النتيجة",
-              "termCode": "outcome",
-              "description": "المخرج القابل للتحقق الممثل لما تحقق فعلياً مقارنة بالهدف المحدد.",
-              "url": "https://ouamarkom.com/glossary/#outcome"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "النتيجة الاقتصادية",
-              "termCode": "economic-outcome",
-              "description": "الأثر المادي والقيمة التشغيلية المقاسة والمتحققة في بيئة الأعمال الفعلية.",
-              "url": "https://ouamarkom.com/glossary/#economic-outcome"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "ذاكرة القرار",
-              "termCode": "decision-memory",
-              "description": "السجل المعرفي الهيكلي للقرارات والسياقات والنتائج المكتسبة لتحسين التنفيذ المستقبلي.",
-              "url": "https://ouamarkom.com/glossary/#decision-memory"
-            }
-          ]
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#ai-economic-action",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "ai-economic-action",
+          "name": "الفعل الاقتصادي للذكاء الاصطناعي",
+          "description": "إجراء ينفذه نظام ذكاء اصطناعي أو يساهم في تنفيذه، ويؤثر في الموارد أو المعاملات أو الالتزامات أو الأسعار أو المشتريات أو القرارات ذات الأثر الاقتصادي.",
+          "url": "https://ouamarkom.com/glossary#ai-economic-action",
+          "alternateName": "AI Economic Action"
         },
         {
-          "@type": "Organization",
-          "name": "أوامركم",
-          "url": "https://ouamarkom.com/",
-          "logo": "https://ouamarkom.com/logo.webp",
-          "sameAs": [
-            "https://linkedin.com/company/ouamarkom"
-          ]
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#technical-capability",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "technical-capability",
+          "name": "القدرة التقنية",
+          "description": "مجموعة الإمكانات التي تمكّن نظاماً من أداء مهمة معينة، مثل التحليل أو التخطيط أو استخدام أداة أو استدعاء واجهة برمجية.",
+          "url": "https://ouamarkom.com/glossary#technical-capability",
+          "alternateName": "Technical Capability"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#human-intent",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "human-intent",
+          "name": "النية البشرية",
+          "description": "الهدف أو المقصد الذي يريد الإنسان تحقيقه، كما يعبّر عنه أو يُستدل عليه من السياق.",
+          "url": "https://ouamarkom.com/glossary#human-intent",
+          "alternateName": "Human Intent"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#command",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "command",
+          "name": "الأمر",
+          "description": "تعليمات أو طلب يوجّه نظاماً إلى أداء مهمة أو السعي لتحقيق هدف محدد.",
+          "url": "https://ouamarkom.com/glossary#command",
+          "alternateName": "Command"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#intent-understanding",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "intent-understanding",
+          "name": "فهم النية",
+          "description": "عملية تفسير هدف المستخدم وتعليماته والسياق والقيود ذات الصلة، للوصول إلى تمثيل مناسب للمهمة المطلوبة.",
+          "url": "https://ouamarkom.com/glossary#intent-understanding",
+          "alternateName": "Intent Understanding"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#language-interface",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "language-interface",
+          "name": "واجهة اللغة",
+          "description": "وسيلة تفاعل تتيح للمستخدم تقديم التعليمات أو الأهداف باستخدام اللغة الطبيعية.",
+          "url": "https://ouamarkom.com/glossary#language-interface",
+          "alternateName": "Language Interface"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#ai-economic-agency",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "ai-economic-agency",
+          "name": "الوكالة الاقتصادية للذكاء الاصطناعي",
+          "description": "قدرة نظام الذكاء الاصطناعي، ضمن بيئة معينة، على المشاركة في أفعال تؤثر في الموارد أو المعاملات أو الالتزامات أو النتائج الاقتصادية، بدرجات متفاوتة من الاستقلالية والتفويض.",
+          "url": "https://ouamarkom.com/glossary#ai-economic-agency",
+          "alternateName": "AI Economic Agency"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#authority",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "authority",
+          "name": "السلطة",
+          "description": "الحق أو الصلاحية الممنوحة لجهة أو نظام لاتخاذ قرار أو السماح بإجراء ضمن نطاق محدد، وفق القواعد والتفويضات المعمول بها.",
+          "url": "https://ouamarkom.com/glossary#authority",
+          "alternateName": "Authority"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#delegated-authority",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "delegated-authority",
+          "name": "التفويض",
+          "description": "منح صلاحية محددة إلى وكيل أو نظام لتنفيذ أفعال أو اتخاذ قرارات ضمن نطاق وشروط وحدود معينة.",
+          "url": "https://ouamarkom.com/glossary#delegated-authority",
+          "alternateName": "Delegated Authority"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#authority-boundary",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "authority-boundary",
+          "name": "حدود السلطة",
+          "description": "الحدود التي تفصل بين الأفعال المسموح بها للوكيل والأفعال التي تتطلب موافقة إضافية أو تكون غير مسموحة.",
+          "url": "https://ouamarkom.com/glossary#authority-boundary",
+          "alternateName": "Authority Boundary"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#governance",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "governance",
+          "name": "الحوكمة",
+          "description": "مجموعة القواعد والمسؤوليات وآليات اتخاذ القرار والمراجعة التي تنظّم كيفية استخدام الأنظمة والصلاحيات، وكيفية التعامل مع المخاطر والاستثناءات والتغييرات.",
+          "url": "https://ouamarkom.com/glossary#governance",
+          "alternateName": "Governance"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#human-oversight",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "human-oversight",
+          "name": "الإشراف البشري",
+          "description": "القدرة العملية للأشخاص المخولين على مراجعة قرارات النظام أو اعتمادها أو رفضها أو إيقافها، وفق نطاق واضح من المسؤوليات.",
+          "url": "https://ouamarkom.com/glossary#human-oversight",
+          "alternateName": "Human Oversight"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#hitl",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "hitl",
+          "name": "الإنسان داخل الحلقة",
+          "description": "نمط تشغيل يشارك فيه الإنسان في نقطة أو أكثر من دورة عمل النظام، مثل اعتماد إجراء أو مراجعة نتيجة أو التعامل مع حالة استثنائية.",
+          "url": "https://ouamarkom.com/glossary#hitl",
+          "alternateName": "Human-in-the-Loop (HITL)"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#revocation-of-authority",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "revocation-of-authority",
+          "name": "سحب التفويض",
+          "description": "إلغاء أو إنهاء الصلاحية التي سبق منحها لنظام أو وكيل، بحيث لا يعود مخولاً بتنفيذ الأفعال المشمولة بالتفويض المسحوب.",
+          "url": "https://ouamarkom.com/glossary#revocation-of-authority",
+          "alternateName": "Revocation of Authority"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#planning",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "planning",
+          "name": "التخطيط",
+          "description": "عملية تحديد الإجراءات والموارد والاعتماديات اللازمة لتحقيق هدف، مع مراعاة القيود والمعلومات المتاحة.",
+          "url": "https://ouamarkom.com/glossary#planning",
+          "alternateName": "Planning"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#ai-agent",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "ai-agent",
+          "name": "وكيل الذكاء الاصطناعي",
+          "description": "نظام يستخدم قدرات الذكاء الاصطناعي لتحقيق هدف أو أداء مهمة، وقد يتضمن تخطيطاً أو استخدام أدوات أو تفاعلاً مع أنظمة أخرى بحسب تصميمه.",
+          "url": "https://ouamarkom.com/glossary#ai-agent",
+          "alternateName": "AI Agent"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#agent-orchestration",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "agent-orchestration",
+          "name": "تنسيق الوكلاء",
+          "description": "تنظيم التفاعل والاعتماديات وتبادل البيانات بين عدة وكلاء أو أدوات أو خدمات لتحقيق مهمة مشتركة.",
+          "url": "https://ouamarkom.com/glossary#agent-orchestration",
+          "alternateName": "Agent Orchestration"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#workflow",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "workflow",
+          "name": "سير العمل",
+          "description": "مجموعة خطوات مترابطة وقواعد انتقال تحدد كيفية تقدم المهمة من حالة إلى أخرى.",
+          "url": "https://ouamarkom.com/glossary#workflow",
+          "alternateName": "Workflow"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#execution",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "execution",
+          "name": "التنفيذ",
+          "description": "تنفيذ إجراء أو سلسلة إجراءات داخل بيئة تشغيلية وفق تعليمات وشروط محددة.",
+          "url": "https://ouamarkom.com/glossary#execution",
+          "alternateName": "Execution"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#execution-control",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "execution-control",
+          "name": "التحكم في التنفيذ",
+          "description": "الآليات التي تتحكم في السماح بالإجراءات التشغيلية أو منعها أو تعليقها أو إعادة التحقق منها وفق الصلاحيات والسياسات والشروط ذات الصلة.",
+          "url": "https://ouamarkom.com/glossary#execution-control",
+          "alternateName": "Execution Control"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#governed-execution",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "governed-execution",
+          "name": "التنفيذ المحكوم",
+          "description": "تنفيذ الأفعال ضمن ضوابط السلطة والسياسات والموافقات والشروط التشغيلية ذات الصلة، مع إمكانية تقييم مدى الالتزام بهذه المتطلبات استناداً إلى أدلة مناسبة.",
+          "url": "https://ouamarkom.com/glossary#governed-execution",
+          "alternateName": "Governed Execution"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#event-log",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "event-log",
+          "name": "سجل الأحداث",
+          "description": "سجل منظم للأحداث التشغيلية ذات الصلة، مع الطوابع الزمنية والمعرفات والحالات والبيانات اللازمة لفهم تسلسل التنفيذ.",
+          "url": "https://ouamarkom.com/glossary#event-log",
+          "alternateName": "Event Log"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#execution-evidence",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "execution-evidence",
+          "name": "أدلة التنفيذ",
+          "description": "البيانات والسجلات والمراجع التي تدعم ادعاءً محدداً بشأن إجراء أو حالة تشغيلية.",
+          "url": "https://ouamarkom.com/glossary#execution-evidence",
+          "alternateName": "Execution Evidence"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#verification",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "verification",
+          "name": "التحقق",
+          "description": "عملية فحص الأدلة لتحديد ما إذا كان ادعاء أو إجراء أو مخرج يطابق شروطاً ومعايير محددة مسبقاً.",
+          "url": "https://ouamarkom.com/glossary#verification",
+          "alternateName": "Verification"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#outcome",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "outcome",
+          "name": "النتيجة",
+          "description": "الحالة أو التغيير الذي تحقق فعلياً بعد إجراء أو سلسلة إجراءات، مقارنة بالحالة المطلوبة أو المرجعية.",
+          "url": "https://ouamarkom.com/glossary#outcome",
+          "alternateName": "Outcome"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#economic-outcome",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "economic-outcome",
+          "name": "النتيجة الاقتصادية",
+          "description": "الأثر الاقتصادي القابل للرصد أو القياس الذي يرتبط بفعل أو قرار، مثل تغير التكلفة أو الإيراد أو استخدام الموارد أو الالتزام المالي أو التعرض للمخاطر.",
+          "url": "https://ouamarkom.com/glossary#economic-outcome",
+          "alternateName": "Economic Outcome"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#economic-exposure",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "economic-exposure",
+          "name": "التعرض الاقتصادي",
+          "description": "القيمة المالية أو الاقتصادية المحتملة التي قد تتأثر بفعل أو إخفاق أو قرار، ضمن سيناريو وحدود وافتراضات محددة.",
+          "url": "https://ouamarkom.com/glossary#economic-exposure",
+          "alternateName": "Economic Exposure"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#evidence-package",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "evidence-package",
+          "name": "حزمة الأدلة",
+          "description": "مجموعة منظمة من مواد التجربة اللازمة لمراجعة النتيجة، مثل وصف الاختبار، ونسخة النظام، والبيانات الخام، وتعريف المقاييس، والحسابات، والقيود، وسجل القرار.",
+          "url": "https://ouamarkom.com/glossary#evidence-package",
+          "alternateName": "Evidence Package"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#reproducibility",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "reproducibility",
+          "name": "قابلية التكرار",
+          "description": "إمكان إعادة تنفيذ تجربة أو إعادة تحليل بياناتها وفق وصف وإجراءات ومواد موثقة، للتحقق من النتائج ضمن الظروف المحددة.",
+          "url": "https://ouamarkom.com/glossary#reproducibility",
+          "alternateName": "Reproducibility"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#decision-memory",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "decision-memory",
+          "name": "ذاكرة القرار",
+          "description": "سجل منظم للقرارات السابقة وأسبابها والأدلة التي دعمتها والنتائج والقيود والدروس المستفادة منها.",
+          "url": "https://ouamarkom.com/glossary#decision-memory",
+          "alternateName": "Decision Memory"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#smart-hand",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "smart-hand",
+          "name": "Smart Hand™",
+          "description": "بيئة تجريبية مضبوطة تعمل أوامركم على تطويرها لاختبار وقياس وتوثيق الأفعال الاقتصادية التي تنفذها أنظمة الذكاء الاصطناعي أو تشارك فيها، مع التركيز على السلطة والتفويض والتحكم في التنفيذ والأدلة والنتائج.",
+          "url": "https://ouamarkom.com/glossary#smart-hand",
+          "alternateName": "Smart Hand Experimental Environment"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#geab",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "geab",
+          "name": "GEAB",
+          "description": "إطار تقييم قيد التطوير لتنظيم سيناريوهات واختبارات ومقاييس تساعد على دراسة سلوك أنظمة الذكاء الاصطناعي في الأفعال الاقتصادية المحكومة.",
+          "url": "https://ouamarkom.com/glossary#geab",
+          "alternateName": "Governed Economic Action Benchmark"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#cep",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "cep",
+          "name": "CEP™",
+          "description": "بروتوكول تنفيذي قيد التطوير ضمن أبحاث أوامركم، يهدف إلى اختبار طرق ربط الأوامر والتفويضات وضوابط الحوكمة بعملية التنفيذ وحدودها التشغيلية.",
+          "url": "https://ouamarkom.com/glossary#cep",
+          "alternateName": "Command Execution Protocol"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#ai-execution-infrastructure",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "ai-execution-infrastructure",
+          "name": "البنية التحتية لتنفيذ الذكاء الاصطناعي",
+          "description": "مجموعة المكونات والآليات التقنية والتشغيلية التي تمكّن أنظمة الذكاء الاصطناعي من التفاعل مع الأدوات والخدمات والأنظمة الخارجية وتنفيذ إجراءات ضمن بيئة محددة.",
+          "url": "https://ouamarkom.com/glossary#ai-execution-infrastructure",
+          "alternateName": "AI Execution Infrastructure"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#architecture",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "architecture",
+          "name": "البنية المعمارية",
+          "description": "تنظيم المكونات والواجهات والمسؤوليات والتدفقات والقيود التي تحدد كيفية عمل النظام وتفاعله مع بيئته.",
+          "url": "https://ouamarkom.com/glossary#architecture",
+          "alternateName": "Architecture"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#gcear",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "gcear",
+          "name": "GCEAR",
+          "description": "مبادرة أو مركز بحثي مقترح يهدف إلى تنظيم البحث في الأفعال الاقتصادية للذكاء الاصطناعي، وتطوير المنهجيات، وتنسيق التعاون، وتعزيز جودة الأدلة وإمكان إعادة التجربة.",
+          "url": "https://ouamarkom.com/glossary#gcear",
+          "alternateName": "Global Center for Economic Action Research"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#metrics",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "metrics",
+          "name": "المقاييس",
+          "description": "مؤشرات كمية أو نوعية تُستخدم لتقييم جانب محدد من سلوك النظام أو أداء الضوابط أو نتائج التجربة.",
+          "url": "https://ouamarkom.com/glossary#metrics",
+          "alternateName": "Metrics"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#baseline",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "baseline",
+          "name": "خط الأساس",
+          "description": "الحالة المرجعية التي تُقارن بها نتيجة تدخل أو تغيير، مثل أداء الضوابط الموجودة قبل إدخال آلية جديدة.",
+          "url": "https://ouamarkom.com/glossary#baseline",
+          "alternateName": "Baseline"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#controlled-experiment",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "controlled-experiment",
+          "name": "التجربة المضبوطة",
+          "description": "اختبار يُحدد مسبقاً فيه السيناريو والمتغيرات والشروط وطريقة القياس، مع ضبط العوامل التي قد تؤثر في تفسير النتائج قدر الإمكان.",
+          "url": "https://ouamarkom.com/glossary#controlled-experiment",
+          "alternateName": "Controlled Experiment"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#generalizability",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "generalizability",
+          "name": "قابلية التعميم",
+          "description": "مدى إمكان تطبيق استنتاجات تجربة على أنظمة أو ظروف أو مؤسسات أخرى غير الظروف التي اختُبرت مباشرة.",
+          "url": "https://ouamarkom.com/glossary#generalizability",
+          "alternateName": "Generalizability"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#engineering-intervention",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "engineering-intervention",
+          "name": "التدخل الهندسي",
+          "description": "تغيير تقني أو تشغيلي يُدخل بهدف معالجة إخفاق أو تحسين نتيجة محددة.",
+          "url": "https://ouamarkom.com/glossary#engineering-intervention",
+          "alternateName": "Engineering Intervention"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#economic-value",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "economic-value",
+          "name": "القيمة الاقتصادية",
+          "description": "المنفعة التي تتحقق من حل أو إجراء مقارنة بتكلفته ومخاطره وبدائله، وفق سياق ومقاييس محددة.",
+          "url": "https://ouamarkom.com/glossary#economic-value",
+          "alternateName": "Economic Value"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://ouamarkom.com/glossary#evidence-before-architecture",
+          "inDefinedTermSet": "https://ouamarkom.com/glossary#termset",
+          "termCode": "evidence-before-architecture",
+          "name": "الدليل قبل المعمارية",
+          "description": "مبدأ بحثي يقتضي اختبار المشكلة والبدائل وجمع الأدلة قبل الالتزام بتصميم معماري كبير أو بناء بنية تحتية واسعة.",
+          "url": "https://ouamarkom.com/glossary#evidence-before-architecture",
+          "alternateName": "Evidence Before Architecture"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ouamarkom.com/#organization",
+      "name": "Ouamarkom",
+      "alternateName": [
+        "Ouamarkom AI",
+        "أوامركم"
+      ],
+      "url": "https://ouamarkom.com/",
+      "logo": "https://ouamarkom.com/logo.webp",
+      "description": "أوامركم شركة أبحاث وهندسة تستكشف البنية التحتية اللازمة للوكالة الاقتصادية المحكومة بالذكاء الاصطناعي.",
+      "sameAs": [
+        "https://linkedin.com/company/ouamarkom",
+        "https://x.com/ouamarkom",
+        "https://facebook.com/ouamarkom",
+        "https://instagram.com/ouamarkom",
+        "https://wa.me/966578061018"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://ouamarkom.com/glossary#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://ouamarkom.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "قاموس المصطلحات",
+          "item": "https://ouamarkom.com/glossary"
         }
       ]
     }
+  ]
+}
     </script>
+  </head>
+  <body>
+    <header class="site-header container">
+      <a class="site-brand" href="/" aria-label="أوامركم الرئيسية">
+        <img src="/logo.webp" alt="أوامركم | Ouamarkom" />
+      </a>
 
-    <style>
-        :root {
-            --primary: #040916;
-            --secondary: #0a192f;
-            --accent: #e6992d;
-            --gold: #fcd34d;
-            --text-main: #e6f1ff;
-            --text-dim: #8892b0;
-            --card-bg: rgba(10, 25, 47, 0.45);
-            --border-color: rgba(255, 255, 255, 0.08);
-            --brand-orange-glow: rgba(230, 153, 45, 0.35);
-            --brand-orange-subtle: rgba(230, 153, 45, 0.08);
-        }
+      <nav class="site-nav" aria-label="التنقل الرئيسي">
+        <a href="/about">عن أوامركم</a>
+        <a href="/vision">الرؤية</a>
+        <a href="/framework">الإطار</a>
+        <a href="/research">الأبحاث</a>
+        <a href="/canonical-reference">المرجع</a>
+        <a href="/evolution">التطور</a>
+        <a href="/blog">المدونة</a>
+        <a href="mailto:contact@ouamarkom.com">تواصل</a>
+      </nav>
 
-        html { scroll-behavior: smooth; }
+      <div class="header-actions">
+        <div class="lang-switcher" aria-label="تغيير اللغة">
+          <svg class="globe-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+            <path d="M2 12h20"></path>
+          </svg>
+          <span class="lang-btn active">AR</span>
+          <span class="lang-divider"></span>
+          <a href="/en/glossary/" class="lang-btn" hreflang="en" lang="en">EN</a>
+        </div>
 
-        body {
-            background-color: var(--primary);
-            color: var(--text-main);
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            margin: 0;
-            text-align: right;
-            line-height: 1.8;
-        }
-
-        /* Navigation Bar */
-        .top-nav-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 24px 20px 10px;
-            position: relative;
-            z-index: 10;
-        }
-
-        .brand-logo-wrap {
-            display: inline-flex;
-            align-items: center;
-            text-decoration: none;
-            transition: transform 0.3s ease;
-        }
-
-        .brand-logo-wrap:hover { transform: scale(1.03); }
-
-        .brand-logo-img {
-            height: 50px;
-            width: auto;
-            object-fit: contain;
-            display: block;
-        }
-
-        .lang-switch-btn {
-            background: var(--brand-orange-subtle);
-            border: 1px solid rgba(230, 153, 45, 0.35);
-            color: var(--accent);
-            padding: 8px 18px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-size: 0.88rem;
-            font-weight: 700;
-            transition: all 0.3s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .lang-switch-btn svg {
-            width: 16px;
-            height: 16px;
-            stroke: currentColor;
-            transition: transform 0.4s ease;
-        }
-
-        .lang-switch-btn:hover {
-            background: rgba(230, 153, 45, 0.22);
-            color: #fff;
-            border-color: var(--accent);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(230, 153, 45, 0.2);
-        }
-
-        /* Container */
-        .manifesto-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 10px 20px 60px;
-            position: relative;
-            z-index: 1;
-            box-sizing: border-box;
-        }
-
-        .hero-manifesto {
-            text-align: center;
-            padding: 30px 0 20px;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUpHero 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-        }
-
-        @keyframes fadeInUpHero {
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .hero-manifesto h1 {
-            font-size: clamp(1.6rem, 5vw, 2.8rem);
-            line-height: 1.35;
-            margin-bottom: 18px;
-            font-weight: 900;
-            color: #ffffff;
-        }
-
-        .hero-manifesto h1 span {
-            display: block;
-            margin-top: 6px;
-            background: linear-gradient(90deg, var(--accent), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .hero-manifesto .subtitle {
-            font-size: clamp(0.98rem, 2.5vw, 1.2rem);
-            color: var(--text-dim);
-            line-height: 1.7;
-            max-width: 850px;
-            margin: 0 auto;
-        }
-
-        .tagline-badge {
-            display: inline-block;
-            padding: 6px 18px;
-            background: var(--brand-orange-subtle);
-            border: 1px solid rgba(230, 153, 45, 0.3);
-            color: var(--accent);
-            border-radius: 50px;
-            font-size: clamp(0.8rem, 2vw, 0.9rem);
-            font-weight: 800;
-            margin-bottom: 22px;
-            letter-spacing: 0.5px;
-        }
-
-        /* Cards Styling */
-        .manifesto-card {
-            background: var(--card-bg);
-            padding: clamp(22px, 5vw, 42px);
-            border-radius: 24px;
-            border: 1px solid var(--border-color);
-            backdrop-filter: blur(12px);
-            margin-bottom: 30px;
-            text-align: right;
-        }
-
-        .manifesto-card h2 {
-            color: var(--accent);
-            font-size: clamp(1.3rem, 4vw, 1.8rem);
-            margin-bottom: 20px;
-            font-weight: 800;
-            line-height: 1.3;
-            border-right: 4px solid var(--accent);
-            padding-right: 14px;
-        }
-
-        .category-group-title {
-            color: var(--gold);
-            font-size: 1.15rem;
-            font-weight: 700;
-            margin: 24px 0 12px;
-        }
-
-        .manifesto-card p {
-            color: var(--text-main);
-            font-size: clamp(0.98rem, 2.5vw, 1.08rem);
-            line-height: 1.8;
-            margin-bottom: 16px;
-        }
-
-        /* Clean Link Styling Inside Paragraphs & Concepts */
-        .concept-segment a, .manifesto-card p a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 600;
-            padding-bottom: 2px;
-            transition: all 0.25 ease;
-        }
-
-        .concept-segment a:hover, .manifesto-card p a:hover {
-            color: var(--gold);
-            border-bottom-color: var(--gold);
-            text-shadow: 0 0 8px rgba(252, 211, 77, 0.3);
-        }
-
-        .concept-segment {
-            margin-bottom: 45px;
-            border-top: 1px solid var(--border-color);
-            padding-top: 35px;
-        }
-
-        .concept-segment:first-of-type {
-            border-top: none;
-            padding-top: 0;
-        }
-
-        h3.concept-term-title {
-            color: #fff;
-            font-size: clamp(1.4rem, 3.5vw, 1.9rem);
-            margin-bottom: 20px;
-            font-weight: 800;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        h3.concept-term-title::before {
-            content: "◆";
-            color: var(--accent);
-            font-size: 1rem;
-        }
-
-        h4.property-label {
-            color: var(--gold);
-            font-size: 1.08rem;
-            margin: 22px 0 10px;
-            font-weight: 700;
-        }
-
-        blockquote {
-            border-right: 3px solid var(--accent);
-            padding: 16px 20px;
-            background: var(--brand-orange-subtle);
-            margin: 20px 0;
-            border-radius: 8px;
-            color: var(--text-main);
-            font-style: italic;
-        }
-
-        ul.styled-list {
-            padding-right: 20px;
-            margin-bottom: 20px;
-            list-style-type: none;
-        }
-
-        ul.styled-list li {
-            position: relative;
-            margin-bottom: 10px;
-            color: var(--text-main);
-            padding-right: 20px;
-        }
-
-        ul.styled-list li::before {
-            content: "-";
-            position: absolute;
-            right: 0;
-            color: var(--accent);
-            font-weight: bold;
-        }
-
-        /* Tables & Visuals */
-        .table-responsive-container {
-            overflow-x: auto;
-            margin: 24px 0;
-            border-radius: 16px;
-            border: 1px solid var(--border-color);
-            background: rgba(4, 9, 22, 0.6);
-        }
-
-        table.luxury-data-table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: right;
-            font-size: 0.95rem;
-            min-width: 500px;
-        }
-
-        table.luxury-data-table th {
-            background: rgba(230, 153, 45, 0.12);
-            color: var(--gold);
-            padding: 16px;
-            border-bottom: 1px solid var(--border-color);
-            font-weight: 700;
-        }
-
-        table.luxury-data-table td {
-            padding: 14px 16px;
-            border-bottom: 1px solid var(--border-color);
-            color: var(--text-main);
-        }
-
-        .visual-diagram-box {
-            margin: 24px 0;
-            background: rgba(4, 9, 22, 0.6);
-            border: 1px solid var(--border-color);
-            border-radius: 18px;
-            padding: 24px;
-            text-align: center;
-        }
-
-        .diagram-flow {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-
-        .diagram-node {
-            background: var(--secondary);
-            border: 1px solid rgba(230, 153, 45, 0.3);
-            padding: 8px 18px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 700;
-            color: #fff;
-        }
-
-        .diagram-arrow {
-            color: var(--accent);
-            font-weight: bold;
-            font-size: 1.2rem;
-            rotate: 180deg;
-        }
-
-        .grid-tags-layout {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 12px;
-            margin: 16px 0 28px;
-        }
-
-        a.tag-node-item {
-            display: block;
-            text-decoration: none;
-            background: rgba(4, 9, 22, 0.6);
-            border: 1px solid var(--border-color);
-            padding: 12px 16px;
-            border-radius: 12px;
-            font-size: 0.9rem;
-            color: var(--text-dim);
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        a.tag-node-item:hover {
-            border-color: var(--accent);
-            color: #fff;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 18px rgba(230, 153, 45, 0.12);
-        }
-
-        span.tag-node-item {
-            display: block;
-            background: rgba(4, 9, 22, 0.3);
-            border: 1px dashed var(--border-color);
-            padding: 12px 16px;
-            border-radius: 12px;
-            font-size: 0.88rem;
-            color: rgba(136, 146, 176, 0.6);
-            text-align: center;
-            cursor: default;
-        }
-
-        .reveal-card {
-            opacity: 0;
-            transform: translateY(25px);
-            transition: opacity 0.6s cubic-bezier(0.215, 0.610, 0.355, 1), 
-                        transform 0.6s cubic-bezier(0.215, 0.610, 0.355, 1);
-        }
-
-        .reveal-card.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        @media (max-width: 768px) {
-            .diagram-flow { flex-direction: column; gap: 8px; }
-            .diagram-arrow { transform: rotate(270deg); }
-        }
-    </style>
-</head>
-<body>
-
-<canvas id="network-canvas"></canvas>
-
-<!-- Header Navigation -->
-<nav class="top-nav-bar">
-    <a href="/" class="brand-logo-wrap" aria-label="أوامركم الرئيسية">
-        <img src="/logo.webp" alt="أوامركم" class="brand-logo-img">
-    </a>
-    
-<div style="display: flex; gap: 10px; align-items: center;">
-        <a href="/standards/terminology/v0.1" class="lang-switch-btn">معيار المصطلحات</a>
-        
-        <a href="/en/glossary/" class="lang-switch-btn" aria-label="Switch to English Version">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="2" y1="12" x2="22" y2="12"></line>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-            </svg>
-            <span>English</span>
-        </a>
-    </div>
-</nav>
-
-<main class="manifesto-container">
-    
-    <!-- Hero Header -->
-    <header class="hero-manifesto">
-        <span class="tagline-badge">قاموس المصطلحات الرسمي</span>
-        <h1>اقتصاد الأوامر للذكاء الاصطناعي<span>القاموس الرسمي الموحد للبنية المفاهيمية</span></h1>
-        <p class="subtitle">
-            القاموس الرسمي لمفاهيم ومصطلحات إطار اقتصاد الأوامر للذكاء الاصطناعي (CE-AI) وعلاقاته المفاهيمية والمعرفية.
-        </p>
+        <button class="hamburger" id="hamburgerBtn" aria-label="فتح القائمة" aria-controls="menuOverlay" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </header>
 
-    <!-- Intro Card -->
-    <section class="manifesto-card reveal-card">
-        <blockquote>قاموس اقتصاد الأوامر للذكاء الاصطناعي هو قاعدة المعرفة الرسمية التي تُعرِّف المفاهيم الأساسية والمصطلحات والعلاقات التي تشكل البنية المفاهيمية لإطار Command Economy of AI (CE-AI).</blockquote>
-        <p>وعلى خلاف القواميس التقليدية، لا يكتفي هذا القاموس بشرح ما يعنيه كل مفهوم، بل يوضح أيضًا لماذا هو مهم، وكيف يرتبط ببقية عناصر الإطار، وكيف ينعكس على التطورات التقنية والاقتصادية في العالم الحقيقي.</p>
-    </section>
+    <canvas id="network-canvas" aria-hidden="true"></canvas>
+    <button id="backToTop" title="العودة للأعلى" aria-label="العودة للأعلى">↑</button>
 
-    <!-- Guide Card -->
-    <section class="manifesto-card reveal-card">
-        <h2>كيفية استخدام هذا القاموس</h2>
-        <p>تحتوي كل صفحة خاصة بأي مصطلح على العناصر التالية:</p>
-        <ul class="styled-list">
-            <li>التعريف الرسمي.</li>
-            <li>لماذا يعد هذا المفهوم مهمًا؟</li>
-            <li>علاقته بإطار اقتصاد الأوامر.</li>
-            <li>مثال عملي.</li>
-            <li>رسم توضيحي.</li>
-            <li>مقالات مرتبطة.</li>
-            <li>مصطلحات مرتبطة.</li>
-        </ul>
-        <p>ومن خلال الربط بين جميع هذه الصفحات، يتكون <strong>رسم بياني معرفي (Knowledge Graph)</strong> متكامل، وليس مجرد قائمة أبجدية للمصطلحات.</p>
-    </section>
+    <div class="menu-overlay" id="menuOverlay">
+      <ul>
+        <li class="menu-group-title">المؤسسة</li>
+        <li><a href="/">الرئيسية</a></li>
+        <li><a href="/about">عن أوامركم</a></li>
+        <li><a href="/vision">الرؤية والرسالة</a></li>
+        <li><a href="/founder">المؤسس</a></li>
+        <li><a href="/evolution">رحلة التطور</a></li>
+        <li><a href="/blog">المدونة</a></li>
 
-    <!-- Comprehensive Conceptual Chain Diagram -->
-    <section class="manifesto-card reveal-card">
-        <h2>المسار المفاهيمي للقاموس</h2>
-        <p>تستند العمارة المفاهيمية لإطار اقتصاد الأوامر للذكاء الاصطناعي (CE-AI) على التسلسل التشغيلي المترابط التالي:</p>
-        <div class="visual-diagram-box">
-            <div class="diagram-flow">
-                <div class="diagram-node">الإنسان</div><div class="diagram-arrow">➔</div>
-                <div class="diagram-node">النية</div><div class="diagram-arrow">➔</div>
-                <div class="diagram-node">الأمر</div><div class="diagram-arrow">➔</div>
-                <div class="diagram-node">فهم النية</div><div class="diagram-arrow">➔</div>
-                <div class="diagram-node">التخطيط</div><div class="diagram-arrow">➔</div>
-                <div class="diagram-node">تنسيق الوكلاء</div><div class="diagram-arrow">➔</div>
-                <div class="diagram-node">سير العمل</div><div class="diagram-arrow">➔</div>
-                <div class="diagram-node">التنفيذ</div><div class="diagram-arrow">➔</div>
-                <div class="diagram-node">البنية التحتية للتنفيذ</div><div class="diagram-arrow">➔</div>
-                <div class="diagram-node">التحقق</div><div class="diagram-arrow">➔</div>
-                <div class="diagram-node">النتيجة</div><div class="diagram-arrow">➔</div>
-                <div class="diagram-node">النتيجة الاقتصادية</div>
-            </div>
+        <li class="menu-group-title">الإطار والمعرفة</li>
+        <li><a href="/framework">إطار CE-AI™</a></li>
+        <li><a href="/canonical-reference">المرجع الرسمي</a></li>
+        <li><a href="/glossary" aria-current="page">قاموس المصطلحات</a></li>
+
+        <li class="menu-group-title">البحث العلمي</li>
+        <li><a href="/research">مركز الأبحاث</a></li>
+        <li><a href="/whitepaper">الورقة البيضاء</a></li>
+
+        <li class="menu-group-title">تواصل</li>
+        <li><a href="mailto:contact@ouamarkom.com">تواصل معنا</a></li>
+
+      </ul>
+    </div>
+
+    <main class="container">
+
+      <!-- Hero -->
+      <section class="hero reveal">
+        <p class="section-pill">قاموس المصطلحات البحثية والهندسية</p>
+        <h1>
+          اقتصاد الأوامر للذكاء الاصطناعي<br />
+          <span>مرجع مفاهيمي لمصطلحات الوكالة الاقتصادية والحوكمة والتنفيذ</span>
+        </h1>
+
+        <p class="subtitle">تدرس أوامركم™ كيف تنتقل أنظمة الذكاء الاصطناعي من امتلاك القدرة على التحليل والتخطيط إلى المشاركة في أفعال ذات آثار اقتصادية، وكيف يمكن فهم السلطة الممنوحة لهذه الأنظمة وضبط التنفيذ وتوثيق الأدلة والتحقق من النتائج.</p>
+        <p class="subtitle">يجمع هذا القاموس المصطلحات المستخدمة في إطار <bdi dir="ltr">Command Economy of AI (CE-AI)</bdi> والبرنامج البحثي والهندسي لأوامركم، مع توضيح التعريفات والعلاقات والحدود المفاهيمية لكل مصطلح.</p>
+        <p class="subtitle-sub">القاموس مرجع بحثي متطور، وليس معياراً تقنياً أو تنظيماً رسمياً معتمداً. وتُحدَّث تعريفاته مع تطور الأبحاث والتجارب والأدلة.</p>
+
+        <div class="hero-actions">
+            <a class="btn btn-primary" href="#core-concepts">ابدأ بالمفاهيم الأساسية</a>
+            <a class="btn btn-secondary-outline" href="/research">استكشف الأبحاث</a>
+            <a class="btn btn-secondary-outline" href="/framework">اقرأ إطار CE-AI™</a>
+            <a class="btn btn-secondary-outline" href="/standards/terminology/v0.1">معيار المصطلحات</a>
         </div>
-    </section>
+      </section>
 
-    <!-- Core Terms -->
-    <section class="manifesto-card reveal-card">
-        <h2>أبرز المفاهيم</h2>
+      <nav class="charter-toc" aria-label="أقسام القاموس">
+        <a href="#pathway">المسار المفاهيمي</a>
+        <a href="#core-concepts">المفاهيم الأساسية</a>
+        <a href="#agency-authority-governance">الوكالة والسلطة والحوكمة</a>
+        <a href="#planning-execution">التخطيط والتنسيق والتنفيذ</a>
+        <a href="#evidence-outcomes">الأدلة والتحقق والنتائج الاقتصادية</a>
+        <a href="#assets">الأصول البحثية والهندسية لأوامركم</a>
+        <a href="#supporting">المفاهيم المساندة</a>
+        <a href="#relationships">خريطة العلاقات المفاهيمية</a>
+        <a href="#principles">مبادئ تفسير المصطلحات</a>
+        <a href="#explore">استكشف المزيد من المفاهيم</a>
+      </nav>
 
-        <!-- Concept 1: Intent -->
-        <div class="concept-segment" id="intent">
-            <h3 class="concept-term-title">1. النية البشرية (Human Intent)</h3>
-            
-            <h4 class="property-label">التعريف الرسمي</h4>
-            <p>النية هي الهدف أو المقصد النهائي الذي يحدده الإنسان ويبدأ منه سير العمل الذكي. وهي تمثل النتيجة المرغوبة التي تسبق التخطيط والتنفيذ والتحقق. وفي إطار اقتصاد الأوامر للذكاء الاصطناعي (CE-AI)، تُعد النية نقطة الانطلاق للإنتاج الرقمي.</p>
-            
-            <h4 class="property-label">لماذا تعد النية مهمة؟</h4>
-            <p>في البرمجيات التقليدية، كان على الإنسان تحويل أهدافه إلى سلسلة طويلة من الخطوات والإجراءات. أما في الأنظمة الذكية الحديثة، فتستطيع الأنظمة استنتاج طريقة التنفيذ انطلاقًا من نية الإنسان عندما تكون معبَّرًا عنها بوضوح. ومع تطور قدرات الذكاء الاصطناعي، قد تصبح القدرة على التعبير الدقيق عن النية واحدة من أهم الأصول الاقتصادية.</p>
+      <section class="section-shell reveal" id="introduction" aria-labelledby="introduction-title">
+        <div class="section-header">
+          <p class="section-pill">مقدمة</p>
+          <h2 id="introduction-title">لماذا نحتاج إلى قاموس موحد؟</h2>
+        </div>
+        <div class="research-note">
+          <p>مع انتقال أنظمة الذكاء الاصطناعي من توليد المحتوى والإجابة عن الأسئلة إلى استخدام الأدوات وتنفيذ المهام والتفاعل مع الأنظمة المؤسسية، تصبح التفرقة بين القدرة والسلطة والتنفيذ والنتيجة أمراً مهماً.</p>
+          <p>فقد يستطيع النظام تنفيذ إجراء تقنياً دون أن يكون مخولاً به، وقد يمتلك تفويضاً صحيحاً عند بداية المهمة ثم تتغير الصلاحيات قبل اكتمالها. وقد يسجل النظام أن إجراءً قد نُفّذ دون أن يثبت أن النتيجة الاقتصادية المقصودة قد تحققت.</p>
+          <p>لهذا تدرس أوامركم العلاقة بين:</p>
+        </div>
+        <div class="info-box mt-4 mb-3">
+          <ul class="bullet-list">
+            <li><strong>القدرة:</strong> ما يستطيع النظام فعله.</li>
+            <li><strong>السلطة والتفويض:</strong> ما يُسمح له بفعله، وضمن أي حدود.</li>
+            <li><strong>الحوكمة:</strong> القواعد والضوابط التي تنظّم الأفعال المسموح بها.</li>
+            <li><strong>التنفيذ:</strong> ما يحدث فعلياً داخل البيئة التشغيلية.</li>
+            <li><strong>الأدلة والتحقق:</strong> ما يمكن إثباته بشأن التنفيذ والنتائج.</li>
+            <li><strong>النتيجة الاقتصادية:</strong> الأثر الذي تحقق فعلياً، وتكلفته أو منفعته عند إمكان قياسهما.</li>
+          </ul>
+        </div>
+        <div class="research-note">
+          <p>لا يفترض هذا الإطار مسبقاً أن جميع هذه الوظائف تتطلب بنية تحتية جديدة. بل يساعد على تحديد الأسئلة التي تستحق الاختبار، وتوثيق الأدلة، وتقييم الحلول القائمة قبل اقتراح تدخلات هندسية إضافية.</p>
+        </div>
+      </section>
 
-            <h4 class="property-label">علاقتها بالأوامر</h4>
-            <p>الأمر هو التعبير التنفيذي الصريح عن النية. فالنية تجيب عن السؤال: <em>"ما الذي أريد تحقيقه؟"</em> أما الأمر فيشغل عملية التنفيذ لتحقيق ذلك الهدف.</p>
-            
-            <h4 class="property-label">مثال عملي</h4>
-            <p>بدلاً من تنفيذ جميع خطوات إنشاء حملة تسويقية يدويًا، يمكن للمستخدم أن يقول:</p>
-            <blockquote>"أطلق حملة تسويقية تستهدف الشركات الصغيرة."</blockquote>
-            <p>ليقوم النظام بفهم الهدف، ثم تنسيق التخطيط، وكتابة المحتوى، وتصميم المواد، وتحليل النتائج.</p>
-            
-            <h4 class="property-label">الرسم المفاهيمي</h4>
-            <div class="visual-diagram-box">
-                <div class="diagram-flow">
-                    <div class="diagram-node">الإنسان</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">النية البشرية</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">الأمر</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">فهم النية</div>
-                </div>
-            </div>
-            
-            <h4 class="property-label">مقالات مرتبطة</h4>
-            <ul class="styled-list">
-                <li>سيتم ربط المقالات والأبحاث الذاتية فور نشرها.</li>
+      <section class="section-shell reveal" id="how-to-use" aria-labelledby="how-to-use-title">
+        <div class="section-header">
+          <p class="section-pill">الاستخدام</p>
+          <h2 id="how-to-use-title">كيفية استخدام القاموس</h2>
+        </div>
+        <div class="research-note">
+          <p>يتضمن كل مدخل، بحسب طبيعة المصطلح ومرحلة تطوره:</p>
+        </div>
+        <div class="info-box mt-4 mb-3">
+          <ol class="charter-list">
+            <li>التعريف.</li>
+            <li>أهميته البحثية أو التشغيلية.</li>
+            <li>علاقته بإطار <bdi dir="ltr">CE-AI</bdi>.</li>
+            <li>مثالاً تطبيقياً عند الحاجة.</li>
+            <li>المصطلحات المرتبطة به.</li>
+            <li>حالة المفهوم، إذا كان إطاراً بحثياً أو أصلاً قيد التطوير.</li>
+          </ol>
+        </div>
+        <div class="research-note">
+          <p>تستخدم أوامركم المصطلحات بصورة متسقة عبر صفحات الأبحاث، والتجارب، والتقارير، والمقاييس، والوثائق الهندسية. وتُعد التعريفات الواردة هنا تعريفات عمل ضمن برنامج البحث، ما لم يُذكر صراحةً أنها تشير إلى مفهوم تقني معروف على نطاق أوسع.</p>
+        </div>
+      </section>
+
+      <section class="section-shell reveal" id="pathway" aria-labelledby="pathway-title">
+        <div class="section-header">
+          <p class="section-pill">المسار المفاهيمي</p>
+          <h2 id="pathway-title">من القدرة إلى النتيجة الاقتصادية</h2>
+        </div>
+        <div class="research-note text-center">
+          <p>لا تمثل العلاقة بين مفاهيم هذا القاموس سلسلة خطية إلزامية تمر بها كل الأنظمة. إنها خريطة للعناصر التي قد تتفاعل أثناء الأفعال الاقتصادية للذكاء الاصطناعي.</p>
+        </div>
+        <div class="section-card highlight-box text-center mt-4 mb-3">
+          <p class="flow-sequence">القدرة ← النية أو الهدف ← الأمر أو طلب المهمة ← التخطيط ← السلطة والتفويض ← ضوابط التنفيذ ← الفعل الاقتصادي ← الأدلة والتحقق ← النتيجة الاقتصادية</p>
+        </div>
+        <div class="research-note text-center">
+          <p>وقد تشمل بعض الأنظمة وكلاء متعددين أو أدوات أو سير عمل متداخلاً. كما قد تتطلب حالات معينة إعادة التحقق من الصلاحية، أو التصعيد إلى إنسان، أو إيقاف التنفيذ، أو التراجع عن إجراء إن كان ذلك ممكناً.</p>
+        </div>
+        <div class="info-box mt-4">
+          <p><span class="highlight-text">المبدأ البحثي:</span> القدرة التقنية لا تمنح السلطة تلقائياً، وصدور الأمر لا يثبت وجود التفويض، ونجاح التنفيذ التقني لا يثبت وحده تحقق النتيجة الاقتصادية.</p>
+        </div>
+      </section>
+
+      <section class="section-shell term-group" id="core-concepts" aria-labelledby="core-concepts-title">
+        <div class="section-header">
+          <p class="section-pill">المفاهيم 1–7</p>
+          <h2 id="core-concepts-title">المفاهيم الأساسية</h2>
+        </div>
+        <div class="term-list">
+<article class="section-card term-card" id="ce-ai">
+  <div class="term-head"><span class="term-no">1</span><h3>اقتصاد الأوامر للذكاء الاصطناعي</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Command Economy of AI (CE-AI)</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>إطار بحثي وتحليلي تطوره أوامركم لدراسة الأفعال الاقتصادية التي تنفذها أنظمة الذكاء الاصطناعي أو تشارك فيها، والعلاقات بين الأوامر والقدرة والسلطة والتفويض والحوكمة والتنفيذ والأدلة والنتائج الاقتصادية.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا يهم؟</span>
+    <p>يساعد الإطار على تنظيم الأسئلة المتعلقة بانتقال الذكاء الاصطناعي من إنتاج المعلومات إلى التأثير في المعاملات والموارد والالتزامات والقرارات الاقتصادية.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">حدود المصطلح</span>
+    <p><bdi dir="ltr">CE-AI</bdi> إطار بحثي قيد التطوير، وليس معياراً معتمداً أو منتجاً نهائياً أو بديلاً للنظم الاقتصادية القائمة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>دراسة ما إذا كانت الضوابط الحالية كافية لمنع وكيل ذكاء اصطناعي من تنفيذ تحويل مالي بعد انتهاء التفويض الممنوح له.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#ai-economic-agency">الوكالة الاقتصادية</a></li>
+<li><a class="term-chip" href="#ai-economic-action">الفعل الاقتصادي</a></li>
+<li><a class="term-chip" href="#authority">السلطة</a></li>
+<li><a class="term-chip" href="#delegated-authority">التفويض</a></li>
+<li><a class="term-chip" href="#governance">الحوكمة</a></li>
+<li><a class="term-chip" href="#governed-execution">التنفيذ المحكوم</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="ai-economic-action">
+  <div class="term-head"><span class="term-no">2</span><h3>الفعل الاقتصادي للذكاء الاصطناعي</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">AI Economic Action</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>إجراء ينفذه نظام ذكاء اصطناعي أو يساهم في تنفيذه، ويؤثر في الموارد أو المعاملات أو الالتزامات أو الأسعار أو المشتريات أو القرارات ذات الأثر الاقتصادي.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا يهم؟</span>
+    <p>ينقل التركيز من مجرد قدرة النظام على التفكير أو توليد المخرجات إلى ما يفعله بالفعل، وما يترتب على ذلك من آثار قابلة للرصد أو القياس.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>إنشاء طلب شراء، أو تقديم عرض سعر، أو تعديل عقد، أو إرسال تعليمات لتحويل مالي.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">حدود المصطلح</span>
+    <p>ليس كل رد لغوي فعلاً اقتصادياً. وقد يكون الفعل مخططاً أو محاكاة أو محاولة تنفيذ أو إجراءً مكتملًا؛ ويجب التمييز بين هذه الحالات في السجلات والتقارير.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#ai-economic-agency">الوكالة الاقتصادية</a></li>
+<li><a class="term-chip" href="#execution">التنفيذ</a></li>
+<li><a class="term-chip" href="#economic-outcome">النتيجة الاقتصادية</a></li>
+<li><a class="term-chip" href="#economic-exposure">التعرض الاقتصادي</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="technical-capability">
+  <div class="term-head"><span class="term-no">3</span><h3>القدرة التقنية</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Technical Capability</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>مجموعة الإمكانات التي تمكّن نظاماً من أداء مهمة معينة، مثل التحليل أو التخطيط أو استخدام أداة أو استدعاء واجهة برمجية.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا تهم؟</span>
+    <p>توضح ما يستطيع النظام فعله تقنياً، لكنها لا تحدد وحدها ما يجوز له فعله ضمن سياق مؤسسي أو اقتصادي.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>قد يستطيع وكيل الذكاء الاصطناعي إرسال طلب شراء عبر واجهة برمجية، لكن صلاحية الإرسال الفعلية قد تكون مقيدة بحد مالي أو موافقة بشرية.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">المبدأ المرتبط</span>
+    <p>القدرة لا تمنح السلطة تلقائياً.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#ai-economic-agency">الوكالة الاقتصادية</a></li>
+<li><a class="term-chip" href="#authority">السلطة</a></li>
+<li><a class="term-chip" href="#delegated-authority">التفويض</a></li>
+<li><a class="term-chip" href="#execution">التنفيذ</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="human-intent"><span id="intent"></span>
+  <div class="term-head"><span class="term-no">4</span><h3>النية البشرية</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Human Intent</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>الهدف أو المقصد الذي يريد الإنسان تحقيقه، كما يعبّر عنه أو يُستدل عليه من السياق.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا تهم؟</span>
+    <p>تساعد على تحديد الغاية المطلوبة، لكنها لا تكفي وحدها لتحديد جميع الإجراءات المسموحة أو منح صلاحية تنفيذها.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>«أريد خفض تكلفة المشتريات» هدف عام. ولا يعني ذلك تفويض النظام بإلغاء عقود قائمة أو تغيير الموردين دون قيود.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">العلاقة بالأمر</span>
+    <p>قد يعبّر الأمر عن النية بصورة مباشرة أو جزئية أو ملتبسة. لذلك ينبغي التمييز بين الهدف المقصود والتعليمات الفعلية وحدود التفويض.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#command">الأمر</a></li>
+<li><a class="term-chip" href="#intent-understanding">فهم النية</a></li>
+<li><a class="term-chip" href="#planning">التخطيط</a></li>
+<li><a class="term-chip" href="#delegated-authority">التفويض</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="command">
+  <div class="term-head"><span class="term-no">5</span><h3>الأمر</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Command</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>تعليمات أو طلب يوجّه نظاماً إلى أداء مهمة أو السعي لتحقيق هدف محدد.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا يهم؟</span>
+    <p>يمثل الأمر إحدى وسائل بدء العمل أو توجيهه، لكنه لا يثبت بمفرده أن صاحب الأمر مخول بمنح الصلاحية أو أن جميع الشروط اللازمة للتنفيذ متحققة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>«أعدّ طلب تحويل بقيمة 5,000 ريال للمراجعة». يختلف هذا عن «نفّذ التحويل»، كما يختلف كلاهما عن وجود موافقة مالية صالحة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مبدأ التمييز</span>
+    <p>الأمر ليس تفويضاً بالضرورة، والتفويض ليس دليلاً على التنفيذ، والتنفيذ ليس دليلاً على تحقق النتيجة.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#human-intent">النية البشرية</a></li>
+<li><a class="term-chip" href="#delegated-authority">التفويض</a></li>
+<li><a class="term-chip" href="#intent-understanding">فهم النية</a></li>
+<li><a class="term-chip" href="#execution">التنفيذ</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="intent-understanding">
+  <div class="term-head"><span class="term-no">6</span><h3>فهم النية</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Intent Understanding</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>عملية تفسير هدف المستخدم وتعليماته والسياق والقيود ذات الصلة، للوصول إلى تمثيل مناسب للمهمة المطلوبة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا يهم؟</span>
+    <p>يساعد على اكتشاف الغموض أو التعارض أو المعلومات الناقصة قبل التخطيط أو التنفيذ.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>إذا طلب المستخدم «اختر أفضل مورد»، فقد يحتاج النظام إلى تحديد معايير الأفضلية، مثل السعر والجودة ومدة التسليم وشروط العقد.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">حدود المصطلح</span>
+    <p>فهم النية لا يساوي التحقق من هوية صاحب الطلب أو صلاحياته، ولا يمنح النظام حق تنفيذ الإجراء.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#human-intent">النية البشرية</a></li>
+<li><a class="term-chip" href="#command">الأمر</a></li>
+<li><a class="term-chip" href="#planning">التخطيط</a></li>
+<li><span class="term-chip"><a href="#authority">السلطة</a> و<a href="#delegated-authority">التفويض</a></span></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="language-interface">
+  <div class="term-head"><span class="term-no">7</span><h3>واجهة اللغة</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Language Interface</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>وسيلة تفاعل تتيح للمستخدم تقديم التعليمات أو الأهداف باستخدام اللغة الطبيعية.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا تهم؟</span>
+    <p>تخفض الحاجة إلى التعبير عن كل خطوة بصيغة تقنية، لكنها قد تسمح أيضاً بوجود غموض أو اختلاف في التفسير.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>يمكن للمستخدم وصف احتياجه للمشتريات بلغة طبيعية، ثم يطلب النظام توضيح الميزانية وحدود الموردين قبل اقتراح إجراء.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">حدود المصطلح</span>
+    <p>واجهة اللغة وسيلة للتفاعل، وليست نظاماً مستقلاً لمنح الصلاحيات أو ضبط التنفيذ.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#human-intent">النية البشرية</a></li>
+<li><a class="term-chip" href="#command">الأمر</a></li>
+<li><a class="term-chip" href="#intent-understanding">فهم النية</a></li>
+<li><a class="term-chip" href="#ai-agent">وكيل الذكاء الاصطناعي</a></li>
+    </ul>
+  </div>
+</article>
+        </div>
+      </section>
+
+      <section class="section-shell term-group" id="agency-authority-governance" aria-labelledby="agency-authority-governance-title">
+        <div class="section-header">
+          <p class="section-pill">المفاهيم 8–15</p>
+          <h2 id="agency-authority-governance-title">الوكالة والسلطة والحوكمة</h2>
+        </div>
+        <div class="term-list">
+<article class="section-card term-card" id="ai-economic-agency">
+  <div class="term-head"><span class="term-no">8</span><h3>الوكالة الاقتصادية للذكاء الاصطناعي</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">AI Economic Agency</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>قدرة نظام الذكاء الاصطناعي، ضمن بيئة معينة، على المشاركة في أفعال تؤثر في الموارد أو المعاملات أو الالتزامات أو النتائج الاقتصادية، بدرجات متفاوتة من الاستقلالية والتفويض.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا تهم؟</span>
+    <p>تساعد على التمييز بين نظام يقدم توصية فقط ونظام يستطيع اتخاذ خطوات تشغيلية أو تنفيذ معاملات باستخدام الأدوات والصلاحيات المتاحة له.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>قد يوصي نظام بخفض سعر منتج، بينما يستطيع نظام آخر تعديل السعر مباشرة داخل نظام المبيعات إذا كانت لديه صلاحية مناسبة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">حدود المصطلح</span>
+    <p>الوكالة الاقتصادية وصف لقدرة النظام على المشاركة في الفعل، ولا تعني امتلاكه سلطة قانونية مستقلة أو مسؤولية قانونية تلقائية.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#ai-economic-action">الفعل الاقتصادي</a></li>
+<li><a class="term-chip" href="#technical-capability">القدرة التقنية</a></li>
+<li><a class="term-chip" href="#authority">السلطة</a></li>
+<li><a class="term-chip" href="#delegated-authority">التفويض</a></li>
+<li><a class="term-chip" href="#execution">التنفيذ</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="authority">
+  <div class="term-head"><span class="term-no">9</span><h3>السلطة</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Authority</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>الحق أو الصلاحية الممنوحة لجهة أو نظام لاتخاذ قرار أو السماح بإجراء ضمن نطاق محدد، وفق القواعد والتفويضات المعمول بها.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا تهم؟</span>
+    <p>لأن القدرة التقنية على إجراء معاملة لا تثبت أن النظام مخول بها.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>قد يُسمح لوكيل بإعداد طلب شراء، بينما يظل اعتماد الطلب النهائي من اختصاص مدير المشتريات.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#delegated-authority">التفويض</a></li>
+<li><a class="term-chip" href="#authority-boundary">حدود السلطة</a></li>
+<li><a class="term-chip" href="#governance">الحوكمة</a></li>
+<li><span class="term-chip">الموافقة</span></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="delegated-authority">
+  <div class="term-head"><span class="term-no">10</span><h3>التفويض</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Delegated Authority</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>منح صلاحية محددة إلى وكيل أو نظام لتنفيذ أفعال أو اتخاذ قرارات ضمن نطاق وشروط وحدود معينة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا يهم؟</span>
+    <p>يساعد على تحديد من يحق له القيام بالفعل، وما الذي يمكنه فعله، وتحت أي شروط، ومتى تنتهي صلاحية التفويض أو تُسحب.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>تفويض وكيل بإصدار أوامر شراء لا تتجاوز 10,000 ريال، مع اشتراط موافقة إضافية على الموردين الجدد.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">عناصر التفويض المحتملة</span>
+    <ul class="bullet-list">
+      <li>الجهة أو الشخص الذي يمنح الصلاحية.</li>
+      <li>النظام أو الوكيل المفوض.</li>
+      <li>الأفعال المسموحة.</li>
+      <li>الحدود المالية أو التشغيلية.</li>
+      <li>مدة الصلاحية وشروط انتهائها.</li>
+      <li>متطلبات الموافقة والتصعيد.</li>
+      <li>طريقة سحب التفويض والتحقق من تطبيقه.</li>
+    </ul>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#authority">السلطة</a></li>
+<li><a class="term-chip" href="#authority-boundary">حدود السلطة</a></li>
+<li><a class="term-chip" href="#revocation-of-authority">سحب التفويض</a></li>
+<li><a class="term-chip" href="#governance">الحوكمة</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="authority-boundary">
+  <div class="term-head"><span class="term-no">11</span><h3>حدود السلطة</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Authority Boundary</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>الحدود التي تفصل بين الأفعال المسموح بها للوكيل والأفعال التي تتطلب موافقة إضافية أو تكون غير مسموحة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا تهم؟</span>
+    <p>تتيح تحويل الصلاحيات العامة إلى قيود تشغيلية قابلة للاختبار.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>يمكن للوكيل طلب عروض أسعار، لكنه لا يستطيع اعتماد شراء يتجاوز الميزانية المحددة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">سؤال بحثي</span>
+    <p>هل تبقى حدود السلطة فعالة عند تعدد الخطوات، أو تغير السياق، أو استدعاء أدوات أخرى، أو تفويض مهام فرعية؟</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#delegated-authority">التفويض</a></li>
+<li><a class="term-chip" href="#governance">الحوكمة</a></li>
+<li><a class="term-chip" href="#execution-control">التحكم في التنفيذ</a></li>
+<li><a class="term-chip" href="#revocation-of-authority">سحب التفويض</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="governance">
+  <div class="term-head"><span class="term-no">12</span><h3>الحوكمة</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Governance</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>مجموعة القواعد والمسؤوليات وآليات اتخاذ القرار والمراجعة التي تنظّم كيفية استخدام الأنظمة والصلاحيات، وكيفية التعامل مع المخاطر والاستثناءات والتغييرات.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا تهم؟</span>
+    <p>تربط الأهداف والسياسات المؤسسية بالإجراءات التشغيلية وآليات المساءلة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>اشتراط موافقة بشرية على التحويلات التي تتجاوز حداً معيناً، مع تسجيل هوية الموافق ووقت الموافقة وحالة المعاملة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">حدود المصطلح</span>
+    <p>وجود سياسة مكتوبة لا يثبت أن السياسة مطبقة تقنياً أو أنها فعالة في ظروف التشغيل.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#delegated-authority">التفويض</a></li>
+<li><a class="term-chip" href="#human-oversight">الإشراف البشري</a></li>
+<li><a class="term-chip" href="#execution-control">التحكم في التنفيذ</a></li>
+<li><a class="term-chip" href="#execution-evidence">الأدلة</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="human-oversight">
+  <div class="term-head"><span class="term-no">13</span><h3>الإشراف البشري</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Human Oversight</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>القدرة العملية للأشخاص المخولين على مراجعة قرارات النظام أو اعتمادها أو رفضها أو إيقافها، وفق نطاق واضح من المسؤوليات.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا يهم؟</span>
+    <p>لأن الإشراف الفعال يتطلب أكثر من وجود إنسان في العملية؛ إذ يحتاج إلى معلومات مناسبة وصلاحيات فعلية ووقت كافٍ للتدخل.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>عرض تفاصيل التحويل ومصدر التفويض والمستفيد والمبلغ على المراجع قبل الموافقة النهائية.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><span class="term-chip">الموافقة</span></li>
+<li><a class="term-chip" href="#governance">الحوكمة</a></li>
+<li><a class="term-chip" href="#authority-boundary">حدود السلطة</a></li>
+<li><a class="term-chip" href="#revocation-of-authority">سحب التفويض</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="hitl">
+  <div class="term-head"><span class="term-no">14</span><h3>الإنسان داخل الحلقة</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Human-in-the-Loop (HITL)</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>نمط تشغيل يشارك فيه الإنسان في نقطة أو أكثر من دورة عمل النظام، مثل اعتماد إجراء أو مراجعة نتيجة أو التعامل مع حالة استثنائية.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا يهم؟</span>
+    <p>يمكن أن يتيح مراجعة بشرية قبل تنفيذ أفعال عالية الأثر، أو أثناءها، أو بعدها بحسب التصميم.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>إعداد الوكيل لطلب التحويل، ثم انتظار موافقة الموظف المخول قبل إرساله.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">حدود المصطلح</span>
+    <p>لا يضمن وجود خطوة موافقة بشرية وحده سلامة العملية؛ إذ يجب التحقق من هوية الموافق ونطاق سلطته، وربط الموافقة بالمعاملة الصحيحة، وإنفاذ القرار.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#human-oversight">الإشراف البشري</a></li>
+<li><a class="term-chip" href="#authority">السلطة</a></li>
+<li><a class="term-chip" href="#delegated-authority">التفويض</a></li>
+<li><a class="term-chip" href="#execution">التنفيذ</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="revocation-of-authority">
+  <div class="term-head"><span class="term-no">15</span><h3>سحب التفويض</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Revocation of Authority</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>إلغاء أو إنهاء الصلاحية التي سبق منحها لنظام أو وكيل، بحيث لا يعود مخولاً بتنفيذ الأفعال المشمولة بالتفويض المسحوب.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا يهم؟</span>
+    <p>قد يستمر سير العمل بعد بدء المهمة، ولذلك ينبغي تحديد كيفية التعامل مع سحب الصلاحية أثناء التخطيط أو الانتظار أو التنفيذ.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>يُسحب تفويض وكيل مالي بعد إعداد التحويل وقبل إرساله. تختبر التجربة ما إذا كان النظام يمنع الإرسال عندما تصبح الصلاحية غير سارية.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">سؤال بحثي</span>
+    <p>ما آخر نقطة في دورة التنفيذ يمكن عندها إنفاذ سحب التفويض بصورة موثوقة؟ وهل توجد إجراءات جارية لا يمكن إلغاؤها بعد تجاوز نقطة معينة؟</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#delegated-authority">التفويض</a></li>
+<li><a class="term-chip" href="#authority-boundary">حدود السلطة</a></li>
+<li><a class="term-chip" href="#execution-control">التحكم في التنفيذ</a></li>
+<li><a class="term-chip" href="#verification">التحقق</a></li>
+    </ul>
+  </div>
+</article>
+        </div>
+      </section>
+
+      <section class="section-shell term-group" id="planning-execution" aria-labelledby="planning-execution-title">
+        <div class="section-header">
+          <p class="section-pill">المفاهيم 16–22</p>
+          <h2 id="planning-execution-title">التخطيط والتنسيق والتنفيذ</h2>
+        </div>
+        <div class="term-list">
+<article class="section-card term-card" id="planning">
+  <div class="term-head"><span class="term-no">16</span><h3>التخطيط</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Planning</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>عملية تحديد الإجراءات والموارد والاعتماديات اللازمة لتحقيق هدف، مع مراعاة القيود والمعلومات المتاحة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا يهم؟</span>
+    <p>يساعد على تحويل الهدف إلى خطوات قابلة للتنفيذ والمراجعة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>تجزئة عملية الشراء إلى تحديد المواصفات، وجمع العروض، ومقارنة الموردين، والحصول على الموافقات، وإصدار الطلب.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">حدود المصطلح</span>
+    <p>الخطة ليست تنفيذاً، ولا تعني أن جميع خطواتها مصرح بها أو قابلة للتنفيذ في الظروف الحالية.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#intent-understanding">فهم النية</a></li>
+<li><a class="term-chip" href="#workflow">سير العمل</a></li>
+<li><a class="term-chip" href="#agent-orchestration">تنسيق الوكلاء</a></li>
+<li><a class="term-chip" href="#execution">التنفيذ</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="ai-agent">
+  <div class="term-head"><span class="term-no">17</span><h3>وكيل الذكاء الاصطناعي</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">AI Agent</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>نظام يستخدم قدرات الذكاء الاصطناعي لتحقيق هدف أو أداء مهمة، وقد يتضمن تخطيطاً أو استخدام أدوات أو تفاعلاً مع أنظمة أخرى بحسب تصميمه.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا يهم؟</span>
+    <p>تختلف متطلبات الحوكمة باختلاف ما يستطيع الوكيل الوصول إليه وما يمكنه فعله فعلياً.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>وكيل يقرأ بيانات المخزون ويقترح إعادة الطلب، مقابل وكيل يستطيع إصدار أمر الشراء مباشرة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">حدود المصطلح</span>
+    <p>لا يعني وصف النظام بأنه وكيل أنه مستقل بالكامل أو يمتلك سلطة غير محدودة.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#ai-economic-agency">الوكالة الاقتصادية</a></li>
+<li><a class="term-chip" href="#planning">التخطيط</a></li>
+<li><a class="term-chip" href="#agent-orchestration">تنسيق الوكلاء</a></li>
+<li><span class="term-chip"><a href="#authority">السلطة</a> و<a href="#delegated-authority">التفويض</a></span></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="agent-orchestration">
+  <div class="term-head"><span class="term-no">18</span><h3>تنسيق الوكلاء</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Agent Orchestration</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>تنظيم التفاعل والاعتماديات وتبادل البيانات بين عدة وكلاء أو أدوات أو خدمات لتحقيق مهمة مشتركة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا يهم؟</span>
+    <p>قد تنشأ مخاطر إضافية عند انتقال المهام بين مكونات متعددة أو عند تفويض وكيل مهمة إلى وكيل آخر.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>وكيل يجمع عروض الأسعار، ووكيل يقارنها، وخدمة مؤسسية تتحقق من الميزانية، ثم موظف مخول يعتمد الشراء.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">سؤال بحثي</span>
+    <p>كيف تنتقل حدود الصلاحيات والموافقات وسجلات الأدلة بين مكونات سير العمل؟</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#ai-agent">وكيل الذكاء الاصطناعي</a></li>
+<li><a class="term-chip" href="#workflow">سير العمل</a></li>
+<li><a class="term-chip" href="#delegated-authority">التفويض</a></li>
+<li><a class="term-chip" href="#execution-control">التحكم في التنفيذ</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="workflow">
+  <div class="term-head"><span class="term-no">19</span><h3>سير العمل</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Workflow</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>مجموعة خطوات مترابطة وقواعد انتقال تحدد كيفية تقدم المهمة من حالة إلى أخرى.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا يهم؟</span>
+    <p>يوضح نقاط اتخاذ القرار والموافقة والتوقف وإعادة المحاولة والتصعيد.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>إنشاء طلب شراء ← مراجعة الميزانية ← اعتماد الطلب ← الإرسال إلى المورد ← تسجيل التأكيد.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#planning">التخطيط</a></li>
+<li><a class="term-chip" href="#agent-orchestration">تنسيق الوكلاء</a></li>
+<li><a class="term-chip" href="#execution">التنفيذ</a></li>
+<li><a class="term-chip" href="#verification">التحقق</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="execution">
+  <div class="term-head"><span class="term-no">20</span><h3>التنفيذ</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Execution</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>تنفيذ إجراء أو سلسلة إجراءات داخل بيئة تشغيلية وفق تعليمات وشروط محددة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا يهم؟</span>
+    <p>يمثل الانتقال من الخطة أو الطلب إلى فعل حدث بالفعل أو جرت محاولة تنفيذه.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>إرسال طلب شراء إلى نظام المؤسسة عبر واجهة برمجية.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">حدود المصطلح</span>
+    <p>يجب التمييز بين طلب التنفيذ، ومحاولة التنفيذ، وقبول الطلب من النظام، وإتمام الإجراء، وتحقق النتيجة الاقتصادية. هذه الحالات ليست مترادفة.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#execution-control">التحكم في التنفيذ</a></li>
+<li><a class="term-chip" href="#event-log">سجل الأحداث</a></li>
+<li><a class="term-chip" href="#verification">التحقق</a></li>
+<li><a class="term-chip" href="#outcome">النتيجة</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="execution-control">
+  <div class="term-head"><span class="term-no">21</span><h3>التحكم في التنفيذ</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Execution Control</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>الآليات التي تتحكم في السماح بالإجراءات التشغيلية أو منعها أو تعليقها أو إعادة التحقق منها وفق الصلاحيات والسياسات والشروط ذات الصلة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا يهم؟</span>
+    <p>قد تتغير الصلاحيات أو الظروف بين إنشاء المهمة وتنفيذها، ولذلك قد لا يكون فحص الصلاحية في البداية كافياً لكل الحالات.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>إعادة التحقق من صلاحية التحويل المالي عند نقطة الإرسال، بدلاً من الاعتماد على فحص سابق فقط.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">حدود المصطلح</span>
+    <p>لا يفترض هذا التعريف أن آلية واحدة تصلح لكل الأنظمة. يجب مقارنة التحكم المقترح بالضوابط الموجودة وببدائل أبسط.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#delegated-authority">التفويض</a></li>
+<li><a class="term-chip" href="#authority-boundary">حدود السلطة</a></li>
+<li><a class="term-chip" href="#revocation-of-authority">سحب التفويض</a></li>
+<li><a class="term-chip" href="#governed-execution">التنفيذ المحكوم</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="governed-execution">
+  <div class="term-head"><span class="term-no">22</span><h3>التنفيذ المحكوم</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Governed Execution</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>تنفيذ الأفعال ضمن ضوابط السلطة والسياسات والموافقات والشروط التشغيلية ذات الصلة، مع إمكانية تقييم مدى الالتزام بهذه المتطلبات استناداً إلى أدلة مناسبة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا يهم؟</span>
+    <p>يربط ما يُسمح للنظام بفعله بما يحدث فعلياً أثناء التشغيل.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>عدم إرسال تحويل مالي إذا انتهت صلاحية الموافقة أو لم تتحقق الشروط المحددة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">حدود المصطلح</span>
+    <p>لا يعني وصف التنفيذ بأنه محكوم أنه خالٍ من المخاطر أو مضمون النتائج. ينبغي إثبات فعالية الضوابط ضمن نطاق اختبار واضح.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#governance">الحوكمة</a></li>
+<li><a class="term-chip" href="#authority">السلطة</a></li>
+<li><a class="term-chip" href="#execution-control">التحكم في التنفيذ</a></li>
+<li><span class="term-chip"><a href="#execution-evidence">الأدلة</a> و<a href="#verification">التحقق</a></span></li>
+    </ul>
+  </div>
+</article>
+        </div>
+      </section>
+
+      <section class="section-shell term-group" id="evidence-outcomes" aria-labelledby="evidence-outcomes-title">
+        <div class="section-header">
+          <p class="section-pill">المفاهيم 23–31</p>
+          <h2 id="evidence-outcomes-title">الأدلة والتحقق والنتائج الاقتصادية</h2>
+        </div>
+        <div class="term-list">
+<article class="section-card term-card" id="event-log">
+  <div class="term-head"><span class="term-no">23</span><h3>سجل الأحداث</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Event Log</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>سجل منظم للأحداث التشغيلية ذات الصلة، مع الطوابع الزمنية والمعرفات والحالات والبيانات اللازمة لفهم تسلسل التنفيذ.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا يهم؟</span>
+    <p>يساعد على إعادة بناء ما حدث ومقارنة السلوك الفعلي بالشروط المحددة في التجربة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>تسجيل وقت إصدار التفويض، ووقت سحبه، ووقت فحص الصلاحية، ووقت محاولة التنفيذ، والاستجابة النهائية.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#execution-evidence">الأدلة</a></li>
+<li><a class="term-chip" href="#verification">التحقق</a></li>
+<li><span class="term-chip">سجل التجربة</span></li>
+<li><a class="term-chip" href="#economic-exposure">التعرض الاقتصادي</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="execution-evidence">
+  <div class="term-head"><span class="term-no">24</span><h3>أدلة التنفيذ</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Execution Evidence</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>البيانات والسجلات والمراجع التي تدعم ادعاءً محدداً بشأن إجراء أو حالة تشغيلية.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا تهم؟</span>
+    <p>تسمح بمراجعة ما إذا كان الإجراء قد حدث، وتحت أي ظروف، وما إذا كانت الاستنتاجات تتفق مع السجلات المتاحة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>لا يكفي سجل داخلي يقول إن التحويل اكتمل إذا كان المطلوب إثبات أن النظام المالي المستهدف أكد حالة المعاملة. وقد يلزم الرجوع إلى مصدر مستقل أو أكثر موثوقية بحسب الحالة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">حدود المصطلح</span>
+    <p>وجود سجل لا يجعله صحيحاً تلقائياً. يجب تقييم مصدره واكتماله وتوقيته وسلامته وإمكان ربطه بالحدث المقصود.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#event-log">سجل الأحداث</a></li>
+<li><a class="term-chip" href="#verification">التحقق</a></li>
+<li><a class="term-chip" href="#evidence-package">حزمة الأدلة</a></li>
+<li><a class="term-chip" href="#economic-outcome">النتيجة الاقتصادية</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="verification">
+  <div class="term-head"><span class="term-no">25</span><h3>التحقق</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Verification</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>عملية فحص الأدلة لتحديد ما إذا كان ادعاء أو إجراء أو مخرج يطابق شروطاً ومعايير محددة مسبقاً.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا يهم؟</span>
+    <p>يفصل بين ما يبلّغ النظام أنه فعله وما يمكن إثباته من بيانات مناسبة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>التحقق من أن قيمة أمر الشراء لا تتجاوز الحد المصرح به، وأن الموافقة المطلوبة صدرت قبل الإرسال.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">حدود المصطلح</span>
+    <p>التحقق من تنفيذ الإجراء لا يثبت بالضرورة نجاحه اقتصادياً. وقد تتطلب النتيجة الاقتصادية قياساً مستقلاً.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#execution-evidence">أدلة التنفيذ</a></li>
+<li><a class="term-chip" href="#outcome">النتيجة</a></li>
+<li><a class="term-chip" href="#evidence-package">حزمة الأدلة</a></li>
+<li><a class="term-chip" href="#event-log">سجل الأحداث</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="outcome">
+  <div class="term-head"><span class="term-no">26</span><h3>النتيجة</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Outcome</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>الحالة أو التغيير الذي تحقق فعلياً بعد إجراء أو سلسلة إجراءات، مقارنة بالحالة المطلوبة أو المرجعية.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا تهم؟</span>
+    <p>تساعد على معرفة ما إذا كانت العملية قد حققت ما كان متوقعاً منها، وليس فقط ما إذا كانت خطواتها قد نُفذت.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>قبول طلب الشراء من المورد هو حالة تشغيلية؛ أما استلام المواد بالجودة والكمية المتفق عليهما فهو نتيجة لاحقة تتطلب تحققاً منفصلاً.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#execution">التنفيذ</a></li>
+<li><a class="term-chip" href="#verification">التحقق</a></li>
+<li><a class="term-chip" href="#economic-outcome">النتيجة الاقتصادية</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="economic-outcome">
+  <div class="term-head"><span class="term-no">27</span><h3>النتيجة الاقتصادية</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Economic Outcome</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>الأثر الاقتصادي القابل للرصد أو القياس الذي يرتبط بفعل أو قرار، مثل تغير التكلفة أو الإيراد أو استخدام الموارد أو الالتزام المالي أو التعرض للمخاطر.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا تهم؟</span>
+    <p>تساعد على تقييم ما إذا كان الفعل قد أنتج قيمة عملية، وما إذا كانت هذه القيمة تبرر تكلفة التنفيذ والضوابط.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>خفض تكلفة المشتريات مع الحفاظ على الجودة والالتزام بشروط العقد.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">حدود المصطلح</span>
+    <p>يجب التمييز بين النتيجة المرصودة والأثر المنسوب إلى النظام. فإثبات أن التكلفة انخفضت لا يكفي وحده لإثبات أن الذكاء الاصطناعي هو سبب الانخفاض؛ وقد يتطلب ذلك مقارنة أو تصميماً تقييمياً مناسباً.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#outcome">النتيجة</a></li>
+<li><a class="term-chip" href="#economic-exposure">التعرض الاقتصادي</a></li>
+<li><a class="term-chip" href="#verification">التحقق</a></li>
+<li><a class="term-chip" href="#economic-value">القيمة الاقتصادية</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="economic-exposure">
+  <div class="term-head"><span class="term-no">28</span><h3>التعرض الاقتصادي</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Economic Exposure</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>القيمة المالية أو الاقتصادية المحتملة التي قد تتأثر بفعل أو إخفاق أو قرار، ضمن سيناريو وحدود وافتراضات محددة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا يهم؟</span>
+    <p>يساعد على وصف حجم المخاطر المحتملة حتى عندما لا تقع خسارة فعلية.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>قد يمثل طلب تحويل غير مصرح به بقيمة 5,000 ريال تعرضاً محتملاً بهذا المبلغ في سيناريو محدد، لكن لا يجوز تسجيله كخسارة محققة ما لم تحدث الخسارة فعلاً.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">حدود المصطلح</span>
+    <p>يجب الفصل بين التعرض المحتمل والخسارة المحققة، وبين القيمة الاسمية للمعاملة والخسارة المتوقعة، مع توضيح الافتراضات.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#economic-outcome">النتيجة الاقتصادية</a></li>
+<li><a class="term-chip" href="#governance">الحوكمة</a></li>
+<li><a class="term-chip" href="#execution">التنفيذ</a></li>
+<li><a class="term-chip" href="#metrics">المقاييس</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="evidence-package">
+  <div class="term-head"><span class="term-no">29</span><h3>حزمة الأدلة</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Evidence Package</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>مجموعة منظمة من مواد التجربة اللازمة لمراجعة النتيجة، مثل وصف الاختبار، ونسخة النظام، والبيانات الخام، وتعريف المقاييس، والحسابات، والقيود، وسجل القرار.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا تهم؟</span>
+    <p>تسهّل المراجعة وإعادة التحليل والتكرار، وتحد من الاعتماد على الملخصات غير المدعومة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>حزمة تجربة تتضمن معرف التجربة، وإعدادات الوكيل، وحدود التفويض، وتسلسل الأحداث، ونتائج القياس، والبيانات التي تدعم الاستنتاج.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#event-log">سجل الأحداث</a></li>
+<li><a class="term-chip" href="#verification">التحقق</a></li>
+<li><a class="term-chip" href="#reproducibility">قابلية التكرار</a></li>
+<li><a class="term-chip" href="#decision-memory">سجل القرار</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="reproducibility">
+  <div class="term-head"><span class="term-no">30</span><h3>قابلية التكرار</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Reproducibility</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>إمكان إعادة تنفيذ تجربة أو إعادة تحليل بياناتها وفق وصف وإجراءات ومواد موثقة، للتحقق من النتائج ضمن الظروف المحددة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا تهم؟</span>
+    <p>تقلل الاعتماد على تجربة واحدة، وتساعد على تقييم ما إذا كانت النتيجة مستقرة أم مرتبطة بظروف خاصة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>إعادة سيناريو سحب التفويض بالإعدادات نفسها، ثم تغيير متغير واحد لدراسة أثره.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">حدود المصطلح</span>
+    <p>نجاح التكرار في بيئة واحدة لا يثبت قابلية التعميم على جميع النماذج أو المؤسسات أو البيئات التشغيلية.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><span class="term-chip">التجربة</span></li>
+<li><a class="term-chip" href="#evidence-package">حزمة الأدلة</a></li>
+<li><a class="term-chip" href="#metrics">المقاييس</a></li>
+<li><a class="term-chip" href="#verification">التحقق</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="decision-memory">
+  <div class="term-head"><span class="term-no">31</span><h3>ذاكرة القرار</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Decision Memory</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>سجل منظم للقرارات السابقة وأسبابها والأدلة التي دعمتها والنتائج والقيود والدروس المستفادة منها.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا تهم؟</span>
+    <p>تساعد على تفسير القرارات اللاحقة، ومنع تكرار الأخطاء، ومعرفة سبب تغيير فرضية أو تصميم أو مسار تطوير.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>توثيق قرار عدم تطوير مكوّن جديد لأن الضوابط الحالية حققت مستوى الأداء المطلوب في الاختبارات المحددة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">حدود المصطلح</span>
+    <p>حفظ القرار لا يعني أن القرار صحيح أو أن النظام ينبغي أن يتبعه تلقائياً؛ بل يجب الاحتفاظ بسياقه وشروط صلاحيته.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#economic-outcome">النتيجة الاقتصادية</a></li>
+<li><a class="term-chip" href="#evidence-package">حزمة الأدلة</a></li>
+<li><span class="term-chip">سجل التجربة</span></li>
+<li><a class="term-chip" href="#governance">الحوكمة</a></li>
+    </ul>
+  </div>
+</article>
+        </div>
+      </section>
+
+      <section class="section-shell term-group" id="assets" aria-labelledby="assets-title">
+        <div class="section-header">
+          <p class="section-pill">المفاهيم 32–37</p>
+          <h2 id="assets-title">الأصول البحثية والهندسية لأوامركم</h2>
+        </div>
+        <div class="term-list">
+<article class="section-card term-card" id="smart-hand">
+  <div class="term-head"><span class="term-no">32</span><h3><bdi dir="ltr">Smart Hand™</bdi></h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Smart Hand Experimental Environment</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>بيئة تجريبية مضبوطة تعمل أوامركم على تطويرها لاختبار وقياس وتوثيق الأفعال الاقتصادية التي تنفذها أنظمة الذكاء الاصطناعي أو تشارك فيها، مع التركيز على السلطة والتفويض والتحكم في التنفيذ والأدلة والنتائج.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">دورها في البرنامج البحثي</span>
+    <p>تساعد <bdi dir="ltr">Smart Hand</bdi> على تشغيل سيناريوهات محددة، وتسجيل الأحداث، وجمع البيانات، وحساب المقاييس، وتجهيز مواد تسمح بمراجعة النتائج وتكرار التجارب.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>اختبار ما إذا كان وكيل مالي يستطيع الاستمرار في معاملة بعد سحب التفويض، ضمن بيئة محاكاة لا تستخدم أموالاً حقيقية.</p>
+  </div>
+  <div class="term-field is-status">
+    <span class="term-label">حالة المصطلح</span>
+    <p>أصل تجريبي قيد التطوير؛ ولا ينبغي وصفه بأنه بنية تحتية إنتاجية مكتملة قبل إثبات الجاهزية والموثوقية والأمن وقابلية التكامل.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#geab"><bdi dir="ltr">GEAB</bdi></a></li>
+<li><a class="term-chip" href="#cep"><bdi dir="ltr">CEP</bdi></a></li>
+<li><a class="term-chip" href="#event-log">سجل الأحداث</a></li>
+<li><a class="term-chip" href="#evidence-package">حزمة الأدلة</a></li>
+<li><a class="term-chip" href="#governed-execution">التنفيذ المحكوم</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="geab">
+  <div class="term-head"><span class="term-no">33</span><h3><bdi dir="ltr">GEAB</bdi></h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Governed Economic Action Benchmark</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>إطار تقييم قيد التطوير لتنظيم سيناريوهات واختبارات ومقاييس تساعد على دراسة سلوك أنظمة الذكاء الاصطناعي في الأفعال الاقتصادية المحكومة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">الغرض البحثي</span>
+    <p>توفير طريقة منظمة لمقارنة سلوك الأنظمة في حالات محددة، مثل التحويل المالي وسحب التفويض، مع توثيق شروط الاختبار والنتائج والقيود.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>مقارنة سلوك نظامين عند سحب صلاحية التنفيذ بعد إعداد المعاملة وقبل إرسالها.</p>
+  </div>
+  <div class="term-field is-status">
+    <span class="term-label">حالة المصطلح</span>
+    <p><bdi dir="ltr">Benchmark</bdi> قيد التطوير والتحقق؛ ولا يمثل في هذه المرحلة معياراً عالمياً معتمداً أو ضماناً شاملاً لسلامة النظام.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#smart-hand"><bdi dir="ltr">Smart Hand</bdi></a></li>
+<li><a class="term-chip" href="#metrics">المقاييس</a></li>
+<li><a class="term-chip" href="#evidence-package">حزمة الأدلة</a></li>
+<li><a class="term-chip" href="#reproducibility">قابلية التكرار</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="cep">
+  <div class="term-head"><span class="term-no">34</span><h3><bdi dir="ltr">CEP™</bdi></h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Command Execution Protocol</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>بروتوكول تنفيذي قيد التطوير ضمن أبحاث أوامركم، يهدف إلى اختبار طرق ربط الأوامر والتفويضات وضوابط الحوكمة بعملية التنفيذ وحدودها التشغيلية.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">السؤال الهندسي</span>
+    <p>هل يمكن لآلية محددة أن تحسن إنفاذ حدود الصلاحيات أو الاستجابة لتغير التفويض أو توثيق التنفيذ، مقارنة بالضوابط القائمة والبدائل الأبسط؟</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>اختبار إعادة التحقق من صلاحية الإجراء عند نقطة التنفيذ، ثم مقارنة معدل الإخفاق وزمن الاستجابة والتكلفة بخط أساس مناسب.</p>
+  </div>
+  <div class="term-field is-status">
+    <span class="term-label">حالة المصطلح</span>
+    <p>بروتوكول قيد التطوير، وليس معياراً معتمداً أو حلاً ثبتت ضرورته. وتُحدد جدواه بناءً على النتائج المقارنة.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#smart-hand"><bdi dir="ltr">Smart Hand</bdi></a></li>
+<li><a class="term-chip" href="#geab"><bdi dir="ltr">GEAB</bdi></a></li>
+<li><a class="term-chip" href="#execution-control">التحكم في التنفيذ</a></li>
+<li><a class="term-chip" href="#delegated-authority">التفويض</a></li>
+<li><a class="term-chip" href="#execution-evidence">الأدلة</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="ai-execution-infrastructure">
+  <div class="term-head"><span class="term-no">35</span><h3>البنية التحتية لتنفيذ الذكاء الاصطناعي</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">AI Execution Infrastructure</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>مجموعة المكونات والآليات التقنية والتشغيلية التي تمكّن أنظمة الذكاء الاصطناعي من التفاعل مع الأدوات والخدمات والأنظمة الخارجية وتنفيذ إجراءات ضمن بيئة محددة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا تهم؟</span>
+    <p>تتيح الانتقال من إنتاج المخرجات إلى التفاعل مع الأنظمة التي يمكن أن تتأثر بها القرارات والأفعال.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>تكامل وكيل مع نظام مشتريات يتيح له قراءة البيانات وإعداد طلب، بينما يخضع الاعتماد والإرسال لحدود الصلاحيات المعمول بها.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">حدود المصطلح</span>
+    <p>وجود واجهات برمجية أو أدوات تنفيذ لا يثبت وحده وجود حوكمة كافية، كما لا يثبت أن المؤسسة تحتاج إلى بنية تحتية جديدة.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#execution">التنفيذ</a></li>
+<li><a class="term-chip" href="#execution-control">التحكم في التنفيذ</a></li>
+<li><a class="term-chip" href="#smart-hand"><bdi dir="ltr">Smart Hand</bdi></a></li>
+<li><a class="term-chip" href="#cep"><bdi dir="ltr">CEP</bdi></a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="architecture">
+  <div class="term-head"><span class="term-no">36</span><h3>البنية المعمارية</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Architecture</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>تنظيم المكونات والواجهات والمسؤوليات والتدفقات والقيود التي تحدد كيفية عمل النظام وتفاعله مع بيئته.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">لماذا تهم؟</span>
+    <p>تساعد على تحديد أين ينبغي وضع الضوابط، وكيف تتدفق الصلاحيات والأحداث والأدلة بين المكونات.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>تحديد موقع فحص التفويض في دورة تنفيذ معاملة، والمسؤول عن رفضها عند انتهاء الصلاحية، والمصدر الذي يثبت الحالة النهائية.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مبدأ أوامركم</span>
+    <p>البحث أولاً، والأدلة ثانياً، والمعمارية ثالثاً، والبنية التحتية فقط إذا بررتها النتائج.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#cep"><bdi dir="ltr">CEP</bdi></a></li>
+<li><a class="term-chip" href="#smart-hand"><bdi dir="ltr">Smart Hand</bdi></a></li>
+<li><a class="term-chip" href="#governed-execution">التنفيذ المحكوم</a></li>
+<li><a class="term-chip" href="#evidence-package">حزمة الأدلة</a></li>
+    </ul>
+  </div>
+</article>
+<article class="section-card term-card" id="gcear">
+  <div class="term-head"><span class="term-no">37</span><h3><bdi dir="ltr">GCEAR</bdi></h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Global Center for Economic Action Research</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>مبادرة أو مركز بحثي مقترح يهدف إلى تنظيم البحث في الأفعال الاقتصادية للذكاء الاصطناعي، وتطوير المنهجيات، وتنسيق التعاون، وتعزيز جودة الأدلة وإمكان إعادة التجربة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">الدور المقترح</span>
+    <ul class="bullet-list">
+      <li>تنظيم أجندة الأسئلة البحثية.</li>
+      <li>تطوير منهجيات التقييم والتوثيق.</li>
+      <li>تنسيق المراجعة البحثية والتعاون المؤسسي.</li>
+      <li>توثيق النتائج والقيود والدروس المستفادة.</li>
+      <li>دعم المقارنة والتكرار في بيئات مختلفة، متى توافرت الشروط.</li>
+    </ul>
+  </div>
+  <div class="term-field">
+    <span class="term-label">العلاقة بأوامركم</span>
+    <p>يمكن أن تكون أوامركم المسار التجاري والهندسي لتطوير الأدوات والأصول، بينما يؤدي <bdi dir="ltr">GCEAR</bdi> دوراً بحثياً وتنظيمياً وفق ترتيبات قانونية وحوكمية واضحة. وتُحدد الملكية الفكرية وحقوق البيانات والنشر والاستقلالية بموجب اتفاقيات فعلية.</p>
+  </div>
+  <div class="term-field is-status">
+    <span class="term-label">حالة المصطلح</span>
+    <p>مبادرة مقترحة؛ ولا يعني الاسم وحده أن المركز تأسس قانونياً أو اكتسب أهلية أكاديمية أو تمويلية أو استقلالاً مؤسسياً.</p>
+  </div>
+  <div class="term-related">
+    <span class="term-label">مصطلحات مرتبطة</span>
+    <ul class="term-chips">
+<li><a class="term-chip" href="#ce-ai"><bdi dir="ltr">CE-AI</bdi></a></li>
+<li><a class="term-chip" href="#smart-hand"><bdi dir="ltr">Smart Hand</bdi></a></li>
+<li><a class="term-chip" href="#geab"><bdi dir="ltr">GEAB</bdi></a></li>
+<li><span class="term-chip">المنهجية البحثية</span></li>
+<li><span class="term-chip">حوكمة الأدلة</span></li>
+    </ul>
+  </div>
+</article>
+        </div>
+      </section>
+
+      <section class="section-shell term-group" id="supporting" aria-labelledby="supporting-title">
+        <div class="section-header">
+          <p class="section-pill">المفاهيم 38–44</p>
+          <h2 id="supporting-title">المفاهيم المساندة</h2>
+        </div>
+        <div class="term-list">
+<article class="section-card term-card" id="metrics">
+  <div class="term-head"><span class="term-no">38</span><h3>المقاييس</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Metrics</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>مؤشرات كمية أو نوعية تُستخدم لتقييم جانب محدد من سلوك النظام أو أداء الضوابط أو نتائج التجربة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>معدل تنفيذ الأفعال غير المصرح بها، أو زمن الاستجابة لسحب التفويض، أو نسبة التجارب التي تحتوي على أدلة مكتملة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مبدأ القياس</span>
+    <p>يجب تعريف كل مقياس وطريقة حسابه ومصدر بياناته وحدوده قبل تفسير نتائجه. ولا ينبغي دمج مقاييس مختلفة في درجة واحدة قبل التحقق من صلاحية ذلك.</p>
+  </div>
+</article>
+<article class="section-card term-card" id="baseline">
+  <div class="term-head"><span class="term-no">39</span><h3>خط الأساس</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Baseline</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>الحالة المرجعية التي تُقارن بها نتيجة تدخل أو تغيير، مثل أداء الضوابط الموجودة قبل إدخال آلية جديدة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>مقارنة معدل الإخفاق قبل إضافة فحص جديد للتفويض وبعده، في ظروف اختبار متكافئة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">أهميته</span>
+    <p>من دون خط أساس مناسب، يصعب تحديد ما إذا كان التدخل قد حسّن النتيجة فعلاً.</p>
+  </div>
+</article>
+<article class="section-card term-card" id="controlled-experiment">
+  <div class="term-head"><span class="term-no">40</span><h3>التجربة المضبوطة</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Controlled Experiment</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>اختبار يُحدد مسبقاً فيه السيناريو والمتغيرات والشروط وطريقة القياس، مع ضبط العوامل التي قد تؤثر في تفسير النتائج قدر الإمكان.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>تغيير توقيت فحص الصلاحية مع إبقاء بقية شروط الاختبار ثابتة لدراسة أثره.</p>
+  </div>
+</article>
+<article class="section-card term-card" id="generalizability">
+  <div class="term-head"><span class="term-no">41</span><h3>قابلية التعميم</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Generalizability</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>مدى إمكان تطبيق استنتاجات تجربة على أنظمة أو ظروف أو مؤسسات أخرى غير الظروف التي اختُبرت مباشرة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>نجاح ضابط في بيئة محاكاة واحدة لا يثبت تلقائياً فعاليته في أنظمة مالية مختلفة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">المبدأ</span>
+    <p>تُكتسب قابلية التعميم من تكرار الاختبارات وتنوع البيئات والأدلة، ولا تُفترض من نجاح تجربة واحدة.</p>
+  </div>
+</article>
+<article class="section-card term-card" id="engineering-intervention">
+  <div class="term-head"><span class="term-no">42</span><h3>التدخل الهندسي</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Engineering Intervention</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>تغيير تقني أو تشغيلي يُدخل بهدف معالجة إخفاق أو تحسين نتيجة محددة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>إضافة فحص للصلاحية عند نقطة التنفيذ، أو تغيير آلية إيقاف سير العمل عند سحب التفويض.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مبدأ التقييم</span>
+    <p>يجب مقارنة التدخل بخط الأساس والبدائل، وقياس الفائدة والتكلفة والآثار الجانبية.</p>
+  </div>
+</article>
+<article class="section-card term-card" id="economic-value">
+  <div class="term-head"><span class="term-no">43</span><h3>القيمة الاقتصادية</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Economic Value</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>المنفعة التي تتحقق من حل أو إجراء مقارنة بتكلفته ومخاطره وبدائله، وفق سياق ومقاييس محددة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">مثال</span>
+    <p>خفض تكلفة معالجة الحالات الاستثنائية، أو تقليل التعرض المالي، أو تقليل زمن المراجعة، إذا أمكن إثبات هذه الآثار وقياسها.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">حدود المصطلح</span>
+    <p>لا يكفي أن يكون الحل متقدماً تقنياً لإثبات قيمته الاقتصادية؛ بل يجب أن تكون هناك منفعة ذات معنى لمستخدم أو مؤسسة مقارنة بالبدائل.</p>
+  </div>
+</article>
+<article class="section-card term-card" id="evidence-before-architecture">
+  <div class="term-head"><span class="term-no">44</span><h3>الدليل قبل المعمارية</h3></div>
+  <p class="term-alt"><bdi dir="ltr" lang="en">Evidence Before Architecture</bdi></p>
+  <div class="term-field">
+    <span class="term-label">التعريف</span>
+    <p>مبدأ بحثي يقتضي اختبار المشكلة والبدائل وجمع الأدلة قبل الالتزام بتصميم معماري كبير أو بناء بنية تحتية واسعة.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">تطبيقه في أوامركم</span>
+    <p>تبدأ التجربة بسؤال محدد وخط أساس ومقاييس واضحة، ثم تحدد النتائج ما إذا كان يلزم تدخل جديد أو مكوّن قابل لإعادة الاستخدام.</p>
+  </div>
+  <div class="term-field">
+    <span class="term-label">الغرض</span>
+    <p>تقليل مخاطر الاستثمار المبكر في حلول لم تثبت ضرورتها.</p>
+  </div>
+</article>
+        </div>
+      </section>
+
+      <section class="section-shell reveal" id="relationships" aria-labelledby="relationships-title">
+        <div class="section-header">
+          <p class="section-pill">العلاقات</p>
+          <h2 id="relationships-title">خريطة العلاقات المفاهيمية</h2>
+          <p>تربط الخريطة بين مجموعات من المفاهيم، ولا تعني أن كل نظام يجب أن يمر بجميع العناصر بالترتيب نفسه.</p>
+        </div>
+        <div class="research-grid">
+          <div class="research-card">
+            <span class="eyebrow-label">المجموعة الأولى</span>
+            <h3>الهدف والتوجيه</h3>
+            <div class="term-chain"><a href="#human-intent">النية البشرية</a> ↔ <a href="#command">الأمر</a> ↔ <a href="#intent-understanding">فهم النية</a> ↔ <a href="#planning">التخطيط</a></div>
+          </div>
+          <div class="research-card">
+            <span class="eyebrow-label">المجموعة الثانية</span>
+            <h3>السلطة والحوكمة</h3>
+            <div class="term-chain"><a href="#authority">السلطة</a> ↔ <a href="#delegated-authority">التفويض</a> ↔ <a href="#authority-boundary">حدود السلطة</a> ↔ <a href="#governance">الحوكمة</a> ↔ <a href="#human-oversight">الإشراف البشري</a></div>
+          </div>
+          <div class="research-card">
+            <span class="eyebrow-label">المجموعة الثالثة</span>
+            <h3>الفعل والتنفيذ</h3>
+            <div class="term-chain"><a href="#ai-economic-agency">الوكالة الاقتصادية</a> ↔ <a href="#ai-agent">وكيل الذكاء الاصطناعي</a> ↔ <a href="#workflow">سير العمل</a> ↔ <a href="#execution">التنفيذ</a> ↔ <a href="#execution-control">التحكم في التنفيذ</a></div>
+          </div>
+          <div class="research-card">
+            <span class="eyebrow-label">المجموعة الرابعة</span>
+            <h3>الأدلة والنتائج</h3>
+            <div class="term-chain"><a href="#event-log">سجل الأحداث</a> ↔ <a href="#execution-evidence">أدلة التنفيذ</a> ↔ <a href="#verification">التحقق</a> ↔ <a href="#outcome">النتيجة</a> ↔ <a href="#economic-outcome">النتيجة الاقتصادية</a> ↔ <a href="#economic-exposure">التعرض الاقتصادي</a></div>
+          </div>
+          <div class="research-card">
+            <span class="eyebrow-label">المجموعة الخامسة</span>
+            <h3>البحث والهندسة</h3>
+            <div class="term-chain"><a href="#ce-ai"><bdi dir="ltr">CE-AI</bdi></a> ↔ <a href="#smart-hand"><bdi dir="ltr">Smart Hand</bdi></a> ↔ <a href="#geab"><bdi dir="ltr">GEAB</bdi></a> ↔ <a href="#cep"><bdi dir="ltr">CEP</bdi></a> ↔ التجارب ↔ <a href="#metrics">المقاييس</a> ↔ <a href="#evidence-package">حزم الأدلة</a> ↔ القرارات الهندسية</div>
+          </div>
+          <div class="research-card">
+            <span class="eyebrow-label">المجموعة السادسة</span>
+            <h3>تنظيم البحث والتعاون</h3>
+            <div class="term-chain"><a href="#gcear"><bdi dir="ltr">GCEAR</bdi></a> ↔ المنهجية البحثية ↔ مراجعة الأدلة ↔ <a href="#reproducibility">قابلية التكرار</a> ↔ التعاون البحثي</div>
+          </div>
+        </div>
+        <div class="research-note text-center mt-5">
+          <p>وتُحدد العلاقات الدقيقة بين المفاهيم بحسب كل حالة استخدام، وما تدعمه الأدلة والتجارب.</p>
+        </div>
+      </section>
+
+      <section class="section-shell reveal" id="principles" aria-labelledby="principles-title">
+        <div class="section-header">
+          <p class="section-pill">التفسير</p>
+          <h2 id="principles-title">مبادئ تفسير المصطلحات</h2>
+          <p>تعتمد أوامركم المبادئ التالية عند استخدام المصطلحات في الأبحاث والتقارير والمواد التعريفية:</p>
+        </div>
+        <div class="info-box">
+          <ol class="charter-list">
+          <li><strong>القدرة لا تعني السلطة:</strong> إمكان تنفيذ الإجراء لا يثبت وجود تفويض.</li>
+          <li><strong>الأمر لا يساوي التفويض:</strong> التعليمات لا تثبت وحدها أن صاحبها مخول بمنح الصلاحية.</li>
+          <li><strong>التفويض لا يضمن استمرار الصلاحية:</strong> قد تتغير الصلاحيات أثناء سير العمل.</li>
+          <li><strong>التنفيذ لا يساوي النتيجة:</strong> نجاح الإجراء تقنياً لا يثبت تحقق الهدف الاقتصادي.</li>
+          <li><strong>السجل لا يساوي الدليل الكامل:</strong> يجب تقييم مصدر البيانات واكتمالها وموثوقيتها.</li>
+          <li><strong>التجربة الواحدة لا تثبت التعميم:</strong> يلزم تكرار مناسب عبر الظروف ذات الصلة.</li>
+          <li><strong>المفهوم ليس معياراً معتمداً:</strong> لا تُستخدم أوصاف مثل «معيار عالمي» أو «اعتماد رسمي» دون أساس فعلي.</li>
+          <li><strong>الفرضية ليست نتيجة:</strong> توصف الأصول والمناهج قيد التطوير بوضوح حتى تُثبت فعاليتها.</li>
+          <li><strong>الحل لا يثبت الحاجة إلى بنية جديدة:</strong> يجب تقييم الضوابط الحالية والبدائل الأبسط أولاً.</li>
+          <li><strong>القيمة الاقتصادية تحتاج إلى قياس:</strong> ينبغي فصل المنافع الفعلية عن التقديرات والافتراضات.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section-shell reveal" id="explore" aria-labelledby="explore-title">
+        <div class="section-header">
+          <p class="section-pill">الفهرس</p>
+          <h2 id="explore-title">استكشف المزيد من المفاهيم</h2>
+        </div>
+        <div class="section-grid three-col">
+          <div class="section-card">
+            <h4>المفاهيم الأساسية</h4>
+            <ul class="bullet-list term-index">
+            <li><a href="#ce-ai">اقتصاد الأوامر للذكاء الاصطناعي (<bdi dir="ltr">CE-AI</bdi>)</a></li>
+            <li><a href="#ai-economic-action">الفعل الاقتصادي للذكاء الاصطناعي</a></li>
+            <li><a href="#technical-capability">القدرة التقنية</a></li>
+            <li><a href="#human-intent">النية البشرية</a></li>
+            <li><a href="#command">الأمر</a></li>
+            <li><a href="#intent-understanding">فهم النية</a></li>
             </ul>
-            
-            <h4 class="property-label">مصطلحات مرتبطة</h4>
-            <p><a href="#command">الأمر</a> | <a href="#intent-understanding">فهم النية</a> | <a href="#outcome">النتيجة</a> | <a href="#ai-agent">وكيل الذكاء الاصطناعي</a></p>
-        </div>
-
-        <!-- Concept 2: Command -->
-        <div class="concept-segment" id="command">
-            <h3 class="concept-term-title">2. الأمر (Command)</h3>
-            
-            <h4 class="property-label">التعريف الرسمي</h4>
-            <p>الأمر هو التعبير التنفيذي الصريح عن النية البشرية والذي يطلب من النظام الذكي بدء العمل وتوجيهه نحو هدف محدد.</p>
-
-            <h4 class="property-label">الفرق بين النية والأمر</h4>
-            <p>تُعبر <strong>النية</strong> عن المقصد أو الهدف الذي يرغب الإنسان في تحقيقه، بينما يمثل <strong>الأمر</strong> التعبير التشغيلي الصريح الموجه للنظام للبدء في العملية التنفيذية.</p>
-
-            <h4 class="property-label">الرسم المفاهيمي</h4>
-            <div class="visual-diagram-box">
-                <div class="diagram-flow">
-                    <div class="diagram-node">النية البشرية</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">الأمر</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">فهم النية</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">التنفيذ</div>
-                </div>
-            </div>
-
-            <h4 class="property-label">مصطلحات مرتبطة</h4>
-            <p><a href="#intent">النية البشرية</a> | <a href="#intent-understanding">فهم النية</a> | <a href="#planning">التخطيط</a></p>
-        </div>
-
-        <!-- Concept 3: Intent Understanding -->
-        <div class="concept-segment" id="intent-understanding">
-            <h3 class="concept-term-title">3. فهم النية (Intent Understanding)</h3>
-            
-            <h4 class="property-label">التعريف الرسمي</h4>
-            <p>فهم النية هو العملية التي يحلل من خلالها النظام الذكي الأمر اللغوي ليفسر الهدف الحقيقي، والمحددات، والسياق، والنتيجة المطلوبة خلف الأمر الموجه.</p>
-
-            <h4 class="property-label">علاقته بالتنفيذ</h4>
-            <p>يحول فهم النية الأمر البشري من مجرد تعبير لغوي سطحي إلى تمثيل تشغيلي يمكن تخطيطه وتنسيقه وتنفيذه برمجياً.</p>
-
-            <h4 class="property-label">الرسم المفاهيمي</h4>
-            <div class="visual-diagram-box">
-                <div class="diagram-flow">
-                    <div class="diagram-node">الأمر</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">فهم النية</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">التخطيط</div>
-                </div>
-            </div>
-
-            <h4 class="property-label">مصطلحات مرتبطة</h4>
-            <p><a href="#command">الأمر</a> | <a href="#planning">التخطيط</a> | <a href="#language-interface">واجهة اللغة</a></p>
-        </div>
-
-        <!-- Concept 4: Planning -->
-        <div class="concept-segment" id="planning">
-            <h3 class="concept-term-title">4. التخطيط (Planning)</h3>
-            
-            <h4 class="property-label">التعريف الرسمي</h4>
-            <p>التخطيط هو عملية تحديد تسلسل الإجراءات، الموارد، الأدوات، والاعتماديات اللازمة لتحويل النية المفهومة إلى سير عمل قابل للتنفيذ.</p>
-
-            <h4 class="property-label">مسار التخطيط التشغيلي</h4>
-            <p>ضمن عمارة Smart Hand MVP وإطار CE-AI، يعمل التخطيط عبر المسار التشغيلي المباشر:</p>
-            <blockquote>النية ➔ الخطة ➔ التنفيذ ➔ النتائج</blockquote>
-
-            <h4 class="property-label">الرسم المفاهيمي</h4>
-            <div class="visual-diagram-box">
-                <div class="diagram-flow">
-                    <div class="diagram-node">فهم النية</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">التخطيط</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">تنسيق الوكلاء</div>
-                </div>
-            </div>
-
-            <h4 class="property-label">مصطلحات مرتبطة</h4>
-            <p><a href="#intent-understanding">فهم النية</a> | <a href="#agent-orchestration">تنسيق الوكلاء</a> | <a href="#workflow">سير العمل</a></p>
-        </div>
-
-        <!-- Concept 5: Language Interface -->
-        <div class="concept-segment" id="language-interface">
-            <h3 class="concept-term-title">5. واجهة اللغة (Language Interface)</h3>
-            
-            <h4 class="property-label">التعريف الرسمي</h4>
-            <p>واجهة اللغة هي طبقة تفاعل تسمح للإنسان بالتواصل مع الأنظمة الرقمية باستخدام اللغة الطبيعية بدلًا من الأزرار والقوائم والبرمجة التقليدية.</p>
-            
-            <h4 class="property-label">واجهة اللغة مقابل الواجهة الرسومية (GUI)</h4>
-            <div class="table-responsive-container">
-                <table class="luxury-data-table">
-                    <thead>
-                        <tr>
-                            <th>الواجهة الرسومية (GUI)</th>
-                            <th>واجهة اللغة (Language Interface)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>قوائم وأزرار مقيدة</td><td>لغة محادثة طبيعية</td></tr>
-                        <tr><td>نماذج ومدخلات ثابتة</td><td>نية وأهداف متكيفة</td></tr>
-                        <tr><td>تنقل بين الشاشات</td><td>تعبير عن النتائج مباشرة</td></tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <h4 class="property-label">مصطلحات مرتبطة</h4>
-            <p><a href="#intent">النية البشرية</a> | <a href="#ai-agent">وكيل الذكاء الاصطناعي</a> | <a href="#intent-understanding">فهم النية</a></p>
-        </div>
-
-        <!-- Concept 6: AI Agent -->
-        <div class="concept-segment" id="ai-agent">
-            <h3 class="concept-term-title">6. وكيل الذكاء الاصطناعي (AI Agent)</h3>
-            
-            <h4 class="property-label">التعريف الرسمي</h4>
-            <p>وكلاء الذكاء الاصطناعي هم مشاركون تنفيذيون ذوي أهداف محددة داخل اقتصاد الأوامر للذكاء الاصطناعي (CE-AI)؛ يمكنهم تفسير الأهداف، تخطيط الإجراءات، استخدام الأدوات، والتنسيق مع الوكلاء الآخرين لإتمام المهام.</p>
-
-            <h4 class="property-label">الفرق بين وكيل الذكاء الاصطناعي وروبوت المحادثة</h4>
-            <div class="table-responsive-container">
-                <table class="luxury-data-table">
-                    <thead>
-                        <tr>
-                            <th>روبوت المحادثة (Chatbot)</th>
-                            <th>وكيل الذكاء الاصطناعي (AI Agent)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>يجيب عن الأسئلة</td><td>ينفذ الأهداف والمهام</td></tr>
-                        <tr><td>تفاعلي حواري</td><td>موجه نحو تحقيق نتائج ملموسة</td></tr>
-                        <tr><td>تفاعل فردي محدود</td><td>إدارة سير عمل متعدد الخطوات</td></tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <h4 class="property-label">مصطلحات مرتبطة</h4>
-            <p><a href="#agent-orchestration">تنسيق الوكلاء</a> | <a href="#planning">التخطيط</a> | <a href="#smart-hand">البنية التحتية لليد الذكية</a></p>
-        </div>
-
-        <!-- Concept 7: Agent Orchestration -->
-        <div class="concept-segment" id="agent-orchestration">
-            <h3 class="concept-term-title">7. تنسيق الوكلاء (Agent Orchestration)</h3>
-            
-            <h4 class="property-label">التعريف الرسمي</h4>
-            <p>تنسيق الوكلاء هو عملية إدارة وتنظيم عمل عدة وكلاء ذكاء اصطناعي وأدوات وسلاسل تنفيذية متفرقة لتحقيق هدف مشترك عبر عملية تنفيذ منظمة.</p>
-
-            <h4 class="property-label">الفرق بين الوكيل والتنسيق</h4>
-            <p>بينما ينفذ <strong>الوكيل</strong> مهام محددة، يتولى <strong>التنسيق (Orchestration)</strong> إدارة الاعتماديات، وتبادل البيانات، والتتابع العملياتي بين كافة الوكلاء والأدوات.</p>
-
-            <h4 class="property-label">الرسم المفاهيمي</h4>
-            <div class="visual-diagram-box">
-                <div class="diagram-flow">
-                    <div class="diagram-node">التخطيط</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">تنسيق الوكلاء</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">سير العمل</div>
-                </div>
-            </div>
-
-            <h4 class="property-label">مصطلحات مرتبطة</h4>
-            <p><a href="#ai-agent">وكيل الذكاء الاصطناعي</a> | <a href="#workflow">سير العمل</a> | <a href="#smart-hand">البنية التحتية لليد الذكية</a></p>
-        </div>
-
-        <!-- Concept 8: Workflow -->
-        <div class="concept-segment" id="workflow">
-            <h3 class="concept-term-title">8. سير العمل (Workflow)</h3>
-            
-            <h4 class="property-label">التعريف الرسمي</h4>
-            <p>سير العمل هو التسلسل الهيكلي للخطوات المترابطة، القواعد التشغيلية، ومسارات التنفيذ المطلوبة لتحقيق نتيجة محددة داخل محرك التشغيل.</p>
-
-            <h4 class="property-label">مصطلحات مرتبطة</h4>
-            <p><a href="#agent-orchestration">تنسيق الوكلاء</a> | <a href="#execution">التنفيذ</a> | <a href="#ai-execution-infrastructure">البنية التحتية لتنفيذ الذكاء الاصطناعي</a></p>
-        </div>
-
-        <!-- Concept 9: Execution -->
-        <div class="concept-segment" id="execution">
-            <h3 class="concept-term-title">9. التنفيذ (Execution)</h3>
-            
-            <h4 class="property-label">التعريف الرسمي</h4>
-            <p>التنفيذ هو الإجراء العملي أو السلسلة التشغيلية التي تقوم بها الأنظمة الذكية والوكلاء لتطبيق خطة العمل وتحويل الأوامر والمقاصد إلى أفعال حقيقية في البيئة الرقمية أو الاقتصادية.</p>
-
-            <h4 class="property-label">الفرق بين التنفيذ والتحقق</h4>
-            <p>يعني <strong>التنفيذ</strong> إتمام الإجراء البرمجي أو العملياتي بالفعل، بينما يضمن <strong>التحقق</strong> تقييم صحة المخرج ومطابقته للهدف والشروط المحددة.</p>
-
-            <h4 class="property-label">الرسم المفاهيمي</h4>
-            <div class="visual-diagram-box">
-                <div class="diagram-flow">
-                    <div class="diagram-node">سير العمل</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">التنفيذ</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">التحقق</div>
-                </div>
-            </div>
-
-            <h4 class="property-label">مصطلحات مرتبطة</h4>
-            <p><a href="#workflow">سير العمل</a> | <a href="#verification">التحقق</a> | <a href="#ai-execution-infrastructure">البنية التحتية لتنفيذ الذكاء الاصطناعي</a></p>
-        </div>
-
-        <!-- Concept 10: AI Execution Infrastructure -->
-        <div class="concept-segment" id="ai-execution-infrastructure">
-            <h3 class="concept-term-title">10. البنية التحتية لتنفيذ الذكاء الاصطناعي (AI Execution Infrastructure)</h3>
-            
-            <h4 class="property-label">التعريف الرسمي</h4>
-            <p>البنية التحتية لتنفيذ الذكاء الاصطناعي هي المنظومة التقنية والتشغيلية التي تمكّن الأنظمة الذكية من تحويل النوايا والأوامر البشرية إلى عمليات منسقة، قابلة للتنفيذ، والتحقق، وموجهة نحو النتائج عبر البيئات الرقمية والاقتصادية.</p>
-
-            <h4 class="property-label">لماذا تعد مهمة؟</h4>
-            <p>تتزايد قدرة الذكاء الاصطناعي على توليد الأفكار والتخطيط؛ وتوفر هذه البنية التحتية الآليات والربط التشغيلي والقدرات التنفيذية اللازمة لتحويل ذلك الذكاء إلى نتائج عمل ملموسة.</p>
-
-            <h4 class="property-label">الرسم المفاهيمي</h4>
-            <div class="visual-diagram-box">
-                <div class="diagram-flow">
-                    <div class="diagram-node">النية البشرية</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">الأنظمة الذكية</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">البنية التحتية للتنفيذ</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">التنفيذ</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">النتيجة</div>
-                </div>
-            </div>
-
-            <h4 class="property-label">مصطلحات مرتبطة</h4>
-            <p><a href="#smart-hand">البنية التحتية لليد الذكية</a> | <a href="#verification">التحقق</a> | <a href="#economic-outcome">النتيجة الاقتصادية</a></p>
-        </div>
-
-        <!-- Concept 11: Smart Hand Infrastructure -->
-        <div class="concept-segment" id="smart-hand">
-            <h3 class="concept-term-title">11. البنية التحتية لليد الذكية (Smart Hand Infrastructure)</h3>
-            
-            <h4 class="property-label">التعريف الرسمي</h4>
-            <p>البنية التحتية لليد الذكية هي المعمارية التنفيذية المقترحة داخل اقتصاد الأوامر للذكاء الاصطناعي (CE-AI)، المصممة لتحويل النية البشرية إلى تنفيذ منسق، قابل للتحقق، وذي قيمة اقتصادية ملموسة عبر الوكلاء والأنظمة البرمجية والبيئات المؤسسية.</p>
-
-            <h4 class="property-label">كيف تعمل في الإطار؟</h4>
-            <ul class="styled-list">
-                <li>ترجمة قرارات الوكلاء إلى إجراءات برمجية مباشرة (API Calls).</li>
-                <li>الربط مع أنظمة إدارة الموارد (ERP) وقواعد البيانات المؤسسية.</li>
-                <li>إدارة الموارد وتنسيق سير العمليات التشغيلية.</li>
-                <li>توفير بيئة تنفيذ قابلة للتحقق ومراقبة الأداء المستمر.</li>
+          </div>
+          <div class="section-card">
+            <h4>الوكالة والسلطة والحوكمة</h4>
+            <ul class="bullet-list term-index">
+            <li><a href="#ai-economic-agency">الوكالة الاقتصادية للذكاء الاصطناعي</a></li>
+            <li><a href="#authority">السلطة</a></li>
+            <li><a href="#delegated-authority">التفويض</a></li>
+            <li><a href="#authority-boundary">حدود السلطة</a></li>
+            <li><a href="#governance">الحوكمة</a></li>
+            <li><a href="#human-oversight">الإشراف البشري</a></li>
+            <li><a href="#hitl">الإنسان داخل الحلقة</a></li>
+            <li><a href="#revocation-of-authority">سحب التفويض</a></li>
             </ul>
+          </div>
+          <div class="section-card">
+            <h4>التخطيط والتنفيذ</h4>
+            <ul class="bullet-list term-index">
+            <li><a href="#planning">التخطيط</a></li>
+            <li><a href="#ai-agent">وكيل الذكاء الاصطناعي</a></li>
+            <li><a href="#agent-orchestration">تنسيق الوكلاء</a></li>
+            <li><a href="#workflow">سير العمل</a></li>
+            <li><a href="#execution">التنفيذ</a></li>
+            <li><a href="#execution-control">التحكم في التنفيذ</a></li>
+            <li><a href="#governed-execution">التنفيذ المحكوم</a></li>
+            </ul>
+          </div>
+          <div class="section-card">
+            <h4>الأدلة والنتائج</h4>
+            <ul class="bullet-list term-index">
+            <li><a href="#event-log">سجل الأحداث</a></li>
+            <li><a href="#execution-evidence">أدلة التنفيذ</a></li>
+            <li><a href="#verification">التحقق</a></li>
+            <li><a href="#outcome">النتيجة</a></li>
+            <li><a href="#economic-outcome">النتيجة الاقتصادية</a></li>
+            <li><a href="#economic-exposure">التعرض الاقتصادي</a></li>
+            <li><a href="#evidence-package">حزمة الأدلة</a></li>
+            <li><a href="#reproducibility">قابلية التكرار</a></li>
+            <li><a href="#decision-memory">ذاكرة القرار</a></li>
+            </ul>
+          </div>
+          <div class="section-card">
+            <h4>الأصول البحثية والهندسية</h4>
+            <ul class="bullet-list term-index">
+            <li><a href="#smart-hand"><bdi dir="ltr">Smart Hand</bdi></a></li>
+            <li><a href="#geab"><bdi dir="ltr">GEAB</bdi></a></li>
+            <li><a href="#cep"><bdi dir="ltr">CEP</bdi></a></li>
+            <li><a href="#ai-execution-infrastructure">البنية التحتية لتنفيذ الذكاء الاصطناعي</a></li>
+            <li><a href="#architecture">البنية المعمارية</a></li>
+            <li><a href="#gcear"><bdi dir="ltr">GCEAR</bdi></a></li>
+            </ul>
+          </div>
+          <div class="section-card">
+            <h4>المفاهيم المساندة</h4>
+            <ul class="bullet-list term-index">
+            <li><a href="#metrics">المقاييس</a></li>
+            <li><a href="#baseline">خط الأساس</a></li>
+            <li><a href="#controlled-experiment">التجربة المضبوطة</a></li>
+            <li><a href="#generalizability">قابلية التعميم</a></li>
+            <li><a href="#engineering-intervention">التدخل الهندسي</a></li>
+            <li><a href="#economic-value">القيمة الاقتصادية</a></li>
+            <li><a href="#evidence-before-architecture">الدليل قبل المعمارية</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-            <h4 class="property-label">مثال عملي</h4>
-            <p>فعندما يصدر المستخدم أمراً بتوسيع الطاقة التوريدية، تتولى البنية التحتية لليد الذكية التنسيق المباشر بين أنظمة المشتريات، والموردين، وسلاسل اللوجستيات، وآليات التحقق وفقاً للصلاحيات والإشراف البشري المحدد.</p>
+      <section class="section-shell reveal" id="glossary-governance" aria-labelledby="glossary-governance-title">
+        <div class="section-header">
+          <p class="section-pill">الحوكمة</p>
+          <h2 id="glossary-governance-title">حوكمة القاموس وتحديثه</h2>
+        </div>
+        <div class="research-note">
+          <p>يُدار هذا القاموس بوصفه مرجعاً مفاهيمياً متطوراً ضمن برنامج أوامركم البحثي والهندسي.</p>
+          <p>تُراجع التعريفات عند تغير الفرضيات أو ظهور أدلة جديدة أو اعتماد مصطلحات أكثر دقة. ويُفضّل أن يتضمن كل تحديث:</p>
+        </div>
+        <div class="info-box mt-4 mb-3">
+<ul class="bullet-list">
+  <li>اسم المصطلح بالعربية والإنجليزية.</li>
+  <li>تعريفاً موجزاً ومستقراً قدر الإمكان.</li>
+  <li>توضيحاً لنطاق الاستخدام وما لا يعنيه المصطلح.</li>
+  <li>علاقاته بالمفاهيم الأخرى.</li>
+  <li>مرجعاً بحثياً أو هندسياً عند الحاجة.</li>
+  <li>رقم الإصدار وتاريخ آخر مراجعة.</li>
+  <li>حالة المصطلح: عام، أو تعريف عمل، أو فرضية بحثية، أو أصل قيد التطوير.</li>
+</ul>
+        </div>
+        <div class="research-note">
+          <p>لا يعني إدراج مصطلح في هذا القاموس أنه مفهوم متفق عليه عالمياً، أو أن الحل المرتبط به قد ثبتت فعاليته. وتظل الادعاءات المتعلقة بالأداء أو الضرورة الهندسية أو القيمة الاقتصادية خاضعة للأدلة المناسبة.</p>
+          <p class="mt-3"><span class="highlight-text">القاعدة المنهجية:</span> البحث أولاً، والأدلة ثانياً، والمعمارية ثالثاً، والبنية التحتية فقط إذا بررتها النتائج.</p>
+        </div>
+      </section>
 
-            <h4 class="property-label">الرسم المفاهيمي</h4>
-            <div class="visual-diagram-box">
-                <div class="diagram-flow">
-                    <div class="diagram-node">النية البشرية</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">الأمر</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">تنسيق الوكلاء</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">البنية التحتية لليد الذكية</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">التنفيذ</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">التحقق</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">النتيجة الاقتصادية</div>
-                </div>
-            </div>
+      <section class="section-shell reveal cta-banner" id="about-reference">
+        <div class="cta-inner">
+          <p class="section-pill">حول المرجع</p>
+          <h2>حول هذا المرجع</h2>
+          <p class="text-muted mb-3">أُعد هذا القاموس لتنظيم المفاهيم المستخدمة في أبحاث أوامركم™ حول الأفعال الاقتصادية للذكاء الاصطناعي وحوكمتها وتنفيذها والتحقق من نتائجها.</p>
+          <p class="text-muted mb-3">يمثل إطار <bdi dir="ltr">CE-AI</bdi> توجهاً بحثياً وتحليلياً قيد التطوير، فيما تمثل <bdi dir="ltr">Smart Hand</bdi> و<bdi dir="ltr">GEAB</bdi> و<bdi dir="ltr">CEP</bdi> أصولاً أو منهجيات بحثية وهندسية متفاوتة المراحل، وفق ما يوضحه كل مدخل.</p>
+          <p class="highlight-text mb-3"><bdi dir="ltr" lang="en">أوامركم™ | OUAMARKOM™</bdi><br /><bdi dir="ltr" lang="en">Building the Evidence Base for Governed AI Economic Execution.</bdi></p>
+          <div class="btn-group">
+            <a class="btn btn-primary" href="/">الرئيسية</a>
+            <a class="btn btn-secondary-outline" href="/en/" hreflang="en" lang="en">English</a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-            <h4 class="property-label">مصطلحات مرتبطة</h4>
-            <p><a href="#ai-execution-infrastructure">البنية التحتية لتنفيذ الذكاء الاصطناعي</a> | <a href="#verification">التحقق</a> | <a href="#decision-memory">ذاكرة القرار</a></p>
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-shell">
+        <div class="footer-card">
+          <h2>أوامركم | Ouamarkom</h2>
+          <p>
+            شركة أبحاث وهندسة تستكشف البنية التحتية اللازمة للوكالة الاقتصادية المحكومة بالذكاء الاصطناعي.
+          </p>
+          <blockquote class="footer-motto">
+            «نحافظ على العمل.<br />
+            نعيد تصنيف الادعاءات.<br />
+            نختبر الفرضيات.<br />
+            نتبع الأدلة.<br />
+            ونبني ما يفرضه الواقع.»
+          </blockquote>
+          <div class="social-flex">
+            <a href="https://linkedin.com/company/ouamarkom" class="social-circle" title="لينكد إن - LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://x.com/ouamarkom" class="social-circle" title="منصة إكس - X" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg>
+            </a>
+            <a href="https://facebook.com/ouamarkom" class="social-circle" title="فيسبوك - Facebook" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+            </a>
+            <a href="https://instagram.com/ouamarkom" class="social-circle" title="إنستغرام - Instagram" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://wa.me/966578061018" class="social-circle" title="واتساب - WhatsApp" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M12.012 2c-5.506 0-9.969 4.463-9.969 9.969 0 1.763.459 3.483 1.332 5.004L2 22l5.161-1.354c1.472.803 3.134 1.226 4.85 1.226 5.508 0 9.971-4.463 9.971-9.969 0-5.506-4.463-9.969-9.97-9.969zm0 18.271c-1.498 0-2.966-.403-4.246-1.164l-.305-.181-3.15.826.84-3.071-.199-.316c-.837-1.33-1.28-2.875-1.28-4.465 0-4.557 3.708-8.265 8.266-8.265 4.556 0 8.264 3.708 8.264 8.265 0 4.558-3.708 8.264-8.264 8.264zm4.536-6.19c-.249-.125-1.472-.726-1.7-.809-.228-.083-.394-.125-.56.125-.167.249-.644.809-.789.975-.145.166-.291.187-.54.062s-1.05-.387-2.001-1.234c-.74-.66-1.24-1.474-1.385-1.723-.145-.249-.016-.384.109-.508.113-.112.249-.291.374-.436.124-.145.166-.249.249-.415.083-.166.042-.312-.021-.436-.062-.125-.56-1.351-.768-1.85-.202-.486-.408-.419-.56-.427h-.478c-.166 0-.436.062-.664.312s-.872.851-.872 2.074.892 2.407 1.017 2.573c.125.166 1.756 2.681 4.254 3.761.594.257 1.058.411 1.42.526.597.19 1.14.163 1.57.099.479-.071 1.472-.602 1.679-1.183.208-.581.208-1.079.145-1.183-.062-.104-.228-.187-.477-.312z"/></svg>
+            </a>
+          </div>
         </div>
 
-        <!-- Concept 12: Verification -->
-        <div class="concept-segment" id="verification">
-            <h3 class="concept-term-title">12. التحقق (Verification)</h3>
-            
-            <h4 class="property-label">التعريف الرسمي</h4>
-            <p>التحقق هو عملية تقييم ومراجعة ما إذا كان الإجراء المنفذ أو المخرج الناتج يلبي الهدف المطلوب، والشروط المحددة، والمحددات الموضوعة بفاعلية.</p>
-
-            <h4 class="property-label">التنفيذ مقابل التحقق</h4>
-            <p>يوثق <strong>التنفيذ</strong> حدوث الإجراء التشغيلي، بينما يجيب <strong>التحقق</strong> عن سؤال: <em>هل حدث التنفيذ كما هو متوقع تماماً وهل تطابق النتيجة المعايير الدقيقة المطلوبة؟</em></p>
-
-            <h4 class="property-label">مصطلحات مرتبطة</h4>
-            <p><a href="#execution">التنفيذ</a> | <a href="#outcome">النتيجة</a> | <a href="#smart-hand">البنية التحتية لليد الذكية</a></p>
+        <div class="footer-card">
+          <h3>استكشف البحث</h3>
+          <ul class="footer-links-list">
+            <li><a href="/framework">إطار CE-AI™</a></li>
+            <li><a href="/research">مركز الأبحاث</a></li>
+            <li><a href="/canonical-reference">المرجع المعرفي</a></li>
+            <li><a href="/evolution">أرشيف التطور</a></li>
+            <li><a href="/glossary">قاموس المصطلحات</a></li>
+            <li><a href="/whitepaper">الورقة البيضاء</a></li>
+          </ul>
         </div>
 
-        <!-- Concept 13: Outcome -->
-        <div class="concept-segment" id="outcome">
-            <h3 class="concept-term-title">13. النتيجة (Outcome)</h3>
-            
-            <h4 class="property-label">التعريف الرسمي</h4>
-            <p>النتيجة هي المخرج القابل للتحقق الناتج عن عملية التنفيذ الذكي، وتمثل ما تحقق فعليًا مقارنة بالهدف المحدد وليست مجرد إجابة أو معلومة لغوية.</p>
-
-            <h4 class="property-label">الرسم المفاهيمي</h4>
-            <div class="visual-diagram-box">
-                <div class="diagram-flow">
-                    <div class="diagram-node">التنفيذ</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">التحقق</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">النتيجة</div><div class="diagram-arrow">➔</div>
-                    <div class="diagram-node">القيمة الاقتصادية</div>
-                </div>
-            </div>
-
-            <h4 class="property-label">مصطلحات مرتبطة</h4>
-            <p><a href="#verification">التحقق</a> | <a href="#economic-outcome">النتيجة الاقتصادية</a> | <a href="#intent">النية البشرية</a></p>
+        <div class="footer-card">
+          <h3>أوامركم</h3>
+          <ul class="footer-links-list">
+            <li><a href="/about">عن أوامركم</a></li>
+            <li><a href="/vision">الرؤية</a></li>
+            <li><a href="/founder">المؤسس</a></li>
+            <li><a href="/blog">المدونة</a></li>
+            <li><a href="/intellectual-property">الملكية الفكرية</a></li>
+            <li><a href="mailto:contact@ouamarkom.com">تواصل معنا</a></li>
+          </ul>
         </div>
+      </div>
 
-        <!-- Concept 14: Economic Outcome -->
-        <div class="concept-segment" id="economic-outcome">
-            <h3 class="concept-term-title">14. النتيجة الاقتصادية (Economic Outcome)</h3>
-            
-            <h4 class="property-label">التعريف الرسمي</h4>
-            <p>النتيجة الاقتصادية هي الأثر المادي والقيمة التشغيلية المقاسة التي تتحقق في بيئة الأعمال بعد اكتمال مرحلتي التنفيذ والتحقق داخل البيئة الاقتصادية.</p>
-
-            <h4 class="property-label">مصطلحات مرتبطة</h4>
-            <p><a href="#outcome">النتيجة</a> | <a href="#verification">التحقق</a> | <a href="#decision-memory">ذاكرة القرار</a></p>
-        </div>
-
-        <!-- Concept 15: Decision Memory -->
-        <div class="concept-segment" id="decision-memory">
-            <h3 class="concept-term-title">15. ذاكرة القرار (Decision Memory)</h3>
-            
-            <h4 class="property-label">التعريف الرسمي</h4>
-            <p>ذاكرة القرار هي الاحتفاظ الهيكلي بالقرارات السابقة، سياق التنفيذ، والنتائج والدروس المستفادة لتوجيه عملية التخطيط والتنسيق والتنفيذ المستقبلي بفاعلية أعلى.</p>
-
-            <h4 class="property-label">مصطلحات مرتبطة</h4>
-            <p><a href="#economic-outcome">النتيجة الاقتصادية</a> | <a href="#verification">التحقق</a> | <a href="#smart-hand">البنية التحتية لليد الذكية</a></p>
-        </div>
-
-    </section>
-
-    <!-- Structured Categories for Concept Exploration -->
-    <section class="manifesto-card reveal-card">
-        <h2>استكشف المزيد من المفاهيم</h2>
-        
-        <div class="category-group-title">المفاهيم الأساسية (Core Concepts)</div>
-        <div class="grid-tags-layout">
-            <a href="#intent" class="tag-node-item">النية البشرية (Human Intent)</a>
-            <a href="#command" class="tag-node-item">الأمر (Command)</a>
-            <a href="#intent-understanding" class="tag-node-item">فهم النية</a>
-            <a href="#language-interface" class="tag-node-item">واجهة اللغة</a>
-        </div>
-
-        <div class="category-group-title">المفاهيم المعمارية (Architecture Concepts)</div>
-        <div class="grid-tags-layout">
-            <a href="#planning" class="tag-node-item">التخطيط (Planning)</a>
-            <a href="#ai-agent" class="tag-node-item">وكيل الذكاء الاصطناعي</a>
-            <a href="#agent-orchestration" class="tag-node-item">تنسيق الوكلاء</a>
-            <a href="#workflow" class="tag-node-item">سير العمل (Workflow)</a>
-            <a href="#execution" class="tag-node-item">التنفيذ (Execution)</a>
-            <a href="#ai-execution-infrastructure" class="tag-node-item">البنية التحتية للتنفيذ</a>
-            <a href="#smart-hand" class="tag-node-item">البنية التحتية لليد الذكية</a>
-        </div>
-
-        <div class="category-group-title">المفاهيم الاقتصادية (Economic Concepts)</div>
-        <div class="grid-tags-layout">
-            <a href="#outcome" class="tag-node-item">النتيجة (Outcome)</a>
-            <a href="#economic-outcome" class="tag-node-item">النتيجة الاقتصادية</a>
-            <a href="#decision-memory" class="tag-node-item">ذاكرة القرار</a>
-        </div>
-
-        <div class="category-group-title">الحوكمة والتحكم (Governance & Control)</div>
-        <div class="grid-tags-layout">
-            <a href="#verification" class="tag-node-item">التحقق (Verification)</a>
-            <span class="tag-node-item">الإشراف البشري (Human Oversight)</span>
-            <span class="tag-node-item">الإنسان داخل الحلقة (HITL)</span>
-            <span class="tag-node-item">التنفيذ القابل للتحقق</span>
-        </div>
-
-        <div class="category-group-title">المفاهيم المرتبطة (Related Concepts)</div>
-        <div class="grid-tags-layout">
-            <span class="tag-node-item">التنسيق الذاتي</span>
-            <span class="tag-node-item">الأنظمة المعتمدة على النية</span>
-            <span class="tag-node-item">الحوسبة المعتمدة على اللغة</span>
-            <span class="tag-node-item">الإنتاج الرقمي</span>
-        </div>
-    </section>
-
-    <!-- Knowledge Graph Explanation -->
-    <section class="manifesto-card reveal-card">
-        <h2>الرسم البياني المعرفي (Knowledge Graph Architecture)</h2>
-        <p>المفاهيم في هذا القاموس منظمة كإطار مفاهيمي مترابط بدلاً من كونها تعريفات معزولة. تصف علاقاتها كيفية تفاعل النية البشرية، الأوامر، الأنظمة الذكية، بنية التنفيذ التحتية، التحقق، والنتائج داخل إطار اقتصاد الأوامر للذكاء الاصطناعي (CE-AI).</p>
-    </section>
-
-</main>
-
-<footer class="site-footer">
-    <div class="footer-bottom-container" dir="rtl">
+      <div class="footer-bottom container" dir="rtl">
         <p>© 2026 أوامركم. جميع الحقوق محفوظة.</p>
         <div class="footer-legal-links">
-            <a href="/intellectual-property">الملكية الفكرية</a>
-            <span class="footer-legal-separator">·</span>
-            <a href="mailto:contact@ouamarkom.com">تواصل معنا</a>
+          <a href="/intellectual-property">الملكية الفكرية</a>
+          <span class="footer-legal-separator">·</span>
+          <a href="mailto:contact@ouamarkom.com">تواصل معنا</a>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<script src="/script.js" defer></script>
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const revealCards = document.querySelectorAll('.reveal-card');
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                    revealObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.05, rootMargin: "0px 0px -20px 0px" });
-
-        revealCards.forEach(card => revealObserver.observe(card));
-    });
-</script>
-</body>
+    <script src="/script.js" defer></script>
+  </body>
 </html>
