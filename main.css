@@ -2093,3 +2093,78 @@ a.term-chip:hover {
 
 .term-chain a:hover,
 .term-index a:hover { color: var(--accent); }
+
+
+
+
+/* ==========================================
+   CEP v0.2 specification pages
+   ========================================== */
+.cep-page .charter-hero .subtitle-sub { margin-bottom: 0; }
+.cep-page .charter-meta-item p { overflow-wrap: anywhere; }
+
+.cep-page .charter-text > p { margin-bottom: var(--space-3); }
+.cep-page .charter-text .bullet-list,
+.cep-page .charter-text .charter-list { margin-top: var(--space-2); }
+
+.cep-page .section-card .bullet-list,
+.cep-page .section-card .charter-list { margin: var(--space-2) 0 var(--space-3); }
+.cep-page .section-card .bullet-list li,
+.cep-page .section-card .charter-list li { color: var(--text-dim); }
+.cep-page .section-card p strong { color: #fff; }
+
+.cep-page code {
+    direction: ltr;
+    unicode-bidi: isolate;
+    display: inline-block;
+    font-family: var(--mono-font);
+    font-size: 0.84em;
+    line-height: 1.5;
+    color: var(--accent-light);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-color);
+    padding: 1px 8px;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+}
+
+.cep-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: var(--space-3) 0 var(--space-4);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+}
+
+.cep-table {
+    width: 100%;
+    min-width: 440px;
+    border-collapse: collapse;
+    text-align: start;
+}
+
+.cep-table th,
+.cep-table td {
+    padding: 12px 16px;
+    text-align: start;
+    vertical-align: top;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.93rem;
+    line-height: 1.7;
+}
+
+.cep-table th {
+    color: var(--accent);
+    background: var(--accent-wash);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.cep-table td { color: var(--text-dim); }
+.cep-table tr:last-child td { border-bottom: none; }
+.cep-table tbody tr:hover td { background: rgba(255, 255, 255, 0.02); }
+.cep-table td:first-child { white-space: nowrap; }
+
+@media (max-width: 768px) {
+    .cep-table th, .cep-table td { padding: 10px 12px; font-size: 0.88rem; }
+}
