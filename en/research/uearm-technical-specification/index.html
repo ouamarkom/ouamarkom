@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UEARM Technical Specification v0.1 | OUAMARKOM-UEARM-SPEC-001 - Ouamarkom</title>
+<meta name="description" content="UEARM Technical Specification v0.1 (OUAMARKOM-UEARM-SPEC-001): a proposed, experimental technical specification for the Unified Economic Action Representation Model. Not an approved industry standard; validation pending. Ouamarkom Research &amp; Development.">
+<meta name="keywords" content="UEARM Technical Specification, OUAMARKOM-UEARM-SPEC-001, Unified Economic Action Representation Model, CE-AI Pipeline, JSON Schema, governed AI execution, delegated authority, execution state machine, evidence verification, Ouamarkom">
+<meta name="author" content="OUAMARKOM™ Research &amp; Development">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#040916">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://ouamarkom.com/en/research/uearm-technical-specification">
+<link rel="alternate" hreflang="ar" href="https://ouamarkom.com/research/uearm-technical-specification">
+<link rel="alternate" hreflang="en" href="https://ouamarkom.com/en/research/uearm-technical-specification">
+<link rel="alternate" hreflang="x-default" href="https://ouamarkom.com/en/research/uearm-technical-specification">
+<link rel="prev" href="https://ouamarkom.com/en/research/uearm">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/style.css">
+<meta property="og:site_name" content="Ouamarkom AI Technologies">
+<meta property="og:url" content="https://ouamarkom.com/en/research/uearm-technical-specification">
+<meta property="og:type" content="article">
+<meta property="og:title" content="UEARM Technical Specification v0.1 | OUAMARKOM-UEARM-SPEC-001">
+<meta property="og:description" content="A proposed, experimental technical specification for the Unified Economic Action Representation Model: data model, JSON Schema, state machine, revocation, concurrency, evidence, and conformance tests. Not an approved industry standard; validation pending.">
+<meta property="og:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ouamarkom UEARM Technical Specification v0.1">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_AR">
+<meta property="article:published_time" content="2026-11-04T00:00:00+03:00">
+<meta property="article:modified_time" content="2026-11-04T00:00:00+03:00">
+<meta property="article:author" content="OUAMARKOM™ Research &amp; Development">
+<meta property="article:section" content="Research">
+<meta property="article:tag" content="UEARM">
+<meta property="article:tag" content="Technical Specification">
+<meta property="article:tag" content="CE-AI Pipeline">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="UEARM Technical Specification v0.1">
+<meta name="twitter:description" content="OUAMARKOM-UEARM-SPEC-001: a proposed, experimental technical specification by OUAMARKOM™ Research &amp; Development. Not an approved industry standard.">
+<meta name="twitter:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg">
+<meta name="twitter:image:alt" content="Ouamarkom UEARM Technical Specification v0.1">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"TechArticle","@id":"https://ouamarkom.com/en/research/uearm-technical-specification#article","headline":"UEARM Technical Specification v0.1","alternativeHeadline":"Unified Economic Action Representation Model - OUAMARKOM-UEARM-SPEC-001","description":"A proposed technical specification (experimental implementation) defining the initial data model, JSON Schema, semantic validation rules, execution state machine, revocation, concurrency, evidence, and conformance tests of the Unified Economic Action Representation Model. Not an approved industry standard; validation pending.","inLanguage":"en","url":"https://ouamarkom.com/en/research/uearm-technical-specification","mainEntityOfPage":{"@type":"WebPage","@id":"https://ouamarkom.com/en/research/uearm-technical-specification"},"datePublished":"2026-11-04","dateModified":"2026-11-04","image":"https://ouamarkom.com/ouamarkom-og-image.jpeg","articleSection":"Research","genre":"Technical Specification","identifier":"OUAMARKOM-UEARM-SPEC-001","version":"v0.1","keywords":"UEARM, OUAMARKOM-UEARM-SPEC-001, CE-AI Pipeline, JSON Schema, Governed AI Execution, Delegated Authority, Execution State Machine","isPartOf":{"@type":"CreativeWorkSeries","name":"Ouamarkom Research Series","url":"https://ouamarkom.com/en/research"},"isBasedOn":"https://ouamarkom.com/en/research/uearm","author":{"@type":"Organization","@id":"https://ouamarkom.com/#organization","name":"OUAMARKOM™ Research & Development","alternateName":"أوامركم","url":"https://ouamarkom.com"},"publisher":{"@type":"Organization","name":"Ouamarkom AI Technologies","url":"https://ouamarkom.com","logo":{"@type":"ImageObject","url":"https://ouamarkom.com/logo.webp"}},"copyrightHolder":{"@type":"Organization","name":"Ouamarkom"},"copyrightYear":2026},
+{"@type":"WebPage","@id":"https://ouamarkom.com/en/research/uearm-technical-specification","url":"https://ouamarkom.com/en/research/uearm-technical-specification","name":"UEARM Technical Specification v0.1","inLanguage":"en","isPartOf":{"@type":"WebSite","name":"Ouamarkom","url":"https://ouamarkom.com"},"breadcrumb":{"@id":"https://ouamarkom.com/en/research/uearm-technical-specification#breadcrumb"}},
+{"@type":"BreadcrumbList","@id":"https://ouamarkom.com/en/research/uearm-technical-specification#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ouamarkom.com"},{"@type":"ListItem","position":2,"name":"Research Knowledge Base","item":"https://ouamarkom.com/en/research"},{"@type":"ListItem","position":3,"name":"Research Paper No. 7","item":"https://ouamarkom.com/en/research/uearm"},{"@type":"ListItem","position":4,"name":"UEARM Technical Specification v0.1","item":"https://ouamarkom.com/en/research/uearm-technical-specification"}]}]}
+</script>
+<style>
+:root{--primary:#040916;--secondary:#0a192f;--accent:#e6992d;--text-main:#e6f1ff;--text-dim:#8892b0;--card-bg:rgba(10,25,47,.4);--card-border:rgba(255,255,255,.05)}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{background-color:var(--primary);color:var(--text-main);line-height:1.75;overflow-x:hidden;text-align:start;font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Tahoma,Roboto,Oxygen,Ubuntu,Cantarell,sans-serif}
+.container{max-width:1040px;margin:0 auto;padding:0 20px;position:relative;z-index:2}
+#network-canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1;pointer-events:none;opacity:.35}
+header{border-bottom:1px solid var(--card-border);position:sticky;top:0;z-index:1000;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);background:rgba(4,9,22,.85)}
+.nav-container{display:flex;justify-content:space-between;align-items:center;padding:15px 10px;max-width:1200px;margin:0 auto}
+.logo-group{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-img{max-width:100px;height:auto;transition:transform .3s ease;margin:0}
+.logo-img:hover{transform:scale(1.05)}
+.lang-controller{display:flex;background:rgba(255,255,255,.03);border:1px solid var(--card-border);border-radius:30px;padding:4px;gap:4px}
+.lang-btn{display:inline-block;text-decoration:none;background:transparent;border:none;color:var(--text-dim);padding:6px 18px;border-radius:20px;font-weight:600;font-size:13px;transition:all .3s ease}
+.lang-btn.active{background:var(--accent);color:#040916;box-shadow:0 2px 10px rgba(230,153,45,.25)}
+.hero-section{text-align:center;padding:50px 0 30px 0}
+.tagline-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 18px;background:rgba(230,153,45,.1);border:1px solid rgba(230,153,45,.25);color:var(--accent);border-radius:50px;font-size:.9rem;font-weight:700;margin-bottom:20px}
+.tagline-badge::before{content:"";display:inline-block;width:7px;height:7px;background-color:var(--accent);border-radius:50%;animation:pulse-dot 2s infinite}
+@keyframes pulse-dot{0%{transform:scale(.9);opacity:.6}50%{transform:scale(1.3);opacity:1}100%{transform:scale(.9);opacity:.6}}
+.hero-section h1{font-size:clamp(1.8rem,4.5vw,2.6rem);line-height:1.35;color:var(--text-main);font-weight:800;margin-bottom:15px}
+.hero-section h1 span{color:var(--accent)}
+.hero-subtitle{font-size:clamp(1.05rem,2.2vw,1.25rem);color:var(--text-dim);margin-bottom:25px;font-weight:600}
+.meta-info-card{background:rgba(10,25,47,.6);border:1px solid var(--card-border);border-radius:12px;padding:16px 24px;margin:0 auto 30px auto;max-width:900px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px 20px;font-size:.88rem;color:var(--text-main);text-align:start}
+.meta-item strong{color:var(--accent)}
+.executive-summary-master{background:var(--card-bg);border:1px solid var(--card-border);border-top:4px solid var(--accent);padding:clamp(24px,4vw,40px);border-radius:20px;margin-bottom:35px;backdrop-filter:blur(12px);box-shadow:0 15px 35px rgba(0,0,0,.2)}
+.executive-summary-master p{color:var(--text-main);font-size:1rem;line-height:1.8;margin-bottom:16px}
+.summary-main-thesis{font-size:clamp(1.05rem,2.5vw,1.2rem);color:var(--text-main);line-height:1.7;font-weight:700;border-inline-start:4px solid var(--accent);padding:15px 18px;margin:25px 0 15px 0;background:rgba(230,153,45,.06);border-radius:8px}
+.manifesto-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:clamp(22px,4vw,36px);margin-bottom:30px;transition:all .3s cubic-bezier(.4,0,.2,1);backdrop-filter:blur(12px)}
+.manifesto-card:hover{border-color:var(--accent);background:rgba(10,25,47,.6);transform:translateY(-2px)}
+.manifesto-card h2{color:var(--accent);font-size:clamp(1.3rem,3vw,1.6rem);margin-bottom:20px;font-weight:700;border-inline-start:4px solid var(--accent);padding-inline-start:14px;line-height:1.4}
+.manifesto-card h3{color:var(--accent);font-size:1.15rem;margin-top:24px;margin-bottom:12px;font-weight:700}
+.manifesto-card p{color:var(--text-main);font-size:1rem;line-height:1.8;margin-bottom:16px}
+.highlight-quote{background:rgba(255,255,255,.02);border-inline-start:4px solid var(--accent);padding:16px 20px;border-radius:4px 12px 12px 4px;margin:20px 0}
+.highlight-quote p{font-weight:700;color:var(--accent);font-size:1.05rem;line-height:1.7;margin-bottom:0}
+.diagram-wrapper{background:rgba(4,9,22,.9);border:1px solid rgba(230,153,45,.25);border-radius:16px;padding:25px 15px;margin:25px 0;text-align:center}
+.diagram-flow{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:.88rem}
+.diagram-step{background:rgba(10,25,47,.9);border:1px solid rgba(230,153,45,.35);color:var(--accent);padding:8px 14px;border-radius:30px}
+.diagram-step small{display:block;font-weight:400;color:var(--text-dim);font-size:.75rem}
+.diagram-arrow{color:var(--accent);font-size:1.1rem;display:inline-block}
+.custom-bullet-list{list-style:none;padding-inline-start:22px;margin:18px 0}
+.custom-bullet-list li{position:relative;margin-bottom:12px;line-height:1.75;color:var(--text-main);font-size:.98rem}
+.custom-bullet-list li::before{content:"✦";position:absolute;inset-inline-start:-22px;color:var(--accent);font-size:.85rem;top:2px}
+.custom-bullet-list.numbered li::before{content:none}
+.sub-block{margin-bottom:24px;padding-bottom:18px;border-bottom:1px solid var(--card-border)}
+.sub-block:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.table-wrap{overflow-x:auto;margin:20px 0;border-radius:12px;border:1px solid var(--card-border)}
+.comparison-table{width:100%;border-collapse:collapse;font-size:.92rem}
+.comparison-table th,.comparison-table td{border:1px solid var(--card-border);padding:12px 14px;text-align:start}
+.comparison-table th{background:rgba(230,153,45,.15);color:var(--accent);font-weight:700}
+.comparison-table td{background:rgba(10,25,47,.3);color:var(--text-main)}
+.formula-box{background:rgba(4,9,22,.8);border:1px solid rgba(230,153,45,.3);border-radius:10px;padding:15px 20px;margin:15px 0;text-align:center;color:var(--accent);font-weight:bold;font-size:1.02rem;line-height:1.6;overflow-x:auto}
+.ltr{direction:ltr;unicode-bidi:isolate}
+code.ltr{font-family:"Courier New",monospace;font-size:.92em;color:var(--accent);display:inline-block}
+.tags-container{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
+.tag-pill{background:rgba(230,153,45,.08);border:1px solid rgba(230,153,45,.2);color:var(--text-dim);padding:4px 12px;border-radius:20px;font-size:.85rem}
+.ascii-diagram{font-family:"Courier New",monospace;background:#02050e;color:var(--accent);padding:20px;border-radius:12px;border:1px solid rgba(230,153,45,.3);white-space:pre;overflow-x:auto;direction:ltr;text-align:left;font-size:.85rem;line-height:1.4;margin:20px 0;-webkit-overflow-scrolling:touch}
+.ascii-diagram.rtl-text{direction:rtl;text-align:right}
+.status-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:20px 0}
+.status-item{background:rgba(4,9,22,.7);border:1px solid var(--card-border);border-radius:12px;padding:12px 16px;font-size:.95rem}
+.status-item strong{color:var(--accent);display:block;font-size:.85rem}
+.toc-list{list-style:none;padding:0;margin:0;columns:2 280px;column-gap:30px}
+.toc-list li{margin-bottom:8px;break-inside:avoid;font-size:.95rem}
+.toc-list a{color:var(--text-main);text-decoration:none;transition:color .3s ease}
+.toc-list a:hover{color:var(--accent)}
+.references-list{list-style:none;padding:0;margin:18px 0}
+.references-list li{margin-bottom:14px;color:var(--text-main);font-size:.96rem;line-height:1.75;padding-inline-start:10px;border-inline-start:2px solid rgba(230,153,45,.35)}
+.references-list li.ref-ltr{direction:ltr;text-align:left;border-inline-start:none;border-left:2px solid rgba(230,153,45,.35);padding-left:10px}
+.references-list a{color:var(--accent);word-break:break-all;direction:ltr;unicode-bidi:isolate;display:inline-block}
+.references-list a:hover{color:var(--accent);text-decoration:underline}
+#backToTop{position:fixed;bottom:30px;inset-inline-end:30px;background:var(--accent);color:#040916;border:none;width:45px;height:45px;border-radius:50%;font-size:20px;font-weight:bold;cursor:pointer;box-shadow:0 4px 15px rgba(0,0,0,.3);z-index:999;transition:all .3s ease;display:none;align-items:center;justify-content:center}
+#backToTop:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(230,153,45,.4)}
+.research-nav-container{display:flex;flex-wrap:wrap;gap:15px;justify-content:center;align-items:center;margin:40px 0 20px 0;padding:25px;background:rgba(10,25,47,.6);border:1px solid var(--card-border);border-radius:16px;backdrop-filter:blur(12px)}
+.btn-research-primary{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#040916;padding:12px 28px;border-radius:30px;font-weight:700;font-size:.95rem;text-decoration:none;transition:all .3s ease;box-shadow:0 4px 15px rgba(230,153,45,.2)}
+.btn-research-primary:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(230,153,45,.4);background:#fcd34d}
+.btn-research-secondary{display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--text-main);border:1px solid rgba(230,153,45,.4);padding:12px 28px;border-radius:30px;font-weight:600;font-size:.95rem;text-decoration:none;transition:all .3s ease}
+.btn-research-secondary:hover{border-color:var(--accent);color:var(--accent);background:rgba(230,153,45,.08)}
+footer{background:transparent;border-top:1px solid var(--card-border);padding:40px 0;text-align:center;color:var(--text-dim);font-size:14px;position:relative;z-index:2}
+.footer-legal-links{margin-top:10px}
+.footer-legal-links a{color:var(--text-dim);text-decoration:none;transition:color .3s ease}
+.footer-legal-links a:hover{color:var(--accent)}
+.footer-legal-separator{margin:0 8px;color:var(--card-border)}
+@media(max-width:768px){.hero-section h1{font-size:22px}.manifesto-card{padding:20px}.meta-info-card{grid-template-columns:1fr}.diagram-flow{flex-direction:column;gap:6px}.diagram-arrow{transform:rotate(90deg)}html[dir=rtl] .diagram-arrow{transform:rotate(-90deg)}.ascii-diagram{font-size:.72rem;padding:14px 12px}#backToTop{bottom:20px;inset-inline-end:20px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}.tagline-badge::before{animation:none}.manifesto-card{transition:none}}
+</style>
+</head>
+<body>
+<canvas id="network-canvas" aria-hidden="true"></canvas>
+<button id="backToTop" title="Back to top" aria-label="Back to top">↑</button>
+<header>
+<div class="nav-container">
+<a href="/en" class="logo-group"><img src="/logo.webp" alt="Ouamarkom - Command Economy of AI" class="logo-img" loading="eager"></a>
+<nav class="lang-controller" aria-label="Language Selector"><a href="/research/uearm-technical-specification" class="lang-btn" hreflang="ar" lang="ar">العربية</a><span class="lang-btn active" aria-current="true">English</span></nav>
+</div>
+</header>
+<main class="container">
+
+<div class="hero-section">
+<div class="tagline-badge"><bdi>OUAMARKOM™</bdi> - Technical Specification v0.1</div>
+<h1>UEARM Technical Specification v0.1<br><span>Unified Economic Action Representation Model</span></h1>
+<div class="meta-info-card">
+<div class="meta-item">Specification Identifier: <strong><bdi>OUAMARKOM-UEARM-SPEC-001</bdi></strong></div>
+<div class="meta-item">Version: <strong>0.1</strong></div>
+<div class="meta-item">Release Date: <strong>November 4, 2026</strong></div>
+<div class="meta-item">Status: <strong>Proposed Technical Specification - Experimental Implementation</strong></div>
+<div class="meta-item">Research Framework: <strong>CE-AI™</strong></div>
+<div class="meta-item">Operational Model: <strong>CE-AI™ Pipeline</strong></div>
+<div class="meta-item">Developed by: <strong>OUAMARKOM™ Research &amp; Development</strong></div>
+<div class="meta-item">Classification: <strong>Research and Engineering Specification</strong></div>
+</div>
+<div class="status-grid" style="max-width:900px;margin:0 auto 30px auto;text-align:start">
+<div class="status-item"><strong>Specification Status</strong>Proposed - Experimental</div>
+<div class="status-item"><strong>Validation Status</strong>Pending</div>
+<div class="status-item"><strong>Standardization Status</strong>Not an Approved Industry Standard</div>
+</div>
+</div>
+
+<section class="manifesto-card" id="contents"><h2>Contents</h2>
+<ol class="toc-list">
+<li><a href="#s1">1. Purpose and Scope</a></li>
+<li><a href="#s2">2. Normative Language</a></li>
+<li><a href="#s3">3. Core Design Principles</a></li>
+<li><a href="#s4">4. UEARM Logical Architecture</a></li>
+<li><a href="#s5">5. Data Model</a></li>
+<li><a href="#s6">6. JSON Schema v0.1</a></li>
+<li><a href="#s7">7. Semantic Validation Rules</a></li>
+<li><a href="#s8">8. Execution State Machine</a></li>
+<li><a href="#s9">9. Revocation Semantics</a></li>
+<li><a href="#s10">10. Concurrency and Cumulative Authority</a></li>
+<li><a href="#s11">11. Evidence and Verification Model</a></li>
+<li><a href="#s12">12. Versioning and Compatibility</a></li>
+<li><a href="#s13">13. Security and Threat Model</a></li>
+<li><a href="#s14">14. Conformance Requirements</a></li>
+<li><a href="#s15">15. Initial Conformance Test Suite</a></li>
+<li><a href="#s16">16. Implementation Architecture</a></li>
+<li><a href="#s17">17. Experimental Validation Plan</a></li>
+<li><a href="#s18">18. Known Limitations of v0.1</a></li>
+<li><a href="#s19">19. Proposed Next Specification Milestones</a></li>
+<li><a href="#s20">20. Institutional and Technical Position</a></li>
+<li><a href="#s21">21. References</a></li>
+<li><a href="#document-control">Document Control</a></li>
+</ol></section>
+
+<section class="manifesto-card" id="s1"><h2>1. Purpose and Scope</h2>
+<div class="sub-block"><h3>1.1 Purpose</h3>
+<p>This specification defines the initial technical structure of the Unified Economic Action Representation Model (UEARM).</p>
+<p>UEARM provides a proposed machine-readable representation for economically consequential actions initiated, requested, delegated, or executed within AI-enabled systems.</p>
+<p>Its purpose is to establish a consistent structure for representing the relationships between:</p>
+<ul class="custom-bullet-list numbered"><li>1. Identity and provenance.</li><li>2. Economic action.</li><li>3. Economic parameters.</li><li>4. Delegated authority.</li><li>5. Policies and constraints.</li><li>6. Execution context.</li><li>7. Governance decisions.</li><li>8. Execution states.</li><li>9. Evidence and verification.</li><li>10. Economic and operational outcomes.</li></ul>
+<p>The specification establishes an initial technical contract for implementing and evaluating these relationships.</p></div>
+<div class="sub-block"><h3>1.2 Scope</h3>
+<p>UEARM v0.1 defines:</p>
+<ul class="custom-bullet-list"><li>A core JSON data model.</li><li>Mandatory and optional fields.</li><li>Data-type and validation requirements.</li><li>Economic amount representation.</li><li>Action-bound authorization requirements.</li><li>Governance decision semantics.</li><li>Execution-state definitions.</li><li>Revocation and cancellation requirements.</li><li>Concurrency and idempotency requirements.</li><li>Evidence and outcome representation.</li><li>Schema versioning requirements.</li><li>Initial conformance test cases.</li></ul></div>
+<div class="sub-block"><h3>1.3 Out of Scope</h3>
+<p>UEARM v0.1 does not define:</p>
+<ul class="custom-bullet-list"><li>A universal payment protocol.</li><li>A complete identity-management system.</li><li>A particular financial settlement mechanism.</li><li>A universal policy language.</li><li>A cryptographic identity infrastructure.</li><li>A complete legal model for delegated authority.</li><li>A production-grade execution gateway.</li><li>An accredited industry standard.</li></ul>
+<p>Implementations may integrate with existing systems that provide these capabilities.</p></div>
+<div class="sub-block"><h3>1.4 Specification Status</h3>
+<p>UEARM v0.1 is a proposed technical specification.</p>
+<p>Its data structures and behavioral requirements are intended to support prototype implementation and controlled experimentation.</p>
+<p>They have not yet been validated through comprehensive interoperability testing or independent certification.</p></div></section>
+
+<section class="manifesto-card" id="s2"><h2>2. Normative Language</h2>
+<p>The terms below have specific meanings within this specification.</p>
+<div class="table-wrap"><table class="comparison-table"><thead><tr><th>Term</th><th>Meaning</th></tr></thead><tbody>
+<tr><td>MUST</td><td>An absolute requirement for a conforming implementation</td></tr>
+<tr><td>MUST NOT</td><td>An absolute prohibition</td></tr>
+<tr><td>SHOULD</td><td>A recommended requirement that may be departed from with documented justification</td></tr>
+<tr><td>SHOULD NOT</td><td>A recommendation against a particular implementation choice</td></tr>
+<tr><td>MAY</td><td>An optional implementation capability</td></tr></tbody></table></div>
+<p>These terms describe the requirements of this proposed specification. They do not imply external standards approval.</p></section>
+
+<section class="manifesto-card" id="s3"><h2>3. Core Design Principles</h2>
+<p>UEARM v0.1 is based on the following principles.</p>
+<div class="sub-block"><h3>3.1 Capability–Authority Separation</h3><p>An AI agent's ability to formulate or reason about an action MUST NOT be interpreted as authorization to execute it.</p></div>
+<div class="sub-block"><h3>3.2 Action-Bound Authorization</h3><p>Authorization MUST be associated with the specific economic action, its relevant parameters, and the applicable authority grant.</p></div>
+<div class="sub-block"><h3>3.3 Execution-Boundary Enforcement</h3><p>The execution system MUST validate the applicable authorization and constraints at the defined enforceable execution boundary.</p></div>
+<div class="sub-block"><h3>3.4 Economic Parameter Integrity</h3><p>Requested, authorized, reserved, and executed economic values MUST remain distinguishable.</p></div>
+<div class="sub-block"><h3>3.5 Explicit State Representation</h3><p>Execution states MUST be represented explicitly and MUST follow defined transition rules.</p></div>
+<div class="sub-block"><h3>3.6 Revocation Awareness</h3><p>An implementation MUST define how authority revocation affects pending and executing actions.</p></div>
+<div class="sub-block"><h3>3.7 Evidence Provenance</h3><p>Evidence records MUST identify their source and relationship to the relevant economic action.</p></div>
+<div class="sub-block"><h3>3.8 Outcome Verification</h3><p>An execution acknowledgement MUST NOT automatically be treated as proof of final economic settlement.</p></div>
+<div class="sub-block"><h3>3.9 Governed Learning</h3><p>Learning and adaptation MUST NOT independently expand delegated economic authority.</p></div>
+<div class="sub-block"><h3>3.10 Traceability</h3><p>Each economic action MUST be traceable through its identifiers, governance decisions, execution events, evidence records, and outcome records.</p></div></section>
+
+<section class="manifesto-card" id="s4"><h2>4. UEARM Logical Architecture</h2>
+<div class="sub-block"><h3>4.1 Core Representation</h3>
+<p>The proposed UEARM representation is:</p>
+<div class="formula-box ltr">UEARM = {I, A, E, D, P, C, G, X, V, O}</div>
+<div class="table-wrap"><table class="comparison-table"><thead><tr><th>Symbol</th><th>Component</th><th>Required</th></tr></thead><tbody>
+<tr><td>I</td><td>Identity and Provenance</td><td>Yes</td></tr>
+<tr><td>A</td><td>Economic Action</td><td>Yes</td></tr>
+<tr><td>E</td><td>Economic Parameters</td><td>Yes</td></tr>
+<tr><td>D</td><td>Delegated Authority</td><td>Yes</td></tr>
+<tr><td>P</td><td>Policy and Constraints</td><td>Yes</td></tr>
+<tr><td>C</td><td>Execution Context</td><td>Yes</td></tr>
+<tr><td>G</td><td>Governance Decision</td><td>Yes</td></tr>
+<tr><td>X</td><td>Execution State</td><td>Yes</td></tr>
+<tr><td>V</td><td>Evidence and Verification</td><td>Yes</td></tr>
+<tr><td>O</td><td>Outcome</td><td>Yes</td></tr></tbody></table></div>
+<p>The required components may contain explicitly defined null values where permitted by the schema. A missing object MUST NOT be silently interpreted as an authorized or successful state.</p></div>
+<div class="sub-block"><h3>4.2 Functional Separation</h3>
+<p>UEARM and its associated research components have different responsibilities.</p>
+<div class="table-wrap"><table class="comparison-table"><thead><tr><th>Component</th><th>Responsibility</th></tr></thead><tbody>
+<tr><td>UEARM</td><td>Defines the structure of an economic action</td></tr>
+<tr><td>CE-AI™ Pipeline</td><td>Defines the proposed lifecycle</td></tr>
+<tr><td>CEP™</td><td>Investigates controlled command-to-execution mechanisms</td></tr>
+<tr><td>Smart Hand™</td><td>Provides an experimental implementation environment</td></tr>
+<tr><td>GEAB™</td><td>Defines proposed benchmark scenarios and measurements</td></tr></tbody></table></div>
+<p>No component should be assumed to be technically necessary solely because it appears in this conceptual architecture.</p></div></section>
+
+<section class="manifesto-card" id="s5"><h2>5. Data Model</h2>
+<div class="sub-block"><h3>5.1 Top-Level Structure</h3>
+<p>A UEARM v0.1 document MUST contain the following top-level fields:</p>
+<div class="table-wrap"><table class="comparison-table"><thead><tr><th>Field</th><th>Type</th><th>Required</th><th>Description</th></tr></thead><tbody>
+<tr><td><code class="ltr">schema_version</code></td><td>String</td><td>Yes</td><td>UEARM schema version</td></tr>
+<tr><td><code class="ltr">action_id</code></td><td>String</td><td>Yes</td><td>Unique economic-action identifier</td></tr>
+<tr><td><code class="ltr">created_at</code></td><td>Date-time</td><td>Yes</td><td>Creation timestamp</td></tr>
+<tr><td><code class="ltr">identity</code></td><td>Object</td><td>Yes</td><td>Initiating entity and provenance</td></tr>
+<tr><td><code class="ltr">economic_action</code></td><td>Object</td><td>Yes</td><td>Requested economic operation</td></tr>
+<tr><td><code class="ltr">delegated_authority</code></td><td>Object</td><td>Yes</td><td>Authority grant and scope</td></tr>
+<tr><td><code class="ltr">policy</code></td><td>Object</td><td>Yes</td><td>Applicable policy references</td></tr>
+<tr><td><code class="ltr">execution_context</code></td><td>Object</td><td>Yes</td><td>Relevant execution environment</td></tr>
+<tr><td><code class="ltr">governance</code></td><td>Object</td><td>Yes</td><td>Governance decision</td></tr>
+<tr><td><code class="ltr">execution</code></td><td>Object</td><td>Yes</td><td>Current execution state</td></tr>
+<tr><td><code class="ltr">evidence</code></td><td>Array</td><td>Yes</td><td>Evidence records</td></tr>
+<tr><td><code class="ltr">outcome</code></td><td>Object</td><td>Yes</td><td>Current outcome representation</td></tr>
+<tr><td><code class="ltr">extensions</code></td><td>Object</td><td>No</td><td>Namespaced implementation extensions</td></tr></tbody></table></div></div>
+<div class="sub-block"><h3>5.2 Identity and Provenance</h3>
+<p>The <code class="ltr">"identity"</code> object MUST contain:</p>
+<ul class="custom-bullet-list"><li><code class="ltr">"initiator_id"</code></li><li><code class="ltr">"initiator_type"</code></li><li><code class="ltr">"request_id"</code></li></ul>
+<p>The initiator type MUST identify the relevant category, such as:</p>
+<ul class="custom-bullet-list"><li><code class="ltr">HUMAN</code></li><li><code class="ltr">AI_AGENT</code></li><li><code class="ltr">ORGANIZATION</code></li><li><code class="ltr">SYSTEM</code></li></ul>
+<p>An implementation SHOULD preserve the provenance of any delegated request and MUST NOT treat an unverified identity assertion as independently authenticated identity.</p></div>
+<div class="sub-block"><h3>5.3 Economic Action</h3>
+<p>The <code class="ltr">"economic_action"</code> object MUST contain:</p>
+<ul class="custom-bullet-list"><li><code class="ltr">"action_type"</code></li><li><code class="ltr">"resource"</code></li><li><code class="ltr">"parameters"</code></li></ul>
+<p>The initial action categories are:</p>
+<ul class="custom-bullet-list"><li><code class="ltr">PROCUREMENT</code></li><li><code class="ltr">FINANCIAL_TRANSFER</code></li><li><code class="ltr">CAPITAL_ALLOCATION</code></li><li><code class="ltr">PAYMENT_INITIATION</code></li><li><code class="ltr">RESOURCE_ALLOCATION</code></li><li><code class="ltr">CONTRACTUAL_COMMITMENT</code></li></ul>
+<p>Additional action types MAY be introduced through documented extensions or a later specification revision.</p>
+<p>The <code class="ltr">"resource"</code> field identifies the economic resource, account, contract, asset, or other relevant object.</p></div>
+<div class="sub-block"><h3>5.4 Economic Parameters</h3>
+<p>Where an action involves monetary values, the implementation MUST represent the amount using a decimal string.</p>
+<p>Example:</p>
+<div class="formula-box ltr">"amount": "15000.00"</div>
+<p>The following representation is NOT RECOMMENDED:</p>
+<div class="formula-box ltr">"amount": 15000.00</div>
+<p>The use of decimal strings avoids relying on binary floating-point arithmetic for financial values.</p>
+<p>A monetary amount MUST be associated with an explicit currency code.</p>
+<p>For v0.1, currency codes SHOULD use the applicable ISO 4217 alphabetic code.</p>
+<p>The implementation MUST distinguish:</p>
+<ul class="custom-bullet-list"><li>Requested amount.</li><li>Authorized maximum amount.</li><li>Reserved amount, if applicable.</li><li>Executed amount.</li><li>Settled amount, if independently established.</li></ul>
+<p>These values MUST NOT be treated as interchangeable.</p></div>
+<div class="sub-block"><h3>5.5 Delegated Authority</h3>
+<p>The <code class="ltr">"delegated_authority"</code> object MUST identify:</p>
+<ul class="custom-bullet-list"><li>Authority grant identifier.</li><li>Granting principal.</li><li>Authorized agent.</li><li>Permitted action types.</li><li>Monetary limit, where applicable.</li><li>Currency, where applicable.</li><li>Validity interval.</li><li>Current authority status.</li></ul>
+<p>An authority grant SHOULD include a reference to the source document or record establishing the delegation.</p>
+<p>An implementation MUST verify that the authority grant covers the requested action and its relevant economic parameters.</p>
+<p>An authority grant that permits procurement MUST NOT automatically be interpreted as permitting financial transfers.</p></div>
+<div class="sub-block"><h3>5.6 Policy and Constraints</h3>
+<p>The <code class="ltr">"policy"</code> object MUST identify the applicable policy references.</p>
+<p>Where a policy decision is made, the implementation SHOULD preserve:</p>
+<ul class="custom-bullet-list"><li>Policy identifier.</li><li>Policy version.</li><li>Evaluation timestamp.</li><li>Evaluation context reference.</li><li>Decision or evaluation result.</li></ul>
+<p>A policy reference alone does not establish that a policy was successfully evaluated.</p></div>
+<div class="sub-block"><h3>5.7 Execution Context</h3>
+<p>The <code class="ltr">"execution_context"</code> object SHOULD include:</p>
+<ul class="custom-bullet-list"><li>Environment identifier.</li><li>Execution system identifier.</li><li>Region or jurisdiction reference, where relevant.</li><li>Context timestamp.</li><li>Concurrency or transaction context reference.</li></ul>
+<p>Context information MUST be limited to what is necessary for the action and its governance requirements.</p></div>
+<div class="sub-block"><h3>5.8 Governance Decision</h3>
+<p>The <code class="ltr">"governance"</code> object MUST include:</p>
+<ul class="custom-bullet-list"><li>Decision identifier.</li><li>Decision value.</li><li>Decision timestamp.</li><li>Decision reason.</li></ul>
+<p>The initial decision values are:</p>
+<ul class="custom-bullet-list"><li><code class="ltr">ADMIT</code></li><li><code class="ltr">REJECT</code></li><li><code class="ltr">ESCALATE</code></li></ul>
+<p>An ADMIT decision MUST be bound to the action and authority evaluated.</p>
+<p>A change to material action parameters MUST trigger a new authorization evaluation.</p>
+<p>An ADMIT decision MUST NOT be interpreted as proof that execution has occurred.</p></div>
+<div class="sub-block"><h3>5.9 Execution State</h3>
+<p>The <code class="ltr">"execution"</code> object MUST contain:</p>
+<ul class="custom-bullet-list"><li>Current state.</li><li>Last state-transition timestamp.</li></ul>
+<p>It SHOULD also preserve:</p>
+<ul class="custom-bullet-list"><li>Execution attempt identifier.</li><li>Idempotency key.</li><li>Executor identifier.</li><li>Cancellation status.</li><li>Execution receipt reference.</li></ul>
+<p>A system MUST maintain an auditable history of state transitions, even when the top-level object only exposes the latest state.</p></div>
+<div class="sub-block"><h3>5.10 Evidence and Verification</h3>
+<p>Each evidence record SHOULD contain:</p>
+<ul class="custom-bullet-list"><li>Evidence identifier.</li><li>Evidence type.</li><li>Evidence source.</li><li>Capture timestamp.</li><li>Related event or transaction identifier.</li><li>Integrity reference, where available.</li></ul>
+<p>Evidence types may include:</p>
+<ul class="custom-bullet-list"><li><code class="ltr">COMMAND_RECORD</code></li><li><code class="ltr">AUTHORIZATION_RECORD</code></li><li><code class="ltr">POLICY_DECISION</code></li><li><code class="ltr">EXECUTION_RECEIPT</code></li><li><code class="ltr">SYSTEM_ACKNOWLEDGEMENT</code></li><li><code class="ltr">SETTLEMENT_CONFIRMATION</code></li><li><code class="ltr">STATE_TRANSITION</code></li><li><code class="ltr">CANCELLATION_RECORD</code></li></ul>
+<p>The implementation MUST distinguish between:</p>
+<ul class="custom-bullet-list numbered"><li>1. Evidence captured.</li><li>2. Evidence validated for integrity.</li><li>3. Evidence independently verified for the intended claim.</li></ul>
+<p>A record marked as captured MUST NOT automatically be marked as verified.</p></div>
+<div class="sub-block"><h3>5.11 Outcome</h3>
+<p>The <code class="ltr">"outcome"</code> object MUST represent the latest known outcome.</p>
+<p>Initial outcome values:</p>
+<ul class="custom-bullet-list"><li><code class="ltr">PENDING</code></li><li><code class="ltr">COMPLETED</code></li><li><code class="ltr">PARTIALLY_COMPLETED</code></li><li><code class="ltr">REJECTED</code></li><li><code class="ltr">FAILED</code></li><li><code class="ltr">CANCELLED</code></li><li><code class="ltr">EXPIRED</code></li><li><code class="ltr">UNRESOLVED</code></li></ul>
+<p>An outcome SHOULD identify the evidence supporting its classification.</p>
+<p>A COMPLETED execution state does not necessarily establish a COMPLETED settlement outcome.</p></div></section>
+
+<section class="manifesto-card" id="s6"><h2>6. JSON Schema v0.1</h2>
+<p>The following schema defines the initial structural contract.</p>
+<p>It uses JSON Schema Draft 2020-12.</p>
+<p>The schema validates structure and basic field constraints. It does not replace application-level validation of authority, policy, state transitions, or economic semantics.</p>
+<div class="ascii-diagram" dir="ltr" lang="en">{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ouamarkom.com/spec/uearm/0.1/schema.json",
+  "title": "UEARM Economic Action",
+  "description": "Proposed Unified Economic Action Representation Model v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "action_id",
+    "created_at",
+    "identity",
+    "economic_action",
+    "delegated_authority",
+    "policy",
+    "execution_context",
+    "governance",
+    "execution",
+    "evidence",
+    "outcome"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "0.1"
+    },
+    "action_id": {
+      "$ref": "#/$defs/identifier"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "initiator_id",
+        "initiator_type",
+        "request_id"
+      ],
+      "properties": {
+        "initiator_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "initiator_type": {
+          "type": "string",
+          "enum": [
+            "HUMAN",
+            "AI_AGENT",
+            "ORGANIZATION",
+            "SYSTEM"
+          ]
+        },
+        "request_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "provenance_ref": {
+          "type": "string"
+        }
+      }
+    },
+    "economic_action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "action_type",
+        "resource",
+        "parameters"
+      ],
+      "properties": {
+        "action_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "resource": {
+          "type": "object",
+          "required": [
+            "resource_type",
+            "resource_id"
+          ],
+          "properties": {
+            "resource_type": {
+              "type": "string"
+            },
+            "resource_id": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "parameters": {
+          "type": "object",
+          "minProperties": 1
+        },
+        "requested_amount": {
+          "$ref": "#/$defs/money"
+        },
+        "beneficiary_id": {
+          "type": "string"
+        }
+      }
+    },
+    "delegated_authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "grant_id",
+        "granting_principal",
+        "authorized_agent",
+        "permitted_action_types",
+        "status",
+        "valid_from",
+        "valid_until"
+      ],
+      "properties": {
+        "grant_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "granting_principal": {
+          "type": "string",
+          "minLength": 1
+        },
+        "authorized_agent": {
+          "type": "string",
+          "minLength": 1
+        },
+        "permitted_action_types": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "maximum_amount": {
+          "$ref": "#/$defs/money"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "ACTIVE",
+            "REVOKED",
+            "EXPIRED",
+            "SUSPENDED"
+          ]
+        },
+        "valid_from": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "valid_until": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "authority_reference": {
+          "type": "string"
+        },
+        "revocation_reference": {
+          "type": "string"
+        }
+      }
+    },
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "policy_ids"
+      ],
+      "properties": {
+        "policy_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "policy_version": {
+          "type": "string"
+        },
+        "evaluation_reference": {
+          "type": "string"
+        }
+      }
+    },
+    "execution_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "environment_id",
+        "execution_system_id"
+      ],
+      "properties": {
+        "environment_id": {
+          "type": "string"
+        },
+        "execution_system_id": {
+          "type": "string"
+        },
+        "region": {
+          "type": "string"
+        },
+        "context_reference": {
+          "type": "string"
+        }
+      }
+    },
+    "governance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "decision_id",
+        "decision",
+        "decided_at",
+        "reason_code"
+      ],
+      "properties": {
+        "decision_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "decision": {
+          "type": "string",
+          "enum": [
+            "ADMIT",
+            "REJECT",
+            "ESCALATE"
+          ]
+        },
+        "decided_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "reason_code": {
+          "type": "string"
+        },
+        "authority_snapshot_ref": {
+          "type": "string"
+        },
+        "policy_evaluation_ref": {
+          "type": "string"
+        }
+      }
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "updated_at"
+      ],
+      "properties": {
+        "state": {
+          "type": "string",
+          "enum": [
+            "CREATED",
+            "PENDING",
+            "AUTHORIZED",
+            "REJECTED",
+            "EXECUTING",
+            "PARTIALLY_EXECUTED",
+            "COMPLETED",
+            "FAILED",
+            "CANCEL_REQUESTED",
+            "CANCELLED",
+            "EXPIRED"
+          ]
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "attempt_id": {
+          "type": "string"
+        },
+        "idempotency_key": {
+          "type": "string"
+        },
+        "executor_id": {
+          "type": "string"
+        },
+        "executed_amount": {
+          "$ref": "#/$defs/money"
+        },
+        "cancel_reference": {
+          "type": "string"
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/evidence"
+      }
+    },
+    "outcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "PENDING",
+            "COMPLETED",
+            "PARTIALLY_COMPLETED",
+            "REJECTED",
+            "FAILED",
+            "CANCELLED",
+            "EXPIRED",
+            "UNRESOLVED"
+          ]
+        },
+        "settled_amount": {
+          "$ref": "#/$defs/money"
+        },
+        "outcome_reference": {
+          "type": "string"
+        },
+        "verified_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "verification_reference": {
+          "type": "string"
+        }
+      }
+    },
+    "extensions": {
+      "type": "object"
+    }
+  },
+  "$defs": {
+    "identifier": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "money": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "amount",
+        "currency"
+      ],
+      "properties": {
+        "amount": {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+        },
+        "currency": {
+          "type": "string",
+          "pattern": "^[A-Z]{3}$"
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_id",
+        "evidence_type",
+        "source",
+        "captured_at"
+      ],
+      "properties": {
+        "evidence_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "evidence_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "captured_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "event_reference": {
+          "type": "string"
+        },
+        "integrity_reference": {
+          "type": "string"
+        },
+        "verification_status": {
+          "type": "string",
+          "enum": [
+            "NOT_VERIFIED",
+            "INTEGRITY_CHECKED",
+            "INDEPENDENTLY_VERIFIED",
+            "REJECTED"
+          ]
+        }
+      }
+    }
+  }
+}</div>
+<div class="sub-block"><h3>6.1 Schema Validation Requirements</h3>
+<p>An implementation MUST:</p>
+<ul class="custom-bullet-list numbered"><li>1. Validate incoming documents against the declared schema version.</li><li>2. Reject documents with missing required fields.</li><li>3. Reject invalid data types and enum values.</li><li>4. Reject malformed monetary amounts.</li><li>5. Reject duplicate property names at the JSON parsing boundary.</li><li>6. Apply semantic validation after structural validation.</li><li>7. Document its handling of unsupported schema versions.</li></ul>
+<p>The <code class="ltr">"format"</code> keyword in JSON Schema may be treated as an annotation rather than an enforced assertion by some validators. Therefore, implementations MUST explicitly validate timestamps and other critical formats in their application-level validation layer.</p></div></section>
+
+<section class="manifesto-card" id="s7"><h2>7. Semantic Validation Rules</h2>
+<p>Structural validation is necessary but insufficient.</p>
+<p>UEARM requires a second validation layer that evaluates relationships between fields.</p>
+<div class="sub-block"><h3>7.1 Authority–Action Binding</h3>
+<p>The following conditions MUST hold before an action is admitted for execution:</p>
+<ul class="custom-bullet-list"><li>The authorized agent matches the initiating agent.</li><li>The action type is included in the permitted action types.</li><li>The authority grant is valid for the relevant time.</li><li>The authority status is ACTIVE.</li><li>The requested amount does not exceed the applicable monetary limit.</li><li>The currency matches the authorized currency where the grant is currency-restricted.</li><li>The action resource and beneficiary comply with applicable restrictions.</li></ul>
+<p>A mismatch MUST result in rejection or escalation according to the configured policy.</p></div>
+<div class="sub-block"><h3>7.2 Temporal Validity</h3>
+<p>The implementation MUST evaluate:</p>
+<div class="formula-box ltr">valid_from ≤ authorization_time &lt; valid_until</div>
+<p>An authority grant MUST NOT be treated as valid outside its defined validity interval.</p>
+<p>The implementation SHOULD use synchronized timestamps and document its clock assumptions.</p></div>
+<div class="sub-block"><h3>7.3 Monetary Validation</h3>
+<p>For a monetary action:</p>
+<div class="formula-box ltr">requested_amount ≤ authorized_maximum_amount</div>
+<p>The comparison MUST use exact decimal arithmetic.</p>
+<p>The implementation MUST NOT rely on binary floating-point comparisons for authorization decisions.</p>
+<p>The implementation MUST also validate the currency and applicable precision rules.</p></div>
+<div class="sub-block"><h3>7.4 Parameter Integrity</h3>
+<p>Any material change to the following fields MUST trigger a new authorization evaluation:</p>
+<ul class="custom-bullet-list"><li>Action type.</li><li>Amount.</li><li>Currency.</li><li>Beneficiary.</li><li>Source resource.</li><li>Destination resource.</li><li>Relevant execution constraints.</li></ul>
+<p>An earlier governance decision MUST NOT automatically authorize a materially modified action.</p></div>
+<div class="sub-block"><h3>7.5 Decision Consistency</h3>
+<p>If:</p>
+<div class="formula-box ltr">governance.decision = REJECT</div>
+<p>Then the action MUST NOT transition to EXECUTING.</p>
+<p>If:</p>
+<div class="formula-box ltr">governance.decision = ESCALATE</div>
+<p>Then the action MUST remain outside the executable state until the required escalation is resolved.</p>
+<p>If:</p>
+<div class="formula-box ltr">governance.decision = ADMIT</div>
+<p>The action MAY proceed to the next execution stage, subject to a final enforceable authorization check.</p></div>
+<div class="sub-block"><h3>7.6 Evidence Consistency</h3>
+<p>An implementation MUST NOT mark an outcome as independently verified without a corresponding verification record.</p>
+<p>Evidence references MUST identify the action or event to which they relate.</p></div></section>
+
+<section class="manifesto-card" id="s8"><h2>8. Execution State Machine</h2>
+<div class="sub-block"><h3>8.1 Defined States</h3>
+<div class="table-wrap"><table class="comparison-table"><thead><tr><th>State</th><th>Meaning</th></tr></thead><tbody>
+<tr><td><code class="ltr">CREATED</code></td><td>Action representation has been created</td></tr>
+<tr><td><code class="ltr">PENDING</code></td><td>Action is awaiting evaluation or processing</td></tr>
+<tr><td><code class="ltr">AUTHORIZED</code></td><td>Governance has admitted the action</td></tr>
+<tr><td><code class="ltr">REJECTED</code></td><td>Governance has rejected the action</td></tr>
+<tr><td><code class="ltr">EXECUTING</code></td><td>Execution has started</td></tr>
+<tr><td><code class="ltr">PARTIALLY_EXECUTED</code></td><td>Some, but not all, of the action has been executed</td></tr>
+<tr><td><code class="ltr">COMPLETED</code></td><td>The execution operation has completed</td></tr>
+<tr><td><code class="ltr">FAILED</code></td><td>Execution failed</td></tr>
+<tr><td><code class="ltr">CANCEL_REQUESTED</code></td><td>A cancellation request has been received</td></tr>
+<tr><td><code class="ltr">CANCELLED</code></td><td>Cancellation has been confirmed under the defined execution semantics</td></tr>
+<tr><td><code class="ltr">EXPIRED</code></td><td>The action or its authorization expired before completion</td></tr></tbody></table></div></div>
+<div class="sub-block"><h3>8.2 Permitted Transitions</h3>
+<div class="table-wrap"><table class="comparison-table"><thead><tr><th>Current State</th><th>Permitted Next State</th></tr></thead><tbody>
+<tr><td><code class="ltr">CREATED</code></td><td>PENDING, REJECTED, EXPIRED</td></tr>
+<tr><td><code class="ltr">PENDING</code></td><td>AUTHORIZED, REJECTED, EXPIRED</td></tr>
+<tr><td><code class="ltr">AUTHORIZED</code></td><td>EXECUTING, CANCEL_REQUESTED, EXPIRED</td></tr>
+<tr><td><code class="ltr">EXECUTING</code></td><td>PARTIALLY_EXECUTED, COMPLETED, FAILED, CANCEL_REQUESTED</td></tr>
+<tr><td><code class="ltr">PARTIALLY_EXECUTED</code></td><td>EXECUTING, COMPLETED, FAILED, CANCEL_REQUESTED</td></tr>
+<tr><td><code class="ltr">CANCEL_REQUESTED</code></td><td>CANCELLED, EXECUTING, PARTIALLY_EXECUTED, COMPLETED, FAILED</td></tr>
+<tr><td><code class="ltr">REJECTED</code></td><td>Terminal</td></tr>
+<tr><td><code class="ltr">COMPLETED</code></td><td>Terminal for that execution attempt</td></tr>
+<tr><td><code class="ltr">FAILED</code></td><td>Terminal for that execution attempt</td></tr>
+<tr><td><code class="ltr">CANCELLED</code></td><td>Terminal for that execution attempt</td></tr>
+<tr><td><code class="ltr">EXPIRED</code></td><td>Terminal</td></tr></tbody></table></div>
+<p>A new attempt after a terminal failure or cancellation MUST be represented through an explicitly linked retry or new action attempt. The original event history MUST be preserved.</p></div>
+<div class="sub-block"><h3>8.3 Transition Enforcement</h3>
+<p>Every state transition MUST:</p>
+<ul class="custom-bullet-list numbered"><li>1. Identify the previous state.</li><li>2. Identify the new state.</li><li>3. Record the transition timestamp.</li><li>4. Identify the component initiating the transition.</li><li>5. Record a reason or event reference.</li><li>6. Preserve an immutable transition history.</li></ul>
+<p>A transition that violates the state machine MUST be rejected.</p></div>
+<div class="sub-block"><h3>8.4 Cancellation Semantics</h3>
+<p>A cancellation request and a confirmed cancellation are different events.</p>
+<p><code class="ltr">"CANCEL_REQUESTED"</code> means that cancellation has been requested.</p>
+<p><code class="ltr">"CANCELLED"</code> means that the execution system has confirmed the defined cancellation condition.</p>
+<p>A cancellation request MUST NOT be represented as successful cancellation before confirmation.</p>
+<p>If execution has already crossed an irreversible boundary, the implementation MUST NOT claim that cancellation reversed the action.</p>
+<p>It SHOULD instead record the actual execution state and, where supported, initiate a separate compensating or reversal action.</p></div></section>
+
+<section class="manifesto-card" id="s9"><h2>9. Revocation Semantics</h2>
+<div class="sub-block"><h3>9.1 General Requirement</h3>
+<p>An authority grant may be revoked independently of the lifecycle of an action.</p>
+<p>The implementation MUST define how revocation affects:</p>
+<ul class="custom-bullet-list"><li>CREATED actions.</li><li>PENDING actions.</li><li>AUTHORIZED actions.</li><li>EXECUTING actions.</li><li>PARTIALLY_EXECUTED actions.</li></ul></div>
+<div class="sub-block"><h3>9.2 Revocation at the Execution Boundary</h3>
+<p>Before execution begins, the system MUST revalidate the authority grant.</p>
+<p>If the grant has been revoked before the enforceable execution boundary, the action MUST NOT proceed under that grant.</p></div>
+<div class="sub-block"><h3>9.3 Revocation During Execution</h3>
+<p>If revocation occurs after execution has started, the implementation MUST evaluate whether:</p>
+<ul class="custom-bullet-list"><li>The operation can be stopped safely.</li><li>The operation has crossed an irreversible boundary.</li><li>Partial execution has occurred.</li><li>A compensating action is required.</li><li>The final outcome remains unresolved.</li></ul>
+<p>The implementation MUST preserve the revocation event and its timestamp.</p></div>
+<div class="sub-block"><h3>9.4 Revocation Record</h3>
+<p>A revocation record SHOULD contain:</p>
+<ul class="custom-bullet-list"><li>Grant identifier.</li><li>Revocation identifier.</li><li>Revoking principal.</li><li>Revocation timestamp.</li><li>Effective boundary.</li><li>Reason reference.</li><li>Affected action identifiers, where available.</li></ul></div></section>
+
+<section class="manifesto-card" id="s10"><h2>10. Concurrency and Cumulative Authority</h2>
+<div class="sub-block"><h3>10.1 Concurrency Risk</h3>
+<p>Multiple individually valid actions may collectively exceed an authorized economic limit.</p>
+<p>For example:</p>
+<ul class="custom-bullet-list"><li>Authorized limit: USD 10,000.</li><li>Action A: USD 6,000.</li><li>Action B: USD 6,000.</li></ul>
+<p>Independent validation of each request would incorrectly permit a cumulative exposure of USD 12,000 if the same limit is shared.</p></div>
+<div class="sub-block"><h3>10.2 Atomic Reservation</h3>
+<p>Where an authority grant defines an aggregate monetary limit, the execution environment SHOULD implement an atomic reservation or equivalent concurrency-control mechanism.</p>
+<p>The following invariant MUST hold:</p>
+<div class="formula-box ltr">Reserved Exposure + Executed Exposure ≤ Applicable Aggregate Limit</div>
+<p>The exact treatment of reservations, reversals, and settlement adjustments MUST be documented by the implementation.</p></div>
+<div class="sub-block"><h3>10.3 Concurrency Control</h3>
+<p>The implementation MUST prevent stale authorization decisions from being used to bypass an updated aggregate limit.</p>
+<p>It SHOULD use one or more of:</p>
+<ul class="custom-bullet-list"><li>Atomic database transactions.</li><li>Versioned authority records.</li><li>Optimistic concurrency control.</li><li>Serializable transaction processing.</li><li>Distributed locking with documented failure semantics.</li></ul></div>
+<div class="sub-block"><h3>10.4 Idempotency</h3>
+<p>Each execution attempt SHOULD have an idempotency key.</p>
+<p>A repeated request with the same idempotency key and identical material action parameters MUST NOT cause an unintended duplicate economic execution.</p>
+<p>If the same key is reused with materially different parameters, the implementation MUST reject the request or require a new key.</p>
+<p>Idempotency records MUST be retained for a documented period appropriate to the risk and transaction lifecycle.</p></div></section>
+
+<section class="manifesto-card" id="s11"><h2>11. Evidence and Verification Model</h2>
+<div class="sub-block"><h3>11.1 Evidence Lifecycle</h3>
+<p>The proposed evidence lifecycle is:</p>
+<div class="diagram-wrapper"><div class="diagram-flow"><span class="diagram-step">Evidence Generation</span><span class="diagram-arrow">→</span><span class="diagram-step">Evidence Capture</span><span class="diagram-arrow">→</span><span class="diagram-step">Integrity Validation</span><span class="diagram-arrow">→</span><span class="diagram-step">Independent Verification</span><span class="diagram-arrow">→</span><span class="diagram-step">Outcome Attribution</span></div></div>
+<p>Each stage MUST be distinguishable.</p></div>
+<div class="sub-block"><h3>11.2 Evidence Record</h3>
+<p>An evidence record SHOULD include:</p>
+<ul class="custom-bullet-list"><li>Evidence identifier.</li><li>Action identifier.</li><li>Event identifier.</li><li>Evidence type.</li><li>Source system.</li><li>Capture timestamp.</li><li>Integrity reference.</li><li>Verification status.</li></ul></div>
+<div class="sub-block"><h3>11.3 Integrity</h3>
+<p>Where cryptographic integrity protection is required, implementations MAY use established signing and canonicalization mechanisms.</p>
+<p>For JSON-based cryptographic operations, RFC 8785 provides a JSON Canonicalization Scheme designed to produce a repeatable representation for hashing and signing.</p>
+<p>Use of that scheme MUST be implemented according to its specification; merely hashing an arbitrary JSON serialization is not sufficient.</p></div>
+<div class="sub-block"><h3>11.4 Verification Independence</h3>
+<p>An implementation SHOULD distinguish the system that performs an action from the system or process that verifies its outcome.</p>
+<p>Where independent verification is unavailable, the outcome MUST be represented with an appropriate unresolved or unverified status.</p></div>
+<div class="sub-block"><h3>11.5 Evidence Retention</h3>
+<p>Implementations MUST define:</p>
+<ul class="custom-bullet-list"><li>Evidence retention period.</li><li>Access controls.</li><li>Integrity protection.</li><li>Audit access.</li><li>Privacy restrictions.</li><li>Deletion and legal-retention handling.</li></ul></div></section>
+
+<section class="manifesto-card" id="s12"><h2>12. Versioning and Compatibility</h2>
+<div class="sub-block"><h3>12.1 Version Identifier</h3>
+<p>The initial version is:</p>
+<div class="formula-box ltr">"0.1"</div>
+<p>The <code class="ltr">"schema_version"</code> field MUST identify the schema version used to interpret the document.</p></div>
+<div class="sub-block"><h3>12.2 Versioning Policy</h3>
+<p>A future versioning policy SHOULD distinguish:</p>
+<ul class="custom-bullet-list"><li>Patch changes: clarifications or corrections without intended structural incompatibility.</li><li>Minor changes: backward-compatible additions.</li><li>Major changes: changes that may invalidate existing implementations or data.</li></ul>
+<p>The exact versioning policy remains subject to refinement.</p></div>
+<div class="sub-block"><h3>12.3 Unknown Fields</h3>
+<p>In v0.1:</p>
+<ul class="custom-bullet-list"><li>Unknown top-level fields MUST be rejected.</li><li>Implementation-specific extensions MUST be placed inside <code class="ltr">"extensions"</code>.</li><li>Extension names SHOULD be namespaced.</li><li>Implementations MUST NOT silently reinterpret unknown fields as authorization instructions.</li></ul></div>
+<div class="sub-block"><h3>12.4 Schema Migration</h3>
+<p>An implementation MUST NOT silently change the meaning of an existing field when migrating between schema versions.</p>
+<p>A migration SHOULD preserve:</p>
+<ul class="custom-bullet-list"><li>Original action identifier.</li><li>Original request.</li><li>Authority references.</li><li>Governance decisions.</li><li>Execution history.</li><li>Evidence provenance.</li><li>Outcome records.</li></ul></div></section>
+
+<section class="manifesto-card" id="s13"><h2>13. Security and Threat Model</h2>
+<p>UEARM implementations should consider at least the following threat categories.</p>
+<div class="table-wrap"><table class="comparison-table"><thead><tr><th>Threat</th><th>Required consideration</th></tr></thead><tbody>
+<tr><td>Identity spoofing</td><td>Verify the initiating identity</td></tr>
+<tr><td>Authority escalation</td><td>Prevent capability from creating authority</td></tr>
+<tr><td>Parameter manipulation</td><td>Bind authorization to material action parameters</td></tr>
+<tr><td>Replay attacks</td><td>Use idempotency and request identifiers</td></tr>
+<tr><td>Concurrent limit bypass</td><td>Enforce aggregate limits atomically</td></tr>
+<tr><td>Revocation race conditions</td><td>Revalidate authority at execution boundaries</td></tr>
+<tr><td>Evidence tampering</td><td>Preserve evidence integrity and provenance</td></tr>
+<tr><td>False completion claims</td><td>Separate execution acknowledgement from outcome verification</td></tr>
+<tr><td>Schema confusion</td><td>Validate declared versions and reject unsupported versions</td></tr>
+<tr><td>Privilege expansion through learning</td><td>Prevent automatic authority expansion</td></tr>
+<tr><td>Sensitive data exposure</td><td>Minimize and protect contextual and financial data</td></tr></tbody></table></div>
+<p>This list is an initial threat model, not a complete security assessment.</p>
+<p>A production implementation would require a dedicated threat analysis, security testing, key-management design, and operational controls.</p></section>
+
+<section class="manifesto-card" id="s14"><h2>14. Conformance Requirements</h2>
+<p>A UEARM v0.1 implementation can be evaluated against four levels.</p>
+<div class="sub-block"><h3>Level 1 - Structural Conformance</h3>
+<p>The implementation:</p>
+<ul class="custom-bullet-list"><li>Accepts valid v0.1 documents.</li><li>Rejects structurally invalid documents.</li><li>Enforces required fields.</li><li>Validates basic data types and enumerations.</li></ul></div>
+<div class="sub-block"><h3>Level 2 - Semantic Conformance</h3>
+<p>The implementation:</p>
+<ul class="custom-bullet-list"><li>Validates authority-to-action relationships.</li><li>Validates economic parameters.</li><li>Validates policy references.</li><li>Checks temporal authorization validity.</li><li>Enforces governance decision consistency.</li></ul></div>
+<div class="sub-block"><h3>Level 3 - Execution Conformance</h3>
+<p>The implementation:</p>
+<ul class="custom-bullet-list"><li>Enforces the state machine.</li><li>Revalidates authority at the execution boundary.</li><li>Implements defined cancellation and revocation behavior.</li><li>Prevents unintended duplicate execution.</li><li>Handles concurrency and cumulative limits.</li></ul></div>
+<div class="sub-block"><h3>Level 4 - Evidence and Outcome Conformance</h3>
+<p>The implementation:</p>
+<ul class="custom-bullet-list"><li>Records traceable evidence.</li><li>Distinguishes evidence capture from verification.</li><li>Preserves execution history.</li><li>Distinguishes execution completion from economic settlement.</li><li>Supports outcome attribution.</li></ul></div>
+<p>These levels are proposed evaluation categories, not external certifications.</p></section>
+
+<section class="manifesto-card" id="s15"><h2>15. Initial Conformance Test Suite</h2>
+<p>The following tests establish an initial experimental baseline.</p>
+<div class="table-wrap"><table class="comparison-table"><thead><tr><th>Test ID</th><th>Scenario</th><th>Expected Result</th></tr></thead><tbody>
+<tr><td><code class="ltr">UEARM-T001</code></td><td>Valid action within authority</td><td>ADMIT may be issued</td></tr>
+<tr><td><code class="ltr">UEARM-T002</code></td><td>Requested amount exceeds limit</td><td>REJECT or configured escalation</td></tr>
+<tr><td><code class="ltr">UEARM-T003</code></td><td>Unauthorized action type</td><td>REJECT</td></tr>
+<tr><td><code class="ltr">UEARM-T004</code></td><td>Expired authority grant</td><td>Execution prohibited</td></tr>
+<tr><td><code class="ltr">UEARM-T005</code></td><td>Revoked authority before execution</td><td>Execution prohibited</td></tr>
+<tr><td><code class="ltr">UEARM-T006</code></td><td>Material parameter modification</td><td>New authorization evaluation required</td></tr>
+<tr><td><code class="ltr">UEARM-T007</code></td><td>Duplicate idempotency key and same request</td><td>No duplicate execution</td></tr>
+<tr><td><code class="ltr">UEARM-T008</code></td><td>Same idempotency key with changed parameters</td><td>Reject or require new key</td></tr>
+<tr><td><code class="ltr">UEARM-T009</code></td><td>Concurrent requests exceed aggregate limit</td><td>Aggregate limit preserved</td></tr>
+<tr><td><code class="ltr">UEARM-T010</code></td><td>Invalid state transition</td><td>Transition rejected</td></tr>
+<tr><td><code class="ltr">UEARM-T011</code></td><td>Cancellation requested but not confirmed</td><td>State remains unconfirmed</td></tr>
+<tr><td><code class="ltr">UEARM-T012</code></td><td>Partial execution</td><td>PARTIALLY_EXECUTED represented</td></tr>
+<tr><td><code class="ltr">UEARM-T013</code></td><td>Execution acknowledgement without settlement evidence</td><td>Settlement remains unverified</td></tr>
+<tr><td><code class="ltr">UEARM-T014</code></td><td>Missing evidence provenance</td><td>Evidence validation fails</td></tr>
+<tr><td><code class="ltr">UEARM-T015</code></td><td>Unsupported schema version</td><td>Processing rejected or explicitly quarantined</td></tr></tbody></table></div>
+<div class="sub-block"><h3>15.1 Illustrative Test Case: Authorization Limit</h3>
+<h3>Input</h3>
+<ul class="custom-bullet-list"><li>Agent: Agent-Alpha-07</li><li>Action: CAPITAL_ALLOCATION</li><li>Requested amount: USD 15,000</li><li>Authorized limit: USD 10,000</li><li>Authority status: ACTIVE</li></ul>
+<h3>Expected result</h3>
+<ul class="custom-bullet-list"><li>Governance decision: REJECT</li><li>Reason: REQUEST_EXCEEDS_AUTHORIZED_LIMIT</li><li>Execution state: REJECTED</li><li>Executed amount: USD 0</li><li>Outcome: REJECTED</li></ul>
+<div class="highlight-quote"><p>This is a test definition, not a claim that the test has been executed or passed.</p></div></div>
+<div class="sub-block"><h3>15.2 Illustrative Test Case: Revocation</h3>
+<h3>Initial condition</h3>
+<ul class="custom-bullet-list"><li>Authority status: ACTIVE</li><li>Action state: AUTHORIZED</li><li>Execution has not started.</li></ul>
+<h3>Event</h3>
+<p>The authority grant is revoked.</p>
+<h3>Expected result</h3>
+<ul class="custom-bullet-list"><li>Revocation event recorded.</li><li>Authority revalidation fails.</li><li>Execution is prevented.</li><li>Action transitions to a defined non-executable state.</li></ul>
+<p>The implementation must document the exact state transition used for this case.</p></div></section>
+
+<section class="manifesto-card" id="s16"><h2>16. Implementation Architecture</h2>
+<p>A prototype implementation may use the following logical components.</p>
+<div class="table-wrap"><table class="comparison-table"><thead><tr><th>Component</th><th>Responsibility</th></tr></thead><tbody>
+<tr><td>Action Intake</td><td>Receives structured action requests</td></tr>
+<tr><td>UEARM Validator</td><td>Performs structural and semantic validation</td></tr>
+<tr><td>Identity Resolver</td><td>Resolves initiating identity</td></tr>
+<tr><td>Authority Resolver</td><td>Evaluates delegated authority</td></tr>
+<tr><td>Policy Evaluator</td><td>Evaluates applicable policies</td></tr>
+<tr><td>Governance Decision Engine</td><td>Produces ADMIT, REJECT, or ESCALATE</td></tr>
+<tr><td>Execution Controller</td><td>Enforces execution-boundary requirements</td></tr>
+<tr><td>State Manager</td><td>Maintains valid execution transitions</td></tr>
+<tr><td>Evidence Recorder</td><td>Records traceable events and evidence</td></tr>
+<tr><td>Outcome Verifier</td><td>Assesses operational and economic outcomes</td></tr>
+<tr><td>Audit Store</td><td>Preserves relevant history and provenance</td></tr></tbody></table></div>
+<p>These are logical responsibilities. They do not establish that every responsibility requires a separate service, process, or architectural layer.</p>
+<p>Each proposed layer must demonstrate independent value through experimentation.</p>
+<div class="sub-block"><h3>16.1 Reference Processing Sequence</h3>
+<ul class="custom-bullet-list numbered"><li>1. Receive an economic-action request.</li><li>2. Parse the declared UEARM version.</li><li>3. Validate the document structure.</li><li>4. Validate semantic relationships.</li><li>5. Resolve identity and authority.</li><li>6. Evaluate policy and constraints.</li><li>7. Produce a governance decision.</li><li>8. Record the decision and its supporting references.</li><li>9. Revalidate authority at the execution boundary.</li><li>10. Apply concurrency and idempotency controls.</li><li>11. Execute the permitted action.</li><li>12. Record execution events.</li><li>13. Capture and validate evidence.</li><li>14. Verify the outcome.</li><li>15. Preserve the resulting action history.</li></ul></div></section>
+
+<section class="manifesto-card" id="s17"><h2>17. Experimental Validation Plan</h2>
+<p>The first implementation should focus on a limited set of high-value scenarios.</p>
+<div class="sub-block"><h3>Phase A - Schema Validation</h3>
+<p>Objective:</p>
+<p>Verify that the JSON Schema accepts valid documents and rejects invalid structures.</p>
+<p>Deliverables:</p>
+<ul class="custom-bullet-list"><li>Schema validator.</li><li>Positive test fixtures.</li><li>Negative test fixtures.</li><li>Validation report.</li></ul></div>
+<div class="sub-block"><h3>Phase B - Semantic Validation</h3>
+<p>Objective:</p>
+<p>Verify the consistency of action parameters, delegated authority, and policy constraints.</p>
+<p>Deliverables:</p>
+<ul class="custom-bullet-list"><li>Authority-validation tests.</li><li>Monetary-limit tests.</li><li>Temporal-validity tests.</li><li>Parameter-binding tests.</li></ul></div>
+<div class="sub-block"><h3>Phase C - Execution State Machine</h3>
+<p>Objective:</p>
+<p>Verify permitted and prohibited state transitions.</p>
+<p>Deliverables:</p>
+<ul class="custom-bullet-list"><li>State-transition implementation.</li><li>Transition history.</li><li>Invalid-transition test report.</li></ul></div>
+<div class="sub-block"><h3>Phase D - Revocation and Concurrency</h3>
+<p>Objective:</p>
+<p>Evaluate revocation timing and cumulative authority enforcement.</p>
+<p>Deliverables:</p>
+<ul class="custom-bullet-list"><li>Revocation test scenarios.</li><li>Concurrent execution tests.</li><li>Exposure calculations.</li><li>Failure and recovery records.</li></ul></div>
+<div class="sub-block"><h3>Phase E - Evidence and Outcome Verification</h3>
+<p>Objective:</p>
+<p>Evaluate whether the implementation can distinguish execution evidence from verified economic outcomes.</p>
+<p>Deliverables:</p>
+<ul class="custom-bullet-list"><li>Evidence records.</li><li>Verification results.</li><li>Outcome attribution report.</li></ul></div>
+<div class="sub-block"><h3>Phase F - Comparative Evaluation</h3>
+<p>Objective:</p>
+<p>Compare the proposed representation and implementation against relevant existing approaches.</p>
+<p>Evaluation dimensions:</p>
+<ul class="custom-bullet-list"><li>Data-model completeness.</li><li>Authorization consistency.</li><li>Interoperability.</li><li>Execution traceability.</li><li>Revocation behavior.</li><li>Concurrency handling.</li><li>Verification coverage.</li><li>Operational overhead.</li></ul>
+<div class="highlight-quote"><p>No performance target or superiority claim is established by this specification.</p></div></div></section>
+
+<section class="manifesto-card" id="s18"><h2>18. Known Limitations of v0.1</h2>
+<p>The following matters require additional engineering work:</p>
+<ul class="custom-bullet-list numbered"><li>1. Formal semantics for every economic action type.</li><li>2. Detailed ISO currency and monetary precision handling.</li><li>3. Canonical action fingerprints.</li><li>4. Cryptographic binding between authorization decisions and action parameters.</li><li>5. Formal aggregate-exposure accounting.</li><li>6. Distributed revocation consistency.</li><li>7. Partial execution and compensation semantics.</li><li>8. Settlement verification profiles.</li><li>9. Privacy-preserving evidence exchange.</li><li>10. Extension and interoperability governance.</li><li>11. Formal state-machine verification.</li><li>12. Independent security review.</li></ul>
+<p>These limitations are intentionally documented rather than concealed.</p></section>
+
+<section class="manifesto-card" id="s19"><h2>19. Proposed Next Specification Milestones</h2>
+<div class="table-wrap"><table class="comparison-table"><thead><tr><th>Version</th><th>Proposed Focus</th></tr></thead><tbody>
+<tr><td>v0.1</td><td>Initial data model, schema, semantics, and state machine</td></tr>
+<tr><td>v0.2</td><td>Action fingerprinting, authorization binding, and event model</td></tr>
+<tr><td>v0.3</td><td>Formal revocation, concurrency, and partial-execution semantics</td></tr>
+<tr><td>v0.4</td><td>Evidence integrity and outcome verification profiles</td></tr>
+<tr><td>v0.5</td><td>Interoperability profiles and comparative evaluation</td></tr>
+<tr><td>v1.0</td><td>Candidate stable specification, subject to validation and independent review</td></tr></tbody></table></div>
+<p>These are proposed development milestones, not committed release dates.</p></section>
+
+<section class="manifesto-card" id="s20"><h2>20. Institutional and Technical Position</h2>
+<p>OUAMARKOM™ presents UEARM v0.1 as an initial engineering specification within its research into governed AI economic agency.</p>
+<p>The specification seeks to establish a testable technical foundation for representing economically consequential actions across identity, authority, governance, execution, evidence, and outcomes.</p>
+<div class="highlight-quote"><p>It does not claim to establish an approved industry standard or to replace existing authorization, policy, payment, identity, or transaction-processing technologies.</p></div>
+<p>Its technical value must be established through:</p>
+<ul class="custom-bullet-list"><li>Reproducible implementation.</li><li>Formal validation.</li><li>Comparative testing.</li><li>Independent technical review.</li><li>Interoperability experiments.</li><li>Documented evidence.</li></ul>
+<p>The progression from a proposed model to a stable technical specification and, potentially, a standardization initiative must be evidence-driven.</p></section>
+
+<section class="manifesto-card" id="s21"><h2>21. References</h2>
+<ul class="references-list">
+<li class="ref-ltr" dir="ltr">1. JSON Schema. Specification - Draft 2020-12.<br><a href="https://json-schema.org/specification" target="_blank" rel="noopener noreferrer">https://json-schema.org/specification</a></li>
+<li class="ref-ltr" dir="ltr">2. JSON Schema. Validation Specification - Draft 2020-12.<br><a href="https://json-schema.org/draft/2020-12/json-schema-validation" target="_blank" rel="noopener noreferrer">https://json-schema.org/draft/2020-12/json-schema-validation</a></li>
+<li class="ref-ltr" dir="ltr">3. Rundgren, A., Jordan, B., and Erdtman, S. RFC 8785: JSON Canonicalization Scheme (JCS).<br><a href="https://www.rfc-editor.org/rfc/rfc8785.html" target="_blank" rel="noopener noreferrer">https://www.rfc-editor.org/rfc/rfc8785.html</a></li>
+<li class="ref-ltr" dir="ltr">4. Open Policy Agent. Documentation.<br><a href="https://www.openpolicyagent.org/docs" target="_blank" rel="noopener noreferrer">https://www.openpolicyagent.org/docs</a></li>
+<li class="ref-ltr" dir="ltr">5. Cedar Policy Language. Authorization Model.<br><a href="https://docs.cedarpolicy.com/auth/authorization.html" target="_blank" rel="noopener noreferrer">https://docs.cedarpolicy.com/auth/authorization.html</a></li>
+<li class="ref-ltr" dir="ltr">6. Google Agent Payments Protocol. AP2 Specification.<br><a href="https://ap2-protocol.org/ap2/specification/" target="_blank" rel="noopener noreferrer">https://ap2-protocol.org/ap2/specification/</a></li></ul></section>
+
+<article class="executive-summary-master" id="document-control" style="border-top-color:var(--accent)"><h2 style="color:var(--accent);font-size:1.35rem;font-weight:800;margin-bottom:16px;border:none;padding:0">Document Control</h2>
+<div class="table-wrap"><table class="comparison-table"><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td>Organization</td><td>OUAMARKOM™</td></tr>
+<tr><td>Document</td><td>UEARM Technical Specification</td></tr>
+<tr><td>Identifier</td><td>OUAMARKOM-UEARM-SPEC-001</td></tr>
+<tr><td>Version</td><td>0.1</td></tr>
+<tr><td>Release Date</td><td>November 4, 2026</td></tr>
+<tr><td>Research Framework</td><td>CE-AI™</td></tr>
+<tr><td>Specification Status</td><td>Proposed - Experimental</td></tr>
+<tr><td>Validation Status</td><td>Pending</td></tr>
+<tr><td>Standardization Status</td><td>Not an Approved Industry Standard</td></tr>
+<tr><td>Responsible Unit</td><td>OUAMARKOM™ Research &amp; Development</td></tr></tbody></table></div>
+<p style="text-align:center;font-weight:800;color:var(--accent);margin-top:20px">OUAMARKOM™</p>
+<p style="text-align:center">Research &amp; Engineering for Governed AI Economic Agency</p>
+<div class="highlight-quote"><p>Evidence Before Architecture.<br>Every Layer Must Earn Its Existence.</p></div>
+<p style="text-align:center;color:var(--text-dim);margin-top:20px">© 2026 OUAMARKOM™ Research &amp; Development</p></article>
+
+<nav class="research-nav-container" aria-label="Research navigation">
+<a href="/en/research/uearm" class="btn-research-secondary" rel="prev">← Research Paper No. 7</a>
+<a href="/en/research" class="btn-research-primary">Full Ouamarkom Research Base</a>
+</nav>
+</main>
+<footer><div class="container" dir="ltr"><p>© 2026 Ouamarkom. All Rights Reserved.</p><div class="footer-legal-links"><a href="/en/intellectual-property">Intellectual Property</a> <span class="footer-legal-separator">·</span> <a href="mailto:contact@ouamarkom.com">Contact</a></div></div></footer>
+<script src="/script.js" defer=""></script>
+<script>
+const backToTopBtn=document.getElementById('backToTop');
+if(backToTopBtn){window.addEventListener('scroll',()=>{backToTopBtn.style.display=window.scrollY>400?'flex':'none'});backToTopBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));}
+</script>
+</body>
+</html>

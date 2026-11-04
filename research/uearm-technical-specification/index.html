@@ -1,0 +1,2012 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المواصفة التقنية لنموذج التمثيل الموحد للفعل الاقتصادي UEARM v0.1 | OUAMARKOM-UEARM-SPEC-001 - أوامركم</title>
+
+<!-- Meta SEO -->
+<meta name="description" content="المواصفة التقنية لنموذج التمثيل الموحد للفعل الاقتصادي (UEARM v0.1) - معرّف المواصفة: OUAMARKOM-UEARM-SPEC-001. الإطار البحثي CE-AI™ والنموذج التشغيلي CE-AI™ Pipeline. مواصفة مقترحة قيد التنفيذ التجريبي. أوامركم للبحث والتطوير."/>
+<meta name="keywords" content="UEARM, UEARM v0.1, المواصفة التقنية, Unified Economic Action Representation Model, نموذج التمثيل الموحد للفعل الاقتصادي, CE-AI, أوامركم, OUAMARKOM-UEARM-SPEC-001, تفويض وكلاء الذكاء الاصطناعي, الحوكمة الاقتصادية"/>
+<meta name="author" content="OUAMARKOM™ Research &amp; Development"/>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+<meta name="theme-color" content="#040916"/>
+<meta name="format-detection" content="telephone=no"/>
+
+<!-- Canonical & Hreflang Tags -->
+<link rel="canonical" href="https://ouamarkom.com/research/uearm-technical-specification"/>
+<link rel="alternate" hreflang="ar" href="https://ouamarkom.com/research/uearm-technical-specification"/>
+<link rel="alternate" hreflang="en" href="https://ouamarkom.com/en/research/uearm-technical-specification"/>
+<link rel="alternate" hreflang="x-default" href="https://ouamarkom.com/en/research/uearm-technical-specification"/>
+<link rel="prev" href="https://ouamarkom.com/research/uearm"/>
+
+<!-- Favicons -->
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"/>
+<link rel="icon" href="/favicon.ico"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<link rel="stylesheet" href="/style.css"/>
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="أوامركم | Ouamarkom"/>
+<meta property="og:url" content="https://ouamarkom.com/research/uearm-technical-specification"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="المواصفة التقنية لنموذج التمثيل الموحد للفعل الاقتصادي UEARM v0.1 - أوامركم"/>
+<meta property="og:description" content="تحدد هذه الوثيقة البنية التقنية الأولية لنموذج UEARM v0.1 (OUAMARKOM-UEARM-SPEC-001) للتمثيل المنظم للأفعال الاقتصادية في أنظمة الذكاء الاصطناعي."/>
+<meta property="og:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="المواصفة التقنية لنموذج UEARM v0.1 - أوامركم"/>
+<meta property="og:locale" content="ar_AR"/>
+<meta property="og:locale:alternate" content="en_US"/>
+<meta property="article:published_time" content="2026-11-04T00:00:00+03:00"/>
+<meta property="article:modified_time" content="2026-11-04T00:00:00+03:00"/>
+<meta property="article:author" content="OUAMARKOM™ Research &amp; Development"/>
+<meta property="article:section" content="المواصفات التقنية"/>
+<meta property="article:tag" content="UEARM"/>
+<meta property="article:tag" content="OUAMARKOM-UEARM-SPEC-001"/>
+<meta property="article:tag" content="CE-AI Pipeline"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="المواصفة التقنية لنموذج UEARM v0.1 | أوامركم"/>
+<meta name="twitter:description" content="المواصفة التقنية لنموذج التمثيل الموحد للفعل الاقتصادي UEARM v0.1 من OUAMARKOM™ للبحث والتطوير."/>
+<meta name="twitter:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg"/>
+<meta name="twitter:image:alt" content="المواصفة التقنية لنموذج UEARM v0.1"/>
+
+<!-- Structured Data (JSON-LD) -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "TechArticle",
+   "@id": "https://ouamarkom.com/research/uearm-technical-specification#article",
+   "headline": "المواصفة التقنية لنموذج التمثيل الموحد للفعل الاقتصادي UEARM v0.1",
+   "alternativeHeadline": "OUAMARKOM-UEARM-SPEC-001 Technical Specification v0.1",
+   "description": "تحدد هذه الوثيقة البنية التقنية الأولية لنموذج UEARM v0.1 للتمثيل المنظم للأفعال الاقتصادية التي تطلبها أو تنشئها أو تفوضها أو تنفذها أنظمة الذكاء الاصطناعي.",
+   "inLanguage": "ar",
+   "url": "https://ouamarkom.com/research/uearm-technical-specification",
+   "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ouamarkom.com/research/uearm-technical-specification"
+   },
+   "datePublished": "2026-11-04",
+   "dateModified": "2026-11-04",
+   "image": "https://ouamarkom.com/ouamarkom-og-image.jpeg",
+   "genre": "مواصفة تقنية",
+   "articleSection": "المواصفات التقنية والأبحاث",
+   "identifier": "OUAMARKOM-UEARM-SPEC-001",
+   "version": "v0.1",
+   "keywords": "UEARM, OUAMARKOM-UEARM-SPEC-001, Unified Economic Action Representation Model, CE-AI, Economic Action Specification",
+   "isPartOf": {
+    "@type": "CreativeWorkSeries",
+    "name": "المواصفات التقنية - مبادرة أوامركم البحثية",
+    "url": "https://ouamarkom.com/research"
+   },
+   "isBasedOn": "https://ouamarkom.com/research/uearm",
+   "author": {
+    "@type": "Organization",
+    "@id": "https://ouamarkom.com/#organization",
+    "name": "OUAMARKOM™ Research & Development",
+    "alternateName": "أوامركم",
+    "url": "https://ouamarkom.com"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "أوامركم للتقنيات الذكية",
+    "url": "https://ouamarkom.com",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ouamarkom.com/logo.webp"
+    }
+   },
+   "copyrightHolder": {
+    "@type": "Organization",
+    "name": "Ouamarkom"
+   },
+   "copyrightYear": 2026
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://ouamarkom.com/research/uearm-technical-specification",
+   "url": "https://ouamarkom.com/research/uearm-technical-specification",
+   "name": "المواصفة التقنية لنموذج UEARM v0.1 | أوامركم",
+   "inLanguage": "ar",
+   "isPartOf": {
+    "@type": "WebSite",
+    "name": "أوامركم",
+    "url": "https://ouamarkom.com"
+   },
+   "breadcrumb": {
+    "@id": "https://ouamarkom.com/research/uearm-technical-specification#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://ouamarkom.com/research/uearm-technical-specification#breadcrumb",
+   "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://ouamarkom.com"},
+    {"@type": "ListItem", "position": 2, "name": "الموسوعة البحثية", "item": "https://ouamarkom.com/research"},
+    {"@type": "ListItem", "position": 3, "name": "الورقة البحثية رقم (7)", "item": "https://ouamarkom.com/research/uearm"},
+    {"@type": "ListItem", "position": 4, "name": "المواصفة التقنية لنموذج UEARM v0.1", "item": "https://ouamarkom.com/research/uearm-technical-specification"}
+   ]
+  }
+ ]
+}
+</script>
+<style>
+:root{--primary:#040916;--secondary:#0a192f;--accent:#e6992d;--text-main:#e6f1ff;--text-dim:#8892b0;--card-bg:rgba(10,25,47,.4);--card-border:rgba(255,255,255,.05)}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{background-color:var(--primary);color:var(--text-main);line-height:1.75;overflow-x:hidden;text-align:start;font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Tahoma,Roboto,Oxygen,Ubuntu,Cantarell,sans-serif}
+.container{max-width:1040px;margin:0 auto;padding:0 20px;position:relative;z-index:2}
+#network-canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1;pointer-events:none;opacity:.35}
+header{border-bottom:1px solid var(--card-border);position:sticky;top:0;z-index:1000;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);background:rgba(4,9,22,.85)}
+.nav-container{display:flex;justify-content:space-between;align-items:center;padding:15px 10px;max-width:1200px;margin:0 auto}
+.logo-group{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-img{max-width:100px;height:auto;transition:transform .3s ease;margin:0}
+.logo-img:hover{transform:scale(1.05)}
+.lang-controller{display:flex;background:rgba(255,255,255,.03);border:1px solid var(--card-border);border-radius:30px;padding:4px;gap:4px}
+.lang-btn{display:inline-block;text-decoration:none;background:transparent;border:none;color:var(--text-dim);padding:6px 18px;border-radius:20px;font-weight:600;font-size:13px;transition:all .3s ease}
+.lang-btn.active{background:var(--accent);color:#040916;box-shadow:0 2px 10px rgba(230,153,45,.25)}
+.hero-section{text-align:center;padding:50px 0 30px 0}
+.tagline-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 18px;background:rgba(230,153,45,.1);border:1px solid rgba(230,153,45,.25);color:var(--accent);border-radius:50px;font-size:.9rem;font-weight:700;margin-bottom:20px}
+.tagline-badge::before{content:"";display:inline-block;width:7px;height:7px;background-color:var(--accent);border-radius:50%;animation:pulse-dot 2s infinite}
+@keyframes pulse-dot{0%{transform:scale(.9);opacity:.6}50%{transform:scale(1.3);opacity:1}100%{transform:scale(.9);opacity:.6}}
+.hero-section h1{font-size:clamp(1.8rem,4.5vw,2.6rem);line-height:1.35;color:var(--text-main);font-weight:800;margin-bottom:15px}
+.hero-section h1 span{color:var(--accent)}
+.hero-subtitle{font-size:clamp(1.05rem,2.2vw,1.25rem);color:var(--text-dim);margin-bottom:25px;font-weight:600}
+.meta-info-card{background:rgba(10,25,47,.6);border:1px solid var(--card-border);border-radius:12px;padding:16px 24px;margin:0 auto 30px auto;max-width:900px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px 20px;font-size:.88rem;color:var(--text-main);text-align:start}
+.meta-item strong{color:var(--accent)}
+.executive-summary-master{background:var(--card-bg);border:1px solid var(--card-border);border-top:4px solid var(--accent);padding:clamp(24px,4vw,40px);border-radius:20px;margin-bottom:35px;backdrop-filter:blur(12px);box-shadow:0 15px 35px rgba(0,0,0,.2)}
+.executive-summary-master p{color:var(--text-main);font-size:1rem;line-height:1.8;margin-bottom:16px}
+.summary-main-thesis{font-size:clamp(1.05rem,2.5vw,1.2rem);color:var(--text-main);line-height:1.7;font-weight:700;border-inline-start:4px solid var(--accent);padding:15px 18px;margin:25px 0 15px 0;background:rgba(230,153,45,.06);border-radius:8px}
+.manifesto-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:clamp(22px,4vw,36px);margin-bottom:30px;transition:all .3s cubic-bezier(.4,0,.2,1);backdrop-filter:blur(12px)}
+.manifesto-card:hover{border-color:var(--accent);background:rgba(10,25,47,.6);transform:translateY(-2px)}
+.manifesto-card h2{color:var(--accent);font-size:clamp(1.3rem,3vw,1.6rem);margin-bottom:20px;font-weight:700;border-inline-start:4px solid var(--accent);padding-inline-start:14px;line-height:1.4}
+.manifesto-card h3{color:var(--accent);font-size:1.15rem;margin-top:24px;margin-bottom:12px;font-weight:700}
+.manifesto-card p{color:var(--text-main);font-size:1rem;line-height:1.8;margin-bottom:16px}
+.highlight-quote{background:rgba(255,255,255,.02);border-inline-start:4px solid var(--accent);padding:16px 20px;border-radius:4px 12px 12px 4px;margin:20px 0}
+.highlight-quote p{font-weight:700;color:var(--accent);font-size:1.05rem;line-height:1.7;margin-bottom:0}
+.diagram-wrapper{background:rgba(4,9,22,.9);border:1px solid rgba(230,153,45,.25);border-radius:16px;padding:25px 15px;margin:25px 0;text-align:center}
+.diagram-flow{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:.88rem}
+.diagram-step{background:rgba(10,25,47,.9);border:1px solid rgba(230,153,45,.35);color:var(--accent);padding:8px 14px;border-radius:30px}
+.diagram-step small{display:block;font-weight:400;color:var(--text-dim);font-size:.75rem}
+.diagram-arrow{color:var(--accent);font-size:1.1rem;display:inline-block}
+.custom-bullet-list{list-style:none;padding-inline-start:22px;margin:18px 0}
+.custom-bullet-list li{position:relative;margin-bottom:12px;line-height:1.75;color:var(--text-main);font-size:.98rem}
+.custom-bullet-list li::before{content:"✦";position:absolute;inset-inline-start:-22px;color:var(--accent);font-size:.85rem;top:2px}
+.custom-bullet-list.numbered li::before{content:none}
+.sub-block{margin-bottom:24px;padding-bottom:18px;border-bottom:1px solid var(--card-border)}
+.sub-block:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.table-wrap{overflow-x:auto;margin:20px 0;border-radius:12px;border:1px solid var(--card-border)}
+.comparison-table{width:100%;border-collapse:collapse;font-size:.92rem}
+.comparison-table th,.comparison-table td{border:1px solid var(--card-border);padding:12px 14px;text-align:start}
+.comparison-table th{background:rgba(230,153,45,.15);color:var(--accent);font-weight:700}
+.comparison-table td{background:rgba(10,25,47,.3);color:var(--text-main)}
+.formula-box{background:rgba(4,9,22,.8);border:1px solid rgba(230,153,45,.3);border-radius:10px;padding:15px 20px;margin:15px 0;text-align:center;color:var(--accent);font-weight:bold;font-size:1.02rem;line-height:1.6;overflow-x:auto}
+.ltr{direction:ltr;unicode-bidi:isolate}
+code.ltr{font-family:"Courier New",monospace;font-size:.92em;color:var(--accent);display:inline-block}
+.ascii-diagram{font-family:"Courier New",monospace;background:#02050e;color:var(--accent);padding:20px;border-radius:12px;border:1px solid rgba(230,153,45,.3);white-space:pre;overflow-x:auto;direction:ltr;text-align:left;font-size:.85rem;line-height:1.4;margin:20px 0;-webkit-overflow-scrolling:touch}
+.status-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:20px 0}
+.status-item{background:rgba(4,9,22,.7);border:1px solid var(--card-border);border-radius:12px;padding:12px 16px;font-size:.95rem}
+.status-item strong{color:var(--accent);display:block;font-size:.85rem}
+.toc-list{list-style:none;padding:0;margin:0;columns:2 280px;column-gap:30px}
+.toc-list li{margin-bottom:8px;break-inside:avoid;font-size:.95rem}
+.toc-list a{color:var(--text-main);text-decoration:none;transition:color .3s ease}
+.toc-list a:hover{color:var(--accent)}
+.references-list{list-style:none;padding:0;margin:18px 0}
+.references-list li{margin-bottom:14px;color:var(--text-main);font-size:.96rem;line-height:1.75;padding-inline-start:10px;border-inline-start:2px solid rgba(230,153,45,.35)}
+.references-list li.ref-ltr{direction:ltr;text-align:left;border-inline-start:none;border-left:2px solid rgba(230,153,45,.35);padding-left:10px}
+.references-list a{color:var(--accent);word-break:break-all;direction:ltr;unicode-bidi:isolate;display:inline-block}
+.references-list a:hover{color:#fcd34d}
+#backToTop{position:fixed;bottom:30px;inset-inline-end:30px;background:var(--accent);color:#040916;border:none;width:45px;height:45px;border-radius:50%;font-size:20px;font-weight:bold;cursor:pointer;box-shadow:0 4px 15px rgba(0,0,0,.3);z-index:999;transition:all .3s ease;display:none;align-items:center;justify-content:center}
+#backToTop:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(230,153,45,.4)}
+.research-nav-container{display:flex;flex-wrap:wrap;gap:15px;justify-content:center;align-items:center;margin:40px 0 20px 0;padding:25px;background:rgba(10,25,47,.6);border:1px solid var(--card-border);border-radius:16px;backdrop-filter:blur(12px)}
+.btn-research-primary{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#040916;padding:12px 28px;border-radius:30px;font-weight:700;font-size:.95rem;text-decoration:none;transition:all .3s ease;box-shadow:0 4px 15px rgba(230,153,45,.2)}
+.btn-research-primary:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(230,153,45,.4);background:#fcd34d}
+.btn-research-secondary{display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--text-main);border:1px solid rgba(230,153,45,.4);padding:12px 28px;border-radius:30px;font-weight:600;font-size:.95rem;text-decoration:none;transition:all .3s ease}
+.btn-research-secondary:hover{border-color:var(--accent);color:var(--accent);background:rgba(230,153,45,.08)}
+footer{background:transparent;border-top:1px solid var(--card-border);padding:40px 0;text-align:center;color:var(--text-dim);font-size:14px;position:relative;z-index:2}
+.footer-legal-links{margin-top:10px}
+.footer-legal-links a{color:var(--text-dim);text-decoration:none;transition:color .3s ease}
+.footer-legal-links a:hover{color:var(--accent)}
+.footer-legal-separator{margin:0 8px;color:var(--card-border)}
+@media(max-width:768px){.hero-section h1{font-size:22px}.manifesto-card{padding:20px}.meta-info-card{grid-template-columns:1fr}.diagram-flow{flex-direction:column;gap:6px}.diagram-arrow{transform:rotate(90deg)}.ascii-diagram{font-size:.72rem;padding:14px 12px}#backToTop{bottom:20px;inset-inline-end:20px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}.tagline-badge::before{animation:none}.manifesto-card{transition:none}}
+</style>
+</head>
+<body>
+<canvas id="network-canvas" aria-hidden="true"></canvas>
+<button id="backToTop" title="العودة للأعلى" aria-label="العودة لأعلى الصفحة">↑</button>
+<header>
+<div class="nav-container">
+<a href="/" class="logo-group"><img src="/logo.webp" alt="Ouamarkom - اقتصاد أوامر الذكاء الاصطناعي" class="logo-img" loading="eager"></a>
+<nav class="lang-controller" aria-label="Language Selector"><span class="lang-btn active" aria-current="true">العربية</span><a href="/en/research/uearm-technical-specification" class="lang-btn" hreflang="en" lang="en">English</a></nav>
+</div>
+</header>
+<main class="container">
+
+<!-- HERO -->
+<div class="hero-section">
+<div class="tagline-badge"><bdi>OUAMARKOM™</bdi> - المواصفة التقنية لنموذج UEARM v0.1</div>
+<h1>نموذج التمثيل الموحد للفعل الاقتصادي<br><span>UEARM Technical Specification v0.1</span></h1>
+<p class="hero-subtitle ltr" lang="en"><bdi>Unified Economic Action Representation Model (UEARM) v0.1</bdi></p>
+<div class="meta-info-card">
+<div class="meta-item">الاسم الكامل: <strong><bdi>Unified Economic Action Representation Model</bdi></strong></div>
+<div class="meta-item">الاسم العربي: <strong>نموذج التمثيل الموحد للفعل الاقتصادي</strong></div>
+<div class="meta-item">معرّف المواصفة: <strong><bdi>OUAMARKOM-UEARM-SPEC-001</bdi></strong></div>
+<div class="meta-item">الإصدار: <strong>0.1</strong></div>
+<div class="meta-item">تاريخ الإصدار: <strong>4 نوفمبر 2026</strong></div>
+<div class="meta-item">الحالة: <strong>مواصفة تقنية مقترحة - قيد التنفيذ التجريبي</strong></div>
+<div class="meta-item">الإطار البحثي: <strong><bdi>CE-AI™</bdi></strong></div>
+<div class="meta-item">النموذج التشغيلي: <strong><bdi>CE-AI™ Pipeline</bdi></strong></div>
+<div class="meta-item">التصنيف: <strong>مواصفة بحثية وهندسية</strong></div>
+<div class="meta-item">الجهة المطوّرة: <strong><bdi>قطاع البحث والتطوير - أوامركم™ (OUAMARKOM™)</bdi></strong></div>
+</div>
+<div class="status-grid" style="max-width:900px;margin:0 auto 30px auto;text-align:start">
+<div class="status-item"><strong>حالة المواصفة</strong>مواصفة مقترحة - تجريبية</div>
+<div class="status-item"><strong>حالة التحقق</strong>بانتظار التقييم التجريبي</div>
+<div class="status-item"><strong>حالة التوحيد المعياري</strong>ليست معياراً صناعياً معتمداً</div>
+</div>
+</div>
+
+<!-- CONTENTS -->
+<section class="manifesto-card" id="contents">
+<h2>فهرس المحتويات</h2>
+<ol class="toc-list">
+<li><a href="#s1">1. الغرض والنطاق</a></li>
+<li><a href="#s2">2. المصطلحات واللغة المعيارية</a></li>
+<li><a href="#s3">3. المبادئ التصميمية الأساسية</a></li>
+<li><a href="#s4">4. البنية المنطقية لـ UEARM</a></li>
+<li><a href="#s5">5. نموذج البيانات</a></li>
+<li><a href="#s6">6. مخطط JSON للإصدار UEARM v0.1</a></li>
+<li><a href="#s7">7. قواعد التحقق الدلالي</a></li>
+<li><a href="#s8">8. آلة حالات التنفيذ (Execution State Machine)</a></li>
+<li><a href="#s9">9. دلالات سحب التفويض (Revocation Semantics)</a></li>
+<li><a href="#s10">10. التزامن والتعرض الاقتصادي التراكمي</a></li>
+<li><a href="#s11">11. نموذج الأدلة والتحقق</a></li>
+<li><a href="#s12">12. إدارة الإصدارات والتوافق</a></li>
+<li><a href="#s13">13. الأمن ونموذج التهديدات</a></li>
+<li><a href="#s14">14. متطلبات المطابقة</a></li>
+<li><a href="#s15">15. مجموعة اختبارات المطابقة الأولية</a></li>
+<li><a href="#s16">16. معمارية التنفيذ المرجعية</a></li>
+<li><a href="#s17">17. خطة التحقق التجريبي</a></li>
+<li><a href="#s18">18. القيود المعروفة في الإصدار v0.1</a></li>
+<li><a href="#s19">19. خارطة الإصدارات التقنية المقترحة</a></li>
+<li><a href="#s20">20. الموقف المؤسسي والتقني</a></li>
+<li><a href="#s21">21. المراجع التقنية</a></li>
+<li><a href="#document-control">ضبط الوثيقة والتحكم بالإصدار</a></li>
+</ol>
+</section>
+
+<!-- SECTION 1 -->
+<section class="manifesto-card" id="s1">
+<h2>1. الغرض والنطاق</h2>
+<div class="sub-block">
+<h3>1.1 الغرض</h3>
+<p>تحدد هذه الوثيقة البنية التقنية الأولية لنموذج UEARM - Unified Economic Action Representation Model، وهو نموذج مقترح للتمثيل المنظم للأفعال الاقتصادية التي تطلبها أو تنشئها أو تفوضها أو تنفذها أنظمة الذكاء الاصطناعي.</p>
+<p>يهدف النموذج إلى توفير تمثيل موحد يربط بين العناصر الأساسية للفعل الاقتصادي، وهي:</p>
+<ul class="custom-bullet-list numbered">
+<li>1. الهوية ومصدر الطلب.</li>
+<li>2. الفعل الاقتصادي.</li>
+<li>3. المعلمات الاقتصادية.</li>
+<li>4. السلطة المفوضة.</li>
+<li>5. السياسات والقيود.</li>
+<li>6. سياق التنفيذ.</li>
+<li>7. قرار الحوكمة.</li>
+<li>8. حالة التنفيذ.</li>
+<li>9. الأدلة والتحقق.</li>
+<li>10. النتيجة الاقتصادية والتشغيلية.</li>
+</ul>
+<p>تضع هذه المواصفة عقداً تقنياً أولياً يمكن استخدامه في بناء نموذج تنفيذي واختبار مدى اتساق العلاقات بين هذه العناصر.</p>
+</div>
+<div class="sub-block">
+<h3>1.2 نطاق المواصفة</h3>
+<p>تحدد UEARM v0.1 ما يلي:</p>
+<ul class="custom-bullet-list">
+<li>بنية بيانات أساسية بصيغة JSON.</li>
+<li>الحقول الإلزامية والاختيارية.</li>
+<li>أنواع البيانات وقواعد التحقق.</li>
+<li>تمثيل المبالغ والعملات.</li>
+<li>قواعد ربط التفويض بالفعل الاقتصادي.</li>
+<li>دلالات قرارات الحوكمة.</li>
+<li>حالات التنفيذ وانتقالاتها.</li>
+<li>متطلبات الإلغاء وسحب التفويض.</li>
+<li>قواعد التزامن ومنع تكرار التنفيذ.</li>
+<li>نموذج الأدلة والتحقق من النتائج.</li>
+<li>إدارة إصدارات المخطط.</li>
+<li>مجموعة أولية لاختبارات المطابقة.</li>
+</ul>
+</div>
+<div class="sub-block">
+<h3>1.3 ما لا تغطيه المواصفة</h3>
+<p>لا تهدف UEARM v0.1 إلى تعريف:</p>
+<ul class="custom-bullet-list">
+<li>بروتوكول عالمي موحد للمدفوعات.</li>
+<li>نظام متكامل لإدارة الهوية.</li>
+<li>آلية تسوية مالية بعينها.</li>
+<li>لغة سياسات موحدة.</li>
+<li>بنية تحتية متكاملة للمفاتيح والتوقيعات الرقمية.</li>
+<li>إطار قانوني شامل للتفويض الاقتصادي.</li>
+<li>بوابة تنفيذ إنتاجية مكتملة.</li>
+<li>معيار صناعي معتمد.</li>
+</ul>
+<p>يمكن للتطبيقات التي تعتمد هذه المواصفة التكامل مع الأنظمة القائمة التي توفر تلك الوظائف.</p>
+</div>
+<div class="sub-block">
+<h3>1.4 الحالة الفنية</h3>
+<p>تمثل UEARM v0.1 مواصفة تقنية مقترحة.</p>
+<p>تهدف بنيتها واشتراطاتها السلوكية إلى دعم التنفيذ الأولي والتجارب المضبوطة.</p>
+<p>ولا يُعد هذا الإصدار مصادقاً عليه من جهة معيارية أو مثبتاً من خلال اختبارات شاملة للتوافق التشغيلي أو الاعتماد المستقل.</p>
+</div>
+</section>
+
+<!-- SECTION 2 -->
+<section class="manifesto-card" id="s2">
+<h2>2. المصطلحات واللغة المعيارية</h2>
+<p>تُستخدم المصطلحات التالية بمعانيها المحددة في هذه المواصفة:</p>
+<div class="table-wrap">
+<table class="comparison-table">
+<thead>
+<tr>
+<th>المصطلح</th>
+<th>المعنى</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code class="ltr">MUST</code></td>
+<td>يجب الالتزام بالمتطلب</td>
+</tr>
+<tr>
+<td><code class="ltr">MUST NOT</code></td>
+<td>يُحظر مخالفة المتطلب</td>
+</tr>
+<tr>
+<td><code class="ltr">SHOULD</code></td>
+<td>يُوصى بالالتزام به ما لم يوجد مبرر موثق</td>
+</tr>
+<tr>
+<td><code class="ltr">SHOULD NOT</code></td>
+<td>يُوصى بتجنب الممارسة</td>
+</tr>
+<tr>
+<td><code class="ltr">MAY</code></td>
+<td>يجوز تطبيقه اختيارياً</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>تنطبق هذه الدلالات على متطلبات هذه المواصفة المقترحة، ولا تعني اعتمادها من جهة معيارية خارجية.</p>
+</section>
+
+<!-- SECTION 3 -->
+<section class="manifesto-card" id="s3">
+<h2>3. المبادئ التصميمية الأساسية</h2>
+<p>تستند UEARM v0.1 إلى المبادئ التالية:</p>
+<div class="sub-block">
+<h3>3.1 الفصل بين القدرة والسلطة</h3>
+<p>لا يجوز تفسير قدرة وكيل الذكاء الاصطناعي على التفكير أو إنشاء الأوامر على أنها تفويض تلقائي بتنفيذ فعل اقتصادي.</p>
+</div>
+<div class="sub-block">
+<h3>3.2 ربط التفويض بالفعل</h3>
+<p>يجب ربط التفويض بالفعل الاقتصادي المحدد ومعلماته ذات الصلة ونطاق السلطة الممنوحة.</p>
+</div>
+<div class="sub-block">
+<h3>3.3 التحقق عند نقطة التنفيذ</h3>
+<p>يجب التحقق من صلاحية التفويض والقيود عند نقطة التنفيذ القابلة للإنفاذ، وليس الاكتفاء بالتحقق عند إنشاء الطلب.</p>
+</div>
+<div class="sub-block">
+<h3>3.4 سلامة المعلمات الاقتصادية</h3>
+<p>يجب التمييز بين:</p>
+<ul class="custom-bullet-list">
+<li>القيمة المطلوبة.</li>
+<li>القيمة المصرح بها.</li>
+<li>القيمة المحجوزة.</li>
+<li>القيمة المنفذة.</li>
+<li>القيمة التي تمت تسويتها فعلياً، إذا ثبت ذلك.</li>
+</ul>
+<p>ولا يجوز التعامل مع هذه القيم على أنها متطابقة.</p>
+</div>
+<div class="sub-block">
+<h3>3.5 التمثيل الصريح للحالات</h3>
+<p>يجب تمثيل حالات التنفيذ بصورة صريحة، وإخضاع الانتقالات بينها لقواعد محددة.</p>
+</div>
+<div class="sub-block">
+<h3>3.6 مراعاة سحب التفويض</h3>
+<p>يجب أن يحدد التطبيق كيفية تأثير سحب التفويض على الأفعال المعلقة والمصرح بها وقيد التنفيذ.</p>
+</div>
+<div class="sub-block">
+<h3>3.7 مصدر الأدلة</h3>
+<p>يجب أن تحدد سجلات الأدلة مصدرها وعلاقتها بالفعل الاقتصادي المعني.</p>
+</div>
+<div class="sub-block">
+<h3>3.8 التحقق من النتائج</h3>
+<p>لا يجوز اعتبار إشعار نجاح التنفيذ دليلاً تلقائياً على اكتمال التسوية الاقتصادية.</p>
+</div>
+<div class="sub-block">
+<h3>3.9 التعلم المنضبط</h3>
+<p>لا يجوز أن يؤدي التعلم أو التكيف إلى توسيع السلطة الاقتصادية المفوضة تلقائياً.</p>
+</div>
+<div class="sub-block">
+<h3>3.10 قابلية التتبع</h3>
+<p>يجب أن يكون كل فعل اقتصادي قابلاً للتتبع من خلال معرفاته وقرارات الحوكمة وأحداث التنفيذ وسجلات الأدلة والنتائج.</p>
+</div>
+</section>
+
+<!-- SECTION 4 -->
+<section class="manifesto-card" id="s4">
+<h2>4. البنية المنطقية لـ UEARM</h2>
+<div class="sub-block">
+<h3>4.1 التمثيل الأساسي</h3>
+<p>يُعبّر عن النموذج المقترح بالصيغة التالية:</p>
+<div class="formula-box ltr" lang="en">UEARM = {I, A, E, D, P, C, G, X, V, O}</div>
+<div class="table-wrap">
+<table class="comparison-table">
+<thead>
+<tr>
+<th>الرمز</th>
+<th>المكوّن</th>
+<th>الوظيفة</th>
+<th>إلزامي</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code class="ltr">I</code></td>
+<td>الهوية ومصدر الطلب</td>
+<td>تحديد الجهة المبادرة ومصدر الطلب</td>
+<td>نعم</td>
+</tr>
+<tr>
+<td><code class="ltr">A</code></td>
+<td>الفعل الاقتصادي</td>
+<td>تعريف العملية الاقتصادية المطلوبة</td>
+<td>نعم</td>
+</tr>
+<tr>
+<td><code class="ltr">E</code></td>
+<td>المعلمات الاقتصادية</td>
+<td>المبالغ والعملات والكميات والمستفيدون</td>
+<td>نعم</td>
+</tr>
+<tr>
+<td><code class="ltr">D</code></td>
+<td>السلطة المفوضة</td>
+<td>تحديد نطاق التفويض وشروطه</td>
+<td>نعم</td>
+</tr>
+<tr>
+<td><code class="ltr">P</code></td>
+<td>السياسات والقيود</td>
+<td>تحديد القواعد والحدود المطبقة</td>
+<td>نعم</td>
+</tr>
+<tr>
+<td><code class="ltr">C</code></td>
+<td>سياق التنفيذ</td>
+<td>تحديد البيئة والسياق التشغيلي</td>
+<td>نعم</td>
+</tr>
+<tr>
+<td><code class="ltr">G</code></td>
+<td>قرار الحوكمة</td>
+<td>تسجيل القبول أو الرفض أو التصعيد</td>
+<td>نعم</td>
+</tr>
+<tr>
+<td><code class="ltr">X</code></td>
+<td>حالة التنفيذ</td>
+<td>تمثيل الحالة التشغيلية</td>
+<td>نعم</td>
+</tr>
+<tr>
+<td><code class="ltr">V</code></td>
+<td>الأدلة والتحقق</td>
+<td>تسجيل الأدلة ونتائج التحقق</td>
+<td>نعم</td>
+</tr>
+<tr>
+<td><code class="ltr">O</code></td>
+<td>النتيجة</td>
+<td>تمثيل النتيجة الاقتصادية والتشغيلية</td>
+<td>نعم</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>يجوز أن تتضمن بعض المكونات قيماً فارغة بصورة صريحة إذا سمحت بها القواعد المحددة، لكن لا يجوز تفسير غياب المكوّن تلقائياً على أنه تفويض أو نجاح في التنفيذ.</p>
+</div>
+<div class="sub-block">
+<h3>4.2 الفصل الوظيفي</h3>
+<div class="table-wrap">
+<table class="comparison-table">
+<thead>
+<tr>
+<th>المكوّن</th>
+<th>المسؤولية</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code class="ltr">UEARM</code></td>
+<td>تحديد بنية تمثيل الفعل الاقتصادي</td>
+</tr>
+<tr>
+<td><code class="ltr">CE-AI™ Pipeline</code></td>
+<td>تحديد المسار التشغيلي المقترح</td>
+</tr>
+<tr>
+<td><code class="ltr">CEP™</code></td>
+<td>دراسة آليات ضبط الانتقال من الأمر إلى التنفيذ</td>
+</tr>
+<tr>
+<td><code class="ltr">Smart Hand™</code></td>
+<td>توفير بيئة التنفيذ التجريبي</td>
+</tr>
+<tr>
+<td><code class="ltr">GEAB™</code></td>
+<td>تحديد سيناريوهات الاختبار ومقاييس التقييم المقترحة</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>لا يُفترض أن كل مكوّن يستلزم خدمة مستقلة أو طبقة معمارية منفصلة. يجب إثبات القيمة المستقلة لكل طبقة من خلال التجربة.</p>
+</div>
+</section>
+
+<!-- SECTION 5 -->
+<section class="manifesto-card" id="s5">
+<h2>5. نموذج البيانات</h2>
+<div class="sub-block">
+<h3>5.1 البنية العليا</h3>
+<p>يجب أن تتضمن وثيقة UEARM v0.1 الحقول العليا التالية:</p>
+<div class="table-wrap">
+<table class="comparison-table">
+<thead>
+<tr>
+<th>الحقل</th>
+<th>نوع البيانات</th>
+<th>إلزامي</th>
+<th>الوصف</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code class="ltr">schema_version</code></td>
+<td>نص</td>
+<td>نعم</td>
+<td>إصدار مخطط البيانات</td>
+</tr>
+<tr>
+<td><code class="ltr">action_id</code></td>
+<td>نص</td>
+<td>نعم</td>
+<td>معرّف الفعل الاقتصادي</td>
+</tr>
+<tr>
+<td><code class="ltr">created_at</code></td>
+<td>تاريخ ووقت</td>
+<td>نعم</td>
+<td>وقت إنشاء الوثيقة</td>
+</tr>
+<tr>
+<td><code class="ltr">identity</code></td>
+<td>كائن</td>
+<td>نعم</td>
+<td>الهوية ومصدر الطلب</td>
+</tr>
+<tr>
+<td><code class="ltr">economic_action</code></td>
+<td>كائن</td>
+<td>نعم</td>
+<td>العملية الاقتصادية المطلوبة</td>
+</tr>
+<tr>
+<td><code class="ltr">delegated_authority</code></td>
+<td>كائن</td>
+<td>نعم</td>
+<td>التفويض ونطاق السلطة</td>
+</tr>
+<tr>
+<td><code class="ltr">policy</code></td>
+<td>كائن</td>
+<td>نعم</td>
+<td>مراجع السياسات</td>
+</tr>
+<tr>
+<td><code class="ltr">execution_context</code></td>
+<td>كائن</td>
+<td>نعم</td>
+<td>بيئة التنفيذ</td>
+</tr>
+<tr>
+<td><code class="ltr">governance</code></td>
+<td>كائن</td>
+<td>نعم</td>
+<td>قرار الحوكمة</td>
+</tr>
+<tr>
+<td><code class="ltr">execution</code></td>
+<td>كائن</td>
+<td>نعم</td>
+<td>حالة التنفيذ</td>
+</tr>
+<tr>
+<td><code class="ltr">evidence</code></td>
+<td>مصفوفة</td>
+<td>نعم</td>
+<td>سجلات الأدلة</td>
+</tr>
+<tr>
+<td><code class="ltr">outcome</code></td>
+<td>كائن</td>
+<td>نعم</td>
+<td>النتيجة الحالية</td>
+</tr>
+<tr>
+<td><code class="ltr">extensions</code></td>
+<td>كائن</td>
+<td>لا</td>
+<td>الامتدادات الخاصة بالتطبيق</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sub-block">
+<h3>5.2 الهوية ومصدر الطلب (Identity &amp; Provenance)</h3>
+<p>يجب أن يحتوي كائن الهوية على:</p>
+<ul class="custom-bullet-list">
+<li><code class="ltr">initiator_id</code>: معرّف الجهة المبادرة.</li>
+<li><code class="ltr">initiator_type</code>: نوع الجهة المبادرة.</li>
+<li><code class="ltr">request_id</code>: معرّف الطلب.</li>
+</ul>
+<p>تشمل أنواع الجهات المبادرة الأولية:</p>
+<ul class="custom-bullet-list">
+<li><code class="ltr">HUMAN</code></li>
+<li><code class="ltr">AI_AGENT</code></li>
+<li><code class="ltr">ORGANIZATION</code></li>
+<li><code class="ltr">SYSTEM</code></li>
+</ul>
+<p>ينبغي حفظ مصدر الطلب وسلسلة التفويض عند الحاجة.</p>
+<p>ولا يجوز اعتبار ادعاء الهوية غير المتحقق منه إثباتاً مستقلاً للهوية الموثوقة.</p>
+</div>
+<div class="sub-block">
+<h3>5.3 الفعل الاقتصادي (Economic Action)</h3>
+<p>يجب أن يحتوي كائن الفعل الاقتصادي على:</p>
+<ul class="custom-bullet-list">
+<li><code class="ltr">action_type</code>: نوع الفعل.</li>
+<li><code class="ltr">resource</code>: المورد الاقتصادي المعني.</li>
+<li><code class="ltr">parameters</code>: معلمات الفعل.</li>
+</ul>
+<p>تشمل أنواع الأفعال الأولية:</p>
+<ul class="custom-bullet-list">
+<li><code class="ltr">PROCUREMENT</code> - المشتريات.</li>
+<li><code class="ltr">FINANCIAL_TRANSFER</code> - التحويل المالي.</li>
+<li><code class="ltr">CAPITAL_ALLOCATION</code> - تخصيص رأس المال.</li>
+<li><code class="ltr">PAYMENT_INITIATION</code> - بدء الدفع.</li>
+<li><code class="ltr">RESOURCE_ALLOCATION</code> - تخصيص الموارد.</li>
+<li><code class="ltr">CONTRACTUAL_COMMITMENT</code> - الالتزام التعاقدي.</li>
+</ul>
+<p>يجوز إضافة أنواع أخرى وفق آلية امتدادات موثقة أو إصدار لاحق.</p>
+<p>يحدد حقل المورد الحساب أو الأصل أو العقد أو المورد الاقتصادي المرتبط بالفعل.</p>
+</div>
+<div class="sub-block">
+<h3>5.4 المعلمات الاقتصادية (Economic Parameters)</h3>
+<p>عندما يتضمن الفعل قيمة مالية، يجب تمثيل المبلغ كسلسلة عشرية نصية.</p>
+<p>مثال صحيح:</p>
+<div class="formula-box ltr" lang="en">"amount": "15000.00"</div>
+<p>ولا يوصى بتمثيله باستخدام رقم فاصلة عائمة:</p>
+<div class="formula-box ltr" lang="en">"amount": 15000.00</div>
+<p>وذلك لتجنب الاعتماد على الحسابات الثنائية التقريبية في قرارات التفويض المالي.</p>
+<p>يجب ربط المبلغ برمز عملة صريح، ويوصى باستخدام الرموز الأبجدية المعتمدة في ISO 4217.</p>
+<p>يجب التمييز بين:</p>
+<ul class="custom-bullet-list">
+<li>المبلغ المطلوب.</li>
+<li>الحد الأقصى المصرح به.</li>
+<li>المبلغ المحجوز، عند تطبيق الحجز.</li>
+<li>المبلغ المنفذ.</li>
+<li>المبلغ الذي تمت تسويته، عند إثبات التسوية.</li>
+</ul>
+<p>ولا يجوز دمج هذه القيم في حقل واحد.</p>
+</div>
+<div class="sub-block">
+<h3>5.5 السلطة المفوضة (Delegated Authority)</h3>
+<p>يجب أن يتضمن كائن التفويض:</p>
+<ul class="custom-bullet-list">
+<li>معرّف التفويض.</li>
+<li>الجهة المانحة للسلطة.</li>
+<li>الوكيل المصرح له.</li>
+<li>أنواع الأفعال المسموح بها.</li>
+<li>الحد المالي، عند انطباقه.</li>
+<li>العملة، عند وجود قيد عملة.</li>
+<li>فترة الصلاحية.</li>
+<li>حالة التفويض الحالية.</li>
+</ul>
+<p>ينبغي أن يتضمن التفويض مرجعاً إلى المستند أو السجل الذي يثبت منح السلطة.</p>
+<p>يجب التحقق من أن التفويض يشمل نوع الفعل ومعلماته الاقتصادية.</p>
+<p>ولا يجوز تفسير التفويض بإجراء المشتريات على أنه تفويض تلقائي بإجراء التحويلات المالية.</p>
+</div>
+<div class="sub-block">
+<h3>5.6 السياسات والقيود (Policy &amp; Constraints)</h3>
+<p>يجب أن يحدد كائن السياسات مراجع السياسات المطبقة.</p>
+<p>عند إجراء تقييم للسياسات، ينبغي حفظ:</p>
+<ul class="custom-bullet-list">
+<li>معرّف السياسة.</li>
+<li>إصدار السياسة.</li>
+<li>وقت التقييم.</li>
+<li>مرجع سياق التقييم.</li>
+<li>نتيجة التقييم.</li>
+</ul>
+<p>مجرد وجود مرجع لسياسة لا يثبت أنها خضعت للتقييم بنجاح.</p>
+</div>
+<div class="sub-block">
+<h3>5.7 سياق التنفيذ (Execution Context)</h3>
+<p>ينبغي أن يتضمن سياق التنفيذ:</p>
+<ul class="custom-bullet-list">
+<li>معرّف البيئة.</li>
+<li>معرّف نظام التنفيذ.</li>
+<li>المنطقة أو الولاية التنظيمية عند الحاجة.</li>
+<li>الطابع الزمني للسياق.</li>
+<li>مرجع سياق التزامن أو المعاملة.</li>
+</ul>
+<p>يجب تقليل البيانات السياقية إلى الحد الضروري للفعل ومتطلبات الحوكمة.</p>
+</div>
+<div class="sub-block">
+<h3>5.8 قرار الحوكمة (Governance Decision)</h3>
+<p>يجب أن يتضمن كائن الحوكمة:</p>
+<ul class="custom-bullet-list">
+<li>معرّف القرار.</li>
+<li>قيمة القرار.</li>
+<li>وقت اتخاذ القرار.</li>
+<li>سبب القرار.</li>
+</ul>
+<p>القيم الأولية للقرار:</p>
+<ul class="custom-bullet-list">
+<li><code class="ltr">ADMIT</code> - قبول السماح بالانتقال إلى التنفيذ.</li>
+<li><code class="ltr">REJECT</code> - رفض.</li>
+<li><code class="ltr">ESCALATE</code> - تصعيد للمراجعة أو الموافقة الإضافية.</li>
+</ul>
+<p>يجب ربط قرار <code class="ltr">ADMIT</code> بالفعل والتفويض اللذين جرى تقييمهما.</p>
+<p>وأي تغيير جوهري في معلمات الفعل يستلزم إعادة تقييم التفويض.</p>
+<p>ولا يجوز تفسير <code class="ltr">ADMIT</code> على أنه دليل على وقوع التنفيذ.</p>
+</div>
+<div class="sub-block">
+<h3>5.9 حالة التنفيذ (Execution State)</h3>
+<p>يجب أن يحتوي كائن التنفيذ على:</p>
+<ul class="custom-bullet-list">
+<li>الحالة الحالية.</li>
+<li>وقت آخر انتقال للحالة.</li>
+</ul>
+<p>وينبغي أن يتضمن أيضاً:</p>
+<ul class="custom-bullet-list">
+<li>معرّف محاولة التنفيذ.</li>
+<li>مفتاح منع التكرار.</li>
+<li>معرّف المنفذ.</li>
+<li>حالة الإلغاء.</li>
+<li>مرجع إيصال التنفيذ.</li>
+</ul>
+<p>يجب الاحتفاظ بسجل قابل للتدقيق لجميع انتقالات الحالات، حتى إذا كانت الوثيقة الرئيسية تعرض الحالة الأخيرة فقط.</p>
+</div>
+<div class="sub-block">
+<h3>5.10 الأدلة والتحقق (Evidence &amp; Verification)</h3>
+<p>ينبغي أن يتضمن كل سجل دليل:</p>
+<ul class="custom-bullet-list">
+<li>معرّف الدليل.</li>
+<li>نوع الدليل.</li>
+<li>مصدر الدليل.</li>
+<li>وقت الالتقاط.</li>
+<li>معرّف الحدث أو المعاملة المرتبطة.</li>
+<li>مرجع سلامة الدليل، عند توفره.</li>
+</ul>
+<p>تشمل أنواع الأدلة المحتملة:</p>
+<ul class="custom-bullet-list">
+<li><code class="ltr">COMMAND_RECORD</code></li>
+<li><code class="ltr">AUTHORIZATION_RECORD</code></li>
+<li><code class="ltr">POLICY_DECISION</code></li>
+<li><code class="ltr">EXECUTION_RECEIPT</code></li>
+<li><code class="ltr">SYSTEM_ACKNOWLEDGEMENT</code></li>
+<li><code class="ltr">SETTLEMENT_CONFIRMATION</code></li>
+<li><code class="ltr">STATE_TRANSITION</code></li>
+<li><code class="ltr">CANCELLATION_RECORD</code></li>
+</ul>
+<p>يجب الفصل بين:</p>
+<ul class="custom-bullet-list numbered">
+<li>1. تسجيل الدليل.</li>
+<li>2. التحقق من سلامة الدليل.</li>
+<li>3. التحقق المستقل من الادعاء الذي يدعمه الدليل.</li>
+</ul>
+<p>ولا يجوز اعتبار الدليل المسجل دليلاً متحققاً منه تلقائياً.</p>
+</div>
+<div class="sub-block">
+<h3>5.11 النتيجة (Outcome)</h3>
+<p>يجب أن يمثل كائن النتيجة أحدث حالة معروفة.</p>
+<p>القيم الأولية:</p>
+<ul class="custom-bullet-list">
+<li><code class="ltr">PENDING</code></li>
+<li><code class="ltr">COMPLETED</code></li>
+<li><code class="ltr">PARTIALLY_COMPLETED</code></li>
+<li><code class="ltr">REJECTED</code></li>
+<li><code class="ltr">FAILED</code></li>
+<li><code class="ltr">CANCELLED</code></li>
+<li><code class="ltr">EXPIRED</code></li>
+<li><code class="ltr">UNRESOLVED</code></li>
+</ul>
+<p>ينبغي أن تشير النتيجة إلى الأدلة التي تدعم تصنيفها.</p>
+<p>ولا يعني اكتمال عملية التنفيذ بالضرورة اكتمال التسوية المالية أو الاقتصادية.</p>
+</div>
+</section>
+
+<!-- SECTION 6 -->
+<section class="manifesto-card" id="s6">
+<h2>6. مخطط JSON للإصدار UEARM v0.1</h2>
+<p>يحدد مخطط JSON التالي العقد البنيوي الأولي للمواصفة.</p>
+<p>يستخدم المخطط مسودة JSON Schema Draft 2020-12.</p>
+<p>يتحقق هذا المخطط من البنية والحقول والقيود الأساسية، لكنه لا يحل محل التحقق التطبيقي من التفويض والسياسات وانتقالات الحالات والمعاني الاقتصادية.</p>
+<div class="ascii-diagram" dir="ltr" lang="en">{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ouamarkom.com/spec/uearm/0.1/schema.json",
+  "title": "UEARM Economic Action",
+  "description": "Proposed Unified Economic Action Representation Model v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "action_id",
+    "created_at",
+    "identity",
+    "economic_action",
+    "delegated_authority",
+    "policy",
+    "execution_context",
+    "governance",
+    "execution",
+    "evidence",
+    "outcome"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "0.1"
+    },
+    "action_id": {
+      "$ref": "#/$defs/identifier"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "initiator_id",
+        "initiator_type",
+        "request_id"
+      ],
+      "properties": {
+        "initiator_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "initiator_type": {
+          "type": "string",
+          "enum": [
+            "HUMAN",
+            "AI_AGENT",
+            "ORGANIZATION",
+            "SYSTEM"
+          ]
+        },
+        "request_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "provenance_ref": {
+          "type": "string"
+        }
+      }
+    },
+    "economic_action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "action_type",
+        "resource",
+        "parameters"
+      ],
+      "properties": {
+        "action_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "resource": {
+          "type": "object",
+          "required": [
+            "resource_type",
+            "resource_id"
+          ],
+          "properties": {
+            "resource_type": {
+              "type": "string"
+            },
+            "resource_id": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "parameters": {
+          "type": "object",
+          "minProperties": 1
+        },
+        "requested_amount": {
+          "$ref": "#/$defs/money"
+        },
+        "beneficiary_id": {
+          "type": "string"
+        }
+      }
+    },
+    "delegated_authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "grant_id",
+        "granting_principal",
+        "authorized_agent",
+        "permitted_action_types",
+        "status",
+        "valid_from",
+        "valid_until"
+      ],
+      "properties": {
+        "grant_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "granting_principal": {
+          "type": "string",
+          "minLength": 1
+        },
+        "authorized_agent": {
+          "type": "string",
+          "minLength": 1
+        },
+        "permitted_action_types": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "maximum_amount": {
+          "$ref": "#/$defs/money"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "ACTIVE",
+            "REVOKED",
+            "EXPIRED",
+            "SUSPENDED"
+          ]
+        },
+        "valid_from": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "valid_until": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "authority_reference": {
+          "type": "string"
+        },
+        "revocation_reference": {
+          "type": "string"
+        }
+      }
+    },
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "policy_ids"
+      ],
+      "properties": {
+        "policy_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "policy_version": {
+          "type": "string"
+        },
+        "evaluation_reference": {
+          "type": "string"
+        }
+      }
+    },
+    "execution_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "environment_id",
+        "execution_system_id"
+      ],
+      "properties": {
+        "environment_id": {
+          "type": "string"
+        },
+        "execution_system_id": {
+          "type": "string"
+        },
+        "region": {
+          "type": "string"
+        },
+        "context_reference": {
+          "type": "string"
+        }
+      }
+    },
+    "governance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "decision_id",
+        "decision",
+        "decided_at",
+        "reason_code"
+      ],
+      "properties": {
+        "decision_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "decision": {
+          "type": "string",
+          "enum": [
+            "ADMIT",
+            "REJECT",
+            "ESCALATE"
+          ]
+        },
+        "decided_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "reason_code": {
+          "type": "string"
+        },
+        "authority_snapshot_ref": {
+          "type": "string"
+        },
+        "policy_evaluation_ref": {
+          "type": "string"
+        }
+      }
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "updated_at"
+      ],
+      "properties": {
+        "state": {
+          "type": "string",
+          "enum": [
+            "CREATED",
+            "PENDING",
+            "AUTHORIZED",
+            "REJECTED",
+            "EXECUTING",
+            "PARTIALLY_EXECUTED",
+            "COMPLETED",
+            "FAILED",
+            "CANCEL_REQUESTED",
+            "CANCELLED",
+            "EXPIRED"
+          ]
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "attempt_id": {
+          "type": "string"
+        },
+        "idempotency_key": {
+          "type": "string"
+        },
+        "executor_id": {
+          "type": "string"
+        },
+        "executed_amount": {
+          "$ref": "#/$defs/money"
+        },
+        "cancel_reference": {
+          "type": "string"
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/evidence"
+      }
+    },
+    "outcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "PENDING",
+            "COMPLETED",
+            "PARTIALLY_COMPLETED",
+            "REJECTED",
+            "FAILED",
+            "CANCELLED",
+            "EXPIRED",
+            "UNRESOLVED"
+          ]
+        },
+        "settled_amount": {
+          "$ref": "#/$defs/money"
+        },
+        "outcome_reference": {
+          "type": "string"
+        },
+        "verified_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "verification_reference": {
+          "type": "string"
+        }
+      }
+    },
+    "extensions": {
+      "type": "object"
+    }
+  },
+  "$defs": {
+    "identifier": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "money": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "amount",
+        "currency"
+      ],
+      "properties": {
+        "amount": {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+        },
+        "currency": {
+          "type": "string",
+          "pattern": "^[A-Z]{3}$"
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_id",
+        "evidence_type",
+        "source",
+        "captured_at"
+      ],
+      "properties": {
+        "evidence_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "evidence_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "captured_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "event_reference": {
+          "type": "string"
+        },
+        "integrity_reference": {
+          "type": "string"
+        },
+        "verification_status": {
+          "type": "string",
+          "enum": [
+            "NOT_VERIFIED",
+            "INTEGRITY_CHECKED",
+            "INDEPENDENTLY_VERIFIED",
+            "REJECTED"
+          ]
+        }
+      }
+    }
+  }
+}</div>
+<div class="sub-block">
+<h3>6.1 متطلبات التحقق من المخطط</h3>
+<p>يجب على التطبيق:</p>
+<ul class="custom-bullet-list numbered">
+<li>1. التحقق من الوثيقة وفق إصدار المخطط المعلن.</li>
+<li>2. رفض الوثائق التي تفتقد حقولاً إلزامية.</li>
+<li>3. رفض أنواع البيانات والقيم غير الصحيحة.</li>
+<li>4. رفض المبالغ المالية ذات التنسيق غير الصحيح.</li>
+<li>5. رفض أسماء الخصائص المكررة عند مرحلة تحليل JSON.</li>
+<li>6. تنفيذ التحقق الدلالي بعد التحقق البنيوي.</li>
+<li>7. توثيق آلية التعامل مع إصدارات المخطط غير المدعومة.</li>
+</ul>
+<p>قد تتعامل بعض أدوات JSON Schema مع الكلمة <code class="ltr">"format"</code> بوصفها وصفاً أو تعليقاً لا شرط تحقق إلزامياً. لذلك يجب التحقق من صحة التواريخ والتنسيقات الحساسة صراحةً في طبقة التطبيق.</p>
+</div>
+</section>
+
+<!-- SECTION 7 -->
+<section class="manifesto-card" id="s7">
+<h2>7. قواعد التحقق الدلالي</h2>
+<p>التحقق البنيوي ضروري لكنه غير كافٍ.</p>
+<p>يتطلب UEARM طبقة تحقق إضافية تفحص العلاقات بين الحقول.</p>
+<div class="sub-block">
+<h3>7.1 ربط السلطة بالفعل</h3>
+<p>يجب تحقق الشروط التالية قبل السماح بانتقال الفعل إلى التنفيذ:</p>
+<ul class="custom-bullet-list">
+<li>تطابق الوكيل المصرح له مع الوكيل المبادر.</li>
+<li>وجود نوع الفعل ضمن قائمة الأفعال المسموح بها.</li>
+<li>صلاحية التفويض زمنياً.</li>
+<li>كون حالة التفويض <code class="ltr">ACTIVE</code>.</li>
+<li>عدم تجاوز المبلغ المطلوب للحد المالي المصرح به.</li>
+<li>تطابق العملة مع قيد العملة إن وجد.</li>
+<li>توافق المورد والمستفيد مع القيود المعمول بها.</li>
+</ul>
+<p>عند وجود تعارض يجب رفض الفعل أو تصعيده وفق السياسة المحددة.</p>
+</div>
+<div class="sub-block">
+<h3>7.2 الصلاحية الزمنية</h3>
+<p>يجب تطبيق العلاقة التالية:</p>
+<div class="formula-box ltr" lang="en">valid_from ≤ authorization_time &lt; valid_until</div>
+<p>ولا يجوز اعتبار التفويض صالحاً خارج فترة سريانه.</p>
+<p>ينبغي استخدام طوابع زمنية متزامنة وتوثيق افتراضات مزامنة الساعة.</p>
+</div>
+<div class="sub-block">
+<h3>7.3 التحقق المالي</h3>
+<p>بالنسبة للفعل المالي:</p>
+<div class="formula-box ltr" lang="en">requested_amount ≤ authorized_maximum_amount</div>
+<p>يجب استخدام الحساب العشري الدقيق في المقارنة.</p>
+<p>ويُحظر الاعتماد على عمليات المقارنة الثنائية ذات الفاصلة العائمة لاتخاذ قرارات التفويض المالي.</p>
+<p>كما يجب التحقق من العملة والدقة العشرية المسموح بها.</p>
+</div>
+<div class="sub-block">
+<h3>7.4 سلامة المعلمات</h3>
+<p>أي تغيير جوهري في الحقول التالية يستلزم إعادة تقييم التفويض:</p>
+<ul class="custom-bullet-list">
+<li>نوع الفعل.</li>
+<li>المبلغ.</li>
+<li>العملة.</li>
+<li>المستفيد.</li>
+<li>المورد المصدر.</li>
+<li>المورد المستهدف.</li>
+<li>القيود التنفيذية ذات الصلة.</li>
+</ul>
+<p>ولا يجوز إعادة استخدام قرار حوكمة سابق لتفويض فعل تغيرت معلماته الجوهرية.</p>
+</div>
+<div class="sub-block">
+<h3>7.5 اتساق القرار</h3>
+<p>إذا كانت:</p>
+<div class="formula-box ltr" lang="en">governance.decision = REJECT</div>
+<p>فلا يجوز انتقال الفعل إلى حالة <code class="ltr">EXECUTING</code>.</p>
+<p>إذا كانت:</p>
+<div class="formula-box ltr" lang="en">governance.decision = ESCALATE</div>
+<p>فيجب إبقاء الفعل خارج مسار التنفيذ إلى حين استكمال التصعيد المطلوب.</p>
+<p>إذا كانت:</p>
+<div class="formula-box ltr" lang="en">governance.decision = ADMIT</div>
+<p>يجوز الانتقال إلى المرحلة التنفيذية التالية، بشرط إجراء التحقق النهائي من صلاحية التفويض عند نقطة التنفيذ القابلة للإنفاذ.</p>
+</div>
+<div class="sub-block">
+<h3>7.6 اتساق الأدلة</h3>
+<p>لا يجوز تصنيف النتيجة على أنها متحقق منها بصورة مستقلة دون وجود سجل تحقق مرتبط بها.</p>
+<p>يجب أن تحدد مراجع الأدلة الفعل أو الحدث الذي ترتبط به.</p>
+</div>
+</section>
+
+<!-- SECTION 8 -->
+<section class="manifesto-card" id="s8">
+<h2>8. آلة حالات التنفيذ (Execution State Machine)</h2>
+<div class="sub-block">
+<h3>8.1 الحالات المحددة</h3>
+<div class="table-wrap">
+<table class="comparison-table">
+<thead>
+<tr>
+<th>الحالة</th>
+<th>المعنى</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><code class="ltr">CREATED</code></td><td>تم إنشاء تمثيل الفعل</td></tr>
+<tr><td><code class="ltr">PENDING</code></td><td>الفعل بانتظار التقييم أو المعالجة</td></tr>
+<tr><td><code class="ltr">AUTHORIZED</code></td><td>تمت الموافقة على الفعل</td></tr>
+<tr><td><code class="ltr">REJECTED</code></td><td>تم رفض الفعل</td></tr>
+<tr><td><code class="ltr">EXECUTING</code></td><td>بدأ التنفيذ</td></tr>
+<tr><td><code class="ltr">PARTIALLY_EXECUTED</code></td><td>تم تنفيذ جزء من الفعل</td></tr>
+<tr><td><code class="ltr">COMPLETED</code></td><td>اكتملت عملية التنفيذ</td></tr>
+<tr><td><code class="ltr">FAILED</code></td><td>فشل التنفيذ</td></tr>
+<tr><td><code class="ltr">CANCEL_REQUESTED</code></td><td>تم استلام طلب الإلغاء</td></tr>
+<tr><td><code class="ltr">CANCELLED</code></td><td>تم تأكيد الإلغاء وفق دلالات التنفيذ المحددة</td></tr>
+<tr><td><code class="ltr">EXPIRED</code></td><td>انتهت صلاحية الفعل أو التفويض قبل اكتماله</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sub-block">
+<h3>8.2 الانتقالات المسموح بها</h3>
+<div class="table-wrap">
+<table class="comparison-table">
+<thead>
+<tr>
+<th>الحالة الحالية</th>
+<th>الحالات التالية المسموح بها</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><code class="ltr">CREATED</code></td><td><code class="ltr">PENDING</code>، <code class="ltr">REJECTED</code>، <code class="ltr">EXPIRED</code></td></tr>
+<tr><td><code class="ltr">PENDING</code></td><td><code class="ltr">AUTHORIZED</code>، <code class="ltr">REJECTED</code>، <code class="ltr">EXPIRED</code></td></tr>
+<tr><td><code class="ltr">AUTHORIZED</code></td><td><code class="ltr">EXECUTING</code>، <code class="ltr">CANCEL_REQUESTED</code>، <code class="ltr">EXPIRED</code></td></tr>
+<tr><td><code class="ltr">EXECUTING</code></td><td><code class="ltr">PARTIALLY_EXECUTED</code>، <code class="ltr">COMPLETED</code>، <code class="ltr">FAILED</code>، <code class="ltr">CANCEL_REQUESTED</code></td></tr>
+<tr><td><code class="ltr">PARTIALLY_EXECUTED</code></td><td><code class="ltr">EXECUTING</code>، <code class="ltr">COMPLETED</code>، <code class="ltr">FAILED</code>، <code class="ltr">CANCEL_REQUESTED</code></td></tr>
+<tr><td><code class="ltr">CANCEL_REQUESTED</code></td><td><code class="ltr">CANCELLED</code>، <code class="ltr">EXECUTING</code>، <code class="ltr">PARTIALLY_EXECUTED</code>، <code class="ltr">COMPLETED</code>، <code class="ltr">FAILED</code></td></tr>
+<tr><td><code class="ltr">REJECTED</code></td><td>نهائية</td></tr>
+<tr><td><code class="ltr">COMPLETED</code></td><td>نهائية لمحاولة التنفيذ</td></tr>
+<tr><td><code class="ltr">FAILED</code></td><td>نهائية لمحاولة التنفيذ</td></tr>
+<tr><td><code class="ltr">CANCELLED</code></td><td>نهائية لمحاولة التنفيذ</td></tr>
+<tr><td><code class="ltr">EXPIRED</code></td><td>نهائية</td></tr>
+</tbody>
+</table>
+</div>
+<p>إذا حدثت محاولة جديدة بعد الفشل أو الإلغاء، فيجب تمثيلها بمحاولة مرتبطة أو فعل جديد وفق قواعد إعادة المحاولة، مع الاحتفاظ بسجل المحاولة الأصلية.</p>
+</div>
+<div class="sub-block">
+<h3>8.3 إنفاذ الانتقالات</h3>
+<p>يجب أن يتضمن كل انتقال:</p>
+<ul class="custom-bullet-list numbered">
+<li>1. الحالة السابقة.</li>
+<li>2. الحالة الجديدة.</li>
+<li>3. الطابع الزمني للانتقال.</li>
+<li>4. المكوّن الذي بدأ الانتقال.</li>
+<li>5. سبب الانتقال أو مرجع الحدث.</li>
+<li>6. سجل الانتقال القابل للتدقيق.</li>
+</ul>
+<p>ويجب رفض أي انتقال يخالف آلة الحالات.</p>
+</div>
+<div class="sub-block">
+<h3>8.4 دلالات الإلغاء</h3>
+<p>يجب التمييز بين طلب الإلغاء والإلغاء المؤكد.</p>
+<p><code class="ltr">"CANCEL_REQUESTED"</code> يعني أن طلب الإلغاء قد تم استلامه.</p>
+<p><code class="ltr">"CANCELLED"</code> يعني أن نظام التنفيذ أكد تحقق شروط الإلغاء المحددة.</p>
+<p>ولا يجوز تسجيل نجاح الإلغاء قبل الحصول على التأكيد المطلوب.</p>
+<p>إذا تجاوز التنفيذ نقطة غير قابلة للعكس، فلا يجوز الادعاء بأن الإلغاء قد عكس الفعل الاقتصادي.</p>
+<p>ينبغي بدلاً من ذلك تسجيل حالة التنفيذ الفعلية، والنظر في إجراء تعويضي أو عملية عكس مستقلة عند توفرها.</p>
+</div>
+</section>
+
+<!-- SECTION 9 -->
+<section class="manifesto-card" id="s9">
+<h2>9. دلالات سحب التفويض (Revocation Semantics)</h2>
+<div class="sub-block">
+<h3>9.1 المتطلب العام</h3>
+<p>قد يتم سحب التفويض بصورة مستقلة عن دورة حياة الفعل الاقتصادي.</p>
+<p>يجب أن يحدد التطبيق أثر السحب على الحالات التالية:</p>
+<ul class="custom-bullet-list">
+<li>الأفعال المنشأة.</li>
+<li>الأفعال المعلقة.</li>
+<li>الأفعال المصرح بها.</li>
+<li>الأفعال قيد التنفيذ.</li>
+<li>الأفعال المنفذة جزئياً.</li>
+</ul>
+</div>
+<div class="sub-block">
+<h3>9.2 السحب عند نقطة التنفيذ</h3>
+<p>قبل بدء التنفيذ، يجب إعادة التحقق من صلاحية التفويض.</p>
+<p>إذا تم سحب التفويض قبل نقطة التنفيذ القابلة للإنفاذ، فلا يجوز تنفيذ الفعل استناداً إلى ذلك التفويض.</p>
+</div>
+<div class="sub-block">
+<h3>9.3 السحب أثناء التنفيذ</h3>
+<p>إذا تم سحب التفويض بعد بدء التنفيذ، يجب تقييم ما إذا كان:</p>
+<ul class="custom-bullet-list">
+<li>يمكن إيقاف العملية بأمان.</li>
+<li>تم تجاوز نقطة غير قابلة للعكس.</li>
+<li>حدث تنفيذ جزئي.</li>
+<li>يتطلب الأمر إجراءً تعويضياً.</li>
+<li>ما زالت النتيجة غير محسومة.</li>
+</ul>
+<p>ويجب الاحتفاظ بحدث السحب والطابع الزمني الخاص به.</p>
+</div>
+<div class="sub-block">
+<h3>9.4 سجل سحب التفويض</h3>
+<p>ينبغي أن يتضمن سجل السحب:</p>
+<ul class="custom-bullet-list">
+<li>معرّف التفويض.</li>
+<li>معرّف عملية السحب.</li>
+<li>الجهة التي قامت بالسحب.</li>
+<li>وقت السحب.</li>
+<li>نقطة سريان السحب.</li>
+<li>مرجع السبب.</li>
+<li>معرفات الأفعال المتأثرة، عند توفرها.</li>
+</ul>
+</div>
+</section>
+
+<!-- SECTION 10 -->
+<section class="manifesto-card" id="s10">
+<h2>10. التزامن والتعرض الاقتصادي التراكمي</h2>
+<div class="sub-block">
+<h3>10.1 مخاطر التزامن</h3>
+<p>قد تتجاوز مجموعة من الأفعال الصحيحة منفردة الحد الاقتصادي الإجمالي المسموح به.</p>
+<p>مثال:</p>
+<ul class="custom-bullet-list">
+<li>الحد المصرح به: 10,000 دولار.</li>
+<li>الفعل A: 6,000 دولار.</li>
+<li>الفعل B: 6,000 دولار.</li>
+</ul>
+<p>قد يؤدي التحقق المستقل من كل طلب إلى السماح بتعرض إجمالي قدره 12,000 دولار، إذا كان الطلبان يستخدمان التفويض المشترك نفسه.</p>
+</div>
+<div class="sub-block">
+<h3>10.2 الحجز الذري</h3>
+<p>عندما يتضمن التفويض حداً مالياً إجمالياً، ينبغي استخدام آلية حجز ذرية أو آلية مكافئة للتحكم في التزامن.</p>
+<p>يجب الحفاظ على الثابت التالي:</p>
+<div class="formula-box ltr" lang="en">Reserved Exposure + Executed Exposure ≤ Applicable Aggregate Limit</div>
+<p>يجب توثيق كيفية التعامل مع الحجوزات والعكس والتسويات والتعديلات.</p>
+</div>
+<div class="sub-block">
+<h3>10.3 التحكم في التزامن</h3>
+<p>يجب منع استخدام قرارات تفويض قديمة لتجاوز حد اقتصادي إجمالي تم تحديثه.</p>
+<p>وينبغي استخدام واحد أو أكثر من الأساليب التالية:</p>
+<ul class="custom-bullet-list">
+<li>المعاملات الذرية في قواعد البيانات.</li>
+<li>سجلات التفويض ذات الإصدارات.</li>
+<li>التحكم التفاؤلي في التزامن.</li>
+<li>المعالجة التسلسلية للمعاملات.</li>
+<li>الأقفال الموزعة مع توثيق حالات الفشل.</li>
+</ul>
+</div>
+<div class="sub-block">
+<h3>10.4 منع التكرار (Idempotency)</h3>
+<p>ينبغي أن تمتلك كل محاولة تنفيذ مفتاحاً فريداً لمنع التكرار.</p>
+<p>إذا تكرر الطلب بالمفتاح نفسه وبالمعلمات الجوهرية نفسها، فيجب ألا ينتج عنه تنفيذ اقتصادي مكرر غير مقصود.</p>
+<p>إذا أعيد استخدام المفتاح نفسه مع معلمات مختلفة جوهرياً، فيجب رفض الطلب أو اشتراط مفتاح جديد.</p>
+<p>ويجب الاحتفاظ بسجلات منع التكرار لمدة موثقة تتناسب مع مخاطر العملية ودورة حياتها.</p>
+</div>
+</section>
+
+<!-- SECTION 11 -->
+<section class="manifesto-card" id="s11">
+<h2>11. نموذج الأدلة والتحقق</h2>
+<div class="sub-block">
+<h3>11.1 دورة حياة الأدلة</h3>
+<p>تعتمد المواصفة دورة الأدلة التالية:</p>
+<div class="diagram-wrapper">
+<div class="diagram-flow">
+<span class="diagram-step">إنشاء الدليل</span><span class="diagram-arrow">→</span>
+<span class="diagram-step">تسجيل الدليل</span><span class="diagram-arrow">→</span>
+<span class="diagram-step">التحقق من سلامته</span><span class="diagram-arrow">→</span>
+<span class="diagram-step">التحقق المستقل</span><span class="diagram-arrow">→</span>
+<span class="diagram-step">إسناد النتيجة</span>
+</div>
+</div>
+<p>ويجب التمييز بين كل مرحلة.</p>
+</div>
+<div class="sub-block">
+<h3>11.2 سجل الدليل</h3>
+<p>ينبغي أن يتضمن سجل الدليل:</p>
+<ul class="custom-bullet-list">
+<li>معرّف الدليل.</li>
+<li>معرّف الفعل.</li>
+<li>معرّف الحدث.</li>
+<li>نوع الدليل.</li>
+<li>النظام المصدر.</li>
+<li>وقت الالتقاط.</li>
+<li>مرجع سلامة الدليل.</li>
+<li>حالة التحقق.</li>
+</ul>
+</div>
+<div class="sub-block">
+### 11.3 سلامة الأدلة
+<p>عندما يتطلب التطبيق حماية التوقيع أو السلامة التشفيرية، يجوز استخدام آليات التوقيع والتوحيد القياسي المعتمدة.</p>
+<p>يوفر RFC 8785 مواصفة لتوحيد تمثيل JSON تُعرف باسم JSON Canonicalization Scheme، بهدف إنتاج تمثيل متكرر يمكن استخدامه في عمليات التجزئة والتوقيع.</p>
+<p>ويجب تطبيقها وفق مواصفاتها؛ إذ لا يكفي إنشاء تجزئة لأي تسلسل JSON عشوائي واعتبارها إثباتاً لسلامة المحتوى.</p>
+</div>
+<div class="sub-block">
+<h3>11.4 استقلال التحقق</h3>
+<p>ينبغي الفصل بين النظام الذي ينفذ الفعل والنظام أو العملية التي تتحقق من نتيجته.</p>
+<p>وعندما يتعذر التحقق المستقل، يجب تمثيل النتيجة بحالة مناسبة مثل <code class="ltr">UNRESOLVED</code> أو حالة غير متحقق منها.</p>
+</div>
+<div class="sub-block">
+<h3>11.5 الاحتفاظ بالأدلة</h3>
+<p>يجب أن يحدد التطبيق:</p>
+<ul class="custom-bullet-list">
+<li>مدة الاحتفاظ بالأدلة.</li>
+<li>ضوابط الوصول.</li>
+<li>حماية السلامة.</li>
+<li>صلاحيات التدقيق.</li>
+<li>قيود الخصوصية.</li>
+<li>متطلبات الحذف والاحتفاظ النظامي.</li>
+</ul>
+</div>
+</section>
+
+<!-- SECTION 12 -->
+<section class="manifesto-card" id="s12">
+<h2>12. إدارة الإصدارات والتوافق</h2>
+<div class="sub-block">
+<h3>12.1 معرّف الإصدار</h3>
+<p>الإصدار الأول:</p>
+<div class="formula-box ltr" lang="en">"0.1"</div>
+<p>يجب أن يحدد حقل <code class="ltr">"schema_version"</code> إصدار المخطط المستخدم في تفسير الوثيقة.</p>
+</div>
+<div class="sub-block">
+<h3>12.2 سياسة الإصدارات</h3>
+<p>ينبغي أن تميز سياسة الإصدارات المستقبلية بين:</p>
+<ul class="custom-bullet-list">
+<li>التعديلات التصحيحية: توضيحات أو إصلاحات لا يُقصد منها إحداث عدم توافق بنيوي.</li>
+<li>التعديلات الفرعية: إضافات متوافقة مع الإصدارات السابقة.</li>
+<li>التعديلات الرئيسية: تغييرات قد تؤثر في صلاحية التطبيقات أو البيانات السابقة.</li>
+</ul>
+<p>تظل سياسة الإصدارات النهائية خاضعة للتطوير.</p>
+</div>
+<div class="sub-block">
+<h3>12.3 الحقول غير المعروفة</h3>
+<p>في الإصدار v0.1:</p>
+<ul class="custom-bullet-list">
+<li>يجب رفض الحقول العليا غير المعروفة.</li>
+<li>يجب وضع امتدادات التطبيقات داخل <code class="ltr">"extensions"</code>.</li>
+<li>ينبغي تسمية الامتدادات باستخدام نطاقات أسماء موثقة.</li>
+<li>يُحظر تفسير الحقول غير المعروفة تلقائياً على أنها تعليمات تمنح سلطة تنفيذية.</li>
+</ul>
+</div>
+<div class="sub-block">
+<h3>12.4 ترحيل المخططات</h3>
+<p>لا يجوز تغيير المعنى الدلالي لحقل موجود بصورة صامتة عند الانتقال بين الإصدارات.</p>
+<p>ينبغي أن يحافظ الترحيل على:</p>
+<ul class="custom-bullet-list">
+<li>معرّف الفعل الأصلي.</li>
+<li>الطلب الأصلي.</li>
+<li>مراجع التفويض.</li>
+<li>قرارات الحوكمة.</li>
+<li>سجل التنفيذ.</li>
+<li>مصدر الأدلة.</li>
+<li>سجلات النتائج.</li>
+</ul>
+</div>
+</section>
+
+<!-- SECTION 13 -->
+<section class="manifesto-card" id="s13">
+<h2>13. الأمن ونموذج التهديدات</h2>
+<p>ينبغي أن تراعي تطبيقات UEARM التهديدات التالية على الأقل:</p>
+<div class="table-wrap">
+<table class="comparison-table">
+<thead>
+<tr>
+<th>التهديد</th>
+<th>الاعتبار الأمني المطلوب</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>انتحال الهوية</td><td>التحقق من هوية الجهة المبادرة</td></tr>
+<tr><td>تصعيد السلطة</td><td>منع تحويل القدرة إلى تفويض</td></tr>
+<tr><td>تعديل المعلمات</td><td>ربط التفويض بمعلمات الفعل الجوهرية</td></tr>
+<tr><td>إعادة تشغيل الطلبات</td><td>استخدام مفاتيح منع التكرار ومعرفات الطلبات</td></tr>
+<tr><td>تجاوز الحدود بالتزامن</td><td>فرض الحدود الإجمالية بصورة ذرية</td></tr>
+<tr><td>سباقات سحب التفويض</td><td>إعادة التحقق عند نقطة التنفيذ</td></tr>
+<tr><td>التلاعب بالأدلة</td><td>حماية سلامة الأدلة ومصدرها</td></tr>
+<tr><td>الادعاء الكاذب بالاكتمال</td><td>الفصل بين إشعار التنفيذ والتحقق من النتيجة</td></tr>
+<tr><td>الالتباس بين الإصدارات</td><td>التحقق من إصدار المخطط ورفض غير المدعوم</td></tr>
+<tr><td>توسيع السلطة بالتعلم</td><td>منع التوسع التلقائي في التفويض</td></tr>
+<tr><td>كشف البيانات الحساسة</td><td>تقليل البيانات المالية والسياقية وحمايتها</td></tr>
+</tbody>
+</table>
+</div>
+<p>هذه القائمة تمثل نموذج تهديدات أولياً، ولا تعد تقييماً أمنياً شاملاً.</p>
+<p>يتطلب التطبيق الإنتاجي تحليلاً مستقلاً للتهديدات واختبارات أمنية وتصميماً لإدارة المفاتيح وضوابط تشغيلية مناسبة.</p>
+</section>
+
+<!-- SECTION 14 -->
+<section class="manifesto-card" id="s14">
+<h2>14. متطلبات المطابقة</h2>
+<p>يمكن تقييم تطبيق UEARM v0.1 وفق أربعة مستويات.</p>
+<div class="sub-block">
+<h3>المستوى الأول: المطابقة البنيوية (Structural Conformance)</h3>
+<p>يتعين على التطبيق:</p>
+<ul class="custom-bullet-list">
+<li>قبول الوثائق الصحيحة وفق المخطط.</li>
+<li>رفض الوثائق ذات البنية غير الصحيحة.</li>
+<li>إنفاذ الحقول الإلزامية.</li>
+<li>التحقق من أنواع البيانات والقيم المحددة.</li>
+</ul>
+</div>
+<div class="sub-block">
+<h3>المستوى الثاني: المطابقة الدلالية (Semantic Conformance)</h3>
+<p>يتعين على التطبيق:</p>
+<ul class="custom-bullet-list">
+<li>التحقق من العلاقة بين التفويض والفعل.</li>
+<li>التحقق من المعلمات الاقتصادية.</li>
+<li>التحقق من مراجع السياسات.</li>
+<li>التحقق من الصلاحية الزمنية.</li>
+<li>إنفاذ اتساق قرار الحوكمة.</li>
+</ul>
+</div>
+<div class="sub-block">
+<h3>المستوى الثالث: مطابقة التنفيذ (Execution Conformance)</h3>
+<p>يتعين على التطبيق:</p>
+<ul class="custom-bullet-list">
+<li>إنفاذ آلة الحالات.</li>
+<li>إعادة التحقق من التفويض عند نقطة التنفيذ.</li>
+<li>تطبيق سلوك محدد للإلغاء وسحب التفويض.</li>
+<li>منع التنفيذ المكرر غير المقصود.</li>
+<li>معالجة التزامن والحدود التراكمية.</li>
+</ul>
+</div>
+<div class="sub-block">
+<h3>المستوى الرابع: مطابقة الأدلة والنتائج (Evidence &amp; Outcome Conformance)</h3>
+<p>يتعين على التطبيق:</p>
+<ul class="custom-bullet-list">
+<li>تسجيل أدلة قابلة للتتبع.</li>
+<li>التمييز بين تسجيل الأدلة والتحقق منها.</li>
+<li>الحفاظ على سجل التنفيذ.</li>
+<li>الفصل بين اكتمال التنفيذ والتسوية الاقتصادية.</li>
+<li>دعم إسناد النتائج إلى أدلتها.</li>
+</ul>
+</div>
+<p>هذه المستويات فئات تقييم مقترحة، وليست شهادات اعتماد خارجية.</p>
+</section>
+
+<!-- SECTION 15 -->
+<section class="manifesto-card" id="s15">
+<h2>15. مجموعة اختبارات المطابقة الأولية</h2>
+<p>تمثل الاختبارات التالية خط أساس تجريبياً أولياً.</p>
+<div class="table-wrap">
+<table class="comparison-table">
+<thead>
+<tr>
+<th>معرّف الاختبار</th>
+<th>السيناريو</th>
+<th>النتيجة المتوقعة</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><code class="ltr">UEARM-T001</code></td><td>فعل صحيح ضمن حدود التفويض</td><td>يجوز إصدار <code class="ltr">ADMIT</code></td></tr>
+<tr><td><code class="ltr">UEARM-T002</code></td><td>المبلغ المطلوب يتجاوز الحد</td><td><code class="ltr">REJECT</code> أو تصعيد وفق السياسة</td></tr>
+<tr><td><code class="ltr">UEARM-T003</code></td><td>نوع فعل غير مصرح به</td><td><code class="ltr">REJECT</code></td></tr>
+<tr><td><code class="ltr">UEARM-T004</code></td><td>تفويض منتهي الصلاحية</td><td>منع التنفيذ</td></tr>
+<tr><td><code class="ltr">UEARM-T005</code></td><td>سحب التفويض قبل التنفيذ</td><td>منع التنفيذ</td></tr>
+<tr><td><code class="ltr">UEARM-T006</code></td><td>تعديل جوهري للمعلمات</td><td>وجوب إعادة التقييم</td></tr>
+<tr><td><code class="ltr">UEARM-T007</code></td><td>تكرار مفتاح الطلب والمعلمات نفسها</td><td>منع التنفيذ المكرر</td></tr>
+<tr><td><code class="ltr">UEARM-T008</code></td><td>استخدام المفتاح نفسه مع معلمات مختلفة</td><td>رفض أو اشتراط مفتاح جديد</td></tr>
+<tr><td><code class="ltr">UEARM-T009</code></td><td>طلبات متزامنة تتجاوز الحد الإجمالي</td><td>الحفاظ على الحد الإجمالي</td></tr>
+<tr><td><code class="ltr">UEARM-T010</code></td><td>انتقال غير صحيح بين الحالات</td><td>رفض الانتقال</td></tr>
+<tr><td><code class="ltr">UEARM-T011</code></td><td>طلب إلغاء دون تأكيد</td><td>عدم تسجيل الإلغاء المؤكد</td></tr>
+<tr><td><code class="ltr">UEARM-T012</code></td><td>تنفيذ جزئي</td><td>تسجيل <code class="ltr">PARTIALLY_EXECUTED</code></td></tr>
+<tr><td><code class="ltr">UEARM-T013</code></td><td>إشعار تنفيذ دون دليل تسوية</td><td>بقاء التسوية غير متحقق منها</td></tr>
+<tr><td><code class="ltr">UEARM-T014</code></td><td>غياب مصدر الدليل</td><td>فشل التحقق من الدليل</td></tr>
+<tr><td><code class="ltr">UEARM-T015</code></td><td>إصدار مخطط غير مدعوم</td><td>رفض المعالجة أو عزل الوثيقة صراحةً</td></tr>
+</tbody>
+</table>
+</div>
+<div class="sub-block">
+<h3>15.1 حالة اختبار توضيحية: تجاوز حد التفويض</h3>
+<p><strong>المدخلات:</strong></p>
+<ul class="custom-bullet-list">
+<li>الوكيل: <code class="ltr">Agent-Alpha-07</code></li>
+<li>نوع الفعل: <code class="ltr">CAPITAL_ALLOCATION</code></li>
+<li>المبلغ المطلوب: 15,000 دولار.</li>
+<li>الحد المصرح به: 10,000 دولار.</li>
+<li>حالة التفويض: <code class="ltr">ACTIVE</code>.</li>
+</ul>
+<p><strong>النتيجة المتوقعة:</strong></p>
+<ul class="custom-bullet-list">
+<li>قرار الحوكمة: <code class="ltr">REJECT</code>.</li>
+<li>سبب الرفض: <code class="ltr">REQUEST_EXCEEDS_AUTHORIZED_LIMIT</code>.</li>
+<li>حالة التنفيذ: <code class="ltr">REJECTED</code>.</li>
+<li>المبلغ المنفذ: صفر.</li>
+<li>النتيجة: <code class="ltr">REJECTED</code>.</li>
+</ul>
+<p>هذه حالة اختبار محددة، وليست ادعاءً بأن الاختبار نُفذ أو اجتاز التقييم.</p>
+</div>
+<div class="sub-block">
+<h3>15.2 حالة اختبار توضيحية: سحب التفويض</h3>
+<p><strong>الحالة الأولية:</strong></p>
+<ul class="custom-bullet-list">
+<li>حالة التفويض: <code class="ltr">ACTIVE</code>.</li>
+<li>حالة الفعل: <code class="ltr">AUTHORIZED</code>.</li>
+<li>لم يبدأ التنفيذ.</li>
+</ul>
+<p><strong>الحدث:</strong></p>
+<p>يتم سحب التفويض.</p>
+<p><strong>النتيجة المتوقعة:</strong></p>
+<ul class="custom-bullet-list">
+<li>تسجيل حدث السحب.</li>
+<li>فشل إعادة التحقق من التفويض.</li>
+<li>منع التنفيذ.</li>
+<li>انتقال الفعل إلى حالة غير قابلة للتنفيذ وفق القواعد المحددة.</li>
+</ul>
+<p>يجب أن يوثق التطبيق الانتقال الدقيق المستخدم لهذه الحالة.</p>
+</div>
+</section>
+
+<!-- SECTION 16 -->
+<section class="manifesto-card" id="s16">
+<h2>16. معمارية التنفيذ المرجعية</h2>
+<p>يمكن تنفيذ النموذج الأولي باستخدام المكونات المنطقية التالية:</p>
+<div class="table-wrap">
+<table class="comparison-table">
+<thead>
+<tr>
+<th>المكوّن</th>
+<th>المسؤولية</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>مستقبِل الأفعال (Action Intake)</td><td>استقبال طلبات الأفعال الاقتصادية</td></tr>
+<tr><td>مدقق UEARM (UEARM Validator)</td><td>التحقق البنيوي والدلالي</td></tr>
+<tr><td>محلل الهوية (Identity Resolver)</td><td>تحديد هوية الجهة المبادرة</td></tr>
+<tr><td>محلل التفويض (Authority Resolver)</td><td>تقييم السلطة المفوضة</td></tr>
+<tr><td>محرك السياسات (Policy Evaluator)</td><td>تقييم السياسات والقيود</td></tr>
+<tr><td>محرك قرار الحوكمة (Governance Decision Engine)</td><td>إنتاج <code class="ltr">ADMIT</code> أو <code class="ltr">REJECT</code> أو <code class="ltr">ESCALATE</code></td></tr>
+<tr><td>متحكم التنفيذ (Execution Controller)</td><td>إنفاذ شروط نقطة التنفيذ</td></tr>
+<tr><td>مدير الحالات (State Manager)</td><td>إدارة انتقالات التنفيذ</td></tr>
+<tr><td>مسجل الأدلة (Evidence Recorder)</td><td>تسجيل الأحداث والأدلة</td></tr>
+<tr><td>متحقق النتائج (Outcome Verifier)</td><td>تقييم النتائج التشغيلية والاقتصادية</td></tr>
+<tr><td>مخزن التدقيق (Audit Store)</td><td>حفظ السجل والمصدر التاريخي</td></tr>
+</tbody>
+</table>
+</div>
+<p>هذه مسؤوليات منطقية، ولا تعني أن كل مسؤولية تتطلب خدمة أو عملية أو طبقة منفصلة.</p>
+<p>يجب إثبات الحاجة إلى فصل كل مكوّن عن غيره من خلال نتائج التجارب.</p>
+<div class="sub-block">
+<h3>16.1 تسلسل المعالجة المرجعي</h3>
+<ul class="custom-bullet-list numbered">
+<li>1. استقبال طلب الفعل الاقتصادي.</li>
+<li>2. قراءة إصدار UEARM المعلن.</li>
+<li>3. التحقق من بنية الوثيقة.</li>
+<li>4. التحقق من العلاقات الدلالية.</li>
+<li>5. تحديد الهوية والتفويض.</li>
+<li>6. تقييم السياسات والقيود.</li>
+<li>7. إصدار قرار الحوكمة.</li>
+<li>8. تسجيل القرار ومراجعه الداعمة.</li>
+<li>9. إعادة التحقق من التفويض عند نقطة التنفيذ.</li>
+<li>10. تطبيق ضوابط التزامن ومنع التكرار.</li>
+<li>11. تنفيذ الفعل المسموح به.</li>
+<li>12. تسجيل أحداث التنفيذ.</li>
+<li>13. التقاط الأدلة والتحقق من سلامتها.</li>
+<li>14. التحقق من النتيجة.</li>
+<li>15. حفظ السجل النهائي للفعل.</li>
+</ul>
+</div>
+</section>
+
+<!-- SECTION 17 -->
+<section class="manifesto-card" id="s17">
+<h2>17. خطة التحقق التجريبي</h2>
+<p>ينبغي أن يركز التنفيذ الأولي على مجموعة محددة من السيناريوهات ذات القيمة الهندسية العالية.</p>
+<div class="sub-block">
+<h3>المرحلة A - التحقق من المخطط</h3>
+<p><strong>الهدف:</strong> التأكد من أن JSON Schema يقبل الوثائق الصحيحة ويرفض البنى غير الصحيحة.</p>
+<p><strong>المخرجات:</strong></p>
+<ul class="custom-bullet-list">
+<li>مدقق المخطط.</li>
+<li>ملفات اختبار صحيحة.</li>
+<li>ملفات اختبار غير صحيحة.</li>
+<li>تقرير التحقق.</li>
+</ul>
+</div>
+<div class="sub-block">
+<h3>المرحلة B - التحقق الدلالي</h3>
+<p><strong>الهدف:</strong> التحقق من اتساق معلمات الفعل مع السلطة المفوضة والسياسات.</p>
+<p><strong>المخرجات:</strong></p>
+<ul class="custom-bullet-list">
+<li>اختبارات التفويض.</li>
+<li>اختبارات الحدود المالية.</li>
+<li>اختبارات الصلاحية الزمنية.</li>
+<li>اختبارات ربط المعلمات.</li>
+</ul>
+</div>
+<div class="sub-block">
+<h3>المرحلة C - آلة حالات التنفيذ</h3>
+<p><strong>الهدف:</strong> التحقق من انتقالات الحالات المسموح بها وغير المسموح بها.</p>
+<p><strong>المخرجات:</strong></p>
+<ul class="custom-bullet-list">
+<li>تنفيذ آلة الحالات.</li>
+<li>سجل الانتقالات.</li>
+<li>تقرير الاختبارات.</li>
+</ul>
+</div>
+<div class="sub-block">
+<h3>المرحلة D - سحب التفويض والتزامن</h3>
+<p><strong>الهدف:</strong> تقييم توقيت سحب التفويض وإنفاذ حدود التعرض التراكمي.</p>
+<p><strong>المخرجات:</strong></p>
+<ul class="custom-bullet-list">
+<li>سيناريوهات سحب التفويض.</li>
+<li>اختبارات التنفيذ المتزامن.</li>
+<li>حسابات التعرض الاقتصادي.</li>
+<li>سجلات الفشل والتعافي.</li>
+</ul>
+</div>
+<div class="sub-block">
+<h3>المرحلة E - الأدلة والتحقق من النتائج</h3>
+<p><strong>الهدف:</strong> تقييم قدرة التطبيق على التمييز بين دليل التنفيذ والنتيجة الاقتصادية المتحقق منها.</p>
+<p><strong>المخرجات:</strong></p>
+<ul class="custom-bullet-list">
+<li>سجلات الأدلة.</li>
+<li>نتائج التحقق.</li>
+<li>تقرير إسناد النتائج.</li>
+</ul>
+</div>
+<div class="sub-block">
+<h3>المرحلة F - التقييم المقارن</h3>
+<p><strong>الهدف:</strong> مقارنة النموذج المقترح بالأساليب التقنية القائمة ذات الصلة.</p>
+<p><strong>محاور التقييم:</strong></p>
+<ul class="custom-bullet-list">
+<li>اكتمال نموذج البيانات.</li>
+<li>اتساق التفويض.</li>
+<li>قابلية التشغيل البيني.</li>
+<li>تتبع التنفيذ.</li>
+<li>سلوك سحب التفويض.</li>
+<li>معالجة التزامن.</li>
+<li>تغطية التحقق من الأدلة.</li>
+<li>العبء التشغيلي الإضافي.</li>
+</ul>
+<p>لا تحدد هذه المواصفة أرقام أداء أو ادعاءات تفوق مثبتة.</p>
+</div>
+</section>
+
+<!-- SECTION 18 -->
+<section class="manifesto-card" id="s18">
+<h2>18. القيود المعروفة في الإصدار v0.1</h2>
+<p>تتطلب المسائل التالية أعمالاً هندسية إضافية:</p>
+<ul class="custom-bullet-list numbered">
+<li>1. التعريف الدلالي الرسمي لكل نوع من الأفعال الاقتصادية.</li>
+<li>2. معالجة قواعد العملات والدقة المالية بالتفصيل.</li>
+<li>3. إنشاء بصمة معيارية للفعل الاقتصادي (Canonical Action Fingerprint).</li>
+<li>4. الربط التشفيري بين قرار التفويض ومعلمات الفعل.</li>
+<li>5. التعريف الرسمي لحساب التعرض الاقتصادي الإجمالي.</li>
+<li>6. اتساق سحب التفويض في الأنظمة الموزعة.</li>
+<li>7. دلالات التنفيذ الجزئي والإجراءات التعويضية.</li>
+<li>8. ملفات تعريف التحقق من التسوية.</li>
+<li>9. تبادل الأدلة مع حماية الخصوصية.</li>
+<li>10. حوكمة الامتدادات والتشغيل البيني.</li>
+<li>11. التحقق الرسمي من آلة الحالات.</li>
+<li>12. المراجعة الأمنية المستقلة.</li>
+</ul>
+<p>تم توثيق هذه القيود لإبقاء حدود الإصدار واضحة وقابلة للمراجعة.</p>
+</section>
+
+<!-- SECTION 19 -->
+<section class="manifesto-card" id="s19">
+<h2>19. خارطة الإصدارات التقنية المقترحة</h2>
+<div class="table-wrap">
+<table class="comparison-table">
+<thead>
+<tr>
+<th>الإصدار</th>
+<th>نطاق التطوير المقترح</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><code class="ltr">v0.1</code></td><td>نموذج البيانات والمخطط والقواعد الدلالية وآلة الحالات</td></tr>
+<tr><td><code class="ltr">v0.2</code></td><td>بصمة الفعل وربط التفويض ونموذج الأحداث</td></tr>
+<tr><td><code class="ltr">v0.3</code></td><td>دلالات الإلغاء والتزامن والتنفيذ الجزئي</td></tr>
+<tr><td><code class="ltr">v0.4</code></td><td>سلامة الأدلة وملفات التحقق من النتائج</td></tr>
+<tr><td><code class="ltr">v0.5</code></td><td>التشغيل البيني والتقييم المقارن</td></tr>
+<tr><td><code class="ltr">v1.0</code></td><td>مواصفة مرشحة مستقرة، بعد التحقق والمراجعة المستقلة</td></tr>
+</tbody>
+</table>
+</div>
+<p>هذه مراحل تطوير مقترحة وليست مواعيد إصدار ملزمة.</p>
+</section>
+
+<!-- SECTION 20 -->
+<section class="manifesto-card" id="s20">
+<h2>20. الموقف المؤسسي والتقني</h2>
+<p>تقدم أوامركم™ مواصفة UEARM v0.1 بوصفها إصداراً هندسياً أولياً ضمن أبحاثها في مجال التنفيذ الاقتصادي المحكوم بالذكاء الاصطناعي.</p>
+<p>تهدف المواصفة إلى بناء أساس تقني قابل للاختبار لتمثيل الأفعال الاقتصادية عبر عناصر الهوية والسلطة والحوكمة والتنفيذ والأدلة والنتائج.</p>
+<p>ولا تدعي هذه الوثيقة أنها معيار صناعي معتمد أو أنها بديل عن تقنيات التفويض والسياسات والمدفوعات والهوية ومعالجة المعاملات القائمة.</p>
+<p>يجب إثبات القيمة التقنية للنموذج من خلال:</p>
+<ul class="custom-bullet-list">
+<li>التنفيذ القابل لإعادة الإنتاج.</li>
+<li>التحقق الرسمي.</li>
+<li>الاختبارات المقارنة.</li>
+<li>المراجعة التقنية المستقلة.</li>
+<li>تجارب التشغيل البيني.</li>
+<li>الأدلة الموثقة.</li>
+</ul>
+<p>ويجب أن يكون الانتقال من النموذج المقترح إلى المواصفة التقنية المستقرة، ثم إلى أي مبادرة محتملة للتوحيد المعياري، انتقالاً محكوماً بالأدلة.</p>
+</section>
+
+<!-- SECTION 21 -->
+<section class="manifesto-card" id="s21">
+<h2>21. المراجع التقنية</h2>
+<ul class="references-list">
+<li class="ref-ltr" dir="ltr">1. JSON Schema. Specification - Draft 2020-12.<br><a href="https://json-schema.org/specification" target="_blank" rel="noopener noreferrer">https://json-schema.org/specification</a></li>
+<li class="ref-ltr" dir="ltr">2. JSON Schema. Validation Specification - Draft 2020-12.<br><a href="https://json-schema.org/draft/2020-12/json-schema-validation" target="_blank" rel="noopener noreferrer">https://json-schema.org/draft/2020-12/json-schema-validation</a></li>
+<li class="ref-ltr" dir="ltr">3. Rundgren, A., Jordan, B., and Erdtman, S. RFC 8785: JSON Canonicalization Scheme (JCS).<br><a href="https://www.rfc-editor.org/rfc/rfc8785.html" target="_blank" rel="noopener noreferrer">https://www.rfc-editor.org/rfc/rfc8785.html</a></li>
+<li class="ref-ltr" dir="ltr">4. Open Policy Agent (OPA). Documentation.<br><a href="https://www.openpolicyagent.org/docs" target="_blank" rel="noopener noreferrer">https://www.openpolicyagent.org/docs</a></li>
+<li class="ref-ltr" dir="ltr">5. Cedar Policy Language. Authorization Model.<br><a href="https://docs.cedarpolicy.com/auth/authorization.html" target="_blank" rel="noopener noreferrer">https://docs.cedarpolicy.com/auth/authorization.html</a></li>
+<li class="ref-ltr" dir="ltr">6. Google Agent Payments Protocol (AP2). Protocol Specification.<br><a href="https://ap2-protocol.org/ap2/specification/" target="_blank" rel="noopener noreferrer">https://ap2-protocol.org/ap2/specification/</a></li>
+</ul>
+</section>
+
+<!-- DOCUMENT CONTROL -->
+<article class="executive-summary-master" id="document-control" style="border-top-color:var(--accent)">
+<h2 style="color:var(--accent);font-size:1.35rem;font-weight:800;margin-bottom:16px;border:none;padding:0">ضبط الوثيقة والتحكم بالإصدار</h2>
+<div class="table-wrap">
+<table class="comparison-table">
+<thead>
+<tr>
+<th>الحقل</th>
+<th>القيمة</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>الجهة</td><td>أوامركم™ - OUAMARKOM™</td></tr>
+<tr><td>اسم الوثيقة</td><td>المواصفة التقنية لنموذج UEARM</td></tr>
+<tr><td>المعرّف</td><td><bdi>OUAMARKOM-UEARM-SPEC-001</bdi></td></tr>
+<tr><td>الإصدار</td><td>0.1</td></tr>
+<tr><td>تاريخ الإصدار</td><td>4 نوفمبر 2026</td></tr>
+<tr><td>الإطار البحثي</td><td><bdi>CE-AI™</bdi></td></tr>
+<tr><td>الحالة</td><td>مواصفة مقترحة - تجريبية</td></tr>
+<tr><td>حالة التحقق</td><td>بانتظار التقييم التجريبي</td></tr>
+<tr><td>حالة التوحيد المعياري</td><td>ليست معياراً صناعياً معتمداً</td></tr>
+<tr><td>الجهة المسؤولة</td><td>قطاع البحث والتطوير - أوامركم™</td></tr>
+</tbody>
+</table>
+</div>
+<p style="text-align:center;font-weight:800;color:var(--accent);margin-top:20px"><bdi>أوامركم™ | OUAMARKOM™</bdi></p>
+<p style="text-align:center">البحث والهندسة من أجل تأسيس التنفيذ الاقتصادي المحكوم بالذكاء الاصطناعي.</p>
+<div class="highlight-quote"><p>الدليل قبل المعمارية. لا طبقة دون دليل. كل طبقة يجب أن تثبت استحقاقها لوجودها.</p></div>
+<p style="text-align:center;color:var(--text-dim);margin-top:20px">© 2026 <bdi>OUAMARKOM™ Research &amp; Development</bdi></p>
+</article>
+
+<!-- NAVIGATION -->
+<nav class="research-nav-container" aria-label="التنقل بين الأبحاث والمواصفات">
+<a href="/research/uearm" class="btn-research-secondary" rel="prev">← الورقة البحثية رقم (7)</a>
+<a href="/research" class="btn-research-primary">الموسوعة البحثية الكاملة لأوامركم</a>
+</nav>
+
+</main>
+<footer>
+<div class="container" dir="rtl">
+<p>© 2026 أوامركم. جميع الحقوق محفوظة.</p>
+<div class="footer-legal-links">
+<a href="/intellectual-property">الملكية الفكرية</a>
+<span class="footer-legal-separator">·</span>
+<a href="mailto:contact@ouamarkom.com">تواصل معنا</a>
+</div>
+</div>
+</footer>
+<script src="/script.js" defer></script>
+<script>
+const backToTopBtn=document.getElementById('backToTop');
+if(backToTopBtn){window.addEventListener('scroll',()=>{backToTopBtn.style.display=window.scrollY>400?'flex':'none'});backToTopBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));}
+</script>
+</body>
+</html>
