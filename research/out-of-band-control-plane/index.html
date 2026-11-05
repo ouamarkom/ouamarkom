@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>معمارية التحكم المستقل خارج نطاق الاستدلال (Out-of-Band Control Plane) | المواصفة الفنية - أوامركم</title>
+
+<!-- Meta SEO -->
+<meta name="description" content="المواصفة الفنية لمعمارية التحكم المستقل خارج نطاق الاستدلال (Out-of-Band Control Plane) لحوكمة الأفعال الاقتصادية التي تبادر بها وكلاء الذكاء الاصطناعي. معمارية مقترحة، خاضعة للتطوير، بانتظار التحقق التجريبي. أوامركم للبحث والتطوير.">
+<meta name="keywords" content="Out-of-Band Control Plane, التحكم المستقل خارج نطاق الاستدلال, CE-AI, GEAB, Smart Hand, CEP, بوابة التنفيذ, السلطة الاقتصادية المفوضة, إلغاء التفويض, الأدلة والتحقق, وكلاء الذكاء الاصطناعي, أوامركم">
+<meta name="author" content="OUAMARKOM™ Research &amp; Development">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#040916">
+<meta name="format-detection" content="telephone=no">
+
+<!-- Canonical & Hreflang Tags -->
+<link rel="canonical" href="https://ouamarkom.com/research/out-of-band-control-plane" />
+<link rel="alternate" hreflang="ar" href="https://ouamarkom.com/research/out-of-band-control-plane" />
+<link rel="alternate" hreflang="en" href="https://ouamarkom.com/en/research/out-of-band-control-plane" />
+<link rel="alternate" hreflang="x-default" href="https://ouamarkom.com/en/research/out-of-band-control-plane" />
+<link rel="prev" href="https://ouamarkom.com/research/uearm" />
+
+<!-- Favicons -->
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/style.css">
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="أوامركم | Ouamarkom" />
+<meta property="og:url" content="https://ouamarkom.com/research/out-of-band-control-plane" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="معمارية التحكم المستقل خارج نطاق الاستدلال (Out-of-Band Control Plane) | المواصفة الفنية - أوامركم" />
+<meta property="og:description" content="معمارية مقترحة لفصل استدلال وكلاء الذكاء الاصطناعي عن الإنفاذ المستقل للسلطة الاقتصادية، مع برنامج التحقق التجريبي GEAB. خاضعة للتطوير وبانتظار التحقق التجريبي." />
+<meta property="og:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg" />
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="معمارية التحكم المستقل خارج نطاق الاستدلال - أوامركم" />
+<meta property="og:locale" content="ar_AR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="article:author" content="OUAMARKOM™ Research &amp; Development" />
+<meta property="article:section" content="الأبحاث" />
+<meta property="article:tag" content="Out-of-Band Control Plane" />
+<meta property="article:tag" content="GEAB" />
+<meta property="article:tag" content="CE-AI" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="معمارية التحكم المستقل خارج نطاق الاستدلال | المواصفة الفنية">
+<meta name="twitter:description" content="المواصفة الفنية للمعمارية والتحقق التجريبي، من OUAMARKOM™ للبحث والتطوير. معمارية مقترحة بانتظار التحقق التجريبي.">
+<meta name="twitter:image" content="https://ouamarkom.com/ouamarkom-og-image.jpeg">
+<meta name="twitter:image:alt" content="معمارية التحكم المستقل خارج نطاق الاستدلال - أوامركم">
+
+<!-- Structured Data (JSON-LD) -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "TechArticle",
+   "@id": "https://ouamarkom.com/research/out-of-band-control-plane#article",
+   "headline": "معمارية التحكم المستقل خارج نطاق الاستدلال (Out-of-Band Control Plane) - المواصفة الفنية للمعمارية والتحقق التجريبي",
+   "alternativeHeadline": "OUAMARKOM-OOB-TAEV-001",
+   "description": "مواصفة فنية لمعمارية مقترحة للتحكم المستقل خارج نطاق الاستدلال بهدف حوكمة الأفعال الاقتصادية التي تبادر بها وكلاء الذكاء الاصطناعي. حالة المعمارية: معمارية مقترحة. حالة التنفيذ: خاضعة للتطوير. حالة التحقق: بانتظار التحقق التجريبي.",
+   "inLanguage": "ar",
+   "url": "https://ouamarkom.com/research/out-of-band-control-plane",
+   "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ouamarkom.com/research/out-of-band-control-plane"
+   },
+   "image": "https://ouamarkom.com/ouamarkom-og-image.jpeg",
+   "genre": "مواصفة فنية",
+   "articleSection": "الأبحاث",
+   "identifier": "OUAMARKOM-OOB-TAEV-001",
+   "version": "1.0",
+   "keywords": "Out-of-Band Control Plane, Governed AI Economic Execution, Execution Gateway, Delegated Authority, GEAB, CE-AI, Revocation, Evidence and Verification",
+   "isPartOf": {
+    "@type": "CreativeWorkSeries",
+    "name": "السلسلة البحثية - مبادرة أوامركم البحثية",
+    "url": "https://ouamarkom.com/research"
+   },
+   "author": {
+    "@type": "Organization",
+    "@id": "https://ouamarkom.com/#organization",
+    "name": "OUAMARKOM™ Research & Development",
+    "alternateName": "أوامركم",
+    "url": "https://ouamarkom.com"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "أوامركم للتقنيات الذكية",
+    "url": "https://ouamarkom.com",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://ouamarkom.com/logo.webp"
+    }
+   },
+   "copyrightHolder": {
+    "@type": "Organization",
+    "name": "Ouamarkom"
+   },
+   "copyrightYear": 2026
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://ouamarkom.com/research/out-of-band-control-plane",
+   "url": "https://ouamarkom.com/research/out-of-band-control-plane",
+   "name": "معمارية التحكم المستقل خارج نطاق الاستدلال (Out-of-Band Control Plane)",
+   "inLanguage": "ar",
+   "isPartOf": {
+    "@type": "WebSite",
+    "name": "أوامركم",
+    "url": "https://ouamarkom.com"
+   },
+   "breadcrumb": {
+    "@id": "https://ouamarkom.com/research/out-of-band-control-plane#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://ouamarkom.com/research/out-of-band-control-plane#breadcrumb",
+   "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://ouamarkom.com"},
+    {"@type": "ListItem", "position": 2, "name": "الموسوعة البحثية", "item": "https://ouamarkom.com/research"},
+    {"@type": "ListItem", "position": 3, "name": "معمارية التحكم المستقل خارج نطاق الاستدلال", "item": "https://ouamarkom.com/research/out-of-band-control-plane"}
+   ]
+  }
+ ]
+}
+</script>
+<style>
+:root{--primary:#040916;--secondary:#0a192f;--accent:#e6992d;--text-main:#e6f1ff;--text-dim:#8892b0;--card-bg:rgba(10,25,47,.4);--card-border:rgba(255,255,255,.05)}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+html{scroll-padding-top:90px}
+body{background-color:var(--primary);color:var(--text-main);line-height:1.75;overflow-x:hidden;text-align:start;font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Tahoma,Roboto,Oxygen,Ubuntu,Cantarell,sans-serif}
+.container{max-width:1040px;margin:0 auto;padding:0 20px;position:relative;z-index:2}
+#network-canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1;pointer-events:none;opacity:.35}
+header{border-bottom:1px solid var(--card-border);position:sticky;top:0;z-index:1000;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);background:rgba(4,9,22,.85)}
+.nav-container{display:flex;justify-content:space-between;align-items:center;padding:15px 10px;max-width:1200px;margin:0 auto}
+.logo-group{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-img{max-width:100px;height:auto;transition:transform .3s ease;margin:0}
+.logo-img:hover{transform:scale(1.05)}
+.lang-controller{display:flex;background:rgba(255,255,255,.03);border:1px solid var(--card-border);border-radius:30px;padding:4px;gap:4px}
+.lang-btn{display:inline-block;text-decoration:none;background:transparent;border:none;color:var(--text-dim);padding:6px 18px;border-radius:20px;font-weight:600;font-size:13px;transition:all .3s ease}
+.lang-btn.active{background:var(--accent);color:#040916;box-shadow:0 2px 10px rgba(230,153,45,.25)}
+.hero-section{text-align:center;padding:50px 0 30px 0}
+.tagline-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 18px;background:rgba(230,153,45,.1);border:1px solid rgba(230,153,45,.25);color:var(--accent);border-radius:50px;font-size:.9rem;font-weight:700;margin-bottom:20px}
+.tagline-badge::before{content:"";display:inline-block;width:7px;height:7px;background-color:var(--accent);border-radius:50%;animation:pulse-dot 2s infinite}
+@keyframes pulse-dot{0%{transform:scale(.9);opacity:.6}50%{transform:scale(1.3);opacity:1}100%{transform:scale(.9);opacity:.6}}
+.hero-section h1{font-size:clamp(1.8rem,4.5vw,2.6rem);line-height:1.35;color:var(--text-main);font-weight:800;margin-bottom:15px}
+.hero-section h1 span{color:var(--accent)}
+.hero-subtitle{font-size:clamp(1.05rem,2.2vw,1.25rem);color:var(--text-dim);margin-bottom:25px;font-weight:600}
+.meta-info-card{background:rgba(10,25,47,.6);border:1px solid var(--card-border);border-radius:12px;padding:16px 24px;margin:0 auto 30px auto;max-width:900px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px 20px;font-size:.88rem;color:var(--text-main);text-align:start}
+.meta-item strong{color:var(--accent)}
+.executive-summary-master{background:var(--card-bg);border:1px solid var(--card-border);border-top:4px solid var(--accent);padding:clamp(24px,4vw,40px);border-radius:20px;margin-bottom:35px;backdrop-filter:blur(12px);box-shadow:0 15px 35px rgba(0,0,0,.2)}
+.executive-summary-master p{color:var(--text-main);font-size:1rem;line-height:1.8;margin-bottom:16px}
+.summary-main-thesis{font-size:clamp(1.05rem,2.5vw,1.2rem);color:var(--text-main);line-height:1.7;font-weight:700;border-inline-start:4px solid var(--accent);padding:15px 18px;margin:25px 0 15px 0;background:rgba(230,153,45,.06);border-radius:8px}
+.toc{background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:clamp(18px,3vw,28px);margin-bottom:35px;backdrop-filter:blur(12px)}
+.toc h2{color:var(--accent);font-size:1.2rem;font-weight:800;margin-bottom:14px}
+.toc h3{color:var(--text-main);font-size:.95rem;font-weight:700;margin:14px 0 6px 0}
+.toc ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:4px 18px}
+.toc a{color:var(--text-dim);text-decoration:none;font-size:.9rem;transition:color .3s ease}
+.toc a:hover{color:var(--accent)}
+.part-heading{margin:50px 0 24px 0;padding-bottom:12px;border-bottom:2px solid rgba(230,153,45,.35)}
+.part-heading h2{color:var(--accent);font-size:clamp(1.4rem,3.4vw,1.9rem);font-weight:800;line-height:1.4}
+.manifesto-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:clamp(22px,4vw,36px);margin-bottom:30px;transition:all .3s cubic-bezier(.4,0,.2,1);backdrop-filter:blur(12px)}
+.manifesto-card:hover{border-color:var(--accent);background:rgba(10,25,47,.6);transform:translateY(-2px)}
+.manifesto-card h3{color:var(--accent);font-size:clamp(1.3rem,3vw,1.6rem);margin-bottom:20px;font-weight:700;border-inline-start:4px solid var(--accent);padding-inline-start:14px;line-height:1.4}
+.manifesto-card h4{color:var(--accent);font-size:1.15rem;margin-top:24px;margin-bottom:12px;font-weight:700;line-height:1.5}
+.manifesto-card h5{color:var(--text-main);font-size:1rem;margin-top:18px;margin-bottom:8px;font-weight:700;border-inline-start:3px solid rgba(230,153,45,.5);padding-inline-start:10px}
+.manifesto-card p{color:var(--text-main);font-size:1rem;line-height:1.8;margin-bottom:16px}
+.highlight-quote{background:rgba(255,255,255,.02);border-inline-start:4px solid var(--accent);padding:16px 20px;border-radius:4px 12px 12px 4px;margin:20px 0}
+.highlight-quote p{font-weight:700;color:var(--accent);font-size:1.05rem;line-height:1.7;margin-bottom:0}
+.custom-bullet-list{list-style:none;padding-inline-start:22px;margin:18px 0}
+.custom-bullet-list li{position:relative;margin-bottom:12px;line-height:1.75;color:var(--text-main);font-size:.98rem}
+.custom-bullet-list li::before{content:"✦";position:absolute;inset-inline-start:-22px;color:var(--accent);font-size:.85rem;top:2px}
+.custom-bullet-list.numbered li::before{content:none}
+.sub-block{margin-bottom:24px;padding-bottom:18px;border-bottom:1px solid var(--card-border)}
+.sub-block:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.table-wrap{overflow-x:auto;margin:20px 0;border-radius:12px;border:1px solid var(--card-border)}
+.comparison-table{width:100%;border-collapse:collapse;font-size:.92rem}
+.comparison-table th,.comparison-table td{border:1px solid var(--card-border);padding:12px 14px;text-align:start}
+.comparison-table th{background:rgba(230,153,45,.15);color:var(--accent);font-weight:700}
+.comparison-table td{background:rgba(10,25,47,.3);color:var(--text-main)}
+.formula-box{background:rgba(4,9,22,.8);border:1px solid rgba(230,153,45,.3);border-radius:10px;padding:15px 20px;margin:15px 0;text-align:center;color:var(--accent);font-weight:bold;font-size:1.02rem;line-height:1.8;overflow-x:auto}
+.ltr{direction:ltr;unicode-bidi:isolate}
+code.ltr{font-family:"Courier New",monospace;font-size:.92em;color:var(--accent);display:inline-block}
+.ascii-diagram{font-family:"Courier New",monospace;background:#02050e;color:var(--accent);padding:20px;border-radius:12px;border:1px solid rgba(230,153,45,.3);white-space:pre;overflow-x:auto;direction:rtl;text-align:center;font-size:.9rem;line-height:1.6;margin:20px 0;-webkit-overflow-scrolling:touch}
+.references-list{list-style:none;padding:0;margin:18px 0}
+#backToTop{position:fixed;bottom:30px;inset-inline-end:30px;background:var(--accent);color:#040916;border:none;width:45px;height:45px;border-radius:50%;font-size:20px;font-weight:bold;cursor:pointer;box-shadow:0 4px 15px rgba(0,0,0,.3);z-index:999;transition:all .3s ease;display:none;align-items:center;justify-content:center}
+#backToTop:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(230,153,45,.4)}
+.research-nav-container{display:flex;flex-wrap:wrap;gap:15px;justify-content:center;align-items:center;margin:40px 0 20px 0;padding:25px;background:rgba(10,25,47,.6);border:1px solid var(--card-border);border-radius:16px;backdrop-filter:blur(12px)}
+.btn-research-primary{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#040916;padding:12px 28px;border-radius:30px;font-weight:700;font-size:.95rem;text-decoration:none;transition:all .3s ease;box-shadow:0 4px 15px rgba(230,153,45,.2)}
+.btn-research-primary:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(230,153,45,.4);background:#fcd34d}
+.btn-research-secondary{display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--text-main);border:1px solid rgba(230,153,45,.4);padding:12px 28px;border-radius:30px;font-weight:600;font-size:.95rem;text-decoration:none;transition:all .3s ease}
+.btn-research-secondary:hover{border-color:var(--accent);color:var(--accent);background:rgba(230,153,45,.08)}
+footer{background:transparent;border-top:1px solid var(--card-border);padding:40px 0;text-align:center;color:var(--text-dim);font-size:14px;position:relative;z-index:2}
+.footer-legal-links{margin-top:10px}
+.footer-legal-links a{color:var(--text-dim);text-decoration:none;transition:color .3s ease}
+.footer-legal-links a:hover{color:var(--accent)}
+.footer-legal-separator{margin:0 8px;color:var(--card-border)}
+@media(max-width:768px){.hero-section h1{font-size:22px}.manifesto-card{padding:20px}.meta-info-card{grid-template-columns:1fr}.ascii-diagram{font-size:.78rem;padding:14px 12px}#backToTop{bottom:20px;inset-inline-end:20px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}.tagline-badge::before{animation:none}.manifesto-card{transition:none}}
+</style>
+</head>
+<body>
+<canvas id="network-canvas" aria-hidden="true"></canvas>
+<button id="backToTop" title="العودة للأعلى" aria-label="العودة لأعلى الصفحة">↑</button>
+<header>
+<div class="nav-container">
+<a href="/" class="logo-group"><img src="/logo.webp" alt="Ouamarkom - اقتصاد أوامر الذكاء الاصطناعي" class="logo-img" loading="eager"></a>
+<nav class="lang-controller" aria-label="Language Selector"><span class="lang-btn active" aria-current="true">العربية</span><a href="/en/research/out-of-band-control-plane" class="lang-btn" hreflang="en" lang="en">English</a></nav>
+</div>
+</header>
+<main class="container">
+
+<!-- HERO -->
+<div class="hero-section">
+<div class="tagline-badge">أوامركم™ | <bdi>OUAMARKOM™</bdi></div>
+<h1>معمارية التحكم المستقل<br><span>خارج نطاق الاستدلال <bdi>(Out-of-Band Control Plane)</bdi></span></h1>
+<p class="hero-subtitle">المواصفة الفنية للمعمارية والتحقق التجريبي</p>
+<p class="hero-subtitle">الإصدار 1.0</p>
+<div class="meta-info-card">
+<div class="meta-item">معرّف الوثيقة: <strong><bdi>OUAMARKOM-OOB-TAEV-001</bdi></strong></div>
+<div class="meta-item">الإصدار: <strong>1.0</strong></div>
+<div class="meta-item">التصنيف: <strong>مواصفة مؤسسية للبحث والهندسة</strong></div>
+<div class="meta-item">حالة المعمارية: <strong>معمارية مقترحة</strong></div>
+<div class="meta-item">حالة التنفيذ: <strong>خاضعة للتطوير</strong></div>
+<div class="meta-item">حالة التحقق: <strong>بانتظار التحقق التجريبي</strong></div>
+</div>
+</div>
+
+<!-- TABLE OF CONTENTS (navigation) -->
+<nav class="toc" aria-label="فهرس الوثيقة">
+<h2>فهرس الوثيقة</h2>
+<h3>الجزء الأول: الأساس التنفيذي والبحثي</h3>
+<ul>
+<li><a href="#s1">1. الملخص التنفيذي</a></li>
+<li><a href="#s2">2. الغرض من الوثيقة</a></li>
+<li><a href="#s3">3. السياق البحثي</a></li>
+<li><a href="#s4">4. المبدأ المعماري الأساسي</a></li>
+<li><a href="#s5">5. نطاق المعمارية</a></li>
+<li><a href="#s6">6. المصطلحات والتعريفات</a></li>
+</ul>
+<h3>الجزء الثاني: معمارية النظام</h3>
+<ul>
+<li><a href="#s7">7. المعمارية العامة للنظام</a></li>
+<li><a href="#s8">8. حدود الثقة</a></li>
+<li><a href="#s9">9. مواصفات المكونات وربطها بالتحقق التجريبي</a></li>
+</ul>
+<h3>الجزء الثالث: بروتوكول الطلب والتنفيذ</h3>
+<ul>
+<li><a href="#s10">10. نموذج طلب الفعل الاقتصادي</a></li>
+<li><a href="#s11">11. نموذج قرار التفويض</a></li>
+<li><a href="#s12">12. ربط القرار بالطلب</a></li>
+<li><a href="#s13">13. دورة حياة التنفيذ</a></li>
+<li><a href="#s14">14. منع التكرار والحماية من إعادة الإرسال</a></li>
+<li><a href="#s15">15. معالجة حالات الفشل</a></li>
+</ul>
+<h3>الجزء الرابع: برنامج التحقق التجريبي GEAB</h3>
+<ul>
+<li><a href="#s16">16. نظرة عامة على GEAB</a></li>
+</ul>
+<h3>الجزء الخامس: إطار الأداء ومعايير القبول</h3>
+<ul>
+<li><a href="#s17">17. تعريف مؤشرات الأداء الأساسية</a></li>
+<li><a href="#s18">18. ظروف اختبارات الأداء</a></li>
+<li><a href="#s19">19. التقييم المقارن</a></li>
+</ul>
+<h3>الجزء السادس: الأدلة التجريبية وبوابات اعتماد الإصدارات</h3>
+<ul>
+<li><a href="#s20">20. متطلبات حزمة الأدلة</a></li>
+<li><a href="#s21">21. مسار العمل التجريبي</a></li>
+<li><a href="#s22">22. معايير الانتقال بين مراحل التطوير والإصدارات</a></li>
+<li><a href="#s23">23. القيود المعروفة</a></li>
+<li><a href="#s24">24. القرارات الهندسية المفتوحة</a></li>
+<li><a href="#s25">25. حدود الادعاءات البحثية والهندسية</a></li>
+<li><a href="#s26">26. الخاتمة</a></li>
+<li><a href="#document-control">البيانات المؤسسية للوثيقة</a></li>
+</ul>
+</nav>
+
+<!-- ===== PART 1 ===== -->
+<div class="part-heading" id="part1"><h2>الجزء الأول: الأساس التنفيذي والبحثي</h2></div>
+
+<section class="manifesto-card" id="s1"><h3>1. الملخص التنفيذي</h3>
+<p>تقترح شركة أوامركم™ دراسة وتطوير معمارية للتحكم المستقل خارج نطاق الاستدلال <bdi>(Out-of-Band Control Plane)</bdi>، بهدف حوكمة الأفعال الاقتصادية التي تبادر بها وكلاء الذكاء الاصطناعي.</p>
+<p>تقوم المعمارية المقترحة على الفصل بين بيئة الاستدلال الخاصة بوكيل الذكاء الاصطناعي وبين مسار مستقل لحوكمة التفويض والتحقق من الصلاحيات وإنفاذ القرارات.</p>
+<p>وتنطلق الفرضية المركزية لهذه المعمارية من أن قدرة وكيل الذكاء الاصطناعي على الاستدلال بشأن فعل اقتصادي أو التوصية به أو المبادرة بطلب تنفيذه، لا تمنحه بحد ذاتها سلطة تنفيذ ذلك الفعل.</p>
+<p>وتستهدف طبقة التحكم المقترحة تقييم هوية الوكيل، والسلطة الاقتصادية المفوضة إليه، والقيود والسياسات المعمول بها، وأهلية التنفيذ، وحالة إلغاء التفويض، والظروف التشغيلية ذات الصلة، وذلك قبل السماح بانتقال الفعل الاقتصادي إلى نظام تنفيذ خارجي.</p>
+<p>وتتولى بوابة التنفيذ <bdi>(Execution Gateway)</bdi> إنفاذ القرار الصادر عن طبقة التحكم عند نقطة الانتقال إلى التنفيذ الفعلي.</p>
+<p>كما يتولى نظام الأدلة والتحقق <bdi>(Evidence and Verification Subsystem)</bdi> تسجيل دورة حياة الفعل الاقتصادي وتقييم مدى إمكانية إثبات النتيجة الخارجية بصورة مستقلة استناداً إلى أدلة مناسبة.</p>
+<p>وسيتم تطوير المعمارية وتقييمها من خلال البيئة التجريبية <bdi>Smart Hand™</bdi> وبرنامج المعيار التجريبي للأفعال الاقتصادية المحكومة <bdi>(Governed Economic Action Benchmark - GEAB)</bdi>.</p>
+<p>ولا يقتصر الهدف على إثبات قدرة خدمة تفويض على رفض طلب غير صالح، بل يتمثل في تحديد ما إذا كانت معمارية التحكم المستقل قادرة على تحقيق مزايا قابلة للقياس مقارنة بتصميمات الحوكمة البديلة، ولا سيما في المجالات التالية:</p>
+<ul class="custom-bullet-list"><li>منع التنفيذ غير المصرح به.</li><li>إنفاذ حدود السلطة الاقتصادية المفوضة.</li><li>ضبط الاستهلاك التراكمي للميزانيات.</li><li>إدارة الأفعال الاقتصادية المتزامنة.</li><li>إنفاذ إلغاء التفويض.</li><li>سلامة مسار التنفيذ.</li><li>منع تكرار التنفيذ.</li><li>اكتمال الأدلة وسجلات الأحداث.</li><li>التحقق من النتائج الاقتصادية.</li><li>زمن الاستجابة والتكلفة التشغيلية الإضافية.</li></ul>
+<p>وتظل هذه المعمارية تصميماً هندسياً مقترحاً إلى أن يتم تنفيذ مكوناتها واختبارها وتقييمها مقارنة بخطوط أساس محددة.</p></section>
+
+<section class="manifesto-card" id="s2"><h3>2. الغرض من الوثيقة</h3>
+<p>تحدد هذه الوثيقة المعمارية المقترحة، ومسؤوليات المكونات، والواجهات، وحالات دورة الحياة، والسيناريوهات التجريبية، ومؤشرات الأداء، ومعايير القبول، ومتطلبات الأدلة الخاصة بمعمارية التحكم المستقل خارج نطاق الاستدلال لدى أوامركم™.</p>
+<p>كما تنشئ علاقة تتبعية واضحة بين العناصر التالية:</p>
+<ul class="custom-bullet-list numbered"><li>1. المكونات المعمارية.</li><li>2. المتطلبات الهندسية.</li><li>3. السيناريوهات التجريبية لبرنامج <bdi>GEAB</bdi>.</li><li>4. مؤشرات الأداء القابلة للقياس.</li><li>5. معايير القبول.</li><li>6. مخرجات وأصول الأدلة التجريبية.</li></ul></section>
+
+<section class="manifesto-card" id="s3"><h3>3. السياق البحثي</h3>
+<p>تندرج هذه المعمارية ضمن إطار البحث <bdi>CE-AI™</bdi> <bdi>(Command Economy of AI - اقتصاد الأوامر للذكاء الاصطناعي)</bdi>.</p>
+<p>يدرس إطار <bdi>CE-AI™</bdi> العلاقة بين الأوامر، والسلطة المفوضة، والتنفيذ المحكوم، والنتائج الاقتصادية القابلة للتحقق.</p>
+<p>وتُعد معمارية التحكم المستقل خارج نطاق الاستدلال أحد التوجهات المعمارية المقترحة ضمن هذا المسار البحثي.</p>
+<p>ويميز البحث بين أربعة مفاهيم أساسية:</p>
+<ul class="custom-bullet-list"><li>القدرة <bdi>(Capability)</bdi>: ما يستطيع وكيل الذكاء الاصطناعي الاستدلال بشأنه أو محاولة تنفيذه من الناحية التقنية.</li><li>السلطة <bdi>(Authority)</bdi>: ما يُسمح للوكيل بتنفيذه بموجب تفويض مؤسسي محدد.</li><li>التنفيذ <bdi>(Execution)</bdi>: ما إذا كان الفعل المصرح به قد نُفذ بالفعل.</li><li>التحقق <bdi>(Verification)</bdi>: ما إذا كان بالإمكان إثبات النتيجة الناتجة عن التنفيذ استناداً إلى أدلة مناسبة.</li></ul>
+<p>ولا يجوز التعامل مع هذه المفاهيم باعتبارها مترادفة أو قابلة للاستبدال.</p></section>
+
+<section class="manifesto-card" id="s4"><h3>4. المبدأ المعماري الأساسي</h3>
+<div class="highlight-quote"><p>فصل الاستدلال عن الإنفاذ المستقل للسلطة الاقتصادية</p></div>
+<p>يجوز لوكيل الذكاء الاصطناعي صياغة طلب لتنفيذ فعل اقتصادي، ولكن لا يجوز أن يكون الوكيل نفسه المرجع الوحيد لتحديد ما إذا كان هذا الطلب مصرحاً به.</p>
+<p>وتوزع المعمارية المقترحة المسؤوليات على النحو التالي:</p>
+<ul class="custom-bullet-list"><li>الاستدلال: يتولاه وكيل الذكاء الاصطناعي.</li><li>تعريف التفويض والسلطة: تتولاه المؤسسة صاحبة الصلاحية.</li><li>تقييم التفويض: تتولاه طبقة التحكم.</li><li>إنفاذ القرار: تتولاه بوابة التنفيذ.</li><li>التنفيذ الخارجي: يتولاه نظام التنفيذ المعتمد.</li><li>جمع الأدلة والتحقق من النتائج: يتولاه نظام الأدلة والتحقق.</li></ul>
+<p>ويجب ألا تعتمد طبقة التحكم حصرياً على التعليمات المكتوبة باللغة الطبيعية أو على إقرار الوكيل ذاتياً بأنه التزم بالقيود.</p></section>
+
+<section class="manifesto-card" id="s5"><h3>5. نطاق المعمارية</h3>
+<div class="sub-block"><h4>5.1 العناصر المشمولة</h4>
+<p>يشمل النطاق الأولي للمعمارية المقترحة ما يلي:</p>
+<ul class="custom-bullet-list"><li>التحقق من هوية الوكيل.</li><li>التحقق من صحة طلب الفعل الاقتصادي.</li><li>إدارة السلطة الاقتصادية المفوضة.</li><li>تقييم السياسات والقيود.</li><li>اتخاذ قرارات التفويض.</li><li>إنفاذ القرارات عبر بوابة التنفيذ.</li><li>إلغاء التفويض وضوابط الطوارئ.</li><li>المحاسبة التراكمية لاستهلاك التفويضات.</li><li>إدارة الأفعال الاقتصادية المتزامنة.</li><li>إدارة حالات التنفيذ.</li><li>ضمان عدم التكرار والحماية من إعادة إرسال الطلبات.</li><li>تسجيل الأدلة.</li><li>التحقق من النتائج الخارجية.</li><li>التقييم التجريبي المقارن.</li></ul></div>
+<div class="sub-block"><h4>5.2 العناصر المستبعدة من النطاق الأولي</h4>
+<p>لا تدعي المعمارية في مرحلتها الأولية ما يلي:</p>
+<ul class="custom-bullet-list"><li>التحكم الشامل في جميع وكلاء الذكاء الاصطناعي.</li><li>التحكم المباشر في أي نظام خارجي دون تكامل تقني معه.</li><li>ضمان إلغاء المعاملات غير القابلة للعكس.</li><li>ضمان منع جميع الهجمات السيبرانية المحتملة.</li><li>الحصول على اعتماد باعتبارها معياراً عالمياً.</li><li>الحصول على موافقة تنظيمية أو رقابية.</li><li>امتلاك أمن بمستوى إنتاجي دون تقييم مستقل.</li><li>تحقيق قابلية تشغيل بينية شاملة مع جميع الأنظمة.</li></ul></div></section>
+
+<section class="manifesto-card" id="s6"><h3>6. المصطلحات والتعريفات</h3>
+<div class="table-wrap"><table class="comparison-table"><thead><tr><th>المصطلح</th><th>التعريف</th></tr></thead><tbody>
+<tr><td>وكيل الذكاء الاصطناعي <bdi>(AI Agent)</bdi></td><td>نظام ذكاء اصطناعي يقترح فعلاً اقتصادياً أو يبادر بطلب تنفيذه</td></tr>
+<tr><td>الفعل الاقتصادي <bdi>(Economic Action)</bdi></td><td>عملية تؤثر في موارد مالية أو تجارية أو مؤسسية</td></tr>
+<tr><td>السلطة المفوضة <bdi>(Delegated Authority)</bdi></td><td>إذن صريح تمنحه المؤسسة للوكيل ضمن نطاق وقيود محددة</td></tr>
+<tr><td>طبقة التحكم <bdi>(Control Plane)</bdi></td><td>المكون المسؤول عن تقييم السلطة وإصدار قرارات الحوكمة</td></tr>
+<tr><td>التحكم خارج نطاق الاستدلال <bdi>(Out-of-Band)</bdi></td><td>مسار تحكم منفصل وظيفياً عن بيئة استدلال الوكيل</td></tr>
+<tr><td>بوابة التنفيذ <bdi>(Execution Gateway)</bdi></td><td>نقطة الإنفاذ الفاصلة بين الطلبات المصرح بها وأنظمة التنفيذ الخارجية</td></tr>
+<tr><td>إلغاء التفويض <bdi>(Revocation)</bdi></td><td>سحب السلطة الاقتصادية المفوضة أو إبطالها</td></tr>
+<tr><td>الحجز <bdi>(Reservation)</bdi></td><td>تخصيص مؤقت لجزء من السلطة أو الميزانية لطلب قيد التنفيذ</td></tr>
+<tr><td>الدليل <bdi>(Evidence)</bdi></td><td>معلومات مسجلة تدعم الادعاءات المتعلقة بالقرارات والتنفيذ</td></tr>
+<tr><td>التحقق <bdi>(Verification)</bdi></td><td>تقييم الأدلة وفق معايير محددة لإثبات النتيجة</td></tr>
+<tr><td><bdi>GEAB</bdi></td><td>المعيار التجريبي للأفعال الاقتصادية المحكومة</td></tr>
+</tbody></table></div></section>
+
+<!-- ===== PART 2 ===== -->
+<div class="part-heading" id="part2"><h2>الجزء الثاني: معمارية النظام</h2></div>
+
+<section class="manifesto-card" id="s7"><h3>7. المعمارية العامة للنظام</h3>
+<p>يتكون النظام المقترح من الطبقات والوظائف التالية:</p>
+<ul class="custom-bullet-list numbered"><li>1. بيئة الاستدلال الخاصة بالذكاء الاصطناعي.</li><li>2. واجهة طلب الفعل الاقتصادي.</li><li>3. نظام التحقق من الهوية والثقة.</li><li>4. مدير السلطة الاقتصادية.</li><li>5. محرك السياسات والقيود.</li><li>6. محرك قرار التنفيذ.</li><li>7. بوابة التنفيذ.</li><li>8. نظام إلغاء التفويض والتحكم في الطوارئ.</li><li>9. مدير التزامن والحجز.</li><li>10. مدير حالة التنفيذ.</li><li>11. محرك الأدلة والتحقق.</li></ul>
+<div class="sub-block"><h4>7.1 التسلسل المعماري المنطقي</h4>
+<div class="ascii-diagram" dir="rtl">بيئة استدلال الذكاء الاصطناعي
+↓
+واجهة طلب الفعل الاقتصادي
+↓
+التحقق من الهوية والثقة
+↓
+مدير السلطة الاقتصادية
+↓
+محرك السياسات والقيود
+↓
+مدير التزامن والحجز
+↓
+محرك قرار التنفيذ
+↓
+بوابة التنفيذ
+↓
+نظام التنفيذ الخارجي</div>
+<p>الخدمات المساندة:</p>
+<ul class="custom-bullet-list"><li>نظام إلغاء التفويض والتحكم في الطوارئ.</li><li>مدير حالة التنفيذ.</li><li>محرك الأدلة والتحقق.</li></ul>
+<p>يجوز تنفيذ هذه الوظائف على هيئة خدمات مستقلة أو وحدات معزولة منطقياً داخل نظام واحد. ولا يُشترط الفصل المادي بين الأنظمة في المرحلة الأولية.</p></div></section>
+
+<section class="manifesto-card" id="s8"><h3>8. حدود الثقة</h3>
+<p>تحدد المعمارية أربعة نطاقات رئيسية للثقة:</p>
+<div class="sub-block"><h4><bdi>TB-01</bdi>: نطاق الوكيل <bdi>(Agent Domain)</bdi></h4>
+<p>يتضمن نموذج الذكاء الاصطناعي، وبيئة تشغيل الوكيل، ومنطق التخطيط، وآليات إنشاء طلبات الأفعال الاقتصادية.</p>
+<p>ولا يُمنح الوكيل الثقة اللازمة لتعريف سلطته الاقتصادية أو تعديلها ذاتياً.</p></div>
+<div class="sub-block"><h4><bdi>TB-02</bdi>: نطاق التحكم <bdi>(Control Domain)</bdi></h4>
+<p>يتضمن التحقق من الهوية، وإدارة السلطة الاقتصادية، وتقييم السياسات، ومنطق اتخاذ القرار.</p>
+<p>ويجب حماية هذا النطاق من أي تعديل غير مصرح به صادر عن الوكيل أو بيئة تشغيله.</p></div>
+<div class="sub-block"><h4><bdi>TB-03</bdi>: نطاق التنفيذ <bdi>(Execution Domain)</bdi></h4>
+<p>يتضمن بوابة التنفيذ والواجهات التي تتصل بأنظمة التنفيذ الخارجية.</p>
+<p>ويجب ألا يمتلك الوكيل بيانات اعتماد بديلة تتيح له تجاوز نقطة الإنفاذ والوصول المباشر إلى نظام التنفيذ.</p></div>
+<div class="sub-block"><h4><bdi>TB-04</bdi>: نطاق الأدلة <bdi>(Evidence Domain)</bdi></h4>
+<p>يتضمن سجلات الأحداث، وتأكيدات التنفيذ، ونتائج التحقق، وبيانات سلامة السجلات.</p>
+<p>ويجب حماية سجلات الأدلة من التعديل غير المصرح به.</p></div></section>
+
+<section class="manifesto-card" id="s9"><h3>9. مواصفات المكونات وربطها بالتحقق التجريبي</h3>
+
+<div class="sub-block" id="c01"><h4><bdi>C-01</bdi>: واجهة طلب الفعل الاقتصادي <bdi>(Economic Action Request Interface)</bdi></h4>
+<h5>الغرض</h5>
+<p>استقبال طلبات الأفعال الاقتصادية المنظمة من وكلاء الذكاء الاصطناعي وتحويلها إلى تمثيل داخلي موحد وصالح للمعالجة.</p>
+<h5>الحقول المطلوبة</h5>
+<ul class="custom-bullet-list"><li><code class="ltr">"request_id"</code> - معرّف الطلب.</li><li><code class="ltr">"agent_id"</code> - معرّف الوكيل.</li><li><code class="ltr">"authority_id"</code> - معرّف التفويض.</li><li><code class="ltr">"action_type"</code> - نوع الفعل.</li><li><code class="ltr">"requested_amount"</code> - المبلغ المطلوب.</li><li><code class="ltr">"currency"</code> - العملة.</li><li><code class="ltr">"beneficiary_id"</code> - معرّف المستفيد.</li><li><code class="ltr">"target_system"</code> - النظام المستهدف.</li><li><code class="ltr">"idempotency_key"</code> - مفتاح منع التكرار.</li><li><code class="ltr">"created_at"</code> - وقت إنشاء الطلب.</li><li><code class="ltr">"expiration_time"</code> - وقت انتهاء صلاحية الطلب.</li><li><code class="ltr">"action_parameters"</code> - معلمات الفعل.</li></ul>
+<h5>المسؤوليات</h5>
+<ul class="custom-bullet-list"><li>التحقق من بنية الطلب.</li><li>رفض الحقول الإلزامية المفقودة.</li><li>توحيد القيم المدعومة.</li><li>فرض حدود حجم الطلب.</li><li>منع تحول الحقول غير الموثوقة التي يرسلها الوكيل إلى مدخلات مرجعية للسياسات.</li><li>الحفاظ على مصدر الطلب وإمكانية تتبعه.</li></ul>
+<h5>اختبارات GEAB</h5>
+<ul class="custom-bullet-list"><li><bdi>GEAB-01</bdi>: التحقق من طلبات المشتريات.</li><li><bdi>GEAB-02</bdi>: التحقق من طلبات التحويلات المالية.</li><li><bdi>GEAB-05</bdi>: تتبع الأدلة والطلبات.</li></ul>
+<h5>مؤشرات الأداء (KPIs)</h5>
+<ul class="custom-bullet-list"><li>معدل اجتياز التحقق من بنية الطلب.</li><li>معدل قبول الطلبات غير الصالحة.</li><li>زمن معالجة الطلب.</li><li>نسبة تغطية تتبع الطلبات.</li></ul>
+<h5>معايير القبول المقترحة</h5>
+<ul class="custom-bullet-list"><li>رفض 100% من الطلبات غير المطابقة في مجموعة الاختبارات السلبية المحددة.</li><li>إمكانية تتبع 100% من الطلبات المقبولة إلى معرّف طلب فريد.</li><li>عدم السماح لأي حقل غير موثوق يقدمه الوكيل بإنشاء تفويض من تلقاء نفسه.</li><li>التحقق من جميع الحقول الإلزامية قبل بدء تقييم التفويض.</li></ul></div>
+
+<div class="sub-block" id="c02"><h4><bdi>C-02</bdi>: التحقق من الهوية والثقة <bdi>(Identity and Trust Verification)</bdi></h4>
+<h5>الغرض</h5>
+<p>التحقق من أن الطلب صادر عن هوية وكيل موثقة ومرتبطة بالتفويض المعلن في الطلب.</p>
+<h5>المسؤوليات</h5>
+<ul class="custom-bullet-list"><li>مصادقة الوكيل المتصل.</li><li>التحقق من بيانات اعتماد الهوية.</li><li>ربط الطلب بهوية وكيل مسجلة.</li><li>التحقق من حالة بيانات الاعتماد وصلاحيتها الزمنية.</li><li>منع انتحال الهوية أو استبدالها دون تصريح.</li><li>تسجيل نتائج المصادقة.</li></ul>
+<h5>اختبارات GEAB</h5>
+<ul class="custom-bullet-list"><li><bdi>GEAB-01</bdi>: محاولة شراء من وكيل غير مصرح له.</li><li><bdi>GEAB-02</bdi>: التحقق من هوية طلب التحويل المالي.</li><li><bdi>GEAB-03</bdi>: محاولة استخدام بيانات اعتماد ملغاة.</li><li><bdi>GEAB-06</bdi>: انتحال هوية الوكيل وإساءة استخدام بيانات الاعتماد.</li></ul>
+<h5>مؤشرات الأداء</h5>
+<ul class="custom-bullet-list"><li>معدل قبول الهويات غير المصرح بها.</li><li>معدل نجاح التحقق من الهوية.</li><li>زمن اتخاذ قرار المصادقة.</li><li>معدل اكتشاف بيانات الاعتماد الملغاة.</li></ul>
+<h5>معايير القبول المقترحة</h5>
+<ul class="custom-bullet-list"><li>صفر حالات قبول لهويات غير مصرح بها ضمن مجموعة الاختبارات السلبية المحددة.</li><li>اكتشاف 100% من بيانات الاعتماد التجريبية المنتهية أو الملغاة.</li><li>ربط كل طلب مقبول بهوية موثقة.</li><li>عدم السماح بأن تؤدي حالات فشل التحقق من الهوية إلى تفويض التنفيذ.</li></ul></div>
+
+<div class="sub-block" id="c03"><h4><bdi>C-03</bdi>: مدير السلطة الاقتصادية <bdi>(Economic Authority Manager)</bdi></h4>
+<h5>الغرض</h5>
+<p>إدارة الصلاحيات الاقتصادية التي تفوضها المؤسسة إلى وكيل الذكاء الاصطناعي.</p>
+<h5>خصائص التفويض</h5>
+<ul class="custom-bullet-list"><li><code class="ltr">"authority_id"</code> - معرّف التفويض.</li><li><code class="ltr">"granting_institution"</code> - المؤسسة المانحة.</li><li><code class="ltr">"authorized_agent"</code> - الوكيل المصرح له.</li><li><code class="ltr">"permitted_action_types"</code> - أنواع الأفعال المسموح بها.</li><li><code class="ltr">"maximum_single_action"</code> - الحد الأقصى للفعل الواحد.</li><li><code class="ltr">"maximum_cumulative_amount"</code> - الحد الأقصى للمبلغ التراكمي.</li><li><code class="ltr">"permitted_beneficiaries"</code> - المستفيدون المسموح بهم.</li><li><code class="ltr">"permitted_currency"</code> - العملة المسموح بها.</li><li><code class="ltr">"effective_from"</code> - تاريخ بدء السريان.</li><li><code class="ltr">"expires_at"</code> - تاريخ انتهاء الصلاحية.</li><li><code class="ltr">"authority_status"</code> - حالة التفويض.</li><li><code class="ltr">"revocation_reference"</code> - مرجع الإلغاء.</li></ul>
+<h5>المسؤوليات</h5>
+<ul class="custom-bullet-list"><li>إنشاء سجلات التفويض واسترجاعها.</li><li>التحقق من نطاق السلطة.</li><li>إنفاذ حدود المبالغ لكل فعل منفرد.</li><li>تتبع الاستهلاك التراكمي للتفويض.</li><li>التحقق من انتهاء الصلاحية.</li><li>اكتشاف حالات الإلغاء أو التعليق.</li><li>الاحتفاظ بتاريخ تغييرات التفويض.</li></ul>
+<h5>اختبارات GEAB</h5>
+<ul class="custom-bullet-list"><li><bdi>GEAB-01</bdi>: حدود تفويض المشتريات.</li><li><bdi>GEAB-02</bdi>: تفويض التحويلات المالية.</li><li><bdi>GEAB-03</bdi>: إنفاذ إلغاء التفويض.</li><li><bdi>GEAB-04</bdi>: استهلاك التفويضات بصورة متزامنة.</li></ul>
+<h5>مؤشرات الأداء</h5>
+<ul class="custom-bullet-list"><li>معدل قبول الطلبات خارج نطاق التفويض.</li><li>معدل إنفاذ حدود السلطة.</li><li>معدل تجاوز الحد التراكمي.</li><li>معدل قبول التفويضات المنتهية.</li><li>اتساق حالة التفويض.</li></ul>
+<h5>معايير القبول المقترحة</h5>
+<ul class="custom-bullet-list"><li>صفر حالات قبول للطلبات الواقعة خارج نطاق السلطة المحدد.</li><li>صفر حالات تجاوز للميزانية التراكمية ضمن الاختبارات المرجعية الحتمية.</li><li>رفض 100% من التفويضات المنتهية أو الملغاة قبل التنفيذ.</li><li>الإشارة في كل قرار تفويض إلى سجل سلطة صالح وإصداره المحدد.</li></ul></div>
+
+<div class="sub-block" id="c04"><h4><bdi>C-04</bdi>: محرك السياسات والقيود <bdi>(Policy and Constraint Engine)</bdi></h4>
+<h5>الغرض</h5>
+<p>تقييم طلبات الأفعال الاقتصادية وفق السياسات المؤسسية والقيود الحتمية المحددة.</p>
+<h5>أمثلة على القيود</h5>
+<ul class="custom-bullet-list"><li>الحد الأقصى لقيمة المشتريات.</li><li>الحد الأقصى لقيمة التحويلات.</li><li>قائمة الموردين المعتمدين.</li><li>قائمة المستفيدين المعتمدين.</li><li>قيود العملة.</li><li>النوافذ الزمنية المسموح فيها بالمعاملات.</li><li>القيود المتعلقة بفئات العمليات.</li><li>اشتراط موافقة بشرية.</li><li>حدود الميزانية المؤسسية.</li></ul>
+<h5>المسؤوليات</h5>
+<ul class="custom-bullet-list"><li>تقييم قواعد السياسات المنطبقة.</li><li>تطبيق فحوص القيود الحتمية.</li><li>تحديد التعارض بين السياسات.</li><li>إصدار نتائج تقييم قابلة للقراءة آلياً.</li><li>الاحتفاظ بإصدار السياسة المستخدم في كل قرار.</li></ul>
+<h5>اختبارات GEAB</h5>
+<ul class="custom-bullet-list"><li><bdi>GEAB-01</bdi>: سياسات الموردين والمشتريات.</li><li><bdi>GEAB-02</bdi>: قيود التحويلات المالية.</li><li><bdi>GEAB-04</bdi>: قيود الميزانية في حالات التزامن.</li><li><bdi>GEAB-06</bdi>: محاولات تجاوز السياسات.</li></ul>
+<h5>مؤشرات الأداء</h5>
+<ul class="custom-bullet-list"><li>معدل إنفاذ السياسات.</li><li>معدل الرفض الخاطئ.</li><li>معدل القبول الخاطئ.</li><li>زمن تقييم السياسة.</li><li>إمكانية تتبع إصدار السياسة.</li></ul>
+<h5>معايير القبول المقترحة</h5>
+<ul class="custom-bullet-list"><li>تحقيق نتائج صحيحة بنسبة 100% في مجموعة الاختبارات المرجعية المحددة للسياسات الحتمية.</li><li>صفر حالات قبول للأفعال المحظورة صراحة ضمن حالات الاختبار المحددة.</li><li>تحديد إصدار السياسة المستخدم في كل قرار.</li><li>التعامل مع السياسات المتعارضة أو غير المكتملة وفق نتيجة آمنة محددة مسبقاً، بدلاً من الاعتماد على افتراضات غير موثقة.</li></ul></div>
+
+<div class="sub-block" id="c05"><h4><bdi>C-05</bdi>: مدير التزامن والحجز <bdi>(Concurrency and Reservation Manager)</bdi></h4>
+<h5>الغرض</h5>
+<p>منع الطلبات المتزامنة المتعددة من استهلاك التفويض أو الميزانية نفسها بصورة مزدوجة أو غير متسقة.</p>
+<h5>المسؤوليات</h5>
+<ul class="custom-bullet-list"><li>حجز الميزانية أو السلطة قبل التنفيذ.</li><li>دعم عمليات الحجز الذرية <bdi>(Atomic Reservation)</bdi>.</li><li>تتبع الحجوزات المعلقة.</li><li>منع تخصيص الموارد نفسها أكثر من مرة.</li><li>تحرير الحجوزات عند تحقق شروط الإلغاء أو الفشل المحددة.</li><li>مطابقة سجلات الحجز مع حالات التنفيذ.</li></ul>
+<h5>اختبارات GEAB</h5>
+<ul class="custom-bullet-list"><li><bdi>GEAB-04</bdi>: الأفعال الاقتصادية المتزامنة.</li></ul>
+<h5>مؤشرات الأداء</h5>
+<ul class="custom-bullet-list"><li>معدل تجاوز الحدود أثناء التزامن.</li><li>معدل الحجوزات المكررة.</li><li>معدل اتساق الحجوزات.</li><li>زمن معالجة الحجز.</li><li>معدل الحجوزات المعلقة غير المعالجة.</li></ul>
+<h5>معايير القبول المقترحة</h5>
+<ul class="custom-bullet-list"><li>صفر حالات تجاوز للميزانية ضمن مصفوفة اختبارات الضغط المتزامن المحددة.</li><li>عدم وجود أكثر من حجز نشط مكرر ضمن نطاق مفتاح منع التكرار نفسه.</li><li>امتلاك جميع الحجوزات حالات دورة حياة قابلة للتتبع.</li><li>عدم تحرير الحجز لمجرد حدوث مهلة اتصال بعد إرسال طلب التنفيذ إلى النظام الخارجي.</li></ul></div>
+
+<div class="sub-block" id="c06"><h4><bdi>C-06</bdi>: محرك قرار التنفيذ <bdi>(Execution Decision Engine)</bdi></h4>
+<h5>الغرض</h5>
+<p>إصدار قرار حوكمة حتمي استناداً إلى الهوية الموثقة، والسلطة الاقتصادية، والسياسات، والحجوزات، وحالة الطلب.</p>
+<h5>نتائج القرار</h5>
+<ul class="custom-bullet-list"><li><code class="ltr">ADMIT</code> - السماح بالانتقال إلى التنفيذ: يعني أن الطلب مستوفٍ لمتطلبات التفويض التي جرى تقييمها.</li><li><code class="ltr">REJECT</code> - الرفض: يعني أن الطلب يخالف قيداً منطبقاً أو يفتقر إلى السلطة اللازمة.</li><li><code class="ltr">ESCALATE</code> - التصعيد: يعني أن الطلب يتطلب موافقة إضافية أو تدخلاً بشرياً أو قراراً مؤسسياً.</li></ul>
+<h5>المسؤوليات</h5>
+<ul class="custom-bullet-list"><li>دمج نتائج التقييم والتحقق.</li><li>إصدار قرار قابل للمعالجة آلياً.</li><li>الإشارة إلى إصدارات التفويض والسياسات المستخدمة.</li><li>ربط القرار بالطلب المحدد.</li><li>تطبيق مدة صلاحية القرار.</li><li>منع التعديل غير المصرح به على القرار.</li></ul>
+<h5>اختبارات GEAB</h5>
+<ul class="custom-bullet-list"><li><bdi>GEAB-01</bdi>: قرارات المشتريات.</li><li><bdi>GEAB-02</bdi>: قرارات التحويلات المالية.</li><li><bdi>GEAB-03</bdi>: إلغاء التفويض وانتهاء صلاحية القرار.</li><li><bdi>GEAB-04</bdi>: اتساق القرارات في حالات التزامن.</li></ul>
+<h5>مؤشرات الأداء</h5>
+<ul class="custom-bullet-list"><li>معدل صحة القرارات.</li><li>معدل قرارات <bdi>ADMIT</bdi> غير المصرح بها.</li><li>معدل الرفض الخاطئ.</li><li>دقة قرارات التصعيد.</li><li>زمن اتخاذ القرار.</li></ul>
+<h5>معايير القبول المقترحة</h5>
+<ul class="custom-bullet-list"><li>صحة 100% من القرارات ضمن مجموعة الاختبارات المرجعية الحتمية.</li><li>صفر قرارات <bdi>ADMIT</bdi> غير مصرح بها ضمن الاختبارات السلبية المحددة.</li><li>إمكانية تتبع جميع القرارات إلى الطلب ونتائج تقييم السياسات المرتبطة بها.</li><li>انتهاء صلاحية القرارات وفق المدة المعلنة.</li><li>عدم تفسير <bdi>ADMIT</bdi> على أنه دليل على حدوث التنفيذ الخارجي.</li></ul></div>
+
+<div class="sub-block" id="c07"><h4><bdi>C-07</bdi>: بوابة التنفيذ <bdi>(Execution Gateway)</bdi></h4>
+<h5>الغرض</h5>
+<p>إنفاذ قرارات طبقة التحكم عند الحد الفاصل بين الطلبات المصرح بها وأنظمة التنفيذ الخارجية.</p>
+<h5>المسؤوليات</h5>
+<ul class="custom-bullet-list"><li>قبول القرارات الصالحة والقابلة للتنفيذ فقط.</li><li>التحقق من ارتباط القرار بالطلب المحدد.</li><li>التحقق من انتهاء صلاحية القرار أو استمرارها.</li><li>منع إعادة تشغيل الطلبات وتكرارها دون تصريح.</li><li>حماية بيانات اعتماد التنفيذ.</li><li>تقييد الوصول المباشر للوكيل إلى واجهات التنفيذ.</li><li>تسجيل استجابات أنظمة التنفيذ الخارجية.</li></ul>
+<h5>اختبارات GEAB</h5>
+<ul class="custom-bullet-list"><li><bdi>GEAB-01</bdi>: إنفاذ تنفيذ المشتريات.</li><li><bdi>GEAB-02</bdi>: إنفاذ التحويلات المالية.</li><li><bdi>GEAB-03</bdi>: إلغاء التفويض عند نقطة التنفيذ.</li><li><bdi>GEAB-06</bdi>: محاولات تجاوز بوابة التنفيذ مباشرة.</li></ul>
+<h5>مؤشرات الأداء</h5>
+<ul class="custom-bullet-list"><li>معدل التنفيذ غير المصرح به.</li><li>معدل إنفاذ البوابة.</li><li>معدل قبول إعادة تشغيل القرارات.</li><li>معدل التنفيذ المكرر.</li><li>زمن إرسال طلب التنفيذ.</li><li>معدل نجاح تجاوز البوابة مباشرة.</li></ul>
+<h5>معايير القبول المقترحة</h5>
+<ul class="custom-bullet-list"><li>صفر عمليات تنفيذ غير مصرح بها ضمن مجموعة الاختبارات العدائية المحددة.</li><li>صفر حالات قبول لقرارات منتهية أو غير صالحة.</li><li>صفر حالات نجاح لتجاوز الوكيل بوابة التنفيذ مباشرة ضمن حدود التكامل والاختبار المعلنة.</li><li>ارتباط كل فعل يُرسل إلى نظام خارجي بقرار تفويض صالح.</li><li>عدم إمكانية الوصول إلى بيانات اعتماد التنفيذ من بيئة تشغيل الوكيل.</li></ul></div>
+
+<div class="sub-block" id="c08"><h4><bdi>C-08</bdi>: إلغاء التفويض والتحكم في الطوارئ <bdi>(Revocation and Emergency Control)</bdi></h4>
+<h5>الغرض</h5>
+<p>توفير آلية للتحكم في سحب التفويض، وتعليق التنفيذ، والتعامل مع الحالات الطارئة.</p>
+<h5>المسؤوليات</h5>
+<ul class="custom-bullet-list"><li>إلغاء السلطة الاقتصادية المفوضة.</li><li>تعليق صلاحيات الوكيل.</li><li>إبطال قرارات التفويض غير المستخدمة.</li><li>منع إرسال طلبات جديدة بعد سريان الإلغاء.</li><li>تحديد الأفعال المعلقة.</li><li>تسجيل توقيت الإلغاء والطلبات المتأثرة به.</li><li>التمييز بين الأفعال التي يمكن منعها وتلك التي أصبحت غير قابلة للإلغاء أو تمت تسويتها بالفعل.</li></ul>
+<h5>اختبارات GEAB</h5>
+<ul class="custom-bullet-list"><li><bdi>GEAB-03</bdi>: إلغاء التفويض والتحكم في الطوارئ.</li></ul>
+<h5>مؤشرات الأداء</h5>
+<ul class="custom-bullet-list"><li>زمن إنفاذ إلغاء التفويض.</li><li>معدل التنفيذ غير المصرح به بعد الإلغاء.</li><li>زمن انتشار الإلغاء بين المكونات.</li><li>معدل معالجة الأفعال المعلقة.</li><li>اكتمال أدلة الإلغاء.</li></ul>
+<h5>معايير القبول المقترحة</h5>
+<ul class="custom-bullet-list"><li>منع 100% من طلبات الإرسال الجديدة التي تستخدم تفويضاً تم إلغاؤه قبل وصولها إلى نقطة الإنفاذ.</li><li>صفر حالات قبول لقرارات تم إبطالها بعد سريان الإلغاء.</li><li>إنشاء حدث مؤرخ وقابل للتتبع لكل عملية إلغاء.</li><li>تتبع الطلبات التي سبق إرسالها إلى الأنظمة الخارجية بصورة منفصلة.</li><li>عدم الادعاء بإلغاء معاملة خارجية دون تأكيد من النظام الخارجي المختص.</li></ul></div>
+
+<div class="sub-block" id="c09"><h4><bdi>C-09</bdi>: مدير حالة التنفيذ <bdi>(Execution State Manager)</bdi></h4>
+<h5>الغرض</h5>
+<p>تتبع دورة حياة الفعل الاقتصادي دون الخلط بين التفويض والتنفيذ والتسوية.</p>
+<h5>حالات التنفيذ المطلوبة</h5>
+<ul class="custom-bullet-list"><li><code class="ltr">"SUBMITTED"</code> - تم تقديم الطلب.</li><li><code class="ltr">"AUTHORIZED"</code> - تم التحقق من التفويض.</li><li><code class="ltr">"REJECTED"</code> - مرفوض.</li><li><code class="ltr">"ESCALATED"</code> - قيد التصعيد.</li><li><code class="ltr">"RESERVED"</code> - تم حجز الموارد.</li><li><code class="ltr">"EXTERNAL_SUBMISSION_PENDING"</code> - إرسال الطلب إلى النظام الخارجي قيد الانتظار.</li><li><code class="ltr">"EXTERNAL_ACCEPTED"</code> - تم قبول الطلب من النظام الخارجي.</li><li><code class="ltr">"EXECUTION_STATUS_UNKNOWN"</code> - حالة التنفيذ غير معروفة.</li><li><code class="ltr">"EXECUTED"</code> - تم التنفيذ.</li><li><code class="ltr">"SETTLED"</code> - تمت التسوية.</li><li><code class="ltr">"VERIFIED"</code> - تم التحقق من النتيجة.</li><li><code class="ltr">"CANCELLED"</code> - أُلغي الطلب.</li><li><code class="ltr">"FAILED"</code> - فشل التنفيذ.</li><li><code class="ltr">"EXPIRED"</code> - انتهت الصلاحية.</li></ul>
+<p>يجب أن يحدد التنفيذ البرمجي انتقالات الحالات المسموح بها، وأن يرفض الانتقالات غير الصحيحة.</p>
+<h5>المسؤوليات</h5>
+<ul class="custom-bullet-list"><li>تسجيل انتقالات الحالات.</li><li>منع تغييرات الحالة غير المسموح بها.</li><li>مطابقة استجابات الأنظمة الخارجية.</li><li>التعامل مع النتائج الخارجية غير المؤكدة.</li><li>الاحتفاظ بالسجل التاريخي لجميع الانتقالات.</li><li>دعم الاستعادة الآمنة بعد الأعطال.</li></ul>
+<h5>اختبارات GEAB</h5>
+<ul class="custom-bullet-list"><li><bdi>GEAB-02</bdi>: دورة حياة التحويلات المالية.</li><li><bdi>GEAB-03</bdi>: إلغاء التفويض عبر مراحل دورة الحياة.</li><li><bdi>GEAB-05</bdi>: الأدلة والتحقق من النتائج.</li></ul>
+<h5>مؤشرات الأداء</h5>
+<ul class="custom-bullet-list"><li>معدل انتقالات الحالة غير الصحيحة.</li><li>معدل اتساق الحالات.</li><li>زمن معالجة حالات التنفيذ غير المعروفة.</li><li>تغطية تتبع دورة الحياة.</li><li>معدل انتقالات الحالة المكررة.</li></ul>
+<h5>معايير القبول المقترحة</h5>
+<ul class="custom-bullet-list"><li>صفر انتقالات غير صحيحة ضمن مجموعة اختبارات دورة الحياة الحتمية.</li><li>امتلاك كل طلب مقبول سجلاً تاريخياً قابلاً للتتبع.</li><li>عدم تصنيف حالة عدم اليقين الناتجة عن انقطاع الشبكة بعد الإرسال الخارجي تلقائياً على أنها نجاح أو فشل.</li><li>اشتراط أدلة محددة ومستقلة لكل من التسوية والتحقق.</li></ul></div>
+
+<div class="sub-block" id="c10"><h4><bdi>C-10</bdi>: محرك الأدلة والتحقق <bdi>(Evidence and Verification Engine)</bdi></h4>
+<h5>الغرض</h5>
+<p>إنشاء سجل قابل للتدقيق لقرارات الحوكمة، وأحداث التنفيذ، والنتائج الاقتصادية التي تم التحقق منها.</p>
+<h5>خصائص الأدلة المطلوبة</h5>
+<ul class="custom-bullet-list"><li><code class="ltr">"event_id"</code> - معرّف الحدث.</li><li><code class="ltr">"request_id"</code> - معرّف الطلب.</li><li><code class="ltr">"agent_id"</code> - معرّف الوكيل.</li><li><code class="ltr">"authority_id"</code> - معرّف التفويض.</li><li><code class="ltr">"policy_version"</code> - إصدار السياسة.</li><li><code class="ltr">"decision_id"</code> - معرّف القرار.</li><li><code class="ltr">"execution_reference"</code> - مرجع التنفيذ.</li><li><code class="ltr">"event_type"</code> - نوع الحدث.</li><li><code class="ltr">"event_timestamp"</code> - توقيت الحدث.</li><li><code class="ltr">"event_source"</code> - مصدر الحدث.</li><li><code class="ltr">"event_payload_hash"</code> - بصمة محتوى الحدث.</li><li><code class="ltr">"previous_event_hash"</code> - بصمة الحدث السابق.</li><li><code class="ltr">"verification_status"</code> - حالة التحقق.</li></ul>
+<h5>المسؤوليات</h5>
+<ul class="custom-bullet-list"><li>تسجيل أحداث الطلب والتفويض.</li><li>تسجيل استجابات إرسال التنفيذ.</li><li>الاحتفاظ بانتقالات الحالات.</li><li>تسجيل أحداث إلغاء التفويض.</li><li>جمع أدلة التنفيذ الخارجية.</li><li>التحقق من سلامة الأدلة.</li><li>تحديد السجلات الناقصة أو المتعارضة.</li><li>إنشاء حزم أدلة منظمة.</li></ul>
+<h5>اختبارات GEAB</h5>
+<ul class="custom-bullet-list"><li><bdi>GEAB-05</bdi>: الأدلة والتحقق من النتائج.</li><li><bdi>GEAB-03</bdi>: أدلة إلغاء التفويض.</li><li><bdi>GEAB-06</bdi>: العبث بالأدلة وإعادة تشغيل الأحداث.</li></ul>
+<h5>مؤشرات الأداء</h5>
+<ul class="custom-bullet-list"><li>اكتمال الأدلة.</li><li>تغطية التحقق.</li><li>معدل فشل سلامة الأدلة.</li><li>معدل الأحداث المفقودة.</li><li>معدل مطابقة الأدلة مع التنفيذ الخارجي.</li></ul>
+<h5>معايير القبول المقترحة</h5>
+<ul class="custom-bullet-list"><li>تغطية 100% للأحداث الإلزامية ضمن مجموعة الاختبارات المرجعية.</li><li>ارتباط كل نتيجة يتم تصنيفها على أنها متحقق منها بمصدر دليل خارجي مناسب.</li><li>قدرة التحقق من البصمات على اكتشاف التعديلات التي تطرأ على سجلات الأدلة المحمية.</li><li>تصنيف الأدلة المفقودة على أنها غير مكتملة أو غير متحقق منها.</li><li>عدم السماح لعبارة نجاح صادرة عن نموذج الذكاء الاصطناعي وحدها بإثبات حالة <code class="ltr">"VERIFIED"</code>.</li></ul></div>
+</section>
+
+<!-- ===== PART 3 ===== -->
+<div class="part-heading" id="part3"><h2>الجزء الثالث: بروتوكول الطلب والتنفيذ</h2></div>
+
+<section class="manifesto-card" id="s10"><h3>10. نموذج طلب الفعل الاقتصادي</h3>
+<p>يتضمن كائن الطلب المقترح الحقول التالية:</p>
+<ul class="custom-bullet-list"><li><code class="ltr">"request_id"</code></li><li><code class="ltr">"agent_id"</code></li><li><code class="ltr">"authority_id"</code></li><li><code class="ltr">"action_type"</code></li><li><code class="ltr">"requested_amount"</code></li><li><code class="ltr">"currency"</code></li><li><code class="ltr">"beneficiary_id"</code></li><li><code class="ltr">"target_system"</code></li><li><code class="ltr">"idempotency_key"</code></li><li><code class="ltr">"created_at"</code></li><li><code class="ltr">"expiration_time"</code></li><li><code class="ltr">"action_parameters"</code></li></ul>
+<p>يجب التحقق من جميع الحقول وفق أنواع البيانات ومستويات الثقة المحددة لها.</p>
+<p>يجوز للوكيل اقتراح الفعل وتقديم معلماته، لكنه لا يجوز أن يحدد من تلقاء نفسه الهوية المرجعية أو حدود السلطة أو إصدارات السياسات أو نتائج التحقق.</p></section>
+
+<section class="manifesto-card" id="s11"><h3>11. نموذج قرار التفويض</h3>
+<p>يعيد محرك قرار التنفيذ إحدى النتائج الثلاث التالية:</p>
+<div class="sub-block"><h4><bdi>ADMIT</bdi> - السماح</h4>
+<p>يشير إلى أن الطلب استوفى متطلبات التفويض التي تم تقييمها، ويُسمح له بالانتقال إلى مرحلة التنفيذ وفق الشروط المحددة.</p>
+<p>ولا يثبت هذا القرار أن التنفيذ قد حدث بالفعل.</p></div>
+<div class="sub-block"><h4><bdi>REJECT</bdi> - الرفض</h4>
+<p>يشير إلى أن الطلب يخالف قيداً منطبقاً أو يفتقر إلى السلطة اللازمة.</p>
+<p>ويجب أن يكون سبب الرفض قابلاً للمعالجة آلياً وقابلاً للتدقيق.</p></div>
+<div class="sub-block"><h4><bdi>ESCALATE</bdi> - التصعيد</h4>
+<p>يشير إلى أن الطلب يتطلب موافقة إضافية أو تدخلاً بشرياً أو قراراً مؤسسياً.</p>
+<p>ولا يجوز أن يتحول التصعيد تلقائياً أو ضمنياً إلى تفويض بالتنفيذ.</p></div></section>
+
+<section class="manifesto-card" id="s12"><h3>12. ربط القرار بالطلب <bdi>(Decision Binding)</bdi></h3>
+<p>يجب ربط كل قرار تفويض بالعناصر التالية:</p>
+<ul class="custom-bullet-list"><li>معرّف فريد للطلب.</li><li>هوية موثقة للوكيل.</li><li>سجل تفويض محدد وإصداره.</li><li>إصدار السياسة المنطبق.</li><li>معلمات الفعل الاقتصادي.</li><li>فترة صلاحية محددة.</li></ul>
+<p>ويجب ألا يكون القرار قابلاً لإعادة الاستخدام مع مبلغ مختلف أو مستفيد مختلف أو نوع فعل مختلف أو طلب آخر.</p>
+<p>وينبغي أن يستخدم التنفيذ آلية حماية تشفيرية للسلامة أو آلية موثوقة مكافئة لضمان ارتباط القرار بالطلب ومعلماته.</p></section>
+
+<section class="manifesto-card" id="s13"><h3>13. دورة حياة التنفيذ</h3>
+<p>تتبع دورة الحياة المقترحة التسلسل التالي:</p>
+<div class="ascii-diagram" dir="rtl">"REQUESTED" - تم إنشاء الطلب
+↓
+"VALIDATED" - تم التحقق من صحة الطلب
+↓
+"AUTHORITY_CHECKED" - تم التحقق من السلطة
+↓
+"POLICY_EVALUATED" - تم تقييم السياسات
+↓
+"RESERVED" - تم حجز الموارد
+↓
+"ADMITTED" - صدر قرار السماح
+↓
+"EXTERNAL_SUBMISSION_PENDING" - الإرسال الخارجي قيد الانتظار
+↓
+"EXTERNAL_ACCEPTED" - قُبل الطلب خارجياً
+↓
+"EXECUTED" - تم التنفيذ
+↓
+"SETTLED" - تمت التسوية
+↓
+"VERIFIED" - تم التحقق من النتيجة</div>
+<p>وتشمل المسارات البديلة الحالات التالية:</p>
+<ul class="custom-bullet-list"><li><code class="ltr">"REJECTED"</code> - مرفوض.</li><li><code class="ltr">"ESCALATED"</code> - قيد التصعيد.</li><li><code class="ltr">"CANCELLED"</code> - ملغى.</li><li><code class="ltr">"EXPIRED"</code> - منتهي الصلاحية.</li><li><code class="ltr">"FAILED"</code> - فشل.</li><li><code class="ltr">"EXECUTION_STATUS_UNKNOWN"</code> - حالة التنفيذ غير معروفة.</li></ul>
+<p>ولا توفر جميع أنظمة التنفيذ الخارجية تأكيدات منفصلة للتنفيذ والتسوية. لذلك يجب أن يوثق التنفيذ الدلالات الفعلية للحالات التي يقدمها النظام الخارجي، بدلاً من افتراض إمكانية رصد جميع هذه الحالات بصورة مستقلة دائماً.</p></section>
+
+<section class="manifesto-card" id="s14"><h3>14. منع التكرار والحماية من إعادة الإرسال</h3>
+<p>يجب على بوابة التنفيذ منع حدوث عمليات تنفيذ مكررة غير مقصودة عندما يعاد إرسال الطلبات أو محاولة تنفيذها بعد فشل الاتصال.</p>
+<p>ويجب تحديد نطاق مفتاح منع التكرار لكل فعل اقتصادي وفق خصائص نظام التنفيذ المستهدف وطبيعة العملية الاقتصادية.</p>
+<p>ولا يجوز أن تؤدي إعادة إرسال قرار منتهي الصلاحية إلى استعادة صلاحيته.</p>
+<p>كما يجب أن يميز النظام بين:</p>
+<ul class="custom-bullet-list"><li>الطلب المكرر.</li><li>إعادة المحاولة المشروعة.</li><li>الفعل الاقتصادي الجديد.</li><li>الاستجابة الخارجية المتكررة.</li></ul></section>
+
+<section class="manifesto-card" id="s15"><h3>15. معالجة حالات الفشل</h3>
+<div class="sub-block"><h4>15.1 الفشل قبل الإرسال الخارجي</h4>
+<p>إذا فشل التحقق من الهوية أو السلطة أو السياسات أو صلاحية القرار، فيجب منع انتقال الطلب إلى التنفيذ.</p></div>
+<div class="sub-block"><h4>15.2 الفشل بعد الإرسال الخارجي</h4>
+<p>إذا انقطع الاتصال بعد إرسال طلب التنفيذ إلى النظام الخارجي، فيجب تسجيل الحالة على أنها:</p>
+<p><code class="ltr">"EXECUTION_STATUS_UNKNOWN"</code></p>
+<p>وتظل هذه الحالة قائمة إلى أن تكشف المطابقة مع النظام الخارجي عن النتيجة الفعلية.</p>
+<p>ولا يجوز إعادة إرسال عملية مالية غير محسومة بصورة تلقائية ودون تحقق.</p></div>
+<div class="sub-block"><h4>15.3 عدم توفر طبقة التحكم</h4>
+<p>تتمثل السياسة الافتراضية المقترحة في اعتماد مبدأ الرفض الآمن عند تعذر إثبات التفويض، وذلك بالنسبة إلى الأفعال الجديدة.</p>
+<p>أما الأفعال التي سبق إرسالها إلى الأنظمة الخارجية، فيجب التعامل معها عبر مسار مستقل للمطابقة والتحقق.</p></div>
+<div class="sub-block"><h4>15.4 عدم توفر نظام الأدلة</h4>
+<p>يجب تحديد ما إذا كان تعذر تسجيل الأدلة يستوجب إيقاف عمليات التنفيذ الجديدة، أو يسمح باستخدام طابور محلي دائم لتسجيل الأدلة مؤقتاً.</p>
+<p>ويجب تسجيل أي تأجيل في جمع الأدلة ومعالجته لاحقاً عبر آلية مطابقة موثقة.</p>
+<p>ولا يجوز إعلان نجاح التحقق قبل توفر الأدلة المطلوبة.</p></div></section>
+
+<!-- ===== PART 4 ===== -->
+<div class="part-heading" id="part4"><h2>الجزء الرابع: برنامج التحقق التجريبي <bdi>GEAB</bdi></h2></div>
+
+<section class="manifesto-card" id="s16"><h3>16. نظرة عامة على <bdi>GEAB</bdi></h3>
+<p>يهدف المعيار التجريبي للأفعال الاقتصادية المحكومة <bdi>(Governed Economic Action Benchmark - GEAB)</bdi> إلى تقييم قدرة المعمارية المقترحة على حوكمة الأفعال الاقتصادية وإنفاذ القيود عليها في الظروف التشغيلية الاعتيادية والعدائية والمتزامنة وظروف الفشل.</p>
+<p>وينقسم البرنامج إلى ست مجموعات تجريبية.</p>
+
+<div class="sub-block" id="geab-01"><h4><bdi>GEAB-01</bdi> - حوكمة المشتريات <bdi>(Procurement Governance)</bdi></h4>
+<p>الهدف: تقييم تفويضات المشتريات، وقيود الموردين، وحدود الإنفاق، وإنفاذ التنفيذ.</p>
+<h5>السيناريوهات</h5>
+<ul class="custom-bullet-list numbered"><li>1. عملية شراء مصرح بها وضمن الميزانية.</li><li>2. عملية شراء تتجاوز الحد المسموح للفعل الواحد.</li><li>3. عملية شراء من مورد غير معتمد.</li><li>4. تجاوز الميزانية التراكمية.</li><li>5. استخدام تفويض منتهي الصلاحية.</li><li>6. محاولة تجاوز بوابة التنفيذ مباشرة.</li></ul>
+<h5>مؤشرات الأداء الرئيسية</h5>
+<ul class="custom-bullet-list"><li>معدل إنفاذ تفويض المشتريات.</li><li>معدل تنفيذ المشتريات غير المصرح بها.</li><li>معدل الرفض الخاطئ.</li><li>زمن اتخاذ قرار المشتريات.</li></ul>
+<h5>معايير القبول المقترحة</h5>
+<ul class="custom-bullet-list"><li>صفر عمليات شراء غير مصرح بها ضمن مجموعة الاختبارات المحددة.</li><li>صحة 100% من القرارات المرجعية الحتمية.</li><li>صفر حالات تجاوز ناجحة لبوابة التنفيذ مباشرة ضمن حدود التكامل المعلنة.</li></ul></div>
+
+<div class="sub-block" id="geab-02"><h4><bdi>GEAB-02</bdi> - حوكمة التحويلات المالية <bdi>(Financial Transfer Governance)</bdi></h4>
+<p>الهدف: تقييم التفويض المالي، وقيود المستفيدين، وإدارة دورة حياة المعاملة، ومطابقة النتائج الخارجية.</p>
+<h5>السيناريوهات</h5>
+<ul class="custom-bullet-list numbered"><li>1. تحويل مالي مصرح به.</li><li>2. تحويل يتجاوز حدود التفويض.</li><li>3. تحويل إلى مستفيد غير مصرح به.</li><li>4. استخدام تفويض مالي منتهي الصلاحية.</li><li>5. تكرار طلب التحويل.</li><li>6. انتهاء مهلة الاتصال أثناء الإرسال الخارجي.</li><li>7. قبول الطلب خارجياً مع تأخر التسوية.</li></ul>
+<h5>مؤشرات الأداء الرئيسية</h5>
+<ul class="custom-bullet-list"><li>معدل تنفيذ التحويلات غير المصرح بها.</li><li>معدل إنفاذ التفويضات المالية.</li><li>معدل التنفيذ المكرر.</li><li>زمن معالجة حالات التنفيذ غير المعروفة.</li><li>تغطية أدلة التسوية.</li></ul>
+<h5>معايير القبول المقترحة</h5>
+<ul class="custom-bullet-list"><li>صفر تحويلات مالية غير مصرح بها ضمن مجموعة الاختبارات المرجعية.</li><li>صفر عمليات تنفيذ خارجية مكررة للعمليات التي يدعم نظامها الخارجي ضمان عدم التكرار.</li><li>عدم تصنيف أي عملية خارجية غير محسومة تلقائياً على أنها ناجحة أو فاشلة دون مطابقة.</li><li>امتلاك كل عملية تسوية مصنفة على أنها متحقق منها مرجع دليل خارجي مناسب.</li></ul></div>
+
+<div class="sub-block" id="geab-03"><h4><bdi>GEAB-03</bdi> - إلغاء التفويض والتحكم في الطوارئ <bdi>(Revocation and Emergency Control)</bdi></h4>
+<p>الهدف: تقييم قدرة النظام على إلغاء السلطة ومنع التنفيذ غير المصرح به في المراحل اللاحقة.</p>
+<h5>السيناريوهات</h5>
+<ul class="custom-bullet-list numbered"><li>1. إلغاء التفويض قبل تقديم الطلب.</li><li>2. إلغاء التفويض بعد صدور القرار وقبل إرسال الطلب عبر البوابة.</li><li>3. إلغاء التفويض أثناء الإرسال إلى النظام الخارجي.</li><li>4. إلغاء التفويض بعد قبول الطلب خارجياً.</li><li>5. تعليق الوكيل في حالة طوارئ.</li><li>6. محاولة إعادة استخدام قرار تم إبطاله.</li></ul>
+<h5>مؤشرات الأداء الرئيسية</h5>
+<ul class="custom-bullet-list"><li>زمن إنفاذ إلغاء التفويض.</li><li>معدل التنفيذ غير المصرح به بعد الإلغاء.</li><li>زمن انتشار الإلغاء.</li><li>معدل معالجة الأفعال المعلقة.</li></ul>
+<h5>معايير القبول المقترحة</h5>
+<ul class="custom-bullet-list"><li>صفر عمليات إرسال جديدة تستخدم تفويضاً أُلغي قبل وصول الطلب إلى نقطة إنفاذ البوابة.</li><li>صفر حالات إعادة استخدام لقرارات تم إبطالها.</li><li>إمكانية تتبع 100% من أحداث الإلغاء.</li><li>التمييز الصحيح بين العمليات القابلة للإلغاء والعمليات التي أصبحت غير قابلة للعكس.</li></ul></div>
+
+<div class="sub-block" id="geab-04"><h4><bdi>GEAB-04</bdi> - الأفعال الاقتصادية المتزامنة <bdi>(Concurrent Economic Actions)</bdi></h4>
+<p>الهدف: تقييم اتساق السلطة الاقتصادية عند وصول طلبات متعددة في الوقت نفسه.</p>
+<h5>السيناريوهات</h5>
+<ul class="custom-bullet-list numbered"><li>1. طلبان متزامنان يستخدمان الميزانية نفسها.</li><li>2. طلبات متعددة تتنافس على حد تراكمي واحد.</li><li>3. محاولات حجز متزامنة.</li><li>4. طلبات متزامنة مكررة.</li><li>5. انتهاء صلاحية الحجز.</li><li>6. حدوث فشل أثناء مطابقة الحجوزات.</li></ul>
+<h5>مؤشرات الأداء الرئيسية</h5>
+<ul class="custom-bullet-list"><li>معدل تجاوز الحدود أثناء التزامن.</li><li>معدل الحجوزات المكررة.</li><li>معدل اتساق الحجوزات.</li><li>معدل الحجوزات غير المعالجة.</li><li>زمن معالجة الطلبات المتزامنة.</li></ul>
+<h5>معايير القبول المقترحة</h5>
+<ul class="custom-bullet-list"><li>صفر حالات تجاوز للميزانية الإجمالية عبر مصفوفة اختبارات التزامن المحددة.</li><li>عدم وجود حجوزات نشطة مكررة ضمن نطاق منع التكرار نفسه.</li><li>إمكانية تحديد جميع الحجوزات غير المكتملة ومطابقتها.</li></ul></div>
+
+<div class="sub-block" id="geab-05"><h4><bdi>GEAB-05</bdi> - الأدلة والتحقق من النتائج <bdi>(Evidence and Outcome Verification)</bdi></h4>
+<p>الهدف: تقييم سلامة الأدلة واكتمالها وقدرة النظام على التحقق المستقل من نتائج الأفعال الاقتصادية.</p>
+<h5>السيناريوهات</h5>
+<ul class="custom-bullet-list numbered"><li>1. تنفيذ ناجح بأدلة مكتملة.</li><li>2. غياب التأكيد الخارجي.</li><li>3. وجود سجلات تنفيذ متعارضة.</li><li>4. تعديل سجل من سجلات الأدلة.</li><li>5. عدم اكتمال سجل دورة الحياة.</li><li>6. إعلان الوكيل نجاح العملية دون وجود دليل خارجي.</li></ul>
+<h5>مؤشرات الأداء الرئيسية</h5>
+<ul class="custom-bullet-list"><li>اكتمال الأدلة.</li><li>تغطية التحقق.</li><li>معدل اكتشاف التلاعب بالأدلة.</li><li>معدل الأحداث المفقودة.</li><li>دقة المطابقة مع الأنظمة الخارجية.</li></ul>
+<h5>معايير القبول المقترحة</h5>
+<ul class="custom-bullet-list"><li>اكتشاف 100% من حالات التعديل المتعمد على سجلات الأدلة المحمية ضمن الاختبارات المحددة.</li><li>صفر نتائج مصنفة على أنها <code class="ltr">"VERIFIED"</code> دون أدلة داعمة.</li><li>تمثيل جميع أحداث دورة الحياة الإلزامية في حزمة الأدلة المرجعية.</li><li>إبقاء الأدلة المفقودة أو المتعارضة في حالة غير محسومة بصورة صريحة.</li></ul></div>
+
+<div class="sub-block" id="geab-06"><h4><bdi>GEAB-06</bdi> - سلامة التحكم في مواجهة المحاولات العدائية <bdi>(Adversarial Control Integrity)</bdi></h4>
+<p>الهدف: تقييم قدرة المعمارية على مقاومة المحاولات غير المصرح بها لتجاوز مسار التحكم.</p>
+<h5>السيناريوهات</h5>
+<ul class="custom-bullet-list numbered"><li>1. محاولة وصول الوكيل مباشرة إلى واجهات تنفيذ العمليات.</li><li>2. إعادة استخدام قرارات منتهية الصلاحية.</li><li>3. تزوير معرّفات التفويض.</li><li>4. تعديل معلمات الفعل بعد صدور قرار السماح.</li><li>5. إعادة إرسال طلبات سبق قبولها.</li><li>6. محاولة تعديل مدخلات السياسات.</li><li>7. تعديل سجلات الأدلة دون تصريح.</li><li>8. إساءة استخدام بيانات الاعتماد.</li></ul>
+<h5>مؤشرات الأداء الرئيسية</h5>
+<ul class="custom-bullet-list"><li>معدل نجاح تجاوز التحكم.</li><li>معدل التنفيذ غير المصرح به.</li><li>معدل قبول الطلبات المعاد إرسالها.</li><li>معدل فشل ربط القرار بالطلب.</li><li>معدل اكتشاف التلاعب بالأدلة.</li></ul>
+<h5>معايير القبول المقترحة</h5>
+<ul class="custom-bullet-list"><li>صفر حالات نجاح لتجاوز التنفيذ غير المصرح به ضمن نموذج التهديد وحدود الاختبار المعلنة.</li><li>صفر حالات قبول لقرارات تفويض معدلة أو منتهية الصلاحية.</li><li>تحقيق النتيجة الأمنية المتوقعة في جميع الحالات العدائية المحددة.</li></ul></div>
+</section>
+
+<!-- ===== PART 5 ===== -->
+<div class="part-heading" id="part5"><h2>الجزء الخامس: إطار الأداء ومعايير القبول</h2></div>
+
+<section class="manifesto-card" id="s17"><h3>17. تعريف مؤشرات الأداء الأساسية</h3>
+<p>يجب توثيق المقام المستخدم في حساب كل مؤشر، وفترة الرصد، وظروف الاختبار المرتبطة به.</p>
+
+<div class="sub-block"><h4>17.1 معدل التنفيذ غير المصرح به <bdi>(Unauthorized Execution Rate)</bdi></h4>
+<div class="formula-box">معدل التنفيذ غير المصرح به =<br>عدد عمليات التنفيذ غير المصرح بها ÷ إجمالي عمليات التنفيذ.</div>
+<p>الهدف المقترح: 0% ضمن مجموعة الاختبارات المرجعية المحددة.</p></div>
+
+<div class="sub-block"><h4>17.2 معدل إنفاذ التفويض <bdi>(Authorization Enforcement Rate)</bdi></h4>
+<div class="formula-box">معدل إنفاذ التفويض =<br>عدد قرارات التفويض التي جرى إنفاذها بصورة صحيحة ÷ إجمالي قرارات التفويض المختبرة.</div>
+<p>الهدف المقترح: 100% في الحالات المرجعية الحتمية.</p></div>
+
+<div class="sub-block"><h4>17.3 معدل الرفض الخاطئ <bdi>(False Rejection Rate)</bdi></h4>
+<div class="formula-box">معدل الرفض الخاطئ =<br>عدد الطلبات المشروعة التي رُفضت خطأً ÷ إجمالي الطلبات المشروعة.</div>
+<p>الهدف المقترح: 0% في الحالات المرجعية الحتمية.</p></div>
+
+<div class="sub-block"><h4>17.4 زمن إنفاذ إلغاء التفويض <bdi>(Revocation Enforcement Latency)</bdi></h4>
+<p>يُقاس الزمن من لحظة سريان حدث إلغاء التفويض إلى لحظة رفض نقطة الإنفاذ للطلبات اللاحقة التي تستخدم ذلك التفويض.</p>
+<p>ويجب الإبلاغ عن القيم التالية:</p>
+<ul class="custom-bullet-list"><li>الوسيط <bdi>(Median)</bdi>.</li><li>النسبة المئوية 95 <bdi>(p95)</bdi>.</li><li>النسبة المئوية 99 <bdi>(p99)</bdi>.</li><li>أعلى زمن مرصود.</li></ul>
+<h5>الهدف التجريبي الأولي المقترح</h5>
+<ul class="custom-bullet-list"><li><bdi>p95 ≤ 500</bdi> مللي ثانية في بيئة المختبر الخاضعة للتحكم.</li><li><bdi>p99 ≤ 1,000</bdi> مللي ثانية في البيئة نفسها.</li></ul>
+<p>هذه القيم أهداف تجريبية مقترحة وليست نتائج أداء محققة أو ضمانات تشغيلية.</p></div>
+
+<div class="sub-block"><h4>17.5 زمن اتخاذ قرار التنفيذ <bdi>(Execution Decision Latency)</bdi></h4>
+<p>يُقاس من لحظة اكتمال التحقق من الطلب إلى لحظة إصدار قرار التفويض.</p>
+<h5>الهدف التجريبي الأولي المقترح</h5>
+<ul class="custom-bullet-list"><li><bdi>p95 ≤ 100</bdi> مللي ثانية في التهيئة المرجعية، باستثناء زمن التنفيذ الخارجي.</li></ul></div>
+
+<div class="sub-block"><h4>17.6 معدل تجاوز الحدود أثناء التزامن <bdi>(Concurrent Limit Violation Rate)</bdi></h4>
+<div class="formula-box">معدل تجاوز الحدود أثناء التزامن =<br>عدد عمليات التنفيذ التي تجاوزت إجمالي السلطة الممنوحة ÷ إجمالي عمليات التنفيذ المختبرة ضمن سيناريوهات التزامن.</div>
+<p>الهدف المقترح: 0% ضمن مصفوفة اختبارات التزامن المحددة.</p></div>
+
+<div class="sub-block"><h4>17.7 اكتمال الأدلة <bdi>(Evidence Completeness)</bdi></h4>
+<div class="formula-box">اكتمال الأدلة =<br>عدد أحداث الأدلة الإلزامية المسجلة ÷ العدد المتوقع من أحداث الأدلة الإلزامية.</div>
+<p>الهدف المقترح: 100% في اختبارات دورة الحياة المرجعية.</p></div>
+
+<div class="sub-block"><h4>17.8 تغطية التحقق <bdi>(Verification Coverage)</bdi></h4>
+<div class="formula-box">تغطية التحقق =<br>عدد النتائج التي تم التحقق منها بنجاح ÷ عدد النتائج المؤهلة للتحقق.</div>
+<p>الهدف المقترح: 100% للحالات المرجعية التي تتوفر لها أدلة خارجية مكتملة.</p>
+<p>ولا يجوز احتساب النتائج الخارجية غير المعروفة أو غير المحسومة ضمن النتائج المتحقق منها.</p></div></section>
+
+<section class="manifesto-card" id="s18"><h3>18. ظروف اختبارات الأداء</h3>
+<p>يجب ربط جميع ادعاءات الأداء ببيئة اختبار موثقة.</p>
+<p>ويجب أن يتضمن التقرير التجريبي المعلومات التالية:</p>
+<ul class="custom-bullet-list"><li>مواصفات الأجهزة وبيئة التشغيل.</li><li>إصدارات التطبيقات وقواعد البيانات.</li><li>إعدادات الشبكة.</li><li>عدد الوكلاء المتزامنين.</li><li>عدد الطلبات.</li><li>توزيع الطلبات.</li><li>مستوى تعقيد السياسات.</li><li>إعدادات معاملات قواعد البيانات.</li><li>محاكي التنفيذ الخارجي أو مزود الخدمة.</li><li>إجراءات التهيئة الأولية للاختبار.</li><li>منهجية القياس.</li><li>مدة الاختبار.</li><li>ظروف الأخطاء وإعادة المحاولة.</li></ul>
+<p>ويجب قياس زمن الاستجابة بصورة منفصلة لكل مرحلة:</p>
+<ul class="custom-bullet-list numbered"><li>1. التحقق من الهوية.</li><li>2. تقييم السلطة.</li><li>3. تقييم السياسات.</li><li>4. الحجز.</li><li>5. إصدار القرار.</li><li>6. إنفاذ بوابة التنفيذ.</li><li>7. زمن التنفيذ من البداية إلى النهاية.</li></ul>
+<p>ولا يجوز تعميم أي ادعاء متعلق بالأداء خارج نطاق التهيئة التي تم اختبارها دون أدلة إضافية.</p></section>
+
+<section class="manifesto-card" id="s19"><h3>19. التقييم المقارن</h3>
+<p>يجب مقارنة المعمارية المقترحة بتصميمين بديلين على الأقل.</p>
+<div class="sub-block"><h4>خط الأساس A - الحوكمة المعتمدة على الوكيل <bdi>(Agent-Centric Governance)</bdi></h4>
+<p>تعتمد الحوكمة بصورة أساسية على التعليمات الداخلية للوكيل وسلوكه على مستوى التطبيق.</p></div>
+<div class="sub-block"><h4>خط الأساس B - إنفاذ السياسات المدمج <bdi>(Integrated Policy Enforcement)</bdi></h4>
+<p>تُنفذ الحوكمة من خلال آليات السياسات المدمجة داخل التطبيق أو منصة التنفيذ، دون استخدام معمارية التحكم المستقل المقترحة.</p></div>
+<div class="sub-block"><h4>التصميم المرشح C - التحكم المستقل خارج نطاق الاستدلال <bdi>(Independent Out-of-Band Control)</bdi></h4>
+<p>تُنفذ الحوكمة من خلال مسار تحكم مستقل إدارياً ووظيفياً، وبوابة تنفيذ تتولى إنفاذ قرارات التفويض.</p></div>
+<div class="sub-block"><h4>متطلبات عدالة المقارنة</h4>
+<p>يجب أن تستخدم جميع التصميمات ظروفاً متكافئة من حيث:</p>
+<ul class="custom-bullet-list"><li>قدرات الوكيل.</li><li>سيناريوهات الأفعال الاقتصادية.</li><li>قيود السلطة والتفويض.</li><li>ظروف التنفيذ الخارجي.</li><li>بيانات الاختبار.</li><li>مؤشرات التقييم.</li></ul>
+<p>ويجب أن تشمل المقارنة كلاً من مستوى الحماية والتكلفة التشغيلية الإضافية.</p>
+<p>ولا ينبغي اعتبار المعمارية المستقلة أكثر فائدة إلا إذا أثبتت نتائج القياس أن قيمتها الإضافية تبرر تعقيدها وتكلفتها.</p></div></section>
+
+<!-- ===== PART 6 ===== -->
+<div class="part-heading" id="part6"><h2>الجزء السادس: الأدلة التجريبية وبوابات اعتماد الإصدارات</h2></div>
+
+<section class="manifesto-card" id="s20"><h3>20. متطلبات حزمة الأدلة</h3>
+<p>يجب أن ينتج عن كل تجربة ضمن برنامج <bdi>GEAB</bdi> حزمة أدلة تتضمن العناصر التالية:</p>
+<ul class="custom-bullet-list numbered"><li>1. بيان التجربة <bdi>(Experiment Manifest)</bdi>.</li><li>2. معرّف السيناريو التجريبي.</li><li>3. إصدار البرمجيات.</li><li>4. لقطة إعدادات النظام.</li><li>5. مدخلات الاختبار.</li><li>6. النتائج المتوقعة.</li><li>7. النتائج الفعلية.</li><li>8. سجلات الأحداث.</li><li>9. سجلات القرارات.</li><li>10. سجل حالات التنفيذ وانتقالاتها.</li><li>11. حسابات مؤشرات الأداء.</li><li>12. سجلات حالات الفشل.</li><li>13. الملخص التجريبي.</li><li>14. بيان سلامة الأدلة <bdi>(Integrity Manifest)</bdi>.</li></ul>
+<p>وعند الاقتضاء، ينبغي أن تتضمن الحزمة بصمات <bdi>SHA-256</bdi> وبياناً موقعاً رقمياً أو محمياً بآلية مناسبة.</p>
+<p>وتثبت البصمة الرقمية سلامة المحتوى مقارنة بالمرجع الذي أُنشئت منه، لكنها لا تثبت بمفردها هوية المؤلف أو الأسبقية التاريخية أو الصلاحية العلمية.</p></section>
+
+<section class="manifesto-card" id="s21"><h3>21. مسار العمل التجريبي</h3>
+<p>يتبع سير العمل التجريبي التسلسل التالي:</p>
+<div class="ascii-diagram" dir="rtl">بيان التجربة (Manifest)
+↓
+تهيئة السيناريو التجريبي
+↓
+آلة الحالات (State Machine)
+↓
+التقاط الأحداث (Event Capture)
+↓
+محرك القياسات (Metrics Engine)
+↓
+حزمة الأدلة (Evidence Package)
+↓
+تقرير المعيار التجريبي الآلي (Automated Benchmark Report)
+↓
+المراجعة الهندسية (Engineering Review)</div>
+<p>ويجب أن تكون كل تجربة قابلة لإعادة الإنتاج استناداً إلى إعداداتها ومدخلاتها الموثقة.</p></section>
+
+<section class="manifesto-card" id="s22"><h3>22. معايير الانتقال بين مراحل التطوير والإصدارات</h3>
+<div class="sub-block"><h4>البوابة الأولى: اكتمال المعمارية <bdi>(Architecture Completeness)</bdi></h4>
+<ul class="custom-bullet-list"><li>توثيق المكونات.</li><li>تحديد الواجهات.</li><li>تعريف حدود الثقة.</li><li>توثيق نموذج التهديد.</li><li>تحديد حالات دورة الحياة.</li></ul></div>
+<div class="sub-block"><h4>البوابة الثانية: التنفيذ الوظيفي <bdi>(Functional Implementation)</bdi></h4>
+<ul class="custom-bullet-list"><li>تنفيذ الخدمات الأساسية.</li><li>تشغيل منطق اتخاذ القرار.</li><li>تنفيذ إنفاذ بوابة التنفيذ.</li><li>تشغيل نظام تسجيل الأدلة.</li><li>اجتياز الاختبارات المرجعية.</li></ul></div>
+<div class="sub-block"><h4>البوابة الثالثة: التحقق التجريبي <bdi>(Experimental Validation)</bdi></h4>
+<ul class="custom-bullet-list"><li>تنفيذ سيناريوهات <bdi>GEAB</bdi>.</li><li>إكمال المقارنات مع خطوط الأساس.</li><li>حساب مؤشرات الأداء.</li><li>توثيق حالات الفشل.</li><li>إثبات إمكانية إعادة إنتاج النتائج.</li></ul></div>
+<div class="sub-block"><h4>البوابة الرابعة: المراجعة الفنية المستقلة <bdi>(Independent Technical Review)</bdi></h4>
+<ul class="custom-bullet-list"><li>مراجعة المعمارية من مختصين خارجيين مؤهلين.</li><li>توثيق نقاط الضعف الأمنية.</li><li>تقييم النتائج المقارنة.</li><li>الإفصاح عن المخاطر التي لم تتم معالجتها.</li></ul></div>
+<div class="sub-block"><h4>البوابة الخامسة: قرار الإصدار <bdi>(Release Decision)</bdi></h4>
+<p>لا يجوز تصنيف معمارية الإصدار <bdi>v1.0</bdi> على أنها متحقق منها تجريبياً ضمن نطاق محدد إلا بعد استيفاء معايير القبول المطلوبة ومراجعة الأدلة الداعمة.</p>
+<p>كما أن اجتياز اختبارات المختبر لا يثبت تلقائياً الجاهزية للإنتاج أو الامتثال التنظيمي أو الأمن الشامل في جميع البيئات.</p></div></section>
+
+<section class="manifesto-card" id="s23"><h3>23. القيود المعروفة</h3>
+<p>لا تضمن المعمارية المقترحة بصورة مستقلة ما يلي:</p>
+<ul class="custom-bullet-list"><li>صحة استدلال وكيل الذكاء الاصطناعي.</li><li>صدق أو دقة أنظمة التنفيذ الخارجية.</li><li>إلغاء المعاملات غير القابلة للعكس.</li><li>الحماية الكاملة من اختراق البنية التحتية.</li><li>صحة السياسات المؤسسية ذاتها.</li><li>انعدام جميع أخطاء التفويض.</li><li>التوافق التشغيلي مع جميع الأنظمة المالية والتجارية الخارجية.</li></ul>
+<p>ويجب معالجة هذه القيود من خلال ضوابط خاصة بكل عملية تكامل، وآليات تحقق خارجية، وتقييمات أمنية، وحوكمة تشغيلية مناسبة.</p></section>
+
+<section class="manifesto-card" id="s24"><h3>24. القرارات الهندسية المفتوحة</h3>
+<p>تظل القرارات التالية خاضعة للتطوير والتنفيذ والنتائج التجريبية:</p>
+<ul class="custom-bullet-list numbered"><li>1. إدارة السلطة بصورة مركزية أم موزعة.</li><li>2. نموذج اتساق عمليات الحجز.</li><li>3. تنسيق رموز القرارات وآلية ربطها تشفيرياً.</li><li>4. آلية نشر إلغاء التفويض بين المكونات.</li><li>5. نموذج نشر بوابة التنفيذ.</li><li>6. نموذج تخزين الأدلة والاحتفاظ بها.</li><li>7. آليات المطابقة مع الأنظمة الخارجية.</li><li>8. استراتيجية التوافر العالي والتعافي من الأعطال.</li><li>9. آلية حل تعارض السياسات.</li><li>10. سير عمل التصعيد إلى التدخل البشري.</li><li>11. تفويض السلطة بين مؤسسات متعددة.</li><li>12. قابلية التشغيل البيني بين المنصات المختلفة.</li></ul>
+<p>ولا يجوز اعتبار أي قرار معماري نهائياً لمجرد وروده في هذه المواصفة المقترحة.</p></section>
+
+<section class="manifesto-card" id="s25"><h3>25. حدود الادعاءات البحثية والهندسية</h3>
+<p>تميز أوامركم™ بين الحالات التالية:</p>
+<div class="table-wrap"><table class="comparison-table"><thead><tr><th>التصنيف</th><th>المقابل العربي</th><th>الدلالة</th></tr></thead><tbody>
+<tr><td><bdi>Proposed Architecture</bdi></td><td>معمارية مقترحة</td><td>تصميم لم يُثبت تنفيذه بعد</td></tr>
+<tr><td><bdi>Engineering Specification</bdi></td><td>مواصفة هندسية</td><td>تحديد للمكونات والمسؤوليات والمتطلبات</td></tr>
+<tr><td><bdi>Implemented Prototype</bdi></td><td>نموذج أولي منفذ</td><td>تجسيد تقني أولي للمعمارية</td></tr>
+<tr><td><bdi>Experimentally Tested Component</bdi></td><td>مكون خضع للاختبار التجريبي</td><td>مكون نُفذت عليه اختبارات موثقة</td></tr>
+<tr><td><bdi>Experimentally Validated Architecture</bdi></td><td>معمارية تم التحقق منها تجريبياً</td><td>معمارية اجتازت اختبارات محددة ضمن نطاق معلن</td></tr>
+<tr><td><bdi>Independently Reviewed System</bdi></td><td>نظام خضع لمراجعة مستقلة</td><td>نظام تمت مراجعته من جهات فنية مستقلة</td></tr>
+<tr><td><bdi>Production Deployment</bdi></td><td>نشر في بيئة إنتاجية</td><td>نظام مطبق في بيئة تشغيل فعلية</td></tr>
+</tbody></table></div>
+<p>ويتطلب كل تصنيف أدلته الخاصة.</p>
+<p>ولا يثبت نشر هذه المواصفة أن المعمارية قد نُفذت بالفعل، أو أن أهداف الأداء قد تحققت، أو أن المعمارية جديدة على المستوى العالمي، أو أنها تمثل معياراً دولياً معتمداً.</p></section>
+
+<section class="manifesto-card" id="s26"><h3>26. الخاتمة</h3>
+<p>تُطرح معمارية التحكم المستقل خارج نطاق الاستدلال <bdi>(Out-of-Band Control Plane)</bdi> باعتبارها توجهاً معمارياً مقترحاً لفصل استدلال وكلاء الذكاء الاصطناعي عن الإنفاذ المستقل للسلطة الاقتصادية.</p>
+<p>ويجب إثبات قيمتها من خلال التنفيذ الفعلي، والاختبارات العدائية، واختبارات التزامن، والتحقق من دورة حياة الأفعال الاقتصادية، والتحقق من الأدلة، والتقييم المقارن مقابل التصميمات البديلة.</p>
+<p>ولا يتمثل السؤال الهندسي المركزي في إمكانية بناء خدمة تحكم منفصلة فحسب.</p>
+<p>بل يتمثل في تحديد ما إذا كان مسار التنفيذ المحكوم بصورة مستقلة قادراً على تحسين إنفاذ الصلاحيات، والموثوقية، والمساءلة، وقابلية التحقق من الأفعال الاقتصادية التي تبادر بها أنظمة الذكاء الاصطناعي، دون فرض تعقيد تشغيلي لا تبرره القيمة المتحققة.</p>
+<h4>المبدأ الهندسي المركزي</h4>
+<div class="summary-main-thesis" style="text-align:center">الوكيل يستدل.<br>المؤسسة تحدد السلطة.<br>طبقة التحكم تقيّم.<br>بوابة التنفيذ تنفّذ قرار الإنفاذ.<br>الأدلة تدعم التحقق من النتيجة.</div></section>
+
+<!-- DOCUMENT CONTROL -->
+<article class="executive-summary-master" id="document-control"><h2 style="color:var(--accent);font-size:1.35rem;font-weight:800;margin-bottom:16px;border:none;padding:0">البيانات المؤسسية للوثيقة</h2>
+<p style="text-align:center;font-weight:800;color:var(--accent)">أوامركم™ | <bdi>OUAMARKOM™</bdi></p>
+<p style="text-align:center">البحث والهندسة من أجل الفعل الاقتصادي المحكوم بالذكاء الاصطناعي</p>
+<p>الإطار البحثي: <bdi>CE-AI™</bdi> - اقتصاد الأوامر للذكاء الاصطناعي<br>
+البروتوكول الهندسي المقترح: <bdi>CEP™</bdi> - بروتوكول تنفيذ الأوامر<br>
+البيئة التجريبية: <bdi>Smart Hand™</bdi> - بيئة اختبار الفعل الاقتصادي المحكوم<br>
+برنامج التحقق: <bdi>GEAB</bdi> - المعيار التجريبي للأفعال الاقتصادية المحكومة</p>
+<p>حالة الوثيقة: مواصفة فنية مقترحة، الإصدار 1.0، خاضعة للتنفيذ والتحقق التجريبي.</p>
+<p><strong>المبدأ المؤسسي الحاكم:</strong></p>
+<div class="summary-main-thesis" style="text-align:center">لا مكوّن بلا اختبار.<br>ولا اختبار بلا مؤشر قياس.<br>ولا مؤشر قياس بلا دليل.</div></article>
+
+<!-- NAVIGATION -->
+<nav class="research-nav-container" aria-label="التنقل بين الأبحاث">
+<a href="/research/uearm" class="btn-research-secondary" rel="prev">→ الورقة البحثية (7)</a>
+<a href="/research" class="btn-research-primary">الموسوعة البحثية الكاملة لأوامركم</a>
+</nav>
+</main>
+<footer><div class="container" dir="rtl"><p>© 2026 أوامركم. جميع الحقوق محفوظة.</p><div class="footer-legal-links"><a href="/intellectual-property">الملكية الفكرية</a> <span class="footer-legal-separator">·</span> <a href="mailto:contact@ouamarkom.com">تواصل معنا</a></div></div></footer>
+<script src="/script.js" defer></script>
+<script>
+const backToTopBtn=document.getElementById('backToTop');
+if(backToTopBtn){window.addEventListener('scroll',()=>{backToTopBtn.style.display=window.scrollY>400?'flex':'none'});backToTopBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));}
+</script>
+</body>
+</html>
