@@ -2168,3 +2168,160 @@ a.term-chip:hover {
 @media (max-width: 768px) {
     .cep-table th, .cep-table td { padding: 10px 12px; font-size: 0.88rem; }
 }
+
+
+
+
+/* ==========================================================================
+   OUAMARKOM — Global AI Governance Position Paper Additions
+   ========================================================================== */
+
+/* 1. Skip link & SR-only */
+.doc-skip-link {
+  position: absolute;
+  inset-inline-start: 1rem;
+  top: -4rem;
+  z-index: 10003;
+  padding: .6rem 1rem;
+  border-radius: var(--radius-sm);
+  background: #fff;
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+.doc-skip-link:focus { top: 1rem; }
+
+.doc-sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  margin: -1px; padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* 2. Content-visibility */
+.position-paper .section-shell { content-visibility: visible; }
+
+/* 3. Card headings */
+.position-paper .section-card h3 {
+  color: var(--accent);
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: var(--space-2);
+}
+.position-paper .section-card h4 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.6;
+  margin: var(--space-4) 0 var(--space-1);
+}
+
+/* 4. Body links */
+.position-paper .research-note a,
+.position-paper .section-card a {
+  color: var(--accent-light);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.position-paper .research-note a:hover,
+.position-paper .section-card a:hover { color: var(--accent); }
+.position-paper .doc-ref-url { overflow-wrap: anywhere; word-break: break-word; }
+
+/* 5. Table of contents */
+.position-paper .doc-toc {
+  max-width: 980px;
+  margin: 0 auto var(--space-6);
+  padding: var(--space-5);
+  background: var(--card-bg-flat);
+  border: 1px solid var(--border-color);
+  border-inline-start: 2px solid var(--accent-border-strong);
+  border-radius: var(--radius-md);
+}
+.position-paper .doc-toc-title {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: var(--space-3);
+}
+.position-paper .doc-toc-list {
+  list-style: none;
+  columns: 2 22rem;
+  column-gap: var(--space-5);
+}
+.position-paper .doc-toc-list li { break-inside: avoid; }
+.position-paper .doc-toc-list a {
+  display: block;
+  padding: .4rem .25rem;
+  color: var(--text-main);
+  text-decoration: none;
+  line-height: 1.5;
+  font-size: .95rem;
+  overflow-wrap: anywhere;
+  transition: color var(--dur-fast) ease;
+}
+.position-paper .doc-toc-list a:hover,
+.position-paper .doc-toc-list a:focus-visible { color: var(--accent); }
+.position-paper .doc-toc-num {
+  display: inline-block;
+  min-width: 2ch;
+  margin-inline-end: .35rem;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* 6. Definition lists */
+.position-paper .doc-dl { margin: var(--space-3) 0; }
+.position-paper .doc-dl dt { margin-top: var(--space-3); color: #fff; font-weight: 700; }
+.position-paper .doc-dl dt:first-child { margin-top: 0; }
+.position-paper .doc-dl dd {
+  margin: .25rem 0 0;
+  color: var(--text-dim);
+  font-size: .97rem;
+  line-height: 1.75;
+}
+@media (min-width: 720px) {
+  .position-paper .doc-dl-grid {
+    display: grid;
+    grid-template-columns: minmax(12rem, 18rem) minmax(0, 1fr);
+    column-gap: var(--space-5);
+  }
+  .position-paper .doc-dl-grid dt,
+  .position-paper .doc-dl-grid dd {
+    margin: 0;
+    padding-block: .6rem;
+    border-top: 1px solid var(--border-color);
+  }
+}
+
+/* 7. Tables */
+.position-paper .cep-table tbody th[scope="row"] {
+  background: transparent;
+  color: #fff;
+  font-weight: 700;
+  white-space: normal;
+}
+.position-paper .cep-table tbody tr:last-child th { border-bottom: none; }
+
+/* 8. LTR blocks */
+.position-paper .doc-ltr-block {
+  direction: ltr;
+  text-align: left;
+  unicode-bidi: isolate;
+}
+
+/* 9. Small screens */
+@media (max-width: 640px) {
+  .position-paper .doc-toc { padding: var(--space-4); }
+}
+
+/* 10. Print */
+@media print {
+  .position-paper .reveal { opacity: 1; transform: none; }
+  .position-paper .cep-table-wrap { overflow: visible; }
+  .position-paper .section-card,
+  .position-paper .cep-table tr { break-inside: avoid; }
+  .doc-skip-link { display: none; }
+}
