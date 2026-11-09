@@ -2333,3 +2333,169 @@ a.term-chip:hover {
   .position-paper .cep-table tr { break-inside: avoid; }
   .doc-skip-link { display: none; }
 }
+
+
+
+
+
+/* ==========================================================================
+   Ouamarkom™ - Position Paper & Whitepaper Clean Architecture Classes
+   ========================================================================== */
+
+.brand-title-text {
+    font-weight: 800;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.position-paper-main {
+    padding-block: 40px 80px;
+}
+
+.charter-hero-title {
+    color: #fff;
+    margin-bottom: 12px;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+.charter-hero-subtitle {
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 24px;
+}
+
+.charter-hero-sub {
+    color: var(--text-dim);
+}
+
+.section-title-accent {
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.section-title-white {
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.charter-flow-text {
+    color: var(--accent);
+    margin: 20px 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+.charter-abstract-box {
+    margin-top: 25px;
+    padding: 15px;
+    background: rgba(230, 153, 45, 0.05);
+    border-inline-start: 3px solid var(--accent);
+    border-radius: 4px;
+}
+
+[dir="ltr"] .charter-abstract-box {
+    border-inline-start: none;
+    border-left: 3px solid var(--accent);
+}
+
+.charter-abstract-box p {
+    margin: 0;
+    font-size: 0.94rem;
+}
+
+.charter-numbered-list {
+    padding-inline-start: 1.2rem;
+}
+
+.ref-item-desc {
+    font-size: 0.88rem;
+    color: var(--text-dim);
+}
+
+.research-info-box {
+    margin-top: 35px;
+    padding: 25px;
+    background: rgba(4, 9, 22, 0.6);
+    border: 1px solid rgba(230, 153, 45, 0.2);
+    border-radius: 8px;
+}
+
+.research-info-box h4 {
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+.research-info-box p {
+    margin: 6px 0;
+}
+
+.site-footer-wrap {
+    background: #01040a;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 50px 0 20px;
+}
+
+.footer-flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-copy-text {
+    color: var(--text-dim);
+    font-size: 0.88rem;
+    margin: 0;
+}
+
+.footer-links-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.footer-link-item {
+    color: var(--text-dim);
+    text-decoration: none;
+    font-size: 0.88rem;
+}
+
+.footer-link-item:hover {
+    color: var(--accent);
+}
+
+.footer-dot-sep {
+    color: var(--text-dim);
+    opacity: 0.5;
+}
+
+.site-header {
+    margin-bottom: 35px;
+}
+
+
+.doc-toc {
+    margin-top: 40px;
+}
+
+.charter-text a,
+.research-info-box a,
+.doc-ref-url {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.charter-text a:hover,
+.research-info-box a:hover,
+.doc-ref-url:hover {
+    color: var(--accent);
+    opacity: 0.8;
+}
+
+.doc-ltr-block {
+    direction: ltr;
+    unicode-bidi: embed;
+}
