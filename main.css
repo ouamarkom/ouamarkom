@@ -2176,6 +2176,14 @@ a.term-chip:hover {
    OUAMARKOM — Global AI Governance Position Paper Additions
    ========================================================================== */
 
+/* 0. Overflow fix (scoped) */
+.position-paper .section-grid.single-col {
+  grid-template-columns: minmax(0, 1fr);
+}
+.position-paper .section-card {
+  min-width: 0;
+}
+
 /* 1. Skip link & SR-only */
 .doc-skip-link {
   position: absolute;
